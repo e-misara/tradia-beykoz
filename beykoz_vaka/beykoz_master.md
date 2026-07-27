@@ -74,6 +74,9 @@
 
 **Dağılım:** 6→1 · 5→3 · 4→4 · 3→1 · 2→7 · 1→8 · **0→21 (%47)**
 
+> ✅ **SIG8 (28.07) — E1 + ARSA 10. ayak UYGULANDI (ÜA onayı):** FİYAT kuralı *"CSV≥10 **VE** uzKS≥20"* → **"uzKS≥20 VEYA CSV≥10"**; **ARSA 10. ayak** eklendi (S53 emsal-v2, n≥8). **0 ayaklı 21 → 11 (%24).** Yeni sıralama: **Çubuklu 8/10** · Kavacık · Riva · Tokatköy **7** · Gümüşsuyu 6 · İncirköy · Yalıköy 5 · Paşabahçe 4. **SIG7 denetimi doğrulandı** — (a) sınıfının 6'sı da açıldı, kalan 11 = (b)5 + (c)6, tam örtüşme.
+> 🔴 **Uyarı:** *Çubuklu, Riva'yı **yeni kanıtla değil, yeni ayakla** geçti* (İMAR + ARSA lehine çalıştı; Riva'nın UYDU'su hâlâ ölçülmüyor). **Sıralama ayak-setine duyarlıdır.** Detay: [`sig8_sinyal_kaniti_v2.md`](sig8_sinyal_kaniti_v2.md)
+
 > 🔍 **SIG7 denetimi (28.07):** 21 sıfır mahalle tek tek yeniden sorgulandı → **6'sı eşik/bağlantı hatası** (veri var, ayak yanmadı — Anadolu Hisarı · Baklacı · Çavuşbaşı Çiftlik · Görele · Mahmutşevketpaşa · Elmalı) · **9'u kanal körlüğü** · **6'sı gerçek sessiz.** ★ **Beykoz'un ölçülmüş en pahalı hücresi (yalı-köşk 545.455 TL/m², n=9) 0 ayaklı bir mahallede duruyordu** — FİYAT ayağının *"CSV≥10 **VE** uzantı≥20"* kuralı zayıf kaynağı bağlayıcı yapıyor, ve **S53 emsal v2 ısıya hiç bağlı değil.** **Eşik bu turda DEĞİŞTİRİLMEDİ** (karar Üst Akıl'da); E1 onaylanırsa 0-ayak **21→17**. Detay: [`sig7_21_denetim.md`](sig7_21_denetim.md)
 
 ### İMAR ayağını taşıyan 10 mahalle
