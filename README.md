@@ -1,6 +1,6 @@
 # tradia-beykoz
 
-**Repo:** `e-misara/tradia-beykoz` (PRIVATE)  
+**Repo:** `e-misara/tradia-beykoz` (PUBLIC — Patron kararı 27 Tem)  
 **Sahip:** Misara Group / Tradia  
 **Rol:** Vezir (CEO-denetçi) — arşiv sorumluluğu  
 **Amaç:** Beykoz vakasının tam kanıt-arşivi + her CC'nin kendi tanıtım/öz-analiz belgesi. Üst Akıl bu index'ten çalışır.  
@@ -200,7 +200,7 @@
 ---
 ## Disiplin
 
-- **Standing #31 v1.1 (KVKK):** iç-çalışma maskesiz, dış-sınır 4 madde. Bu repo PRIVATE → iç-çalışma tarafı.
+- **Standing #31 v1.1 (KVKK):** iç-çalışma maskesiz, dış-sınır 4 madde. Bu repo PUBLIC — Patron kararı (2026-07-27): dosyalar KVKK dış-sınır uyumlu, "kendimize kanıt" işlevi görüyor.
 - **A04 dürüst-negatif · #21-B çift-imza · #24 EK-NOT Türkçe-ek toleransı**
 - **V16 dürüst · $0 · dizin-kilidi · doygunluk→yeni-yol**
 
