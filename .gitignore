@@ -1,0 +1,52 @@
+# tradia-beykoz — PRIVATE repo, dış-sınır tarafı
+# Standing #31 KVKK v1.1 + kural: yalnız md/json/png
+
+# Anahtar-token ASLA
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*_token*
+*_secret*
+config.yml
+credentials*
+
+# Ham/büyük veri girişi
+ham/
+raw/
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.parquet
+*.zip
+*.tar
+*.gz
+*.tgz
+
+# Ham medya / ürün-dosyası (yalnız md/json/png kuralı)
+*.pdf
+*.docx
+*.pages
+*.xlsx
+*.csv
+*.tsv
+*.py
+*.sh
+*.js
+*.html
+*.log
+
+# Sistem çöpü
+.DS_Store
+Thumbs.db
+._*
+*~
+*.swp
+*.swo
+
+# Editör
+.vscode/
+.idea/

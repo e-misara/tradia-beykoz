@@ -1,0 +1,2724 @@
+{
+ "istanbul/beykoz/acarlar": {
+  "mahalle_id": "istanbul/beykoz/acarlar",
+  "ad": "Acarlar",
+  "kimlik": {
+   "not": "Acarkent lüks kapalı-villa sitesi (orman-içi)",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 5.41,
+   "centroid": [
+    41.1094,
+    29.1249
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 2240,
+   "kat": {
+    "1_4": 1977,
+    "5_9": 262,
+    "9_19": 1
+   },
+   "yas": {
+    "1980_oncesi": 3,
+    "1980_2000": 1846,
+    "2000_sonrasi": 391
+   },
+   "yas40plus_yuzde": 0.1,
+   "deprem_agir_hasar": 9,
+   "deprem_orta": 89,
+   "gecici_barinma": 109,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 4,
+   "poi_kategori": {
+    "mall": 1,
+    "cafe": 1,
+    "fuel": 1,
+    "cinema": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Acarlar: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/akbaba": {
+  "mahalle_id": "istanbul/beykoz/akbaba",
+  "ad": "Akbaba",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 4.48,
+   "centroid": [
+    41.1562,
+    29.1128
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 696,
+   "kat": {
+    "1_4": 682,
+    "5_9": 14,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 298,
+    "1980_2000": 210,
+    "2000_sonrasi": 188
+   },
+   "yas40plus_yuzde": 42.8,
+   "deprem_agir_hasar": 2,
+   "deprem_orta": 18,
+   "gecici_barinma": 33,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "ckan_yapi_ibb",
+    "imar"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Akbaba: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/alibahadir": {
+  "mahalle_id": "istanbul/beykoz/alibahadir",
+  "ad": "Ali̇bahadir",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 11.21,
+   "centroid": [
+    41.1919,
+    29.2083
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 303,
+   "kat": {
+    "1_4": 302,
+    "5_9": 1,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 22,
+    "1980_2000": 151,
+    "2000_sonrasi": 130
+   },
+   "yas40plus_yuzde": 7.3,
+   "deprem_agir_hasar": 3,
+   "deprem_orta": 14,
+   "gecici_barinma": 19,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 1,
+   "poi_kategori": {
+    "school": 1
+   },
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "okul:1"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Ali̇bahadir: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/anadolu_feneri": {
+  "mahalle_id": "istanbul/beykoz/anadolu_feneri",
+  "ad": "Anadolu Feneri̇",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": "VERİ YOK",
+   "centroid": null,
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 416,
+   "kat": {
+    "1_4": 414,
+    "5_9": 2,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 42,
+    "1980_2000": 73,
+    "2000_sonrasi": 301
+   },
+   "yas40plus_yuzde": 10.1,
+   "deprem_agir_hasar": 2,
+   "deprem_orta": 15,
+   "gecici_barinma": 18,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Anadolu Feneri̇: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/anadolu_hisari": {
+  "mahalle_id": "istanbul/beykoz/anadolu_hisari",
+  "ad": "Anadolu Hi̇sari",
+  "kimlik": {
+   "not": "Yıldırım Bayezid Anadolu Hisarı (1394); Göksu-Küçüksu dere ağzı",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 0.99,
+   "centroid": [
+    41.087,
+    29.0711
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 663,
+   "kat": {
+    "1_4": 619,
+    "5_9": 44,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 362,
+    "1980_2000": 163,
+    "2000_sonrasi": 138
+   },
+   "yas40plus_yuzde": 54.6,
+   "deprem_agir_hasar": 13,
+   "deprem_orta": 67,
+   "gecici_barinma": 27,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 3,
+   "poi_kategori": {
+    "restaurant": 1,
+    "cafe": 1,
+    "attraction": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": true,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Anadolu Hi̇sari: eski-stok %54.6 + deprem-hasar 13 → kentsel-dönüşüm baskısı [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/anadolu_kavagi": {
+  "mahalle_id": "istanbul/beykoz/anadolu_kavagi",
+  "ad": "Anadolu Kavaği",
+  "kimlik": {
+   "not": "Boğaz-Karadeniz ağzı; Yoros Kalesi, balık-lokantaları, turizm",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 5.23,
+   "centroid": [
+    41.1698,
+    29.0944
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 409,
+   "kat": {
+    "1_4": 402,
+    "5_9": 7,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 93,
+    "1980_2000": 163,
+    "2000_sonrasi": 153
+   },
+   "yas40plus_yuzde": 22.7,
+   "deprem_agir_hasar": 4,
+   "deprem_orta": 16,
+   "gecici_barinma": 102,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "ckan_yapi_ibb",
+    "haber"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 12,
+   "poi_kategori": {
+    "restaurant": 7,
+    "station": 1,
+    "attraction": 1,
+    "supermarket": 1,
+    "fast_food": 1,
+    "cafe": 1
+   },
+   "baskin_islev": "turizm/konut",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": true,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Anadolu Kavaği: turizm/ikinci-konut ekseni → kıyı/doğa-değeri için gelişiyor [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/baklaci": {
+  "mahalle_id": "istanbul/beykoz/baklaci",
+  "ad": "Baklaci",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 11.72,
+   "centroid": [
+    41.0618,
+    29.1375
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 1045,
+   "kat": {
+    "1_4": 1034,
+    "5_9": 11,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 21,
+    "1980_2000": 0,
+    "2000_sonrasi": 1024
+   },
+   "yas40plus_yuzde": 2.0,
+   "deprem_agir_hasar": 9,
+   "deprem_orta": 64,
+   "gecici_barinma": 95,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "ckan_yapi_ibb",
+    "imar"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 2,
+   "poi_kategori": {
+    "cafe": 2
+   },
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Baklaci: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/bozhane": {
+  "mahalle_id": "istanbul/beykoz/bozhane",
+  "ad": "Bozhane",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 14.35,
+   "centroid": [
+    41.1793,
+    29.2963
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 278,
+   "kat": {
+    "1_4": 278,
+    "5_9": 0,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 47,
+    "1980_2000": 82,
+    "2000_sonrasi": 149
+   },
+   "yas40plus_yuzde": 16.9,
+   "deprem_agir_hasar": 4,
+   "deprem_orta": 13,
+   "gecici_barinma": 15,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Bozhane: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/cumhuriyet": {
+  "mahalle_id": "istanbul/beykoz/cumhuriyet",
+  "ad": "Cumhuri̇yet",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": "VERİ YOK",
+   "centroid": null,
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 682,
+   "kat": {
+    "1_4": 679,
+    "5_9": 3,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 205,
+    "1980_2000": 194,
+    "2000_sonrasi": 283
+   },
+   "yas40plus_yuzde": 30.1,
+   "deprem_agir_hasar": 6,
+   "deprem_orta": 28,
+   "gecici_barinma": 41,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Cumhuri̇yet: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/camlibahce": {
+  "mahalle_id": "istanbul/beykoz/camlibahce",
+  "ad": "Çamlibahçe",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 0.51,
+   "centroid": [
+    41.1485,
+    29.0831
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1069,
+   "kat": {
+    "1_4": 1042,
+    "5_9": 27,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 699,
+    "1980_2000": 255,
+    "2000_sonrasi": 115
+   },
+   "yas40plus_yuzde": 65.4,
+   "deprem_agir_hasar": 36,
+   "deprem_orta": 122,
+   "gecici_barinma": 356,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 2,
+   "poi_kategori": {
+    "convenience": 1,
+    "supermarket": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Çamlibahçe: eski-stok %65.4 + deprem-hasar 36 → kentsel-dönüşüm baskısı [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/cengeldere": {
+  "mahalle_id": "istanbul/beykoz/cengeldere",
+  "ad": "Çengeldere",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 5.21,
+   "centroid": [
+    41.0975,
+    29.1465
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 1190,
+   "kat": {
+    "1_4": 1159,
+    "5_9": 31,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 26,
+    "1980_2000": 3,
+    "2000_sonrasi": 1161
+   },
+   "yas40plus_yuzde": 2.2,
+   "deprem_agir_hasar": 8,
+   "deprem_orta": 58,
+   "gecici_barinma": 108,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 2,
+   "poi_kategori": {
+    "pet": 1,
+    "convenience": 1
+   },
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Çengeldere: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/ciftlik": {
+  "mahalle_id": "istanbul/beykoz/ciftlik",
+  "ad": "Çi̇ftli̇k",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 4.07,
+   "centroid": [
+    41.0797,
+    29.1408
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1105,
+   "kat": {
+    "1_4": 1079,
+    "5_9": 26,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 31,
+    "1980_2000": 0,
+    "2000_sonrasi": 1074
+   },
+   "yas40plus_yuzde": 2.8,
+   "deprem_agir_hasar": 8,
+   "deprem_orta": 61,
+   "gecici_barinma": 120,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 1,
+   "poi_kategori": {
+    "fuel": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Çi̇ftli̇k: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/cigdem": {
+  "mahalle_id": "istanbul/beykoz/cigdem",
+  "ad": "Çi̇ğdem",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 0.88,
+   "centroid": [
+    41.1102,
+    29.0962
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1891,
+   "kat": {
+    "1_4": 1793,
+    "5_9": 98,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 962,
+    "1980_2000": 752,
+    "2000_sonrasi": 177
+   },
+   "yas40plus_yuzde": 50.9,
+   "deprem_agir_hasar": 7,
+   "deprem_orta": 59,
+   "gecici_barinma": 152,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 1,
+   "poi_kategori": {
+    "supermarket": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Çi̇ğdem: eski-stok %50.9 + deprem-hasar 7 → kentsel-dönüşüm baskısı [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/cubuklu": {
+  "mahalle_id": "istanbul/beykoz/cubuklu",
+  "ad": "Çubuklu",
+  "kimlik": {
+   "not": "Boğaz yalıları + sırt-siteleri (Beykoz Konakları civarı)",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 2.34,
+   "centroid": [
+    41.1026,
+    29.0867
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 3335,
+   "kat": {
+    "1_4": 3110,
+    "5_9": 224,
+    "9_19": 1
+   },
+   "yas": {
+    "1980_oncesi": 1414,
+    "1980_2000": 1493,
+    "2000_sonrasi": 428
+   },
+   "yas40plus_yuzde": 42.4,
+   "deprem_agir_hasar": 43,
+   "deprem_orta": 185,
+   "gecici_barinma": 483,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb",
+    "imar"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 26,
+   "poi_kategori": {
+    "supermarket": 8,
+    "atm": 7,
+    "bank": 3,
+    "pharmacy": 2,
+    "jewelry": 1,
+    "restaurant": 1
+   },
+   "baskin_islev": "ticaret/iş-merkezi",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "eczane:2"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": true,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Çubuklu: iş/ticaret çekirdeği (POI 26, yüksek-kat 1) → ticari-yoğunlaşma için gelişiyor [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/dereseki": {
+  "mahalle_id": "istanbul/beykoz/dereseki",
+  "ad": "Dereseki̇",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 8.73,
+   "centroid": [
+    41.1568,
+    29.149
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 722,
+   "kat": {
+    "1_4": 718,
+    "5_9": 4,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 130,
+    "1980_2000": 222,
+    "2000_sonrasi": 370
+   },
+   "yas40plus_yuzde": 18.0,
+   "deprem_agir_hasar": 2,
+   "deprem_orta": 19,
+   "gecici_barinma": 23,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Dereseki̇: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/elmali": {
+  "mahalle_id": "istanbul/beykoz/elmali",
+  "ad": "Elmali",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 4.35,
+   "centroid": [
+    41.1368,
+    29.1295
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 903,
+   "kat": {
+    "1_4": 880,
+    "5_9": 23,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 92,
+    "1980_2000": 501,
+    "2000_sonrasi": 310
+   },
+   "yas40plus_yuzde": 10.2,
+   "deprem_agir_hasar": 5,
+   "deprem_orta": 34,
+   "gecici_barinma": 48,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Elmali: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/fatih": {
+  "mahalle_id": "istanbul/beykoz/fatih",
+  "ad": "Fati̇h",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 3.6,
+   "centroid": [
+    41.0862,
+    29.1189
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 619,
+   "kat": {
+    "1_4": 583,
+    "5_9": 36,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 17,
+    "1980_2000": 0,
+    "2000_sonrasi": 602
+   },
+   "yas40plus_yuzde": 2.7,
+   "deprem_agir_hasar": 4,
+   "deprem_orta": 31,
+   "gecici_barinma": 83,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 1,
+   "poi_kategori": {
+    "pharmacy": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "eczane:1"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Fati̇h: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/goksu": {
+  "mahalle_id": "istanbul/beykoz/goksu",
+  "ad": "Göksu",
+  "kimlik": {
+   "not": "Küçüksu Kasrı + Göksu deresi; tarihi mesire",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 0.73,
+   "centroid": [
+    41.0779,
+    29.071
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 605,
+   "kat": {
+    "1_4": 580,
+    "5_9": 25,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 354,
+    "1980_2000": 126,
+    "2000_sonrasi": 125
+   },
+   "yas40plus_yuzde": 58.5,
+   "deprem_agir_hasar": 20,
+   "deprem_orta": 80,
+   "gecici_barinma": 140,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb",
+    "imar"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 16,
+   "poi_kategori": {
+    "restaurant": 7,
+    "cafe": 2,
+    "supermarket": 2,
+    "fuel": 1,
+    "convenience": 1,
+    "station": 1
+   },
+   "baskin_islev": "konut+çarşı",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "okul:1",
+    "eczane:1"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Göksu: eski-stok %58.5 + deprem-hasar 20 → kentsel-dönüşüm baskısı [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/gollu": {
+  "mahalle_id": "istanbul/beykoz/gollu",
+  "ad": "Göllü",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 14.61,
+   "centroid": [
+    41.1985,
+    29.2854
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 147,
+   "kat": {
+    "1_4": 147,
+    "5_9": 0,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 20,
+    "1980_2000": 36,
+    "2000_sonrasi": 91
+   },
+   "yas40plus_yuzde": 13.6,
+   "deprem_agir_hasar": 1,
+   "deprem_orta": 7,
+   "gecici_barinma": 8,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Göllü: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/gorele": {
+  "mahalle_id": "istanbul/beykoz/gorele",
+  "ad": "Görele",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 2.91,
+   "centroid": [
+    41.1107,
+    29.147
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 655,
+   "kat": {
+    "1_4": 650,
+    "5_9": 5,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 30,
+    "1980_2000": 412,
+    "2000_sonrasi": 213
+   },
+   "yas40plus_yuzde": 4.6,
+   "deprem_agir_hasar": 5,
+   "deprem_orta": 32,
+   "gecici_barinma": 50,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Görele: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/goztepe": {
+  "mahalle_id": "istanbul/beykoz/goztepe",
+  "ad": "Göztepe",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 2.59,
+   "centroid": [
+    41.0788,
+    29.0883
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1040,
+   "kat": {
+    "1_4": 904,
+    "5_9": 135,
+    "9_19": 1
+   },
+   "yas": {
+    "1980_oncesi": 189,
+    "1980_2000": 294,
+    "2000_sonrasi": 557
+   },
+   "yas40plus_yuzde": 18.2,
+   "deprem_agir_hasar": 19,
+   "deprem_orta": 90,
+   "gecici_barinma": 295,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 4,
+   "poi_kategori": {
+    "fuel": 1,
+    "bus_station": 1,
+    "cafe": 1,
+    "supermarket": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Göztepe: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/gumussuyu": {
+  "mahalle_id": "istanbul/beykoz/gumussuyu",
+  "ad": "Gümüşsuyu",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 2.45,
+   "centroid": [
+    41.1262,
+    29.1107
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 3151,
+   "kat": {
+    "1_4": 3087,
+    "5_9": 64,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 1354,
+    "1980_2000": 1211,
+    "2000_sonrasi": 586
+   },
+   "yas40plus_yuzde": 43.0,
+   "deprem_agir_hasar": 43,
+   "deprem_orta": 176,
+   "gecici_barinma": 357,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb",
+    "haber"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 26,
+   "poi_kategori": {
+    "convenience": 5,
+    "restaurant": 4,
+    "atm": 4,
+    "fast_food": 3,
+    "supermarket": 3,
+    "cafe": 2
+   },
+   "baskin_islev": "konut+çarşı",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "eczane:2"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Gümüşsuyu: eski-stok %43.0 + deprem-hasar 43 → kentsel-dönüşüm baskısı [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/incirkoy": {
+  "mahalle_id": "istanbul/beykoz/incirkoy",
+  "ad": "İnci̇rköy",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 1.99,
+   "centroid": [
+    41.1199,
+    29.1146
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 3237,
+   "kat": {
+    "1_4": 3124,
+    "5_9": 113,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 2043,
+    "1980_2000": 775,
+    "2000_sonrasi": 419
+   },
+   "yas40plus_yuzde": 63.1,
+   "deprem_agir_hasar": 25,
+   "deprem_orta": 149,
+   "gecici_barinma": 368,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 17,
+   "poi_kategori": {
+    "convenience": 8,
+    "hairdresser": 3,
+    "supermarket": 2,
+    "pharmacy": 1,
+    "greengrocer": 1,
+    "bicycle": 1
+   },
+   "baskin_islev": "konut+çarşı",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "eczane:1"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "İnci̇rköy: eski-stok %63.1 + deprem-hasar 25 → kentsel-dönüşüm baskısı [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/ishakli": {
+  "mahalle_id": "istanbul/beykoz/ishakli",
+  "ad": "İshakli",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 12.31,
+   "centroid": [
+    41.1376,
+    29.3141
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 656,
+   "kat": {
+    "1_4": 655,
+    "5_9": 1,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 64,
+    "1980_2000": 213,
+    "2000_sonrasi": 379
+   },
+   "yas40plus_yuzde": 9.8,
+   "deprem_agir_hasar": 5,
+   "deprem_orta": 26,
+   "gecici_barinma": 29,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "ckan_yapi_ibb",
+    "haber",
+    "ihale"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "İshakli: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/kanlica": {
+  "mahalle_id": "istanbul/beykoz/kanlica",
+  "ad": "Kanlica",
+  "kimlik": {
+   "not": "Boğaz Asya-yakası tarihi yerleşim; ünlü Kanlıca yoğurdu, yalılar, iskele",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 1.31,
+   "centroid": [
+    41.0985,
+    29.0721
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 743,
+   "kat": {
+    "1_4": 658,
+    "5_9": 84,
+    "9_19": 1
+   },
+   "yas": {
+    "1980_oncesi": 387,
+    "1980_2000": 206,
+    "2000_sonrasi": 150
+   },
+   "yas40plus_yuzde": 52.1,
+   "deprem_agir_hasar": 6,
+   "deprem_orta": 42,
+   "gecici_barinma": 97,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "ckan_yapi_ibb",
+    "imar"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 4,
+   "poi_kategori": {
+    "cafe": 1,
+    "restaurant": 1,
+    "school": 1,
+    "hotel": 1
+   },
+   "baskin_islev": "turizm/konut",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "okul:1"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": true,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Kanlica: turizm/ikinci-konut ekseni → kıyı/doğa-değeri için gelişiyor [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/kavacik": {
+  "mahalle_id": "istanbul/beykoz/kavacik",
+  "ad": "Kavacik",
+  "kimlik": {
+   "not": "FSM köprü-ayağı; iş/ofis merkezi, TEM bağlantısı",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 1.62,
+   "centroid": [
+    41.0904,
+    29.0833
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1989,
+   "kat": {
+    "1_4": 1296,
+    "5_9": 606,
+    "9_19": 87
+   },
+   "yas": {
+    "1980_oncesi": 959,
+    "1980_2000": 667,
+    "2000_sonrasi": 363
+   },
+   "yas40plus_yuzde": 48.2,
+   "deprem_agir_hasar": 30,
+   "deprem_orta": 134,
+   "gecici_barinma": 545,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 74,
+   "poi_kategori": {
+    "restaurant": 18,
+    "hairdresser": 9,
+    "cafe": 8,
+    "bank": 8,
+    "fast_food": 8,
+    "school": 3
+   },
+   "baskin_islev": "ticaret/iş-merkezi",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "okul:3",
+    "okul:1",
+    "eczane:3"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Kavacik: iş/ticaret çekirdeği (POI 74, yüksek-kat 87) → ticari-yoğunlaşma için gelişiyor [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/kaynarca": {
+  "mahalle_id": "istanbul/beykoz/kaynarca",
+  "ad": "Kaynarca",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 5.54,
+   "centroid": [
+    41.1724,
+    29.1527
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 218,
+   "kat": {
+    "1_4": 218,
+    "5_9": 0,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 3,
+    "1980_2000": 124,
+    "2000_sonrasi": 91
+   },
+   "yas40plus_yuzde": 1.4,
+   "deprem_agir_hasar": 1,
+   "deprem_orta": 8,
+   "gecici_barinma": 12,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Kaynarca: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/kilicli": {
+  "mahalle_id": "istanbul/beykoz/kilicli",
+  "ad": "Kiliçli",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 16.84,
+   "centroid": [
+    41.1573,
+    29.3207
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 332,
+   "kat": {
+    "1_4": 331,
+    "5_9": 1,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 0,
+    "1980_2000": 39,
+    "2000_sonrasi": 293
+   },
+   "yas40plus_yuzde": 0.0,
+   "deprem_agir_hasar": 1,
+   "deprem_orta": 11,
+   "gecici_barinma": 11,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "ckan_yapi_ibb",
+    "haber"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Kiliçli: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/mahmutsevketpasa": {
+  "mahalle_id": "istanbul/beykoz/mahmutsevketpasa",
+  "ad": "Mahmutşevketpaşa",
+  "kimlik": {
+   "not": "Kuzey orman köyü; mesire",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 16.04,
+   "centroid": [
+    41.1543,
+    29.1952
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 734,
+   "kat": {
+    "1_4": 727,
+    "5_9": 7,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 213,
+    "1980_2000": 254,
+    "2000_sonrasi": 267
+   },
+   "yas40plus_yuzde": 29.0,
+   "deprem_agir_hasar": 6,
+   "deprem_orta": 31,
+   "gecici_barinma": 40,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb",
+    "haber"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Mahmutşevketpaşa: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/merkez": {
+  "mahalle_id": "istanbul/beykoz/merkez",
+  "ad": "Merkez",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 3.55,
+   "centroid": [
+    41.1343,
+    29.1106
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1212,
+   "kat": {
+    "1_4": 1147,
+    "5_9": 64,
+    "9_19": 1
+   },
+   "yas": {
+    "1980_oncesi": 712,
+    "1980_2000": 291,
+    "2000_sonrasi": 209
+   },
+   "yas40plus_yuzde": 58.7,
+   "deprem_agir_hasar": 2,
+   "deprem_orta": 33,
+   "gecici_barinma": 63,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 47,
+   "poi_kategori": {
+    "fast_food": 7,
+    "cafe": 6,
+    "hairdresser": 5,
+    "restaurant": 4,
+    "jewelry": 4,
+    "convenience": 4
+   },
+   "baskin_islev": "ticaret/iş-merkezi",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "sağlık:1",
+    "eczane:3"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Merkez: iş/ticaret çekirdeği (POI 47, yüksek-kat 1) → ticari-yoğunlaşma için gelişiyor [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/ortacesme": {
+  "mahalle_id": "istanbul/beykoz/ortacesme",
+  "ad": "Ortaçeşme",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 0.81,
+   "centroid": [
+    41.1458,
+    29.092
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1548,
+   "kat": {
+    "1_4": 1517,
+    "5_9": 31,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 594,
+    "1980_2000": 705,
+    "2000_sonrasi": 249
+   },
+   "yas40plus_yuzde": 38.4,
+   "deprem_agir_hasar": 17,
+   "deprem_orta": 83,
+   "gecici_barinma": 196,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb",
+    "imar"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 15,
+   "poi_kategori": {
+    "pharmacy": 5,
+    "cafe": 3,
+    "restaurant": 2,
+    "supermarket": 2,
+    "hairdresser": 1,
+    "fast_food": 1
+   },
+   "baskin_islev": "konut+çarşı",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "eczane:5"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Ortaçeşme: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/ogumce": {
+  "mahalle_id": "istanbul/beykoz/ogumce",
+  "ad": "Öğümce",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 10.58,
+   "centroid": [
+    41.1542,
+    29.2478
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 352,
+   "kat": {
+    "1_4": 352,
+    "5_9": 0,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 81,
+    "1980_2000": 161,
+    "2000_sonrasi": 110
+   },
+   "yas40plus_yuzde": 23.0,
+   "deprem_agir_hasar": 4,
+   "deprem_orta": 18,
+   "gecici_barinma": 20,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Öğümce: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/ornekkoy": {
+  "mahalle_id": "istanbul/beykoz/ornekkoy",
+  "ad": "Örnekköy",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 3.69,
+   "centroid": [
+    41.1426,
+    29.1532
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1054,
+   "kat": {
+    "1_4": 1044,
+    "5_9": 10,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 20,
+    "1980_2000": 676,
+    "2000_sonrasi": 358
+   },
+   "yas40plus_yuzde": 1.9,
+   "deprem_agir_hasar": 6,
+   "deprem_orta": 38,
+   "gecici_barinma": 69,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Örnekköy: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/pasabahce": {
+  "mahalle_id": "istanbul/beykoz/pasabahce",
+  "ad": "Paşabahçe",
+  "kimlik": {
+   "not": "Paşabahçe Cam Fabrikası (1935) sanayi-mirası",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 0.57,
+   "centroid": [
+    41.1142,
+    29.093
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 741,
+   "kat": {
+    "1_4": 694,
+    "5_9": 47,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 474,
+    "1980_2000": 166,
+    "2000_sonrasi": 101
+   },
+   "yas40plus_yuzde": 64.0,
+   "deprem_agir_hasar": 15,
+   "deprem_orta": 72,
+   "gecici_barinma": 161,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb",
+    "haber"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 2,
+   "poi_kategori": {
+    "cafe": 2
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": true,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Paşabahçe: eski-stok %64.0 + deprem-hasar 15 → kentsel-dönüşüm baskısı [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/pasamandira": {
+  "mahalle_id": "istanbul/beykoz/pasamandira",
+  "ad": "Paşamandira",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 12.04,
+   "centroid": [
+    41.1712,
+    29.2355
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 559,
+   "kat": {
+    "1_4": 559,
+    "5_9": 0,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 50,
+    "1980_2000": 269,
+    "2000_sonrasi": 240
+   },
+   "yas40plus_yuzde": 8.9,
+   "deprem_agir_hasar": 8,
+   "deprem_orta": 26,
+   "gecici_barinma": 39,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Paşamandira: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/polonezkoy": {
+  "mahalle_id": "istanbul/beykoz/polonezkoy",
+  "ad": "Polonezköy",
+  "kimlik": {
+   "not": "1842 Polonyalı göçmen köyü (Adampol); Polonezköy Tabiat Parkı, doğa-turizm",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 29.22,
+   "centroid": [
+    41.1114,
+    29.1989
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 472,
+   "kat": {
+    "1_4": 469,
+    "5_9": 3,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 105,
+    "1980_2000": 155,
+    "2000_sonrasi": 212
+   },
+   "yas40plus_yuzde": 22.2,
+   "deprem_agir_hasar": 8,
+   "deprem_orta": 32,
+   "gecici_barinma": 27,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb",
+    "haber"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 4,
+   "poi_kategori": {
+    "restaurant": 2,
+    "museum": 2
+   },
+   "baskin_islev": "turizm/konut",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Polonezköy: turizm/ikinci-konut ekseni → kıyı/doğa-değeri için gelişiyor [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/poyrazkoy": {
+  "mahalle_id": "istanbul/beykoz/poyrazkoy",
+  "ad": "Poyrazköy",
+  "kimlik": {
+   "not": "Karadeniz ağzı; askeri bölge, balıkçı",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 8.54,
+   "centroid": [
+    41.1906,
+    29.1331
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 306,
+   "kat": {
+    "1_4": 300,
+    "5_9": 6,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 89,
+    "1980_2000": 12,
+    "2000_sonrasi": 205
+   },
+   "yas40plus_yuzde": 29.1,
+   "deprem_agir_hasar": 5,
+   "deprem_orta": 16,
+   "gecici_barinma": 0,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 3,
+   "poi_kategori": {
+    "restaurant": 3
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Poyrazköy: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/riva": {
+  "mahalle_id": "istanbul/beykoz/riva",
+  "ad": "Ri̇va",
+  "kimlik": {
+   "not": "Karadeniz kıyısı; plaj, Riva deresi, yeni-gelişen ikinci-konut",
+   "kaynak": "[bilgi]",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 22.51,
+   "centroid": [
+    41.2128,
+    29.2428
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1377,
+   "kat": {
+    "1_4": 1367,
+    "5_9": 9,
+    "9_19": 1
+   },
+   "yas": {
+    "1980_oncesi": 8,
+    "1980_2000": 64,
+    "2000_sonrasi": 1305
+   },
+   "yas40plus_yuzde": 0.6,
+   "deprem_agir_hasar": 3,
+   "deprem_orta": 37,
+   "gecici_barinma": 37,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 0,
+   "poi_kategori": {},
+   "baskin_islev": "turizm/konut",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Ri̇va: turizm/ikinci-konut ekseni → kıyı/doğa-değeri için gelişiyor [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/ruzgarlibahce": {
+  "mahalle_id": "istanbul/beykoz/ruzgarlibahce",
+  "ad": "Rüzgarlibahçe",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 3.42,
+   "centroid": [
+    41.0903,
+    29.1017
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1704,
+   "kat": {
+    "1_4": 1618,
+    "5_9": 58,
+    "9_19": 28
+   },
+   "yas": {
+    "1980_oncesi": 536,
+    "1980_2000": 826,
+    "2000_sonrasi": 342
+   },
+   "yas40plus_yuzde": 31.5,
+   "deprem_agir_hasar": 24,
+   "deprem_orta": 86,
+   "gecici_barinma": 166,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 28,
+   "poi_kategori": {
+    "restaurant": 7,
+    "fast_food": 4,
+    "pharmacy": 3,
+    "cafe": 3,
+    "convenience": 3,
+    "bank": 3
+   },
+   "baskin_islev": "ticaret/iş-merkezi",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "eczane:3"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Rüzgarlibahçe: iş/ticaret çekirdeği (POI 28, yüksek-kat 28) → ticari-yoğunlaşma için gelişiyor [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/soguksu": {
+  "mahalle_id": "istanbul/beykoz/soguksu",
+  "ad": "Soğuksu",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 0.94,
+   "centroid": [
+    41.1116,
+    29.1104
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1562,
+   "kat": {
+    "1_4": 1470,
+    "5_9": 92,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 378,
+    "1980_2000": 925,
+    "2000_sonrasi": 259
+   },
+   "yas40plus_yuzde": 24.2,
+   "deprem_agir_hasar": 3,
+   "deprem_orta": 41,
+   "gecici_barinma": 94,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb",
+    "haber"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 2,
+   "poi_kategori": {
+    "car_repair": 1,
+    "hairdresser": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Soğuksu: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/tokatkoy": {
+  "mahalle_id": "istanbul/beykoz/tokatkoy",
+  "ad": "Tokatköy",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 4.06,
+   "centroid": [
+    41.1628,
+    29.1007
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 2772,
+   "kat": {
+    "1_4": 2688,
+    "5_9": 84,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 995,
+    "1980_2000": 1366,
+    "2000_sonrasi": 411
+   },
+   "yas40plus_yuzde": 35.9,
+   "deprem_agir_hasar": 30,
+   "deprem_orta": 137,
+   "gecici_barinma": 324,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": true,
+   "eksenler": [
+    "ckan_yapi_ibb",
+    "haber"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 8,
+   "poi_kategori": {
+    "convenience": 3,
+    "pharmacy": 3,
+    "fast_food": 2
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "eczane:3"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Tokatköy: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/yalikoy": {
+  "mahalle_id": "istanbul/beykoz/yalikoy",
+  "ad": "Yaliköy",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 1.02,
+   "centroid": [
+    41.1412,
+    29.0826
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1328,
+   "kat": {
+    "1_4": 1295,
+    "5_9": 33,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 740,
+    "1980_2000": 346,
+    "2000_sonrasi": 242
+   },
+   "yas40plus_yuzde": 55.7,
+   "deprem_agir_hasar": 25,
+   "deprem_orta": 83,
+   "gecici_barinma": 165,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 20,
+   "poi_kategori": {
+    "jewelry": 3,
+    "convenience": 3,
+    "hairdresser": 3,
+    "atm": 2,
+    "cafe": 2,
+    "bakery": 2
+   },
+   "baskin_islev": "konut+çarşı",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": [
+    "eczane:1"
+   ]
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Yaliköy: eski-stok %55.7 + deprem-hasar 25 → kentsel-dönüşüm baskısı [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/yavuz_selim": {
+  "mahalle_id": "istanbul/beykoz/yavuz_selim",
+  "ad": "Yavuz Seli̇m",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 13.44,
+   "centroid": [
+    41.0733,
+    29.1791
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 1411,
+   "kat": {
+    "1_4": 1392,
+    "5_9": 19,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 30,
+    "1980_2000": 18,
+    "2000_sonrasi": 1363
+   },
+   "yas40plus_yuzde": 2.1,
+   "deprem_agir_hasar": 9,
+   "deprem_orta": 73,
+   "gecici_barinma": 114,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 1,
+   "poi_kategori": {
+    "fuel": 1
+   },
+   "baskin_islev": "konut/az-yoğun",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Yavuz Seli̇m: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/yeni_mahalle": {
+  "mahalle_id": "istanbul/beykoz/yeni_mahalle",
+  "ad": "Yeni̇ Mahalle",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": false
+  },
+  "fizik": {
+   "alan_km2": 2.47,
+   "centroid": [
+    41.0682,
+    29.0909
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "VERİ YOK/yok→İSKİ havza-sınırı",
+   "havza_guven": null
+  },
+  "yapi_stogu": {
+   "bina_2017": 3444,
+   "kat": {
+    "1_4": 3366,
+    "5_9": 78,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 1046,
+    "1980_2000": 1750,
+    "2000_sonrasi": 648
+   },
+   "yas40plus_yuzde": 30.4,
+   "deprem_agir_hasar": 68,
+   "deprem_orta": 290,
+   "gecici_barinma": 656,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 10,
+   "poi_kategori": {
+    "supermarket": 7,
+    "convenience": 2,
+    "car_repair": 1
+   },
+   "baskin_islev": "konut+çarşı",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Yeni̇ Mahalle: konut-ağırlıklı yerleşik doku; belirgin tek-eksen yok [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ },
+ "istanbul/beykoz/zerzavatci": {
+  "mahalle_id": "istanbul/beykoz/zerzavatci",
+  "ad": "Zerzavatçi",
+  "kimlik": {
+   "not": null,
+   "kaynak": "VERİ YOK→Wikipedia/belediye",
+   "koy_mahalle_6360": true
+  },
+  "fizik": {
+   "alan_km2": 3.47,
+   "centroid": [
+    41.1327,
+    29.1621
+   ],
+   "rakim_egim": "VERİ YOK→MAP DEM (SRTM/Copernicus, #18 join)",
+   "havza_kisiti": "Elmalı/Ömerli havzası + orman",
+   "havza_guven": "HİPOTEZ-coğrafi"
+  },
+  "yapi_stogu": {
+   "bina_2017": 286,
+   "kat": {
+    "1_4": 284,
+    "5_9": 2,
+    "9_19": 0
+   },
+   "yas": {
+    "1980_oncesi": 43,
+    "1980_2000": 157,
+    "2000_sonrasi": 86
+   },
+   "yas40plus_yuzde": 15.0,
+   "deprem_agir_hasar": 2,
+   "deprem_orta": 12,
+   "gecici_barinma": 22,
+   "kaynak": "İBB-2017 bina + İBB-deprem-2023"
+  },
+  "imar": {
+   "confirmed": false,
+   "eksenler": [
+    "betimsel",
+    "ckan_yapi_ibb"
+   ],
+   "imar_plan": "VERİ YOK→İBB Şehir Haritası/e-devlet (CKAN mahalle-plan yayınlamıyor)"
+  },
+  "islev": {
+   "osm_poi_toplam": 1,
+   "poi_kategori": {
+    "restaurant": 1
+   },
+   "baskin_islev": "orman/tarım (havza-kısıtlı)",
+   "baskin_guven": "HİPOTEZ",
+   "kamu_tesis": "VERİ YOK→OSM amenity ek-tara/belediye"
+  },
+  "erisim": {
+   "o7_km": "VERİ YOK→OSM yol-ağı mesafe",
+   "iskele": false,
+   "merkeze_uzaklik": "VERİ YOK→OSM route"
+  },
+  "sentez": "Zerzavatçi: havza/orman kısıtı → yapılaşma kilitli, düşük-yoğunluk kalıcı; gelişme SINIRLI [HİPOTEZ] · güven:#21-B · dayanak: İBB-2017/deprem-2023/OSM-poligon"
+ }
+}
