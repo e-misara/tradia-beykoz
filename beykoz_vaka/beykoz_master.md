@@ -1,9 +1,9 @@
 # BEYKOZ MASTER DOSYASI v1
 
 **Üreten:** CC-Signals (3. katman — istihbarat + çapraz kontrol) · **Tarih:** 2026-07-27
-**Kapsam:** 45 mahalle · 8 CC · 7 tur · SIG1→SIG5 + REVİZE-2/3 entegre
-**Durum:** ⚠️ **ÜST AKIL SÜZGECİNE SUNULDU** — Patron'a Üst Akıl onayından sonra gider
-**Disiplin:** $0 · A04 · V16 · #18 · #21-A/B/C · #31 KVKK (iç kullanım) · #34 · SİLME-YOK
+**Kapsam:** 45 mahalle · 9 CC · 8 tur · **SIG1→SIG6 entegre**
+**Durum:** ✅ **ÜST AKIL ONAYLADI (27.07.2026)** — r1 yaması uygulandı
+**Disiplin:** $0 · A04 · V16 · #18 · #21-A/B/C · **#31 dış-sınır uyumlu — arşiv public (Patron kararı 27.07), dış-sunum maskeleme ayrı karar** · #34 · SİLME-YOK
 
 ---
 
@@ -158,7 +158,8 @@
 
 ---
 
-# 4. SERMAYE HARİTASI — 11 aktör
+# 4. SERMAYE HARİTASI — mahalle-atfı kesin çekirdek
+*(tam liste: **17 aktör** — CC-Tic FINAL §2)*
 
 | # | Aktör | Mahalle | Ölçek | Halka açık | Kanıt |
 |---:|---|---|---|:-:|:-:|
@@ -167,13 +168,13 @@
 | 3 | **SISE → Çelikler Taahhüt** | **İncirköy** | 117.018,95 m² · **171,5 M USD** · 11 parsel · 2026-02-20 | ❌ | 🟢 **K=3** |
 | 4 | **PEKGY / SozInv → Tera Beykoz GYA** | Polonezköy | **3 proje** (Tera Orman + Garden + Aden) · Tera Orman ~25.000 m² / 70 villa · **SPV devri 03.03.2026, 341,2 M TL** | ✅ | 🟢 K=2 |
 | 5 | **Kalyon GYO** | **Riva** | Riva Country **1.300 villa** / 230 dönüm | ❌ *(doğrulandı)* | 🟡 K=1 |
-| 6 | **Ion / Kentsel GYO** | **Riva** | **933 birim** (830 satılık + 103 kiralık) · 84 ha · 2027 | ❓ | 🟡 K=1 |
+| 6 | **Ion / Kentsel GYO** | **Riva** | **933 birim** (830 satılık + 103 kiralık) · 84 ha · 2027 | ✅ *(Tic §5-6 · 2026 halka arz sürecinde)* | 🟡 K=1 |
 | 7 | **NEF (Timur Holding)** *(+Akiş +HSN — Tic §5-2)* | **Gümüşsuyu** | Karlıtepe **~1.300 konut / 220.000 m²** · mahallede **3 mega aktör** | 🔒 grup *(2026 halka arz sürecinde)* | 🟡 K=1 |
 | 8 | **MESA MESKEN** | Çubuklu *(ilanlarda Acarlar)* | Çubuklu 28 + Mesa Orman 2 | 🔒 | 🟢 **K=2** ⭑ |
 | 9 | **Envoy Gayrimenkul** | **İncirköy** | Envoy Vadi **300 konut / 65.000 m²** | ❌ | 🟡 K=1 |
 | 10 | **Sur Yapı** | **Soğuksu** | kentsel dönüşüm, ölçek yok | ❌ | 🟡 K=1 |
-| **12** | ★ **Torunlar GYO (TRGYO)** | **Paşabahçe** *(eski Tekel Fabrikası)* | 3 parsel **71.909 m²** · 129 odalı otel + 5 blok yalı + 5 blok rezidans · inşaat 62.859,56 m² · **otel 2028 başı** | ✅ | 🟢 **K=2** |
 | 11 | AGYO · ANELE | Çayağzı · Kavacık | 1.313 m² arsa (2016) · showroom (2016) | ✅ | 🟡 K=1 |
+| **12** | ★ **Torunlar GYO (TRGYO)** | **Paşabahçe** *(eski Tekel Fabrikası)* | 3 parsel **71.909 m²** · 129 odalı otel + 5 blok yalı + 5 blok rezidans · inşaat 62.859,56 m² · **otel 2028 başı** | ✅ | 🟢 **K=2** |
 
 > **Aktör sayısı 11 → 17'ye çıktı** (CC-Tic FINAL, T128-EK). Yukarıdaki tablo **Beykoz'da mahalle-atfı kesin olan** aktörleri gösterir; tam 17'lik liste `FINAL_cc_tic_beykoz.md` §2'dedir.
 
@@ -513,7 +514,7 @@ Ve dört bağımsız ölçüm köprü etkisini destekleyemedi: kıyı bandı 201
 
 ---
 
-# 9. OLAY DEFTERİ — 14 olay
+# 9. OLAY DEFTERİ — 17 olay (v5)
 
 **Dosya:** `~/tradia_basin/cikti/beykoz_olay_defteri.json` · kalıcı, sprintte güncellenir, **silinmez** — *"Tradia unutmaz"*
 
@@ -537,7 +538,7 @@ Ve dört bağımsız ölçüm köprü etkisini destekleyemedi: kıyı bandı 201
 | BEY-05 | Çubuklu vapur iptali | Çubuklu | ⬜ **SÖNDÜ** (12 ay devam haberi yok) | — |
 | BEY-12 | Su Sporları Festivali | sahil | rutin/yıllık | — |
 
-> ⚠️ **Defter bir kanıt katmanı değil, izleme listesidir** — 14 olayın 9'u tek kanallı.
+> ⚠️ **Defter bir kanıt katmanı değil, izleme listesidir** — 17 olayın 9'u tek kanallı.
 
 ## 9.1 ★ BEY-15 — İLK İNSAN GÖZLEM SİNYALİ
 
@@ -755,7 +756,7 @@ Bu tur boyunca **aynı hata sınıfı altı kez** çıktı. Hepsi **kendi sistem
 
 # 13. V16 — KENDİ İŞİME İTİRAZ
 
-1. **🔴 Kural 4 beş turdur karşılanmıyor.** §2 ısı tablosu, §8.4 watchlist ve §1 özet **benim ürettiğim** yorumlardır; denetleyeni yok. Bu artık bir eksik değil, **kalıcı yapısal borçtur.** Bu dosyanın Üst Akıl süzgecinden geçmesi tam olarak bunun içindir.
+1. **✅ Kural 4 — altı turdan sonra KARŞILANDI (27.07.2026).** §2 ısı tablosu, §8.4 watchlist ve §1 özet benim ürettiğim yorumlardır ve **beş tur boyunca denetleyensizdi**; bu belge **Üst Akıl süzgecinden geçti ve r1 yamasıyla onaylandı.** ⚠️ *Dürüst sınır: denetim **bu belgeye** yapıldı — SIG1-SIG5'in ara çıktıları ve `ic_watchlist.md` hâlâ denetlenmemiş durumda.*
 2. **Isı eşikleri benim kararım.** KAMU'da "≥2 gelişim ve ≥50 M TL" seçtim; 100 M seçseydim Kavacık ve Riva düşerdi. Kural kodda açıkta — **tartışılabilir olsun diye.**
 3. **★ ASKI × SERMAYE'yi ana bulgu yaptım — en riskli kararım.** Eşzamanlılık gerçek (iki ayrı CC), **ama nedensellik yok ve sıralama üç mahallede ölçülmedi.** Okuyucu bunu kolayca *"sermaye içeriden biliyor"* diye okuyabilir; üç yasak cümle koydum ama **bu okumayı tamamen engelleyemem.**
 4. **Sermaye payı dört kez düştü** (%95→%50→%36→%23), her seferinde paydaya yeni aktör girdiği için. **Payda hâlâ tamamlanmamış olabilir.**
@@ -767,7 +768,7 @@ Bu tur boyunca **aynı hata sınıfı altı kez** çıktı. Hepsi **kendi sistem
 10. **F4/F5'in TCMB rakamlarını bağımsız doğrulamadım** — tek kanal + yöntem doğrulaması.
 11. **Radar yalnız 3 mahallede koşuldu.** Kalan 42 mahalle için optik bulgular **tahkim edilmemiş** — Riva dahil.
 12. **"Öndelik" metriği tek sayıya indirgenmemeli** — karşılaştırma noktası bir seçimdir; başka bitiş noktası çok daha kısa süreler verir.
-13. **KVKK (#31):** kamu görevlisi/siyasetçi/kurumsal lider isimleri geçiyor. **Bu belge iç kullanımdır**; dış sunumda maskeleme Patron kararıdır.
+13. **KVKK (#31) — Patron kararıyla çözüldü (27.07.2026):** kamu görevlisi/siyasetçi/kurumsal lider isimleri geçiyor. **Arşiv public'tir (Patron kararı); dış-sunum maskelemesi AYRI bir karardır ve verilmemiştir.** Önceki turlarda bu belgeyi *"iç kullanım"* diye etiketlemiştim — **etiket düzeltildi**, ama uyarının kendisi geçerliliğini koruyor: sunum paketine çıkarken maskeleme kararı ayrıca alınmalı.
 14. **İlçe kıyaslaması hiçbir turda yapılmadı.** *"Beykoz diğer ilçelerden iyidir"* cümlesi **bu dosyada yoktur ve kurulamaz.**
 15. **🔴 BEY-15'te bir tur önceki kendi çıkarımımı geri çektim.** *"Bitişikte zemin hareketi görünüyor"* diye yazmıştım; **TT-MAP mini-penceresi bunu çürüttü** — Şubat'taki çıplaklık Haziran'da geri yeşermiş, **mevsimsel.** Bu, Beykoz'da fenoloji tuzağına düşen **üçüncü bulgu** (Ortaçeşme %17,1 · MAP28 NDVI>1 · şimdi bu) — ve **ikisinde de düşen benim yorumumdu**, ölçüm değil. **Uydu görüntüsünden göz kararıyla "hafriyat" demek, bu dosyanın tekrar eden zaafıdır.**
 16. **246 ada MESA'ya ait değil** (T128-EK) → *"MESA'nın sıradaki etabı"* çıkarımım **daraldı**: bitişiklik gerçek, **sahiplik bağı yok.** Geri çekmedim, sınırladım.
@@ -778,13 +779,13 @@ Bu tur boyunca **aynı hata sınıfı altı kez** çıktı. Hepsi **kendi sistem
 
 ## KARAR CÜMLESİ
 
-> **Bu dosya nerede, ne amaçla bir şeylerin olduğunu gösterir.** Beykoz'un 45 mahallesinden 22'sinde ölçülebilir hiçbir şey yok; beş yerde sinyal toplanıyor ve her biri farklı amaçla gelişiyor. Sermaye 2026'da yeniden hareketlendi ve **imar planının askıya çıktığı dört mahallede aynı anda pozisyon aldı.** Kısıt kalıcı, gecikme uzun, yönetişim riski açık, ve fiyatın gerçekleşen kenarı hâlâ ölçülemiyor.
+> **Bu dosya nerede, ne amaçla bir şeylerin olduğunu gösterir.** Beykoz'un 45 mahallesinden 21'inde ölçülebilir hiçbir şey yok; beş yerde sinyal toplanıyor ve her biri farklı amaçla gelişiyor. Sermaye 2026'da yeniden hareketlendi ve **imar planının askıya çıktığı dört mahallede aynı anda pozisyon aldı.** Kısıt kalıcı, gecikme uzun, yönetişim riski açık, ve fiyatın gerçekleşen kenarı hâlâ ölçülemiyor.
 >
 > **Ne edeceğini söylemiyorum — çünkü ölçmedik. Karar Patron'un.**
 
 ---
 
-**Kaynaklar (#21-B):** CC-İhale İ59-66 · CC-Borsa S54-61 · CC-TT-MAP MAP24-30 · CC-Basın S78-86 · CC-Sosyal S201-208 · CC-TT-AI TTA93-99 · CC-Analiz S46-52 · CC-Tic T125-127 · CC-Finans F1-F5 · CC-Signals SIG1-5
+**Kaynaklar (#21-B):** CC-İhale **İ59-69** · CC-Borsa **S54-61** · CC-TT-MAP **MAP24-33** · CC-Basın **S78-87** · CC-Sosyal **S201-209EK** · CC-TT-AI **TTA93-100** · CC-Analiz **S46-53** · CC-Tic **T1-128EK** · CC-Finans **F1-F6** · CC-Signals **SIG1-6**
 **Görseller:** `cikti/beykoz_isi_haritasi.png` · `kod/isi_haritasi_SIG3.py` · `kod/isi_gorseli.py` · `kod/sig5_backtest_watchlist.py`
-**Üreten:** CC-Signals · **Süzgeç:** ⚠️ Üst Akıl (bekliyor) · **Denetleyen:** ☐ (V16-1)
+**Üreten:** CC-Signals · **Süzgeç:** ✅ Üst Akıl · **Denetleyen:** **ÜST AKIL ✓ (27.07.2026)** — onay + r1 yaması ile
 **$0 · A04 · V16 · #18 · #21-A/B/C · #31 · #34 · SİLME-YOK**
