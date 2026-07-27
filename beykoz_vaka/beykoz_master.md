@@ -735,6 +735,28 @@ Bu tur boyunca **aynı hata sınıfı altı kez** çıktı. Hepsi **kendi sistem
 > ★ **Bu bir zayıflık listesi değil, dosyanın güven damgasıdır.** Altı vakanın **beşini sistem kendi içinde buldu**; hiçbiri dışarıdan gelmedi. **Doğru olay + yanlış etiket** artık tekil hata değil, **tanımlı bir hata sınıfıdır** ve SIG6'da ayrı kural olacak.
 > **İsim çakışması tuzağı:** EKGYO'nun *"Ortaçeşme"si* aslında **Maltepe'nin Ortaçeşme mahallesidir** — Beykoz'un Ortaçeşme'si değil. Adaş mahalle adları ilçe taramasında ayrı bir yanlış-pozitif kaynağıdır.
 
+## 12.1-B 🔒 YAPISAL TAVAN — mahalle bağlama %51,4'te durdu
+
+**CC-İhale, maksimal sözlükle (45 mahalle + eski köy adları + "köyü/mah." varyantları + tesis tablosu) yeniden taradı ve yalnız **+2** kayıt bağlayabildi.**
+
+| Aşama | Mahalle-bağlı | Not |
+|---|:-:|---|
+| İ59 | 29 / 144 | ilk sözlük |
+| İ61 | 72 / 144 | `Türk- Alman` parse düzeltmesi |
+| **İ70** | **74 / 144 = %51,4** | **maksimal sözlük → +2. TAVAN.** |
+
+**Bağlanamayan 70 kaydın dökümü:**
+
+| Sınıf | Adet | Neden bağlanamaz |
+|---|:-:|---|
+| Meşru ilçe-geneli | 36 | *"Muhtelif Cadde/Sokak" · "İlçe Sınırları" · "1./2. Bölge"* — **iş zaten ilçe ölçekli** |
+| Çok-ilçe MEM grubu | 28 | başka ilçelerin okul listeleri (Ataşehir/Avcılar/Bahçelievler) |
+| **İdare-adresi tuzağı, reddedildi** | **6** | İller Bankası *(Ankara)* · İSKİ Hizmet Alanları · İGDAŞ — yer adı **yalnız idarenin adresinde** |
+
+> 🔒 **`%51,4 = YAPISAL TAVAN` damgası.** Bu bir **sözlük açığı değil**; kaydın kendisi ilçe ölçekli veya çok ilçeli. **Daha zengin sözlük bunu açmaz** — İ70 maksimal denemeyle kanıtladı.
+> ★ **Yöntem sonucu:** *Beykoz kamu ihalelerinin yarısı mahalle düzeyinde analiz edilemez ve bu kalıcıdır.* KAMU ayağının kapsamı **%51,4 ile sınırlıdır**; bir mahallede kamu ayağının sönük olması, o mahallede kamu işi olmadığını değil, **kaydın mahalleye bağlanamadığını** da anlatabilir.
+> ✅ **6 idare-adresi reddi, İ65'in tuzak dersinin (#37) çalıştığının kanıtı** — İ61'de bunlar yanlış-pozitifti.
+
 ## 12.2 Şablon — diğer ilçelere taşınacak 20 kural
 
 **SIG1-2:** ham JSON oku (rapor değil) · eşiği tablodan **önce** yaz · sayaç ≠ ham kayıt · jenerik ad guard'ı · **marka adı ≠ mahalle adı** (kanon kadastral olanı alır) · zaman penceresini hizala · aynı dosyanın iki kez okunması **çift kanıt değildir** · **piyasa ilanı metni bir doğrulama kanalıdır** · yer-tutucu sıfır ≠ ölçülmüş sıfır

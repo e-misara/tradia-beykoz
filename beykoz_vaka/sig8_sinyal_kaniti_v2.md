@@ -214,6 +214,66 @@ eşik:           ● = skor ≥ 3,0
 
 ---
 
+# 5-EK. ★ SOĞUK KUZEY İKİ ALT-ZON — her mahalleye doğru izleme kanalı
+
+**Girdi:** CC-İhale **İ70** — 21 soğuk mahalle × RG/Hazine/2B çaprazı (İ67 kayıtları × EKAP)
+
+## 5-EK.1 Bulgu: 2B ile EKAP birbirini **dışlıyor**
+
+| İz | Adet/21 | Anlamı |
+|---|:-:|---|
+| **2B (mülkiyet dönüşümü)** | **14** | orman vasfını yitirmiş → satılabilir hale gelen arazi |
+| EKAP kamu ihalesi | 5 | kıyı/mahmuz/barınak işleri |
+| **Örtüşme** | **yalnız 1** (Alibahadır, düşük güven) | — |
+
+> ★ **Bu, kuzeyin tek bir "soğuk kuşak" olmadığını gösteriyor.** İki ayrı zon var ve **gelişim yolları da izleme kanalları da farklı** — birini diğerinin kanalıyla izlemek kör noktadır.
+
+## 5-EK.2 Zon tanımları
+
+| Zon | Gelişim yolu | **İzleme kanalı** | Kadans |
+|---|---|---|---|
+| **(a) İÇ-ORMAN 2B ZONU** | 🌲 **mülkiyet dönüşümü** — kamu parası gelmiyor, gelmeyecek; arazi orman rejiminden çıkarak satılabilir hale geliyor | **Milli Emlak / VGM ilanları** + **2B listeleri (OGM)** + **RG kamulaştırma** | aylık |
+| **(b) KIYI SOĞUK ZONU** | 🌊 **kamu kıyı işi** — mahmuz, balıkçı barınağı, iskele; 2B izi yok | **EKAP** (mevcut hasat) | mevcut |
+| **(c) İZ YOK** | ❓ ne mülkiyet dönüşümü ne kamu ihalesi izi | **kanal belirsiz** — önce hangi kanalın bakması gerektiği belirlenmeli | — |
+
+## 5-EK.3 Mahalle × zon × izleme kanalı — **"tarandı-sıfır" 17 mahalle**
+
+| Mahalle | Isı | **Zon** | **Doğru izleme kanalı** |
+|---|:-:|---|---|
+| **Akbaba** | 0 | 🌲 (a) iç-orman 2B | Milli Emlak · 2B listesi · RG |
+| **Dereseki** | 0 | 🌲 (a) | Milli Emlak · 2B listesi · RG |
+| **Kaynarca** | 0 | 🌲 (a) | Milli Emlak · 2B listesi · RG |
+| **Öğümce** | 0 | 🌲 (a) | Milli Emlak · 2B listesi · RG |
+| **Paşamandıra** | 0 | 🌲 (a) | Milli Emlak · 2B listesi · RG |
+| **Örnekköy** | 1 *(ARSA)* | 🌲 (a) | Milli Emlak · 2B listesi · RG |
+| **Anadolufeneri** | 1 *(ARSA)* | 🌲 (a) | Milli Emlak · 2B listesi · RG |
+| **Elmalı** | 1 *(ARSA)* | 🌲 (a) | Milli Emlak · 2B + ★ **BEY-19 İSKİ havza görüşü** |
+| **Mahmutşevketpaşa** | 1 *(ARSA)* | 🌲 (a) | Milli Emlak · 2B listesi · RG |
+| **Alibahadır** | 0 | ⚖️ **(a)+(b) ÖRTÜŞEN** *(tek örtüşme, EKAP izi düşük güven)* | **her iki kanal** — 2B + EKAP |
+| **Poyrazköy** | 0 | 🌊 (b) kıyı soğuk | **EKAP** *(balıkçı barınağı 6,0 M TL emsali)* |
+| **Kılıçlı** | 0 | 🌊 (b) *(⚠️ Beykoz mi Şile mi — İ70 düşük güven)* | **EKAP** + ilçe aidiyeti doğrulaması |
+| **Bozhane** | 0 | ❓ **(c) İZ YOK** | kanal belirsiz |
+| **Fatih** | 0 | ❓ (c) | kanal belirsiz |
+| **Göllü** | 0 | ❓ (c) | kanal belirsiz |
+| **Zerzavatçı** | 1 *(ARSA)* | ❓ (c) | kanal belirsiz — ama **arsa ilanı var (n=8)** |
+| **Görele** | 2 *(FİYAT+ARSA)* | ❓ (c) | kanal belirsiz — **piyasa tarafı canlı** (CSV 13 · arsa n=12) |
+
+**Dağılım:** 🌲 (a) **9** · 🌊 (b) **2** · ⚖️ örtüşen **1** · ❓ (c) **5**
+
+## 5-EK.4 Üç okuma
+
+**① Isı haritasının kuzeydeki körlüğü artık adreslendi.**
+(a) zonunun 9 mahallesinde **kamu ihalesi hiç olmayacak** — çünkü gelişim yolu kamu değil, **mülkiyet dönüşümü.** Bu mahalleleri EKAP'la izlemek, **yanlış kapıda beklemektir.** KAMU ayağının orada sıfır olması bir bulgu değil, **beklenen sonuç.**
+
+**② (c) sınıfı en derin sessizlik.**
+5 mahallede **ne 2B izi ne kamu ihalesi** var. Bunlardan **ikisinin piyasa tarafı canlı** (Görele: CSV 13 + arsa n=12 · Zerzavatçı: arsa n=8) — yani **satılıyor ama hiçbir resmî süreçte görünmüyor.** Bu, izlenecek kanalın henüz **belirlenmemiş** olduğu anlamına geliyor, olmadığı değil.
+
+**③ SIG7'nin (c) "gerçek sessiz" sınıfı inceldi.**
+SIG7'de Öğümce · Kaynarca · Göllü · Poyrazköy · Bozhane · Kılıçlı'yı *"dürüst sıfır"* diye işaretlemiştim. İ70 bunların **dördünün** aslında bir zona ait olduğunu gösterdi (Öğümce/Kaynarca → 2B · Poyrazköy/Kılıçlı → kıyı-EKAP). **Gerçekten hiçbir ize sahip olmayan yalnız Göllü ve Bozhane.**
+> 🔴 **Yani SIG7'nin "6 gerçek sessiz" sayısı da fazlaydı — doğrusu 2.** *"Sessiz"* dediğim yerlerin çoğu **yanlış kanaldan bakıldığı için sessizdi.*
+
+---
+
 # 6. CEVAPLAYAMADIKLARIM · V16
 
 ## Ölçemediklerim
