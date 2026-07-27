@@ -74,6 +74,8 @@
 
 **Dağılım:** 6→1 · 5→3 · 4→4 · 3→1 · 2→7 · 1→8 · **0→21 (%47)**
 
+> 🔍 **SIG7 denetimi (28.07):** 21 sıfır mahalle tek tek yeniden sorgulandı → **6'sı eşik/bağlantı hatası** (veri var, ayak yanmadı — Anadolu Hisarı · Baklacı · Çavuşbaşı Çiftlik · Görele · Mahmutşevketpaşa · Elmalı) · **9'u kanal körlüğü** · **6'sı gerçek sessiz.** ★ **Beykoz'un ölçülmüş en pahalı hücresi (yalı-köşk 545.455 TL/m², n=9) 0 ayaklı bir mahallede duruyordu** — FİYAT ayağının *"CSV≥10 **VE** uzantı≥20"* kuralı zayıf kaynağı bağlayıcı yapıyor, ve **S53 emsal v2 ısıya hiç bağlı değil.** **Eşik bu turda DEĞİŞTİRİLMEDİ** (karar Üst Akıl'da); E1 onaylanırsa 0-ayak **21→17**. Detay: [`sig7_21_denetim.md`](sig7_21_denetim.md)
+
 ### İMAR ayağını taşıyan 10 mahalle
 
 | Dayanak | Mahalle |
