@@ -32,20 +32,20 @@
 
 | | |
 |---|---|
-| **Mahalle** | 45 · **22'sinde (%49) ölçülebilir hiçbir sinyal yok** |
-| **Sıcak nokta** | Riva 6/8 · Kavacık 5/8 · Çubuklu · Tokatköy · Yalıköy 4/8 |
+| **Mahalle** | 45 · **21'inde (%47) ölçülebilir hiçbir sinyal yok** |
+| **Sıcak nokta** | **Riva 6/9** · Çubuklu · Kavacık · Tokatköy **5/9** · Gümüşsuyu · İncirköy · **Paşabahçe** · Yalıköy **4/9** |
 | **Gelişim amacı** | Çubuklu **eğitim** · Gümüşsuyu **sağlık** · İncirköy + Polonezköy **sermaye** · Riva **karma** · Tokatköy **konut (tamamlandı)** |
 | **Yapı stoku** | **51.201 bina** · %95,1'i 1–4 kat · 9–19 kat toplam **121**, bunun **87'si Kavacık'ta** |
-| **Arz kısıtı** | %62 orman/kırsal + askeri alan + **koruma amaçlı imar rejimi** — kırılma yolu **üç: 2B · TOKİ/dönüşüm · özel orman** |
+| **Arz kısıtı** | **4 kısıt tipi** (Boğaziçi · orman-SİT · doğal-SİT · **NATO-POL**) · kırılma yolu **üç** (2B · TOKİ/dönüşüm · özel orman) · **+ yargı ayağı: Çavuşbaşı davası reddedildi (2024), 2B cephesi hukuken temizlendi** |
 | **Kamu parası** | 144 ihale — **yalnız 64'ü yeni yatırım, 80'i bakım.** Gelişim iki kurumda |
-| **Kurumsal konut arzı** | **3.011 birim / 11 aktör** · kamu (EKGYO) payı **~%23** — 2.303 birimi tek kanallı |
+| **Kurumsal konut arzı** | **3.011 birim / 17 aktör** · kamu (EKGYO) payı **~%23** — 2.303 birimi tek kanallı |
 | **İl çıpası** | İstanbul değerleme **87.301 TL/m²** (2026-Q2, TCMB) · fiyat reel **−%5,16** · **kira reel +%0,99 — tek pozitif** |
 | **Yönetişim** | Seçilmiş başkan tutuklu · rüşvet/irtikap davası **2. dalgada** · 3. dalga bekleniyor |
 | **★ Ana bulgu** | **1/5000 askısındaki 7 mahallenin 4'ünde eşzamanlı sermaye girişi** (§6) |
 
 ## 1.1 Tek paragrafta Beykoz
 
-> Beykoz her yeri değil. 45 mahallenin 22'sinde ölçülebilir hiçbir sinyal yok; **beş yerde toplanıyor ve her biri farklı amaçla gelişiyor.** Üçte ikisi orman/kırsal ve koruma amaçlı imar rejiminde — bu kısıt fiyatı destekler, **aynı kısıt projeyi de sekiz yıl bekletir.** Sermaye 2026'da yeniden hareketlendi: Şişecam 117 bin m²'yi **171,5 milyon dolara** Çelikler Taahhüt'e devretti, Peker GYO Polonezköy'de 70 villaya başladı, Riva'da üç mega proje aynı anda ilan edildi. **Ve piyasa bunu okuyor** — İncirköy'de bir emlakçı, işlemin tutarını ve alıcısını birebir yazarak komşu arsayı pazarlıyor. Ama **imar kararlarını veren belediyenin seçilmiş başkanı tutuklu** ve dava bu ay ikinci dalgaya genişledi. Fiyatta ise hâlâ tek kenardayız: elimizdekiler **istenen** fiyat; gerçekleşen fiyat kanalı (tapu) sistemde yok.
+> Beykoz her yeri değil. 45 mahallenin 21'inde ölçülebilir hiçbir sinyal yok; **beş yerde toplanıyor ve her biri farklı amaçla gelişiyor.** Üçte ikisi orman/kırsal ve koruma amaçlı imar rejiminde — bu kısıt fiyatı destekler, **aynı kısıt projeyi de sekiz yıl bekletir.** Sermaye 2026'da yeniden hareketlendi: Şişecam 117 bin m²'yi **171,5 milyon dolara** Çelikler Taahhüt'e devretti, Peker GYO Polonezköy'de 70 villaya başladı, Riva'da üç mega proje aynı anda ilan edildi. **Ve piyasa bunu okuyor** — İncirköy'de bir emlakçı, işlemin tutarını ve alıcısını birebir yazarak komşu arsayı pazarlıyor. Ama **imar kararlarını veren belediyenin seçilmiş başkanı tutuklu** ve dava bu ay ikinci dalgaya genişledi. Fiyatta ise hâlâ tek kenardayız: elimizdekiler **istenen** fiyat; gerçekleşen fiyat kanalı (tapu) sistemde yok.
 
 ---
 
@@ -54,22 +54,35 @@
 📊 **Görsel:** [`cikti/beykoz_isi_haritasi.png`](cikti/beykoz_isi_haritasi.png)
 🔧 **Kural:** [`kod/isi_haritasi_SIG3.py`](kod/isi_haritasi_SIG3.py) — eşikler kodda sabit, tartışmaya açık
 
-| Mahalle | Ayak | KAMU | SERM | UYDU | HABER | SÖYLEM | FİYAT | YAPI | TİC |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Riva** | **6** | ● | ● | · | ● | ● | ● | · | ● |
-| **Kavacık** | **5** | ● | ● | · | · | ● | · | ● | ● |
-| **Çubuklu** | **4** | ● | · | · | ● | · | · | ● | ● |
-| **Tokatköy** | **4** | · | ● | ● | · | · | · | ● | ● |
-| **Yalıköy** | **4** | ● | · | ● | · | · | · | ● | ● |
-| Gümüşsuyu | 3 | ● | · | · | · | · | · | ● | ● |
-| İncirköy | 3 | · | ● | · | · | · | · | ● | ● |
-| Çamlıbahçe ⚠️ | 2 | · | · | ● | · | · | · | ● | · |
-| Kanlıca · Merkez · Paşabahçe · Polonezköy | 2 | değişken | | | | | | | |
-| **Ortaçeşme** ⬇ | **1** | · | · | ~~●~~ | · | · | · | ● | · |
-| 9 mahalle | 1 | tek ayak | | | | | | | |
-| **22 mahalle** | **0** | · | · | · | · | · | · | · | · |
+> 🆕 **9. AYAK EKLENDİ — İMAR.** İ66/İ69 ile Beykoz'un imar süreci ölçülebilir hale geldi. **Eşik:** 6306 riskli alan **veya** 18. madde uygulaması **veya** 1/5000–1/1000 askı (2025-26).
+> 🆕 **Paşabahçe SERMAYE + TİC kazandı** (Torunlar GYO, K=2) → **2/8'den 4/9'a.**
 
-**Dağılım:** 6→1 · 5→1 · 4→3 · 3→2 · 2→6 · 1→10 · **0→22 (%49)**
+| Mahalle | Ayak | KAMU | SERM | UYDU | HABER | SÖYLEM | FİYAT | YAPI | TİC | **İMAR** |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Riva** | **6** | ● | ● | · | ● | ● | ● | · | ● | · |
+| **Çubuklu** ⬆ | **5** | ● | · | · | ● | · | · | ● | ● | **●** |
+| **Kavacık** | **5** | ● | ● | · | · | ● | · | ● | ● | · |
+| **Tokatköy** ⬆ | **5** | · | ● | ● | · | · | · | ● | ● | **●** |
+| **Gümüşsuyu** ⬆ | **4** | ● | · | · | · | · | · | ● | ● | **●** |
+| **İncirköy** ⬆ | **4** | · | ● | · | · | · | · | ● | ● | **●** |
+| **Paşabahçe** ⬆⬆ | **4** | · | **●** | · | ● | ● | · | · | **●** | · |
+| **Yalıköy** | **4** | ● | · | ● | · | · | · | ● | ● | · |
+| Polonezköy ⬆ | 3 | · | ● | · | · | · | · | · | ● | ● |
+| Çamlıbahçe ⚠️ · Kanlıca · Merkez · Soğuksu ⬆ · Acarlar ⬆ · Göztepe ⬆ · Rüzgarlıbahçe ⬆ | 2 | | | | | | | | | |
+| **Ortaçeşme** ⚠️ · Çiğdem ⬆ · Yavuz Selim · Çengeldere · Göksu · Yeni Mahalle · İshaklı · Anadolu Kavağı | 1 | | | | | | | | | |
+| **21 mahalle** | **0** | · | · | · | · | · | · | · | · | · |
+
+**Dağılım:** 6→1 · 5→3 · 4→4 · 3→1 · 2→7 · 1→8 · **0→21 (%47)**
+
+### İMAR ayağını taşıyan 10 mahalle
+
+| Dayanak | Mahalle |
+|---|---|
+| **6306 riskli alan** | **Tokatköy** (onaylı+yürürlükte) · **Çubuklu-B** (09.04.2018 Bakanlar Kurulu, **5,6 ha**, 18. madde **askıda**) |
+| **18. madde uygulaması** | **Gümüşsuyu** (1897 ada, Bakanlık onay 06.10.2023) · **Çubuklu-B** (askı 22.12.2025, PARSİD) |
+| **1/5000 Boğaziçi KA askısı** (31.12.2025–29.01.2026) | İncirköy · Çiğdem · Soğuksu · Acarlar · Rüzgarlıbahçe · Gümüşsuyu · Çubuklu |
+| **1/1000 KAUİP askısı** | **Göztepe** (2760 ada 110 parsel, 21.07.2026) |
+| **KA planı 2. askı itirazı** | **Polonezköy** |
 
 ### Isı ayaklarının tanımı
 
@@ -97,12 +110,28 @@
 
 | Mahalle | Uydu | Kamu ne için | Sermaye | **AMAÇ** |
 |---|---|---|---|---|
-| **Çubuklu** | yeşil kaybı **yok** | **8 gelişim / 266,3 M TL · 8/8'i EĞİTİM** (Türk-Alman Üniv., 5 yıl kesintisiz, 5 ilan açık) | — *(MESA 🟡)* | 🎓 **EĞİTİM** — kurum parseline kapalı |
+| **Çubuklu** | yeşil kaybı **yok** | **8 gelişim / 266,3 M TL · 8/8'i EĞİTİM** (Türk-Alman Üniv., 5 yıl kesintisiz, 5 ilan açık) | — *(MESA 🟡)* | 🎓 **EĞİTİM (kıyı)** + 🏗️ **DÖNÜŞÜM (iç)** — **iki-yüzlü, aşağı bkz.** |
 | **Gümüşsuyu** | yeşil kaybı **yok** | **3 gelişim / 4.194,8 M TL · 3/3'ü SAĞLIK** + bitişik Çırçır Deresi ıslahı | NEF Karlıtepe 🟡 | 🏥 **SAĞLIK** — tek mega tesis |
 | **İncirköy** | **değişim SIFIR** | **0 gelişim ihalesi** | **Çelikler 171,5 M$** 🟢 + Envoy Vadi 🟡 | 💰 **SERMAYE/ARSA** — proje henüz yok |
 | **Polonezköy** | orman %98, **korunuyor** | 2 gelişim / **yalnız 3,0 M TL**, ikisi de Tarım-Orman Bakanlığı | PEKGY 70 villa 🟢 | 🌲 **İKİ ZIT AMAÇ** — kamu korur, sermaye villa yapar |
 | **Riva** | ⏸️ **4 turdur ölçülmüyor** | 2 gelişim / 120,9 M TL (kıyı + güvenlik) | **3 mega proje** | 🔀 **KARMA** — özel konut + kamu spor/turizm |
 | **Tokatköy** | **NDVI −0,134** (tek yeşil kaybı) | 0 gelişim | EKGYO 2 etap 1,68 Mr TL 🟢 | 🏘️ **KONUT — tamamlandı** |
+
+## 3.0 ★★ ÇUBUKLU İKİ-YÜZLÜ — tek mahalle adı, iki ayrı bölge
+
+**Beykoz'un tek mahallesi iki farklı imza taşıyor** *(İ69, WebSearch-doğrulanmış)*:
+
+| | **KIYI (Boğaz)** | **İÇ (Kavacık kavşağı kuzeyi)** |
+|---|---|---|
+| İmza | 🎓 **eğitim / kampüs** | 🏗️ **riskli alan / kentsel dönüşüm** |
+| Dayanak | Türk-Alman Üniversitesi · 19 ihale · 8 gelişim / 266,3 M TL · 5 yıl kesintisiz | **09.04.2018 Bakanlar Kurulu riskli alan · 5,6 ha · adalar 823·833·834·835** |
+| Durum | **5 ilan hâlâ açık** — sürüyor | **18. madde askıda** (22.12.2025, PARSİD) · 1/5000 KA NİP + 1/1000 KA UİP |
+| Konum | Boğaz kıyı bandı | Anadolu Hisarı + **E-80 Bağlantı Yolu doğusu** |
+| Kurumsal iz | kampüs kendi parselinde kapalı | **İBB Çubuklu İmar-Mülkiyet Çözüm Ofisi kuruldu** |
+
+> ★ **Bu bir çelişki değil, coğrafi ayrımdır.** Isı tablosunda tek satır olarak görünen Çubuklu, aslında **birbirinden bağımsız iki süreç** yürütüyor. Mahalle bazlı analizin sınırı tam burası: **birim mahalle, olgu mahalle-altı.**
+> ⚠️ **Sonuç:** Çubuklu'nun 5/9 skoru **iki bölgenin toplamıdır**; hiçbir alt-bölge tek başına 5 ayak taşımıyor. Yatırım okuması yapılırken **hangi Çubuklu** sorusu sorulmalıdır.
+> 🔴 **Açık:** *"Çubuklu A Bölgesi"* — B doğrulandı; A ayrı riskli alan mı, aynı projenin etabı mı **belirsiz** (İ69). Basın S87 kanal aradı: **CSB filtre-URL çalışmıyor, planaski JS-form** → **basın kanalı YOK, resmî kanal takipte.**
 
 ## 3.1 ★ Örüntü: kamu parası ile fiziksel büyüme KOPUK
 
@@ -136,14 +165,17 @@
 | 1 | **EKGYO** | **Riva** | **708 konut + 68 dükkan** (KAP yapı ruhsatı idx 709039 + 887441) · ASKSTG 3,808 Mr TL | ✅ | 🟢 K=2 |
 | 2 | **EKGYO** | **Tokatköy** | 2 etap · **789,7 + 889,9 M TL** · yüklenici **TURGUT Müteahhitlik** | ✅ | 🟢 K=2 |
 | 3 | **SISE → Çelikler Taahhüt** | **İncirköy** | 117.018,95 m² · **171,5 M USD** · 11 parsel · 2026-02-20 | ❌ | 🟢 **K=3** |
-| 4 | **PEKGY / SozInv** | Polonezköy | ~25.000 m² · **70 villa** · 2028 | ✅ | 🟡 K=1 |
+| 4 | **PEKGY / SozInv → Tera Beykoz GYA** | Polonezköy | **3 proje** (Tera Orman + Garden + Aden) · Tera Orman ~25.000 m² / 70 villa · **SPV devri 03.03.2026, 341,2 M TL** | ✅ | 🟢 K=2 |
 | 5 | **Kalyon GYO** | **Riva** | Riva Country **1.300 villa** / 230 dönüm | ❌ *(doğrulandı)* | 🟡 K=1 |
 | 6 | **Ion / Kentsel GYO** | **Riva** | **933 birim** (830 satılık + 103 kiralık) · 84 ha · 2027 | ❓ | 🟡 K=1 |
-| 7 | **NEF (Timur Holding)** | **Gümüşsuyu** | Karlıtepe **~1.300 konut / 220.000 m²** | 🔒 grup | 🟡 K=1 |
+| 7 | **NEF (Timur Holding)** *(+Akiş +HSN — Tic §5-2)* | **Gümüşsuyu** | Karlıtepe **~1.300 konut / 220.000 m²** · mahallede **3 mega aktör** | 🔒 grup *(2026 halka arz sürecinde)* | 🟡 K=1 |
 | 8 | **MESA MESKEN** | Çubuklu *(ilanlarda Acarlar)* | Çubuklu 28 + Mesa Orman 2 | 🔒 | 🟢 **K=2** ⭑ |
 | 9 | **Envoy Gayrimenkul** | **İncirköy** | Envoy Vadi **300 konut / 65.000 m²** | ❌ | 🟡 K=1 |
 | 10 | **Sur Yapı** | **Soğuksu** | kentsel dönüşüm, ölçek yok | ❌ | 🟡 K=1 |
+| **12** | ★ **Torunlar GYO (TRGYO)** | **Paşabahçe** *(eski Tekel Fabrikası)* | 3 parsel **71.909 m²** · 129 odalı otel + 5 blok yalı + 5 blok rezidans · inşaat 62.859,56 m² · **otel 2028 başı** | ✅ | 🟢 **K=2** |
 | 11 | AGYO · ANELE | Çayağzı · Kavacık | 1.313 m² arsa (2016) · showroom (2016) | ✅ | 🟡 K=1 |
+
+> **Aktör sayısı 11 → 17'ye çıktı** (CC-Tic FINAL, T128-EK). Yukarıdaki tablo **Beykoz'da mahalle-atfı kesin olan** aktörleri gösterir; tam 17'lik liste `FINAL_cc_tic_beykoz.md` §2'dedir.
 
 ⭑ **MESA K=2:** T126 (GYODER kaydı) + **19 gerçek sahibinden ilanı** ("Mesa Orman", "Mesa Çubuklu 28", "MESA 28") + Sosyal S208'de 9 doğrudan video.
 
@@ -193,6 +225,32 @@ Arz kıtlığı iki yarı olarak yazılmıştı: **fiziksel** (%62 orman/kırsal
 | **1** | **2B** | orman rejiminden çıkarır | 2015 imar planında **233 hektar 2B arazi** dönüşüm için (TMMOB itirazı) | 🟡 1 |
 | **2** | **TOKİ / kentsel dönüşüm** | yapılı dokuyu yeniden kurar | **Tokatköy dönüşüm alanı ONAYLI** (Meclis 2026-01-08) · EKGYO 1,68 Mr TL · nüfus −%14 · **Sur Yapı Soğuksu** | 🟢 3 |
 | **3** | **★ ÖZEL ORMAN** | statü korunurken **sınırlı yapılaşma hakkı** doğar — kilit kırılmaz, **esner** | **Acarkent 316/4 · ~1.800.000 m² · kat irtifakı kurulmuş** · **Kundura 183 dönüm** | 🟢 3 |
+
+## 5.0 🆕 KISIT TİPİ 3 → 4: NATO-POL boru hattı
+
+| Alan | Bulgu |
+|---|---|
+| İşletmeci | MSB Akaryakıt İkmal ve **NATO POL Tesisleri** İşletme Başkanlığı (4636 s.) |
+| Dayanak | İBB Meclis **18.03.2016 No. 546** · plan notları **refId 54022** |
+| Kısıt | Güzergâh boyunca **yapılaşma kısıtlı koruma kuşağı**; **deplase = MSB onayı şart** |
+| Etkilenen (tahmini) | **Kavacık · Anadolu Hisarı · Çubuklu (iç)** — E-80/TEM koridoru ekseni |
+
+> **Beykoz'un kısıt tipi artık dört:** Boğaziçi Kanunu · orman-SİT · doğal-SİT · **NATO-POL koruma kuşağı.**
+> 🔴 **Dürüst not (İ69):** tam mahalle güzergâhı **refId 54022 plan notları görüntülemesi** gerektiriyor (#8 scrape yok) → **etkilenen mahalleler TAHMİN**, kesin değil. Ve **NATO-POL koridoru ile Çubuklu riskli alanı bitişik** — birebir çakışma doğrulanmadı.
+
+## 5.0-B ⚖️ ZİNCİRE YARGI KATMANI — Çavuşbaşı davası
+
+| Katman | Bulgu | Güven |
+|---|---|:-:|
+| **Davacı** | **Mimarlar Odası** *(dernek)* | V |
+| Konu | Çavuşbaşı 1/5000 KA Revizyon NİP + 1/1000 KA Revizyon UİP · **iptal talebi** |
+| Kapsam | **Çengeldere · Fatih · Yavuz Selim · Baklacı · Çiftlik · Görele** (6 mahalle) | V |
+| **Sonuç** | Mahkeme **hukuka aykırılık bulmadı → iptal REDDEDİLDİ** (istinaf) · **planlar yürürlüğe döndü (2024-04)** | V |
+
+> 🔴 **Bir kaynak düzeltmesi (A04):** CC-Sosyal S208'de bu olay *"CHP İl Başkanlığı Beykoz planlarının iptalini istedi"* diye geçiyordu. **İddianın çekirdeği gerçek** (dava vardı) ama **çerçevelemesi taraflı**: hukuki fail **parti değil, Mimarlar Odası**; ve **sonuç iddianın ima ettiğinin tersi** — iptal reddedildi, planlar ayakta.
+> ★ **Vaka bağlantısı:** Dava konusu Çavuşbaşı = İ67'nin **#1 2B mahallesi**. Yani Beykoz'un arz kıtlığı cephesi **mahkemede de çekişildi** — plan yapıldı, dava edildi, **ayakta kaldı** → **2B cephesinde hukuki belirsizlik ÇÖZÜLDÜ (2024).** Bu, §6'daki askı×sermaye eşzamanlılığının **yargı ayağıdır.**
+> ⚠️ **İki ayrı plan cephesi var:** (a) **Çavuşbaşı / iç-kuzey** — dava edildi, reddedildi, 2B kuşağı · (b) **Boğaziçi kıyı** — İ66'nın 7 mahallelik 2026 askısı. **Litigation iç-kuzeyde yoğunlaşmış, askı kıyıda.**
+> 🔴 **Sınır:** UYAP karar araması **public değil**; karar metni ve esas numarası **çekilemedi** — sonuç (ret) yalnız basın yansımasından.
 
 > ⏸️ **T128 BEKLEMEDE.** §5'teki parsel/tapu kayıtları **Üst Akıl bildirimidir**; kaynağı Patron'un manuel TKGM sorgusu (İ64'ün izin verdiği tek yol). **Sistemde karşılık CC çıktısı YOK** — `~/tradia_tic`, `~/cc_ihale/cikti`, `~/tradia_basin/cikti`, `~/finans` tarandı, bulunamadı. T128 (TKGM 3 deste) geldiğinde bu bölüm **kaynak-tam** hale gelir; şu an **K=1 birincil-tekil + benim eklediğim ikinci kanal** ile duruyor.
 
@@ -309,7 +367,67 @@ Arz kıtlığı iki yarı olarak yazılmıştı: **fiziksel** (%62 orman/kırsal
 > **Soru "Beykoz'a girer miyim" değil, "Beykoz'un hangi tarafına".**
 > ✅ **Riva "başa baş"** — İstanbul'u **geçmedi** (+0,7 puan, reel ikisi de negatif).
 > 🔴 *Çavuşbaşı Çiftlik +%90,2* **kullanılmadı**: n=10→17, yıllıklandırma artefaktı. **Küçük örneklemde yıllıklandırma yasak.**
-> **Beykoz'da ölçülebilen tek getiri: Kavacık ticari ≈ %6,06** — güven %45, dört uyarıyla (n=7 · farklı sprintler · ilan fiyatı · brüt).
+## 7.4 🆕 EMSAL v2 — tip bazlı (84 GÜÇLÜ hücre)
+
+**Dönem etiketi: `S48_UZANTI_2026-Haz-Tem`** — her hücre bu dönemdendir, etiketsiz alıntılanamaz.
+
+| Hücre durumu | Sayı | Dosyada |
+|---|---:|---|
+| **GÜÇLÜ (n≥8)** | **84** | ✅ **yayın** |
+| Zayıf (3≤n<7) | **78** | 🔒 iç kullanım |
+| Gizli (n<3) | **88** | ❌ rakam yok |
+
+> **F6'nın 20 hücresi → S53'te 84 hücre (+4,2×).** Aşağıda **yalnız GÜÇLÜ hücreler** var; **78 hücre iç kullanımda, 88 hücre veri yetersizliğinden hiç yazılmadı.**
+
+### Satılık · TL/m² *(GÜÇLÜ)*
+
+| Tip | Mahalle | n | Medyan | [Q1 – Q3] |
+|---|---|---:|---:|---|
+| **yalı-köşk** | **Anadolu Hisarı** | 9 | **545.455** | 314K – 800K |
+| rezidans | Acarlar | 10 | 247.636 | 194K – 263K |
+| villa | Acarlar | 85 | 245.455 | 190K – 300K |
+| daire | Acarlar | 53 | 227.600 | 164K – 267K |
+| villa | Kanlıca | 11 | 200.000 | 158K – 235K |
+| daire | Çiğdem | 17 | 183.333 | 166K – 227K |
+| daire | Kanlıca | 15 | 168.750 | 101K – 575K |
+| villa | Riva | 97 | 164.141 | 113K – 200K |
+| villa | Baklacı | 21 | 151.429 | 50K – 240K |
+| **villa** | **Ortaçeşme** | 14 | **67.727** | 48K – 96K |
+| villa | Tokatköy | 15 | 34.884 | 24K – 109K |
+
+> ★ **Makas tek cümlede:** *Anadolu Hisarı'nda bir yalı-köşkün m²'si **545.455 TL**, Ortaçeşme'de bir villanınki **67.727 TL** — aynı ilçede **8 kat fark**, ve ikisi de aynı dönemin (2026 Haz-Tem) ilan medyanı.*
+
+### Kiralık · TL/m²/ay *(GÜÇLÜ, seçilmiş)*
+
+| Tip | Mahalle | n | Medyan |
+|---|---|---:|---:|
+| daire / villa | **Acarlar** | 37 / 76 | **1.000 / 1.000** |
+| daire | Soğuksu | 27 | 650 |
+| villa | Riva | 36 | 633 |
+| daire | Anadolu Hisarı | 13 | 564 |
+| villa | Yavuz Selim | 12 | 543 |
+| **daire** | **Kavacık** | **159** | 428 — *ilçenin en derin hücresi* |
+| daire | Çubuklu | 42 | 405 |
+
+### ★ Tip bazlı brüt getiri — watchlist diliyle
+
+| Tip | Mahalle | Sat TL/m² | Kira TL/m²/ay | **Brüt** | Ödenme |
+|---|---|---:|---:|---:|---:|
+| **villa** | **Yavuz Selim** | 90.000 | 543 | **%7,24** | **13,8 yıl** |
+| konut-belirsiz | Acarlar | 158.417 | 873 | %6,62 | 15,1 yıl |
+| villa | Göztepe | 119.118 | 546 | %5,50 | 18,2 yıl |
+| daire | Kavacık | 94.925 | 428 | %5,41 | 18,5 yıl |
+| daire | Acarlar | 227.600 | 1.000 | %5,27 | 19,0 yıl |
+| **villa** | **Acarlar** | 245.455 | 1.000 | **%4,89** | **20,5 yıl** |
+| villa | Riva | 164.141 | 633 | %4,63 | 21,6 yıl |
+| daire | Çubuklu | 138.014 | 405 | %3,52 | 28,4 yıl |
+| daire | Tokatköy | 115.909 | 330 | %3,42 | 29,2 yıl |
+
+> ★ **Watchlist okuması (fiyat öngörüsü değil, ölçüm):** *Beykoz'da **en yüksek ve en düşük brüt getiri aynı tipte** — villa. **Yavuz Selim %7,24** (ödenme 13,8 yıl) ile listenin başında, **Acarlar %4,89** (20,5 yıl) ile ortasında. Aradaki fark **kiradan değil satış fiyatından** geliyor: ikisinin kirası neredeyse aynı seviyede değil ama satış fiyatı **2,7 kat** farklı.*
+> ⚠️ **Yavuz Selim'in ikinci yüzü:** aynı mahalle §7.3'te **reel −%35,5** ile ilçenin en geride kalanı. **Yüksek getiri + sert reel kayıp aynı mahallede** — bu, §8.5-T2'deki *"dip mi tuzak mı"* sorusunun tam merkezi ve **hâlâ ayırt edilemedi.**
+> 🔴 **Hepsi brüt:** boşluk, aidat, vergi düşülmemiş; **ilan fiyatı** üzerinden, gerçekleşen değil.
+
+> **Kavacık ticari ≈ %6,06** — güven %45, dört uyarıyla (n=7 · farklı sprintler · ilan fiyatı · brüt).
 
 ---
 
@@ -371,7 +489,7 @@ Ve dört bağımsız ölçüm köprü etkisini destekleyemedi: kıyı bandı 201
 | **1** | **İncirköy** | 3/8 | %70 | ★askı×sermaye · **iki mega proje** · **2.043 bina 1980-öncesi (ilçe #1)** · yakınlık #2 · fiziksel değişim **sıfır** | T-A1/A2 · Çelikler imar başvurusu · **cins tashihi** · KAP kancası T1-T5 | **2027-07'ye kadar** imar/ruhsat izi veya kote firma bildirimi gelmezse → *arsa bankası* senaryosu güçlenir |
 | **2** | **Tokatköy** | 4/8 | %70 | zinciri kapanmış tek mahalle · dönüşüm alanı **onaylı** · 30 ağır hasar · nüfus −%14 | 1071 tapu gövdesi · 2. faz ihalesi · Çamlıbahçe sınır düzenlemesi | **2027 ölçümünde** NDVI daha fazla düşmezse → 1. faz bitti, 2. faz başlamadı |
 | **3** | **Riva** | 6/8 | %65 | ★**üç mega proje** (708 + 1.300 + 933) · Gençlik Kampı · fiyat **başa baş** · **uydu 4 turdur ölçülmüyor** | Kalyon lansmanı · **Ion ilk ruhsat izi** · Gençlik Kampı ihalesi · ilk "Emlak Konut" atıflı ilan | **F2:** 2026-27 ölçümünde yapılaşma yükselmeli — **ön koşul Riva'nın ölçülmesi.** Ion 2027 diyorsa **2027'ye kadar** ruhsat izi görünmeli |
-| **4** | ★ **BEY-15 Paşabahçe/Çubuklu 942-947 kümesi** | — | **%55** | **[GÖZLEM+TAPU, geliştirici DOĞRULANMAMIŞ]** — §9 | §9'daki 4 tetik | §9 |
+| **4** | ★ **BEY-15 Paşabahçe/Çubuklu 942-947 + 246** *(parsel düzeyi — mahalle skorlarıyla aynı birimde değil)* | — | **%50** ⬇ | **Arsa statüsü + çift bitişik proje** (biri bitmiş, biri 2. etap satışta) **+ plan-askı hattı**; **fiziksel hareket henüz ölçülmedi** · geliştirici doğrulanmamış · 246 ada MESA'ya ait değil | ruhsat/askı ilanı · lansman izi · DIST bozulma · ilan akışı | **2027-07'ye kadar** ruhsat/askı izi **veya** yeni etap ilanı çıkmazsa → *"arsa statüsü ≠ proje"* olarak kapanır |
 | **5** | **Çengeldere** | 1/8 | %55 | ⚠️ ısıda görünmüyor ama **meclis kanalında #1** (4 karar) | tahsislerin yapım ihalesine dönmesi | **2028'e kadar** hiçbiri ihaleye dönmezse → **askıda karar** sınıfı |
 | **6** | **Çubuklu** | 4/8 | %75 | 19 ihale / 5 yıl kesintisiz · 5 ilan açık · radar doğruladı · MESA 🟢K=2 | kampüs dışına taşan ilk altyapı · ilk kamulaştırma | **2028'e kadar** çevrede ayrı altyapı ihalesi çıkmazsa → *"kurum parseline kapalı"* tezi doğrulanır |
 | **7** | **Gümüşsuyu** | 3/8 | %70 | ★askı×sermaye · **NEF ~1.300 konut** · yakınlık **#1** · 4,19 Mr TL hastane | T-A1/A2 · NEF ilk ruhsat izi · hastane kabul ilanı | **NEF testi:** 1.300 konutluk proje **2027'ye kadar** hiçbir kanalda iz bırakmazsa → tek kanal olarak kalır |
@@ -405,7 +523,13 @@ Ve dört bağımsız ölçüm köprü etkisini destekleyemedi: kıyı bandı 201
 | **BEY-03** | Riva Metruk Otel → **Gençlik Kampı** (Bel. + Gençlik-Spor Bakanlığı) | Riva | 🔴 SICAK ⚠️ Bakanlık teyidi yok | 🟢2 |
 | **BEY-01** | Şişecam–Çelikler İncirköy arazi | İncirköy | 🔴 SICAK | 🟢3 |
 | **BEY-08** | Kavacık Kavşağı imar planı + Medistate | Kavacık | 🔴 SICAK | 🟡1 |
-| **★ BEY-15** | **Paşabahçe/Çubuklu 942-947 parsel kümesi** | Çiğdem/Çubuklu | **ADAY** · sonraki kontrol **08-10** | 🟢2 |
+| **★ BEY-15** | **Paşabahçe/Çubuklu 942-947 + 246 parsel kümesi** | Çiğdem/Çubuklu | **ADAY** · uydu negatif · kontrol **08-10** | 🟢2 |
+| **BEY-16** | **Çubuklu riskli alan A + B Bölgesi** (5,6 ha · 18. madde askıda) | Çubuklu (iç) | işliyor · ⚠️ **basın kanalı YOK, resmî kanal takipte** | 🟡1 |
+| **BEY-17** | **ÇŞB Riva Deresi 6 mahalle askısı** | Riva + 5 | ⚠️ **kanal aranıyor — hangi 6 mahalle bilinmiyor** | 🟡1 |
+| **★ BEY-18** | **Torunlar GYO — eski Tekel arsası** (71.909 m², otel 2028) | **Paşabahçe** | işliyor · **takvimli** | 🟢2 |
+
+> 🔧 **ID düzeltmesi (SIG6):** Torunlar kaydı önceki turda BEY-16 numarasıyla açılmıştı; **doğrusu BEY-18'dir.** BEY-16 = Çubuklu riskli alan (Basın sahipli), BEY-17 = ÇŞB Riva Deresi. **Defter bu numaralarla senkronlandı.**
+> ⚠️ **BEY-16 ve BEY-17'ye "basın kanalı yok" damgası:** Basın S87, 29 URL denedi — `planaski.ibb.gov.tr` **JS-form arka uçlu** (ada+parsel input, doğrudan hasat imkânsız), CSB İstanbul **Beykoz filtre-URL'i çalışmıyor**, Beykoz Gazetesi'nin **arama işlevi yok**, Emlakkulisi robots.txt kapalı. **Bu ikisi resmî kanaldan takip edilecek, basından değil.**
 | BEY-02 | Kalyon "Riva Country" | Riva | işliyor · **basın-ölçüm dışı** | 🟡1 |
 | BEY-06 | Tokatköy dönüşüm + 1071 tapu | Tokatköy | işliyor · basın yansıma yok | 🟡1 |
 | BEY-09/10/11/13 | Çengeldere kampüs zinciri · İshaklı tarım dönüşüm talebi · İncirköy 7.219 m² satış · 5 mahalle altyapı | çeşitli | işliyor | 🟡1 |
@@ -419,8 +543,19 @@ Ve dört bağımsız ölçüm köprü etkisini destekleyemedi: kıyı bandı 201
 
 **Kaynak:** Patron TKGM manuel incelemesi, 2026-07-27 · **Etiket: [GÖZLEM + TAPU · geliştirici DOĞRULANMAMIŞ]**
 
-**Gözlem:** 942/1 (**14.063 m² Arsa**) · 942/2 · 943/2 (**23.835 m² Arsa**) · 944/2 · 945/1-2 · 946/1 · 947/1 + 246/5-15-16 — **Yeni Riva Yolu kuzeyi**; uyduda **çıplak zemin / hafriyat görünümü**.
-**Komşuluk:** MESA Çubuklu 28 + Mesa Orman 2 (**bitmiş**) · **Maritza Vadi (inşaatta)** → *"sıradaki etap"* deseni.
+**Gözlem:** 942/1 (**14.063 m² Arsa**) · 942/2 · 943/2 (**23.835 m² Arsa**) · 944/2 · 945/1-2 · 946/1 · 947/1 + 246/5-15-16 — **Yeni Riva Yolu kuzeyi**.
+**Komşuluk:** MESA Çubuklu 28 + Mesa Orman 2 (**bitmiş**) · **Maritza Vadi 2. Etap (satışta)**.
+
+### 🔴 Uydu doğrulaması istendi ve NEGATİF geldi
+
+| Ölçüm | Şubat | Haziran | Sonuç |
+|---|---:|---:|---|
+| NDVI | 0,30 | **0,48** | yeşerdi |
+| Çıplak zemin | %26 | **%14** | azaldı |
+
+> **TT-MAP BEY-15 mini-penceresi (~500 m, son 12 ay aylık):** *"mevsimsel; **kalıcı hafriyat basamağı YOK.** Şubat çıplaklığı Haziran'da geri yeşerdi = fenoloji."* S1-ACD %6,9 zayıf pozitif. Hafriyat ya **12 aydan önce** ya **pencere altında.**
+> ⚠️ **Beykoz'da aynı tuzağın üçüncü yakalanışı** — Ortaçeşme %17,1 · MAP28'in NDVI>1 defekti · şimdi bu. **Tek tarihli çıplak zemin görüntüsü, mevsimsel salınımdan ayrılmadan inşaat sayılamaz.**
+> ✅ **Kayıt bu yüzden yeniden yazıldı:** ❌ *"hafriyat başlamış"* → ✅ **"arsa statüsü + iki bitişik proje + askı hattı; fiziksel hareket henüz ölçülmedi."**
 
 ### ★ SIG kontrolü — piyasa tarafından bağımsız doğrulama buldum
 
@@ -430,11 +565,28 @@ Ve dört bağımsız ölçüm köprü etkisini destekleyemedi: kıyı bandı 201
 | **Analiz S48 (piyasa)** | **26 Maritza Vadi ilanı** — 23'ü **Çiğdem**, 2'si Acarlar. **8'i "2. ETAP"**, 25,3–53,6 M TL, ilan tarihleri **13–21 Temmuz 2026** |
 | — ilan metni (aynen) | *"Tamamlanan 1. etapta site yaşamı başlamış olup... **projenin devamında planlanan 2. etap**..."* · *"**Planlanan Yeni Etaplarla Değerlenen** Bir Yaşam"* |
 | **T126 + Sosyal S208** | MESA MESKEN Çubuklu 28 + Orman 2 · **19 gerçek sahibinden ilanı** + 9 doğrudan video |
-| **İ66** | **Çiğdem, 1/5000 2026 askı listesinde** → §6 ana bulgusuyla aynı hat |
+| **İ66** | **Çiğdem + Çubuklu, 1/5000 2026 askı listesinde** → §6 ana bulgusuyla aynı hat |
+| **Tic T128-EK** | 🔴 **Çubuklu 246 ada MESA'ya ait DEĞİL — kesin.** Başka tüzel de bulunamadı |
 
-> ✅ **K=2 (gözlem+tapu ↔ piyasa ilanı).** Patron'un *"sıradaki etap deseni"* okuması, **geliştiricinin kendi pazarlama metniyle** bağımsız olarak örtüşüyor: bitmiş 1. etap, satıştaki 2. etap, ve ilan metninde açıkça **"planlanan yeni etaplar"**.
-> 🔴 **Ne demek DEĞİL:** *"942-947'de MESA/Maritza yapacak"* · *"inşaat başlayacak"* · *"burası değerlenecek"*. **Geliştirici DOĞRULANMADI** — parsellerin kime ait olduğu, kimin geliştireceği, ruhsat olup olmadığı **bilinmiyor**. Hafriyat görünümü **uydudan göz kararıdır**, ölçüm değil.
-> ✅ **Ne demek:** *Bitmiş ve satıştaki iki etabın bitişiğinde, arsa nitelikli bir parsel kümesinde zemin hareketi görünüyor — ve mahalle 1/5000 askısında.*
+> ✅ **K=2 (tapu ↔ piyasa ilanı).** Bitmiş 1. etap, satıştaki 2. etap, ve geliştiricinin kendi metninde **"planlanan yeni etaplar"** — komşuluk gerçek.
+> 🔴 **Ne demek DEĞİL:** *"942-947'de MESA/Maritza yapacak"* · *"inşaat başlayacak"* · *"burası değerlenecek"*. **Geliştirici DOĞRULANMADI**; **246 ada MESA'ya ait değil** (T128-EK); **uydu son 12 ayda hafriyat görmüyor**.
+> ✅ **Ne demek:** *Bitmiş ve satıştaki iki etabın bitişiğinde, arsa nitelikli bir parsel kümesi var ve mahalle 1/5000 askısında. **Fiziksel hareket henüz ölçülmedi.***
+
+### ★ Aramanın yan ürünü: 17. aktör
+
+BEY-15 sorgusu 942-947'nin sahibini **bulamadı** — ama aynı sorgu **Torunlar GYO'nun eski Tekel Fabrikası arsasını** ortaya çıkardı:
+
+| Alan | Değer |
+|---|---|
+| Tüzel | **Torunlar GYO (TRGYO)** |
+| Konum | **Paşabahçe** — eski Tekel/Rakı Fabrikası arsası |
+| Ölçek | **3 parsel · 71.909 m²** (54.870 + 16.212 + 827) · inşaat **62.859,56 m²** |
+| Proje | **129 odalı otel + 5 blok yalı + 5 blok rezidans** (karma) |
+| Takvim | 2025 %30 · 2026 %40 · 2027 %30 · **otel 2028 başı** |
+| Kanıt | **KAP (TRGYO) + kurumsal PDF** · Emlakkulisi · NTV · Arkitera | 🟢 **K=2** |
+
+> ★ **Paşabahçe merkez sahilinde artık iki mega proje var:** **Torunlar (Tekel)** + **Çelikler (İncirköy sınırı)**. Ve bu, §5.2'deki *"cins tashihi yok"* kalıbının **üçüncü parselini canlı bir projeye bağlıyor** — Tekel arsası yıkıldı, akıbeti belirsizdi; şimdi takvimli.
+> ⚠️ **Paşabahçe'nin ısı skoru (2/8) bu girdiyle yeniden değerlendirilmeli — SIG6.**
 
 ### Tetikleyiciler · sonraki kontrol **2026-08-10**
 
@@ -471,7 +623,21 @@ Ve dört bağımsız ölçüm köprü etkisini destekleyemedi: kıyı bandı 201
 | G14 | %62 orman + koruma amaçlı imar rejimi | **3** |
 | **G15** | ★ **Acarkent özel-orman yapılaşması** (2.240 bina ↔ uydu %7,3) | **3** |
 | **G16** | ★ **Sanayi mirasında cins tashihi yok** — tapu 20+ yıl geride | **2** |
-| **G17** | ★ **BEY-15: bitmiş+satıştaki etapların bitişiğinde zemin hareketi** | **2** |
+| **G17** | ★ **Torunlar GYO — eski Tekel arsası, Paşabahçe** · 71.909 m² · karma proje · takvimli, otel 2028 | **2** |
+| ~~G18~~ | ~~BEY-15'te zemin hareketi~~ → 🔴 **GERİ ÇEKİLDİ** — TT-MAP mini-penceresi *"kalıcı hafriyat basamağı yok, mevsimsel"* dedi. Ayakta kalan: **arsa statüsü + iki bitişik proje + askı hattı** (K=2), fiziksel hareket **değil**. | — |
+
+## 10.1 🔍 İZLEME MANİFESTİ — 3 katmanlı askı sistemi
+
+Beykoz'da imar askısı **tek yerde yayımlanmıyor**; üç ayrı katman var ve üçü de ayrı izlenmeli:
+
+| Katman | Kanal | Kapsam | Erişim durumu | Kadans |
+|---|---|---|---|---|
+| **1 · İLÇE** | Beykoz Belediyesi meclis + duyuru | meclis kararları, mahalle ölçekli | ✅ WebFetch çalışıyor (S83: 24 karar) | **haftalık** |
+| **2 · İL / CSB** | `istanbul.csb.gov.tr` duyurular-imar planları | 1/1000 KAUİP askıları (Göztepe 2760/110 emsali) | ⚠️ **Beykoz filtre-URL çalışmıyor** — genel liste dönüyor, elle taranmalı | **haftalık** |
+| **3 · İBB** | `planaski.ibb.gov.tr` | 1/5000 NİP askıları, ada+parsel sorgusu | 🔴 **JS-form arka uçlu** — form-post JSON gerekiyor, düz hasat imkânsız | **haftalık** |
+
+> **Bu üç katman ayrılmazsa askı kaçar:** Boğaziçi 1/5000 askısı İBB'de, Göztepe 1/1000 askısı CSB'de, Tokatköy dönüşüm kararı ilçe meclisinde çıktı. **Hiçbiri diğerinde görünmedi.**
+> **Tetik bağlantısı:** §6'daki **T-A1/T-A2** (askı sonucu) yalnız bu üç katmandan okunabilir.
 
 ## 🟡 İZLENEN — dosyada değil
 
@@ -496,6 +662,52 @@ Kalyon 1.300 · Ion 933 · NEF ~1.300 · Envoy 300 · Sur Yapı · PEKGY (Basın
 **Kurumsal:** 1071 tapu gövdesi (**5 turdur açık**) · 2024 yılı (Wayback bloklu) · meclis vaat-gerçekleşme oranı (pencere ≤6 ay) · **ilçe kıyaslaması — hiçbir turda yapılmadı**
 **Kimlik:** 33 mahallede ad kökeni · 32 mahallede kamu tesisi · 16 mahallede POI=0
 ⏸️ **Erişim bekleyen:** OPERA DIST (Earthdata token) · **T128 TKGM 3 deste** · RG kamulaştırma + Milli Emlak (kanal hazır, Patron-manuel)
+
+## 11.1 🆕 AÇIK BORÇLAR — adı konmuş, sahibi belli
+
+| # | Borç | Durum | Çözüm yolu | Sahip |
+|---|---|---|---|---|
+| **B1** | **Google Trends 429** (rate limit) | 🔴 otomatik çekim engelli | **manuel CSV indirme** + **48 sn aralıklı tekrar** planı | Sosyal / Basın |
+| **B2** | **TUCBS kurumsal API** | ⏸️ **karar bekliyor** — kurumsal protokol başvurusu gerekiyor | Patron stratejik kararı | TT-MAP |
+| **B3** | **OPERA DIST sunucu** | ⏸️ Earthdata token geçersiz (7 karakter, JWT değil) | urs.earthdata.nasa.gov → Generate Token → `~/ttmap/.env` | Patron → TT-MAP |
+| **B4** | **Tip bazlı emsal derinleştirme (S53)** | 🟡 84 GÜÇLÜ / 78 zayıf / 88 gizli | ek çekim turu → zayıf hücreleri n≥8'e taşı | Analiz |
+| **B5** | `planaski.ibb.gov.tr` **form-post JSON** | 🔴 JS-form, düz hasat imkânsız | form-post denemesi (S88) | Basın |
+| **B6** | **CSB İstanbul Beykoz filtre-URL'i** | 🔴 çalışmıyor | filtre URL keşfi veya elle tarama | Basın |
+| **B7** | **NATO-POL güzergâh mahalleleri** | 🟡 tahmin | İBB refId 54022 plan notları görüntüleme | İhale |
+| **B8** | **Çubuklu A Bölgesi** | 🔴 belirsiz | CSB/PARSİD askı tutanağı | İhale + Basın |
+| **B9** | **UYAP karar metni** (Çavuşbaşı davası esas no) | ⛔ **public değil** | — *(yapısal, kapanmaz)* | — |
+
+---
+
+# 11.2 ★ ÇAPRAZ KONTROL — 9 FINAL raporunun altın cümleleri × Master
+
+**Yöntem:** 9 CC'nin kapanış raporundaki §5 "10 altın cümle" bölümleri (90 cümle) master'a karşı okundu.
+
+## 11.2-A 🔴 ÇELİŞKİLER — 4 adet
+
+| # | Çelişki | Master | FINAL raporu | Karar |
+|---|---|---|---|---|
+| **Ç1** | **1071 tapunun kapsamı — üçüncü versiyon** | *"25 mahalle geneli"* (SIG4-R2, Üst Akıl düzeltmesi) | **Basın §5-6: "Tokatköy Kentsel Dönüşüm alanında hak sahiplerine, 29 Haziran 2026, CSB İstanbul İl Müdürlüğü"** — **URL'li** | 🟢 **Basın'ın FINAL'i kazanır** — tek kaynak künyeli ve resmî. Kapsam **6 mahalle → 25 mahalle → Tokatköy dönüşüm hak sahipleri.** **Beş turdur açık olan kayıt böylece kapandı** ve **Tokatköy'ün dönüşüm zincirine bağlandı.** |
+| **Ç2** | **EKGYO Riva birim sayısı** | **708 konut + 68 dükkan** (KAP yapı ruhsatı, S59) | **Sosyal §5-5 hâlâ "3 etap, 1400 villa" cümlesini OLGU olarak taşıyor** | 🟢 **Master doğru.** KAP yapı ruhsatı > vlog. **Sosyal'in FINAL'i düzeltilmeli** — S59 tahkimi o rapora işlenmemiş. |
+| **Ç3** | **Ion Kentsel GYO'nun statüsü** | ❓ *(SPV, GYO tipi)* | **Tic §5-6: "halka-açık İon Kentsel GYO"** + §5-7: **NEF ve İon 2026'da eşzamanlı halka arz sürecinde** | 🟢 **Tic kazanır** — master'ın "❓"si düzeltildi (aşağı). Ve bu, **Beykoz sermayesinin halka-kapalı SPV'den BIST-şeffaf sermayeye geçiş dalgası** anlamına geliyor. |
+| **Ç4** | **Gümüşsuyu/Karlıtepe aktör sayısı** | NEF (tek) | **Tic §5-2: "Gümüşsuyu/Karlıtepe 3 mega: NEF + Akiş + HSN"** | 🟡 **Tic'in listesi geniş**, master eksik. Akiş (AKSGY) ve HSN master'da Gümüşsuyu'na bağlı değildi. **Ayak değiştirmez** (SERMAYE zaten ●) ama **yoğunluk okuması değişir.** |
+
+## 11.2-B ✅ Master'a alınan güçlü cümleler
+
+| Kaynak | Cümle | Nereye girdi |
+|---|---|---|
+| **Tic §5-5** | **Peker GYO'nun Beykoz portföyü 3 proje** (Tera Orman + Garden + Aden); **SözInv Danışmanlık 03.03.2026'da Tera Beykoz GYA'ya dönüştü, 341,2 M TL'ye devralındı** — SPV katmanının somut örneği | §4 sermaye — *"70 villa"* **eksikti**, portföy üç projeymiş |
+| **Tic §5-8** | Torunlar/Tekel, *"cins tashihi yok"* örüntüsüne **dördüncü paraleli** ekler — **Kundura · İncirköy · Beykoz Tekel · Acarkent aynı şablon** | §5.2 — kalıp **3 parselden 4'e** çıktı, artık K=2'den güçlü |
+| **TT-AI §5-6** | **"İki-Beykoz":** güney **hizmet devleti** (MEB + Sağlık), kuzey **koruma + güvenlik** (Orman + MSB) | §3.1 kopukluk örüntüsünün **kurumsal açıklaması** |
+| **İhale §5-7** | **Kuzey 9 mahalle hem imar kilitli hem 2B kuşağı** — *"kilit ve anahtar aynı yerde: arz buradan çözülür"* | §5 arz kıtlığı — mekanizma-1'in (2B) **coğrafi adresi** |
+| **İhale §5-9** | **RG ≠ EKAP:** kamulaştırma bültende yok, Resmî Gazete'de var — *"tek kaynağa güvenen yarısını kaçırır"* | §11.1-B7 · kanal disiplini |
+| **Borsa §5-10** | Halka kapalı alıcılar (Çelikler, Yıldırım, TURGUT, Yılmaz) Beykoz sermayesinin büyük kısmını **KAP-görünmez** kılıyor — *"gördüğüm, buzdağının halka açık ucu"* | §4.1 — **kamu payı %23'ün kırılganlığının en iyi ifadesi** |
+| **Analiz §5-6** | **F1'in "9 ölçülemez katsayı"sının 8/9'u açıldı** — yalnız aidat (n=163) zayıf | §11 — kapanan borç |
+| **TT-MAP §5-4** | *"Radar inşaatı bulamadığında da konuşur: **yokluk kanıtı da kanıttır**"* (hakem doktrini) | §2 radar tanımı |
+| **TT-MAP §5-6** | *"**NDVI 4,31 imkânsızdır**; fizik sınır kontrolü doğruluğun ilk kapısıdır"* | §12 yöntem |
+| **Finans §5-4** | Krediye uygun konutlar **%26,1 daha pahalı**; kat mülkiyetli **173.333** ↔ hisseli **74.783** — makas **popülasyon farkı** | §7.2 iki-popülasyon şerhi |
+
+> ★ **Sonuç:** 90 altın cümlenin **4'ü master'la çelişti, 10'u master'a eklendi, kalanı zaten örtüşüyordu.** Çelişkilerin **üçünde FINAL raporu kazandı, birinde master** — ve dördü de **kaynağın hiyerarşisiyle** çözüldü (birincil > türev), tartışmayla değil.
 
 ---
 
@@ -557,6 +769,10 @@ Bu tur boyunca **aynı hata sınıfı altı kez** çıktı. Hepsi **kendi sistem
 12. **"Öndelik" metriği tek sayıya indirgenmemeli** — karşılaştırma noktası bir seçimdir; başka bitiş noktası çok daha kısa süreler verir.
 13. **KVKK (#31):** kamu görevlisi/siyasetçi/kurumsal lider isimleri geçiyor. **Bu belge iç kullanımdır**; dış sunumda maskeleme Patron kararıdır.
 14. **İlçe kıyaslaması hiçbir turda yapılmadı.** *"Beykoz diğer ilçelerden iyidir"* cümlesi **bu dosyada yoktur ve kurulamaz.**
+15. **🔴 BEY-15'te bir tur önceki kendi çıkarımımı geri çektim.** *"Bitişikte zemin hareketi görünüyor"* diye yazmıştım; **TT-MAP mini-penceresi bunu çürüttü** — Şubat'taki çıplaklık Haziran'da geri yeşermiş, **mevsimsel.** Bu, Beykoz'da fenoloji tuzağına düşen **üçüncü bulgu** (Ortaçeşme %17,1 · MAP28 NDVI>1 · şimdi bu) — ve **ikisinde de düşen benim yorumumdu**, ölçüm değil. **Uydu görüntüsünden göz kararıyla "hafriyat" demek, bu dosyanın tekrar eden zaafıdır.**
+16. **246 ada MESA'ya ait değil** (T128-EK) → *"MESA'nın sıradaki etabı"* çıkarımım **daraldı**: bitişiklik gerçek, **sahiplik bağı yok.** Geri çekmedim, sınırladım.
+17. **Paşabahçe'nin ısı skoru (2/8) artık eksik.** Torunlar/Tekel bu turda girdi ve tabloya yansımadı; **skor yeniden hesaplanmalı (SIG6).** Bugünkü 2/8, Paşabahçe'yi **olduğundan soğuk gösteriyor.**
+18. **🔒 Ayrı bir iç izleme katmanı var** (`ic_watchlist.md`, iç kullanım) ve bu dosyaya **bilerek yansıtılmadı.** Oradaki kayıtlar burada yalnız **sinyal diliyle** geçer; **sinyal skoruna, güven yüzdesine ve watchlist sırasına dokunulmadı.** Kuralın uygulaması bende olduğu için **denetimi Üst Akıl'a bırakıyorum** — bir sonraki turda o kayıtları farkında olmadan yukarı çekersem kural işlememiş olur.
 
 ---
 

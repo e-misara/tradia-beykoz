@@ -19,9 +19,9 @@
 
 ## /beykoz_vaka/ — Beykoz Kapanış Arşivi
 
-**Ana giriş dosyası:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG4-FINAL v1, 43.9 KB, 574 satır — tek dosya Beykoz özet)
+**Ana giriş dosyası:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG6 vFINAL — 790 satır, tek dosya Beykoz özet)
 
-**PDF/görsel:** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png)
+**Görseller:** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) *(9-ayak SIG6 vFINAL)* · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png)
 
 ### FINAL kapanış raporları (9 CC × Beykoz)
 
@@ -37,7 +37,7 @@
 | [`FINAL_cc_ttai_beykoz.md`](beykoz_vaka/FINAL_cc_ttai_beykoz.md) | FINAL — Beykoz Kapanış Raporu · CC-TT-AI (Nihai Beyan) | 2026-07-27 |
 | [`FINAL_cc_ttmap_beykoz.md`](beykoz_vaka/FINAL_cc_ttmap_beykoz.md) | BEYKOZ KAPANIŞ RAPORU — CC-TT-MAP NİHAİ BEYAN | 2026-07-27 |
 
-### Ana özet + soru bankası + sinyal montajı
+### Ana özet + soru bankası + tip taksonomi + görsel
 
 | Dosya | Açıklama | Güncelleme |
 |---|---|---|
@@ -46,12 +46,13 @@
 | [`beykoz_bakanlik_ayakizi.md`](beykoz_vaka/beykoz_bakanlik_ayakizi.md) | Devletin Beykoz Ayak İzi — Bakanlık × Varlık Haritası (CC-TT-AI TTA100) | 2026-07-27 |
 | [`beykoz_cevapsizlar.md`](beykoz_vaka/beykoz_cevapsizlar.md) | Beykoz Cevapsızlar — CC-TT-AI TTA99 (soru bankası × 5-tur çakıştırma) | 2026-07-27 |
 | [`beykoz_soru_bankasi.md`](beykoz_vaka/beykoz_soru_bankasi.md) | Beykoz Soru Bankası — CC-TT-AI TTA98 (Görev B) | 2026-07-26 |
+| [`tip_taksonomi.md`](beykoz_vaka/tip_taksonomi.md) | Beykoz Mülk Tipi Taksonomisi — CC-Analiz S53 | 2026-07-27 |
 | [`tkgm_kesif.md`](beykoz_vaka/tkgm_kesif.md) | TKGM + RESMİ MEKÂNSAL KATMAN KEŞFİ — Beykoz · CC-İhale (İ64) | 2026-07-26 |
-| [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) | Beykoz 45 mahalle × ayak ısı haritası (SIG4-FINAL) | 2026-07-27 |
+| [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) | Beykoz mahalle × ayak ısı haritası (SIG6 vFINAL — 9 ayak) | 2026-07-27 |
 | [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) | Beykoz arazi kullanım haritası | 2026-07-27 |
 | [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) | BEY-15 Çubuklu hafriyat grafiği | 2026-07-27 |
 
-### Sinyal montaj serisi (CC-Signals)
+### Sinyal montaj serisi (CC-Signals SIG1→SIG5+ · v-FINAL üretim aşaması)
 
 | Dosya | Açıklama | Güncelleme |
 |---|---|---|
@@ -80,7 +81,7 @@
 | [`vaka_beykoz_cc-sosyal_S207.md`](beykoz_vaka/vaka_beykoz_cc-sosyal_S207.md) | Vaka: Beykoz — CC-Sosyal S207 | 2026-07-27 |
 | [`vaka_beykoz_cc-sosyal_S208.md`](beykoz_vaka/vaka_beykoz_cc-sosyal_S208.md) | Vaka: Beykoz — CC-Sosyal S208 | 2026-07-27 |
 
-### CC sprint günlükleri (Analiz S48-S52 · Basın S80-S86B · Borsa S56-S61 · İhale I61-I67 · TT-AI TTA96-97 + MAP28-nonkanon · TT-MAP MAP26-32)
+### CC sprint günlükleri
 
 | Dosya | Açıklama | Güncelleme |
 |---|---|---|
@@ -89,6 +90,7 @@
 | [`cc_analiz_S50.md`](beykoz_vaka/cc_analiz_S50.md) | Vaka: Beykoz — CC-Analiz S50 (Fiyat Bug + Hedonik Tam) | 2026-07-26 |
 | [`cc_analiz_S51.md`](beykoz_vaka/cc_analiz_S51.md) | Vaka: Beykoz — CC-Analiz S51 (URL-slug PK + Mahalle-FE + Arşiv Geniş) | 2026-07-27 |
 | [`cc_analiz_S52.md`](beykoz_vaka/cc_analiz_S52.md) | Vaka: Beykoz — CC-Analiz S52 (Şema-v2 + Hedonik-v2) | 2026-07-27 |
+| [`cc_analiz_S53.md`](beykoz_vaka/cc_analiz_S53.md) | Vaka: Beykoz — CC-Analiz S53 (Emsal v2 · Vaka Kapanış Sprinti) | 2026-07-27 |
 | [`cc_basin_S80.md`](beykoz_vaka/cc_basin_S80.md) | VAKA · İstanbul/Beykoz Basın TAM ARŞİV — CC-Basın S80 | 2026-07-26 |
 | [`cc_basin_S81.md`](beykoz_vaka/cc_basin_S81.md) | VAKA · İstanbul/Beykoz Basın EN GENİŞ ARŞİV — CC-Basın S81 | 2026-07-26 |
 | [`cc_basin_S82.md`](beykoz_vaka/cc_basin_S82.md) | VAKA · İstanbul/Beykoz AMAÇ-TARAMASI — CC-Basın S82 | 2026-07-26 |
@@ -97,6 +99,7 @@
 | [`cc_basin_S85.md`](beykoz_vaka/cc_basin_S85.md) | VAKA · Beykoz OLAY DEFTERİ + BELEDİYE EVRENİ — CC-Basın S85 | 2026-07-27 |
 | [`cc_basin_S86A.md`](beykoz_vaka/cc_basin_S86A.md) | VAKA · Beykoz İÇ MESAİ (havuz derinleştirme) — CC-Basın S86-A | 2026-07-27 |
 | [`cc_basin_S86B.md`](beykoz_vaka/cc_basin_S86B.md) | VAKA · Beykoz FETCH HATTI DEĞİŞİMİ (terminal hasat) — CC-Basın S86-B | 2026-07-27 |
+| [`cc_basin_S87.md`](beykoz_vaka/cc_basin_S87.md) | VAKA · Beykoz DIŞ-TARAMA AÇIKLARI — CC-Basın S87 | 2026-07-27 |
 | [`cc_borsa_S56.md`](beykoz_vaka/cc_borsa_S56.md) | BEYKOZ SERMAYE DERİNLİK — CC-Borsa S56 | 2026-07-26 |
 | [`cc_borsa_S57.md`](beykoz_vaka/cc_borsa_S57.md) | BEYKOZ — CC-Borsa S57: 171,5M$ DOĞRULAMA + EKGYO PDF + PEKER GYO | 2026-07-26 |
 | [`cc_borsa_S58.md`](beykoz_vaka/cc_borsa_S58.md) | BEYKOZ — CC-Borsa S58: ÇELİKLER DERİN + EKGYO KONUT ADEDİ + ZAMAN ISI | 2026-07-26 |
@@ -109,6 +112,7 @@
 | [`cc_ihale_I65.md`](beykoz_vaka/cc_ihale_I65.md) | BEYKOZ — BELLEK TAKILI: 36 BELİRSİZ PDF ÇÖZÜMÜ · CC-İhale (İ65) | 2026-07-27 |
 | [`cc_ihale_I66.md`](beykoz_vaka/cc_ihale_I66.md) | BEYKOZ İMAR REJİMİ HARİTASI — CC-İhale (İ66) | 2026-07-27 |
 | [`cc_ihale_I67.md`](beykoz_vaka/cc_ihale_I67.md) | BEYKOZ KAMU TAŞINMAZ ENVANTERİ — Hazine + Vakıf + 2B · CC-İhale (İ67) | 2026-07-27 |
+| [`cc_ihale_I69.md`](beykoz_vaka/cc_ihale_I69.md) | BEYKOZ İMAR REJİMİ v3 — YENİ KISIT + DÖNÜŞÜM KATMANLARI · CC-İhale (İ69) | 2026-07-27 |
 | [`cc_ttai_MAP28_nonkanon_capraz.md`](beykoz_vaka/cc_ttai_MAP28_nonkanon_capraz.md) | Beykoz Landsat — NON-KANON ÇAPRAZ-DOĞRULAMA (CC-TT-AI) | 2026-07-27 |
 | [`cc_ttai_TTA96.md`](beykoz_vaka/cc_ttai_TTA96.md) | Beykoz Bina + POI Derinlik — CC-TT-AI TTA96 | 2026-07-26 |
 | [`cc_ttai_TTA97.md`](beykoz_vaka/cc_ttai_TTA97.md) | Beykoz Güncel Bina + Kavacık Ofis + Deprem — CC-TT-AI TTA97 | 2026-07-26 |
@@ -119,11 +123,9 @@
 | [`cc_ttmap_MAP32.md`](beykoz_vaka/cc_ttmap_MAP32.md) | BEYKOZ ARAZİ FORMU — FİZİKSEL TEMEL KATMANI · CC-TT-MAP MAP32 | 2026-07-27 |
 
 ---
-
 ## /beykoz_vaka/beykoz_ansiklopedi/ — 45 Mahalle Sözlüğü
 
-**Üreten:** CC-TT-AI (TTA98) · **Kaynak:** `~/tt_ai/` 2 kova ([bilgi]=doğrulanır kaynak · [HİPOTEZ]=ölçülmeli · VERİ YOK=soru bankası)  
-**Ana index:** [`_master.json`](beykoz_vaka/beykoz_ansiklopedi/_master.json)
+**Üreten:** CC-TT-AI (TTA98)  ·  **Ana index:** [`_master.json`](beykoz_vaka/beykoz_ansiklopedi/_master.json)
 
 | Mahalle | Dosya | Güncelleme |
 |---|---|---|
@@ -174,11 +176,7 @@
 | Zerzavatci | [`zerzavatci.md`](beykoz_vaka/beykoz_ansiklopedi/zerzavatci.md) | 2026-07-27 |
 
 ---
-
 ## /cc/ — Her CC'nin Kendi Tanıtımı
-
-Her CC klasörü **kendi öz-analiz/tanıtım** dosyasını içerir (T-15/T-16 döneminde üretildi).  
-Beykoz vakasına özel çıktılar `/beykoz_vaka/` altında; buradaki dosyalar CC'nin **genel kimliği**.
 
 | CC | Dosya | Açıklama | Güncelleme |
 |---|---|---|---|
@@ -200,15 +198,12 @@ Beykoz vakasına özel çıktılar `/beykoz_vaka/` altında; buradaki dosyalar C
 | CC-vezir | [`Chat-Vezir_oz_analiz_tam_kapsam_2026-07-15.md`](cc/vezir/Chat-Vezir_oz_analiz_tam_kapsam_2026-07-15.md) | CHAT VEZİR — ÖZ-ANALİZ (Tradia-16 açılış → bugün) | 2026-07-15 |
 
 ---
-
 ## Disiplin
 
-- **Standing #31 v1.1 (KVKK):** iç-çalışma maskesiz, dış-sınır 4 madde (feed-API, outreach-mail, public-PDF, public-site). Bu repo private → iç-çalışma tarafı.
-- **A04 dürüst-negatif:** her rapor kanıtsızlık/hata bulduğunda açıkça flag'ler.
-- **#21-B çift-imza:** iki bağımsız kaynak örtüşürse GÜÇLÜ · çelişirse BAYRAK.
-- **#24 EK-NOT:** çıplak `\bTOKEN\b` YASAK (Türkçe-ek toleransı, 3 strateji).
+- **Standing #31 v1.1 (KVKK):** iç-çalışma maskesiz, dış-sınır 4 madde. Bu repo PRIVATE → iç-çalışma tarafı.
+- **A04 dürüst-negatif · #21-B çift-imza · #24 EK-NOT Türkçe-ek toleransı**
 - **V16 dürüst · $0 · dizin-kilidi · doygunluk→yeni-yol**
 
 ---
 
-*Bu index otomatik üretildi. Son yenileme: 2026-07-27 (Vezir). Yeni dosya push edildiğinde bu index güncellenir.*
+*Bu index otomatik üretildi. Son yenileme: 2026-07-27 (Vezir).*

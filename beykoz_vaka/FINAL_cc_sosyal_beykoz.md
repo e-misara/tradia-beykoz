@@ -26,7 +26,7 @@ finansçı_uyarısı: SÖYLEM ölçüm-değildir · yatırım-kararına-tek-daya
 | **S203** | 2026-07-26 | ★ 171,5M$ Şişecam-arsa kilit-olgu + Gürzel-Köseler belediye-siyaset olgu-zinciri | 11/12 | 95 |
 | **S204** | 2026-07-26 | Gürzel-yanıt ENSONHABER (Köseler-cezaevinde teyit) + 3 alternatif Şişecam-2016-direniş video | 5/5 | 100 |
 | **S205** | 2026-07-26 | Amaç-taraması (Berkay-25M TL villa + AA-Ermeni-anlatı + 3.köprü-vaat + Anadolu Kavağı) | 5/13 | 108 |
-| **S206** | 2026-07-27 | ★ Whisper+ffmpeg kurulumu ($0) + Bm-2LwEpclk (Kristal-İş genel merkez teyidi) + Murat Aydın 2019 seçim-vaadi + Çömlekçi/Korkmaz/Erbakan muhalefet-üçlü + EKGYO Düşler Vadisi 1400 villa | 8/10 + 2 Whisper | 118 |
+| **S206** | 2026-07-27 | ★ Whisper+ffmpeg kurulumu ($0) + Bm-2LwEpclk (Kristal-İş genel merkez teyidi) + Murat Aydın 2019 seçim-vaadi + Çömlekçi/Korkmaz/Erbakan muhalefet-üçlü + EKGYO Düşler Vadisi vlog-1400 iddiası (**S59 tahkimi: KAP 776 bağımsız bölüm**) | 8/10 + 2 Whisper | 118 |
 | **S207** | 2026-07-27 | Basın-S85 5-firma geri-verim (**hepsi 0**) + Whisper VSVE+ANXe + Çömlekçi 66-dk "soymak" iddiası anatomi + Atakule T1 yanlış-atıf düzeltmesi | 0/0 + 2 Whisper | 121 |
 | **S208** | 2026-07-27 | ★★ 5-yeni-aktör tam-negatif (10-firma-2-katman-kanıt) + Cemal Sataloğlu Whisper (**Beykoz 2020 bütçesi 696.825.000 TL**) + Beykoz Güncel plan-iptal-CHP tartışması + Polonezköy vlog | 4/12 + 1 Whisper | 126 |
 
@@ -197,6 +197,17 @@ Standing #22 gereği açık-düzeltmeler:
 | **Yeni** | Cemal OK · MESA V8SxHo5PAMw timeout · MP3 hazır (6.8 MB) · **S209 borç** |
 | **Neden** | 10 dk sınırı aşıldı; V8S 12dk video → Whisper CPU'da ~5-6 dk sürerdi, Cemal ile birlikte sıralı-çalıştırma zaman-taşırdı |
 
+### 3.7 · EKGYO Düşler Vadisi Riva "1400 villa" iddiası (Borsa/Tic S59 tahkimi ile geçersiz)
+
+| Aşama | İfade |
+|---|---|
+| **Eski** (S206 hasat · Teoman Aksu vlog `6Nu3hEK2Wj4`) | *"3 etap · 1400 villa · 3+1 4+1 5+1 6+1 tip"* — S206'da **OLGU proje-teknik** olarak kaydedildi; S208 §2.A tablosunda MESA-Tera-EKGYO karşılaştırmasında **1400 vs. Tera 70 (20× fark)** olarak kullanıldı |
+| **Yeni** | **KAP resmi: 776 bağımsız bölüm** (**708 konut + 68 dükkan**) · **Borsa/Tic-CC S59 tahkimi** |
+| **Neden** | Vlog-tanıtım-abartısı (yatay/yuvarlak-rakam) vs. KAP-tescilli-resmi-bağımsız-bölüm-sayısı farkı · vlog-hasadı YÜKSEK-KANIT-DEĞİL (**Standing #21-A DUSUK-teyit-gerekli · vlog-tanıtım-kanıt-tipi**); resmi-tescil karşısında geçersiz |
+| **Etki** | S208 §2.A "EKGYO 20× Tera" oranı geçersiz — doğru oran **776/70 ≈ 11× fark** (yine kamu-EKGYO ağırlıklı ama abartılı-değil) |
+| **Kayıt-izi** | Orijinal-vlog-alıntı §5-altın-cümlelerde SİLİNMEDEN korundu, `~~üstü-çizili~~` düzeltme-izi + KAP-doğru-sayı yanına eklendi · S206 sprint-dosyası dokunulmadan **arşiv-kaydı olarak** kalır |
+| **K24a bildirim** | `hafiza_bildirim_ccsosyal_beykoz_s209ek_tahkim.json` yazıldı — Borsa/Tic-CC S59 tahkim-kaynağı ile Sosyal-vlog-hasat karşılaştırma-emsal |
+
 ---
 
 ## §4 · CEVAPSIZLAR (S208 sonu kalanlar)
@@ -229,7 +240,7 @@ Sunum/dinleme masası için — her cümle **kanal + video-ID + tarih atfı** il
 2. *"Seçilmiş belediye başkanı şu an cezaevinde."* — **Özlem Vural Gürzel · ENSONHABER 2026 · `q11ZUc4Djg4`** → OLGU
 3. *"171,5 milyon Amerikan doları… küresel bir devin geleceğe attığı finansal imza."* — **Birtakım İçerikler · `Ya_4fR7ojic`** → OLGU-tutar + analist-yorum
 4. *"Bundan önceki belediyeyi yönetenlerin belediyeyi yönetmek gibi değil, soymak gibi bir derdi vardı."* — **Emre Çömlekçi MHP-Beykoz · Özgün Haber · `W3mfglnCisg` 66dk** → SÖYLEM · yolsuzluk-iddiası
-5. *"3 etap, 1400 villa, 3+1 4+1 5+1 6+1 tip."* — **EKGYO Düşler Vadisi Riva · Teoman Aksu · `6Nu3hEK2Wj4`** → OLGU proje-teknik
+5. *"3 etap, 1400 villa, 3+1 4+1 5+1 6+1 tip."* — **EKGYO Düşler Vadisi Riva · Teoman Aksu · `6Nu3hEK2Wj4`** → ~~OLGU proje-teknik~~ **GEÇERSİZ · S59 tahkimi: vlog 1400 dedi, KAP resmi 776 bağımsız bölüm (708 konut + 68 dükkan)** · vlog-tanıtım-abartısı vs. resmi-KAP farkı
 6. *"Bu nehir evi 7 dönüm arazi üzerine · 440 metrekare iç alan · 25.000.000 TL'ye satılıyor."* — **Berkay Mudrişler · Riva nehir-evi · `C89kGwhGr80`** → OLGU-fiyat
 7. *"Fiyatlar 3'e katlayacak 5'e katlayacak diye ben o zaman da şunu iddia ettim… o bölgede fiyatlar katlanacak."* — **erblogtube · 3.Köprü vaadi · `ZyIdHE3QvoM`** → VAAT (TT-MAP karşılaştırma-veri)
 8. *"1951 yılında Beykoz'un Ermeni mahallesi diye anılan bölgesinin 88 numaralı evinde dünyaya geldim."* — **Varam Magan · Anadolu Ajansı · `28L342VrN44`** → OLGU-tanıklık · nüfus-değişim
