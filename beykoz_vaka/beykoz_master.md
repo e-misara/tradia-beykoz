@@ -74,6 +74,14 @@
 
 **Dağılım:** 6→1 · 5→3 · 4→4 · 3→1 · 2→7 · 1→8 · **0→21 (%47)**
 
+> ✅ **SIG10 (28.07) — 11. AYAK: HABER-ISI etkinleştirildi.** Basın S93'ün **16 yıllık gövde arşivi** (Beykoz Güncel, **8001/8001 kayıt, 2010-2024**) ısıya bağlandı; eşik **≥250 kayıt (~%3 korpus)** → **11 mahalle yanıyor.** Sıralama: **Çubuklu 9/11 · Tokatköy 8/11 · Gümüşsuyu/Riva/Kavacık 7/11.**
+> 🔴 **Ama önce bir defekt:** ısı-v2'de **Fatih · Riva · Kavacık her biri 7.999/7.999 = korpusun %100'ü** ve **yıl profilleri korpusla bit-bit aynı** → **boilerplate/navigasyon kontaminasyonu** (aynı hata sınıfının **6. yakalanışı**). **Üçü de ✕ ölçülemez** işaretli — **0 değil**; ve ikisi ilçenin en sıcak mahalleleri. **Isı sıralaması bu turda kesin değil.**
+> ★ **17 aktörün 8'i 16 yılda SIFIR** (Çelikler · Torunlar · NEF · Ion · MESA · Peker · Envoy · Sur Yapı) · Kalyon 4 · Şişecam 36 · Emlak Konut 11 → **yerel basın kör noktası artık 54 kayıtla değil 8001 kayıtla kanıtlı.** *Beykoz'un en büyük sermaye hareketleri kamuoyu denetimi dışında gerçekleşiyor.* **Şerh: bu aktörler için HABER ayağının yokluğu "olay yok" değil, "yerel basın görmüyor" demektir.**
+> ★ **Köprü anlatı-dönüşümü ölçüldü (normalize):** köprü/ulaşım teması **2016'da zirve %10,2** *(açılış yılı)* → **2024'te %3,3.** *Vaat söndü, ölçüm de boş çıktı — SIG5-A4 karşı-örneğinin söylem tarafındaki karşılığı.* ⚠️ Ham sayıyla *"%99 düşüş"* denebilirdi ve **yanlış olurdu** (korpus 1.197→30).
+> ★ **Hastane 13 yıllık zinciri:** **BEY-33 (2012)** gündem → 2024 **4,185 Mr TL** sözleşme → 2026 devreye alma = **~12 yıl.** *Riva'nın 7,6-8,4 yılından sonra ikinci uzun döngü ölçümü — n=1, genelleme yok.*
+> ★ **Olay defteri v8: 28 olay** (BEY-24..33 retro) — **üç zincir geriye uzadı:** Tekel arsası **2012→2026 (14 yıl)** · hastane **2012→2024** · 2B **2010→2024 dava reddi (14 yıl)**. *Beykoz'da hiçbir süreç kısa değil.*
+> Detay: [`sig10_basin_entegre.md`](sig10_basin_entegre.md)
+
 > ✅ **SIG8 (28.07) — E1 + ARSA 10. ayak UYGULANDI (ÜA onayı):** FİYAT kuralı *"CSV≥10 **VE** uzKS≥20"* → **"uzKS≥20 VEYA CSV≥10"**; **ARSA 10. ayak** eklendi (S53 emsal-v2, n≥8). **0 ayaklı 21 → 11 (%24).** Yeni sıralama: **Çubuklu 8/10** · Kavacık · Riva · Tokatköy **7** · Gümüşsuyu 6 · İncirköy · Yalıköy 5 · Paşabahçe 4. **SIG7 denetimi doğrulandı** — (a) sınıfının 6'sı da açıldı, kalan 11 = (b)5 + (c)6, tam örtüşme.
 > 🔴 **Uyarı:** *Çubuklu, Riva'yı **yeni kanıtla değil, yeni ayakla** geçti* (İMAR + ARSA lehine çalıştı; Riva'nın UYDU'su hâlâ ölçülmüyor). **Sıralama ayak-setine duyarlıdır.** Detay: [`sig8_sinyal_kaniti_v2.md`](sig8_sinyal_kaniti_v2.md)
 
