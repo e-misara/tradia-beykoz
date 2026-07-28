@@ -204,6 +204,34 @@
 
 ---
 
+# 10. SIG11 EKİ — v2r TEMİZ + DEFTER v9
+
+## 10.1 ✅ Defekt kapandı
+| Mahalle | S93 (v2) | **S94 (v2r)** | Düzeltme |
+|---|---:|---:|---|
+| **Kavacık** | 7.999 *(%100 · boilerplate)* | **866 (%10,8)** | **−%89** → **ilçenin en çok konuşulan mahallesi** |
+| **Fatih** | 7.999 | **649 (%8,1)** | −%92 |
+| **Riva** | 7.999 | **476 (%5,9)** | −%94 |
+
+> ✅ **Üç ✕ gerçek skora döndü.** SIG10'da *"sıralama bu turda kesin değil"* demiştim — **artık kesin.**
+> **Yeni sıralama:** Çubuklu **9/11** · Kavacık · Riva · Tokatköy **8/11** · Gümüşsuyu **7/11** · **0 ayaklı 11 → 10** *(Fatih ilk ayağını kazandı)*.
+
+## 10.2 Defter v9 — 29 olay
+| Değişiklik | İçerik |
+|---|---|
+| 🔗 **BEY-29 + BEY-32 BİRLEŞTİ** | *"Paşabahçe Tekel arazisi 5 talipli"* (2012) ve *"Beykoz'a 7 yıldızlı otel"* (2011) **aynı olaymış** → **Torunlar / Kentsel Resort Otel zinciri** |
+| 🆕 **BEY-34 · Cam Köy** | *"Cam Köy için ilk adım atıldı"* (**2013-04-08**) — Şişecam'ın kültürel-turistik projesi; **Şişecam arazisinin İncirköy devrinden 13 yıl önceki ilk kamusal izi** |
+
+## 10.3 ★ TEKEL ≠ ŞİŞECAM — iki parsel ayrıştı
+S94, tek isim altında karışan iki parseli **ayrı regex'e** ayırdı: **tekel_arazi 13 kayıt** (2011-2020) ↔ **sisecam_arazi 35** (Tekel hariç; v2'de 83 idi, **−%57**).
+> **Bu ayrım olmasaydı** Torunlar'ın Tekel zinciri ile Çelikler'in Şişecam işlemi **aynı torbada** kalırdı — ve master'daki *"Paşabahçe merkez sahilinde iki mega proje"* cümlesi **tek projeye** indirgenebilirdi. **Ayrım cümleyi doğruladı.**
+
+## 10.4 Kanıt boşluğu kısmen açıldı
+**Kalyon İnşaat v2r'de 4 hit** (2012:2 · 2014:2) — S91-93'te **0** idi; **article-body izolasyonu** yakaladı. **Kalyon-Beykoz bağlantısı 12-14 yıl önce basında geçmiş.**
+🔴 Kalan **7 aktör hâlâ 0** (Çelikler · Torunlar · NEF · Ion · MESA · Peker · Envoy · Sur Yapı) → **kör nokta şerhi duruyor.**
+
+---
+
 # V16 · Sınırlar
 1. **S94 gelmedi** — S93'ün ısı-v2'siyle çalışıldı; v2r revizyonu bu bölümü değiştirebilir.
 2. **Üç mahalle ölçülemez** ve ikisi ilçenin en sıcakları. **Isı sıralaması bu turda güvenilir değil.**
@@ -211,6 +239,8 @@
 4. **Tek kaynak** — Beykoz Güncel. Ulusal basında anlatı farklı olabilir.
 5. **Köprü anlatısını normalize ettim**; ham sayıyla *"%99 düşüş"* denebilirdi ve **yanlış olurdu.**
 6. **BEY-33 hastane zinciri tek kanal** — 2012 kaydı retro taramadan, ara yıllar boş.
+8. **SIG10'daki defekt SIG11'de kapandı** — ama o tur boyunca yayımladığım *"Riva/Kavacık ölçülemez"* ifadesi **bir tur boyunca yanlış tabloyu** dolaşımda tuttu. **Defekti ben buldum, düzeltmeyi Basın yaptı; arada geçen tur benim maliyetimdir.**
+9. **T131 katmanı ısıya girmedi (ÜA kararı)** — doğru karar; ama bu, Acarlar'ın **ticari profilde ilçe zirvesi (AS 8,0)** olmasının ısı tablosunda **hiç görünmemesi** demek. **Isı tablosu tek başına okunursa Acarlar 2/11 ile sıradan görünür.**
 7. **11. ayağı SIG8'de reddetmiştim, şimdi etkinleştirdim** — gerekçe değişti (54 kayıt → 8001), ama **tutarsız görünebilir; koşulu açıkça yazdım.**
 
 **Kaynaklar (#21-B):** CC-Basın **S93** (`haber_yogunluk_v2.json` · 8001/8001 · olay defteri v8, 28 olay) · S80-S92 · CC-İhale İ61-62·İ69 · CC-Borsa S56-59 · CC-Analiz S48·S53 · CC-Tic T126-128EK · CC-TT-MAP MAP24·28·30 · CC-TT-AI TTA96-99 · Signals SIG5-SIG9

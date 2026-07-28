@@ -21,11 +21,11 @@
 
 ## /beykoz_vaka/ — Beykoz Kapanış + Sürekli-İzlem Arşivi
 
-**Ana giriş:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG6 vFINAL + SIG7/8 + MASTER r1 yamaları)
+**Ana giriş:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG6→SIG10 yamalarıyla, 11-ayak ısı entegre)
 
-**Görseller (ana):** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) · [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) *(MAP35)* · [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png) *(MAP35)*
+**Görseller (ana):** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) *(SIG10 · 11 ayak)* · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) · [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) *(MAP35)* · [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png) *(MAP35)*
 
-**Karolar (mahalle uydu-karo görselleri):** [`karolar/`](beykoz_vaka/karolar/) — 14 PNG (MAP34)
+**Karolar:** [`karolar/`](beykoz_vaka/karolar/) — 14 PNG v1 (MAP34) · [`karolar_v2/`](beykoz_vaka/karolar_v2/) — 6 PNG v2 (MAP36)
 
 **Sinyal dosyaları:** [`sinyal_dosyalari/`](beykoz_vaka/sinyal_dosyalari/) — SD-01..06 + şablon (SIG9 standardı)
 
@@ -43,7 +43,7 @@
 | [`FINAL_cc_ttai_beykoz.md`](beykoz_vaka/FINAL_cc_ttai_beykoz.md) | FINAL — Beykoz Kapanış Raporu · CC-TT-AI (Nihai Beyan) | 2026-07-27 |
 | [`FINAL_cc_ttmap_beykoz.md`](beykoz_vaka/FINAL_cc_ttmap_beykoz.md) | BEYKOZ KAPANIŞ RAPORU — CC-TT-MAP NİHAİ BEYAN | 2026-07-27 |
 
-### Ana özet + soru bankası + tip taksonomi + ana görseller
+### Ana özet + soru bankası + tip taksonomi + ana görseller + kamu envanteri
 
 | Dosya | Açıklama | Güncelleme |
 |---|---|---|
@@ -52,15 +52,16 @@
 | [`beykoz_bakanlik_ayakizi.md`](beykoz_vaka/beykoz_bakanlik_ayakizi.md) | Devletin Beykoz Ayak İzi — Bakanlık × Varlık Haritası (CC-TT-AI TTA100) | 2026-07-27 |
 | [`beykoz_cevapsizlar.md`](beykoz_vaka/beykoz_cevapsizlar.md) | Beykoz Cevapsızlar — CC-TT-AI TTA99 (soru bankası × 5-tur çakıştırma) | 2026-07-27 |
 | [`beykoz_soru_bankasi.md`](beykoz_vaka/beykoz_soru_bankasi.md) | Beykoz Soru Bankası — CC-TT-AI TTA98 (Görev B) | 2026-07-26 |
+| [`beykoz_kamu_2022_2026.md`](beykoz_vaka/beykoz_kamu_2022_2026.md) | BEYKOZ KAMU HARCAMA DÖKÜMÜ 2022→2026 + KIYAS — CC-İhale (İ71) | 2026-07-28 |
 | [`tip_taksonomi.md`](beykoz_vaka/tip_taksonomi.md) | Beykoz Mülk Tipi Taksonomisi — CC-Analiz S53 | 2026-07-27 |
 | [`tkgm_kesif.md`](beykoz_vaka/tkgm_kesif.md) | TKGM + RESMİ MEKÂNSAL KATMAN KEŞFİ — Beykoz · CC-İhale (İ64) | 2026-07-26 |
-| [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) | Beykoz mahalle × ayak ısı haritası (SIG6/8 güncel) | 2026-07-28 |
+| [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) | Beykoz mahalle × ayak ısı haritası (SIG10 · 11 ayak) | 2026-07-28 |
 | [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) | Beykoz arazi kullanım haritası | 2026-07-27 |
 | [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) | BEY-15 Çubuklu hafriyat grafiği | 2026-07-27 |
 | [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) | MAP35 · gerçek-geometri kısıt katmanı | 2026-07-28 |
 | [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png) | MAP35 · gerçek-geometri konum katmanı | 2026-07-28 |
 
-### Sinyal montaj serisi (CC-Signals SIG1→SIG9)
+### Sinyal montaj serisi (CC-Signals SIG1→SIG10)
 
 | Dosya | Açıklama | Güncelleme |
 |---|---|---|
@@ -71,6 +72,7 @@
 | [`vaka_beykoz_SIG5_sinyal_kaniti.md`](beykoz_vaka/vaka_beykoz_SIG5_sinyal_kaniti.md) | CC-Signals · SIG5 — SİNYAL KANITI | 2026-07-27 |
 | [`sig7_21_denetim.md`](beykoz_vaka/sig7_21_denetim.md) | CC-Signals · SIG7 — 21-SIFIR DENETİMİ | 2026-07-28 |
 | [`sig8_sinyal_kaniti_v2.md`](beykoz_vaka/sig8_sinyal_kaniti_v2.md) | CC-Signals · SIG8 — SİNYAL KANITI v2 | 2026-07-28 |
+| [`sig10_basin_entegre.md`](beykoz_vaka/sig10_basin_entegre.md) | CC-Signals · SIG10 — BASIN ENTEGRE FİNAL | 2026-07-28 |
 
 ### CC vaka çıktıları (finans + eski-vaka)
 
@@ -118,6 +120,8 @@
 | [`cc_basin_S90.md`](beykoz_vaka/cc_basin_S90.md) | VAKA · Beykoz YEREL BASIN ENVANTERİ + SİTEMAP HATTI — CC-Basın S90 | 2026-07-28 |
 | [`cc_basin_S91.md`](beykoz_vaka/cc_basin_S91.md) | VAKA · Beykoz S91 · TAM HASAT MİMARİSİ + ISI v1 + RETRO — CC-Basın | 2026-07-28 |
 | [`cc_basin_S92.md`](beykoz_vaka/cc_basin_S92.md) | VAKA · Beykoz S92 · MEGA-PROJE RETRO + PATRON SORU SETİ-1 — CC-Basın | 2026-07-28 |
+| [`cc_basin_S93.md`](beykoz_vaka/cc_basin_S93.md) | VAKA · Beykoz S93 · TAM-ARŞİV FİNAL TURU — CC-Basın | 2026-07-28 |
+| [`cc_basin_S94.md`](beykoz_vaka/cc_basin_S94.md) | VAKA · Beykoz S94 · TEMİZLİK + TATMİN TURU — CC-Basın | 2026-07-28 |
 | [`cc_borsa_S56.md`](beykoz_vaka/cc_borsa_S56.md) | BEYKOZ SERMAYE DERİNLİK — CC-Borsa S56 | 2026-07-26 |
 | [`cc_borsa_S57.md`](beykoz_vaka/cc_borsa_S57.md) | BEYKOZ — CC-Borsa S57: 171,5M$ DOĞRULAMA + EKGYO PDF + PEKER GYO | 2026-07-26 |
 | [`cc_borsa_S58.md`](beykoz_vaka/cc_borsa_S58.md) | BEYKOZ — CC-Borsa S58: ÇELİKLER DERİN + EKGYO KONUT ADEDİ + ZAMAN ISI | 2026-07-26 |
@@ -142,32 +146,46 @@
 | [`cc_ttmap_MAP32.md`](beykoz_vaka/cc_ttmap_MAP32.md) | BEYKOZ ARAZİ FORMU — FİZİKSEL TEMEL KATMANI · CC-TT-MAP MAP32 | 2026-07-27 |
 | [`cc_ttmap_MAP34.md`](beykoz_vaka/cc_ttmap_MAP34.md) | BEYKOZ GÖRÜNTÜ FABRİKASI + RİVA BORCU · CC-TT-MAP MAP34 | 2026-07-28 |
 | [`cc_ttmap_MAP35.md`](beykoz_vaka/cc_ttmap_MAP35.md) | GERÇEK-GEOMETRİ HARİTA + %8 DOĞRULAMA + MEGA-AKS · CC-TT-MAP MAP35 | 2026-07-28 |
+| [`cc_ttmap_MAP36.md`](beykoz_vaka/cc_ttmap_MAP36.md) | BEYKOZ KARO KESKİNLEŞTİRME v2 (sunum-kalite) · CC-TT-MAP MAP36 | 2026-07-28 |
 
 ### Analiz scriptleri (whitelist)
 
 | Dosya | Açıklama | Güncelleme |
 |---|---|---|
+| [`isi_haritasi_SIG10.py`](beykoz_vaka/isi_haritasi_SIG10.py) | SIG10 · ısı haritası (basın entegre 11-ayak) scripti | 2026-07-28 |
+| [`isi_haritasi_SIG11.py`](beykoz_vaka/isi_haritasi_SIG11.py) | isi_haritasi_SIG11.py | 2026-07-28 |
 | [`isi_haritasi_SIG8.py`](beykoz_vaka/isi_haritasi_SIG8.py) | SIG8 · ısı haritası üretim scripti | 2026-07-28 |
 | [`sig7_denetim.py`](beykoz_vaka/sig7_denetim.py) | SIG7 · 21-sıfır denetim analiz scripti | 2026-07-28 |
 
-### /karolar/ — 14 mahalle karo görseli (MAP34)
+### /karolar/ — 14 mahalle karo görseli v1 (MAP34)
 
 | Dosya | Karo | Güncelleme |
 |---|---|---|
-| [`karo_BEY15_942_947.png`](beykoz_vaka/karolar/karo_BEY15_942_947.png) | Karo: BEY15_942_947 | 2026-07-28 |
-| [`karo_Kundura_Tekel.png`](beykoz_vaka/karolar/karo_Kundura_Tekel.png) | Karo: Kundura_Tekel | 2026-07-28 |
-| [`karo_camlibahce.png`](beykoz_vaka/karolar/karo_camlibahce.png) | Karo: camlibahce | 2026-07-28 |
-| [`karo_cubuklu.png`](beykoz_vaka/karolar/karo_cubuklu.png) | Karo: cubuklu | 2026-07-28 |
-| [`karo_goksu.png`](beykoz_vaka/karolar/karo_goksu.png) | Karo: goksu | 2026-07-28 |
-| [`karo_goztepe.png`](beykoz_vaka/karolar/karo_goztepe.png) | Karo: goztepe | 2026-07-28 |
-| [`karo_gumussuyu.png`](beykoz_vaka/karolar/karo_gumussuyu.png) | Karo: gumussuyu | 2026-07-28 |
-| [`karo_incirkoy.png`](beykoz_vaka/karolar/karo_incirkoy.png) | Karo: incirkoy | 2026-07-28 |
-| [`karo_kavacik.png`](beykoz_vaka/karolar/karo_kavacik.png) | Karo: kavacik | 2026-07-28 |
-| [`karo_merkez.png`](beykoz_vaka/karolar/karo_merkez.png) | Karo: merkez | 2026-07-28 |
-| [`karo_ortacesme.png`](beykoz_vaka/karolar/karo_ortacesme.png) | Karo: ortacesme | 2026-07-28 |
-| [`karo_pasabahce.png`](beykoz_vaka/karolar/karo_pasabahce.png) | Karo: pasabahce | 2026-07-28 |
-| [`karo_riva.png`](beykoz_vaka/karolar/karo_riva.png) | Karo: riva | 2026-07-28 |
-| [`karo_yalikoy.png`](beykoz_vaka/karolar/karo_yalikoy.png) | Karo: yalikoy | 2026-07-28 |
+| [`karo_BEY15_942_947.png`](beykoz_vaka/karolar/karo_BEY15_942_947.png) | Karo v1: BEY15_942_947 | 2026-07-28 |
+| [`karo_Kundura_Tekel.png`](beykoz_vaka/karolar/karo_Kundura_Tekel.png) | Karo v1: Kundura_Tekel | 2026-07-28 |
+| [`karo_camlibahce.png`](beykoz_vaka/karolar/karo_camlibahce.png) | Karo v1: camlibahce | 2026-07-28 |
+| [`karo_cubuklu.png`](beykoz_vaka/karolar/karo_cubuklu.png) | Karo v1: cubuklu | 2026-07-28 |
+| [`karo_goksu.png`](beykoz_vaka/karolar/karo_goksu.png) | Karo v1: goksu | 2026-07-28 |
+| [`karo_goztepe.png`](beykoz_vaka/karolar/karo_goztepe.png) | Karo v1: goztepe | 2026-07-28 |
+| [`karo_gumussuyu.png`](beykoz_vaka/karolar/karo_gumussuyu.png) | Karo v1: gumussuyu | 2026-07-28 |
+| [`karo_incirkoy.png`](beykoz_vaka/karolar/karo_incirkoy.png) | Karo v1: incirkoy | 2026-07-28 |
+| [`karo_kavacik.png`](beykoz_vaka/karolar/karo_kavacik.png) | Karo v1: kavacik | 2026-07-28 |
+| [`karo_merkez.png`](beykoz_vaka/karolar/karo_merkez.png) | Karo v1: merkez | 2026-07-28 |
+| [`karo_ortacesme.png`](beykoz_vaka/karolar/karo_ortacesme.png) | Karo v1: ortacesme | 2026-07-28 |
+| [`karo_pasabahce.png`](beykoz_vaka/karolar/karo_pasabahce.png) | Karo v1: pasabahce | 2026-07-28 |
+| [`karo_riva.png`](beykoz_vaka/karolar/karo_riva.png) | Karo v1: riva | 2026-07-28 |
+| [`karo_yalikoy.png`](beykoz_vaka/karolar/karo_yalikoy.png) | Karo v1: yalikoy | 2026-07-28 |
+
+### /karolar_v2/ — 6 mahalle karo görseli v2 (MAP36 çıktısı)
+
+| Dosya | Karo | Güncelleme |
+|---|---|---|
+| [`karo2_BEY15.png`](beykoz_vaka/karolar_v2/karo2_BEY15.png) | Karo v2: BEY15 | 2026-07-28 |
+| [`karo2_gumussuyu.png`](beykoz_vaka/karolar_v2/karo2_gumussuyu.png) | Karo v2: gumussuyu | 2026-07-28 |
+| [`karo2_incirkoy.png`](beykoz_vaka/karolar_v2/karo2_incirkoy.png) | Karo v2: incirkoy | 2026-07-28 |
+| [`karo2_kavacik.png`](beykoz_vaka/karolar_v2/karo2_kavacik.png) | Karo v2: kavacik | 2026-07-28 |
+| [`karo2_riva.png`](beykoz_vaka/karolar_v2/karo2_riva.png) | Karo v2: riva | 2026-07-28 |
+| [`karo2_tokatkoy.png`](beykoz_vaka/karolar_v2/karo2_tokatkoy.png) | Karo v2: tokatkoy | 2026-07-28 |
 
 ### /sinyal_dosyalari/ — Sürekli İzlem Kartları (SIG9 standardı)
 

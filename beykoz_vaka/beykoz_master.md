@@ -74,6 +74,35 @@
 
 **Dağılım:** 6→1 · 5→3 · 4→4 · 3→1 · 2→7 · 1→8 · **0→21 (%47)**
 
+> ✅ **SIG11 (28.07) — FİNAL: v2r temiz verisiyle yeniden hesaplandı.** S94'ün **ısı-v2r**'si yanlış pozitifleri kesti: **Kavacık 866 · Fatih 649 · Riva 476** *(S93'te üçü de 7.999/7.999 boilerplate idi)*. **Üç ✕ gerçek skora döndü.** Yeni sıralama: **Çubuklu 9/11 · Kavacık · Riva · Tokatköy 8/11 · Gümüşsuyu 7/11**; **0 ayaklı 11 → 10** *(Fatih ilk ayağını kazandı)*. Görsel final: `cikti/beykoz_isi_haritasi.png` · kod `kod/isi_haritasi_SIG11.py`.
+>
+> ★★ **TEKEL 14 YILLIK ZİNCİRİ AÇILDI (S94 · BEY-29+32 birleşimi).** Basın, **TEKEL ile ŞİŞECAM'ı ayrı regex'e ayırdı** — bunlar **iki farklı parseldi ve tek isim altında karışıyordu:**
+> | Tarih | Halka |
+> |---|---|
+> | 2011-02-13 | *"Beykoz'a yedi yıldızlı otel yapılıyor"* |
+> | 2012-03-26 | Paşabahçe **TEKEL** arazisine **5 talipli** çıktı |
+> | **2012-03-28** | **"İşte Paşabahçe TEKEL arazisinin YENİ SAHİBİ"** |
+> | 2012-09-20 | TEKEL arazisinde çalışmalar yakında başlayacak |
+> | 2014-10-01 | **Torunlar** TEKEL arazisi için **proje hazırladı** |
+> | **2016-03-08** | ★ Paşabahçe TEKEL → **"KENTSEL RESORT OTEL"** *(proje adı)* |
+> | 2017-09-18 | Projenin **maketi** yayımlandı |
+> | **2026** | **Torunlar GYO · 71.909 m² · 129 odalı otel + 5 yalı + 5 rezidans · otel 2028** *(T128-EK, KAP)* |
+>
+> **Satıştan bugüne 14 yıl, ilk habere göre 15 yıl; otel hedefi 2028 → uçtan uca ~17 yıl.** *Riva 7,6-8,4 · hastane ~12 · Tekel ~14 — Beykoz'un üçüncü uzun döngü ölçümü.* 🔗 **BEY-29 ile BEY-32 aynı olay çıktı, birleştirildi** *(defter v9, 29 olay; **BEY-34 "Cam Köy" eklendi** — Şişecam kültürel-turistik proje, ilk kayıt 2013-04-08).*
+> 🟡 **Ve bir kanıt boşluğu kısmen kapandı:** **Kalyon İnşaat v2r'de 4 hit** (2012:2 · 2014:2) — S91-93'te 0 idi, **article-body izolasyonu yakaladı.** Kalyon-Beykoz bağlantısı **12-14 yıl önce basında geçmiş.** *(Çelikler · Torunlar · NEF · Ion · MESA · Peker · Envoy · Sur Yapı hâlâ 0 — kör nokta şerhi duruyor.)*
+>
+> 🔵 **T131 TİCARİ-ZİNCİR = KATMAN, AYAK DEĞİL (ÜA kararı).** CC-Tic'in marka konumlanma skoru (AS) ısı tablosuna **girmez**; yanında **profil katmanı** olarak durur:
+> | Mahalle | AS | Sınıf |
+> |---|:-:|---|
+> | **Acarlar** | **8,0** | premium enklav *(2 premium+ zincir)* |
+> | **Kavacık** | **4,5** | iş/karma bölge |
+> | Gümüşsuyu 3,0 · Çubuklu 2,0 · İncirköy 2,0 | ≤3 | ekonomik ağırlıklı |
+> | **36 mahalle** | **0,0** | zincir yok — kırsal/kurumsal radar dışı |
+>
+> **Tic'in kendi kuralı korundu:** *"AS fiyat öngörüsü değil, **kitle-profil sınıflandırmasıdır**; yüksek AS 'fiyatı artar' demek değildir."* ★ **Katmanın söylediği:** Acarlar ısıda **2/11** ama ticari profilde **ilçe zirvesi** — *sinyal yoğunluğu ile kitle profili farklı şeyler ölçüyor.*
+>
+> ★ **Kavacık FSM-1980 notu:** Kavacık, v2r'de **866 kayıtla 16 yılın en çok konuşulan mahallesi** (%10,8). Basın'ın okuması: *"Kavacık gerçekten en aktif — **1980 FSM köprüsü sonrası**."* **Yani Kavacık'ın merkeziliği 3. köprüden değil, 1980'deki FSM'den geliyor** — bu, *"otoyol yakınlığı tek başına sinyal üretmedi"* Beykoz dersini **tersinden doğruluyor:** üreten köprü **46 yıl öncekiydi ve etkisi çoktan yerleşmişti.**
+
 > ✅ **SIG10 (28.07) — 11. AYAK: HABER-ISI etkinleştirildi.** Basın S93'ün **16 yıllık gövde arşivi** (Beykoz Güncel, **8001/8001 kayıt, 2010-2024**) ısıya bağlandı; eşik **≥250 kayıt (~%3 korpus)** → **11 mahalle yanıyor.** Sıralama: **Çubuklu 9/11 · Tokatköy 8/11 · Gümüşsuyu/Riva/Kavacık 7/11.**
 > 🔴 **Ama önce bir defekt:** ısı-v2'de **Fatih · Riva · Kavacık her biri 7.999/7.999 = korpusun %100'ü** ve **yıl profilleri korpusla bit-bit aynı** → **boilerplate/navigasyon kontaminasyonu** (aynı hata sınıfının **6. yakalanışı**). **Üçü de ✕ ölçülemez** işaretli — **0 değil**; ve ikisi ilçenin en sıcak mahalleleri. **Isı sıralaması bu turda kesin değil.**
 > ★ **17 aktörün 8'i 16 yılda SIFIR** (Çelikler · Torunlar · NEF · Ion · MESA · Peker · Envoy · Sur Yapı) · Kalyon 4 · Şişecam 36 · Emlak Konut 11 → **yerel basın kör noktası artık 54 kayıtla değil 8001 kayıtla kanıtlı.** *Beykoz'un en büyük sermaye hareketleri kamuoyu denetimi dışında gerçekleşiyor.* **Şerh: bu aktörler için HABER ayağının yokluğu "olay yok" değil, "yerel basın görmüyor" demektir.**
