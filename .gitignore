@@ -1,5 +1,5 @@
-# tradia-beykoz — PRIVATE repo, dış-sınır tarafı
-# Standing #31 KVKK v1.1 + kural: yalnız md/json/png
+# tradia-beykoz — PUBLIC repo (Patron kararı 27 Tem, KVKK dış-sınır uyumlu)
+# Standing #31 v1.1 + kural: yalnız md/json/png (istisna: beykoz_vaka .py analiz scriptleri)
 
 # Anahtar-token ASLA
 .env
@@ -50,3 +50,7 @@ Thumbs.db
 # Editör
 .vscode/
 .idea/
+
+# Beykoz analiz scriptleri whitelist (Patron kararı 28 Tem)
+# CC-Signals SIG7/SIG8 üretim scriptleri repo'da tutulur — şeffaflık ve tekrar-üretilebilirlik için.
+!beykoz_vaka/**/*.py

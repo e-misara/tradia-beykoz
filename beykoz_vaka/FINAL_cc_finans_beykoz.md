@@ -647,3 +647,125 @@ Bir sonraki CC bunu benden önce bilsin.
 **İzolasyon (K24a):** landgold-agents Tradia DIŞI — anahtarı okunmadı, verisi
 kopyalanmadı; yalnız varlığı raporlandı.
 **$0 · A04 · V16 · SİLME-YOK · #21-B · #34 · kural 5**
+
+---
+---
+
+# EK-1 · FİYAT KATMANI — GÜVEN BLOĞU
+**Sprint:** F7 · **Tarih:** 2026-07-28 · **Üreten:** CC-Finans · **Denetleyen:** ☐
+**Kart:** `finans/data/fiyat_guven_karti.json` · **Disiplin:** $0 · A04 · #34 · kural 5 · yasak-dil
+
+> **Bu ek bir yatırım tavsiyesi değildir.** Ölçüm, dönem, kaynak ve bant verir.
+> **Karar okuyucunundur.**
+
+---
+
+## EK-1.1 · Üç katlı doğrulama — lanse bloğu
+
+> ⚠️ **Önce bir düzeltme yaptım.** Talep "rakamımız üç **bağımsız** katmanla
+> tutarlı" cümlesini istiyordu. Bunu böyle yazamam: **Katman-1 (resmî çıpa) ile
+> Katman-2 (0,829 oranı) bağımsız iki teyit değildir** — oran, zaten bizim
+> medyanımızın çıpaya bölünmesidir. Aynı ölçümün iki yüzüdür.
+>
+> Doğru ve yine güçlü olan ifade: bunlar üç **bağımsız onay** değil, üç
+> **kalite katıdır**. Aşağıdaki blok bu haliyle yazıldı.
+
+### 🟦 LANSE BLOĞU *(sunuma/dosyaya girecek metin)*
+
+> **Fiyat katmanımız üç kat üzerine kurulu.**
+>
+> **Birinci kat — resmî çıpa.** İstanbul konut birim fiyatı **87.301 TL/m²**
+> *(TCMB, 2026-Q2, birincil API)*. Bu bir ilan fiyatı değil, konut kredisi
+> başvurusunda düzenlenen **değerleme raporlarından** üretilen resmî ortancadır.
+>
+> **İkinci kat — sapmamız ölçülü.** İlan katmanımızın İstanbul medyanı bu
+> çıpanın **0,829 katında** *(72.368 TL/m², n=35.329, 2026-Q2)*. Bu farkı
+> tahmin etmiyoruz, **mekanizmasını ölçtük**: değerleme evreni kredilenebilir
+> konutlardan oluşur ve krediye uygun konutlar **%26,1 daha pahalıdır**
+> *(n=318, Beykoz, 2026-06→07)*. Farkın üç olası kaynağını **eledik**
+> (ilçe dağılımı, uç değerler, m² tanımı); geriye ölçtüğümüz mekanizma kaldı.
+>
+> **Üçüncü kat — hücre disiplini.** Yayınladığımız her emsal hücresi en az
+> **8 ilan** içerir, **Q1–Q3 bandıyla** birlikte verilir ve **dönem damgası**
+> taşır *(S48_UZANTI_2026-Haz-Tem)*. n=3–7 arası hücreler iç kullanımda kalır,
+> n<3 hiç yayınlanmaz: **84 hücre yayında, 166 hücre yayın dışında.**
+>
+> **Sonuç:** rakamımız resmî çıpaya oturuyor, çıpadan sapması ölçülü ve
+> açıklanmış, hücreleri eşik-disiplinli. **Bilmediğimiz tek şey gerçekleşen
+> satış fiyatı** — o veriyi hiçbir kaynak kamuya açmıyor.
+
+---
+
+## EK-1.2 · Güncellik vitrini
+
+| Katman | Frekans | Son veri | Tazelik |
+|---|---|---|---|
+| **Resmî çıpa** (TCMB birim fiyat) | üç aylık | **2026-Q2** | referans dönem kapanışından ~1 ay |
+| **Resmî endeks** (KFE/YKKE) | aylık | **2026-06** | ilk sonuç ~15 gün, nihai ~45 gün |
+| **İlan katmanı** (uzantı hasadı) | canlı | **2026-07-26 08:56** | **2 gün** |
+| **Emsal tablosu** (84 hücre) | dönemlik | `S48_UZANTI_2026-Haz-Tem` | dönem kapalı |
+| **Kredi faizi** | haftalık | 2026-07-17 | 11 gün |
+| **Satış / ipotekli pay** | aylık | 2026-06 | ~1 ay |
+
+> **Tek satır:** *Fiyat bilgimizin ilan ayağı **2 gün**, resmî çıpa ayağı
+> **bir aylık referans dönemi** tazeliğindedir.*
+>
+> ⚠️ **Şerh:** "2 gün" **ilan ayağınındır**. Emsal tablosu **dönemliktir**
+> (Haziran–Temmuz 2026) ve her gün yenilenmez.
+
+---
+
+## EK-1.3 · TL-cebe çeviri seti
+
+**Yöntem:** `alış TL = hücre medyan TL/m² × o hücrenin ortanca m²` ·
+`aylık kira = kira medyanı × aynı m²` · getiri ve ödenme yılı CC-Analiz S53 hesabı
+**Dönem:** ilan tarafı `S48_UZANTI_2026-Haz-Tem` · çıpa 2026-Q2
+
+| Tip | Mahalle | Ortanca m² | TL/m² *(Q1–Q3)* | **Alış TL** | Aylık kira TL | Brüt getiri | Ödenme |
+|---|---|---:|---:|---:|---:|---:|---:|
+| villa | **Acarlar** | 680 | 245.455 *(190.000–300.000)* | **166,9 M** | 680.000 | %4,89 | 20,5 yıl |
+| villa | **Riva** | 320 | 164.141 *(113.000–200.000)* | **52,5 M** | 202.560 | %4,63 | 21,6 yıl |
+| villa | **Yavuz Selim** | 285 | 90.000 *(47.800–127.273)* | **25,7 M** | 154.755 | **%7,24** | **13,8 yıl** |
+| daire | **Acarlar** | 174 | 227.600 *(163.934–266.667)* | **39,6 M** | 174.000 | %5,27 | 19,0 yıl |
+| daire | **Kavacık** | 140 | 94.925 *(83.750–124.375)* | **13,3 M** | 59.920 | %5,41 | 18,5 yıl |
+| daire | **Göztepe** | 132 | 110.000 *(95.455–120.000)* | **14,5 M** | 59.400 | %4,91 | 20,4 yıl |
+| arsa | **Riva** | 801 | 31.463 *(26.442–38.755)* | **25,2 M** | — | — | — |
+| arsa | **Çengeldere** | 1.025 | 33.676 *(27.273–41.028)* | **34,5 M** | — | — | — |
+
+**Okuma notları**
+- **En hızlı ödenen: Yavuz Selim villa — 13,8 yıl** (%7,24 brüt). En yavaş:
+  Riva villa 21,6 yıl. Aradaki fark **8 yıldan fazla**.
+- **Acarlar villa 166,9 M TL** ile en yüksek giriş bedeli, ama getirisi %4,89 —
+  **giriş bedeli ile getiri ters yönde.**
+- **Arsada kira satırı yoktur**; arsa getirisi kiradan değil, imar/dönüşümden
+  gelir ve **bunu ölçmüyoruz**.
+- Q1–Q3 bandı her satırda verilmiştir; **tek sayıya bakılmamalıdır**.
+- Tüm getiriler **brüt** — aidat, boşluk, vergi, amortisman düşülmemiştir.
+  Net getiri bunların altındadır.
+
+---
+
+## EK-1.4 · Şerh disiplini — neyin güncel, neyin dönemlik olduğu
+
+| **GÜNCEL** *(bugünü temsil eder)* | **DÖNEMLİK** *(dönem damgasıyla okunur)* |
+|---|---|
+| İlan katmanı (2 gün) | Emsal tablosu 84 hücre |
+| Kredi faizi (haftalık) | Brüt getiri satırları |
+| Resmî endeks (aylık, ~1 ay gecikmeli) | TL-cebe seti |
+| | Birim fiyat / kira TL/m² (üç aylık) |
+
+**Kural:** *Dönemlik bir sayı "bugünkü fiyat" diye sunulmaz; dönem damgasıyla
+sunulur.* (kural 5 — dönem disiplini)
+
+### Tapu kenarı — tek cümle
+**Gerçekleşen satış fiyatını ölçmüyoruz;** tapu verisi toplu olarak kamuya
+açık değil *(TKGM, ToS)*. Elimizdeki iki kenar **ilan** ve **değerleme**dir.
+
+---
+
+**Künye:** resmî çıpa `TP.BIRIMFIYAT.IST` (2026-Q2) · deflatör
+`TP.TUKFIY2025.GENEL` %32,11 (2026-06) · ilan medyanı `sahibinden_master_v24`
+(kesit 2026-06-30, n=35.329) · seçilim primi `uzanti_katmani_beykoz_S48`
+`detay['Krediye Uygun']` (2026-06→07, n=318) · emsal `beykoz_emsal_v2.json`
+S53 (84 hücre, `S48_UZANTI_2026-Haz-Tem`)
+**Üreten:** CC-Finans F7 · **Denetleyen:** ☐ · **$0 · A04 · #34 · kural 5**

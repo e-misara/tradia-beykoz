@@ -2,28 +2,32 @@
 
 **Repo:** `e-misara/tradia-beykoz` (PUBLIC — Patron kararı 27 Tem)  
 **Sahip:** Misara Group / Tradia  
-**Rol:** Vezir (CEO-denetçi) — arşiv sorumluluğu  
+**Rol:** Vezir (CEO-denetçi) — arşiv sorumluluğu; **çoklu-yazar** repo (Vezir + Üst Akıl doğrudan)  
 **Amaç:** Beykoz vakasının tam kanıt-arşivi + her CC'nin kendi tanıtım/öz-analiz belgesi. Üst Akıl bu index'ten çalışır.  
-**Standing #31 v1.1 KVKK dış-sınır uyumlu** · yalnız `md/json/png` · anahtar-token yok.
+**Standing #31 v1.1 KVKK dış-sınır uyumlu** · yalnız `md/json/png` (istisna: `beykoz_vaka/*.py` analiz scriptleri whitelist)
 
 ---
 
 ## KURAL
 
-- **Yeni md üretildiğinde push edilir** (Vezir sorumluluğu).
+- **Standing #35 (2026-07-28):** Vezir push öncesi `git fetch && git log origin/main` **ZORUNLU**. Uzak repo'yu tek-yazar varsayamaz. Çakıştırma → çift-nüsha yasak.
+- **Yeni md üretildiğinde push** (Vezir sorumluluğu).
 - **'Eksik tamamla' talepleri Vezir'e / Üst Akıl'a gelir** — CC'ler doğrudan buraya yazmaz.
 - **Ham/DB/büyük dosya (>25MB) buraya girmez** — `.gitignore` engel katmanı.
 - **Anahtar-token ASLA** — commit öncesi tarama zorunlu.
+- **`.py` istisna:** yalnız `beykoz_vaka/**/*.py` (analiz scriptleri, tekrar-üretilebilirlik).
 
 ---
 
 ## /beykoz_vaka/ — Beykoz Kapanış + Sürekli-İzlem Arşivi
 
-**Ana giriş:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG6 vFINAL — 790 satır)
+**Ana giriş:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG6 vFINAL + SIG7/8 + MASTER r1 yamaları)
 
-**Görseller (ana):** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) *(9-ayak SIG6)* · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png)
+**Görseller (ana):** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) · [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) *(MAP35)* · [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png) *(MAP35)*
 
-**Karolar (mahalle uydu-karo görselleri):** [`karolar/`](beykoz_vaka/karolar/) — 14 PNG (MAP34 çıktısı)
+**Karolar (mahalle uydu-karo görselleri):** [`karolar/`](beykoz_vaka/karolar/) — 14 PNG (MAP34)
+
+**Sinyal dosyaları:** [`sinyal_dosyalari/`](beykoz_vaka/sinyal_dosyalari/) — SD-01..06 + şablon (SIG9 standardı)
 
 ### FINAL kapanış raporları (9 CC × Beykoz)
 
@@ -32,7 +36,7 @@
 | [`FINAL_cc_analiz_beykoz.md`](beykoz_vaka/FINAL_cc_analiz_beykoz.md) | FINAL — CC-Analiz Beykoz Vaka Kapanış Raporu | 2026-07-27 |
 | [`FINAL_cc_basin_beykoz.md`](beykoz_vaka/FINAL_cc_basin_beykoz.md) | BEYKOZ VAKASI · CC-Basın NİHAİ RAPOR (FINAL) | 2026-07-27 |
 | [`FINAL_cc_borsa_beykoz.md`](beykoz_vaka/FINAL_cc_borsa_beykoz.md) | BEYKOZ SERMAYE İZİ — CC-BORSA NİHAİ KAPANIŞ RAPORU | 2026-07-27 |
-| [`FINAL_cc_finans_beykoz.md`](beykoz_vaka/FINAL_cc_finans_beykoz.md) | CC-FİNANS — BEYKOZ KAPANIŞ RAPORU | 2026-07-27 |
+| [`FINAL_cc_finans_beykoz.md`](beykoz_vaka/FINAL_cc_finans_beykoz.md) | CC-FİNANS — BEYKOZ KAPANIŞ RAPORU | 2026-07-28 |
 | [`FINAL_cc_ihale_beykoz.md`](beykoz_vaka/FINAL_cc_ihale_beykoz.md) | 🏁 BEYKOZ KAPANIŞ RAPORU — CC-İhale (NİHAİ BEYAN) | 2026-07-27 |
 | [`FINAL_cc_sosyal_beykoz.md`](beykoz_vaka/FINAL_cc_sosyal_beykoz.md) | FINAL — CC-Sosyal Beykoz kapanış raporu | 2026-07-27 |
 | [`FINAL_cc_tic_beykoz.md`](beykoz_vaka/FINAL_cc_tic_beykoz.md) | FINAL — CC-Tic Beykoz Vakası Nihai Beyan | 2026-07-27 |
@@ -50,25 +54,13 @@
 | [`beykoz_soru_bankasi.md`](beykoz_vaka/beykoz_soru_bankasi.md) | Beykoz Soru Bankası — CC-TT-AI TTA98 (Görev B) | 2026-07-26 |
 | [`tip_taksonomi.md`](beykoz_vaka/tip_taksonomi.md) | Beykoz Mülk Tipi Taksonomisi — CC-Analiz S53 | 2026-07-27 |
 | [`tkgm_kesif.md`](beykoz_vaka/tkgm_kesif.md) | TKGM + RESMİ MEKÂNSAL KATMAN KEŞFİ — Beykoz · CC-İhale (İ64) | 2026-07-26 |
-| [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) | Beykoz mahalle × ayak ısı haritası (SIG6 vFINAL — 9 ayak) | 2026-07-28 |
+| [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) | Beykoz mahalle × ayak ısı haritası (SIG6/8 güncel) | 2026-07-28 |
 | [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) | Beykoz arazi kullanım haritası | 2026-07-27 |
 | [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) | BEY-15 Çubuklu hafriyat grafiği | 2026-07-27 |
+| [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) | MAP35 · gerçek-geometri kısıt katmanı | 2026-07-28 |
+| [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png) | MAP35 · gerçek-geometri konum katmanı | 2026-07-28 |
 
-### SD — Sürekli İzlem / Sinyal Doğrulama Kartları
-
-**Üreten:** CC-Signals · **Amaç:** Beykoz vakası kapandıktan sonra devam eden gözlem sinyallerinin künyeli takibi (yatırım tavsiyesi değildir).
-
-| Dosya | Açıklama | Güncelleme |
-|---|---|---|
-| [`SD-01_incirkoy.md`](beykoz_vaka/SD-01_incirkoy.md) | SD-01 · İNCİRKÖY — SERMAYE GİRDİ, KAZMA VURULMADI | 2026-07-28 |
-| [`SD-02_cubuklu.md`](beykoz_vaka/SD-02_cubuklu.md) | SD-02 · ÇUBUKLU — TEK İSİM, İKİ BÖLGE | 2026-07-28 |
-| [`SD-03_riva.md`](beykoz_vaka/SD-03_riva.md) | SD-03 · RİVA — ÜÇ MEGA PROJE, ÖLÇÜLMEYEN ZEMİN | 2026-07-28 |
-| [`SD-04_tokatkoy.md`](beykoz_vaka/SD-04_tokatkoy.md) | SD-04 · TOKATKÖY — ZİNCİR TAMAMLANDI, GETİRİ EN DÜŞÜK | 2026-07-28 |
-| [`SD-05_riva_yolu_aksi.md`](beykoz_vaka/SD-05_riva_yolu_aksi.md) | SD-05 · RİVA YOLU AKSI — 942-947 + 246 PARSEL KÜMESİ | 2026-07-28 |
-| [`SD-06_elmali.md`](beykoz_vaka/SD-06_elmali.md) | SD-06 · ELMALI — TOPLAMA × KORUMA ÇARPIŞMASI | 2026-07-28 |
-| [`SD-SABLON.md`](beykoz_vaka/SD-SABLON.md) | SD-XX · <SİNYAL ADI> | 2026-07-28 |
-
-### Sinyal montaj serisi (CC-Signals SIG1→SIG5+FİNAL)
+### Sinyal montaj serisi (CC-Signals SIG1→SIG9)
 
 | Dosya | Açıklama | Güncelleme |
 |---|---|---|
@@ -77,6 +69,8 @@
 | [`vaka_beykoz_SIG3_signals.md`](beykoz_vaka/vaka_beykoz_SIG3_signals.md) | CC-Signals — BEYKOZ ÖRNEK DOSYA: NE AMAÇLA GELİŞİYOR? | 2026-07-26 |
 | [`vaka_beykoz_SIG4_montaj.md`](beykoz_vaka/vaka_beykoz_SIG4_montaj.md) | CC-Signals · SIG4 — BEYKOZ MONTAJ (Üst Akıl düzeltmeleri işlenmiş) | 2026-07-27 |
 | [`vaka_beykoz_SIG5_sinyal_kaniti.md`](beykoz_vaka/vaka_beykoz_SIG5_sinyal_kaniti.md) | CC-Signals · SIG5 — SİNYAL KANITI | 2026-07-27 |
+| [`sig7_21_denetim.md`](beykoz_vaka/sig7_21_denetim.md) | CC-Signals · SIG7 — 21-SIFIR DENETİMİ | 2026-07-28 |
+| [`sig8_sinyal_kaniti_v2.md`](beykoz_vaka/sig8_sinyal_kaniti_v2.md) | CC-Signals · SIG8 — SİNYAL KANITI v2 | 2026-07-28 |
 
 ### CC vaka çıktıları (finans + eski-vaka)
 
@@ -110,6 +104,7 @@
 | [`cc_analiz_S54.md`](beykoz_vaka/cc_analiz_S54.md) | Vaka: Beykoz — CC-Analiz S54 (21-Mahalle İlan Denetimi) | 2026-07-28 |
 | [`cc_analiz_S55.md`](beykoz_vaka/cc_analiz_S55.md) | Vaka: Beykoz — CC-Analiz S55 (Elmalı İlan Profili + Komşu Bant) | 2026-07-28 |
 | [`cc_analiz_S55EK.md`](beykoz_vaka/cc_analiz_S55EK.md) | Vaka: Beykoz — CC-Analiz S55-EK (Sıfır Yasağı + Elmalı Yeniden Test) | 2026-07-28 |
+| [`cc_analiz_S56.md`](beykoz_vaka/cc_analiz_S56.md) | Vaka: Beykoz — CC-Analiz S56 (Fiyat Doğrulama Turu) | 2026-07-28 |
 | [`cc_basin_S80.md`](beykoz_vaka/cc_basin_S80.md) | VAKA · İstanbul/Beykoz Basın TAM ARŞİV — CC-Basın S80 | 2026-07-26 |
 | [`cc_basin_S81.md`](beykoz_vaka/cc_basin_S81.md) | VAKA · İstanbul/Beykoz Basın EN GENİŞ ARŞİV — CC-Basın S81 | 2026-07-26 |
 | [`cc_basin_S82.md`](beykoz_vaka/cc_basin_S82.md) | VAKA · İstanbul/Beykoz AMAÇ-TARAMASI — CC-Basın S82 | 2026-07-26 |
@@ -122,6 +117,7 @@
 | [`cc_basin_S88.md`](beykoz_vaka/cc_basin_S88.md) | VAKA · Beykoz SOĞUK-21 HEDEFLİ TARAMA — CC-Basın S88 | 2026-07-28 |
 | [`cc_basin_S90.md`](beykoz_vaka/cc_basin_S90.md) | VAKA · Beykoz YEREL BASIN ENVANTERİ + SİTEMAP HATTI — CC-Basın S90 | 2026-07-28 |
 | [`cc_basin_S91.md`](beykoz_vaka/cc_basin_S91.md) | VAKA · Beykoz S91 · TAM HASAT MİMARİSİ + ISI v1 + RETRO — CC-Basın | 2026-07-28 |
+| [`cc_basin_S92.md`](beykoz_vaka/cc_basin_S92.md) | VAKA · Beykoz S92 · MEGA-PROJE RETRO + PATRON SORU SETİ-1 — CC-Basın | 2026-07-28 |
 | [`cc_borsa_S56.md`](beykoz_vaka/cc_borsa_S56.md) | BEYKOZ SERMAYE DERİNLİK — CC-Borsa S56 | 2026-07-26 |
 | [`cc_borsa_S57.md`](beykoz_vaka/cc_borsa_S57.md) | BEYKOZ — CC-Borsa S57: 171,5M$ DOĞRULAMA + EKGYO PDF + PEKER GYO | 2026-07-26 |
 | [`cc_borsa_S58.md`](beykoz_vaka/cc_borsa_S58.md) | BEYKOZ — CC-Borsa S58: ÇELİKLER DERİN + EKGYO KONUT ADEDİ + ZAMAN ISI | 2026-07-26 |
@@ -145,8 +141,16 @@
 | [`cc_ttmap_MAP30.md`](beykoz_vaka/cc_ttmap_MAP30.md) | BEYKOZ SENTINEL-1 İNŞAAT-TESPİTİ (ACD) — CC-TT-MAP MAP30 | 2026-07-27 |
 | [`cc_ttmap_MAP32.md`](beykoz_vaka/cc_ttmap_MAP32.md) | BEYKOZ ARAZİ FORMU — FİZİKSEL TEMEL KATMANI · CC-TT-MAP MAP32 | 2026-07-27 |
 | [`cc_ttmap_MAP34.md`](beykoz_vaka/cc_ttmap_MAP34.md) | BEYKOZ GÖRÜNTÜ FABRİKASI + RİVA BORCU · CC-TT-MAP MAP34 | 2026-07-28 |
+| [`cc_ttmap_MAP35.md`](beykoz_vaka/cc_ttmap_MAP35.md) | GERÇEK-GEOMETRİ HARİTA + %8 DOĞRULAMA + MEGA-AKS · CC-TT-MAP MAP35 | 2026-07-28 |
 
-### /karolar/ — 14 mahalle karo görseli (MAP34 çıktısı)
+### Analiz scriptleri (whitelist)
+
+| Dosya | Açıklama | Güncelleme |
+|---|---|---|
+| [`isi_haritasi_SIG8.py`](beykoz_vaka/isi_haritasi_SIG8.py) | SIG8 · ısı haritası üretim scripti | 2026-07-28 |
+| [`sig7_denetim.py`](beykoz_vaka/sig7_denetim.py) | SIG7 · 21-sıfır denetim analiz scripti | 2026-07-28 |
+
+### /karolar/ — 14 mahalle karo görseli (MAP34)
 
 | Dosya | Karo | Güncelleme |
 |---|---|---|
@@ -164,6 +168,20 @@
 | [`karo_pasabahce.png`](beykoz_vaka/karolar/karo_pasabahce.png) | Karo: pasabahce | 2026-07-28 |
 | [`karo_riva.png`](beykoz_vaka/karolar/karo_riva.png) | Karo: riva | 2026-07-28 |
 | [`karo_yalikoy.png`](beykoz_vaka/karolar/karo_yalikoy.png) | Karo: yalikoy | 2026-07-28 |
+
+### /sinyal_dosyalari/ — Sürekli İzlem Kartları (SIG9 standardı)
+
+**Üreten:** CC-Signals · **Amaç:** Beykoz vakası kapandıktan sonra devam eden gözlem sinyallerinin künyeli takibi (yatırım tavsiyesi değildir).
+
+| Dosya | Açıklama | Güncelleme |
+|---|---|---|
+| [`SD-01_incirkoy.md`](beykoz_vaka/sinyal_dosyalari/SD-01_incirkoy.md) | SD-01 · İNCİRKÖY — SERMAYE GİRDİ, KAZMA VURULMADI | 2026-07-28 |
+| [`SD-02_cubuklu.md`](beykoz_vaka/sinyal_dosyalari/SD-02_cubuklu.md) | SD-02 · ÇUBUKLU — TEK İSİM, İKİ BÖLGE | 2026-07-28 |
+| [`SD-03_riva.md`](beykoz_vaka/sinyal_dosyalari/SD-03_riva.md) | SD-03 · RİVA — ÜÇ MEGA PROJE, ÖLÇÜLMEYEN ZEMİN | 2026-07-28 |
+| [`SD-04_tokatkoy.md`](beykoz_vaka/sinyal_dosyalari/SD-04_tokatkoy.md) | SD-04 · TOKATKÖY — ZİNCİR TAMAMLANDI, GETİRİ EN DÜŞÜK | 2026-07-28 |
+| [`SD-05_riva_yolu_aksi.md`](beykoz_vaka/sinyal_dosyalari/SD-05_riva_yolu_aksi.md) | SD-05 · RİVA YOLU AKSI — 942-947 + 246 PARSEL KÜMESİ | 2026-07-28 |
+| [`SD-06_elmali.md`](beykoz_vaka/sinyal_dosyalari/SD-06_elmali.md) | SD-06 · ELMALI — TOPLAMA × KORUMA ÇARPIŞMASI | 2026-07-28 |
+| [`SD-SABLON.md`](beykoz_vaka/sinyal_dosyalari/SD-SABLON.md) | SD-XX · <SİNYAL ADI> | 2026-07-28 |
 
 ---
 ## /beykoz_vaka/beykoz_ansiklopedi/ — 45 Mahalle Sözlüğü
@@ -243,7 +261,8 @@
 ---
 ## Disiplin
 
-- **Standing #31 v1.1 (KVKK):** iç-çalışma maskesiz, dış-sınır 4 madde. Bu repo PUBLIC — Patron kararı (2026-07-27): dosyalar KVKK dış-sınır uyumlu, 'kendimize kanıt' işlevi görüyor.
+- **Standing #31 v1.1 (KVKK):** PUBLIC — 'kendimize kanıt' işlevi (Patron 2026-07-27).
+- **Standing #35 (2026-07-28):** Vezir push öncesi `git fetch && git log origin/main` **zorunlu** (çift-nüsha yasağı).
 - **A04 dürüst-negatif · #21-B çift-imza · #24 EK-NOT Türkçe-ek toleransı**
 - **V16 dürüst · $0 · dizin-kilidi · doygunluk→yeni-yol**
 
