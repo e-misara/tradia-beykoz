@@ -295,6 +295,30 @@
 | CC-vezir | [`Chat-Vezir_oz_analiz_tam_kapsam_2026-07-15.md`](cc/vezir/Chat-Vezir_oz_analiz_tam_kapsam_2026-07-15.md) | CHAT VEZİR — ÖZ-ANALİZ (Tradia-16 açılış → bugün) | 2026-07-15 |
 
 ---
+## /kurulus/ — CC Kuruluş Dosyaları
+
+**Bağlam:** Üst Akıl direktifi (KURULUŞ-01, 2026-07-29). Her CC'nin kimlik + felsefe + veri + kronoloji + Beykoz katkı + sınırlar + açık borçlar tek dosyada.
+
+**Ana index:** [`dizin_envanteri.json`](kurulus/dizin_envanteri.json) (Hafıza üretimi)
+
+| CC | Dosya | Başlık | Güncelleme |
+|---|---|---|---|
+| CC-FINANS | [`KURULUS_CC-FINANS.md`](kurulus/KURULUS_CC-FINANS.md) | TRADİA KURULUŞ DOSYASI — **CC-FİNANS** | 2026-07-29 |
+| CC-SIGNALS | [`KURULUS_CC-SIGNALS.md`](kurulus/KURULUS_CC-SIGNALS.md) | TRADİA KURULUŞ DOSYASI — **CC-SIGNALS** | 2026-07-29 |
+| CC-SITE | [`KURULUS_CC-Site.md`](kurulus/KURULUS_CC-Site.md) |  | 2026-07-29 |
+| CC-TT-AI | [`KURULUS_CC-TT-AI.md`](kurulus/KURULUS_CC-TT-AI.md) | TRADİA KURULUŞ DOSYASI — CC-TT-AI | 2026-07-29 |
+| CC-TT-MAP | [`KURULUS_CC-TT-MAP.md`](kurulus/KURULUS_CC-TT-MAP.md) | TRADİA KURULUŞ DOSYASI — CC-TT-MAP | 2026-07-29 |
+| CC-TT-PAZARLAMA | [`KURULUS_CC-TT-Pazarlama.md`](kurulus/KURULUS_CC-TT-Pazarlama.md) | KURULUŞ DOSYASI — CC-TT-PAZARLAMA | 2026-07-29 |
+| CC-TIC | [`KURULUS_CC-Tic.md`](kurulus/KURULUS_CC-Tic.md) | KURULUŞ DOSYASI — CC-Tic (Ticari Faaliyet Şeridi) | 2026-07-29 |
+| CC-SOSYAL | [`KURULUS_CC_SOSYAL.md`](kurulus/KURULUS_CC_SOSYAL.md) |  | 2026-07-29 |
+| HAFIZA | [`KURULUS_HAFIZA.md`](kurulus/KURULUS_HAFIZA.md) | KURULUŞ — CC-Hafıza | 2026-07-29 |
+| VEZIR | [`KURULUS_VEZIR.md`](kurulus/KURULUS_VEZIR.md) | KURULUŞ DOSYASI · VEZİR | 2026-07-29 |
+| CC-ANALIZ | [`KURULUS_cc_analiz.md`](kurulus/KURULUS_cc_analiz.md) | TRADİA KURULUŞ DOSYASI — CC-ANALİZ | 2026-07-29 |
+| CC-BASIN | [`KURULUS_cc_basin.md`](kurulus/KURULUS_cc_basin.md) | TRADIA KURULUŞ DOSYASI · CC-BASIN | 2026-07-29 |
+| CC-BORSA | [`KURULUS_cc_borsa.md`](kurulus/KURULUS_cc_borsa.md) | TRADİA KURULUŞ DOSYASI — CC-BORSA | 2026-07-29 |
+| CC-IHALE | [`KURULUS_cc_ihale.md`](kurulus/KURULUS_cc_ihale.md) | TRADİA KURULUŞ DOSYASI — CC-İHALE | 2026-07-29 |
+
+---
 ## Disiplin
 
 - **KVKK #31 v1.1:** PUBLIC — 'kendimize kanıt' (Patron 07-27).

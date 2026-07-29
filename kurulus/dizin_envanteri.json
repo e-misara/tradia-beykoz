@@ -1,0 +1,567 @@
+{
+  "_meta": {
+    "olusturma_utc": "2026-07-29T11:29:47.634651+00:00",
+    "kurulus_sprint": "KURULUŞ-01",
+    "amac": "Tüm CC + tradia_* dizinlerinin mevcut yapısı (kuruluş dosyaları için taban)"
+  },
+  "kokler": {
+    "tradia_konusmalar": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/tradia_konusmalar",
+      "toplam_dosya": 2063,
+      "toplam_boyut_byte": 266157709,
+      "ust_dizinler": {
+        "00_KURUM_HAFIZASI": {
+          "dosya": 58,
+          "byte": 635040
+        },
+        "01_KARARLAR": {
+          "dosya": 32,
+          "byte": 88606
+        },
+        "02_CC_STATE": {
+          "dosya": 673,
+          "byte": 58476449
+        },
+        "03_KONUSMA_GUNLUKLERI": {
+          "dosya": 22,
+          "byte": 4508918
+        },
+        "04_DURUST_NEGATIF_VAKA": {
+          "dosya": 29,
+          "byte": 116120
+        },
+        "05_ARSIV": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "_kok_dosyalar": {
+          "dosya": 4,
+          "byte": 167787
+        },
+        "bulten": {
+          "dosya": 46,
+          "byte": 109932719
+        },
+        "data": {
+          "dosya": 163,
+          "byte": 1014590
+        },
+        "epvys_drop": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "mahalleler": {
+          "dosya": 1034,
+          "byte": 90697011
+        },
+        "rapor": {
+          "dosya": 2,
+          "byte": 520469
+        }
+      },
+      "son_degisim_iso": "2026-07-29T11:00:05.141948+00:00",
+      "cc_sahibi": "CC-Hafıza"
+    },
+    "tradia_analiz": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/tradia_analiz",
+      "toplam_dosya": 78,
+      "toplam_boyut_byte": 94319167,
+      "ust_dizinler": {
+        "_kok_dosyalar": {
+          "dosya": 2,
+          "byte": 9357
+        },
+        "cikti": {
+          "dosya": 32,
+          "byte": 286548
+        },
+        "data": {
+          "dosya": 43,
+          "byte": 87010166
+        },
+        "inbox_ss": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "ss_arsiv": {
+          "dosya": 1,
+          "byte": 7013096
+        }
+      },
+      "son_degisim_iso": "2026-07-29T05:43:38.201148+00:00",
+      "cc_sahibi": "CC-Analiz"
+    },
+    "tradia_basin": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/tradia_basin",
+      "toplam_dosya": 8400,
+      "toplam_boyut_byte": 922521016,
+      "ust_dizinler": {
+        "_kok_dosyalar": {
+          "dosya": 1,
+          "byte": 65170
+        },
+        "cikti": {
+          "dosya": 225,
+          "byte": 51428779
+        },
+        "gece_S95": {
+          "dosya": 54,
+          "byte": 7287398
+        },
+        "ham": {
+          "dosya": 8111,
+          "byte": 846419248
+        },
+        "logs": {
+          "dosya": 2,
+          "byte": 74923
+        },
+        "veri": {
+          "dosya": 7,
+          "byte": 17245498
+        }
+      },
+      "son_degisim_iso": "2026-07-29T11:28:29.953186+00:00",
+      "cc_sahibi": "CC-Basın"
+    },
+    "tradia_sosyal": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/tradia_sosyal",
+      "toplam_dosya": 242,
+      "toplam_boyut_byte": 22107585,
+      "ust_dizinler": {
+        "cikti": {
+          "dosya": 237,
+          "byte": 2151492
+        },
+        "dondurma_yedek": {
+          "dosya": 1,
+          "byte": 1042
+        },
+        "gecici_transkript": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "kitap_arsiv": {
+          "dosya": 4,
+          "byte": 19955051
+        }
+      },
+      "son_degisim_iso": "2026-07-29T10:02:24.276291+00:00",
+      "cc_sahibi": "CC-Sosyal"
+    },
+    "tradia_tic": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/tradia_tic",
+      "toplam_dosya": 68,
+      "toplam_boyut_byte": 578603,
+      "ust_dizinler": {
+        "beykoz_vaka": {
+          "dosya": 3,
+          "byte": 69324
+        },
+        "cikti": {
+          "dosya": 27,
+          "byte": 274190
+        },
+        "dagitim": {
+          "dosya": 3,
+          "byte": 18669
+        },
+        "hafiza": {
+          "dosya": 20,
+          "byte": 102593
+        },
+        "kod": {
+          "dosya": 6,
+          "byte": 48139
+        },
+        "mail_taslak": {
+          "dosya": 3,
+          "byte": 29031
+        },
+        "veri": {
+          "dosya": 2,
+          "byte": 9473
+        },
+        "yanit_paketi": {
+          "dosya": 4,
+          "byte": 27184
+        }
+      },
+      "son_degisim_iso": "2026-07-29T05:45:07.934480+00:00",
+      "cc_sahibi": "CC-Tic"
+    },
+    "tradia_sorgu": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/tradia_sorgu",
+      "toplam_dosya": 6,
+      "toplam_boyut_byte": 81027729,
+      "ust_dizinler": {
+        "data": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "_kok_dosyalar": {
+          "dosya": 2,
+          "byte": 80991546
+        },
+        "logs": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "scripts": {
+          "dosya": 4,
+          "byte": 36183
+        }
+      },
+      "son_degisim_iso": "2026-07-28T07:49:06.973744+00:00",
+      "cc_sahibi": "CC-Hafıza"
+    },
+    "tradia_ttmap": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/tradia_ttmap",
+      "toplam_dosya": 186,
+      "toplam_boyut_byte": 67568123,
+      "ust_dizinler": {
+        "01_HAM": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "01_kaynak_erisim": {
+          "dosya": 2,
+          "byte": 4098
+        },
+        "02_CC_STATE": {
+          "dosya": 4,
+          "byte": 23181
+        },
+        "02_NOKTA": {
+          "dosya": 40,
+          "byte": 34127546
+        },
+        "02_disk_projeksiyon": {
+          "dosya": 5,
+          "byte": 17736
+        },
+        "03_CALISMA": {
+          "dosya": 12,
+          "byte": 137022
+        },
+        "03_nokta_sema": {
+          "dosya": 2,
+          "byte": 10899
+        },
+        "04_lisans": {
+          "dosya": 1,
+          "byte": 3045
+        },
+        "_kok_dosyalar": {
+          "dosya": 26,
+          "byte": 1813163
+        },
+        "kod": {
+          "dosya": 35,
+          "byte": 118513
+        },
+        "landsat_deney": {
+          "dosya": 9,
+          "byte": 303142
+        },
+        "nasa_kesif": {
+          "dosya": 48,
+          "byte": 31004992
+        },
+        "scratch": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "tucbs_kesif": {
+          "dosya": 2,
+          "byte": 4786
+        }
+      },
+      "son_degisim_iso": "2026-07-29T10:45:42.700229+00:00",
+      "cc_sahibi": "CC-TT-MAP"
+    },
+    "cc_ihale": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/cc_ihale",
+      "toplam_dosya": 1410,
+      "toplam_boyut_byte": 105769563,
+      "ust_dizinler": {
+        "_kok_dosyalar": {
+          "dosya": 4,
+          "byte": 20651
+        },
+        "cikti": {
+          "dosya": 26,
+          "byte": 803284
+        },
+        "data": {
+          "dosya": 87,
+          "byte": 97760083
+        },
+        "docs": {
+          "dosya": 75,
+          "byte": 235565
+        },
+        "gunluk_ozet": {
+          "dosya": 1120,
+          "byte": 3460798
+        },
+        "logs": {
+          "dosya": 19,
+          "byte": 158194
+        },
+        "rapor": {
+          "dosya": 12,
+          "byte": 2956262
+        },
+        "scripts": {
+          "dosya": 67,
+          "byte": 374726
+        }
+      },
+      "son_degisim_iso": "2026-07-29T06:40:05.182936+00:00",
+      "cc_sahibi": "CC-İhale"
+    },
+    "cc_borsa": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/Desktop/tradia/cc_borsa",
+      "toplam_dosya": 3462,
+      "toplam_boyut_byte": 155633693,
+      "ust_dizinler": {
+        "_disari_uyumsuz": {
+          "dosya": 1,
+          "byte": 2419
+        },
+        "_park": {
+          "dosya": 10,
+          "byte": 40291
+        },
+        "agent": {
+          "dosya": 13,
+          "byte": 76364
+        },
+        "basin_reviews_dir": {
+          "dosya": 83,
+          "byte": 9439653
+        },
+        "cikti": {
+          "dosya": 16,
+          "byte": 176247
+        },
+        "_kok_dosyalar": {
+          "dosya": 4,
+          "byte": 43381
+        },
+        "data": {
+          "dosya": 202,
+          "byte": 9973329
+        },
+        "docs": {
+          "dosya": 11,
+          "byte": 204007
+        },
+        "firmalar": {
+          "dosya": 3005,
+          "byte": 135161841
+        },
+        "schema": {
+          "dosya": 7,
+          "byte": 17760
+        },
+        "scripts": {
+          "dosya": 110,
+          "byte": 498401
+        }
+      },
+      "son_degisim_iso": "2026-07-29T05:44:43.575017+00:00",
+      "cc_sahibi": "CC-Borsa"
+    },
+    "kitap_32gun": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/kitap_32gun",
+      "toplam_dosya": 146,
+      "toplam_boyut_byte": 1478493,
+      "ust_dizinler": {
+        "_kok_dosyalar": {
+          "dosya": 2,
+          "byte": 626543
+        },
+        "kanon": {
+          "dosya": 13,
+          "byte": 175814
+        },
+        "katalog": {
+          "dosya": 1,
+          "byte": 7176
+        },
+        "ozetler": {
+          "dosya": 113,
+          "byte": 482526
+        },
+        "taslak": {
+          "dosya": 17,
+          "byte": 186434
+        }
+      },
+      "son_degisim_iso": "2026-07-19T10:21:05.159431+00:00",
+      "cc_sahibi": "CC-Kitap"
+    },
+    "misara_kasa": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/misara",
+      "toplam_dosya": 499,
+      "toplam_boyut_byte": 42107550,
+      "ust_dizinler": {
+        "kasa": {
+          "dosya": 499,
+          "byte": 42107550
+        }
+      },
+      "son_degisim_iso": "2026-07-15T07:35:05.468964+00:00",
+      "cc_sahibi": "CC-Kasa"
+    },
+    "tt_pazarlama": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/tt_pazarlama",
+      "toplam_dosya": 11,
+      "toplam_boyut_byte": 51870,
+      "ust_dizinler": {
+        "00_KANON_OKUMA": {
+          "dosya": 4,
+          "byte": 28429
+        },
+        "01_STANDARTLAR": {
+          "dosya": 4,
+          "byte": 14760
+        },
+        "02_KAMPANYA_TASLAK": {
+          "dosya": 2,
+          "byte": 4735
+        },
+        "03_BESLEME_GELEN": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "_kok_dosyalar": {
+          "dosya": 1,
+          "byte": 3946
+        }
+      },
+      "son_degisim_iso": "2026-07-10T22:03:36.950918+00:00",
+      "cc_sahibi": "CC-TT-Pazarlama"
+    },
+    "finans": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/finans",
+      "toplam_dosya": 22,
+      "toplam_boyut_byte": 497837,
+      "ust_dizinler": {
+        "02_CC_STATE": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "_kok_dosyalar": {
+          "dosya": 13,
+          "byte": 225107
+        },
+        "cikti": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "data": {
+          "dosya": 8,
+          "byte": 265549
+        },
+        "kod": {
+          "dosya": 1,
+          "byte": 7181
+        }
+      },
+      "son_degisim_iso": "2026-07-29T05:44:27.334557+00:00",
+      "cc_sahibi": "CC-Finans"
+    },
+    "signals": {
+      "mevcut": true,
+      "yol": "/Users/GAC-A/signals",
+      "toplam_dosya": 32,
+      "toplam_boyut_byte": 923308,
+      "ust_dizinler": {
+        "_kok_dosyalar": {
+          "dosya": 13,
+          "byte": 439667
+        },
+        "cikti": {
+          "dosya": 2,
+          "byte": 381510
+        },
+        "data": {
+          "dosya": 0,
+          "byte": 0
+        },
+        "kod": {
+          "dosya": 10,
+          "byte": 43987
+        },
+        "sinyal_dosyalari": {
+          "dosya": 7,
+          "byte": 58144
+        }
+      },
+      "son_degisim_iso": "2026-07-29T06:01:46.744234+00:00",
+      "cc_sahibi": "CC-Signals"
+    },
+    "TT-HAFIZA_dis_disk": {
+      "mevcut": true,
+      "yol": "/Volumes/TT-HAFIZA",
+      "toplam_dosya": 193864,
+      "toplam_boyut_byte": 132340664132,
+      "ust_dizinler": {
+        "00_OFIS": {
+          "dosya": 16,
+          "byte": 167537
+        },
+        "01_YEDEK": {
+          "dosya": 126321,
+          "byte": 65288765324
+        },
+        "02_ARSIV": {
+          "dosya": 66988,
+          "byte": 48320100058
+        },
+        "03_SAHSI": {
+          "dosya": 2,
+          "byte": 4183
+        },
+        "04_GECICI": {
+          "dosya": 2,
+          "byte": 4246
+        },
+        "_kok_dosyalar": {
+          "dosya": 2,
+          "byte": 32859
+        },
+        "System Volume Information": {
+          "dosya": 2,
+          "byte": 88
+        },
+        "ttmap_ham": {
+          "dosya": 528,
+          "byte": 18731577549
+        },
+        "uydu_arsiv": {
+          "dosya": 3,
+          "byte": 12288
+        }
+      },
+      "son_degisim_iso": "2026-07-29T11:22:02.965203+00:00",
+      "cc_sahibi": "CC-Hafıza (soğuk-arşiv)"
+    }
+  }
+}
