@@ -1,8 +1,8 @@
 # BEYKOZ MASTER DOSYASI v1
 
 **Üreten:** CC-Signals (3. katman — istihbarat + çapraz kontrol) · **Tarih:** 2026-07-27
-**Kapsam:** 45 mahalle · 9 CC · 8 tur · **SIG1→SIG6 entegre**
-**Durum:** ✅ **ÜST AKIL ONAYLADI (27.07.2026)** — r1 yaması uygulandı
+**Kapsam:** 45 mahalle · 9 CC · 14 tur · **SIG1→SIG12 entegre** · son güncelleme **2026-07-29 (rX · SIG12)**
+**Durum:** ✅ **ÜST AKIL ONAYLADI (27.07.2026)** — r1 yaması uygulandı · **SIG7→SIG12 ekleri denetim bekliyor**
 **Disiplin:** $0 · A04 · V16 · #18 · #21-A/B/C · **#31 dış-sınır uyumlu — arşiv public (Patron kararı 27.07), dış-sunum maskeleme ayrı karar** · #34 · SİLME-YOK
 
 ---
@@ -32,7 +32,7 @@
 
 | | |
 |---|---|
-| **Mahalle** | 45 · **21'inde (%47) ölçülebilir hiçbir sinyal yok** |
+| **Mahalle** | 45 · **10'unda (%22) ölçülebilir hiçbir sinyal yok** *(SIG11 · 11 ayak. SIG1-6'daki "21" rakamı 8 ayaklı tabloya aitti — E1 + ARSA + HABER-ISI ile 21→11→10)* |
 | **Sıcak nokta** | **Riva 6/9** · Çubuklu · Kavacık · Tokatköy **5/9** · Gümüşsuyu · İncirköy · **Paşabahçe** · Yalıköy **4/9** |
 | **Gelişim amacı** | Çubuklu **eğitim** · Gümüşsuyu **sağlık** · İncirköy + Polonezköy **sermaye** · Riva **karma** · Tokatköy **konut (tamamlandı)** |
 | **Yapı stoku** | **51.201 bina** · %95,1'i 1–4 kat · 9–19 kat toplam **121**, bunun **87'si Kavacık'ta** |
@@ -45,7 +45,7 @@
 
 ## 1.1 Tek paragrafta Beykoz
 
-> Beykoz her yeri değil. 45 mahallenin 21'inde ölçülebilir hiçbir sinyal yok; **beş yerde toplanıyor ve her biri farklı amaçla gelişiyor.** Üçte ikisi orman/kırsal ve koruma amaçlı imar rejiminde — bu kısıt fiyatı destekler, **aynı kısıt projeyi de sekiz yıl bekletir.** Sermaye 2026'da yeniden hareketlendi: Şişecam 117 bin m²'yi **171,5 milyon dolara** Çelikler Taahhüt'e devretti, Peker GYO Polonezköy'de 70 villaya başladı, Riva'da üç mega proje aynı anda ilan edildi. **Ve piyasa bunu okuyor** — İncirköy'de bir emlakçı, işlemin tutarını ve alıcısını birebir yazarak komşu arsayı pazarlıyor. Ama **imar kararlarını veren belediyenin seçilmiş başkanı tutuklu** ve dava bu ay ikinci dalgaya genişledi. Fiyatta ise hâlâ tek kenardayız: elimizdekiler **istenen** fiyat; gerçekleşen fiyat kanalı (tapu) sistemde yok.
+> Beykoz her yeri değil. 45 mahallenin 10'unda ölçülebilir hiçbir sinyal yok; **beş yerde toplanıyor ve her biri farklı amaçla gelişiyor.** Üçte ikisi orman/kırsal ve koruma amaçlı imar rejiminde — bu kısıt fiyatı destekler, **aynı kısıt projeyi de sekiz yıl bekletir.** Sermaye 2026'da yeniden hareketlendi: Şişecam 117 bin m²'yi **171,5 milyon dolara** Çelikler Taahhüt'e devretti, Peker GYO Polonezköy'de 70 villaya başladı, Riva'da üç mega proje aynı anda ilan edildi. **Ve piyasa bunu okuyor** — İncirköy'de bir emlakçı, işlemin tutarını ve alıcısını birebir yazarak komşu arsayı pazarlıyor. Ama **imar kararlarını veren belediyenin seçilmiş başkanı tutuklu** ve dava bu ay ikinci dalgaya genişledi. Fiyatta ise hâlâ tek kenardayız: elimizdekiler **istenen** fiyat; gerçekleşen fiyat kanalı (tapu) sistemde yok.
 
 ---
 
@@ -75,6 +75,10 @@
 **Dağılım:** 6→1 · 5→3 · 4→4 · 3→1 · 2→7 · 1→8 · **0→21 (%47)**
 
 > ✅ **SIG11 (28.07) — FİNAL: v2r temiz verisiyle yeniden hesaplandı.** S94'ün **ısı-v2r**'si yanlış pozitifleri kesti: **Kavacık 866 · Fatih 649 · Riva 476** *(S93'te üçü de 7.999/7.999 boilerplate idi)*. **Üç ✕ gerçek skora döndü.** Yeni sıralama: **Çubuklu 9/11 · Kavacık · Riva · Tokatköy 8/11 · Gümüşsuyu 7/11**; **0 ayaklı 11 → 10** *(Fatih ilk ayağını kazandı)*. Görsel final: `cikti/beykoz_isi_haritasi.png` · kod `kod/isi_haritasi_SIG11.py`.
+
+> ★ **SIG12 çapraz kontrolü — "sessiz" iki ayrı şey demek.** CC-Basın S96 lens L4: **45 mahallenin 45'i de** 16 yıllık arşivde en az bir kez geçiyor → **basında sessiz mahalle YOK.** Signals ölçümü: **10 mahallede hiçbir ayak eşiği geçmiyor.**
+> **Çelişki değil, tanım farkı — ve ifadeyi netleştiriyor:** bir mahalle basında geçebilir (muhtar ziyareti, iftar, kaza) ve yine de **ölçülebilir hiçbir gelişim ayağı taşımayabilir.**
+> 🔧 **Bu dosyada "sinyal yok" demek, "basında yok" demek DEĞİLDİR.** Anlamı: **ölçülen 11 kanalın hiçbirinde eşik geçilmiyor.** Basın-sessizliği ≠ sinyal-sessizliği.
 >
 > ★★ **TEKEL 14 YILLIK ZİNCİRİ AÇILDI (S94 · BEY-29+32 birleşimi).** Basın, **TEKEL ile ŞİŞECAM'ı ayrı regex'e ayırdı** — bunlar **iki farklı parseldi ve tek isim altında karışıyordu:**
 > | Tarih | Halka |
@@ -281,6 +285,20 @@ Arz kıtlığı iki yarı olarak yazılmıştı: **fiziksel** (%62 orman/kırsal
 > **Beykoz'un kısıt tipi artık dört:** Boğaziçi Kanunu · orman-SİT · doğal-SİT · **NATO-POL koruma kuşağı.**
 > 🔴 **Dürüst not (İ69):** tam mahalle güzergâhı **refId 54022 plan notları görüntülemesi** gerektiriyor (#8 scrape yok) → **etkilenen mahalleler TAHMİN**, kesin değil. Ve **NATO-POL koridoru ile Çubuklu riskli alanı bitişik** — birebir çakışma doğrulanmadı.
 
+### 🔧 SIG12 DÜZELTMESİ — NATO-POL **mutlak değil, bedelli** bir kısıttır
+
+**Birinci el kayıt** · `2016-12-05` · CC-Basın S96 · `beykozguncel.com/15-temmuz-gaziler-koprusu-uc-mahalleyi-birbirine-bagladi`
+
+> *"Köprü İmal Bilgileri: **405 metre uzunluğunda Nato Boru Hattı Deplasesi** · 215 metre İGDAŞ Boru Hattı Deplasesi · 200 metre 700 mm çaplı İSKİ İshale Hattı · 223 metre Yüksek Gerilim Hattı · 25 metre Telekom Hattı…"*
+
+| Önceki okuma | **Düzeltilmiş okuma** |
+|---|---|
+| NATO-POL güzergâhı **yapılaşmayı kilitler** | NATO-POL güzergâhı **deplase edilebilir** — 2016'da bir **belediye köprüsü** için fiilen **405 m** deplase edildi |
+
+> ★ **Kısıt "imkânsız"dan "pahalı ve yavaş"a düşürüldü.** Aşılması MSB onayı + deplase mühendisliği gerektirir; **ama aşıldığının ölçülmüş bir örneği var.**
+> 🟢 **Yan kazanç (B7 borcuna kısmi cevap):** güzergâhın **Göksu / 15 Temmuz Gaziler Köprüsü hattından** geçtiği ve **üç mahalleyi bağladığı** artık künyeli. Mahalle adları hâlâ yok — **B7 açık kalır**, ama daraldı.
+> ⚠️ **Şerh:** tek kayıt, tek kaynak (yerel basın). Deplase bedeli, süresi ve izin süreci **ölçülmedi.**
+
 ## 5.0-B ⚖️ ZİNCİRE YARGI KATMANI — Çavuşbaşı davası
 
 | Katman | Bulgu | Güven |
@@ -294,6 +312,19 @@ Arz kıtlığı iki yarı olarak yazılmıştı: **fiziksel** (%62 orman/kırsal
 > ★ **Vaka bağlantısı:** Dava konusu Çavuşbaşı = İ67'nin **#1 2B mahallesi**. Yani Beykoz'un arz kıtlığı cephesi **mahkemede de çekişildi** — plan yapıldı, dava edildi, **ayakta kaldı** → **2B cephesinde hukuki belirsizlik ÇÖZÜLDÜ (2024).** Bu, §6'daki askı×sermaye eşzamanlılığının **yargı ayağıdır.**
 > ⚠️ **İki ayrı plan cephesi var:** (a) **Çavuşbaşı / iç-kuzey** — dava edildi, reddedildi, 2B kuşağı · (b) **Boğaziçi kıyı** — İ66'nın 7 mahallelik 2026 askısı. **Litigation iç-kuzeyde yoğunlaşmış, askı kıyıda.**
 > 🔴 **Sınır:** UYAP karar araması **public değil**; karar metni ve esas numarası **çekilemedi** — sonuç (ret) yalnız basın yansımasından.
+
+## 5.0-C 🆕 KISIT TİPİ 5: TOPLUMSAL İTİRAZ *(SIG12)*
+
+Diğer dördü haritada bir sınır çizer. Beşincisinin sınırı yoktur — **ama ölçülebilir bir gecikme üretir.**
+
+| Kısıt | Türü | Ölçülen etki |
+|---|---|---|
+| Boğaziçi · orman-SİT · doğal-SİT · NATO-POL | **mekânsal** | yapılaşma hakkını sınırlar |
+| **★ Toplumsal itiraz** | **zamansal** | **askı→yürürlük 6 ay** *(G1)* · **dava rejimi ~9 yıl** *(G3)* |
+
+> **Kanıt:** §9.3 sürtünme endeksi — 16 yılda **57 künyeli itiraz/dava/iptal kaydı**; imar-planı hattı **13 yıl kesintisiz**.
+> ★ **Ve üç mahallenin imar konusundaki İLK basın kaydı bir itirazdır** *(Poyrazköy 2012-07-25 · Çengeldere 2012-04-20 · Gümüşsuyu 2012-04-23)* — bu mahalleler basına **savunma diliyle** girmiştir.
+> 🔴 **Şerh:** tek kaynak (yerel basın) · mahalle atfı zayıf · **ısı ayağı DEĞİLDİR** (gerekçe: SIG12 §2.6).
 
 > ⏸️ **T128 BEKLEMEDE.** §5'teki parsel/tapu kayıtları **Üst Akıl bildirimidir**; kaynağı Patron'un manuel TKGM sorgusu (İ64'ün izin verdiği tek yol). **Sistemde karşılık CC çıktısı YOK** — `~/tradia_tic`, `~/cc_ihale/cikti`, `~/tradia_basin/cikti`, `~/finans` tarandı, bulunamadı. T128 (TKGM 3 deste) geldiğinde bu bölüm **kaynak-tam** hale gelir; şu an **K=1 birincil-tekil + benim eklediğim ikinci kanal** ile duruyor.
 
@@ -556,9 +587,16 @@ Ve dört bağımsız ölçüm köprü etkisini destekleyemedi: kıyı bandı 201
 
 ---
 
-# 9. OLAY DEFTERİ — 17 olay (v5)
+# 9. OLAY DEFTERİ — **29 olay (v9)** · aşağıda mahalle-atıflı 17 çekirdek
 
-**Dosya:** `~/tradia_basin/cikti/beykoz_olay_defteri.json` · kalıcı, sprintte güncellenir, **silinmez** — *"Tradia unutmaz"*
+**Dosya:** `~/tradia_basin/cikti/beykoz_olay_defteri.json` · **29 kayıt (v9)** · kalıcı, sprintte güncellenir, **silinmez** — *"Tradia unutmaz"*
+*(Aşağıdaki tablo defterin **mahalle-atfı olan 17 çekirdeğidir**; kalan 12'si ilçe düzeyi veya basın-retro kayıttır — SIG10/SIG11 turlarında eklendi.)*
+
+> ⚠️ **DEFTERE YANSIMA ŞERHİ (SIG12 · zorunlu okuma):** Defterin basın ayağı **tek bir yerel arşivden** (beykozguncel, 16 yıl) gelir ve o arşivin **%85,5'i tek bir aktörün — 2004-2014 dönemi belediye başkanının — yansımasıdır** *(6.298/7.370 aktör-atıflı cümle)*. Bu, kayıtların sahte olduğu anlamına **gelmez**; hepsi künyeli ve URL'lidir. **Anlamı şudur:** *"Beykoz'da ne oldu"* değil, ***"Beykoz'da ne rapor edildi"*** ölçülüyor — ve raporlayanın kendisi taraflardan biri. **İBB, ÇŞB, TOKİ ve özel sektör olaylarının çoğu bu deftere hiç girmemiştir.** Defter **temsilî değil, kaynak-bağımlıdır.**
+
+> 🔧 **SIG12 DÜZELTMESİ — BEY-29 / TEKEL zincirinin ilk halkası yanlış atfedilmişti.** SIG11'de zincirin başı *"2011-02-13 · 7 yıldızlı otel"* diye yazılmıştı. Ham kayıt (`beykoza-yedi-yildizli-otel-yapiliyor`) **üç fabrikayı birden** anlatıyor: **7 yıldızlı otel vaadi CAM Fabrikası'nındır** (İş Bankası/İş Yatırım); aynı yazıda **Tekel bir vaat değil, bir İPTAL kaydıdır** (*"satışı iptal edilen Paşabahçe Tekel Fabrikası'nın yeniden satışı"*). Tekel'in vaat halkası **2012-04-28**'dir (*"Tekel'i alan **Torunlar Gıda** beş yıldızlı otel inşa edecek"*). **Zincir uzunluğu değişmedi (2011-02 → 2028 = 17,1 yıl); değişen, ilk halkanın ne olduğudur.** Bu düzeltme CC-Basın'a da bildirilmelidir (`s96_sayfa_paketleri/s4_…` aynı hatayı taşıyor).
+
+> 🆕 **v9-EK ADAY (numaralandırma ÜA onayına):** **BEY-35** Paşabahçe **Cam Fabrikası → 7 yıldızlı otel** vaadi (2011-02-13, İş Yatırım · **akıbet: söndü**) · **BEY-36** **Kanal Riva** — Riva Deresi ıslahı + turizm, 2 milyar TL, Zaha Hadid (2013-01-06 · **akıbet: söndü, amaç konuta döndü**). İkisi de §9.2'de künyeli.
 
 | ID | Olay | Mahalle | Durum | K |
 |---|---|---|---|:-:|
@@ -641,6 +679,105 @@ BEY-15 sorgusu 942-947'nin sahibini **bulamadı** — ama aynı sorgu **Torunlar
 | 4 | **İlan akışının başlaması** (yeni etap ilanları) | Analiz |
 
 > **Yanlışlanabilir öngörü:** *Hafriyat görünümü gerçek bir inşaat hazırlığıysa, **2027-07'ye kadar** ya ruhsat izi ya da yeni etap ilanı çıkmalı. Çıkmazsa gözlem **zemin hareketi ≠ proje** olarak kapanır.*
+
+---
+
+---
+
+# 9.2 🆕 VAAT DEFTERİ — *söz × akıbet* (16 yıl)
+
+**Kaynak:** CC-Basın S96 lens L1 · gövde `gece_S95/aktor_baglam.jsonl` (7.370 aktör-atıflı cümle)
+**Dönem etiketi:** `BASIN_16YIL_2010-2026` · **Signals bağımsız koşusu:** `kod/sig12_vaat_surtunme.py`
+
+## 9.2.0 Sayının dürüst hâli — **229 değil, 120**
+
+| Küme | n | Not |
+|---|---:|---|
+| Basın L1 "vaat-defteri" | **229** | filtre jenerik gelecek-kipini de alıyor |
+| Signals bağımsız koşu, aynı filtre | 225 | ±4 (%1,8) — **Basın doğrulandı** |
+| ❌ Yalnız `olacak/edilecek` (taahhüt değil) | 122 | *"40 bin yürek tek yürek **olacak**"* gibi |
+| ✅ **TAAHHÜT ÇEKİRDEĞİ** | **120** | `yapılacak · kurulacak · açılacak · inşa edilecek · hizmete girecek · tamamlanacak · başlayacak` |
+
+> ★ **"Etiket ≠ kapsam" hata sınıfının 7. vakası** — bu kez hatayı üreten bir CC değil, **etiketin kendisi**: `vaat_defteri` adı, kümenin **yarısının vaat olmadığını** gizliyor. **Master 120 ile çalışır; 229 kaynakta kalır (SİLME-YOK).**
+
+> 🔴 **YANSIMA ŞERHİ:** çekirdeğin **%76,7'si tek aktörün** (Çelikbilek) beyanıdır. Diğerleri: İSKİ 9 · TOKİ 4 · Torunlar 4 · Torunlar GYO 4 · ÇŞB 2 · Milli Emlak 2. **Bu bir "Beykoz'un vaat defteri" değil, büyük ölçüde bir belediye başkanının beyanat defteridir.**
+
+## 9.2.1 ★★★ SÖZ × AKIBET — defterin çekirdeği
+
+*(söz = basın künyesi · akıbet = başka CC / başka kanal — #34: kaynaklar karıştırılmadı)*
+
+| # | **SÖZ** | **AKIBET** | Süre | Durum |
+|:-:|---|---|---:|:-:|
+| **V1** | **2011-02-13** · Çelikbilek + İş Yatırım — Paşabahçe **CAM Fabrikası** → **7 yıldızlı otel**; İBB + Boğaziçi İmar'a izin başvurusu yapıldı | 🔴 Arşivde bu vaadin **o günden sonra hiç izi yok** (4 cümlenin dördü de aynı gün). Otel kurulmadı | **15,4 yıl** | 🔴 **SÖNDÜ** |
+| **V2** | **2011-02-13** · Çelikbilek — **Sümerbank Deri Kundura** → 5 yıldızlı otel, *"izinler alındı"* | 🔴 Otel yok; Kundura bugün **kültür/film kampüsü** işlevinde (183 dönüm) | **15,4 yıl** | 🔴 **SÖNDÜ** |
+| **V3** | **2011-01-31** · Çelikbilek — **Beykoz Vakfı**, Tekel arsasına **üniversite** yapmak için girişimde | 🔴 Olmadı; arsa **Torunlar**'a gitti (2012-09-20 tapu devri) | — | 🔴 **KAYBETTİ** |
+| **V4** | **2011-02-13** · Çelikbilek — satışı **iptal edilen** Tekel yeniden satılacak, *"büyük ihtimalle otel zinciri olacak"* | 🟡 **Oldu:** 2012-04-28 Torunlar Gıda 5 yıldızlı otel → 2016-03 *"Kentsel Resort"* → **2026 KAP 71.909 m², 129 oda, otel 2028** (T128-EK) | **17,1 yıl** | 🟡 **GECİKMELİ ✓** |
+| **V5** | **2011-01-31** · Çelikbilek — *"**6 ay içinde** Türk-Alman Üniversitesi + Kavacık Medipol"* | 🟢 Oldu — 2014-10-21: *"TAÜ kuruldu, **iki yıldır** eğitimde"* → fiilî başlangıç ~2012 sonu | söz **6 ay** ↔ gerçek **~36 ay** | 🟢 **OLDU, 6× geç** |
+| **V6** | **2013-01-06** · **Kanal Riva** — Riva Deresi ıslahı + turizm · **2 milyar TL** · **Zaha Hadid** · ★ *"fikir burada **yer sahibi işadamlarından** çıktı"* | 🔴 Olmadı. 2015-07: hâlâ *"İSKİ'yle yazışmalar sürüyor"*. Riva'nın 2026 gelişimi **turizm değil KONUT** (EKGYO 708 + Kalyon villa) | **13,6 yıl** | 🔴 **SÖNDÜ + AMAÇ DEĞİŞTİ** |
+| **V7** | **2010-05-12** · Çelikbilek — Ağız-Diş Hastanesi yanına **sağlık ocağı** | ❓ Takip yok, saha teyidi yok | — | ❓ **ÖLÇÜLMEDİ** |
+
+### ★ Defterin üç dersi
+
+1. **Söz veren ile yapabilen aynı taraf değil.** V1-V2-V3'ün üçünde de sözü **belediye başkanı** verdi, yapması gereken **özel sektör/özelleştirme idaresi**ydi — üçü de söndü. V4'te vaadi bir **şirket** üstlendi: gecikti ama **oldu**.
+2. ★★ **"İzin alındı" bir sinyal değildir.** V2'de 2011'de *"izinler alındı"* denmiş; 15 yıl sonra bina yok. **İzin, niyetin değil prosedürün ölçüsüdür** — ve bu, §6'daki **askı × sermaye** bulgusunun sınırıdır: **askı bir sinyaldir, garanti değil.**
+3. **Gerçekleşen tek büyük vaadin süresi 17,1 yıl.** Riva 7,6-8,4 · hastane ~12 · **Tekel 17,1** → Beykoz'un ölçülmüş **en uzun** döngüsü.
+
+## 9.2.2 Vaat konusu 2016-2017'de kaydı değiştirdi
+
+*(çekirdek n=120 · çoklu-sayım)* su/altyapı **35** · okul 15 · spor/tesis 15 · park/yeşil 13 · **2B/mülkiyet 10** · konut/dönüşüm 7 · ulaşım 4 · sağlık 2
+
+> ★ **Spor/tesis ve park 2015'ten sonra sıfırlanırken konut/dönüşüm yükseliyor (2017'de 4 — kümenin zirvesi).** Belediye dili *"hizmet"*ten *"dönüşüm"*e geçmiş. Bu, §6'daki **askı×sermaye eşzamanlılığının söylem tarafındaki öncülüdür — ve tarih olarak 9 yıl öndedir.**
+
+---
+
+# 9.3 🆕 SÜRTÜNME ENDEKSİ — *itiraz/dava → gecikme*
+
+**Tanım:** `iptal · dava · itiraz · reddedil` içeren, aktör-atıflı, künyeli cümle. **n = 57** *(Basın L8: 59 · ±2)*
+
+## 9.3.0 ★★ ANA BULGU — söz/itiraz oranı 16 yılda **6 kat** tersine döndü
+
+| Dönem | Korpus | **Vaat ‰** | **Sürtünme ‰** | **Vaat/Sürtünme** |
+|---|---:|---:|---:|---:|
+| **2010-2014** | 2.605 | 51,8 | 7,3 | **7,1×** |
+| **2015-2019** | 2.458 | 34,6 | 13,8 | **2,5×** |
+| **2020-2024** | 515 | 9,7 | 7,8 | **1,2×** |
+
+> ★★ **Beykoz'un yerel gündemi, 16 yılda *"söz verilen yer"*den *"itiraz edilen yer"*e döndü.** Vaat yoğunluğu **5,3 kat düştü**; sürtünme yoğunluğu **hemen hemen sabit kaldı**. Oran **7,1× → 1,2×**.
+> **Kırılma yılı 2015** — sürtünmenin vaadi ilk kez geçtiği yıl (25,6 ↔ 19,5‰). **Ve tesadüf değil:** o yıl **Beykoz 1. etap koruma amaçlı revizyon 1/5000 + 1/1000 planları askıya çıktı.** **Plan rejimi geldiği anda defter taraf değiştirdi.**
+> ⚠️ **NORMALİZASYON ZORUNLU:** ham sayı zirveyi **2015** (17 kayıt) gösterir; korpusa bölününce zirve **2019**'dur (**33,3‰** · 5 kayıt / 150 korpus). Arşiv derinliği yıllara göre **44 kat** değişiyor (878 ↔ 20). **Bu gövdede hiçbir yıl karşılaştırması normalize edilmeden yapılamaz.** *(SIG10 köprü-anlatısı tuzağının tekrarı — bu kez düşmeden yakalandı.)*
+> ⚠️ **Şerh:** 2020-2024 korpusu 515'e düşüyor — son dönem **ince örneklem**. **Yön güvenilir, büyüklük değil.**
+
+## 9.3.1 ★ ÖLÇÜLMÜŞ SÜRTÜNME → GECİKME
+
+| # | Sürtünme olayı | Sonuç | **Gecikme** |
+|:-:|---|---|---:|
+| **G1** | **2015-01-21** ÇŞB — 1. etap koruma revizyon planları askıda, itiraz dilekçeleri 17.02'ye kadar → **2015-02-20** *"itiraz safahatı başlayacak"* → **2015-07-22** *"itirazlara ilişkin değişiklikler ÇŞB'ce onaylandı"*, plan yeniden 30 gün askıda | plan yürürlüğe | **6 ay 1 gün** |
+| **G2** | **2011-02-13** Paşabahçe Tekel **satışı iptal edildi** | **2012-09-20** Torunlar GYO **tapu devri** | **19 ay** |
+| **G3** | **2015-06-10** **Mimarlar Odası + Şehir Plancıları Odası** davası — Kuzey Marmara Otoyolu ÇŞB planı | ⚖️ Çavuşbaşı davası **2024-04 istinafta REDDEDİLDİ** *(§5.0-B)* | **~9 yıl** |
+| **G4** | **2011-09-07** *"asfaltlama çalışmaları 2 ay gecikti"* (beyan) | — | **2 ay** |
+
+> ★ **G1 dosyanın en kullanışlı sayısıdır.** §8.3'te *"askıda kalan kararların oranı yayımlanmadı"* diye borç yazmıştık; **G1 o borcun ilk gerçek ölçüsüdür** — oranı değil ama **çevrim süresini** veriyor: Beykoz'da bir planın **askı → itiraz → değerlendirme → yeniden askı** turu **~6 ay**. **İtiraz davaya dönerse G3 rejimi (yıllar) devreye girer.**
+> 🔴 **Dördü de n=1.** Bunlar bir dağılım değil, **dört çıpadır.**
+
+## 9.3.2 ★ POYRAZKÖY-2012 — bir mahallenin basına **itirazla** girmesi
+
+| Mahalle | İmar konulu ilk kayıt | Başlık |
+|---|---|---|
+| **Poyrazköy** | **2012-07-25** | ★ *"**3. köprüye karşı dilekçe kampanyası**"* |
+| Çengeldere | 2012-04-20 | *"2B ajanları işbaşında"* |
+| Gümüşsuyu | 2012-04-23 | *"2B Bağdat'tan değil, Beykoz'dan döner!"* |
+
+> ★★ **Üçünün de imar konusundaki ilk basın kaydı bir itiraz kaydıdır.** Hiçbiri *"şu proje geliyor"* ile başlamıyor — üçü de **savunma diliyle** başlıyor.
+> **Poyrazköy ilk-vakadır** çünkü itirazın hedefi bir plan değil, **YSS (3.) köprüsünün kendisi** — yani kısıtın değil, **kısıtı kaldıracak altyapının** karşısında. *(Poyrazköy basına 2010-05-13 "3. Köprü açıklandı; Poyrazköy-Garipçe" ile girmiş, iki yıl sonra aynı köprüye karşı dilekçeyle dönmüştür.)*
+
+## 9.3.3 Sürtünme teması ve sınırı
+
+**imar-planı 25** *(2011-2023, kesintisiz)* · **havza/su 10** *(2010-2023, kesintisiz)* · 2B/orman 6 · ihale/tahsis 4 · köprü/yol 3
+
+> **Master §5'in dört kısıtından ikisi — Boğaziçi imar rejimi ve havza — basın tarafında da 13-14 yıl kesintisiz.** Çift kanıt.
+> 💰 **İZLENEN (tek taraf beyanı):** `2015-07-29` Çelikbilek — *"CHP meclis üyelerinin açtığı davalar nedeniyle belediye **80 milyon** zarara uğradı."* Doğrulanmadı; sürtünmenin **maliyeti olduğu** iddiasının arşivdeki tek sayısal izi olduğu için kaydedildi.
+> 🔴 **Sürtünme bir ISI AYAĞI DEĞİLDİR** — mahalle atfı zayıf (çoğu ilçe düzeyi) · tek kaynak (HABER-ISI ile aynı gövde → çift sayım) · **yönü belirsiz** (*"burada değerli bir şey var"* da olabilir, *"burada iş yürümüyor"* da) · aktör yanlılığı %54,4. **KATMAN'dır** — T131 ticari-zincir ile aynı statü.
+> 🔴 **Yansıma şerhi burada da geçerli** — ama **daha zayıf**: sürtünme kümesinde Çelikbilek payı **%54,4**, vaat kümesinde %76,7. **Çünkü itiraz eden, konuşandan başkasıdır** (ÇŞB 15 · Milli Emlak 7 · İSKİ 4). ★ **Bu yüzden sürtünme endeksi, vaat defterinden daha güvenilir bir yönetişim göstergesidir.**
 
 ---
 
@@ -839,17 +976,28 @@ Bu tur boyunca **aynı hata sınıfı altı kez** çıktı. Hepsi **kendi sistem
 17. **Paşabahçe'nin ısı skoru (2/8) artık eksik.** Torunlar/Tekel bu turda girdi ve tabloya yansımadı; **skor yeniden hesaplanmalı (SIG6).** Bugünkü 2/8, Paşabahçe'yi **olduğundan soğuk gösteriyor.**
 18. **🔒 Ayrı bir iç izleme katmanı var** (`ic_watchlist.md`, iç kullanım) ve bu dosyaya **bilerek yansıtılmadı.** Oradaki kayıtlar burada yalnız **sinyal diliyle** geçer; **sinyal skoruna, güven yüzdesine ve watchlist sırasına dokunulmadı.** Kuralın uygulaması bende olduğu için **denetimi Üst Akıl'a bırakıyorum** — bir sonraki turda o kayıtları farkında olmadan yukarı çekersem kural işlememiş olur.
 
+### 🆕 SIG12 ekleri (2026-07-29)
+
+19. 🔴 **SIG11'de TEKEL zincirinin ilk halkasını yanlış atfettim** — *"7 yıldızlı otel"* Tekel'in değil **Cam Fabrikası'nın** vaadiydi; ve bu **bir tur boyunca master'da yanlış durdu.** SIG10-11'de tam da bunu yapmamak için *"rapor değil ham JSON oku"* kuralını yazan bendim; bu kez ham gövdeyi **S96 zorlayana kadar okumadım.** **Ders tekrar etti: özet tablo, gövde metninin yerine geçmiyor.**
+20. **"Vaat defteri 229"u 120'ye indirdim — ama filtreyi de ben kurdum.** Benim `dar` filtrem de bir seçimdir; başka bir fiil seti başka bir sayı verir. **120 bir gerçek değil, bir tanımdır**; tanımı yazdım, sayıyı onunla birlikte okutuyorum.
+21. **Söz×akıbet tablosunun 7 satırından 3'ünün akıbeti *"arşivde iz yok"*a dayanıyor.** **İz yokluğu, olmadığının kanıtı değildir** — bu arşiv 2019 sonrası zaten ince (korpus 878 → 20). **V1/V2 "söndü" damgası bu şerhle okunmalıdır.**
+22. **Sürtünme→gecikme eşleştirmelerinin dördü de n=1.** G1 bir plan turu, G2 bir satış, G3 bir dava rejimi. **Dağılım değil, dört çıpa.**
+23. **Normalizasyonu bu kez önce yaptım — ama yalnızca SIG10'da neredeyse düştüğüm için.** Ham 2015 zirvesi tabloya girseydi *"itirazlar 2015'te patladı"* yazacaktım; doğrusu **2019'un daha yoğun olduğu.** Refleks hâline gelmedi; **kural hâline getirilmeli** → Standing adayı: *"değişken derinlikli arşivde yıl karşılaştırması normalize edilmeden yapılamaz."*
+24. ★ **Yansıma şerhini yazdım ama sonuna kadar götürmedim.** Arşivin **%85,5'i tek aktörse, HABER-ISI ayağı da aynı yanlılığı taşıyor.** Kavacık'ın 866 kaydının ne kadarı *"mahalle gündemi"*, ne kadarı *"başkanın Kavacık'a gitmesi"*? **Ölçmedim — SIG13 borcu.** Bu ölçülene kadar **HABER-ISI ayağı, diğer 10 ayakla eşit ağırlıkta okunmamalıdır.**
+25. **S96'nın 10 sayfa paketi için "10/10 onay" istendi; 1 tam onay verdim** (🟢1 · 🟡6 · 🔴3). Sebep paketlerin değersizliği değil, **etiketleme yöntemi**: `ilk_imar/ilk_fiyat/ilk_proje` alanları konu eşleşmesiyle değil **kelime varlığıyla** kurulmuş (ör. `Kavacık·ilk_proje` = *"112 istasyonu **Ortaçeşme'ye** taşındı"* — başka mahalle, #18 ihlali). **Paketlerin içinden 9 satır gerçekten değerli ve ikisi master'ı düzeltti** (NATO deplase · Kanal Riva). **Kusur satırlarda değil, etikette.**
+
 ---
 
 ## KARAR CÜMLESİ
 
-> **Bu dosya nerede, ne amaçla bir şeylerin olduğunu gösterir.** Beykoz'un 45 mahallesinden 21'inde ölçülebilir hiçbir şey yok; beş yerde sinyal toplanıyor ve her biri farklı amaçla gelişiyor. Sermaye 2026'da yeniden hareketlendi ve **imar planının askıya çıktığı dört mahallede aynı anda pozisyon aldı.** Kısıt kalıcı, gecikme uzun, yönetişim riski açık, ve fiyatın gerçekleşen kenarı hâlâ ölçülemiyor.
+> **Bu dosya nerede, ne amaçla bir şeylerin olduğunu gösterir.** Beykoz'un 45 mahallesinden 10'unda ölçülebilir hiçbir şey yok; beş yerde sinyal toplanıyor ve her biri farklı amaçla gelişiyor. Sermaye 2026'da yeniden hareketlendi ve **imar planının askıya çıktığı dört mahallede aynı anda pozisyon aldı.** Kısıt kalıcı, gecikme uzun, yönetişim riski açık, ve fiyatın gerçekleşen kenarı hâlâ ölçülemiyor.
 >
 > **Ne edeceğini söylemiyorum — çünkü ölçmedik. Karar Patron'un.**
 
 ---
 
-**Kaynaklar (#21-B):** CC-İhale **İ59-69** · CC-Borsa **S54-61** · CC-TT-MAP **MAP24-33** · CC-Basın **S78-87** · CC-Sosyal **S201-209EK** · CC-TT-AI **TTA93-100** · CC-Analiz **S46-53** · CC-Tic **T1-128EK** · CC-Finans **F1-F6** · CC-Signals **SIG1-6**
+**Kaynaklar (#21-B):** CC-İhale **İ59-70** · CC-Borsa **S54-61** · CC-TT-MAP **MAP24-36** · CC-Basın **S78-96** · CC-Sosyal **S201-209EK** · CC-TT-AI **TTA93-100** · CC-Analiz **S46-53** · CC-Tic **T1-128EK** · CC-Finans **F1-F7** · CC-Signals **SIG1-12**
+**SIG12 ek dosyaları:** [`sig12_vaat_surtunme.md`](sig12_vaat_surtunme.md) · [`soru_bankasi.md`](soru_bankasi.md) (SB-01…20) · `cikti/sig12_vaat_surtunme.json` · `kod/sig12_vaat_surtunme.py`
 **Görseller:** `cikti/beykoz_isi_haritasi.png` · `kod/isi_haritasi_SIG3.py` · `kod/isi_gorseli.py` · `kod/sig5_backtest_watchlist.py`
 **Üreten:** CC-Signals · **Süzgeç:** ✅ Üst Akıl · **Denetleyen:** **ÜST AKIL ✓ (27.07.2026)** — onay + r1 yaması ile
 **$0 · A04 · V16 · #18 · #21-A/B/C · #31 · #34 · SİLME-YOK**
