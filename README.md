@@ -303,6 +303,7 @@
 
 | CC | Dosya | Başlık | Güncelleme |
 |---|---|---|---|
+| INDEX | [`KURULUS_INDEX.md`](kurulus/KURULUS_INDEX.md) | Ana index — Kuruluş paketi giriş belgesi | 2026-07-29 |
 | CC-FINANS | [`KURULUS_CC-FINANS.md`](kurulus/KURULUS_CC-FINANS.md) | TRADİA KURULUŞ DOSYASI — **CC-FİNANS** | 2026-07-29 |
 | CC-SIGNALS | [`KURULUS_CC-SIGNALS.md`](kurulus/KURULUS_CC-SIGNALS.md) | TRADİA KURULUŞ DOSYASI — **CC-SIGNALS** | 2026-07-29 |
 | CC-SITE | [`KURULUS_CC-Site.md`](kurulus/KURULUS_CC-Site.md) |  | 2026-07-29 |
