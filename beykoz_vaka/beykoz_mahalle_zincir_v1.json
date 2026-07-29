@@ -1,0 +1,191 @@
+{
+  "surum": "v1.0-T131",
+  "tarih": "2026-07-28",
+  "uretici_cc": "CC-Tic",
+  "sprint": "T131",
+  "amac": "Beykoz mahallelerinde ticari zincir konumlanma → kitle-profil sınıflandırma; bölge-datasına kalıcı katman",
+  "kaynak_disiplin": ["$0", "A04", "V16", "Cross-Hat pull-only", "KVKK #31"],
+
+  "AS_metrik": {
+    "isim": "AS_ticari_zincir",
+    "aciklama": "Ayırt-edici Skor — mahalledeki ticari zincir kompozisyonundan hesaplanan kitle-profil skoru",
+    "formul": "AS = 3P+ + 2*Premium/OrtaÜst + 1.5*Orta + 1*Ekonomik + 0.5*Convenience",
+    "segment_agirliklari": {
+      "Premium+ (Macrocenter)": 3.0,
+      "Premium/orta-üst (MM Migros, MMM Migros, CarrefourSA Super)": 2.0,
+      "Orta (M Migros)": 1.5,
+      "Ekonomik (BİM, A101, ŞOK, File)": 1.0,
+      "Convenience (Migros Jet)": 0.5
+    },
+    "esikler": {
+      "AS_gte_6.0": "Premium enklav",
+      "AS_3.0_5.9": "İş/karma bölge",
+      "AS_1.0_2.9": "Ekonomik ağırlıklı yerleşim",
+      "AS_0.0": "Kırsal / kurumsal-perakende radar dışı"
+    },
+    "kural_v11_disiplin": "AS bir fiyat öngörüsü değildir; kitle-profil sınıflandırmasıdır. Fiyat için Signals SIG5 §Ç / Finans F5 hedonik model referans alınır."
+  },
+
+  "kaynak_agi": [
+    "Migros kurumsal mağaza katalog PDF (Kavacık, Acarlar-Polonez Yolu ACR LOFT)",
+    "BİM A.Ş. İstanbul bayileri (bim.com.tr Categories/104 CountyKey=1185)",
+    "CarrefourSA Super Kavacık (okatalog.com)",
+    "Macrocenter Acarlar (Foursquare + Bulurum)",
+    "A101 Beykoz şubeleri (okatalog + turkce-brosurler)",
+    "ŞOK Beykoz şubeleri (okatalog)",
+    "Yandex Maps + Foursquare doğrulama",
+    "Wikipedia (Migros grubu format hiyerarşisi + File şirket 2015 BİM iştirak)"
+  ],
+
+  "mahalleler": {
+    "Acarlar": {
+      "AS": 8.0,
+      "profil": "premium-enklav",
+      "zincir_sayisi": 3,
+      "zincirler": [
+        {"marka": "Macrocenter", "segment": "Premium+", "adres": "Acarlar Mah. 9. Cad. No: 9 Beykoz"},
+        {"marka": "Macrocenter", "segment": "Premium+", "adres": "Acarkent Sit. (2. lokasyon)"},
+        {"marka": "MM Migros", "segment": "Premium/OrtaÜst", "adres": "Acarlar Mah. Polonez Bağlantı Yolu No: 2 (ACR LOFT AVM)"}
+      ]
+    },
+    "Kavacık": {
+      "AS": 4.5,
+      "profil": "iş-karma",
+      "zincir_sayisi": 3,
+      "zincirler": [
+        {"marka": "M Migros", "segment": "Orta", "adres": "Kavacık Mah. Orhan Veli Kanık Cad. No:106"},
+        {"marka": "CarrefourSA Super", "segment": "Premium/OrtaÜst", "adres": "Kavacık (detay eksik)"},
+        {"marka": "A101", "segment": "Ekonomik", "adres": "Kavacık Mah."}
+      ]
+    },
+    "Gümüşsuyu": {
+      "AS": 3.0,
+      "profil": "ekonomik-yogun",
+      "zincir_sayisi": 3,
+      "zincirler": [
+        {"marka": "BİM", "segment": "Ekonomik", "adres": "Gümüşsuyu Cd."},
+        {"marka": "A101", "segment": "Ekonomik", "adres": "Gümüşsuyu Mah. Sultaniye Cad. No:71"},
+        {"marka": "ŞOK", "segment": "Ekonomik", "adres": "Gümüşsuyu Mah."}
+      ]
+    },
+    "Çubuklu": {
+      "AS": 2.0,
+      "profil": "ekonomik",
+      "zincir_sayisi": 2,
+      "zincirler": [
+        {"marka": "BİM", "segment": "Ekonomik", "adres": "Çubuklu Mh. Boğaziçi Cd. 32 A-B-C-D"},
+        {"marka": "BİM", "segment": "Ekonomik", "adres": "Çubuklu Mh. Kireç Ocağı Cd. No: 36/A"}
+      ]
+    },
+    "İncirköy": {
+      "AS": 2.0,
+      "profil": "ekonomik",
+      "zincir_sayisi": 2,
+      "zincirler": [
+        {"marka": "BİM", "segment": "Ekonomik", "adres": "İncirköy Mah. Fıstık Altı Sk."},
+        {"marka": "ŞOK", "segment": "Ekonomik", "adres": "İncirköy Mah."}
+      ]
+    },
+    "Paşabahçe": {
+      "AS": 1.0,
+      "profil": "ekonomik-tek",
+      "zincir_sayisi": 1,
+      "zincirler": [
+        {"marka": "BİM", "segment": "Ekonomik", "adres": "Paşabahçe Mh. Barbaros Cd. No:2"}
+      ]
+    },
+    "Merkez": {
+      "AS": 1.0,
+      "profil": "ekonomik-tek",
+      "zincir_sayisi": 1,
+      "zincirler": [
+        {"marka": "ŞOK", "segment": "Ekonomik", "adres": "Merkez Mah."}
+      ]
+    },
+    "Riva": {
+      "AS": 1.0,
+      "profil": "ekonomik-tek",
+      "zincir_sayisi": 1,
+      "zincirler": [
+        {"marka": "A101", "segment": "Ekonomik", "adres": "Riva (detay eksik)"}
+      ]
+    },
+    "Soğuksu": {
+      "AS": 1.0,
+      "profil": "ekonomik-tek",
+      "zincir_sayisi": 1,
+      "zincirler": [
+        {"marka": "A101", "segment": "Ekonomik", "adres": "Soğuksu Mah. Mehmet Akif Ersoy Cad. No:81"}
+      ]
+    }
+  },
+
+  "diger_mahalleler_zincir_yok": {
+    "toplam": 36,
+    "aciklama": "45 Beykoz mahallesinden 9'unda zincir marker doğrulandı; kalan ~36 mahallede açık web'te zincir mağaza atıfı çıkmadı. Muhtemel neden: mahalle bakkalı + minimarket + yerel manav düzeyi baskın; kurumsal-perakende eşiği geçmiyor. SOĞUK-21 mahallelerinin (T129-A) tümü bu grupta.",
+    "kalıcı_koruma_sermaye_disi_3": ["Bozhane", "Göllü", "Öğümce (Üzümce hattı)"],
+    "kirsal_agirlikli_ornek": ["Elmalı", "Poyrazköy", "Anadolu Feneri", "Zerzavatçı", "Dereseki", "Paşamandıra", "Cumhuriyetköy"]
+  },
+
+  "uc_bolge_okumasi": {
+    "A_premium_enklav": {
+      "mahalleler": ["Acarlar"],
+      "AS_aralik": ">= 6.0",
+      "kitle_profili": "üst-üst gelir",
+      "sermaye_akturu": ["Acarlar Grubu 1452 villa (Acarkent 316/4 kat-irtifak 1.8M m²)"]
+    },
+    "B_is_karma": {
+      "mahalleler": ["Kavacık"],
+      "AS_aralik": "3.0-5.9",
+      "kitle_profili": "iş çalışanları öğle + rezidans sakinleri akşam",
+      "not": "Beykoz'un 121 binadan 87'si burada 9-19 kat (Signals master §1)"
+    },
+    "C_bogaz_kirsal_ekonomik": {
+      "mahalleler": ["Gümüşsuyu", "Çubuklu", "İncirköy", "Paşabahçe", "Merkez", "Riva", "Soğuksu"],
+      "AS_aralik": "1.0-2.9",
+      "kitle_profili": "yerleşik orta-alt gelir + tarihi-yerli nüfus"
+    },
+    "D_zincir_yok": {
+      "mahalleler": "36 mahalle",
+      "AS": 0.0,
+      "kitle_profili": "kırsal + doğal SİT + düşük nüfus"
+    }
+  },
+
+  "izleme_kancalari_5": {
+    "Riva_premium_gecikme": {
+      "mega_proje": "EKGYO 708 + Kalyon 1300 + İon 933",
+      "mevcut_zincir": "1 A101",
+      "beklenen_hareket_ne_zaman": "2027-2028 teslim döngüsü sonrası Macrocenter/MM Migros açılışı",
+      "izleme_tipi": "kanca — açılırsa fiziksel-yatırım göstergesi"
+    },
+    "İncirköy_premium_gecikme": {
+      "mega_proje": "Çelikler 117 dönüm + Envoy Vadi 65 dönüm",
+      "mevcut_zincir": "BİM + ŞOK",
+      "beklenen_hareket_ne_zaman": "Çelikler plan açıklandıktan + Envoy teslim sonrası",
+      "izleme_tipi": "kanca"
+    },
+    "Karlıtepe_Gümüşsuyu_premium_gecikme": {
+      "mega_proje": "NEF + Akiş 32 parsel + HSN + Toya Korubaşı",
+      "mevcut_zincir": "3 ekonomik",
+      "beklenen_hareket_ne_zaman": "Karlıtepe teslim sonrası (2027-2028)",
+      "izleme_tipi": "kanca"
+    },
+    "Paşabahçe_premium_gecikme": {
+      "mega_proje": "Torunlar Tekel karma (129 odalı otel 2028 başı)",
+      "mevcut_zincir": "1 BİM",
+      "beklenen_hareket_ne_zaman": "2028 otel + rezidans açılışıyla premium zincir",
+      "izleme_tipi": "kanca"
+    },
+    "Acarkent_denetim": {
+      "izleme_tipi": "koruma — Macrocenter ve MM Migros mevcut ölçekte kalıyor mu, kapanma olursa premium enklav zayıflama sinyali"
+    }
+  },
+
+  "gelistirme_notlari_T132_sonrasi": {
+    "nufus_normalize_AS_v2": "TÜİK mahalle nüfus verisi × AS → mağaza / 1000 kişi normalizasyonu; T133+",
+    "AVM_katmani": "ACR LOFT + Palladium Beykoz + Emlak Konut AVM'ler ayrı katman",
+    "restaurant_katmani": "gastronomi zincirleri (Big Chefs, Espresso Lab vb.) ayrı AS-metrik",
+    "eczane_banka_ATM_katmani": "hizmet-zinciri (eczane, banka şubesi, ATM) ayrı katman"
+  }
+}

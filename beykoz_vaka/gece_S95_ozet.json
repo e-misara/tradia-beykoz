@@ -1,0 +1,15 @@
+{
+  "sprint": "S95-GECE",
+  "bitis_ts": "2026-07-28T23:18:29.508406",
+  "ham_dosya": 8001,
+  "ciktilar": {
+    "bey_zincirleri.json": 28,
+    "yeni_olay_adaylari.jsonl": 964,
+    "mahalle_dosyalari/": 45,
+    "aktor_baglam.jsonl": 7370,
+    "mahalle_ilkler.json": 45,
+    "alinti_bankasi.jsonl": 49,
+    "iski_havza_ozut.jsonl": 519,
+    "sayisal_cumleler.jsonl": 5991
+  }
+}

@@ -2,33 +2,29 @@
 
 **Repo:** `e-misara/tradia-beykoz` (PUBLIC — Patron kararı 27 Tem)  
 **Sahip:** Misara Group / Tradia  
-**Rol:** Vezir (CEO-denetçi) — arşiv sorumluluğu; **çoklu-yazar** repo (Vezir + Üst Akıl doğrudan)  
+**Rol:** Vezir (CEO-denetçi) — arşiv sorumluluğu; **çoklu-yazar** repo  
 **Amaç:** Beykoz vakasının tam kanıt-arşivi + her CC'nin kendi tanıtım/öz-analiz belgesi. Üst Akıl bu index'ten çalışır.  
-**Standing #31 v1.1 KVKK dış-sınır uyumlu** · yalnız `md/json/png` (istisna: `beykoz_vaka/*.py` analiz scriptleri whitelist)
+**Standing #31 v1.1 KVKK dış-sınır uyumlu** · yalnız `md/json/png` (istisna: `beykoz_vaka/*.py` whitelist)
 
 ---
 
 ## KURAL
 
-- **Standing #35 (2026-07-28):** Vezir push öncesi `git fetch && git log origin/main` **ZORUNLU** (iş başlangıcında).
-- **Standing #36 aday (2026-07-28):** `git commit` atmadan hemen önce **tekrar** `git fetch` — paralel-yazar açığı kapansın.
-- **Yeni md üretildiğinde push** (Vezir sorumluluğu).
-- **'Eksik tamamla' talepleri Vezir'e / Üst Akıl'a gelir** — CC'ler doğrudan buraya yazmaz.
-- **Ham/DB/büyük dosya (>25MB) buraya girmez** — `.gitignore` engel katmanı.
-- **Anahtar-token ASLA** — commit öncesi tarama zorunlu.
-- **`.py` istisna:** yalnız `beykoz_vaka/**/*.py` (analiz scriptleri).
+- **Standing #35:** Vezir push öncesi `git fetch && git log origin/main` **ZORUNLU** (iş başlangıcında).
+- **Standing #36 aday:** `git commit` atmadan hemen önce **tekrar** `git fetch` — paralel-yazar açığı kapansın.
+- **Yeni md üretildiğinde push · KVKK tarama · md/json/png yalnız · SD-* kanonik `sinyal_dosyalari/`**
 
 ---
 
 ## /beykoz_vaka/ — Beykoz Kapanış + Sürekli-İzlem Arşivi
 
-**Ana giriş:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG6→SIG12 yamalarıyla; SIG12 vaat-defteri son ek)
+**Ana giriş:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG6→SIG12)
 
-**Ana görseller:** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) *(SIG11 vFINAL)* · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) · [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) *(MAP35)* · [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png) *(MAP35)*
+**Ana görseller:** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) *(SIG11 vFINAL)* · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) · [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) · [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png)
 
-**Karolar (3 sürüm):** [`karolar/`](beykoz_vaka/karolar/) 14 PNG v1 (MAP34) · [`karolar_v2/`](beykoz_vaka/karolar_v2/) 6 PNG v2 (MAP36) · [`karolar_sunum/`](beykoz_vaka/karolar_sunum/) 3 PNG geniş sunum (MAP37)
+**Karolar (3 sürüm):** [`karolar/`](beykoz_vaka/karolar/) 14 v1 · [`karolar_v2/`](beykoz_vaka/karolar_v2/) 6 v2 · [`karolar_sunum/`](beykoz_vaka/karolar_sunum/) 3 geniş
 
-**Sinyal dosyaları:** [`sinyal_dosyalari/`](beykoz_vaka/sinyal_dosyalari/) — SD-01..06 + şablon (SIG9 standardı)
+**Sinyal dosyaları:** [`sinyal_dosyalari/`](beykoz_vaka/sinyal_dosyalari/) — SD-01..06 + şablon (SIG9)
 
 ### FINAL kapanış raporları (9 CC × Beykoz)
 
@@ -44,7 +40,7 @@
 | [`FINAL_cc_ttai_beykoz.md`](beykoz_vaka/FINAL_cc_ttai_beykoz.md) | FINAL — Beykoz Kapanış Raporu · CC-TT-AI (Nihai Beyan) | 2026-07-27 |
 | [`FINAL_cc_ttmap_beykoz.md`](beykoz_vaka/FINAL_cc_ttmap_beykoz.md) | BEYKOZ KAPANIŞ RAPORU — CC-TT-MAP NİHAİ BEYAN | 2026-07-27 |
 
-### Ana özet + soru bankası (Beykoz + genel) + tip taksonomi + görseller + kamu envanteri
+### Ana özet + soru bankası + tip taksonomi + kamu envanteri + görseller + JSON veri-setleri
 
 | Dosya | Açıklama | Güncelleme |
 |---|---|---|
@@ -62,6 +58,10 @@
 | [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) | BEY-15 Çubuklu hafriyat grafiği | 2026-07-27 |
 | [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) | MAP35 · gerçek-geometri kısıt katmanı | 2026-07-28 |
 | [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png) | MAP35 · gerçek-geometri konum katmanı | 2026-07-28 |
+| [`beykoz_mahalle_zincir_v1.json`](beykoz_vaka/beykoz_mahalle_zincir_v1.json) | Mahalle zinciri v1 (topoloji + akış) | 2026-07-29 |
+| [`beykoz_olay_defteri.json`](beykoz_vaka/beykoz_olay_defteri.json) | Beykoz olay defteri v9 | 2026-07-29 |
+| [`gece_S95_ozet.json`](beykoz_vaka/gece_S95_ozet.json) | Sosyal gece-S95 özet-JSON | 2026-07-29 |
+| [`haber_yogunluk_v2r.json`](beykoz_vaka/haber_yogunluk_v2r.json) | Basın haber yoğunluk v2r (16 yıl, temiz seri) | 2026-07-29 |
 
 ### Sinyal montaj serisi (CC-Signals SIG1→SIG12)
 
@@ -135,6 +135,7 @@
 | [`cc_borsa_S60.md`](beykoz_vaka/cc_borsa_S60.md) | BEYKOZ — CC-Borsa S60: ÖİB + KİT DEVİR ZİNCİRİ (Sanayi Mirası) | 2026-07-27 |
 | [`cc_borsa_S61.md`](beykoz_vaka/cc_borsa_S61.md) | BEYKOZ — CC-Borsa S61: ACİL TAHKİM "EKGYO Ortaçeşme 776" GERÇEK Mİ? | 2026-07-27 |
 | [`cc_borsa_S96ek.md`](beykoz_vaka/cc_borsa_S96ek.md) | BEYKOZ — CC-Borsa B-S96 SON-TUR EK | 2026-07-29 |
+| [`cc_finans_F8.md`](beykoz_vaka/cc_finans_F8.md) | CC-Finans · F8 — S96 SON TUR | 2026-07-29 |
 | [`cc_ihale_I61.md`](beykoz_vaka/cc_ihale_I61.md) | BEYKOZ İHALE DERİNLİK + ISI-AYAĞI — CC-İhale (İ61) | 2026-07-26 |
 | [`cc_ihale_I62.md`](beykoz_vaka/cc_ihale_I62.md) | BEYKOZ İHALE SON KAT + ÖZEL YAYILIM — CC-İhale (İ62) | 2026-07-26 |
 | [`cc_ihale_I63.md`](beykoz_vaka/cc_ihale_I63.md) | BEYKOZ İHALE × GELİŞİM AMACI — CC-İhale (İ63) | 2026-07-26 |
@@ -144,6 +145,8 @@
 | [`cc_ihale_I69.md`](beykoz_vaka/cc_ihale_I69.md) | BEYKOZ İMAR REJİMİ v3 — YENİ KISIT + DÖNÜŞÜM KATMANLARI · CC-İhale (İ69) | 2026-07-27 |
 | [`cc_ihale_I70.md`](beykoz_vaka/cc_ihale_I70.md) | BEYKOZ "GENEL" 115 KAYIT YENİDEN-PARSE — CC-İhale (İ70) | 2026-07-28 |
 | [`cc_ihale_I72.md`](beykoz_vaka/cc_ihale_I72.md) | BEYKOZ S96-SON-TUR: SEÇİM-DESENİ + İZ TEYİDİ — CC-İhale (İ72) | 2026-07-29 |
+| [`cc_tic_T131_marka_konumlanma.md`](beykoz_vaka/cc_tic_T131_marka_konumlanma.md) | cc_tic_T131 — MARKA-KONUMLANMA TABLOSU (Ticari-Zincir Katmanı) | 2026-07-29 |
+| [`cc_tic_T132.md`](beykoz_vaka/cc_tic_T132.md) | cc_tic_T132 — S96 SON-TUR (2B Beyan × Çavuşbaşı-233 × Elmalı-İSKİ × T131 Borç) | 2026-07-29 |
 | [`cc_ttai_MAP28_nonkanon_capraz.md`](beykoz_vaka/cc_ttai_MAP28_nonkanon_capraz.md) | Beykoz Landsat — NON-KANON ÇAPRAZ-DOĞRULAMA (CC-TT-AI) | 2026-07-27 |
 | [`cc_ttai_TTA96.md`](beykoz_vaka/cc_ttai_TTA96.md) | Beykoz Bina + POI Derinlik — CC-TT-AI TTA96 | 2026-07-26 |
 | [`cc_ttai_TTA97.md`](beykoz_vaka/cc_ttai_TTA97.md) | Beykoz Güncel Bina + Kavacık Ofis + Deprem — CC-TT-AI TTA97 | 2026-07-26 |
@@ -219,7 +222,7 @@
 ---
 ## /beykoz_vaka/beykoz_ansiklopedi/ — 45 Mahalle Sözlüğü
 
-**Üreten:** CC-TT-AI (TTA98)  ·  **Ana index:** [`_master.json`](beykoz_vaka/beykoz_ansiklopedi/_master.json)
+**Ana index:** [`_master.json`](beykoz_vaka/beykoz_ansiklopedi/_master.json)
 
 | Mahalle | Dosya | Güncelleme |
 |---|---|---|
@@ -294,12 +297,10 @@
 ---
 ## Disiplin
 
-- **Standing #31 v1.1 (KVKK):** PUBLIC — 'kendimize kanıt' işlevi (Patron 2026-07-27).
-- **Standing #35 (2026-07-28):** Vezir push öncesi `git fetch && git log origin/main` **zorunlu** (iş başlangıcında).
-- **Standing #36 aday (2026-07-28):** commit-öncesi tekrar-fetch (paralel-yazar açığı).
-- **A04 dürüst-negatif · #21-B çift-imza · #24 EK-NOT Türkçe-ek toleransı**
-- **V16 dürüst · $0 · dizin-kilidi · doygunluk→yeni-yol**
+- **KVKK #31 v1.1:** PUBLIC — 'kendimize kanıt' (Patron 07-27).
+- **S#35 · S#36:** iki-nokta fetch (başlangıç + commit-öncesi).
+- **A04 · #21-B · #24 · V16 · $0**
 
 ---
 
-*Bu index otomatik üretildi. Son yenileme: 2026-07-29 (Vezir).*
+*Son yenileme: 2026-07-29 (Vezir).*

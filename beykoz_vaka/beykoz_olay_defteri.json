@@ -1,0 +1,1073 @@
+{
+  "_meta": {
+    "isim": "Beykoz Olay Defteri",
+    "amac": "Beykoz vaka çalışmasında her sıcak olayı takip et. Tradia unutmaz.",
+    "sahip_cc": "cc_basin",
+    "olusturma": "2026-07-27 (S85)",
+    "guncelleme_kurali": "Her sprintte olay durumu güncellenir. Yeni-olay eklenir. Söndü/yansıdı işareti konur, SİLİNMEZ.",
+    "durum_seti": [
+      "isliyor",
+      "yansidi",
+      "sondu",
+      "kilitli",
+      "bilinmiyor"
+    ],
+    "amac_etiketleri": [
+      "konut",
+      "ticari",
+      "turizm",
+      "kamu",
+      "donusum",
+      "sahil",
+      "ulasim",
+      "saglik",
+      "egitim",
+      "siyaset",
+      "emlak",
+      "spor"
+    ],
+    "guncelleme": "2026-07-28 (S94 · BEY-29 zincir + BEY-32 birleşim + BEY-34 Cam Köy)",
+    "v2_ozellik": "SIG5-B2 alanları eklendi: pencere_sinifi + baslangic_ref + yansima_beklenen + sonraki_kontrol + haftalik_bayrak",
+    "haftalik_bayrak_kural": "SICAK olaylar (BEY-03/04/06) haftalık, diğerleri aylık-3-aylık kontrol",
+    "pencere_sinifi_set": [
+      "KAP_INSAAT_7_8_YIL",
+      "İHALE_KABUL_2_3_YIL",
+      "ASKI_RUHSAT_1_2_YIL",
+      "MECLIS_UYGULAMA_6_18_AY",
+      "YIKIM_YENI_YAPI_1_3_YIL",
+      "SIYASI_DAVA_2_5_YIL",
+      "YILLIK_ETKİNLİK_1_YIL",
+      "BELIRSIZ"
+    ],
+    "v3_ozellik": "BEY-06 YANSIDI (CSB İstanbul teyit) + BEY-14 yeni Göztepe imar plan-değişikliği",
+    "v4_ozellik": "BEY-15 eklendi (Paşabahçe 942-947 + Çubuklu Evleri / Mesa Orman etap — teyit-edilemedi)",
+    "v5_ozellik": "BEY-16 (Çubuklu Riskli Alan A+B) + BEY-17 (ÇŞB Riva Deresi 6 mahalle) eklendi",
+    "S88_soguk21_tarama": {
+      "tarih": "2026-07-28",
+      "master_mahalle": 45,
+      "temas_var_S87_kadar": 28,
+      "gercek_soguk": 17,
+      "tarama_kaynaklar": [
+        "gövde-DB 831 OK · Beykoz-kesişim zorunlu",
+        "haber_akis 4214",
+        "ham arşiv S86 40 HTML"
+      ],
+      "bulundu_2": [
+        "Elmalı (Bel Meclis 4 May · Barajı Havzası koruma)",
+        "Paşamandıra (Bel Meclis 6 Nis · sokak-isim)"
+      ],
+      "tarandi_sifir_15": [
+        "Acarlar",
+        "Akbaba",
+        "Alibahadır",
+        "Anadolufeneri",
+        "Bozhane",
+        "Dereseki",
+        "Göllü",
+        "Görele",
+        "Kaynarca",
+        "Kılıçlı",
+        "Yeni Mahalle",
+        "Zerzavatçı",
+        "Örnekköy",
+        "Öğümce",
+        "İshaklı"
+      ],
+      "yokluk_olcum_notu": "15 mahalle için TARANDI-SIFIR damgası — 'yokluk artık ölçüm' (Patron S88 direktifi)"
+    },
+    "v6_ozellik": "BEY-18 Elmalı Havza (TTA98 direct-kanıt) + Paşamandıra BEY-13'e ek-not + SOĞUK-21 tarama meta",
+    "kalıcı_kurallar": [
+      {
+        "kural_no": "KR-CCBASIN-01",
+        "tarih_eklendi": "2026-07-28 (S92-DÜZELTME)",
+        "metin": "Yeni BEY-* numarası VERMEDEN ÖNCE olay defterinin son numarasını OKU. Numara-çakışması ikinci kez yaşandı — kalıcı kural.",
+        "gerekce": "S91 aday BEY-19..23 · S92 aday BEY-19..23 · Signals master ile çakışma (Signals BEY-18=Torunlar, 19=Elmalı Havza, 20=Elmalı toplama). Signals master otorite.",
+        "protokol": "python3 -c \"import json; d=json.load(open(...)); print(max(int(o[\"id\"][4:]) for o in d[\"olaylar\"]))\" → sonraki numara = max+1"
+      },
+      {
+        "kural_no": "KR-CCBASIN-02",
+        "tarih_eklendi": "2026-07-28 (S92-DÜZELTME)",
+        "metin": "Kamu-görevlisi aktörler (Belediye Bşk, Kaymakam vb.) 19-liste \"kurumsal-aktör envanterine\" GİRMEZ. Ayrı sınıf: sinif=\"YONETISIM_TARIHCESI\". KVKK #31 kamu-görev sıfatı + dönem bilgisi ile sınırlı.",
+        "gerekce": "BEY-26 (Yücel Çelikbilek) yönetişim-tarihçesi · üst-akıl S92 direktifi",
+        "protokol": "aktör-listesi = özel-firma/GYO/holding · yönetişim-tarihçesi = belediye başkanı/kaymakam/valilik"
+      },
+      {
+        "kural_no": "KR-CCBASIN-03",
+        "tarih_eklendi": "2026-07-28 (S92-DÜZELTME)",
+        "metin": "Şişecam-İncirköy 14-YILLIK İZ zinciri kanonik: (1) 2012-04-28 marka davası · (2) 2014-01-08 arazi-satış duyurusu · (3) 2026 devir 171,5 M$. Sunum-belgelerinde \"14 yıl\" kullan.",
+        "gerekce": "S91'de \"2014 12 yıl\" cümlesi eksik, S92'de düzeltildi",
+        "kaynak": "Üst Akıl S92-DÜZELTME"
+      }
+    ],
+    "v7_ozellik": "BEY-24..28 (viyadük+YSS-ad+Çelikbilek+Çavuşbaşı+Paşabahçe-vapur) · KALICI KURAL 3 kural",
+    "v8_ozellik": "S93 tam-arşiv retro: BEY-29..BEY-33 · KR-01 uygulandı",
+    "v9_ozellik": "S94 TEMİZLİK: TEKEL/Şişecam ayrıştırma · BEY-29 Torunlar Kentsel Resort · BEY-34 Cam Köy"
+  },
+  "olaylar": [
+    {
+      "id": "BEY-01",
+      "baslik": "Şişecam İncirköy arazi devri + otel planı (14 YILLIK İZ: 2012→2014→2026 devir 171,5 M$)",
+      "baslangic": "2026-02 (kaynak: Sosyal+Tic aday, tarih tahmin)",
+      "kaynak": [
+        "Wikipedia İncirköy — 'plans to demolish factory + construct hotel' (2026-07-26 fetch)",
+        "Sosyal-CC + Tic-CC aday-firma bilgisi (117 dönüm plan izi)",
+        "Beykoz Güncel 2012-04-28 marka davası",
+        "Beykoz Güncel 2014-01-08 arazi satış",
+        "Üst Akıl S92-DÜZELTME 2026 devir 171,5 M$"
+      ],
+      "mahalle": "İncirköy",
+      "amac": [
+        "otel",
+        "turizm",
+        "emlak",
+        "donusum"
+      ],
+      "beklenen_yansima": "Otel-firma adı basına düşecek, imar-plan tadilatı meclis-kararına gelecek, sosyal muhalefet",
+      "durum": "isliyor",
+      "not": "Havuzda BASIN-yansıma 0 hit (Beykoz Gazetesi 'Çelikler' + 'Şişecam arsa' 2 arama, sonuç yok · gövde-DB 0). Wikipedia sinyali TEK-kanıt. Meclis 7 Mayıs Md 4 'İncirköy 26,938 m² parselin 7,219.46 m² satış' MUHTEMELEN aynı olay (doğrulanmadı). | ★★★ S92-DÜZELTME (Üst Akıl): 14 yıllık iz zinciri — (1) 2012-04-28 Beykoz Vakfı Şişecam'a marka davası (kurumsal-çekişme başlangıç) · (2) 2014-01-08 Şişecam fabrikası denize-sıfır arazi-satış duyurusu · (3) 2026 devir 171,5 M$ (Patron r5 not) · Sunumdaki \"12 yıl\" cümlesi 14 yıla düzeltilecek",
+      "borclar": [
+        "C11 alıcı-firma",
+        "C18 satış-sonuç",
+        "C24 timeline+geliştirici"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "KAP_INSAAT_7_8_YIL",
+        "baslangic_ref": "2026-02",
+        "yansima_beklenen": "2033-02 (KAP+inşaat)",
+        "sonraki_kontrol": "2026-08-15",
+        "haftalik_bayrak": false,
+        "not": "İncirköy Şişecam→otel: KAP açıklaması yakın-vade, inşaat 2028+ tahmini"
+      }
+    },
+    {
+      "id": "BEY-02",
+      "baslik": "Kalyon GYO 'Riva Country' 1.300 villa 230 dönüm",
+      "baslangic": "bilinmiyor (Tic-CC bildirimi)",
+      "kaynak": [
+        "Tic-CC (havuz-dışı ipucu)"
+      ],
+      "mahalle": "Riva",
+      "amac": [
+        "konut",
+        "emlak",
+        "turizm"
+      ],
+      "beklenen_yansima": "Lansman haberi, satış başlangıcı, imar-plan onayı, yerel tepki (villa yoğunluğu)",
+      "durum": "isliyor",
+      "not": "★ CC-Basın havuzunda TAMAMEN YOK. Kalyon aramaları 0/29 hit (havuz+haber_akis). Kalyon İnşaat YKB Murathan Kalyoncu Hürriyet-2026-06-04 zirve-katılımı haberi Beykoz DIŞI. Sosyal + Tic'in verdiği bilgi CC-Basın'a HİÇ yansımamış — bu Beykoz emlak-projelerinin ULUSAL MEDYA görünürlük eksiği için deneysel kanıt.",
+      "borclar": [
+        "Kalyon Riva Country lansman haberi arama (S86 WebFetch quota reset sonrası)",
+        "EKGYO komşuluğu doğrulama"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "ASKI_RUHSAT_1_2_YIL",
+        "baslangic_ref": "bilinmiyor",
+        "yansima_beklenen": "lansman-tarihi bilinmediği için Q2-Q4 2026 tahmin",
+        "sonraki_kontrol": "2026-08-15",
+        "haftalik_bayrak": false,
+        "not": "Kalyon Riva Country: lansman-haberi ARANMALI (S86-B öncelik)"
+      }
+    },
+    {
+      "id": "BEY-03",
+      "baslik": "Riva Metruk Otel yıkım → Gençlik Kampı (Bakanlık ortak)",
+      "baslangic": "2026-07-24",
+      "kaynak": [
+        "Halk TV 2026-07-25 'Milli Takım'ın kamp yaptığı otel yıkıldı' (govde-DB)",
+        "Beykoz Bel. 2026-07-24 'Riva'da yılların sorunu çözülüyor' (WebFetch S84)"
+      ],
+      "mahalle": "Riva (Şehit Levent Birben Cad)",
+      "amac": [
+        "kamu",
+        "spor",
+        "turizm",
+        "donusum"
+      ],
+      "beklenen_yansima": "İhale-süreci, geliştirici firma, açılış-tarihi, uluslararası müsabakalar",
+      "durum": "yansidi (yıkım aşaması) · isliyor (kamp inşaat bekliyor)",
+      "not": "16,548 m² inşaat alanı · Valilik+Kaymakamlık kararı · 186 oda eski A Milli Futbol kamp tesisi · 2009 özel-sektör devir · Özelleştirme İdaresi · 2017 ihale-tıkanma. Gençlik-Spor Bakanlığı ORTAK. Bütçe+timeline AÇIKLANMAMIŞ.",
+      "borclar": [
+        "C25 bütçe+timeline"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "YIKIM_YENI_YAPI_1_3_YIL",
+        "baslangic_ref": "2026-07-24",
+        "yansima_beklenen": "2027-2029 (Gençlik Kampı inşaat + açılış)",
+        "sonraki_kontrol": "2026-08-03",
+        "haftalik_bayrak": true,
+        "not": "Riva Kamp: bütçe+timeline açıklaması bekleniyor · Gençlik-Spor Bak. duyurusu"
+      }
+    },
+    {
+      "id": "BEY-04",
+      "baslik": "Köseler dava süreci — 2. dalga tutuklama",
+      "baslangic": "2025 (İBB 5. dalga) · 2. dalga 2026-07-17",
+      "kaynak": [
+        "Wikipedia Beykoz (2024 seçim + 2025 tutuklama + Gürzel vekil)",
+        "dunya.com 2026-07-17 'Beykoz Belediyesi soruşturmasında 2 tutuklama'",
+        "yenisafak.com 2026-07-17 ikinci dalga",
+        "cumhuriyet_ekonomi + gzt_beykoz_gzt 2026-07-12/13 'Özel Kaleminin İtirafları'"
+      ],
+      "mahalle": "ilçe geneli · specific proje isim SAVCILIK-KAPALI",
+      "amac": [
+        "siyaset",
+        "donusum",
+        "emlak"
+      ],
+      "beklenen_yansima": "3. dalga · iddianame yayını · proje/mahalle isimlerinin açığa çıkması · Gürzel vekillik dönemi imar kararlarına etki",
+      "durum": "isliyor (SICAK)",
+      "not": "Suçlama: 'rüşvet ve irtikap' (Beykoz Cumhuriyet Başsavcılığı). Şüpheliler: iş insanları + belediye meclis üyesi + belediye çalışanları. Somut proje/mahalle/rüşvet-miktarı savcılıkça AÇIKLANMAMIŞ.",
+      "borclar": [
+        "C6 tutuklu isim",
+        "C15 hangi ihale/proje",
+        "3. dalga takip"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "SIYASI_DAVA_2_5_YIL",
+        "baslangic_ref": "2025 tutuklama · 2026-07-17 2.dalga",
+        "yansima_beklenen": "2027-2030 (iddianame + karar)",
+        "sonraki_kontrol": "2026-08-03",
+        "haftalik_bayrak": true,
+        "not": "Köseler dava: 3. dalga bekleniyor, savcılık basın-bültenleri takip"
+      }
+    },
+    {
+      "id": "BEY-05",
+      "baslik": "Beykoz-Çubuklu Arabalı Vapur Hattı İptali",
+      "baslangic": "2025-07 (İDO/Şehir Hatları kararı)",
+      "kaynak": [
+        "Beykoz Gazetesi 2025-07-06 x2 + 2025-07-27 (3 haber)",
+        "MHP Beykoz İlçe Bşk Emre Çömlekçi tepki açıklaması"
+      ],
+      "mahalle": "Çubuklu",
+      "amac": [
+        "ulasim",
+        "siyaset"
+      ],
+      "beklenen_yansima": "İptalden dönüş, alternatif hat, MHP kampanya",
+      "durum": "sondu (2026'da devam-haber YOK, karar kesinleşmiş görünüyor)",
+      "not": "Kriz-zirvesi 2025-07 · yerel-basın 3 haber · S82'de SICAK sinyaldi, S85'te SÖNDÜ. Arşiv 1-yıl sınırı nedeniyle sonrasına bakılamıyor.",
+      "borclar": [
+        "C7 karar-mercii (İDO mu Şehir Hatları mı)"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "2025-07 iptal",
+        "yansima_beklenen": "GEÇTİ (uygulanmış)",
+        "sonraki_kontrol": "2027-01 (yıllık review)",
+        "haftalik_bayrak": false,
+        "not": "Vapur iptali SÖNDÜ — İDO/Şehir Hatları alternatif hat açar mı S87+ kontrolü"
+      }
+    },
+    {
+      "id": "BEY-06",
+      "baslik": "Tokatköy Kentsel Dönüşüm — 1071 tapu dağıtımı iddiası",
+      "baslangic": "belirsiz (Sosyal/Tic ipucu)",
+      "kaynak": [
+        "Meclis 8 Ocak 2026 Md 1 'Tokatköy Kentsel Dönüşüm alanı yol ismi düzenlemesi' (ONAYLI)",
+        "Wikipedia Tokatköy nüfus 15,669→13,445 (-%14, 2022 -%8)",
+        "Tic-CC bildirimi 1071 tapu dağıtımı",
+        "CSB İstanbul 2026-06-29 · S86-B hasat"
+      ],
+      "mahalle": "Tokatköy",
+      "amac": [
+        "donusum",
+        "konut"
+      ],
+      "beklenen_yansima": "TOKİ/proje-firma adı, hak-sahibi haberleri, mağduriyet açıklamaları, bitiş töreni",
+      "durum": "yansidi (CSB İstanbul 2026-06-29 basın-yansıması)",
+      "not": "CC-Basın havuzunda '1071 tapu' + 'Tokatköy dönüşüm' + 'Tokatköy TOKİ' HEPSİ 0 HIT. Nüfus-eğrisi (-%14) dönüşüm-doğrulama sağlıyor. Basın-yansıma HALA YOK (yerel gazete bu haberi taşımamış olabilir). | ★ S86-B: CSB İstanbul https://istanbul.csb.gov.tr/haberler/beykoz-da-tapular-hak-sahiplerine-teslim-edildi-306013 (2026-06-29) tapu-teslim haberi bulundu — 1071 tapu iddiasının BASIN-YANSIMASI TEYİDİ",
+      "borclar": [
+        "1071 tapu haberi arama (WebFetch reset sonrası)",
+        "proje-firma",
+        "mağduriyet raporları"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "ASKI_RUHSAT_1_2_YIL",
+        "baslangic_ref": "Meclis 8 Ocak 2026 (yol isim düz.)",
+        "yansima_beklenen": "2027-2028 konut tamamlanma/tören",
+        "sonraki_kontrol": "2026-09-01",
+        "haftalik_bayrak": false,
+        "not": "★ 1071 tapu dağıtımı ARANMALI (S86-B öncelik) · nüfus -%14 dönüşüm devam | S86-B: 1071 tapu YANSIDI ✓ (CSB İstanbul 2026-06-29)"
+      }
+    },
+    {
+      "id": "BEY-07",
+      "baslik": "Beykoz hastane inşaatı — Şahinkaya Caddesi",
+      "baslangic": "2024 (Sosyal-CC ipucu · vinç haberi 2025-07-08)",
+      "kaynak": [
+        "Beykoz Gazetesi 2025-07-08 'hastane inşaatındaki vinç devrildi'"
+      ],
+      "mahalle": "Şahinkaya Caddesi (Beykoz merkez, Gümüşsuyu civarı olabilir)",
+      "amac": [
+        "saglik",
+        "kamu",
+        "insaat"
+      ],
+      "beklenen_yansima": "İnşaat firma, bitiş tarihi, kapasite, hangi bakanlık",
+      "durum": "isliyor · basın-sessiz (2026'da devam-haber 0)",
+      "not": "Havuzda 'Şahinkaya' 2 hit ama BAFRA (Samsun) haberleri (FP). Beykoz Şahinkaya-hastane 2025-07 sonrası TAKİP-EDİLMEMİŞ.",
+      "borclar": [
+        "C4 inşaat firma",
+        "proje bitiş tarih",
+        "kapasite"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "İHALE_KABUL_2_3_YIL",
+        "baslangic_ref": "2024 inşaat · 2025-07-08 vinç haberi",
+        "yansima_beklenen": "2026-2027 açılış",
+        "sonraki_kontrol": "2026-09-01",
+        "haftalik_bayrak": false,
+        "not": "Hastane inşaatı SESSİZ — proje devam mı durdu mu bilinmiyor"
+      }
+    },
+    {
+      "id": "BEY-08",
+      "baslik": "Kavacık Kavşağı imar planı + Medistate + ticari-alan (üçlü hareket)",
+      "baslangic": "Meclis 8 Ocak 2026 Md 11 (Kavşak) + 2 Şubat Md 10 (Medistate) + 7 Mayıs Md 6 (ticari)",
+      "kaynak": [
+        "Beykoz Bel. Meclis kararları"
+      ],
+      "mahalle": "Kavacık",
+      "amac": [
+        "ticari",
+        "saglik",
+        "ulasim",
+        "emlak"
+      ],
+      "beklenen_yansima": "Kavşak inşaatı, Medistate genişleme, ticari-alan yeni işletmeler",
+      "durum": "isliyor",
+      "not": "Meclis-onaylı üçlü karma-kullanım hareketi. Basın-yansıma yok, sadece meclis-kararı. Kavacık = 22K nüfus (Beykoz'un en yoğunu, 1980 FSM köprü patlaması).",
+      "borclar": [
+        "C19 imar-plan detay",
+        "yükseklik/emsal"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "ASKI_RUHSAT_1_2_YIL",
+        "baslangic_ref": "Meclis 8 Oca 2026 (Kavşak) · 2 Şub (Medistate) · 7 May (ticari)",
+        "yansima_beklenen": "2027-2028 inşaat + karma-kullanım",
+        "sonraki_kontrol": "2026-09-01",
+        "haftalik_bayrak": false,
+        "not": "Kavacık üçlü hareket · imar-plan detay bekleniyor"
+      }
+    },
+    {
+      "id": "BEY-09",
+      "baslik": "Çengeldere = kamu-kurum kampüs zinciri (Diyanet + MEB + Sağlık Bak)",
+      "baslangic": "Meclis kararları 2026-02→06 (Çengeldere 4 karar)",
+      "kaynak": [
+        "Meclis 1 Haz + 3 Haz + 7 May + 2 Şub kararları (4 tahsis)"
+      ],
+      "mahalle": "Çengeldere (+Baklacı)",
+      "amac": [
+        "kamu",
+        "egitim",
+        "saglik"
+      ],
+      "beklenen_yansima": "Aile Sağlık Merkezi açılış · Cami/Kur'an Kursu açılış · MEB tesisi (Çiftlik'te de)",
+      "durum": "isliyor",
+      "not": "★ ÖRÜNTÜ: Çengeldere düzenli-büyüyen mahalle (+%35 nüfus 2007→2024), meclis-onaylı 4 kamu-tahsisi. Bu bir 'kamu-kampüs' örüntüsü. Diyanet 29-yıl bedelsiz + Sağlık Bakanlığı 25-yıl ASH + Medipol Üni protokol + MEB Çiftlik 25-yıl bedelsiz — 12 mahalleyi kapsayan bir zincirin merkezinde.",
+      "borclar": [
+        "kamu-yatırım toplam bütçesi",
+        "açılış-tarihleri"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "Meclis 2026-02→06 (4 karar)",
+        "yansima_beklenen": "2027 kamu-kurum açılışları",
+        "sonraki_kontrol": "2026-10-01",
+        "haftalik_bayrak": false,
+        "not": "Çengeldere kampüs zinciri — Diyanet+MEB+Sağlık Bak. açılış törenleri takip"
+      }
+    },
+    {
+      "id": "BEY-10",
+      "baslik": "İshaklı tarım-arazisi dönüşüm talebi",
+      "baslangic": "Meclis 7 Mayıs 2026 Md 9",
+      "kaynak": [
+        "Beykoz Bel. Meclis kararı"
+      ],
+      "mahalle": "İshaklı",
+      "amac": [
+        "donusum",
+        "emlak"
+      ],
+      "beklenen_yansima": "Onay/red · onaylanırsa büyük spekülatif değer patlaması",
+      "durum": "isliyor (talep aşaması)",
+      "not": "İshaklı Wikipedia sayfası fetch-edilmedi; nüfus/karakter bilinmiyor. Tarım-arazi imar-dışı → imar-içi geçiş talebi sinyal.",
+      "borclar": [
+        "Onay/red kararı takip",
+        "İshaklı Wikipedia"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "Meclis 7 May 2026 talep",
+        "yansima_beklenen": "6-18 ay içinde onay/red",
+        "sonraki_kontrol": "2026-11-01",
+        "haftalik_bayrak": false,
+        "not": "İshaklı tarım-dönüşüm talep · sonuç onaylanırsa spekülatif değer patlar"
+      }
+    },
+    {
+      "id": "BEY-11",
+      "baslik": "İncirköy Belediye taşınmazı satışı — 7,219.46 m²",
+      "baslangic": "Meclis 7 Mayıs 2026 Md 4",
+      "kaynak": [
+        "Beykoz Bel. Meclis kararı"
+      ],
+      "mahalle": "İncirköy",
+      "amac": [
+        "emlak",
+        "satis"
+      ],
+      "beklenen_yansima": "İhale-tarihi, alıcı-firma, satış-değeri, ne yapılacak",
+      "durum": "isliyor",
+      "not": "26,938 m² parselin PARÇALI satışı (7,219 m²). Kalan 19,719 m² belediyede kalıyor. Devlet İhale Kanunu ile. Alıcı BİLİNMİYOR. Şişecam-otel projesi ile İLİŞKİLİ olabilir (aynı mahalle).",
+      "borclar": [
+        "C18 alıcı-ismi",
+        "ihale-sonucu"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "İHALE_KABUL_2_3_YIL",
+        "baslangic_ref": "Meclis 7 May 2026 Md 4",
+        "yansima_beklenen": "2026-Q3/Q4 ihale sonucu",
+        "sonraki_kontrol": "2026-08-15",
+        "haftalik_bayrak": false,
+        "not": "İncirköy 7,219 m² satış — Devlet İhale Kanunu · ihale-portalı takip"
+      }
+    },
+    {
+      "id": "BEY-12",
+      "baslik": "Beykoz Su Sporları Festivali (kamu-turizm ekseni)",
+      "baslangic": "2025 (1. yıl) · 2026-07-12 (2. yıl)",
+      "kaynak": [
+        "Beykoz Bel. 2026-07-12 haber"
+      ],
+      "mahalle": "Beykoz Sahil Etkinlik Alanı + Su Sporları Merkezi (Gümüşsuyu civarı)",
+      "amac": [
+        "kamu",
+        "turizm",
+        "spor",
+        "sahil"
+      ],
+      "beklenen_yansima": "3. yıl · sponsor firmalar · uluslararası katılım artışı",
+      "durum": "isliyor · yıllık tekrarlanacak",
+      "not": "700+ atlet · açık deniz yüzme + kano + banana boat · Vekil Gürzel açılış. Sponsor firma isimleri açıklanmamış (C26 borç).",
+      "borclar": [
+        "C26 sponsor firmalar"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "YILLIK_ETKİNLİK_1_YIL",
+        "baslangic_ref": "2026-07-12 (2.yıl)",
+        "yansima_beklenen": "2027-07 (3.yıl)",
+        "sonraki_kontrol": "2027-06-01",
+        "haftalik_bayrak": false,
+        "not": "Su Sporları Festivali · yıllık tekrar"
+      }
+    },
+    {
+      "id": "BEY-13",
+      "baslik": "9 Nisan 2026 Meclis — 5 mahalle kamu-altyapı yatırımı",
+      "baslangic": "2026-04-09",
+      "kaynak": [
+        "Beykoz Bel. Meclis 9 Nisan 2026 (5 madde 9-13)"
+      ],
+      "mahalle": "Rüzgarlıbahçe (Sosyal Hiz) · Polonezköy (Kültür Evi + Kültür/Sosyal Bina) · Mahmutşevketpaşa (Sanat Eğitim) · Göksu (Destek tesisi)",
+      "amac": [
+        "kamu",
+        "kultur",
+        "egitim",
+        "sosyal"
+      ],
+      "beklenen_yansima": "Açılış törenleri, katılımcı sayı, bina teslimi",
+      "durum": "isliyor",
+      "not": "★ 5 farklı mahalleye eş-zamanlı kamu-yatırımı meclis-onaylı. Gürzel yönetiminin görünürlük stratejisi. | S88 SOĞUK-21: Meclis 6 Nisan 2026 gündemde ayrıca \"İsaklı + Göksu + Paşamandıra sokak isimlendirmeleri + Riva yol aksı uzatılması\" kararı (Emlak ve İstimlak Md · 2026-25293) — Paşamandıra ve İsaklı temas-alındı",
+      "borclar": [
+        "Her tesis inşaat-durumu",
+        "açılış-tarihleri"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "ASKI_RUHSAT_1_2_YIL",
+        "baslangic_ref": "Meclis 9 Nis 2026 (5 madde)",
+        "yansima_beklenen": "2027-2028 açılış törenleri",
+        "sonraki_kontrol": "2026-10-01",
+        "haftalik_bayrak": false,
+        "not": "5-mahalle altyapı: Rüzgarlıbahçe+Polonezköy+Mahmutşevketpaşa+Göksu"
+      }
+    },
+    {
+      "id": "BEY-14",
+      "baslik": "Göztepe 2760 Ada 110 Parsel 1/1000 Koruma Amaçlı İmar Plan Değişikliği",
+      "baslangic": "2026-07-21 (CSB İstanbul askı-ilanı)",
+      "kaynak": [
+        "CSB İstanbul https://istanbul.csb.gov.tr/istanbul-ili-beykoz-ilcesi-goztepe-mahallesi-2760-ada-110-parsele-iliskin-1-1000-olcekli-koruma-amacli-uygulama-imar-plani-degisikligi-duyuru-476318"
+      ],
+      "mahalle": "Göztepe (Beykoz)",
+      "amac": [
+        "imar_plan_deg",
+        "koruma_amac",
+        "emlak"
+      ],
+      "beklenen_yansima": "Askı süresi bitiminde onay/red · sonraki adım ruhsat",
+      "durum": "isliyor (askı aşamasında)",
+      "not": "★ İLK SİT/KORUMA-AMAÇLI plan-değişikliği bulgusu · S83 imar askı ilanları borcuna kısmi cevap · Göztepe = Beykoz mahallesi (Wikipedia hasat listesinde)",
+      "borclar": [
+        "Askı-tarihinden onay-tarihine kadar süreç takip",
+        "2760 ada 110 parsel sahibi kim"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "ASKI_RUHSAT_1_2_YIL",
+        "baslangic_ref": "2026-07-21",
+        "yansima_beklenen": "2027-2028 ruhsat",
+        "sonraki_kontrol": "2026-08-21 (askı-bitiş takip)",
+        "haftalik_bayrak": true,
+        "not": "KORUMA AMAÇLI plan değişikliği = SİT alanı, hassas · yerel-muhalefet ihtimali"
+      }
+    },
+    {
+      "id": "BEY-15",
+      "baslik": "Paşabahçe 942-947 parselleri + Çubuklu Evleri / Mesa Orman etap",
+      "baslangic": "bilinmiyor (Hafıza/başka-CC ipucu · S86-C-EK)",
+      "kaynak": [
+        "Hafıza tetiği S86-C-EK: BEY-15 arama talebi"
+      ],
+      "mahalle": "Paşabahçe (942-947) + Çubuklu (Çubuklu Evleri / Mesa Orman etap)",
+      "amac": [
+        "konut",
+        "emlak",
+        "donusum"
+      ],
+      "beklenen_yansima": "CSB İstanbul imar-askı · lansman haberi · ruhsat",
+      "durum": "isliyor · basın-yansıması-teyit-edilmedi (S86-C-EK tarama 0 hit)",
+      "not": "★ S86-C-EK TARAMA SONUCU (A04 dürüst): | (a) S86 ham (46 URL · 5.8MB) içinde Paşabahçe 942-947 parsel = 0 hit | (b) CSB İstanbul duyurular + imar-planlari + duyurular/imar-planlari sayfaları — Beykoz için SADECE Göztepe 2760/110 var (BEY-14) | (c) Çubuklu Evleri / Mesa Orman etap = havuz+ham+haber_akis 0 hit | (d) Mesa 63 hit havuzda ama Beykoz-kesişim 0 (S86-A SIG5-A4 örüntüsü tekrarlanıyor) | KANIT-BOŞLUK: Bu projeler VARSA basın-yansımasız (Kalyon Riva Country BEY-02 ile aynı örüntü)",
+      "borclar": [
+        "CSB İstanbul TÜM askı arşivi pagination — 942-947 parsel askıya çıkmış mı gelecek turlarda kontrol",
+        "Tic-CC kaynak-teyit: Mesa Orman etap tapu-kaydı var mı",
+        "İncirköy 7,219 m² satışıyla ilişkili mi (aynı Beykoz Bel Meclis 7 May Md 4)"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "ASKI_RUHSAT_1_2_YIL",
+        "baslangic_ref": "bilinmiyor",
+        "yansima_beklenen": "CSB askı-yayını (Q3 2026 tahmin)",
+        "sonraki_kontrol": "2026-08-21 (CSB İstanbul askı-arşivi tarama)",
+        "haftalik_bayrak": false,
+        "not": "Aylık takip: CSB askı arşiv pagination + Tic-CC teyit"
+      }
+    },
+    {
+      "id": "BEY-16",
+      "baslik": "Çubuklu Riskli Alan A + B Bölgesi (18.madde askı + 149.200 m²)",
+      "baslangic": "bilinmiyor (Hafıza/Tic ipucu · S87)",
+      "kaynak": [
+        "Hafıza tetiği S87 · CC-İhale/Tic tarafı ipucu"
+      ],
+      "mahalle": "Çubuklu (A Bölgesi + B Bölgesi)",
+      "amac": [
+        "riskli_alan",
+        "donusum",
+        "imar_plan_deg"
+      ],
+      "beklenen_yansima": "CSB İstanbul askı-arşivi + Beykoz Gazetesi haber",
+      "durum": "isliyor · kaynak-erişilemedi",
+      "not": "★ S87 TARAMA (A04): CSB istanbul.csb.gov.tr/duyurular/imar-planlari?sayfa=2/3 OK ama SAYFA-Beykoz-filtre yok · planaski.ibb.gov.tr JS-form (ada+parsel) direkt-hasat imkansız · Emlakkulisi robots.txt disallow (KKL-kalıcı) · Beykoz Gazetesi arama çalışmıyor (tüm ?s= sorgular anasayfa listesini döner)",
+      "borclar": [
+        "CSB Beykoz-filtre URL keşif",
+        "planaski ada+parsel form-post JSON denemesi",
+        "emlakkulisi alternatif portal"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "ASKI_RUHSAT_1_2_YIL",
+        "baslangic_ref": "bilinmiyor",
+        "yansima_beklenen": "CSB askı-arşivi (Q3-Q4 2026)",
+        "sonraki_kontrol": "2026-08-10",
+        "haftalik_bayrak": true,
+        "not": "★★ 149,200 m² kaynağı ipucu güçlü — CSB veya planaski alternatif kanal aranmalı"
+      }
+    },
+    {
+      "id": "BEY-17",
+      "baslik": "ÇŞB Riva Deresi 6 mahalle askı planı",
+      "baslangic": "bilinmiyor (Hafıza/İ66 envanteri)",
+      "kaynak": [
+        "Hafıza tetiği S87 · CC-İhale İ66 envanteri"
+      ],
+      "mahalle": "6 mahalle (Riva Deresi havzası — Riva/Poyrazköy/Anadolufeneri/Anadolu Kavağı/Öğümce/İncirköy tahmini)",
+      "amac": [
+        "riskli_alan",
+        "havza",
+        "koruma",
+        "imar_plan_deg"
+      ],
+      "beklenen_yansima": "ÇŞB Bakanlık portal + CSB İstanbul + planaski",
+      "durum": "isliyor · kaynak-erişilemedi",
+      "not": "★ S87 TARAMA (A04): csb.gov.tr genel-portal OK ama ÇŞB Riva Deresi 6-mahalle özel-URL 0 · Beykoz Gazetesi \"Riva Deresi\" araması çalışmıyor · İ66 envanteri Tic-CC tarafında olabilir — cross-CC talep",
+      "borclar": [
+        "ÇŞB (csb.gov.tr) Riva Deresi arama alternatif",
+        "İ66 envanteriyle birleştir (Tic-CC)",
+        "planaski havza-plan sorgu"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "ASKI_RUHSAT_1_2_YIL",
+        "baslangic_ref": "bilinmiyor",
+        "yansima_beklenen": "6 mahalle koruma-planı Q4 2026",
+        "sonraki_kontrol": "2026-08-10",
+        "haftalik_bayrak": true,
+        "not": "★★ Riva Deresi havzası jeolojik olarak Beykoz kuzeyinin ana ekseni"
+      }
+    },
+    {
+      "id": "BEY-18",
+      "baslik": "Elmalı 1-2 Barajı Havzası Koruma Planı — sağlık işyeri bağımsız-bölüm talebi (İSKİ görüşü)",
+      "baslangic": "2026-05-04 (Beykoz Bel Meclis 4 Mayıs 2026 gündemi)",
+      "kaynak": [
+        "Beykoz Bel Meclis 4 Mayıs 2026 · Plan ve Proje Müdürlüğü teklifi"
+      ],
+      "mahalle": "Elmalı",
+      "amac": [
+        "havza",
+        "koruma",
+        "saglik",
+        "imar_plan_deg",
+        "iski_gorusu"
+      ],
+      "beklenen_yansima": "İSKİ görüş cevabı · sağlık-işyeri bağımsız-bölüm izni · havza-planı revizyon",
+      "durum": "isliyor",
+      "not": "★★ S88 SOĞUK-21 tarama bulgusu — Beykoz Bel Meclis 4 Mayıs 2026 gündeminde: \"Elmalı 1-2 Barajı Havzası Koruma Planında Göl Koruma Alanında kalan kısımlarında sağlık hizmeti verecek taleplerde İSKİ'nin görüşü alınmak kaydıyla bağımsız bölüm yapılması\" | ★ TTA98 imar-kilit için DOĞRUDAN kanıt: İSKİ havza-koruma sistemi Elmalı 1-2 Barajı için AKTİF · BEY-17 (ÇŞB Riva Deresi 6 mahalle) ile bağlamsal-ilişkili olabilir",
+      "borclar": [
+        "İSKİ görüşü sonucu takip",
+        "Elmalı Havza-planı tam-metin",
+        "BEY-17 ile birleşim analizi"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "2026-05-04",
+        "yansima_beklenen": "2027 içinde İSKİ görüşü + bağımsız-bölüm izni",
+        "sonraki_kontrol": "2026-09-04",
+        "haftalik_bayrak": false,
+        "not": "TTA98 için altın-standart kaynak — İSKİ havza-koruma direct-uygulama örneği"
+      }
+    },
+    {
+      "id": "BEY-24",
+      "baslik": "Viyadük iskele çökmesi 2014-04-05 (3 ölü)",
+      "baslangic": "2014-04-05",
+      "kaynak": [
+        "Beykoz Güncel URL 2014-04-05 \"viyaduk calismasinda iskele coktu 3 olu\""
+      ],
+      "mahalle": "YSS Köprü inşaat-bölgesi (Beykoz kuzey)",
+      "amac": [
+        "insaat_facia",
+        "insan_hayati",
+        "kopru_donemi"
+      ],
+      "beklenen_yansima": "İnşaat-firma sorumluluk davası + iş güvenliği kararları",
+      "durum": "yansidi (2014-04-05 kayıt) · dava-takibi bilinmez",
+      "not": "★★ S92 SOĞUK-21 sonrası MEGA-PROJE RETRO bulgusu. YSS köprü inşaat-döneminde İSKELE ÇÖKMESI facia. Cross-CC: cc_ihale (firma-sorumluluk)",
+      "borclar": [
+        "Firma-ismi + dava-sonucu araştır (arşiv-derinlik)",
+        "iş güvenliği sonuçlarını izle"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "SIYASI_DAVA_2_5_YIL",
+        "baslangic_ref": "2014-04-05",
+        "yansima_beklenen": "RETRO (2014 tamamlanmış olay)",
+        "sonraki_kontrol": "2027-04-05 (yıl dönümü)",
+        "haftalik_bayrak": false,
+        "not": "Retro-olay, geçmiş kayıt"
+      }
+    },
+    {
+      "id": "BEY-25",
+      "baslik": "YSS Köprüsü → 15 Temmuz Gaziler ad-değişimi (2016-12-04)",
+      "baslangic": "2016-12-04",
+      "kaynak": [
+        "Beykoz Güncel 2016-12-04 \"15 temmuz gaziler koprusu beykozda aciliyor\"",
+        "Beykoz Güncel 2016-12-05 \"15 temmuz gaziler koprusu uc mahalleyi birbirine bagladi\""
+      ],
+      "mahalle": "YSS Köprü Beykoz-ayağı (Poyrazköy) + 3 mahalle bağı",
+      "amac": [
+        "sembolik",
+        "kimlik",
+        "arama_varyanti"
+      ],
+      "beklenen_yansima": "Basında \"15 Temmuz\" varyantı devam ediyor; YSS + 15 Temmuz birlikte",
+      "durum": "yansidi (kalıcı-kimlik)",
+      "not": "★★★ ARAMA-KURAL: S82-S86'da hep \"YSS/Yavuz Sultan Selim\" arıyorduk; 15 Temmuz 2016 darbe girişimi sonrası \"15 Temmuz Şehitler/Gaziler Köprüsü\" varyantı basında da kullanılıyor. Gelecek retro-taramalarda İKİ varyant birlikte kullanılmalı",
+      "borclar": [
+        "S86-S88 hasat retro-taramada 15 Temmuz varyantını dahil et"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "2016-12-04",
+        "yansima_beklenen": "RETRO (kalıcı ad)",
+        "sonraki_kontrol": "2027-01-01",
+        "haftalik_bayrak": false,
+        "not": "Retro-kimlik olayı"
+      }
+    },
+    {
+      "id": "BEY-26",
+      "sinif": "YONETISIM_TARIHCESI",
+      "baslik": "Yücel Çelikbilek — Beykoz Belediye Başkanı 2004-2014 (AKP)",
+      "baslangic": "2004",
+      "kaynak": [
+        "Beykoz Güncel 2010-05-12 \"celikbilek kavacikta esnafi dinledi\"",
+        "2010-05-13 → 2024-02-24 arası çok-hit"
+      ],
+      "mahalle": "Beykoz ilçe geneli",
+      "amac": [
+        "yonetişim_tarihçesi",
+        "kamu_gorevlisi"
+      ],
+      "beklenen_yansima": "RETRO — kamu-görev sıfatıyla, dönem bilgisiyle sınırlı",
+      "durum": "yansidi (2004-2014 dönemi tamamlanmış)",
+      "not": "★ ÖZEL SINIF: yonetişim_tarihcesi. Kurumsal-aktör listesine (19-liste) GİRMEZ, ayrı sınıf. KVKK #31: kamu-görev sıfatıyla + dönem bilgisiyle sınırlı. S91 aktör-envanterinde EKSİKTİ. Köseler-öncesi başkan · BEY-04 (Köseler dava) zamansal bağlam. Üst Akıl S92-DÜZELTME: aktör-listesine değil yönetişim-tarihçesi olarak sınıflandır.",
+      "borclar": [
+        "S86-S88 basın-yansımalarında Çelikbilek dönemi retro-ilinti kur"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "2004",
+        "yansima_beklenen": "RETRO (2004-2014 dönemi)",
+        "sonraki_kontrol": null,
+        "haftalik_bayrak": false,
+        "not": "Yönetişim-tarihçesi, aktif takibe alınmaz (retro)"
+      }
+    },
+    {
+      "id": "BEY-27",
+      "baslik": "Çavuşbaşı 2B arazi toplantısı (2010-07-05)",
+      "baslangic": "2010-07-05",
+      "kaynak": [
+        "Beykoz Güncel 2010-07-05 \"cavusbasinda 2b toplantisi\"",
+        "Arkitera 2015 \"233 ha 2B arazi\" (S82 tarihsel-çerçeve)"
+      ],
+      "mahalle": "Çavuşbaşı (Beykoz bandı Çavuşbaşı-Elmalı)",
+      "amac": [
+        "2B_arazi",
+        "donusum",
+        "arazi_reform"
+      ],
+      "beklenen_yansima": "Arkitera 2015 tarihsel-çerçevesinin birinci-elden basın-yansıması",
+      "durum": "yansidi (2010 kayıt) · sonrası izlem-gerek",
+      "not": "★★ S82 Arkitera 2015 \"233 ha 2B arazi\" tarihsel-çerçevesinin BİRİNCİ-ELDEN basın-yansıması (5 yıl önce). Çavuşbaşı 69 URL toplam (Beykoz Güncel), Elmalı ile birlikte 16 yıllık band. Cross-CC: cc_ttmap · cc_tic (2B tapu-devir).",
+      "borclar": [
+        "2010-2020 arası Çavuşbaşı-Elmalı 2B kararlarını izle",
+        "Tapu-Kadastro TAKBİS sorgu"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "2010-07-05",
+        "yansima_beklenen": "RETRO (16-yıllık zaman-seri)",
+        "sonraki_kontrol": "2027-01-01",
+        "haftalik_bayrak": false,
+        "not": "Arkitera-çerçevesinin basın-teyidi"
+      }
+    },
+    {
+      "id": "BEY-28",
+      "baslik": "Paşabahçe vapuru müze-dönüştürme (2010-07-14)",
+      "baslangic": "2010-07-14",
+      "kaynak": [
+        "Beykoz Güncel 2010-07-14 \"pasabahce vapuru muze oluyor\""
+      ],
+      "mahalle": "Paşabahçe (vapur iskele-bölgesi)",
+      "amac": [
+        "vapur_ulasim",
+        "kaldirim",
+        "ulasim_donusum"
+      ],
+      "beklenen_yansima": "BEY-05 (Beykoz-Çubuklu vapur iptali 2025) örüntüsünün 15 yıl önceki kökeni",
+      "durum": "yansidi (2010 · kalıcı)",
+      "not": "★ SİSTEMİK EĞİLİM: Beykoz'un vapur-kaldırma politikası 2010'dan beri aktif. BEY-05 (2025-07 Çubuklu vapur iptali) örüntüsünün 15 yıl önceki kökeni bu. Paşabahçe vapuru \"müze oluyor\" = kaldırma+kültürel-dönüşüm; sistemik-model.",
+      "borclar": [
+        "BEY-05 ile birleşik zaman-eksen: 2010 Paşabahçe → 2025 Çubuklu → ? sonraki"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "2010-07-14",
+        "yansima_beklenen": "RETRO (BEY-05 örüntüsü kanıtı)",
+        "sonraki_kontrol": null,
+        "haftalik_bayrak": false,
+        "not": "Retro-örüntü, aktif-takibe BEY-05 girer"
+      }
+    },
+    {
+      "id": "BEY-29",
+      "baslik": "Paşabahçe TEKEL arazisi → Torunlar GYO \"Kentsel Resort Otel\" (2011-2017 zinciri)",
+      "baslangic": "2012-03-26",
+      "kaynak": [
+        "Beykoz Güncel URL 2012-03-26 \"pasabahce tekel arazisine 5 talipli cikti\""
+      ],
+      "mahalle": "Paşabahçe (TEKEL arazi)",
+      "amac": [
+        "arazi_satis",
+        "ihale",
+        "emlak_donusum"
+      ],
+      "beklenen_yansima": "İhale sonucu · alıcı-firma · Şişecam arazisi mi karışıklık mı",
+      "durum": "yansidi (2012-03-26 · sonrası izlem)",
+      "not": "★★★ S94 TEMİZLİK TURU SONUCU (KESİN ZİNCİR): (a) 2011-02-13 \"Beykoz'a 7 yıldızlı otel yapılıyor\" (BEY-32 aynı olay) · (b) 2012-03-26 5 talipli ihale · (c) 2012-03-28 \"İşte Paşabahçe TEKEL arazisinin YENİ SAHİBİ\" · (d) 2012-09-22 \"TORUNLAR GYO turizm tesisi için ilk balyozu vurdu\" (ALICI KESİN) · (e) 2014-10-01 \"Torunlar TEKEL arazisi için proje hazırladı\" · (f) 2016-03-08 \"Paşabahçe TEKEL Kentsel RESORT OTEL olacak\" (PROJE-ADI KESİN) · (g) 2017-09-18 \"TEKEL arazisine yapılacak projenin MAKETİ\" · ☆ Üst Akıl S92 \"BEY-18=Torunlar\" tam da bu olay olabilir — Signals master ile senkron S94-Ek · ☆ BEY-01 İncirköy Şişecam ile AYRI: Paşabahçe TEKEL fabrika ≠ İncirköy Şişecam fabrika (komşu mahalleler, iki farklı proje)",
+      "borclar": [
+        "BEY-32 birleştir/de-dupe",
+        "Signals BEY-18=Torunlar teyidi",
+        "Kentsel Resort Otel bugünkü durum (2026)"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "İHALE_KABUL_2_3_YIL",
+        "baslangic_ref": "2012-03-26",
+        "yansima_beklenen": "RETRO (14 yıl geriye)",
+        "sonraki_kontrol": "2026-08-15",
+        "haftalik_bayrak": false,
+        "not": "BEY-01 ile bağlantı S94'te çöz"
+      },
+      "sinif": "MEGA_PROJE"
+    },
+    {
+      "id": "BEY-30",
+      "baslik": "Anadolu Hisarı'na 2. Köprü'den kum yağıyor (2016-04-24 çevre-şikayet)",
+      "baslangic": "2016-04-24",
+      "kaynak": [
+        "Beykoz Güncel URL 2016-04-24 \"anadolu hisarina 2 kopruden kum yagiyor\""
+      ],
+      "mahalle": "Anadolu Hisarı",
+      "amac": [
+        "cevre_kirliligi",
+        "kopru_donemi",
+        "yasam_kalitesi"
+      ],
+      "beklenen_yansima": "Belediye tedbir · İBB müdahalesi · dava",
+      "durum": "yansidi (2016 · devam-bilinmez)",
+      "not": "★ BEY-24 (viyadük facia) ile BAĞLAM: köprü inşaat-döneminde çevre-etki ağır. FSM Köprüsü (2. köprü) çevresi Anadolu Hisarı — inşaat-tozu ve kum yansıması",
+      "borclar": [
+        "Yasal-şikayet var mıydı?"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "2016-04-24",
+        "yansima_beklenen": "RETRO",
+        "sonraki_kontrol": null,
+        "haftalik_bayrak": false,
+        "not": "BEY-24 ile bağlam"
+      }
+    },
+    {
+      "id": "BEY-31",
+      "baslik": "Beykoz 2010 imar-planı: 1M ev yıktırma + Dönüşüm alanlarına imar-artışı",
+      "baslangic": "2010-09-25",
+      "kaynak": [
+        "Beykoz Güncel 2010-09-25 \"istanbulda 1 milyon evi yiktiracak karar\"",
+        "Beykoz Güncel 2010-10-21 \"donusum alanlarina imar artisi verilecek\"",
+        "Beykoz Güncel 2010-11-24 \"2B arazilerinde mutlu sona yaklasiliyor\""
+      ],
+      "mahalle": "İstanbul geneli / Beykoz kapsamlı",
+      "amac": [
+        "kentsel_donusum_makro",
+        "imar_artisi",
+        "yiktirma_karari"
+      ],
+      "beklenen_yansima": "RETRO (2010 · uygulaması 2012 6306 yasa)",
+      "durum": "yansidi (uygulaması 12 yıl sürdü)",
+      "not": "★ Kentsel dönüşüm makro-dinamiğinin 2010 basın-yansıması: \"1 milyon ev yıktırma\" karar · \"imar artışı\" teşvik · \"2B mutlu son\". S82 Arkitera 2015 \"233 ha 2B\" analitiğinin ARKAPLAN-DİNAMİĞİ 2010'da başlamış",
+      "borclar": [
+        "Beykoz-özel 2B kararı ayrı çıkarılmalı"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "MECLIS_UYGULAMA_6_18_AY",
+        "baslangic_ref": "2010-09-25",
+        "yansima_beklenen": "RETRO",
+        "sonraki_kontrol": null,
+        "haftalik_bayrak": false,
+        "not": "Makro-dinamik zaman-serisi arkaplan"
+      }
+    },
+    {
+      "id": "BEY-32",
+      "baslik": "Beykoz'a 7 yıldızlı otel (2011-02-13)",
+      "baslangic": "2011-02-13",
+      "kaynak": [
+        "Beykoz Güncel URL 2011-02-13 \"beykoza yedi yildizli otel yapiliyor\""
+      ],
+      "mahalle": "Beykoz genel (mahalle-belirsiz)",
+      "amac": [
+        "otel_yatirim",
+        "turizm_lux",
+        "emlak"
+      ],
+      "beklenen_yansima": "Otel-firma · konum · açılış · Şişecam arazisi/İncirköy otel ile bağlam",
+      "durum": "yansidi (BEY-29 ile BİRLEŞTİRİLDİ · S94 kanıt: aynı Torunlar Kentsel Resort projesi)",
+      "not": "★ BEY-01 (İncirköy Şişecam→otel) ile TARİHSEL-BAĞLAM: Beykoz'da 7 yıldızlı otel projesi 2011-02-13 (Şişecam-arazi-satış 3 yıl öncesi). İki farklı otel-projesi mi, aynı mı? S94 borç | ★ S94-BİRLEŞİM: BEY-29 (Torunlar GYO Paşabahçe TEKEL Kentsel Resort Otel) ile AYNI olay. Bu kayıt referans-ilgi olarak kalır, KR-01 uygulanmış (silme yok).",
+      "borclar": [
+        "7 yıldızlı otel konumu ve BEY-01 ile ilişki"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "KAP_INSAAT_7_8_YIL",
+        "baslangic_ref": "2011-02-13",
+        "yansima_beklenen": "RETRO",
+        "sonraki_kontrol": "2026-08-15",
+        "haftalik_bayrak": false,
+        "not": "BEY-01 tarih-arka-planı"
+      }
+    },
+    {
+      "id": "BEY-33",
+      "baslik": "Beykoz Devlet Hastanesi + Paşabahçe Devlet Hastanesi dönüşüm hikâyesi (2012)",
+      "baslangic": "2012-03-01",
+      "kaynak": [
+        "Beykoz Güncel 2012-03-01 \"pasabahce devlet hastanesi artik daha guvenli\"",
+        "Beykoz Güncel 2012-07-13 \"beykoz devlet hastanesinin donusum hikayesi\"",
+        "Beykoz Güncel 2012-01-26 \"artik kendi dis hastanemiz var\""
+      ],
+      "mahalle": "Paşabahçe (Devlet Hastanesi) + Beykoz genel",
+      "amac": [
+        "saglik_altyapisi",
+        "hastane_donusum",
+        "kamu_yatirim"
+      ],
+      "beklenen_yansima": "BEY-07 (Şahinkaya hastane inşaatı 2025) ile TARİHSEL-BAĞLAM",
+      "durum": "yansidi (2012 · süreklilik-belirsiz)",
+      "not": "★ Beykoz hastane-altyapısının 2012 dönüşüm hikayesi. BEY-07 Şahinkaya hastane inşaatı 2025 vinç-devrilmesi (13 yıl sonra devam ediyor) zaman-eksenli izlem: 2012 → 2025 hastane-altyapı sürekli-hareket",
+      "borclar": [
+        "Paşabahçe Devlet Hastanesi → Şahinkaya inşaatı bağı"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "İHALE_KABUL_2_3_YIL",
+        "baslangic_ref": "2012-03-01",
+        "yansima_beklenen": "RETRO",
+        "sonraki_kontrol": "2026-09-01",
+        "haftalik_bayrak": false,
+        "not": "BEY-07 ile bağlantı"
+      }
+    },
+    {
+      "id": "BEY-34",
+      "baslik": "Cam Köy — Şişecam özel proje \"ilk adım atıldı\" (2013-04-08)",
+      "baslangic": "2013-04-08",
+      "kaynak": [
+        "Beykoz Güncel URL 2013-04-08 \"cam koy icin ilk adim atildi\""
+      ],
+      "mahalle": "İncirköy (Şişecam fabrika-arazi bağlamı)",
+      "amac": [
+        "sisecam_proje",
+        "turizm_kultur",
+        "emlak_donusum"
+      ],
+      "beklenen_yansima": "BEY-01 zincirinin YENİ NOKTASI (14-yıl zinciri KR-CCBASIN-03 · nokta 1.5)",
+      "durum": "yansidi (2013 · sonrası belirsiz)",
+      "not": "★ S94 yeni-bulgu: \"Cam Köy\" Şişecam-Paşabahçe kültürel-turistik proje-adı. 2013-04-08 \"ilk adım\" duyurusu. BEY-01 (İncirköy Şişecam otel) ile bağlantı: 2012 marka davası → 2013 Cam Köy adım → 2014 arazi-satış-duyurusu → 2026 devir 171.5M$. Cam Köy hayata-geçti mi ölü mü — devam-basın-izlem gerek.",
+      "borclar": [
+        "Cam Köy 2013-2026 kayıp-yıl zinciri araştır",
+        "BEY-01 zincirine ekle"
+      ],
+      "SIG5_B2": {
+        "pencere_sinifi": "KAP_INSAAT_7_8_YIL",
+        "baslangic_ref": "2013-04-08",
+        "yansima_beklenen": "RETRO (13 yıl geriye)",
+        "sonraki_kontrol": "2026-08-15",
+        "haftalik_bayrak": false,
+        "not": "BEY-01 Şişecam zinciri ara-nokta"
+      }
+    }
+  ],
+  "istatistik": {
+    "toplam_olay": 29,
+    "durum_dagilim": {
+      "isliyor": 15,
+      "yansidi": 13,
+      "sondu": 1
+    },
+    "sicaklik_dagilim": {
+      "SICAK": [
+        "BEY-04 Köseler dava (3.dalga bekleniyor)",
+        "BEY-03 Riva Kamp",
+        "BEY-01 İncirköy-otel",
+        "BEY-06 Tokatköy 1071 tapu (havuz-dışı ipucu)"
+      ],
+      "ORTA": [
+        "BEY-02 Kalyon Riva Country",
+        "BEY-08 Kavacık üçlü",
+        "BEY-09 Çengeldere kampüs",
+        "BEY-11 İncirköy 7,219 satış",
+        "BEY-13 5-mahalle altyapı",
+        "BEY-10 İshaklı tarım"
+      ],
+      "SESSİZ": [
+        "BEY-07 hastane Şahinkaya",
+        "BEY-12 Su Sporları Festivali (yıllık)"
+      ],
+      "SÖNDÜ": [
+        "BEY-05 Çubuklu vapur (2025-07 zirvesi sonrası devam-haber yok)"
+      ]
+    },
+    "haftalik_bayrak_olaylar": [
+      "BEY-03",
+      "BEY-04",
+      "BEY-14",
+      "BEY-16",
+      "BEY-17"
+    ],
+    "toplam_haftalik": 5,
+    "sonraki_yakin_kontroller": [
+      {
+        "id": "BEY-03",
+        "tarih": "2026-08-03"
+      },
+      {
+        "id": "BEY-04",
+        "tarih": "2026-08-03"
+      },
+      {
+        "id": "BEY-01",
+        "tarih": "2026-08-15"
+      },
+      {
+        "id": "BEY-02",
+        "tarih": "2026-08-15"
+      },
+      {
+        "id": "BEY-06",
+        "tarih": "2026-08-15"
+      },
+      {
+        "id": "BEY-11",
+        "tarih": "2026-08-15"
+      }
+    ],
+    "tarandi_sifir_mahalleler": [
+      "Acarlar",
+      "Akbaba",
+      "Alibahadır",
+      "Anadolufeneri",
+      "Bozhane",
+      "Dereseki",
+      "Göllü",
+      "Görele",
+      "Kaynarca",
+      "Kılıçlı",
+      "Yeni Mahalle",
+      "Zerzavatçı",
+      "Örnekköy",
+      "Öğümce",
+      "İshaklı"
+    ],
+    "ozel_sinif_yonetişim_tarihçesi": [
+      "BEY-26"
+    ]
+  },
+  "kalici_borclar_takip": {
+    "arama_borclari_WebFetch_reset_sonrasi": [
+      "Kalyon Riva Country lansman + EKGYO komşuluğu",
+      "1071 tapu Tokatköy hak sahibi",
+      "Çelikler İncirköy 117 dönüm plan detay",
+      "Beykoz Devlet Hastanesi Şahinkaya firma",
+      "İSKİ havza koruma yönetmelik PDF",
+      "İBB Strapi 30886 karar API"
+    ],
+    "cross_cc_takip": [
+      "cc_tic: 1071 tapu + Kalyon Riva Country tapu-devir",
+      "cc_borsa: KAP-Şişecam Paşabahçe arazi + Kalyon GYO açıklamaları",
+      "cc_ihale: İncirköy 7,219 satış ihalesi + Riva Kamp inşaat ihalesi",
+      "cc_ttmap: Tokatköy dönüşüm sınırı + İshaklı tarım harita + İSKİ havza-mahalle"
+    ]
+  }
+}
