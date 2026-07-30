@@ -332,6 +332,7 @@
 | [`UA_20260730_HASAT_01_sifir_risk_hasadi.md`](dagitim/UA_20260730_HASAT_01_sifir_risk_hasadi.md) | Hasat emri: sıfır-risk 9 kalem (TCMB · KAP · CKAN 557 · OSM TR · Sentinel · TÜİK · World Bank · AFAD) | 2026-07-30 |
 | [`UA_20260730_finans_signals_kaynak_metadata.md`](dagitim/UA_20260730_finans_signals_kaynak_metadata.md) | CC-Finans + CC-Signals: kaynak-metadata bildirimi (Hafıza envanterindeki '?' kapansın) | 2026-07-30 |
 | [`UA_20260730_HASAT_EMRI_kesif_bitti.md`](dagitim/UA_20260730_HASAT_EMRI_kesif_bitti.md) | **HASAT-EMRİ**: keşif bitti, 6 CC × ŞİMDİ indir + tek-satır rapor + günlük SLA + SORGU-01 sayaç (baz 414K) | 2026-07-30 |
+| [`UA_20260730_HAFIZA_envanter_turu_kapaniyor.md`](dagitim/UA_20260730_HAFIZA_envanter_turu_kapaniyor.md) | Hafıza rol-değişimi: envanter turu KAPALI → SORGU-01 ingest + havuz sayacı (baz 414K → 4×) | 2026-07-30 |
 
 ---
 ## Disiplin
