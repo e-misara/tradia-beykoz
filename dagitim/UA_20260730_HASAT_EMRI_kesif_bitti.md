@@ -81,8 +81,8 @@ Deliverable formatı ("Kaynak Künye Kartı" 6-blok), karantina rejimi, batch ku
 | **F** | **CC-Hafıza** | **SORGU-01 havuz toplam** | **⏳** | **414K (baz)** | **~/tradia_sorgu/** | **N/A** | **—** | **—** |
 
 **Havuz büyüme özeti (Vezir güncelleyecek):**
-- Baz (2026-07-30): **414.000** kayıt
-- Şimdi: ⏳ bekleniyor
+- Baz (2026-07-30): **414.000** kayıt ⚠ **414K → 165K DÜZELTME** — HASAT-TAM-SALDIRI (aynı gün, sonraki tur) gerçek SORGU-01 sayımını **165K** olarak teyit etti. 414K tahmindi. Bkz. `UA_20260730_HASAT_TAM_SALDIRI.md` §6.a.
+- Şimdi: ⏳ bekleniyor (yeni baz **165K**)
 - Δ (fark): ⏳
 
 ---

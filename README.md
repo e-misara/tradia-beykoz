@@ -333,6 +333,7 @@
 | [`UA_20260730_finans_signals_kaynak_metadata.md`](dagitim/UA_20260730_finans_signals_kaynak_metadata.md) | CC-Finans + CC-Signals: kaynak-metadata bildirimi (Hafıza envanterindeki '?' kapansın) | 2026-07-30 |
 | [`UA_20260730_HASAT_EMRI_kesif_bitti.md`](dagitim/UA_20260730_HASAT_EMRI_kesif_bitti.md) | **HASAT-EMRİ**: keşif bitti, 6 CC × ŞİMDİ indir + tek-satır rapor + günlük SLA + SORGU-01 sayaç (baz 414K) | 2026-07-30 |
 | [`UA_20260730_HAFIZA_envanter_turu_kapaniyor.md`](dagitim/UA_20260730_HAFIZA_envanter_turu_kapaniyor.md) | Hafıza rol-değişimi: envanter turu KAPALI → SORGU-01 ingest + havuz sayacı (baz 414K → 4×) | 2026-07-30 |
+| [`UA_20260730_HASAT_TAM_SALDIRI.md`](dagitim/UA_20260730_HASAT_TAM_SALDIRI.md) | **HASAT-TAM-SALDIRI**: sınır yok · 7 CC · EVDS 26K seri · KAP 611 firma × 12yıl · TÜİK Playwright · 165K→milyonlar · ücretli-DOKUNMA | 2026-07-30 |
 
 ---
 ## Disiplin
