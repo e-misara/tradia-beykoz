@@ -320,6 +320,16 @@
 | CC-IHALE | [`KURULUS_cc_ihale.md`](kurulus/KURULUS_cc_ihale.md) | TRADİA KURULUŞ DOSYASI — CC-İHALE | 2026-07-29 |
 
 ---
+
+## /dagitim/ — Üst Akıl Direktif Dağıtım Defteri
+
+**Rol:** Vezir aracılığıyla Üst Akıl → CC dağıtımlarının kalıcı arşivi. Her direktif tek dosya, görev-atama tablosu + ilerleme takibi.
+
+| Dosya | Konu | Tarih |
+|---|---|---|
+| [`UA_20260729_havuz4x_ilk_hamle.md`](dagitim/UA_20260729_havuz4x_ilk_hamle.md) | Havuz-4× planının ilk hamlesi — TCMB-EVDS · İBB CKAN · İETT GTFS · OSM · TÜİK ADNKS · AFAD | 2026-07-29 |
+
+---
 ## Disiplin
 
 - **KVKK #31 v1.1:** PUBLIC — 'kendimize kanıt' (Patron 07-27).
