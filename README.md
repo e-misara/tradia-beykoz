@@ -328,6 +328,7 @@
 | Dosya | Konu | Tarih |
 |---|---|---|
 | [`UA_20260729_havuz4x_ilk_hamle.md`](dagitim/UA_20260729_havuz4x_ilk_hamle.md) | Havuz-4× planının ilk hamlesi — TCMB-EVDS · İBB CKAN · İETT GTFS · OSM · TÜİK ADNKS · AFAD | 2026-07-29 |
+| [`UA_20260730_acik_veri_hemen_al.md`](dagitim/UA_20260730_acik_veri_hemen_al.md) | Standing-adayı: **AÇIK VERİ = HEMEN AL** (GitHub · YouTube altyazı · açık API/portal) | 2026-07-30 |
 
 ---
 ## Disiplin
