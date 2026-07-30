@@ -1,5 +1,8 @@
 # OTONOM-MOD · Patron Offline · Tüm CC Kendi Ayağında
 
+> ⚠ **REVİZE NOTU (v2 · 2026-07-30 devamı):** Bu direktifin depolama katmanı **v2'de revize edildi.** Bellek gerçekten çıkıyor → staging **Mac yerel** (v1'de TT-HAFIZA idi). Yeni: [`UA_20260730_OTONOM_MOD_v2_bellek_cikinca.md`](UA_20260730_OTONOM_MOD_v2_bellek_cikinca.md) — Hafıza-boşaltma protokolü + Mac→TT-HAFIZA dönüş-akışı. **v2 otoritedir**; bu v1 tarihsel referans olarak korunuyor.
+
+
 **Tarih:** 2026-07-30
 **Kaynak:** Üst Akıl
 **Kanal:** Vezir (dağıtım + dönüş-protokol köprüsü)
