@@ -337,6 +337,7 @@
 | [`UA_20260730_OTONOM_MOD_patron_offline.md`](dagitim/UA_20260730_OTONOM_MOD_patron_offline.md) | **OTONOM-MOD**: Patron offline · nohup+checkpoint+resume · TT-HAFIZA staging · sessiz-0/SPA-fallback açık · dönüş protokolü | 2026-07-30 |
 | [`UA_20260730_OTONOM_MOD_v2_bellek_cikinca.md`](dagitim/UA_20260730_OTONOM_MOD_v2_bellek_cikinca.md) | **OTONOM-MOD v2**: bellek çıkıyor → Mac yerel staging · Hafıza-boşaltma protokolü (dönüşte Mac→TT-HAFIZA) | 2026-07-30 |
 | [`UA_20260731_STANDING_terminal_oncelik.md`](dagitim/UA_20260731_STANDING_terminal_oncelik.md) | Standing-adayı **#38: TERMİNAL-ÖNCELİK** (model=akıl, terminal=kepçe; limit-tasarrufu temeli) | 2026-07-31 |
+| [`UA_20260731_CC_DURUM_TARAMA_15_30.md`](dagitim/UA_20260731_CC_DURUM_TARAMA_15_30.md) | **CC durum tarama** 15:30: 6/6 CC aktif · SORGU-01 869K (baz 165K → 5.27× · hedef AŞILDI) · Mac %48 · TT-HAFIZA %30 mounted | 2026-07-31 |
 
 ---
 ## Disiplin
