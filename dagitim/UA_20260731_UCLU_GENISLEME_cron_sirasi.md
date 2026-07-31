@@ -1,5 +1,8 @@
 # ÜÇLÜ-GENİŞLEME + CRON SIRASI · Tic + Analiz + Pazarlama
 
+> ⚠ **SLUG DÜZELTME (2026-07-31, sonraki tur):** Bu dosyadaki `STAGING_YENI/cc_tic/, cc_analiz/, cc_pazarlama/` **CC-bazlı slug'lar GEÇERSİZDİR.** Kanon **KAYNAK-BAZLI**: `STAGING_YENI/<kaynak>/<tarih>/` (Hafıza'nın kurduğu yapı). Örnek doğru: Tic → `STAGING_YENI/rg_iller/<il>/`, `STAGING_YENI/mersis/`, `STAGING_YENI/turkpatent/`. Bkz. [`UA_20260731_SLUG_KANON_kaynak_bazli.md`](UA_20260731_SLUG_KANON_kaynak_bazli.md). Cron sırası (:00 · :20 · :40) ve diğer kurallar **aynen geçerli.**
+
+
 **Tarih:** 2026-07-31
 **Kaynak:** Üst Akıl
 **Kanal:** Vezir (dağıtım + cron takvim koordinasyonu)

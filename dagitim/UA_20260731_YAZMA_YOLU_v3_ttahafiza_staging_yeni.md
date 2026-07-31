@@ -1,5 +1,8 @@
 # YAZMA-YOLU v3 · TT-HAFIZA/STAGING_YENI/ · Mac Minimum
 
+> ⚠ **SLUG DÜZELTME (2026-07-31, sonraki tur):** Bu dosyadaki `cc_basin/, cc_analiz/, cc_pazarlama/` **CC-bazlı slug** örnekleri **GEÇERSİZDİR.** Kanon **KAYNAK-BAZLI**: `STAGING_YENI/<kaynak>/<tarih>/` (Hafıza'nın kurduğu yapı). Bkz. [`UA_20260731_SLUG_KANON_kaynak_bazli.md`](UA_20260731_SLUG_KANON_kaynak_bazli.md). v3'ün diğer kuralları (künye + SHA + Mac minimum + rsync katmanı kaldırıldı) **aynen geçerli.**
+
+
 **Tarih:** 2026-07-31
 **Kaynak:** Üst Akıl
 **Kanal:** Vezir (dağıtım + versiyon yönetimi)

@@ -148,7 +148,11 @@ rc=120 🔴 (kırık)    : 1 servis
 - Basın Mac dizini 34GB → 15:29 mtime = yeni-yol yerine hâlâ Mac'e yazıyor
 - **Öneri:** Hafıza'nın STAGING_YENI kurulumu bittikten sonra CC session'larına uygulama tetiği yapıştırıldı mı? Yoksa CC'ler v3 direktifini görmedi mi?
 
-### 4.b 🔴 **v3 slug tutarsızlığı**
+### 4.b ✅ **v3 slug tutarsızlığı — ÇÖZÜLDÜ (SLUG_KANON kararı)**
+
+> Üst Akıl kararı 2026-07-31 (sonraki tur): kanon **KAYNAK-BAZLI** (Hafıza yapısı). Vezir cc-bazlı önerisi geçersiz. Bkz. `UA_20260731_SLUG_KANON_kaynak_bazli.md`. 
+
+**Eski uyarı (kayıt):**
 - Vezir direktifi (v3): `STAGING_YENI/cc_basin/, cc_analiz/, cc_pazarlama/`
 - Hafıza'nın kurulumu: `STAGING_YENI/basin/, osm/, evds/, finans_belge/`
 - İki farklı sözlük — Hafıza kaynak-bazlı, Vezir CC-bazlı düşündü
