@@ -342,6 +342,7 @@
 | [`UA_20260731_UCLU_GENISLEME_cron_sirasi.md`](dagitim/UA_20260731_UCLU_GENISLEME_cron_sirasi.md) | **ÜÇLÜ-GENİŞLEME + CRON**: Tic:00 · Analiz:20 · Pazarlama:40 · STAGING_YENI'ye yaz · DB-lock önleme · 442K tez potansiyeli | 2026-07-31 |
 | [`UA_20260731_GENEL_KONTROL_17_00.md`](dagitim/UA_20260731_GENEL_KONTROL_17_00.md) | **GENEL-KONTROL** 17:00: havuz 922K (+35K/sa, 1M için 2sa) · 5/7 CC 🟢 · STAGING_YENI kuruldu ama BOŞ (v3 adopsiyon bekliyor) · primer-monitor rc=120 🔴 | 2026-07-31 |
 | [`UA_20260731_SLUG_KANON_kaynak_bazli.md`](dagitim/UA_20260731_SLUG_KANON_kaynak_bazli.md) | **SLUG KANON** karar: KAYNAK-BAZLI (Hafıza) — CC-bazlı Vezir önerisi geçersiz · retro düzeltme 3 dosya | 2026-07-31 |
+| [`UA_20260731_V3_UYGULA_kagit_bitti.md`](dagitim/UA_20260731_V3_UYGULA_kagit_bitti.md) | **V3-UYGULA acil**: kağıt bitti, kodda uygula (3 satır) · CC teyit-satırı · STAGING_YENI 0 dosya kanıtı | 2026-07-31 |
 
 ---
 ## Disiplin
