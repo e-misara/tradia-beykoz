@@ -3,6 +3,8 @@
 **Tarih:** 2026-07-30
 **Kaynak:** Üst Akıl
 **Kanal:** Vezir (dağıtım + versiyon farkı + Hafıza-boşaltma protokolü)
+> ⚠ **v3 REVİZE NOTU (2026-07-31):** Bellek geri takıldı (CC-DURUM-TARAMA teyit), staging kararı **yeniden değişti.** v2 GERİDE. Yeni: [`UA_20260731_YAZMA_YOLU_v3_ttahafiza_staging_yeni.md`](UA_20260731_YAZMA_YOLU_v3_ttahafiza_staging_yeni.md) — CC'ler **doğrudan TT-HAFIZA/STAGING_YENI/**'ye yazar, Mac minimum kalır. **v3 otoritedir**; v2 tarihsel referans.
+
 **Bağlam:**
 - Bir önceki: [`UA_20260730_OTONOM_MOD_patron_offline.md`](UA_20260730_OTONOM_MOD_patron_offline.md) (v1) — depolama TT-HAFIZA staging
 - **BU DOSYA (v2):** bellek FİİLEN çıkıyor → depolama katmanı **Mac yerel staging'e** revize edildi
