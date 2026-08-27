@@ -60,3 +60,6 @@ arsiv/tam/
 
 # Arsiv script whitelist (Standing #37 · saf Python · AI çağrısı yok)
 !arsiv/*.py
+
+# Pano HTML whitelist (BE-01 · vanilla JS statik pano)
+!pano/*.html

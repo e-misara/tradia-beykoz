@@ -1,0 +1,251 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Vezir Pano · w35</title>
+<style>
+  :root {
+    --bg: #0a0e14;
+    --bg2: #12161e;
+    --bg3: #1a1f2b;
+    --border: #2a3040;
+    --fg: #e4e6eb;
+    --dim: #8a92a0;
+    --accent: #ff6b35;
+    --green: #4caf50;
+    --yellow: #ffb84a;
+    --red: #ff4757;
+    --red-bg: #3a1520;
+    --font-mono: "JetBrains Mono", "SF Mono", "Menlo", monospace;
+    --font-ui: system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--fg); font-family: var(--font-mono); font-size: 12px; line-height: 1.45; }
+  body { padding: 8px; min-height: 100vh; }
+
+  /* KIRMIZI ŞERİT */
+  .serit {
+    background: var(--red-bg);
+    border: 1px solid var(--red);
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .serit-lbl { color: var(--red); font-weight: 700; font-size: 11px; letter-spacing: 0.05em; }
+  .serit-item { color: var(--fg); font-size: 11px; padding: 0 8px; border-right: 1px solid var(--red); }
+  .serit-item:last-child { border-right: none; }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .header h1 { font-size: 14px; color: var(--accent); letter-spacing: 0.08em; font-weight: 700; }
+  .header .sub { color: var(--dim); font-size: 11px; }
+
+  /* GRID */
+  .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 8px; }
+  .stack { display: flex; flex-direction: column; gap: 8px; }
+
+  /* CARD */
+  .card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .card-t {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding-bottom: 6px; margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .card-t h2 { color: var(--accent); font-size: 12px; letter-spacing: 0.05em; font-weight: 700; }
+  .card-t .meta { color: var(--dim); font-size: 10px; }
+
+  /* TABLE */
+  table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  th, td { padding: 4px 6px; text-align: left; border-bottom: 1px solid var(--bg3); }
+  th { color: var(--dim); font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr:hover { background: var(--bg3); }
+
+  /* STATUS */
+  .st { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 10px; font-weight: 700; }
+  .st-aktif { background: rgba(76,175,80,0.15); color: var(--green); }
+  .st-beklemede { background: rgba(255,184,74,0.15); color: var(--yellow); }
+  .st-bilinmiyor { background: rgba(138,146,160,0.15); color: var(--dim); }
+  .st-olu { background: rgba(255,71,87,0.15); color: var(--red); }
+  .st-kirmizi { background: rgba(255,71,87,0.25); color: var(--red); }
+
+  /* METRIC ROW */
+  .metric-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-bottom: 8px; }
+  .metric {
+    background: var(--bg3); border: 1px solid var(--border); border-radius: 3px;
+    padding: 8px; text-align: center;
+  }
+  .metric-val { font-size: 18px; color: var(--accent); font-weight: 700; letter-spacing: 0.02em; }
+  .metric-lbl { color: var(--dim); font-size: 10px; margin-top: 2px; letter-spacing: 0.03em; }
+  .metric-src { color: var(--dim); font-size: 9px; margin-top: 3px; font-style: italic; }
+
+  /* SIDE (Vaat) */
+  .vaat-item { padding: 6px 0; border-bottom: 1px solid var(--bg3); font-size: 10px; }
+  .vaat-lbl { color: var(--fg); font-weight: 600; }
+  .vaat-meta { color: var(--dim); font-size: 9px; margin-top: 2px; }
+  .vaat-gecikti { color: var(--yellow); font-weight: 700; }
+  .vaat-gecikti-uzun { color: var(--red); }
+
+  .footer { color: var(--dim); font-size: 9px; text-align: center; padding-top: 10px; }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  /* NUM (kırmızı bayrak) */
+  .num-kirmizi { color: var(--red); }
+  .num-sari { color: var(--yellow); }
+</style>
+
+<div id="serit" class="serit"></div>
+
+<div class="header">
+  <h1>◆ VEZİR PANO · w35</h1>
+  <div class="sub" id="header-sub">yükleniyor...</div>
+</div>
+
+<div class="grid">
+  <div class="stack">
+    <!-- PORTFÖY -->
+    <div class="card">
+      <div class="card-t"><h2>PORTFÖY (10 proje)</h2><span class="meta">1. katman</span></div>
+      <table id="portfoy"><thead><tr><th>Proje</th><th>Durum</th><th class="num">Sessizlik</th><th>Son hareket</th><th>Sıradaki iş</th></tr></thead><tbody></tbody></table>
+    </div>
+
+    <!-- CC IZGARASI -->
+    <div class="card">
+      <div class="card-t"><h2>CC IZGARASI (16)</h2><span class="meta">2. katman</span></div>
+      <table id="cc"><thead><tr><th>CC</th><th>Sprint</th><th class="num">Sessizlik</th><th>Bekleyen</th><th>Bloke</th></tr></thead><tbody></tbody></table>
+    </div>
+
+    <!-- KANONİK RAKAMLAR -->
+    <div class="card">
+      <div class="card-t"><h2>KANONİK RAKAMLAR</h2><span class="meta">4. katman · kaynaklı</span></div>
+      <div class="metric-row" id="metric-row"></div>
+      <table id="rakamlar"><thead><tr><th>Metrik</th><th class="num">Değer</th><th>Kaynak</th><th>Tarih</th><th>Not</th></tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div class="stack">
+    <!-- VAAT-TAKİP -->
+    <div class="card">
+      <div class="card-t"><h2>VAAT-TAKİP</h2><span class="meta">3. katman · <span id="vaat-toplam"></span> madde</span></div>
+      <div id="vaat"></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <span id="foot-guncelle"></span> · Vezir BE-01 · Standing #38 (terminal-öncelik) · $0 · AI çağrısı YOK ·
+  <a href="https://github.com/e-misara/tradia-beykoz/blob/main/pano/ENVANTER_BUYUK_v1.md">Detay</a>
+</div>
+
+<script>
+(async function(){
+  // Üç kanal fallback — Pages öncelik, Raw ikinci, jsDelivr üçüncü
+  const kanallar = [
+    './ozet-w35.json',
+    'https://raw.githubusercontent.com/e-misara/tradia-beykoz/main/pano/ozet-w35.json',
+    'https://cdn.jsdelivr.net/gh/e-misara/tradia-beykoz@main/pano/ozet-w35.json'
+  ];
+  let veri = null;
+  for (const url of kanallar) {
+    try {
+      const r = await fetch(url, {cache: 'no-cache'});
+      if (r.ok) { veri = await r.json(); break; }
+    } catch (e) { continue; }
+  }
+  if (!veri) {
+    document.body.innerHTML = '<div style="padding:40px;color:#ff4757;text-align:center">Veri kaynağına ulaşılamadı. Üç kanal (Pages/Raw/jsDelivr) devre dışı.</div>';
+    return;
+  }
+
+  // ---- KIRMIZI ŞERİT ----
+  const serit = document.getElementById('serit');
+  serit.innerHTML = '<span class="serit-lbl">🔴 BLOKE</span>' +
+    veri.kirmizi_serit.bloke.map(b =>
+      `<span class="serit-item"><b>${b.konu}</b> — ${b.etki} <span style="color:#8a92a0">[${b.kim}]</span></span>`
+    ).join('');
+
+  // ---- HEADER SUB ----
+  document.getElementById('header-sub').textContent =
+    `${veri.guncelleme} · şema ${veri.schema_version} · önceki ${veri.onceki_kanonik} · boşluk ${veri.boslukdaki_hafta}`;
+  document.getElementById('foot-guncelle').textContent = `Son güncelleme: ${veri.guncelleme}`;
+
+  // ---- PORTFÖY ----
+  const p_tbody = document.querySelector('#portfoy tbody');
+  veri.portfoy_katmani.projeler.forEach(pr => {
+    const st = pr.durum.split(' ')[0].toLowerCase().replace('ı','i').replace('ö','o');
+    const sess = pr.sessizlik_gun === null ? '—' : pr.sessizlik_gun;
+    const sess_cls = pr.sessizlik_gun >= 30 ? 'num num-kirmizi' : (pr.sessizlik_gun >= 14 ? 'num num-sari' : 'num');
+    p_tbody.insertAdjacentHTML('beforeend',
+      `<tr><td><b>${pr.ad}</b></td><td><span class="st st-${st}">${pr.durum}</span></td><td class="${sess_cls}">${sess}</td><td>${pr.son_hareket}</td><td>${pr.siradaki}</td></tr>`);
+  });
+
+  // ---- CC IZGARASI ----
+  const cc_tbody = document.querySelector('#cc tbody');
+  veri.cc_katmani.cc_list.forEach(c => {
+    const sess_cls = c.kirmizi ? 'num num-kirmizi' : (c.sessizlik_gun >= 14 ? 'num num-sari' : 'num');
+    const kir = c.kirmizi ? ' <span class="st st-kirmizi">14+</span>' : '';
+    cc_tbody.insertAdjacentHTML('beforeend',
+      `<tr><td><b>CC-${c.cc}</b>${kir}</td><td>${c.sprint}</td><td class="${sess_cls}">${c.sessizlik_gun}</td><td>${c.bekleyen}</td><td style="color:#8a92a0">${c.bloke}</td></tr>`);
+  });
+
+  // ---- METRİK ROW (kanonik önemli 5) ----
+  const kr = veri.kanonik_rakamlar;
+  const oneML = [
+    {v: kr.havuz_sorgu01.deger.toLocaleString(), l: 'SORGU-01 Havuz', s: kr.havuz_sorgu01.tarih + ' 🟡'},
+    {v: kr.sahibinden_v24.deger.toLocaleString(), l: 'Sahibinden v24', s: kr.sahibinden_v24.tarih + ' 🔒'},
+    {v: kr.ttai_confirmed.deger, l: 'TT-AI Confirmed', s: kr.ttai_confirmed.tarih},
+    {v: kr.ttmap_mahalle.deger.toLocaleString(), l: 'TT-MAP Mahalle', s: kr.ttmap_mahalle.tarih},
+    {v: kr.ihale_toplam.deger.toLocaleString(), l: 'İhale Toplam', s: kr.ihale_toplam.tarih},
+    {v: kr.claude_code_oturum.deger + ' / ' + kr.claude_code_oturum.boyut_mb + 'MB', l: 'Arşiv Oturum', s: kr.claude_code_oturum.tarih}
+  ];
+  const mr = document.getElementById('metric-row');
+  oneML.forEach(m => mr.insertAdjacentHTML('beforeend',
+    `<div class="metric"><div class="metric-val">${m.v}</div><div class="metric-lbl">${m.l}</div><div class="metric-src">${m.s}</div></div>`));
+
+  // ---- RAKAMLAR TABLO ----
+  const r_tbody = document.querySelector('#rakamlar tbody');
+  Object.entries(kr).forEach(([key, val]) => {
+    if (typeof val !== 'object' || val === null || !val.deger) return;
+    const bay = val.bayrak === 'kirmizi' ? ' 🔴' : (val.bayrak === 'sari' ? ' 🟡' : '');
+    const val_cls = val.bayrak === 'kirmizi' ? 'num num-kirmizi' : (val.bayrak === 'sari' ? 'num num-sari' : 'num');
+    r_tbody.insertAdjacentHTML('beforeend',
+      `<tr><td>${key}</td><td class="${val_cls}">${typeof val.deger === 'number' ? val.deger.toLocaleString() : val.deger}${bay}</td><td style="color:#8a92a0">${val.kaynak || '—'}</td><td>${val.tarih || '—'}</td><td style="color:#8a92a0">${val.not || ''}</td></tr>`);
+  });
+
+  // ---- VAAT ----
+  document.getElementById('vaat-toplam').textContent = veri.vaat_takip.toplam;
+  const v_div = document.getElementById('vaat');
+  const bugun_bloke = document.createElement('div');
+  bugun_bloke.innerHTML = '<div style="color:#ff6b35;font-weight:700;margin-bottom:6px;font-size:11px">AKTİF BUGÜN</div>' +
+    veri.vaat_takip.aktif_bugun.map(a => `<div class="vaat-item"><div class="vaat-lbl">▸ ${a}</div></div>`).join('');
+  v_div.appendChild(bugun_bloke);
+
+  const kritik = document.createElement('div');
+  kritik.innerHTML = '<div style="color:#ff6b35;font-weight:700;margin-top:12px;margin-bottom:6px;font-size:11px">GECİKMİŞ (kaç gün)</div>';
+  v_div.appendChild(kritik);
+  veri.vaat_takip.kritik.forEach(v => {
+    const gec = v.gecikti_gun;
+    const gec_cls = gec >= 60 ? 'vaat-gecikti vaat-gecikti-uzun' : (gec >= 30 ? 'vaat-gecikti' : '');
+    const gec_txt = gec === null ? '?' : `+${gec}g`;
+    v_div.insertAdjacentHTML('beforeend',
+      `<div class="vaat-item"><div class="vaat-lbl">${v.vaat}</div><div class="vaat-meta">${v.kim} · ${v.verildi} · <span class="${gec_cls}">${gec_txt}</span> · ${v.gecerli}</div></div>`);
+  });
+})();
+</script>
