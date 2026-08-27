@@ -1,0 +1,300 @@
+{
+  "sprint": "GORSEL-ENV-01",
+  "tarih": "2026-08-27",
+  "toplam": 28,
+  "gorseller": [
+    {
+      "ad": "bey15_cubuklu_grafik.png",
+      "yol": "beykoz_vaka/bey15_cubuklu_grafik.png",
+      "boyut_bayt": 77204,
+      "mtime": "2026-07-27",
+      "referans_dosya_sayi": 2,
+      "referans_dosyalar": [
+        "beykoz_vaka/FINAL_cc_ttmap_beykoz.md",
+        "README.md"
+      ]
+    },
+    {
+      "ad": "beykoz_arazi_haritasi.png",
+      "yol": "beykoz_vaka/beykoz_arazi_haritasi.png",
+      "boyut_bayt": 191555,
+      "mtime": "2026-07-27",
+      "referans_dosya_sayi": 3,
+      "referans_dosyalar": [
+        "beykoz_vaka/cc_ttmap_MAP32.md",
+        "beykoz_vaka/FINAL_cc_ttmap_beykoz.md",
+        "README.md"
+      ]
+    },
+    {
+      "ad": "beykoz_isi_haritasi.png",
+      "yol": "beykoz_vaka/beykoz_isi_haritasi.png",
+      "boyut_bayt": 302761,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 5,
+      "referans_dosyalar": [
+        "beykoz_vaka/sig8_sinyal_kaniti_v2.md",
+        "beykoz_vaka/sig10_basin_entegre.md",
+        "beykoz_vaka/beykoz_master.md",
+        "README.md",
+        "kurulus/KURULUS_CC-SIGNALS.md"
+      ]
+    },
+    {
+      "ad": "harita_gercek_kisit.png",
+      "yol": "beykoz_vaka/harita_gercek_kisit.png",
+      "boyut_bayt": 48204,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 2,
+      "referans_dosyalar": [
+        "beykoz_vaka/cc_ttmap_MAP35.md",
+        "README.md"
+      ]
+    },
+    {
+      "ad": "harita_gercek_konum.png",
+      "yol": "beykoz_vaka/harita_gercek_konum.png",
+      "boyut_bayt": 79715,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 2,
+      "referans_dosyalar": [
+        "beykoz_vaka/cc_ttmap_MAP35.md",
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_BEY15_942_947.png",
+      "yol": "beykoz_vaka/karolar/karo_BEY15_942_947.png",
+      "boyut_bayt": 61919,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_Kundura_Tekel.png",
+      "yol": "beykoz_vaka/karolar/karo_Kundura_Tekel.png",
+      "boyut_bayt": 43537,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_camlibahce.png",
+      "yol": "beykoz_vaka/karolar/karo_camlibahce.png",
+      "boyut_bayt": 163146,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_cubuklu.png",
+      "yol": "beykoz_vaka/karolar/karo_cubuklu.png",
+      "boyut_bayt": 869746,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_goksu.png",
+      "yol": "beykoz_vaka/karolar/karo_goksu.png",
+      "boyut_bayt": 191191,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_goztepe.png",
+      "yol": "beykoz_vaka/karolar/karo_goztepe.png",
+      "boyut_bayt": 1053332,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_gumussuyu.png",
+      "yol": "beykoz_vaka/karolar/karo_gumussuyu.png",
+      "boyut_bayt": 593600,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_incirkoy.png",
+      "yol": "beykoz_vaka/karolar/karo_incirkoy.png",
+      "boyut_bayt": 492054,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_kavacik.png",
+      "yol": "beykoz_vaka/karolar/karo_kavacik.png",
+      "boyut_bayt": 1001727,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_merkez.png",
+      "yol": "beykoz_vaka/karolar/karo_merkez.png",
+      "boyut_bayt": 778647,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_ortacesme.png",
+      "yol": "beykoz_vaka/karolar/karo_ortacesme.png",
+      "boyut_bayt": 193155,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_pasabahce.png",
+      "yol": "beykoz_vaka/karolar/karo_pasabahce.png",
+      "boyut_bayt": 649291,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_riva.png",
+      "yol": "beykoz_vaka/karolar/karo_riva.png",
+      "boyut_bayt": 883326,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 2,
+      "referans_dosyalar": [
+        "beykoz_vaka/cc_ttmap_MAP34.md",
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo_yalikoy.png",
+      "yol": "beykoz_vaka/karolar/karo_yalikoy.png",
+      "boyut_bayt": 644262,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "sunum_BEY15_942_947.png",
+      "yol": "beykoz_vaka/karolar_sunum/sunum_BEY15_942_947.png",
+      "boyut_bayt": 1334090,
+      "mtime": "2026-07-29",
+      "referans_dosya_sayi": 2,
+      "referans_dosyalar": [
+        "beykoz_vaka/cc_ttmap_MAP37.md",
+        "README.md"
+      ]
+    },
+    {
+      "ad": "sunum_incirkoy.png",
+      "yol": "beykoz_vaka/karolar_sunum/sunum_incirkoy.png",
+      "boyut_bayt": 838501,
+      "mtime": "2026-07-29",
+      "referans_dosya_sayi": 2,
+      "referans_dosyalar": [
+        "beykoz_vaka/cc_ttmap_MAP37.md",
+        "README.md"
+      ]
+    },
+    {
+      "ad": "sunum_riva.png",
+      "yol": "beykoz_vaka/karolar_sunum/sunum_riva.png",
+      "boyut_bayt": 1600046,
+      "mtime": "2026-07-29",
+      "referans_dosya_sayi": 2,
+      "referans_dosyalar": [
+        "beykoz_vaka/cc_ttmap_MAP37.md",
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo2_BEY15.png",
+      "yol": "beykoz_vaka/karolar_v2/karo2_BEY15.png",
+      "boyut_bayt": 125322,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo2_gumussuyu.png",
+      "yol": "beykoz_vaka/karolar_v2/karo2_gumussuyu.png",
+      "boyut_bayt": 125389,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo2_incirkoy.png",
+      "yol": "beykoz_vaka/karolar_v2/karo2_incirkoy.png",
+      "boyut_bayt": 122726,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo2_kavacik.png",
+      "yol": "beykoz_vaka/karolar_v2/karo2_kavacik.png",
+      "boyut_bayt": 127458,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo2_riva.png",
+      "yol": "beykoz_vaka/karolar_v2/karo2_riva.png",
+      "boyut_bayt": 105782,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    },
+    {
+      "ad": "karo2_tokatkoy.png",
+      "yol": "beykoz_vaka/karolar_v2/karo2_tokatkoy.png",
+      "boyut_bayt": 111441,
+      "mtime": "2026-07-28",
+      "referans_dosya_sayi": 1,
+      "referans_dosyalar": [
+        "README.md"
+      ]
+    }
+  ]
+}

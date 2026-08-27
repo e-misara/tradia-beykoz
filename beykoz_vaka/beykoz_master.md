@@ -51,7 +51,7 @@
 
 # 2. ISI HARİTASI
 
-📊 **Görsel:** [`cikti/beykoz_isi_haritasi.png`](cikti/beykoz_isi_haritasi.png)
+📊 **Görsel:** [`beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png`](gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png)
 🔧 **Kural:** [`kod/isi_haritasi_SIG3.py`](kod/isi_haritasi_SIG3.py) — eşikler kodda sabit, tartışmaya açık
 
 > 🆕 **9. AYAK EKLENDİ — İMAR.** İ66/İ69 ile Beykoz'un imar süreci ölçülebilir hale geldi. **Eşik:** 6306 riskli alan **veya** 18. madde uygulaması **veya** 1/5000–1/1000 askı (2025-26).
@@ -74,7 +74,7 @@
 
 **Dağılım:** 6→1 · 5→3 · 4→4 · 3→1 · 2→7 · 1→8 · **0→21 (%47)**
 
-> ✅ **SIG11 (28.07) — FİNAL: v2r temiz verisiyle yeniden hesaplandı.** S94'ün **ısı-v2r**'si yanlış pozitifleri kesti: **Kavacık 866 · Fatih 649 · Riva 476** *(S93'te üçü de 7.999/7.999 boilerplate idi)*. **Üç ✕ gerçek skora döndü.** Yeni sıralama: **Çubuklu 9/11 · Kavacık · Riva · Tokatköy 8/11 · Gümüşsuyu 7/11**; **0 ayaklı 11 → 10** *(Fatih ilk ayağını kazandı)*. Görsel final: `cikti/beykoz_isi_haritasi.png` · kod `kod/isi_haritasi_SIG11.py`.
+> ✅ **SIG11 (28.07) — FİNAL: v2r temiz verisiyle yeniden hesaplandı.** S94'ün **ısı-v2r**'si yanlış pozitifleri kesti: **Kavacık 866 · Fatih 649 · Riva 476** *(S93'te üçü de 7.999/7.999 boilerplate idi)*. **Üç ✕ gerçek skora döndü.** Yeni sıralama: **Çubuklu 9/11 · Kavacık · Riva · Tokatköy 8/11 · Gümüşsuyu 7/11**; **0 ayaklı 11 → 10** *(Fatih ilk ayağını kazandı)*. Görsel final: `gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png` · kod `kod/isi_haritasi_SIG11.py`.
 
 > ★ **SIG12 çapraz kontrolü — "sessiz" iki ayrı şey demek.** CC-Basın S96 lens L4: **45 mahallenin 45'i de** 16 yıllık arşivde en az bir kez geçiyor → **basında sessiz mahalle YOK.** Signals ölçümü: **10 mahallede hiçbir ayak eşiği geçmiyor.**
 > **Çelişki değil, tanım farkı — ve ifadeyi netleştiriyor:** bir mahalle basında geçebilir (muhtar ziyareti, iftar, kaza) ve yine de **ölçülebilir hiçbir gelişim ayağı taşımayabilir.**
@@ -998,6 +998,6 @@ Bu tur boyunca **aynı hata sınıfı altı kez** çıktı. Hepsi **kendi sistem
 
 **Kaynaklar (#21-B):** CC-İhale **İ59-70** · CC-Borsa **S54-61** · CC-TT-MAP **MAP24-36** · CC-Basın **S78-96** · CC-Sosyal **S201-209EK** · CC-TT-AI **TTA93-100** · CC-Analiz **S46-53** · CC-Tic **T1-128EK** · CC-Finans **F1-F7** · CC-Signals **SIG1-12**
 **SIG12 ek dosyaları:** [`sig12_vaat_surtunme.md`](sig12_vaat_surtunme.md) · [`soru_bankasi.md`](soru_bankasi.md) (SB-01…20) · `cikti/sig12_vaat_surtunme.json` · `kod/sig12_vaat_surtunme.py`
-**Görseller:** `cikti/beykoz_isi_haritasi.png` · `kod/isi_haritasi_SIG3.py` · `kod/isi_gorseli.py` · `kod/sig5_backtest_watchlist.py`
+**Görseller:** `gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png` · `kod/isi_haritasi_SIG3.py` · `kod/isi_gorseli.py` · `kod/sig5_backtest_watchlist.py`
 **Üreten:** CC-Signals · **Süzgeç:** ✅ Üst Akıl · **Denetleyen:** **ÜST AKIL ✓ (27.07.2026)** — onay + r1 yaması ile
 **$0 · A04 · V16 · #18 · #21-A/B/C · #31 · #34 · SİLME-YOK**

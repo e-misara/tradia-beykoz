@@ -4,8 +4,8 @@
 
 ## PART-1 — KARO GERİ-DÖNÜŞ (Patron kararı)
 **KANONİK sunum görseli = GENİŞ karolar** (MAP34-stili, tam-mahalle, ÖNCE/SONRA 2-panel, sarı-sınır, kenar-temiz).
-- **Sunumluk (yeniden-bası, temiz):** `karolar_sunum/sunum_riva.png · sunum_incirkoy.png · sunum_BEY15_942_947.png` (dpi-130, bulut-temizli-sahne, minimal-başlık).
-- **Arşive iner (sunumdan çıkar):** `karolar_v2/` 3-panel-zoom (MAP36) — inceleme/arşiv, sunumda kullanılmaz.
+- **Sunumluk (yeniden-bası, temiz):** `gorseller/tradia/beykoz/sunum/beykoz_sunum_riva_2026-07-29.png · beykoz_sunum_incirkoy_2026-07-29.png · beykoz_sunum_bey15-torunlar-942-947_2026-07-29.png` (dpi-130, bulut-temizli-sahne, minimal-başlık).
+- **Arşive iner (sunumdan çıkar):** `gorseller/tradia/beykoz/karo-v2/` 3-panel-zoom (MAP36) — inceleme/arşiv, sunumda kullanılmaz.
 - MAP34 `karolar/` 14 geniş-karo = tam-set (sunum havuzu).
 
 ## PART-2 — L7 AFET-539 × TAŞKIN/HEYELAN-PROXY ÇAPRAZI
@@ -29,4 +29,4 @@
 Sunum-karoları kanonik-geniş-formata döndü (Patron). Afet-çaprazı **çift-yönlü öz-denetim** üretti: haber Riva-taşkın-boşluğumu yakaladı, proxy Göksu-park-şerhini gösterdi. Elmalı/Gümüşsuyu/Akbaba = iki-kaynak-uyumlu yüksek-güven heyelan-riski.
 
 ---
-*CC-TT-MAP · $0 · A04 · fizik-blok · #34(Basın-verisi ayrı-kaynak, çapraz-amaçlı) · SİLME-YOK. Çıktı: karolar_sunum/ (3) + beykoz_afet_cross.json.*
+*CC-TT-MAP · $0 · A04 · fizik-blok · #34(Basın-verisi ayrı-kaynak, çapraz-amaçlı) · SİLME-YOK. Çıktı: gorseller/tradia/beykoz/sunum/ (3) + beykoz_afet_cross.json.*

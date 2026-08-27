@@ -20,9 +20,9 @@
 
 **Ana giriş:** [`beykoz_master.md`](beykoz_vaka/beykoz_master.md) (SIG6→SIG12)
 
-**Ana görseller:** [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) *(SIG11 vFINAL)* · [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) · [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) · [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) · [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png)
+**Ana görseller:** [`beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png`](gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png) *(SIG11 vFINAL)* · [`beykoz_harita-arazi_genel_2026-07-27.png`](gorseller/tradia/beykoz/harita-arazi/beykoz_harita-arazi_genel_2026-07-27.png) · [`beykoz_grafik_bey15-cubuklu-hafriyat_2026-07-27.png`](gorseller/tradia/beykoz/grafik/beykoz_grafik_bey15-cubuklu-hafriyat_2026-07-27.png) · [`beykoz_harita_kisit-gercek_2026-07-28.png`](gorseller/tradia/beykoz/harita/beykoz_harita_kisit-gercek_2026-07-28.png) · [`beykoz_harita_konum-gercek_2026-07-28.png`](gorseller/tradia/beykoz/harita/beykoz_harita_konum-gercek_2026-07-28.png)
 
-**Karolar (3 sürüm):** [`karolar/`](beykoz_vaka/karolar/) 14 v1 · [`karolar_v2/`](beykoz_vaka/karolar_v2/) 6 v2 · [`karolar_sunum/`](beykoz_vaka/karolar_sunum/) 3 geniş
+**Karolar (3 sürüm):** [`gorseller/tradia/beykoz/karo/`](gorseller/tradia/beykoz/karo/) 14 v1 · [`gorseller/tradia/beykoz/karo-v2/`](gorseller/tradia/beykoz/karo-v2/) 6 v2 · [`gorseller/tradia/beykoz/sunum/`](gorseller/tradia/beykoz/sunum/) 3 geniş
 
 **Sinyal dosyaları:** [`sinyal_dosyalari/`](beykoz_vaka/sinyal_dosyalari/) — SD-01..06 + şablon (SIG9)
 
@@ -53,11 +53,11 @@
 | [`beykoz_kamu_2022_2026.md`](beykoz_vaka/beykoz_kamu_2022_2026.md) | BEYKOZ KAMU HARCAMA DÖKÜMÜ 2022→2026 + KIYAS — CC-İhale (İ71) | 2026-07-28 |
 | [`tip_taksonomi.md`](beykoz_vaka/tip_taksonomi.md) | Beykoz Mülk Tipi Taksonomisi — CC-Analiz S53 | 2026-07-27 |
 | [`tkgm_kesif.md`](beykoz_vaka/tkgm_kesif.md) | TKGM + RESMİ MEKÂNSAL KATMAN KEŞFİ — Beykoz · CC-İhale (İ64) | 2026-07-26 |
-| [`beykoz_isi_haritasi.png`](beykoz_vaka/beykoz_isi_haritasi.png) | Beykoz mahalle × ayak ısı haritası (SIG11 vFINAL · 11 ayak) | 2026-07-28 |
-| [`beykoz_arazi_haritasi.png`](beykoz_vaka/beykoz_arazi_haritasi.png) | Beykoz arazi kullanım haritası | 2026-07-27 |
-| [`bey15_cubuklu_grafik.png`](beykoz_vaka/bey15_cubuklu_grafik.png) | BEY-15 Çubuklu hafriyat grafiği | 2026-07-27 |
-| [`harita_gercek_kisit.png`](beykoz_vaka/harita_gercek_kisit.png) | MAP35 · gerçek-geometri kısıt katmanı | 2026-07-28 |
-| [`harita_gercek_konum.png`](beykoz_vaka/harita_gercek_konum.png) | MAP35 · gerçek-geometri konum katmanı | 2026-07-28 |
+| [`beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png`](gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png) | Beykoz mahalle × ayak ısı haritası (SIG11 vFINAL · 11 ayak) | 2026-07-28 |
+| [`beykoz_harita-arazi_genel_2026-07-27.png`](gorseller/tradia/beykoz/harita-arazi/beykoz_harita-arazi_genel_2026-07-27.png) | Beykoz arazi kullanım haritası | 2026-07-27 |
+| [`beykoz_grafik_bey15-cubuklu-hafriyat_2026-07-27.png`](gorseller/tradia/beykoz/grafik/beykoz_grafik_bey15-cubuklu-hafriyat_2026-07-27.png) | BEY-15 Çubuklu hafriyat grafiği | 2026-07-27 |
+| [`beykoz_harita_kisit-gercek_2026-07-28.png`](gorseller/tradia/beykoz/harita/beykoz_harita_kisit-gercek_2026-07-28.png) | MAP35 · gerçek-geometri kısıt katmanı | 2026-07-28 |
+| [`beykoz_harita_konum-gercek_2026-07-28.png`](gorseller/tradia/beykoz/harita/beykoz_harita_konum-gercek_2026-07-28.png) | MAP35 · gerçek-geometri konum katmanı | 2026-07-28 |
 | [`beykoz_mahalle_zincir_v1.json`](beykoz_vaka/beykoz_mahalle_zincir_v1.json) | Mahalle zinciri v1 (topoloji + akış) | 2026-07-29 |
 | [`beykoz_olay_defteri.json`](beykoz_vaka/beykoz_olay_defteri.json) | Beykoz olay defteri v9 | 2026-07-29 |
 | [`gece_S95_ozet.json`](beykoz_vaka/gece_S95_ozet.json) | Sosyal gece-S95 özet-JSON | 2026-07-29 |
@@ -169,43 +169,43 @@
 | [`isi_haritasi_SIG8.py`](beykoz_vaka/isi_haritasi_SIG8.py) | SIG8 · ısı haritası scripti | 2026-07-28 |
 | [`sig7_denetim.py`](beykoz_vaka/sig7_denetim.py) | SIG7 · 21-sıfır denetim scripti | 2026-07-28 |
 
-### /karolar/ — 14 karo v1 (MAP34)
+### `gorseller/tradia/beykoz/karo/` — 14 karo v1 (MAP34) · *eski: beykoz_vaka/karolar/*
 
 | Dosya | Karo | Güncelleme |
 |---|---|---|
-| [`karo_BEY15_942_947.png`](beykoz_vaka/karolar/karo_BEY15_942_947.png) | Karo v1: BEY15_942_947 | 2026-07-28 |
-| [`karo_Kundura_Tekel.png`](beykoz_vaka/karolar/karo_Kundura_Tekel.png) | Karo v1: Kundura_Tekel | 2026-07-28 |
-| [`karo_camlibahce.png`](beykoz_vaka/karolar/karo_camlibahce.png) | Karo v1: camlibahce | 2026-07-28 |
-| [`karo_cubuklu.png`](beykoz_vaka/karolar/karo_cubuklu.png) | Karo v1: cubuklu | 2026-07-28 |
-| [`karo_goksu.png`](beykoz_vaka/karolar/karo_goksu.png) | Karo v1: goksu | 2026-07-28 |
-| [`karo_goztepe.png`](beykoz_vaka/karolar/karo_goztepe.png) | Karo v1: goztepe | 2026-07-28 |
-| [`karo_gumussuyu.png`](beykoz_vaka/karolar/karo_gumussuyu.png) | Karo v1: gumussuyu | 2026-07-28 |
-| [`karo_incirkoy.png`](beykoz_vaka/karolar/karo_incirkoy.png) | Karo v1: incirkoy | 2026-07-28 |
-| [`karo_kavacik.png`](beykoz_vaka/karolar/karo_kavacik.png) | Karo v1: kavacik | 2026-07-28 |
-| [`karo_merkez.png`](beykoz_vaka/karolar/karo_merkez.png) | Karo v1: merkez | 2026-07-28 |
-| [`karo_ortacesme.png`](beykoz_vaka/karolar/karo_ortacesme.png) | Karo v1: ortacesme | 2026-07-28 |
-| [`karo_pasabahce.png`](beykoz_vaka/karolar/karo_pasabahce.png) | Karo v1: pasabahce | 2026-07-28 |
-| [`karo_riva.png`](beykoz_vaka/karolar/karo_riva.png) | Karo v1: riva | 2026-07-28 |
-| [`karo_yalikoy.png`](beykoz_vaka/karolar/karo_yalikoy.png) | Karo v1: yalikoy | 2026-07-28 |
+| [`beykoz_karo_bey15-torunlar-942-947_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_bey15-torunlar-942-947_2026-07-28.png) | Karo v1: BEY15_942_947 | 2026-07-28 |
+| [`beykoz_karo_kundura-tekel_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_kundura-tekel_2026-07-28.png) | Karo v1: Kundura_Tekel | 2026-07-28 |
+| [`beykoz_karo_camlibahce_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_camlibahce_2026-07-28.png) | Karo v1: camlibahce | 2026-07-28 |
+| [`beykoz_karo_cubuklu_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_cubuklu_2026-07-28.png) | Karo v1: cubuklu | 2026-07-28 |
+| [`beykoz_karo_goksu_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_goksu_2026-07-28.png) | Karo v1: goksu | 2026-07-28 |
+| [`beykoz_karo_goztepe_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_goztepe_2026-07-28.png) | Karo v1: goztepe | 2026-07-28 |
+| [`beykoz_karo_gumussuyu_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_gumussuyu_2026-07-28.png) | Karo v1: gumussuyu | 2026-07-28 |
+| [`beykoz_karo_incirkoy_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_incirkoy_2026-07-28.png) | Karo v1: incirkoy | 2026-07-28 |
+| [`beykoz_karo_kavacik_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_kavacik_2026-07-28.png) | Karo v1: kavacik | 2026-07-28 |
+| [`beykoz_karo_merkez_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_merkez_2026-07-28.png) | Karo v1: merkez | 2026-07-28 |
+| [`beykoz_karo_ortacesme_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_ortacesme_2026-07-28.png) | Karo v1: ortacesme | 2026-07-28 |
+| [`beykoz_karo_pasabahce_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_pasabahce_2026-07-28.png) | Karo v1: pasabahce | 2026-07-28 |
+| [`beykoz_karo_riva_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_riva_2026-07-28.png) | Karo v1: riva | 2026-07-28 |
+| [`beykoz_karo_yalikoy_2026-07-28.png`](gorseller/tradia/beykoz/karo/beykoz_karo_yalikoy_2026-07-28.png) | Karo v1: yalikoy | 2026-07-28 |
 
-### /karolar_v2/ — 6 karo v2 (MAP36)
-
-| Dosya | Karo | Güncelleme |
-|---|---|---|
-| [`karo2_BEY15.png`](beykoz_vaka/karolar_v2/karo2_BEY15.png) | Karo v2: BEY15 | 2026-07-28 |
-| [`karo2_gumussuyu.png`](beykoz_vaka/karolar_v2/karo2_gumussuyu.png) | Karo v2: gumussuyu | 2026-07-28 |
-| [`karo2_incirkoy.png`](beykoz_vaka/karolar_v2/karo2_incirkoy.png) | Karo v2: incirkoy | 2026-07-28 |
-| [`karo2_kavacik.png`](beykoz_vaka/karolar_v2/karo2_kavacik.png) | Karo v2: kavacik | 2026-07-28 |
-| [`karo2_riva.png`](beykoz_vaka/karolar_v2/karo2_riva.png) | Karo v2: riva | 2026-07-28 |
-| [`karo2_tokatkoy.png`](beykoz_vaka/karolar_v2/karo2_tokatkoy.png) | Karo v2: tokatkoy | 2026-07-28 |
-
-### /karolar_sunum/ — 3 geniş sunum karosu (MAP37)
+### `gorseller/tradia/beykoz/karo-v2/` — 6 karo v2 (MAP36) · *eski: beykoz_vaka/karolar_v2/*
 
 | Dosya | Karo | Güncelleme |
 |---|---|---|
-| [`sunum_BEY15_942_947.png`](beykoz_vaka/karolar_sunum/sunum_BEY15_942_947.png) | Karo sunum (geniş): BEY15_942_947 | 2026-07-29 |
-| [`sunum_incirkoy.png`](beykoz_vaka/karolar_sunum/sunum_incirkoy.png) | Karo sunum (geniş): incirkoy | 2026-07-29 |
-| [`sunum_riva.png`](beykoz_vaka/karolar_sunum/sunum_riva.png) | Karo sunum (geniş): riva | 2026-07-29 |
+| [`beykoz_karo-v2_bey15-torunlar_2026-07-28.png`](gorseller/tradia/beykoz/karo-v2/beykoz_karo-v2_bey15-torunlar_2026-07-28.png) | Karo v2: BEY15 | 2026-07-28 |
+| [`beykoz_karo-v2_gumussuyu_2026-07-28.png`](gorseller/tradia/beykoz/karo-v2/beykoz_karo-v2_gumussuyu_2026-07-28.png) | Karo v2: gumussuyu | 2026-07-28 |
+| [`beykoz_karo-v2_incirkoy_2026-07-28.png`](gorseller/tradia/beykoz/karo-v2/beykoz_karo-v2_incirkoy_2026-07-28.png) | Karo v2: incirkoy | 2026-07-28 |
+| [`beykoz_karo-v2_kavacik_2026-07-28.png`](gorseller/tradia/beykoz/karo-v2/beykoz_karo-v2_kavacik_2026-07-28.png) | Karo v2: kavacik | 2026-07-28 |
+| [`beykoz_karo-v2_riva_2026-07-28.png`](gorseller/tradia/beykoz/karo-v2/beykoz_karo-v2_riva_2026-07-28.png) | Karo v2: riva | 2026-07-28 |
+| [`beykoz_karo-v2_tokatkoy_2026-07-28.png`](gorseller/tradia/beykoz/karo-v2/beykoz_karo-v2_tokatkoy_2026-07-28.png) | Karo v2: tokatkoy | 2026-07-28 |
+
+### `gorseller/tradia/beykoz/sunum/` — 3 geniş sunum karosu (MAP37) · *eski: beykoz_vaka/karolar_sunum/*
+
+| Dosya | Karo | Güncelleme |
+|---|---|---|
+| [`beykoz_sunum_bey15-torunlar-942-947_2026-07-29.png`](gorseller/tradia/beykoz/sunum/beykoz_sunum_bey15-torunlar-942-947_2026-07-29.png) | Karo sunum (geniş): BEY15_942_947 | 2026-07-29 |
+| [`beykoz_sunum_incirkoy_2026-07-29.png`](gorseller/tradia/beykoz/sunum/beykoz_sunum_incirkoy_2026-07-29.png) | Karo sunum (geniş): incirkoy | 2026-07-29 |
+| [`beykoz_sunum_riva_2026-07-29.png`](gorseller/tradia/beykoz/sunum/beykoz_sunum_riva_2026-07-29.png) | Karo sunum (geniş): riva | 2026-07-29 |
 
 ### /sinyal_dosyalari/ — Sürekli İzlem Kartları (SIG9)
 

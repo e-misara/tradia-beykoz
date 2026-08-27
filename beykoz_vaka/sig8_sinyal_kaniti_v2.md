@@ -134,7 +134,7 @@ Ve cevabı **tek tabloda** veriyor: **bölge × mülk tipi × olay × m² × kir
 
 # 4. ISI v3 — E1 + ARSA uygulandı
 
-📊 [`cikti/beykoz_isi_haritasi.png`](cikti/beykoz_isi_haritasi.png) · 🔧 [`kod/isi_haritasi_SIG8.py`](kod/isi_haritasi_SIG8.py)
+📊 [`beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png`](gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png) · 🔧 [`kod/isi_haritasi_SIG8.py`](kod/isi_haritasi_SIG8.py)
 
 | | SIG6 (9 ayak) | **SIG8 (10 ayak)** |
 |---|:-:|:-:|

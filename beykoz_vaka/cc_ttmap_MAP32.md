@@ -76,7 +76,7 @@
 ## ARZ-KITLIĞI: FİZİKSEL mi HUKUKİ mi — fiziksel yarı
 Veri şunu gösteriyor: Beykoz'da arz-kıtlığının **fiziksel bileşeni baskın** — ort %3 yapılaşabilir-boş, üstüne askeri+orman+dik-yamaç. Hukuki yarı (SİT/imar/İSKİ-havza) ayrı-katman (yer-tutucu); ikisi birleşince gerçek-arz çıkar. **Fiziksel-tavan zaten düşük.**
 
-![arazi haritası](beykoz_arazi_haritasi.png)
+![arazi haritası](gorseller/tradia/beykoz/harita-arazi/beykoz_harita-arazi_genel_2026-07-27.png)
 
 ---
 *CC-TT-MAP · $0 (Copernicus/WC/OSM ücretsiz) · A04 · fizik-sınır-bloğu · kanon-dışı nasa_kesif/ · kanon-CDSE-dokunulmadı.*

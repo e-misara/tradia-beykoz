@@ -49,7 +49,7 @@ REDACT_TOKEN = re.compile(
     r"|Bearer\s+[A-Za-z0-9._~+/=-]{20,}"
     r"|xoxb-[a-zA-Z0-9-]{10,})"
 )
-REDACT_ABS_PATH = re.compile(r"/Users/[A-Za-z0-9_.-]+/")
+REDACT_ABS_PATH = re.compile(r"/Users/[A-Za-z0-9_.-]+(?=/|\s|$|['\"`])")
 REDACT_EMAIL = re.compile(
     r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 )
@@ -67,15 +67,53 @@ REDACT_PHONE_STRICT = re.compile(
     r"(?:\+90[\s.-]?|0)5\d{2}[\s.-]?\d{3}[\s.-]?\d{2}[\s.-]?\d{2}"
 )
 
+# ─── Ş1 Ek Desenler (Standing #37/E redaksiyon testi) ──────────
+# JWT: 3-bölüm base64.base64.base64, ilk bölüm eyJ ile başlar (JSON header)
+REDACT_JWT = re.compile(
+    r"\beyJ[A-Za-z0-9_-]+\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\b"
+)
+# TC kimlik: 11 hane, ilk hanesi 0 değil. Kelime sınırı zorunlu.
+REDACT_TC = re.compile(r"\b[1-9]\d{10}\b")
+# IBAN TR: TR + 24 hane (toplam 26 karakter), boşluklu formu da yakala
+REDACT_IBAN_TR = re.compile(
+    r"\bTR\d{2}[\s]?(?:\d{4}[\s]?){5}\d{2}\b"
+)
 
-def temizle(metin: str) -> str:
-    """Zorunlu regex temizlik katmanı — sıra önemli."""
+# Uzun base64 blob'ları (>10KB kesintisiz) — genelde ekran görüntüsü
+# İçinde false-positive tetikleyicileri (eyJ, sk-*, TC hane, vb.) barındırır.
+# Kural (Ş3): YER İŞARETLE, silme.
+# 10KB ~ 10240 karakter; base64 alfabesi: [A-Za-z0-9+/=]
+REDACT_LONG_B64 = re.compile(
+    r"[A-Za-z0-9+/=]{10240,}"
+)
+
+def _kes_uzun_b64(metin: str, oturum_id: str = "?") -> str:
+    """>10KB kesintisiz base64 dizisi → [GORSEL-KESILDI: <bayt> · <oturum-id> · <satır-no>]"""
+    def _repl(m):
+        bayt = len(m.group(0))
+        # satır no
+        satir = metin.count("\n", 0, m.start()) + 1
+        return f"[GORSEL-KESILDI: {bayt} bayt · oturum:{oturum_id[:8]} · satır:{satir}]"
+    return REDACT_LONG_B64.sub(_repl, metin)
+
+
+def temizle(metin: str, oturum_id: str = "?") -> str:
+    """Zorunlu regex temizlik katmanı — sıra önemli.
+    Standing #37/E · Ş1: 12 örüntü tam kapsanmalı.
+    Ş2 ek: >10KB kesintisiz base64 dizisi kesilir (görsel-yer-işareti).
+    """
     if not metin:
         return metin
+    # 0) Önce uzun base64 blob'ları kes — false-positive tetikleyicileri bunun içinde
+    metin = _kes_uzun_b64(metin, oturum_id)
+    # 1) IBAN (TC ile çakışabilir — IBAN önce)
+    metin = REDACT_IBAN_TR.sub("[REDACTED-IBAN]", metin)
     metin = REDACT_TOKEN.sub("[REDACTED-TOKEN]", metin)
+    metin = REDACT_JWT.sub("[REDACTED-JWT]", metin)  # eyJ.eyJ.sig
     metin = REDACT_ABS_PATH.sub("~/", metin)
     metin = REDACT_EMAIL.sub("[REDACTED-PII-EMAIL]", metin)
     metin = REDACT_PHONE_STRICT.sub("[REDACTED-PII-TEL]", metin)
+    metin = REDACT_TC.sub("[REDACTED-TC]", metin)
     metin = REDACT_ENV_LINE.sub(r"\1=[REDACTED-ENV]", metin)
     return metin
 
@@ -160,7 +198,8 @@ def oturum_to_md(dosya: str) -> tuple[str, dict]:
                     ilk_kullanici = str(m)[:500]
                 parcalar.append(met)
 
-    ilk_kullanici_temiz = temizle(ilk_kullanici)
+    ot_id = os.path.basename(dosya).replace(".jsonl", "")
+    ilk_kullanici_temiz = temizle(ilk_kullanici, ot_id)
     cc = cc_belirle(ilk_kullanici, dosya)
     ot_id = os.path.basename(dosya).replace(".jsonl", "")
 
@@ -175,7 +214,7 @@ def oturum_to_md(dosya: str) -> tuple[str, dict]:
         f"---\n\n"
     )
     tam_metin = baslik + "\n\n" + ustbilgi + "\n".join(parcalar)
-    tam_metin_temiz = temizle(tam_metin)
+    tam_metin_temiz = temizle(tam_metin, ot_id)
 
     meta = {
         "oturum_id": ot_id,

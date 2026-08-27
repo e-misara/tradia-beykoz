@@ -1,0 +1,180 @@
+{
+  "durum": "SUPERSEDED",
+  "supersede_notu": "Bu dosya CC-Analiz'in Patron C1-C5 kararlarindan ONCEKI taslagidir. Onerdigi sema (gorseller/beykoz/<tur>/, tur=karo-v1|sunum-karo) UYGULANMADI. Fiilen uygulanan sema: gorseller/tradia/beykoz/<tur>/, tur=karo|karo-v2|sunum. Tarihsel kayit olarak korunur (SILME-YOK).",
+  "gecerli_kaynak": "gorseller/MANIFEST.md + kanon/gorsel_adlandirma_v1.md",
+  "supersede_eden": "CC-ARSIV",
+  "supersede_tarih": "2026-08-27",
+  "toplam": 28,
+  "belirsiz_n": 0,
+  "belirsiz_adlar": [],
+  "oneriler": [
+    {
+      "eski": "beykoz_vaka/bey15_cubuklu_grafik.png",
+      "yeni": "gorseller/beykoz/grafik/beykoz_grafik_cubuklu-bey15_2026-07-27.png",
+      "tur": "grafik",
+      "ref_dosya": 2
+    },
+    {
+      "eski": "beykoz_vaka/beykoz_arazi_haritasi.png",
+      "yeni": "gorseller/beykoz/harita-arazi/beykoz_harita-arazi_genel_2026-07-27.png",
+      "tur": "harita-arazi",
+      "ref_dosya": 3
+    },
+    {
+      "eski": "beykoz_vaka/beykoz_isi_haritasi.png",
+      "yeni": "gorseller/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png",
+      "tur": "isi-haritasi",
+      "ref_dosya": 5
+    },
+    {
+      "eski": "beykoz_vaka/harita_gercek_kisit.png",
+      "yeni": "gorseller/beykoz/harita-kisit/beykoz_harita-kisit_gercek_2026-07-28.png",
+      "tur": "harita-kisit",
+      "ref_dosya": 2
+    },
+    {
+      "eski": "beykoz_vaka/harita_gercek_konum.png",
+      "yeni": "gorseller/beykoz/harita-konum/beykoz_harita-konum_gercek_2026-07-28.png",
+      "tur": "harita-konum",
+      "ref_dosya": 2
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_BEY15_942_947.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_bey15-942-947_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_Kundura_Tekel.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_kundura-tekel_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_camlibahce.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_camlibahce_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_cubuklu.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_cubuklu_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_goksu.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_goksu_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_goztepe.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_goztepe_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_gumussuyu.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_gumussuyu_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_incirkoy.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_incirkoy_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_kavacik.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_kavacik_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_merkez.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_merkez_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_ortacesme.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_ortacesme_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_pasabahce.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_pasabahce_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_riva.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_riva_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 2
+    },
+    {
+      "eski": "beykoz_vaka/karolar/karo_yalikoy.png",
+      "yeni": "gorseller/beykoz/karo-v1/beykoz_karo-v1_yalikoy_2026-07-28.png",
+      "tur": "karo-v1",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar_sunum/sunum_BEY15_942_947.png",
+      "yeni": "gorseller/beykoz/sunum-karo/beykoz_sunum-karo_bey15-942-947_2026-07-29.png",
+      "tur": "sunum-karo",
+      "ref_dosya": 2
+    },
+    {
+      "eski": "beykoz_vaka/karolar_sunum/sunum_incirkoy.png",
+      "yeni": "gorseller/beykoz/sunum-karo/beykoz_sunum-karo_incirkoy_2026-07-29.png",
+      "tur": "sunum-karo",
+      "ref_dosya": 2
+    },
+    {
+      "eski": "beykoz_vaka/karolar_sunum/sunum_riva.png",
+      "yeni": "gorseller/beykoz/sunum-karo/beykoz_sunum-karo_riva_2026-07-29.png",
+      "tur": "sunum-karo",
+      "ref_dosya": 2
+    },
+    {
+      "eski": "beykoz_vaka/karolar_v2/karo2_BEY15.png",
+      "yeni": "gorseller/beykoz/karo-v2/beykoz_karo-v2_bey15_2026-07-28.png",
+      "tur": "karo-v2",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar_v2/karo2_gumussuyu.png",
+      "yeni": "gorseller/beykoz/karo-v2/beykoz_karo-v2_gumussuyu_2026-07-28.png",
+      "tur": "karo-v2",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar_v2/karo2_incirkoy.png",
+      "yeni": "gorseller/beykoz/karo-v2/beykoz_karo-v2_incirkoy_2026-07-28.png",
+      "tur": "karo-v2",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar_v2/karo2_kavacik.png",
+      "yeni": "gorseller/beykoz/karo-v2/beykoz_karo-v2_kavacik_2026-07-28.png",
+      "tur": "karo-v2",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar_v2/karo2_riva.png",
+      "yeni": "gorseller/beykoz/karo-v2/beykoz_karo-v2_riva_2026-07-28.png",
+      "tur": "karo-v2",
+      "ref_dosya": 1
+    },
+    {
+      "eski": "beykoz_vaka/karolar_v2/karo2_tokatkoy.png",
+      "yeni": "gorseller/beykoz/karo-v2/beykoz_karo-v2_tokatkoy_2026-07-28.png",
+      "tur": "karo-v2",
+      "ref_dosya": 1
+    }
+  ]
+}

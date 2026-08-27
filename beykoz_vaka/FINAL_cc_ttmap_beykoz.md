@@ -126,7 +126,7 @@ S1-ACD dik-Beykoz'da **standalone-detektör değil** (layover, ±32dB uç-değer
 **Kanon (02_NOKTA/):** ttmap_nokta.jsonl · ttmap_degisim.jsonl (+MAP27 netfark_gecerli overlay, yedek `_precorrection_MAP27`) · *_arazi.jsonl · *_dem.jsonl · geometri/
 **Vaka (02_NOKTA/):** vaka_beykoz_ttmap_MAP24/25/26/27.json · beykoz_zaman_makinesi.json (MAP31-overlay) · beykoz_arazi_formu.json
 **Kanon-dışı (nasa_kesif/):** nasa_katalog.md · beykoz_nasa_test.json · beykoz_s1_koherans.json · beykoz_opera_dist.py (hazır) · bey15_cubuklu_seri.json · beykoz_osm_kisit.json · hafiza_bildirim_*
-**Görseller:** beykoz_arazi_haritasi.png (eğim+kısıt) · bey15_cubuklu_grafik.png (NDVI+çıplak seri)
+**Görseller:** gorseller/tradia/beykoz/harita-arazi/beykoz_harita-arazi_genel_2026-07-27.png (eğim+kısıt) · gorseller/tradia/beykoz/grafik/beykoz_grafik_bey15-cubuklu-hafriyat_2026-07-27.png (NDVI+çıplak seri)
 **Masaüstü kopya:** ~/Desktop/TT-Tüm CC/beykoz_vaka/ (cc_ttmap_MAP26/27/28/30/32 + görseller + bu FINAL)
 **Landsat-deney (rafta):** landsat_deney/ARASTIRMA_RAFI.md · beykoz_zaman.py
 

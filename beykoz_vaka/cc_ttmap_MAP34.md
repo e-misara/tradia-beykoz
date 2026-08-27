@@ -2,7 +2,7 @@
 
 **Tarih:** 2026-07-28 · **Kaynak:** Sentinel-2 L2A true-color (visual/TCI 10m, ÖNCE 2024-08-16 / SONRA 2026-07-22, aynı-kaynak) · **Kanon-içi vaka** · fizik-blok · $0
 
-> **Açığı kapatıyoruz:** 'resim çekmiyoruz' eleştirisine cevap — **gözle-görülür** ÖNCE/SONRA true-color karo katmanı. 14 karo `beykoz_vaka/karolar/`.
+> **Açığı kapatıyoruz:** 'resim çekmiyoruz' eleştirisine cevap — **gözle-görülür** ÖNCE/SONRA true-color karo katmanı. 14 karo `gorseller/tradia/beykoz/karo/`.
 
 ## 🔵 FİZİK-SINIR BLOĞU
 - TCI değer-aralığı [0,255] clamp uygulandı (taşan-piksel yok). Sahne bulut<%8, aynı-mevsim (yaz), aynı-kaynak (S2-L2A) → ÖNCE/SONRA kıyaslanabilir (kaynak-karıştırma-yok).
@@ -15,7 +15,7 @@
 | Riva-borcu | riva |
 | Özel | incirkoy, BEY15_942_947 (nokta), Kundura_Tekel (nokta) |
 
-Her karo: ÖNCE 2024 | SONRA 2026 yan-yana, **sarı=mahalle-sınırı** (nokta-pencerede +). `beykoz_vaka/karolar/karo_<ad>.png`
+Her karo: ÖNCE 2024 | SONRA 2026 yan-yana, **sarı=mahalle-sınırı** (nokta-pencerede +). `gorseller/tradia/beykoz/karo/beykoz_karo_<ad>_<YYYY-AA-GG>.png`
 
 ## PART-2 — ★ RİVA TAM-PAKET (4-tur borç kapatıldı)
 
@@ -28,7 +28,7 @@ Her karo: ÖNCE 2024 | SONRA 2026 yan-yana, **sarı=mahalle-sınırı** (nokta-p
 
 **RİVA KARARI:** Dört bağımsız-ölçüm (NDVI + radar + WC + görsel) **oybirliğiyle: Riva'da henüz aktif-yeni-inşaat YOK.** Bu, F2'nin **'Riva sermaye→inşaat 2026-27'** öngörüsünün **ÖN-ÖLÇÜMÜdür**: t0 (henüz-başlamamış) tespit edildi → 2027'de NDVI-kaybı/radar-artış/şantiye başlarsa **öngörü doğrulanır**, başlamazsa **yanlışlanır**. Riva artık yıllık-izlemede.
 
-![riva](karolar/karo_riva.png)
+![riva](gorseller/tradia/beykoz/karo/beykoz_karo_riva_2026-07-28.png)
 
 ## PART-3 — RADAR-ACD SICAK-10 (MAP30 yöntemi genişletildi)
 
@@ -56,4 +56,4 @@ Her karo: ÖNCE 2024 | SONRA 2026 yan-yana, **sarı=mahalle-sınırı** (nokta-p
 Görsel-kanıt katmanı kuruldu (14 ÖNCE/SONRA karo). **Riva borcu kapatıldı: 4-ölçüm-oybirliği inşaat-YOK = F2-öngörüsünün t0'ı.** Radar-ACD sıcak-10'a genişledi, HAKEM-doktrini korundu. Görsel + NDVI + radar + (bekleyen OPERA) = çok-katmanlı-kanıt.
 
 ---
-*CC-TT-MAP · $0 · A04 · kanon-içi (S2-L2A, ÖNCE/SONRA aynı-kaynak) · fizik-sınır-bloğu · SİLME-YOK · Kopya K24a. Karolar: beykoz_vaka/karolar/ (14 PNG).*
+*CC-TT-MAP · $0 · A04 · kanon-içi (S2-L2A, ÖNCE/SONRA aynı-kaynak) · fizik-sınır-bloğu · SİLME-YOK · Kopya K24a. Karolar: gorseller/tradia/beykoz/karo/ (14 PNG).*

@@ -189,7 +189,7 @@
 
 # 9. GÜNCEL ISI — 11 ayak
 
-📊 `cikti/beykoz_isi_haritasi.png` · 🔧 `kod/isi_haritasi_SIG10.py`
+📊 `cikti/gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png` · 🔧 `kod/isi_haritasi_SIG10.py`
 
 | Sıra | Mahalle | Ayak |
 |---:|---|:-:|

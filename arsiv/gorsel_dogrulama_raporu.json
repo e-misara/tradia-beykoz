@@ -1,0 +1,109 @@
+{
+  "sprint": "ARS-01",
+  "cc": "CC-ARSIV",
+  "tarih": "2026-08-27",
+  "is": "IS-1 repo gorselleri 28 dosya — rename + referans onarimi + dogrulama",
+  "devralinan_durum": {
+    "kaynak": "arsiv/DEVIR_gorsel_CC-ARSIV.md (CC-Analiz)",
+    "staged_rename": 28,
+    "commit": "YOK",
+    "devir_notu_kirik_link_iddiasi": 4,
+    "olculen_kirik_link": 2,
+    "iddia_farki_aciklamasi": "Devir 4 kirik link ve 'TT-MAP relative yol farki' teshisi bildirdi. Gercek olcum 2 kirik link idi ve sebep farkli: sig8_sinyal_kaniti_v2.md + beykoz_master.md icindeki 'cikti/' oneki. Bu iki link rename ONCESI de kiriykti (HEAD'de 'cikti/beykoz_isi_haritasi.png' repoda hic yoktu, CC-Signals calisma dizini yolu). Refactor sadece dosya adini degistirip oneki birakti. Devrin bildirdigi 4 yol ise gercekte SAGLAM idi."
+  },
+  "cc_arsiv_bulgulari": [
+    {
+      "tip": "AD_HATASI",
+      "dosya": "beykoz_karo_bey15-torunlar-torunlar-942-947_2026-07-28.png",
+      "sorun": "'torunlar' cift yazilmis",
+      "duzeltme": "beykoz_karo_bey15-torunlar-942-947_2026-07-28.png"
+    },
+    {
+      "tip": "AD_HATASI",
+      "dosya": "beykoz_sunum_bey15-torunlar-torunlar-942-947_2026-07-29.png",
+      "sorun": "'torunlar' cift yazilmis",
+      "duzeltme": "beykoz_sunum_bey15-torunlar-942-947_2026-07-29.png"
+    },
+    {
+      "tip": "AD_HATASI",
+      "dosya": "beykoz_grafik_cubuklu-grafik_2026-07-27.png",
+      "sorun": "tur 'grafik' konu-slug icinde tekrar ediyor; konu bilgi tasimiyor",
+      "duzeltme": "beykoz_grafik_bey15-cubuklu-hafriyat_2026-07-27.png",
+      "dayanak": "README.md 'BEY-15 Cubuklu hafriyat grafigi'"
+    },
+    {
+      "tip": "STALE_JSON",
+      "dosya": "arsiv/gorsel_adlandirma_onerisi.json",
+      "sorun": "eski sema (gorseller/beykoz/karo-v1) uygulanan semayla celisiyor",
+      "duzeltme": "SUPERSEDED serhi eklendi, icerik silinmedi"
+    },
+    {
+      "tip": "ETIKET_UYUMSUZ",
+      "adet": 35,
+      "sorun": "markdown link etiketi eski dosya adini gosteriyordu, hedef yeni",
+      "duzeltme": "etiket = hedef basename olarak esitlendi"
+    },
+    {
+      "tip": "DUZ_METIN_DIZIN",
+      "adet": 13,
+      "sorun": "MAP34/35/36/37 + README icinde 'beykoz_vaka/karolar/' gibi artik olmayan dizin adlari",
+      "duzeltme": "yeni yola cevrildi, eski ad basliklarda '*eski: ...*' serhiyle korundu"
+    },
+    {
+      "tip": "OZ_DENETIM",
+      "dosya": "gorseller/MANIFEST.md",
+      "sorun": "ilk yazimda link hedefleri gorseller/ koku yerine basename idi -> 28 kirik link",
+      "duzeltme": "tradia/beykoz/<tur>/<ad> goreli yoluna cevrildi; dogrulayici kendi ciktimi yakaladi"
+    }
+  ],
+  "karo_v2_karari": {
+    "kural": "tarih ayirmiyorsa ve MD'de revizyon isareti varsa -v2 soneki",
+    "okunan_cevre_satirlar": [
+      "cc_ttmap_MAP36.md:1 'BEYKOZ KARO KESKINLESTIRME v2 (sunum-kalite)'",
+      "README.md:191 '6 karo v2 (MAP36)'",
+      "cc_ttmap_MAP37.md:8 'Arsive iner (sunumdan cikar): karolar_v2/ 3-panel-zoom'"
+    ],
+    "tarih_ayiriyor_mu": false,
+    "v1_tarih": "2026-07-28",
+    "v2_tarih": "2026-07-28",
+    "karar": "-v2 soneki KULLANILIR",
+    "maliyet": "$0 (duz metin grep, vision yok)"
+  },
+  "olcum": {
+    "gorsel_toplam": 28,
+    "rename_toplam": 31,
+    "rename_not": "28 dosya + CC-ARSIV'in 3 ad duzeltmesi (ayni 28 dosyanin 3'u ikinci kez tasindi)",
+    "icerik_butunlugu": {
+      "kontrol": "git blob sha1 eski==yeni",
+      "bozuk": 0,
+      "sonuc": "TAM UYUM"
+    },
+    "md_gorsel_linki_taranan": 67,
+    "kirik_link_son": 0,
+    "kirik_liste": []
+  },
+  "kapsam_disi_birakilan": [
+    {
+      "ne": "kurulus/KURULUS_VEZIR.md:200 'karolar_sunum eklendi'",
+      "sebep": "tarihsel git-log kaydi (commit 0c073e6), o gun dogruydu — SILME-YOK"
+    },
+    {
+      "ne": "kod/isi_haritasi_SIG3.py · SIG8.py · SIG11.py · isi_gorseli.py · sig5_backtest_watchlist.py",
+      "sebep": "repoda YOK, CC-Signals ~/signals/kod/ yolu. Onceden de kirikti, gorsel degil — CC-ARSIV kapsami disi. Signals'a bildirilmeli."
+    },
+    {
+      "ne": ".gitignore · arsiv/arsiv_cek.py · arsiv/redaksiyon_testi.py degisiklikleri",
+      "sebep": "baska CC'nin isi, bu commit'e katilmadi"
+    }
+  ],
+  "uretilen": [
+    "gorseller/MANIFEST.md",
+    "kanon/gorsel_adlandirma_v1.md",
+    "arsiv/gorsel_dogrulama_raporu.json"
+  ],
+  "maliyet": {
+    "ai_cagrisi": 0,
+    "vision_cagrisi": 0,
+    "usd": 0
+  }
+}

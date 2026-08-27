@@ -11,15 +11,15 @@
 ## PART-1 — GERÇEK-GEOMETRİ PIXEL HARİTALAR (2 varyant)
 
 ### (a) Kısıt haritası — 7 kuşak
-`beykoz_vaka/harita_gercek_kisit.png` · orman-baskın(yeşil) / yapılı-kentsel(kırmızı) / yapılaşabilir-açık(turuncu) / askeri(mor) / dik-yamaç(kahve) / su-kıyı(mavi) / taşkın-riski(camgöbeği) + deniz.
+`gorseller/tradia/beykoz/harita/beykoz_harita_kisit-gercek_2026-07-28.png` · orman-baskın(yeşil) / yapılı-kentsel(kırmızı) / yapılaşabilir-açık(turuncu) / askeri(mor) / dik-yamaç(kahve) / su-kıyı(mavi) / taşkın-riski(camgöbeği) + deniz.
 **Görsel-doğrulama:** harita **yeşil-baskın** (orman) — tek-turuncu (yapılaşabilir) Cumhuriyetköy; kırmızı-yapılı yalnız SW-Boğaz-kıyısı. → %3-8-buildable bulgusu **gözle-teyit** (Part-3).
 
-![kisit](harita_gercek_kisit.png)
+![kisit](gorseller/tradia/beykoz/harita/beykoz_harita_kisit-gercek_2026-07-28.png)
 
 ### (b) Konum haritası + mega-aks
-`beykoz_vaka/harita_gercek_konum.png` · Paşabahçe Sırtı ★ + O-7/YSS aks-katmanı.
+`gorseller/tradia/beykoz/harita/beykoz_harita_konum-gercek_2026-07-28.png` · Paşabahçe Sırtı ★ + O-7/YSS aks-katmanı.
 
-![konum](harita_gercek_konum.png)
+![konum](gorseller/tradia/beykoz/harita/beykoz_harita_konum-gercek_2026-07-28.png)
 
 ## PART-2 — MEGA-PROJE AKS KATMANI
 - **YSS Köprüsü + Kuzey Marmara Otoyolu (O-7)** gerçek-OSM-geometrisi (171 parça) haritaya işlendi + Şile Otoyolu + bağlantı-yolları.
@@ -50,4 +50,4 @@
 Gerçek-geometri pixel-haritalar (kısıt+konum) şematik-grid'in yerine geçti; mega-aks dürüstlük-şerhiyle işlendi; %8 şüphesi **bant-olarak çözüldü** (%3-8, tanım-şeffaf). Görsel yeşil-baskınlığı sayısal-bulguyu teyit ediyor.
 
 ---
-*CC-TT-MAP · $0 (indirme-yok, mevcut OSM+arazi-formu) · A04 · fizik-sınır-bloğu · kanon-içi · SİLME-YOK · Kopya K24a(Signals). Görseller: beykoz_vaka/harita_gercek_{kisit,konum}.png*
+*CC-TT-MAP · $0 (indirme-yok, mevcut OSM+arazi-formu) · A04 · fizik-sınır-bloğu · kanon-içi · SİLME-YOK · Kopya K24a(Signals). Görseller: gorseller/tradia/beykoz/harita/beykoz_harita_{kisit,konum}-gercek_2026-07-28.png*

@@ -1,6 +1,6 @@
 # BEYKOZ KARO KESKİNLEŞTİRME v2 (sunum-kalite) · CC-TT-MAP MAP36
 
-**Tarih:** 2026-07-28 · **6 karo:** Riva · BEY-15 · İncirköy · Tokatköy · Gümüşsuyu · Kavacık · **Çıktı:** `beykoz_vaka/karolar_v2/` · $0
+**Tarih:** 2026-07-28 · **6 karo:** Riva · BEY-15 · İncirköy · Tokatköy · Gümüşsuyu · Kavacık · **Çıktı:** `gorseller/tradia/beykoz/karo-v2/` · $0
 
 ## YÖNTEM
 - ±~1km mahalle-merkez zoom-crop · **NEAREST ×4** büyütme (bulanık-interpolasyon YOK, pixel-art dokusu)
@@ -28,4 +28,4 @@ v1'de **Tokatköy %34,4 değişim** çıktı — görsel-inceleme: 2024-08-16 sa
 6 sunum-kalite karo (keskin pixel-art + değişim-vurgu). En-önemli: **v1'in bulut-artefaktı görsel-denetimle yakalandı ve düzeltildi** — fizik/dürüstlük disiplini görselde de çalıştı. Riva %1,9 (en-düşük) EKGYO-henüz-yok'u görsel-teyit ediyor.
 
 ---
-*CC-TT-MAP · $0 · A04 · fizik-sınır-bloğu · bulut-artefakt-düzeltmesi · SİLME-YOK. Karolar: beykoz_vaka/karolar_v2/ (6 PNG).*
+*CC-TT-MAP · $0 · A04 · fizik-sınır-bloğu · bulut-artefakt-düzeltmesi · SİLME-YOK. Karolar: gorseller/tradia/beykoz/karo-v2/ (6 PNG).*

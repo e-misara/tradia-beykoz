@@ -293,7 +293,7 @@ En sertleri:
 
 | Dosya | Boyut | Not |
 |---|---:|---|
-| `cikti/beykoz_isi_haritasi.png` | 302,8 KB | **FİNAL** 45×11 · 13,5×13 inç · 170 dpi · ayak-set şerhi görselin üstünde |
+| `cikti/gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png` | 302,8 KB | **FİNAL** 45×11 · 13,5×13 inç · 170 dpi · ayak-set şerhi görselin üstünde |
 | `cikti/sig12_vaat_surtunme.json` | 78,7 KB · 1.196 satır | 225 vaat + 57 sürtünme, **künyeli tam liste** |
 | `data/` | **BOŞ** | ⚠️ *tasarım gereği — ham veri üretmem* |
 
