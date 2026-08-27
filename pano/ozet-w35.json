@@ -55,12 +55,13 @@
       },
       {
         "ad": "AraçDen",
-        "durum": "OLU",
+        "durum": "BEKLEMEDE",
         "son_hareket": "BILINMIYOR",
         "sessizlik_gun": null,
         "canli_url": null,
         "sahibi_cc": "yok",
-        "siradaki": "Kayıp — cleanup dolmuş"
+        "siradaki": "Oturum-izleri düştü (30 gün cleanup) ama proje ölü değil — Patron dönüş kararı bekliyor",
+        "not_43": "Standing #43 düzeltmesi: ÖLÜ değil BEKLEMEDE (dürüst-negatif, uydurma değil geri-alma)"
       },
       {
         "ad": "KASA",
@@ -82,39 +83,39 @@
       },
       {
         "ad": "Misara Hospitality (E-Misafir/E-Tedarik/Pulse)",
-        "durum": "BILINMIYOR",
+        "durum": "IZ_YOK_REPO_DISI",
         "son_hareket": "BILINMIYOR",
         "sessizlik_gun": null,
         "canli_url": null,
         "sahibi_cc": "BILINMIYOR",
-        "siradaki": "BILINMIYOR"
+        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
       },
       {
         "ad": "Borsa Terminal",
-        "durum": "BILINMIYOR",
+        "durum": "IZ_YOK_REPO_DISI",
         "son_hareket": "BILINMIYOR",
         "sessizlik_gun": null,
         "canli_url": null,
         "sahibi_cc": "BILINMIYOR",
-        "siradaki": "BILINMIYOR"
+        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
       },
       {
         "ad": "Glass Chain",
-        "durum": "BILINMIYOR",
+        "durum": "IZ_YOK_REPO_DISI",
         "son_hareket": "BILINMIYOR",
         "sessizlik_gun": null,
         "canli_url": null,
         "sahibi_cc": "BILINMIYOR",
-        "siradaki": "BILINMIYOR"
+        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
       },
       {
         "ad": "Kök Çubuğu",
-        "durum": "BILINMIYOR",
+        "durum": "IZ_YOK_REPO_DISI",
         "son_hareket": "BILINMIYOR",
         "sessizlik_gun": null,
         "canli_url": null,
         "sahibi_cc": "BILINMIYOR",
-        "siradaki": "BILINMIYOR"
+        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
       },
       {
         "ad": "Aldemir Grup",
@@ -263,7 +264,13 @@
         "sessizlik_gun": 90,
         "bekleyen": "S10 deploy",
         "bloke": "En eski açık borç",
-        "kirmizi": true
+        "kirmizi": true,
+        "dirilis_sarti": {
+          "kural": "CC-Site 90 gün sessizlik açık borç. Diriliş şartı: yeni CC-Site sprint tetiği veya kapanış kararı",
+          "adim_1": "S10 deploy kararı ver (yap/vazgeç)",
+          "adim_2": "Yap seçilirse: yeni sprint no · Patron öncelik atama",
+          "adim_3": "Vazgeç seçilirse: CC-Site KURULUS'a 'DURDU' notu · SİLME-YOK"
+        }
       },
       {
         "cc": "Signals",
@@ -513,5 +520,55 @@
     "H3_master_indeks": "kanon/INDEKS.md — 213 MD",
     "H4_celiski": "kanon/celiskiler_v1.md — 7 vaka",
     "H5_hafiza_s43_en_ust": "Vaat-takip listesinde EN ÜST"
+  },
+  "kapsam_bosluğu": {
+    "aciklama": "Bu pano'nun neyi gösteremediği · Standing #43 dürüst-negatif alanı",
+    "bosluklar": [
+      {
+        "konu": "GitHub Pages tradia-beykoz repo'sunda kapalı",
+        "etki": "Kanal 1 (Pages) 404 · sadece Raw + jsDelivr canlı",
+        "cozum": "Repo Settings → Pages → Source: main branch"
+      },
+      {
+        "konu": "4 proje (Hospitality/Borsa Terminal/Glass Chain/Kök Çubuğu) Vezir arşivinde iz yok",
+        "etki": "Portföy 6/10 dolu · 4/10 IZ_YOK_REPO_DISI",
+        "cozum": "Patron başka kanaldan besleme yapabilir veya bu projeler Tradia-DIŞI kabul edilir"
+      },
+      {
+        "konu": "26 gün Vezir sessizliği (08-01→08-26)",
+        "etki": "SORGU-01 havuz sayacı eski · CC durum bilgileri 27 gün eski",
+        "cozum": "Bir sonraki turda Vezir CC-DURUM-TARAMA canlı ölçüm turu"
+      },
+      {
+        "konu": "Tutanak sayısı 27 (direktif) vs 24 (8+16 gerçek)",
+        "etki": "3 tutanak hakem-beklenen",
+        "cozum": "Üst Akıl '27' kaynağını netleştirsin"
+      },
+      {
+        "konu": "Ham .jsonl içerikleri okunmadı",
+        "etki": "Vaat-takip listesi kısmi (arsiv_cek.py ayrı iş)",
+        "cozum": "Standing #37 arsiv/tam/ push edilince FTS5 arama"
+      }
+    ],
+    "sayilar": {
+      "portfoy_dolu": 6,
+      "portfoy_iz_yok": 4,
+      "toplam": 10,
+      "cc_canli": 12,
+      "cc_kirmizi_bayrak": 6,
+      "toplam_cc": 17,
+      "kanal_canli": 2,
+      "kanal_kapali": 1,
+      "toplam_kanal": 3
+    }
+  },
+  "standing_43_uygulama": {
+    "tarih": "2026-08-27",
+    "duzeltmeler": [
+      "AraçDen: ÖLÜ → BEKLEMEDE (oturum kaybı ≠ proje ölümü)",
+      "4 proje BILINMIYOR → IZ_YOK_REPO_DISI (dürüst kategorileme)",
+      "CC-Site diriliş şartı 3 adımlı çerçeve",
+      "kapsam_boslugu alanı: 5 bilinen boşluk + sayılar"
+    ]
   }
 }
