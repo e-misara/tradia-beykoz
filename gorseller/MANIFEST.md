@@ -1,6 +1,6 @@
 # GÖRSEL MANİFESTİ — `gorseller/`
 
-**Üreten:** CC-ARŞİV · **Tarih:** 2026-08-27 · **Kanon:** [`kanon/gorsel_adlandirma_v1.md`](../kanon/gorsel_adlandirma_v1.md)
+**Üreten:** TT-ARŞİV · **Tarih:** 2026-08-27 · **Kanon:** [`kanon/gorsel_adlandirma_v1.md`](../kanon/gorsel_adlandirma_v1.md)
 
 > Bu dosya **tek doğruluk kaynağıdır**. Repodaki her görselin yeni adı, eski adı, türü ve kaç MD'den referans aldığı burada.
 
@@ -98,4 +98,4 @@
 
 ---
 
-*CC-ARŞİV · $0 · AI/Vision çağrısı YOK · SİLME-YOK · Standing #35/#36*
+*TT-ARŞİV · $0 · AI/Vision çağrısı YOK · SİLME-YOK · Standing #35/#36*

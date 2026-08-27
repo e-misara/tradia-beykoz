@@ -121,7 +121,7 @@ Kasa'nın "veri seti"leri klasik CC gibi değil — çoğunlukla **kanon doküma
 - Malvarlığı değerleme → **Tradia** (kısmi kesişim ileride mümkün)
 - Kripto para/yatırım → **CC-Borsa/Finans** (Tradia)
 - Ticari sicil/tüzel-kişi → **CC-Tic** (Tradia)
-- Ham arşiv → **CC-ARŞİV** (Tradia)
+- Ham arşiv → **TT-ARŞİV** (Tradia)
 
 **Çakışma alanları:**
 - **Tradia ↔ Kasa "değerleme":** Kasa'nın Faz-2'sinde malvarlığı değerlemesi olacaksa Tradia veri hattıyla köprü kurulabilir → **Patron kararı bekliyor** (K10 sonrası)

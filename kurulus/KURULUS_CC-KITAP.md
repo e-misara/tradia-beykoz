@@ -57,8 +57,8 @@ Bu CC Tradia-DIŞI olduğu için Standing v1.11 zinciri **kısmen** uygulanır:
 | Okuyucu-PDF v1 | `~/Desktop/kitap_32gun_v1.pdf` | 3.4 MB | v1 K8 (dondurulmuş) | Patron elle |
 
 **Yeni gelen kaynaklar (Standing #37 sonrası):**
-- **İbn Sînâ arşivi** — CC-ARŞİV üzerinden alınacak (bekleniyor)
-- **Kadir Mısıroğlu arşivi** — CC-ARŞİV üzerinden (bekleniyor)
+- **İbn Sînâ arşivi** — TT-ARŞİV üzerinden alınacak (bekleniyor)
+- **Kadir Mısıroğlu arşivi** — TT-ARŞİV üzerinden (bekleniyor)
 
 ---
 
@@ -92,7 +92,7 @@ Bu CC Tradia-DIŞI olduğu için Standing v1.11 zinciri **kısmen** uygulanır:
 
 **Son konuşma kararları (Standing #37 turu · 2026-08-27):**
 1. CC-Kitap KURULUŞ dosyası **kasten dışarıda** kararı **DEĞİŞTİ** — direktif verildi, dosya üretildi
-2. İbn Sînâ + Mısıroğlu arşivi CC-ARŞİV üzerinden gelecek (yeni CC)
+2. İbn Sînâ + Mısıroğlu arşivi TT-ARŞİV üzerinden gelecek (yeni CC)
 3. Kitap hattı büyüyor: Cilt II tetiği için arşiv beklenmesi
 
 **Direktif kayıtları (Vezir dağıtımdan):**
@@ -110,7 +110,7 @@ Bu CC Tradia-DIŞI olduğu için Standing v1.11 zinciri **kısmen** uygulanır:
 - Cilt yönetimi (I, II+)
 
 **Senin işin DEĞİL:**
-- Ham arşiv hasadı → **CC-ARŞİV** (yeni)
+- Ham arşiv hasadı → **TT-ARŞİV** (yeni)
 - 32.Gün transkript çekimi → **CC-Sosyal**
 - Basın haber toplama → **CC-Basın**
 - Yayınevi/dağıtım süreçleri → Patron elle
@@ -118,7 +118,7 @@ Bu CC Tradia-DIŞI olduğu için Standing v1.11 zinciri **kısmen** uygulanır:
 
 **Çakışma alanları:**
 - **Sosyal ↔ Kitap:** Sosyal transkript üretir, Kitap kullanır. Sosyal Cilt II için farklı arşiv hattı (Mısıroğlu) hazırlayacak → bu koordine gerektirir
-- **ARŞİV ↔ Kitap:** CC-ARŞİV kurulunca İbn Sînâ + Mısıroğlu ham arşivi ARŞİV'de tutulacak; Kitap oradan çeker
+- **ARŞİV ↔ Kitap:** TT-ARŞİV kurulunca İbn Sînâ + Mısıroğlu ham arşivi ARŞİV'de tutulacak; Kitap oradan çeker
 
 ---
 
@@ -126,13 +126,13 @@ Bu CC Tradia-DIŞI olduğu için Standing v1.11 zinciri **kısmen** uygulanır:
 
 **Açık borçlar:**
 1. **K9 tetiği** — Patron okuma → geri-bildirim (belirsiz tarih)
-2. **Cilt II mimarisi** — İbn Sînâ arşivi geldikçe planlanacak (CC-ARŞİV bekleniyor)
+2. **Cilt II mimarisi** — İbn Sînâ arşivi geldikçe planlanacak (TT-ARŞİV bekleniyor)
 3. **Yayınevi kararı** — Misara-içi print-on-demand mi, dış yayınevi mi (K10 sonrası açık)
 
 **3 gelecek yetenek önerisi:**
 1. **Otomatik-editör turu** — LLM-yardımlı ilk-tur editör (dış-CC değil, Kitap-içi)
 2. **Çoklu-format yayın** — PDF + EPUB + HTML (aynı kaynaktan üretim)
-3. **Kaynak-çapraz-doğrulama** — 32.Gün ↔ Basın ↔ Mısıroğlu arşivi üçlü karşılaştırma (CC-ARŞİV entegrasyonu sonrası)
+3. **Kaynak-çapraz-doğrulama** — 32.Gün ↔ Basın ↔ Mısıroğlu arşivi üçlü karşılaştırma (TT-ARŞİV entegrasyonu sonrası)
 
 ---
 

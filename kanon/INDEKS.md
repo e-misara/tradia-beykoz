@@ -201,7 +201,7 @@
 | 191 | `dagitim/UA_20260731_YAZMA_YOLU_v3_ttahafiza_staging_yeni.md` | YAZMA-YOLU v3 · TT-HAFIZA/STAGING_YENI/ · Mac Minimum | dagitim | 2026-07-31 | GÜNCEL |
 | 192 | `dagitim/UA_20260827_STANDING_37_kalicilik_arsiv_01.md` | STANDING #37 · KALICILIK PROTOKOLÜ · ARŞİV-01 | dagitim | 2026-08-27 | GÜNCEL |
 | 193 | `kanon/INDEKS.md` | MASTER İNDEKS — 212 MD Dosya | hafiza_kanon | 2026-08-27 | GÜNCEL |
-| 194 | `kurulus/KURULUS_CC-ARSIV.md` | KURULUS · CC-ARŞİV (İskelet) | cc_arsiv | 2026-08-27 | GÜNCEL |
+| 194 | `kurulus/KURULUS_TT-ARSIV.md` | KURULUS · TT-ARŞİV (İskelet) | cc_arsiv | 2026-08-27 | GÜNCEL |
 | 195 | `kurulus/KURULUS_CC-FINANS.md` | TRADİA KURULUŞ DOSYASI — **CC-FİNANS** | cc_finans | 2026-07-29 | GÜNCEL |
 | 196 | `kurulus/KURULUS_CC-KASA.md` | KURULUS · CC-KASA | cc_kasa | 2026-08-27 | GÜNCEL |
 | 197 | `kurulus/KURULUS_CC-KITAP.md` | KURULUS · CC-KİTAP | cc_kitap | 2026-08-27 | GÜNCEL |

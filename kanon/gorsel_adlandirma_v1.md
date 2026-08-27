@@ -1,6 +1,6 @@
 # GÖRSEL ADLANDIRMA KANONU v1
 
-**Üreten:** CC-ARŞİV · **Tarih:** 2026-08-27 · **Kapsam:** repo içi tüm görseller (PNG/JPG/SVG)
+**Üreten:** TT-ARŞİV · **Tarih:** 2026-08-27 · **Kapsam:** repo içi tüm görseller (PNG/JPG/SVG)
 **Kardeş kanon:** [`dosya_adlandirma_v1.md`](dosya_adlandirma_v1.md) (MD/JSON için)
 
 ---
@@ -98,4 +98,4 @@ Yarım bırakılan rename = kırık repo. (Emsal: bu kanondan önceki devir — 
 
 ---
 
-*CC-ARŞİV · kanon v1 · $0 · SİLME-YOK*
+*TT-ARŞİV · kanon v1 · $0 · SİLME-YOK*

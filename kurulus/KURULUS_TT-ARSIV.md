@@ -1,6 +1,7 @@
-# KURULUS · CC-ARŞİV (İskelet)
+# KURULUS · TT-ARŞİV (İskelet)
 
-**CC adı:** CC-ARŞİV (Kalıcılık + Ham Arşiv Yönetimi)
+**CC adı:** TT-ARŞİV (Kalıcılık + Ham Arşiv Yönetimi)
+**Ad geçmişi:** kuruluşta **CC-ARŞİV** · **2026-08-27** Patron kararıyla **TT-ARŞİV** oldu. İş tanımı değişmedi (görsel adlandırma · disk taraması · arşiv düzeni). Bu tarihten ÖNCEKİ commit mesajları, devir belgeleri ve sprint raporları **CC-ARŞİV** adını taşır ve yeniden yazılmaz (SİLME-YOK).
 **Kuruluş:** 2026-08-27 (Standing #37 turu — Üst Akıl direktifi)
 **Statü:** **Tradia içi**, kurulum-aşamasında
 **Kanon kökü:** `~/misara-arsiv/` (PRIVATE GitHub repo — Patron açacak) + `arsiv/` klasörü (script + kanon)
@@ -45,7 +46,7 @@ Standing v1.11 zinciri **tam** uygulanır (Tradia içi CC):
 | #37 KALICILIK | ✅ **Bu CC'nin doğuş kuralı** |
 | #38 TERMİNAL-ÖNCELİK | ✅ Uygulanır (arsiv_cek.py otonom, model müdahalesi yok) |
 
-**CC-ARŞİV özel disiplinleri (aday):**
+**TT-ARŞİV özel disiplinleri (aday):**
 - **ARS-1:** Regex temizlik katmanı — token/PII/path zorunlu, atlanamaz
 - **ARS-2:** Metadata ↔ İçerik ayrımı — indeks PUBLIC olabilir, tam metin PRIVATE
 - **ARS-3:** Üç-kopya denetimi — aylık Vezir kontrolü (arsiv/3kopya.md)
@@ -91,12 +92,12 @@ Standing v1.11 zinciri **tam** uygulanır (Tradia içi CC):
 
 ## 6. BEYKOZ DOSYASI KATKIN + SON KONUŞMA KARARLARI
 
-**Beykoz vakasına doğrudan katkı YOK** — CC-ARŞİV Beykoz'dan sonra kuruldu. Ama:
+**Beykoz vakasına doğrudan katkı YOK** — TT-ARŞİV Beykoz'dan sonra kuruldu. Ama:
 
-- **Dolaylı katkı:** Beykoz'un 71 dosya + 46 mahalle ansiklopedisi (tradia-beykoz repo'sunda) CC-ARŞİV emsalinin bir alt-türüdür. Beykoz'un başarısı "kalıcı arşiv" fikrinin haklılığını göstermişti.
+- **Dolaylı katkı:** Beykoz'un 71 dosya + 46 mahalle ansiklopedisi (tradia-beykoz repo'sunda) TT-ARŞİV emsalinin bir alt-türüdür. Beykoz'un başarısı "kalıcı arşiv" fikrinin haklılığını göstermişti.
 
 **Son konuşma kararları (Standing #37 turu · 2026-08-27):**
-1. **CC-ARŞİV kurulma kararı** — Üst Akıl direktifi (bu tur)
+1. **TT-ARŞİV kurulma kararı** — Üst Akıl direktifi (bu tur)
 2. **misara-arsiv PRIVATE repo** — Patron açacak, script hazır bekliyor
 3. **PUBLIC ↔ PRIVATE ayrımı** kanonlaştı (misara-vezir vs misara-arsiv)
 4. **Standing #37 kanona** — 3-kopya kuralı
@@ -146,5 +147,5 @@ Standing v1.11 zinciri **tam** uygulanır (Tradia içi CC):
 
 ---
 
-*KURULUS_CC-ARSIV.md (iskelet) · Vezir Standing #37 kapsamında üretildi · 2026-08-27*
+*KURULUS_TT-ARSIV.md (iskelet) · Vezir Standing #37 kapsamında üretildi · 2026-08-27*
 *Not: ARS-2 sprintinde tam-kapsam öz-analiz üretilecek (misara-arsiv açıldıktan sonra).*
