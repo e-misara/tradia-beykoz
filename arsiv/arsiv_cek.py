@@ -49,7 +49,10 @@ REDACT_TOKEN = re.compile(
     r"|Bearer\s+[A-Za-z0-9._~+/=-]{20,}"
     r"|xoxb-[a-zA-Z0-9-]{10,})"
 )
-REDACT_ABS_PATH = re.compile(r"/Users/[A-Za-z0-9_.-]+(?=/|\s|$|['\"`])")
+# D1: /Users/<ad>/ ve tire-ayraçlı -Users-<ad>- slug hali (Claude Code proje-yolu)
+REDACT_ABS_PATH = re.compile(
+    r"[-/]Users[-/][A-Za-z0-9_.-]+(?=[-/]|\s|$|['\"`])"
+)
 REDACT_EMAIL = re.compile(
     r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 )
@@ -120,25 +123,57 @@ def temizle(metin: str, oturum_id: str = "?") -> str:
 
 def cc_belirle(ilk_mesaj: str, dosya_yolu: str) -> str:
     """Oturumun hangi CC'ye ait olduğunu ilk mesaj/proje-yolundan çıkar.
-
-    Basit heuristik: proje-yol slug'ı ve ilk mesajda geçen 'CC-<ad>' kalıpları.
+    D2: Heuristik güçlendirildi — ilk 300 karakter + brief/handoff isimleri.
     """
+    ilk300 = ilk_mesaj[:300].lower()
+    ilk2000 = ilk_mesaj[:2000]
+
+    # Öncelik 1: TRADIA HANDOFF / DEVIR / BRIEF
+    if any(k in ilk300 for k in ["tradia — cc handoff", "tradia handoff", "handoff prompt",
+                                   "tradia cc handoff", "devir brief", "tradia devir"]):
+        return "tradia_handoff"
+    # Standing #37 arşivi (BE-01, MU-01 gibi)
+    if any(k in ilk300 for k in ["standing #38", "standing #37", "be-01", "mu-01", "kurulus"]):
+        return "vezir_kanon"
+
+    # Öncelik 2: CC-<ad> deseni ilk 2000 karakterde
     m = re.search(
         r"CC[-_]?"
         r"(vezir|hafıza|hafiza|basin|basın|analiz|tic|borsa|sosyal|"
         r"tt-ai|ttai|tt-map|ttmap|tt-pazarlama|ttpazarlama|kitap|kasa|"
         r"arşiv|arsiv|site|finans|signals|ihale)",
-        ilk_mesaj[:2000], re.IGNORECASE,
+        ilk2000, re.IGNORECASE,
     )
     if m:
         return "cc_" + m.group(1).lower().replace("ı", "i").replace("ş", "s").replace("-", "")
-    # Proje-yol slug'ından
+
+    # Öncelik 3: MISARA / KASA / KITAP anahtar kelimeleri
+    for anahtar, cc in [("misara masaüstü", "cc_misara_app"), ("kasa siber", "cc_kasa"),
+                          ("32 gün", "cc_kitap"), ("ekrandaki ülke", "cc_kitap")]:
+        if anahtar in ilk300:
+            return cc
+
+    # Öncelik 4: Proje-yol slug'ından (klasör adı)
     slug = os.path.basename(os.path.dirname(dosya_yolu)).lower()
     if "kitap" in slug:
         return "cc_kitap"
     if "kasa" in slug:
         return "cc_kasa"
     return "belirsiz"
+
+
+def konu_etiketi(ilk_mesaj: str) -> str:
+    """D2: İlk kullanıcı mesajının ilk satırını konu etiketi olarak döndür.
+    'belirsiz' klasöründe kör arama olmasın diye."""
+    if not ilk_mesaj:
+        return "(mesaj yok)"
+    ilk_satir = ilk_mesaj.strip().split("\n")[0].strip()
+    # Markdown # başlıkları temizle
+    ilk_satir = re.sub(r"^#+\s*", "", ilk_satir)
+    # Uzunsa kes
+    if len(ilk_satir) > 120:
+        ilk_satir = ilk_satir[:117] + "..."
+    return ilk_satir or "(başlık yok)"
 
 
 def olay_metin(rec: dict) -> str:
@@ -201,15 +236,16 @@ def oturum_to_md(dosya: str) -> tuple[str, dict]:
     ot_id = os.path.basename(dosya).replace(".jsonl", "")
     ilk_kullanici_temiz = temizle(ilk_kullanici, ot_id)
     cc = cc_belirle(ilk_kullanici, dosya)
-    ot_id = os.path.basename(dosya).replace(".jsonl", "")
+    konu = konu_etiketi(ilk_kullanici_temiz)
 
     baslik = f"# {cc.upper()} · {ilk_ts} → {son_ts} · {ot_id[:8]}"
     ustbilgi = (
+        f"**Konu:** {konu}  \n"
         f"**Oturum ID:** `{ot_id}`  \n"
         f"**CC:** {cc}  \n"
         f"**Tarih aralığı:** {ilk_ts} → {son_ts}  \n"
         f"**Mesaj sayısı:** {msaj}  \n"
-        f"**Kaynak dosya:** `~/.claude/projects/-Users-GAC-A/{os.path.basename(dosya)}`  \n\n"
+        f"**Kaynak dosya (redakteli):** `[REDACTED-PATH]/{os.path.basename(dosya)}`  \n\n"
         f"**İlk kullanıcı mesajı (özet):** {ilk_kullanici_temiz[:300]}...\n\n"
         f"---\n\n"
     )
@@ -219,6 +255,7 @@ def oturum_to_md(dosya: str) -> tuple[str, dict]:
     meta = {
         "oturum_id": ot_id,
         "cc": cc,
+        "konu": konu,  # D2: kör aramaya son
         "ilk_mesaj": ilk_ts,
         "son_mesaj": son_ts,
         "mesaj_sayisi": msaj,
@@ -300,7 +337,7 @@ def main():
         f.write(f"**Toplam:** {indeks['toplam_oturum']} oturum · {indeks['toplam_mesaj']:,} mesaj\n\n")
         f.write("| CC | Oturum | Tarih aralığı | Mesaj |\n|---|---|---|---|\n")
         for o in sorted(indeks["oturumlar"], key=lambda x: x.get("son_mesaj") or "", reverse=True):
-            f.write(f"| {o['cc']} | `{o['oturum_id'][:8]}` | {o['ilk_mesaj']} → {o['son_mesaj']} | {o['mesaj_sayisi']:,} |\n")
+            f.write(f"| {o['cc']} | {o.get('konu','?')[:60]} | `{o['oturum_id'][:8]}` | {o['ilk_mesaj']} → {o['son_mesaj']} | {o['mesaj_sayisi']:,} |\n")
     print(f"📇 INDEKS_PUBLIC.md → {pub_indeks_md}")
 
     if args.push and os.path.isdir(ARSIV_REPO):

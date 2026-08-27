@@ -38,6 +38,8 @@ ORNEK = [
     # TC 11 hane ve IBAN TR şu an regex katmanında YOK — dürüst-negatif
     ("11. TC 11 hane",  "TCKN: 12345678901", "12345678901"),
     ("12. IBAN TR",     "IBAN: TR330006100519786457841326",  "TR33"),
+    # D1 · Claude Code proje-yolu tire-ayraçlı slug
+    ("13. Tire slug path", "log: ~/.claude/projects/-Users-GAC-A/oturum.jsonl", "-Users-GAC-A"),
 ]
 
 def testet():
