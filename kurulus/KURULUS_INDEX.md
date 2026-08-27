@@ -1,5 +1,10 @@
 # KURULUŞ INDEX — Tüm CC Kuruluş Dosyaları
 
+> ✅ **Standing #37 GÜNCELLEME (2026-08-27):** Bu index KURULUŞ-01 (2026-07-29) tarihinde donduruldu. Standing #37 KALICILIK PROTOKOLÜ turunda üç eksik CC KURULUŞ dosyası üretildi: [KURULUS_CC-KITAP.md](KURULUS_CC-KITAP.md) · [KURULUS_CC-KASA.md](KURULUS_CC-KASA.md) · [KURULUS_CC-ARSIV.md](KURULUS_CC-ARSIV.md) (iskelet). **Önceki 'kasten dışarıda' notu iptal edildi** — Kitap hattı büyüyor (İbn Sînâ + Mısıroğlu arşivi CC-ARŞİV üzerinden gelecek). Kasa hâlâ Tradia-dışı ama envanterde. ARŞİV yeni CC olarak kurulmuş, iskelet KURULUŞ dosyası hazır. Detay: `arsiv/` klasörü + Vezir dağıtım tarihçesi.
+
+---
+
+
 **Sprint:** KURULUŞ-01 (Hafıza tarafından yazıldı) · **Tarih:** 2026-07-29 · **Statü:** KANON · **Otorite:** Hafıza (B9)
 
 **Amaç:** Tradia'nın **her CC'sinin kuruluş belgesi** için tek noktadan referans. Vezir/Ahmet buradan hangi CC hangi kuruluş md'sinde olduğunu bulur; eksik CC'ler görünür kalır.

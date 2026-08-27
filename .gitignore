@@ -54,3 +54,9 @@ Thumbs.db
 # Beykoz analiz scriptleri whitelist (Patron kararı 28 Tem)
 # CC-Signals SIG7/SIG8 üretim scriptleri repo'da tutulur — şeffaflık ve tekrar-üretilebilirlik için.
 !beykoz_vaka/**/*.py
+
+# Arsiv PRIVATE içerik — asla PUBLIC repo'ya girmez
+arsiv/tam/
+
+# Arsiv script whitelist (Standing #37 · saf Python · AI çağrısı yok)
+!arsiv/*.py

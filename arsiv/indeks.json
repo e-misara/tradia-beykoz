@@ -1,0 +1,133 @@
+{
+  "tarih": "2026-08-27",
+  "toplam_oturum": 14,
+  "toplam_mesaj": 81543,
+  "oturumlar": [
+    {
+      "oturum_id": "14837276-c991-4821-90e6-1b193da07f0b",
+      "cc": "belirsiz",
+      "ilk_mesaj": "2026-05-20",
+      "son_mesaj": "2026-08-16",
+      "mesaj_sayisi": 8699,
+      "boyut_bytes_ham": 51622853,
+      "md_uzunluk": 4303822
+    },
+    {
+      "oturum_id": "23a2a357-20e1-4d55-8ece-3381fecaace3",
+      "cc": "cc_finans",
+      "ilk_mesaj": "2026-07-25",
+      "son_mesaj": "2026-08-16",
+      "mesaj_sayisi": 1728,
+      "boyut_bytes_ham": 6943107,
+      "md_uzunluk": 791673
+    },
+    {
+      "oturum_id": "514dbb61-e473-48ce-9a60-b5e1e5a02c17",
+      "cc": "belirsiz",
+      "ilk_mesaj": "2026-05-04",
+      "son_mesaj": "2026-07-29",
+      "mesaj_sayisi": 3303,
+      "boyut_bytes_ham": 18911783,
+      "md_uzunluk": 3561099
+    },
+    {
+      "oturum_id": "5f87f5cf-678b-413e-a75a-99ea5428a110",
+      "cc": "cc_hafiza",
+      "ilk_mesaj": "2026-05-27",
+      "son_mesaj": "2026-08-19",
+      "mesaj_sayisi": 7556,
+      "boyut_bytes_ham": 53713228,
+      "md_uzunluk": 6365190
+    },
+    {
+      "oturum_id": "6bb6aa84-eff7-458b-bef0-d6f40f4eff1b",
+      "cc": "cc_signals",
+      "ilk_mesaj": "2026-07-26",
+      "son_mesaj": "2026-08-19",
+      "mesaj_sayisi": 1505,
+      "boyut_bytes_ham": 9311414,
+      "md_uzunluk": 2025215
+    },
+    {
+      "oturum_id": "6dcf9417-9a73-423f-9a56-bf7387d06f88",
+      "cc": "belirsiz",
+      "ilk_mesaj": "2026-05-01",
+      "son_mesaj": "2026-08-27",
+      "mesaj_sayisi": 3296,
+      "boyut_bytes_ham": 16351876,
+      "md_uzunluk": 1952926
+    },
+    {
+      "oturum_id": "995b2110-f70d-447d-908a-895100173922",
+      "cc": "cc_hafiza",
+      "ilk_mesaj": "2026-06-02",
+      "son_mesaj": "2026-08-08",
+      "mesaj_sayisi": 6932,
+      "boyut_bytes_ham": 33531740,
+      "md_uzunluk": 2024323
+    },
+    {
+      "oturum_id": "9eccb170-b526-4108-bc18-4d57b8563d04",
+      "cc": "belirsiz",
+      "ilk_mesaj": "2026-05-19",
+      "son_mesaj": "2026-08-16",
+      "mesaj_sayisi": 12105,
+      "boyut_bytes_ham": 87937608,
+      "md_uzunluk": 6561371
+    },
+    {
+      "oturum_id": "a3dad6c0-0a5e-4777-83d0-6f1672fc8f89",
+      "cc": "cc_sosyal",
+      "ilk_mesaj": "2026-05-23",
+      "son_mesaj": "2026-08-16",
+      "mesaj_sayisi": 8311,
+      "boyut_bytes_ham": 69815234,
+      "md_uzunluk": 4176214
+    },
+    {
+      "oturum_id": "a4bb1551-6501-4b1e-b207-b1ea8e26f735",
+      "cc": "cc_ttmap",
+      "ilk_mesaj": "2026-07-18",
+      "son_mesaj": "2026-08-19",
+      "mesaj_sayisi": 3989,
+      "boyut_bytes_ham": 16111811,
+      "md_uzunluk": 2730826
+    },
+    {
+      "oturum_id": "ac74e500-5c2e-4956-a8b1-3da1cd164183",
+      "cc": "cc_borsa",
+      "ilk_mesaj": "2026-05-30",
+      "son_mesaj": "2026-08-16",
+      "mesaj_sayisi": 5557,
+      "boyut_bytes_ham": 24337971,
+      "md_uzunluk": 1661931
+    },
+    {
+      "oturum_id": "b846f782-f7b2-4d66-bd3a-63c79d4c47b5",
+      "cc": "belirsiz",
+      "ilk_mesaj": "2026-05-04",
+      "son_mesaj": "2026-08-16",
+      "mesaj_sayisi": 12626,
+      "boyut_bytes_ham": 64501008,
+      "md_uzunluk": 10815282
+    },
+    {
+      "oturum_id": "c4d69456-703b-4dad-bb6e-cd0cfe0fd3cc",
+      "cc": "cc_ttpazarlama",
+      "ilk_mesaj": "2026-07-10",
+      "son_mesaj": "2026-08-17",
+      "mesaj_sayisi": 833,
+      "boyut_bytes_ham": 5526089,
+      "md_uzunluk": 528726
+    },
+    {
+      "oturum_id": "dc2c3284-35bf-4e27-8227-63527cf9e895",
+      "cc": "cc_i̇hale",
+      "ilk_mesaj": "2026-06-11",
+      "son_mesaj": "2026-08-16",
+      "mesaj_sayisi": 5103,
+      "boyut_bytes_ham": 21923948,
+      "md_uzunluk": 1551782
+    }
+  ]
+}
