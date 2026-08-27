@@ -6,45 +6,196 @@
     "kural": "Uygulama SADECE OKUR — bu dosya Hafıza tarafından üretilir/güncellenir"
   },
   "kirmizi_serit": [
-    {"konu": "GitHub PAT süresi doldu", "etki": "misara-app + tradia-beykoz push bekliyor", "kim": "Patron"},
-    {"konu": "misara-arsiv PRIVATE repo yok", "etki": "Standing #37 arşiv boşa", "kim": "Patron"},
-    {"konu": "CC-Site S10 deploy 90+ gün", "etki": "Site katmanı ayakta değil", "kim": "Site + Patron"},
-    {"konu": "Kural 13 (384/299) kilit 90+ gün", "etki": "🔒 karar-kilitli", "kim": "Patron"}
+    {
+      "konu": "Sahibinden 30K LİSTE ekranı (detay yok)",
+      "etki": "70 il beslemesi kalitesi bozuk · mahalle+ilan-no eksik",
+      "kim": "CC-Analiz + CC-Arşiv"
+    },
+    {
+      "konu": "GitHub PAT süresi doldu",
+      "etki": "misara-app + tradia-beykoz push bekliyor",
+      "kim": "Patron"
+    },
+    {
+      "konu": "misara-arsiv PRIVATE repo yok",
+      "etki": "Standing #37 arşiv boşa",
+      "kim": "Patron"
+    },
+    {
+      "konu": "CC-Site S10 deploy 90+ gün",
+      "etki": "Site katmanı ayakta değil",
+      "kim": "Site + Patron"
+    },
+    {
+      "konu": "Kural 13 (384/299) kilit 90+ gün",
+      "etki": "🔒 karar-kilitli",
+      "kim": "Patron"
+    }
   ],
   "hedef": {
-    "il": {"hedef": 81, "mevcut": 2, "not": "Bursa + Çanakkale kapandı (T-14)"},
-    "ilce_pilot": {"hedef": 973, "mevcut": 2, "not": "Kartal + Beykoz aktif pilot"},
-    "havuz_sorgu01": {"hedef_metin": "milyonlar", "son_olcum": 990737, "son_olcum_tarih": "2026-08-01", "not": "26 gün eski"}
+    "il": {
+      "hedef": 81,
+      "mevcut": 2,
+      "not": "Bursa + Çanakkale kapandı (T-14)"
+    },
+    "ilce_pilot": {
+      "hedef": 973,
+      "mevcut": 2,
+      "not": "Kartal + Beykoz aktif pilot"
+    },
+    "havuz_sorgu01": {
+      "hedef_metin": "milyonlar",
+      "son_olcum": 990737,
+      "son_olcum_tarih": "2026-08-01",
+      "not": "26 gün eski"
+    }
   },
   "cc_seridi": [
-    {"cc": "Hafıza", "sprint": "S51", "durum": "🟢", "sessizlik_gun": 26},
-    {"cc": "Vezir", "sprint": "BE-01+MU-01", "durum": "🟢", "sessizlik_gun": 0},
-    {"cc": "Basın", "sprint": "S99+", "durum": "🟢", "sessizlik_gun": 26},
-    {"cc": "Analiz", "sprint": "S57", "durum": "🟡", "sessizlik_gun": 27},
-    {"cc": "Tic", "sprint": "T130+", "durum": "🟢", "sessizlik_gun": 27},
-    {"cc": "Borsa", "sprint": "S37 EVDS", "durum": "🟡", "sessizlik_gun": 27},
-    {"cc": "Sosyal", "sprint": "S195+", "durum": "🟢", "sessizlik_gun": 27},
-    {"cc": "İhale", "sprint": "İ58", "durum": "🔴", "sessizlik_gun": 31},
-    {"cc": "TT-MAP", "sprint": "MAP37", "durum": "🟢", "sessizlik_gun": 27},
-    {"cc": "TT-AI", "sprint": "TTA100", "durum": "🔴", "sessizlik_gun": 31},
-    {"cc": "TT-Pazarlama", "sprint": "kurulum", "durum": "🟡", "sessizlik_gun": 27},
-    {"cc": "Kitap", "sprint": "K8", "durum": "🔴", "sessizlik_gun": 46},
-    {"cc": "Kasa", "sprint": "S20", "durum": "🔴", "sessizlik_gun": 45},
-    {"cc": "Site", "sprint": "S10", "durum": "🔴", "sessizlik_gun": 90},
-    {"cc": "Signals", "sprint": "SIG12", "durum": "🔴", "sessizlik_gun": 31},
-    {"cc": "Finans", "sprint": "F8+", "durum": "🟡", "sessizlik_gun": 27},
-    {"cc": "ARŞİV", "sprint": "ARS-1", "durum": "🟢", "sessizlik_gun": 0}
+    {
+      "cc": "Hafıza",
+      "sprint": "S51",
+      "durum": "🟢",
+      "sessizlik_gun": 26
+    },
+    {
+      "cc": "Vezir",
+      "sprint": "BE-01+MU-01",
+      "durum": "🟢",
+      "sessizlik_gun": 0
+    },
+    {
+      "cc": "Basın",
+      "sprint": "S99+",
+      "durum": "🟢",
+      "sessizlik_gun": 26
+    },
+    {
+      "cc": "Analiz",
+      "sprint": "S57",
+      "durum": "🟡",
+      "sessizlik_gun": 27
+    },
+    {
+      "cc": "Tic",
+      "sprint": "T130+",
+      "durum": "🟢",
+      "sessizlik_gun": 27
+    },
+    {
+      "cc": "Borsa",
+      "sprint": "S37 EVDS",
+      "durum": "🟡",
+      "sessizlik_gun": 27
+    },
+    {
+      "cc": "Sosyal",
+      "sprint": "S195+",
+      "durum": "🟢",
+      "sessizlik_gun": 27
+    },
+    {
+      "cc": "İhale",
+      "sprint": "İ58",
+      "durum": "🔴",
+      "sessizlik_gun": 31
+    },
+    {
+      "cc": "TT-MAP",
+      "sprint": "MAP37",
+      "durum": "🟢",
+      "sessizlik_gun": 27
+    },
+    {
+      "cc": "TT-AI",
+      "sprint": "TTA100",
+      "durum": "🔴",
+      "sessizlik_gun": 31
+    },
+    {
+      "cc": "TT-Pazarlama",
+      "sprint": "kurulum",
+      "durum": "🟡",
+      "sessizlik_gun": 27
+    },
+    {
+      "cc": "Kitap",
+      "sprint": "K8",
+      "durum": "🔴",
+      "sessizlik_gun": 46
+    },
+    {
+      "cc": "Kasa",
+      "sprint": "S20",
+      "durum": "🔴",
+      "sessizlik_gun": 45
+    },
+    {
+      "cc": "Site",
+      "sprint": "S10",
+      "durum": "🔴",
+      "sessizlik_gun": 90
+    },
+    {
+      "cc": "Signals",
+      "sprint": "SIG12",
+      "durum": "🔴",
+      "sessizlik_gun": 31
+    },
+    {
+      "cc": "Finans",
+      "sprint": "F8+",
+      "durum": "🟡",
+      "sessizlik_gun": 27
+    },
+    {
+      "cc": "ARŞİV",
+      "sprint": "ARS-1",
+      "durum": "🟢",
+      "sessizlik_gun": 0
+    }
   ],
   "patron_gorev": {
     "baslik": "Patron Görev Kartı (aktif · üstten sırasıyla)",
     "gorevler": [
-      {"sira": 1, "gorev": "gh auth login (PAT yenile)", "etki": "3 commit push bekliyor: f9183cc + fdd23e1 + eb3a2ca + MU-01"},
-      {"sira": 2, "gorev": "gh repo create e-misara/misara-arsiv --private", "etki": "Standing #37 arşiv script çalıştırılabilir"},
-      {"sira": 3, "gorev": "MISARA.command çift-tıkla → tarayıcıda kontrol", "etki": "MU-01 v1 lokal test"},
-      {"sira": 4, "gorev": "Hafıza S43 raporu (46 gün gecikti)", "etki": "9 kanonizasyon + 2 PROMOTE + Standing #17 revizyonu bağlı"},
-      {"sira": 5, "gorev": "Kural 13 karar (384/299)", "etki": "90+ gün kilitli"},
-      {"sira": 6, "gorev": "CC-Site S10 deploy kararı", "etki": "90+ gün açık borç"}
-    ]
+      {
+        "sira": 0,
+        "gorev": "🔴 Sahibinden besleme YÖNTEMİ DÜZELTMESİ",
+        "etki": "30K ekran hepsi LİSTE sayfası (ilan detayı değil) — mahalle+ilan-no yok. Bundan sonra DETAY sayfası kaydedilecek. Tek satır, 70 il beslemesi kalitesini değiştirir.",
+        "kaynak": "CC-ARŞİV bulgusu · 2026-08-27",
+        "cc": "CC-Analiz + CC-Arşiv koordinasyon"
+      },
+      {
+        "sira": 1,
+        "gorev": "gh auth login (PAT yenile)",
+        "etki": "3 commit push bekliyor: f9183cc + fdd23e1 + eb3a2ca + MU-01"
+      },
+      {
+        "sira": 2,
+        "gorev": "gh repo create e-misara/misara-arsiv --private",
+        "etki": "Standing #37 arşiv script çalıştırılabilir"
+      },
+      {
+        "sira": 3,
+        "gorev": "MISARA.command çift-tıkla → tarayıcıda kontrol",
+        "etki": "MU-01 v1 lokal test"
+      },
+      {
+        "sira": 4,
+        "gorev": "Hafıza S43 raporu (46 gün gecikti)",
+        "etki": "9 kanonizasyon + 2 PROMOTE + Standing #17 revizyonu bağlı"
+      },
+      {
+        "sira": 5,
+        "gorev": "Kural 13 karar (384/299)",
+        "etki": "90+ gün kilitli"
+      },
+      {
+        "sira": 6,
+        "gorev": "CC-Site S10 deploy kararı",
+        "etki": "90+ gün açık borç"
+      }
+    ],
+    "not_43": "Standing #43 · 2026-08-27 · CC-Arşiv Sahibinden besleme bulgusu EN ÜST"
   },
-  "son_yazim": "2026-08-27T13:45:00"
+  "son_yazim": "2026-08-27T14:20:00"
 }

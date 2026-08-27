@@ -10,6 +10,13 @@
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
       {
+        "konu": "Sahibinden 30K LİSTE ekranı (detay değil)",
+        "etki": "70 il beslemesi bozuk · mahalle+ilan-no yok · besleme yöntemi DETAY sayfası olmalı",
+        "kim": "CC-Analiz + CC-Arşiv",
+        "cozum": "Detay sayfası kaydetme akışına geç",
+        "not_43": "2026-08-27 CC-Arşiv bulgusu · EN ÜST"
+      },
+      {
         "konu": "GitHub PAT süresi doldu",
         "etki": "tradia-beykoz push bekliyor (f9183cc)",
         "kim": "Patron",
@@ -370,6 +377,7 @@
       }
     ],
     "aktif_bugun": [
+      "🔴 Sahibinden: LİSTE değil DETAY sayfası kaydet (CC-Arşiv bulgusu)",
       "misara-arsiv PRIVATE repo aç",
       "GitHub PAT yenile",
       "Standing #37/#38 kanona geçir"
@@ -570,5 +578,6 @@
       "CC-Site diriliş şartı 3 adımlı çerçeve",
       "kapsam_boslugu alanı: 5 bilinen boşluk + sayılar"
     ]
-  }
+  },
+  "ek_43_ars_bulgu": "Sahibinden besleme yöntemi düzeltmesi · CC-Arşiv 2026-08-27"
 }
