@@ -63,3 +63,14 @@ arsiv/tam/
 
 # Pano HTML whitelist (BE-01 · vanilla JS statik pano)
 !pano/*.html
+
+
+# MISARA MU-01 whitelist (Standing #41 · yerel masaüstü uygulaması)
+!misara-app/*.html
+!misara-app/*.css
+!misara-app/*.js
+!misara-app/*.py
+!misara-app/*.plist
+!misara-app/*.command
+!misara-app/veri/*.json
+!misara-app/**/*.md

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- MISARA MU-01 · 3-günlük tarama döngüsü
+       Yol: ~/Library/LaunchAgents/com.misara.uc_gunluk_tarama.plist
+       Kurulum: launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.misara.uc_gunluk_tarama.plist
+       Kaldırma: launchctl bootout gui/$(id -u)/com.misara.uc_gunluk_tarama -->
+
+  <key>Label</key>
+  <string>com.misara.uc_gunluk_tarama</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/GAC-A/tradia-beykoz/misara-app/tarama_dongusu.py</string>
+  </array>
+
+  <!-- 3 günde bir (72 saat = 259200 saniye) -->
+  <key>StartInterval</key>
+  <integer>259200</integer>
+
+  <!-- macOS uykuda kaçırılan tetiği düş, dönünce çalıştır -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/GAC-A/tradia-beykoz/misara-app/veri/tarama_stdout.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/GAC-A/tradia-beykoz/misara-app/veri/tarama_stderr.log</string>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/GAC-A/tradia-beykoz/misara-app</string>
+
+  <!-- Standing #38 uygulaması: model değil, terminal -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>MISARA_MODE</key>
+    <string>otonom_tarama</string>
+  </dict>
+</dict>
+</plist>

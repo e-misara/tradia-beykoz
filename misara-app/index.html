@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200, initial-scale=1">
+<title>MISARA · MU-01</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ÜST: Kırılım çubuğu + "şimdi tara" -->
+<header id="ust">
+  <div class="brand">◆ MISARA</div>
+  <nav id="kirilim" aria-label="Coğrafya kırılımı">
+    <span class="krl-item" data-dur="turkiye">Türkiye</span>
+    <span class="krl-sep">›</span>
+    <span id="krl-il" class="krl-item krl-bos">il</span>
+    <span class="krl-sep">›</span>
+    <span id="krl-ilce" class="krl-item krl-bos">ilçe</span>
+    <span class="krl-sep">›</span>
+    <span id="krl-mahalle" class="krl-item krl-bos">mahalle</span>
+  </nav>
+  <button id="btn-simdi-tara" title="3-günlük döngüyü elle tetikle">
+    ▸ ŞİMDİ TARA
+  </button>
+  <div class="meta" id="meta-metin">yükleniyor…</div>
+</header>
+
+<!-- ORTA: SOL harita / SAĞ kart -->
+<main>
+  <section id="sol-harita" aria-label="Harita">
+    <div class="panel-t">HARİTA (poligon yok — düğüm-liste)</div>
+    <div id="harita-icerik">
+      <div id="il-liste"></div>
+      <div id="ilce-liste" class="gizli"></div>
+      <div id="mahalle-liste" class="gizli"></div>
+    </div>
+  </section>
+
+  <section id="sag-kart" aria-label="Seçili düğüm kartı">
+    <div class="panel-t">SEÇİLİ DÜĞÜM</div>
+    <div id="kart-icerik">
+      <div class="secim-bos">Bir düğüm seç (il / ilçe / mahalle).</div>
+    </div>
+  </section>
+</main>
+
+<!-- ALT: CC şeridi + Patron görev kartı -->
+<footer>
+  <section id="cc-serit" aria-label="CC şeridi">
+    <div class="panel-t">CC ŞERİDİ · Hedefe mesafe: <span id="hedef-mesafe">—</span></div>
+    <div id="cc-serit-icerik"></div>
+  </section>
+
+  <section id="patron-gorev" aria-label="Patron görev kartı">
+    <div class="panel-t">PATRON · GÖREV KARTI</div>
+    <div id="patron-icerik"></div>
+  </section>
+</footer>
+
+<div id="bildirim"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

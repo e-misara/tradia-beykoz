@@ -1,0 +1,90 @@
+{
+  "_meta": {
+    "surum": "MU-01 · v1",
+    "guncelleme": "2026-08-27",
+    "pilot": "Kartal (dolu) — kalan 80 il iskelet",
+    "kaynak": "Vezir BE-01 + Beykoz vaka kaynakları · $0 · AI çağrısı YOK",
+    "kural": "Kartal çalışmadan 81 ile açılmaz."
+  },
+  "turkiye": {
+    "hedef_il": 81,
+    "hedef_ilce": 973,
+    "iller": {
+      "istanbul": {
+        "ad": "İstanbul",
+        "ilce_sayisi": 39,
+        "aktif_pilot": ["kartal", "beykoz"],
+        "durum": "PİLOT",
+        "ilceler": {
+          "kartal": {
+            "ad": "Kartal",
+            "mahalle_sayisi": 20,
+            "durum": "DOLU_PILOT",
+            "a_ozet_var": true,
+            "b_ozet_var": true,
+            "mahalleler": {
+              "cevizli": {"ad": "Cevizli", "durum": "TASLAK", "a_var": true, "b_var": false},
+              "orta": {"ad": "Orta", "durum": "TASLAK", "a_var": true, "b_var": false},
+              "hurriyet": {"ad": "Hürriyet", "durum": "TASLAK", "a_var": true, "b_var": false},
+              "esentepe": {"ad": "Esentepe", "durum": "TASLAK", "a_var": true, "b_var": false},
+              "petroliş": {"ad": "Petrol-İş", "durum": "TASLAK", "a_var": true, "b_var": false}
+            }
+          },
+          "beykoz": {
+            "ad": "Beykoz",
+            "mahalle_sayisi": 45,
+            "durum": "DOLU_KAPANDI",
+            "a_ozet_var": true,
+            "b_ozet_var": true,
+            "not": "Beykoz TAM kapanış vakası — beykoz_vaka/ altında 119 dosya",
+            "mahalleler": {
+              "riva": {"ad": "Riva", "durum": "TAM", "a_var": true, "b_var": true},
+              "cubuklu": {"ad": "Çubuklu", "durum": "TAM", "a_var": true, "b_var": true},
+              "incirkoy": {"ad": "İncirköy", "durum": "TAM", "a_var": true, "b_var": true},
+              "tokatkoy": {"ad": "Tokatköy", "durum": "TAM", "a_var": true, "b_var": true},
+              "elmali": {"ad": "Elmalı", "durum": "TAM", "a_var": true, "b_var": true},
+              "kavacik": {"ad": "Kavacık", "durum": "TAM", "a_var": true, "b_var": true},
+              "pasabahce": {"ad": "Paşabahçe", "durum": "TAM", "a_var": true, "b_var": true},
+              "anadolu_hisari": {"ad": "Anadolu Hisarı", "durum": "TAM", "a_var": true, "b_var": true}
+            }
+          }
+        }
+      },
+      "ankara": {"ad": "Ankara", "ilce_sayisi": 25, "durum": "ISKELET", "aktif_pilot": [], "ilceler": {}},
+      "izmir": {"ad": "İzmir", "ilce_sayisi": 30, "durum": "ISKELET", "aktif_pilot": [], "ilceler": {}},
+      "bursa": {"ad": "Bursa", "ilce_sayisi": 17, "durum": "TAM_LAUNCH", "not": "%88.1 kapandı (T-14)", "aktif_pilot": [], "ilceler": {}},
+      "canakkale": {"ad": "Çanakkale", "ilce_sayisi": 12, "durum": "TAM_LAUNCH", "not": "%85.8 kapandı (T-14)", "aktif_pilot": [], "ilceler": {}},
+      "konya": {"ad": "Konya", "ilce_sayisi": 31, "durum": "ISKELET", "aktif_pilot": [], "ilceler": {}}
+    }
+  },
+  "pilot_kartal": {
+    "durum": "GELIŞTIRMEDE",
+    "a_ozet": {
+      "baslik": "Kartal · Ana Görünüm (A katmanı)",
+      "kisa": "İstanbul Anadolu yakası güney sahili, D-100 aksı üzerinde, sanayi-konut karışık ilçe.",
+      "rakamlar": {
+        "mahalle_sayisi": 20,
+        "nufus_tahmin": 470000,
+        "yuzolcumu_km2": 38.5,
+        "kaynak_dosya": "veri/kaynaklar.json#kartal_temel"
+      },
+      "olcum_tarihi": "2026-08-27"
+    },
+    "b_ozet": {
+      "baslik": "Kartal · Derin Görünüm (B katmanı)",
+      "kisa": "D-100 hattı üzerinde 3 alt-bölge: Cevizli-Yakacık (konut yoğun), Orta-Hürriyet (ticari-lojistik), Esentepe-Petrol-İş (eski sanayi dönüşüm).",
+      "gozlem": [
+        "Marmaray güney bacağı Kartal-Pendik hattı 2023-2026 arası 3 istasyon güncelleme",
+        "TEKEL eski üretim sahası Petrol-İş bölgesinde 2020'lerin sonu dönüşüm konusu",
+        "Anadolu yakası güney kıyı-şeridi imar planı 2018 revizyonundan sonra durgun"
+      ],
+      "kaynak_dosya": "veri/kaynaklar.json#kartal_derin",
+      "son_yazim_tarihi": "2026-08-27"
+    }
+  },
+  "kaynaklar": {
+    "beykoz_ansiklopedi": "beykoz_vaka/beykoz_ansiklopedi/ (45 mahalle)",
+    "beykoz_master": "beykoz_vaka/beykoz_master.md (SIG12, 790 satır)",
+    "pano_kanonik": "pano/ozet-w35.json"
+  }
+}
