@@ -57,7 +57,53 @@ git push origin main
 
 ---
 
-## Standing İlişkisi
+## Kural 4 · 404 iki ihtimalli, kök ile ayırt et (Pages teşhisi)
+
+> **Yeni bir URL'de 404 görürsen:**
+> **(a) Pages kapalı**, yoksa **(b) Pages açık ama o YOL yok / build gecikmiş.**
+> Ayırt etme yöntemi: **kök adresi dene.**
+> Kök 200 dönüyorsa Pages açıktır, sorun yoldadır.
+> **Patron'a Settings ayar işi çıkarmadan önce bunu kontrol et.**
+
+**Neden:** 2026-08-27 · Vezir `https://e-misara.github.io/tradia-beykoz/pano/…` 404 gördü, "Pages kapalı → Patron aktivasyon gerekli" teşhis koydu. Yanlış. Patron kök URL denedi, `https://e-misara.github.io/misara-vezir/` **açık ve canlıydı** (site "live at" bir aylık deploy). Sorun tradia-beykoz'da hiç Pages olmamasıydı, ama Patron'un çözmesi gereken bir şey değildi — pano zaten misara-vezir'de yaşıyordu.
+
+**Doğru akış (404 gördüğünde):**
+```bash
+# Adım 1: aynı repo, kök URL
+curl -sI https://<user>.github.io/<repo>/ | head -1
+
+# 200 gelirse → Pages açık, sadece YOL yanlış
+# 404 gelirse → gerçekten Pages kapalı (veya repo tanınmıyor)
+```
+
+**Emsal:** Bu turda misara-vezir kökü 200 · `/vezir/ozet-w35.json` 200 (yeni push sonrası). Sorun yoktu, teşhis hatalıydı.
+
+---
+
+## Kural 5 · Pano iki yerde durur, tek komutla yayınlanır (Standing #45)
+
+> **`pano_yayinla.sh` tek komutu:** kopyala + iki-repo push + jsDelivr purge + üç kanal doğrulama.
+> **Elle senkron YASAK.** Bir turda unutulan bir adım = pano tutarsızlığı.
+
+**Neden:** Pano tradia-beykoz'da geliştirilir, misara-vezir'de yayınlanır. Elle iki repoyu senkronlamak = insan hatası potansiyeli. Script bu riski öldürür + üç kanaldaki hash'i karşılaştırır (aynı mı diye).
+
+**Konum:** `scripts/pano_yayinla.sh`
+
+**Kullanım:**
+```bash
+bash ~/tradia-beykoz/scripts/pano_yayinla.sh "ozet-w35 güncelleme mesajı"
+```
+
+**Adımlar (script içi):**
+1. Kopyala: `tradia-beykoz/pano/{ozet-w35.json,index.html}` → `misara-vezir/vezir/`
+2. Fetch URL'lerini otomatik ayarla (misara-vezir'in kendi kanalları)
+3. Commit + push (her iki repo)
+4. jsDelivr purge (Cloudflare + Fastly)
+5. Üç kanal fetch → hash karşılaştırma (5 deneme, 15 sn ara)
+6. Rapor: 🟢 aynı hash / 🔴 tutarsız
+
+---
+
 
 - **Standing #35** (iş-başı fetch) — bu kanonun ön koşulu
 - **Standing #36** (commit-öncesi fetch) — bu kanonun paralel-yazar koruması

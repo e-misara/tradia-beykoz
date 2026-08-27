@@ -74,3 +74,10 @@ arsiv/tam/
 !misara-app/*.command
 !misara-app/veri/*.json
 !misara-app/**/*.md
+
+# Ş3 · Ham veri tradia-beykoz PUBLIC repo'ya asla girmez (Standing #37/E)
+*.jsonl
+arsiv/tam/ham/
+
+# pano yayın scripti (Standing #45 Vezir kanonu)
+!scripts/*.sh
