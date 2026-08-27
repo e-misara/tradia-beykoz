@@ -105,5 +105,14 @@
     "ai_cagrisi": 0,
     "vision_cagrisi": 0,
     "usd": 0
+  },
+  "commit_carpismasi": {
+    "ne_oldu": "CC-ARSIV commit'ini yazarken baska bir CC oturumu es zamanli 'git commit -a' calistirdi ve ARS-01 isini kendi commit'ine yuttu.",
+    "yutan_commit": "d3f9873",
+    "yutan_mesaj": "arsiv: Standing #37/E S1+S2 uygulamasi (regex guclendirme)",
+    "sonuc": "Icerik SAGLAM ve dogrulandi (28/28 gorsel, 67 link tarandi, 0 kirik, calisma agaci HEAD ile tam uyum). Kaybolan sey yalnizca ARS-01 commit MESAJI.",
+    "neden_duzeltilmedi": "d3f9873 origin/main'e PUSH EDILMIS (public repo). Standing #35/#36 geregi gecmis yeniden yazilmaz; ayrica commit baska CC'nin dosyalarini da (arsiv_cek.py, redaksiyon_testi.py) tasiyor.",
+    "ders_adayi": "Ayni repoda es zamanli calisan iki CC 'git commit -a' / 'git add -A' kullanmamali; her CC yalnizca kendi dosya listesini stage etmeli. Aksi halde commit mesaji ile icerik ayrisiyor ve arsiv izlenebilirligi kirilir. (Dizin kilidi kuralinin git-ici karsiligi.)",
+    "kayit_altina_alinan_ars01_mesaji": "ARS-01 · Gorsel adlandirma kanonu + 28 gorsel tasindi (CC-ARSIV) — duzeltilen: bey15-torunlar-TORUNLAR cift yazim (2 dosya), cubuklu-grafik tur-tekrari, 35 link etiketi, 13 duz-metin dizin referansi. Kirik link: devir 4 dedi, gercek 2 idi, sebep 'cikti/' oneki ve rename ONCESI de kirikti. karo-v2 karari: MAP36 'KESKINLESTIRME v2' + ayni tarih -> sonek kullanildi. Uretilen: gorseller/MANIFEST.md, kanon/gorsel_adlandirma_v1.md, bu rapor."
   }
 }
