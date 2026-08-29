@@ -310,7 +310,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 12,
+    "toplam": 13,
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -318,6 +318,13 @@
         "verildi": "2026-07-12 (S43)",
         "gecikti_gun": 46,
         "gecerli": "AKTİF · EN ÜST (BE-01/H5)"
+      },
+      {
+        "vaat": "✅ Yusuf Kaya SON.html teslim",
+        "kim": "Patron",
+        "verildi": "2026-08 (yatırımcı hattı)",
+        "gecikti_gun": 0,
+        "gecerli": "TESLİM EDİLDİ 2026-08-27 · yanıt bekleniyor"
       },
       {
         "vaat": "B125 cron (Basın)",
@@ -579,5 +586,15 @@
       "kapsam_boslugu alanı: 5 bilinen boşluk + sayılar"
     ]
   },
-  "ek_43_ars_bulgu": "Sahibinden besleme yöntemi düzeltmesi · CC-Arşiv 2026-08-27"
+  "ek_43_ars_bulgu": "Sahibinden besleme yöntemi düzeltmesi · CC-Arşiv 2026-08-27",
+  "ka_01_uygulama": {
+    "tarih": "2026-08-27",
+    "cikti": [
+      "kanon/KONUSMA_ENVANTERI.md (tam envanter + hakem karar)",
+      "konusmalar/SABLON_GENIS_OZET.md (kanon şablon)",
+      "27v24 hakem: 24 konuşma-tekili · 30 dosya-toplam · 16 public",
+      "Eksik listesi: 5 Öncelik-1 (T-13/14 geniş · yatırımcı 05-26 · Beykoz kapanış · T-17 kapanış)"
+    ],
+    "vaat_takip_ek": "Yusuf Kaya SON.html teslim (Patron 2026-08-27)"
+  }
 }
