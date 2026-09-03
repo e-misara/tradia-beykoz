@@ -1,0 +1,62 @@
+{
+ "kimden": "TT-ARSIV",
+ "kime": "CC-HAFIZA",
+ "sprint": "ARS-01/IS-2",
+ "olcum_tarihi": "2026-08-27",
+ "rapor_uretim_tarihi": "2026-09-03",
+ "konu": "Disk gorsel envanteri + sahibinden il/ilce besleme kapsami",
+ "maliyet_usd": 0,
+ "ai_cagrisi": 0,
+ "olcum": {
+  "ham_dosya": 134726,
+  "appledouble_ayiklanan": 67834,
+  "gercek_gorsel": 66892,
+  "tekil_gorsel": 46305,
+  "ocr_yapilan": 30256,
+  "sahibinden_ekran": 28055,
+  "kapsanan_il": 31,
+  "kapsanan_il_ilce": 341,
+  "il_bilgisi_olan_gorsel_yuzde": 91.6
+ },
+ "kritik_bulgular": [
+  {
+   "baslik": "Arsiv %100 LISTE sayfasi, detay sayfasi SIFIR",
+   "olcum": "28055 sahibinden ekraninin 28049'i liste, 6'i detay",
+   "sonuc": "Bu arsiv IL/ILCE duzeyinde kaynaktir, ILAN duzeyinde degil. Mahalle-anahtarli urune (Analiz mahalle v9, TT-MAP mahalle_id) baglanamaz."
+  },
+  {
+   "baslik": "ilan_no CIKARILAMAZ",
+   "olcum": "tam-sayfa orneklem n=107, 9-10 haneli no cikan 1 (0.9%)",
+   "sonuc": "Liste sayfasinda ilan no HTML'de var, EKRANDA yok. Ekran goruntusu yanlis tasiyici."
+  },
+  {
+   "baslik": "mahalle KISMI ve BOZUK",
+   "olcum": "gecerli sayfalarin 55.1%'inde en az 1 mahalle bahsi, sayfa basina ort 2.2",
+   "sonuc": "Tokenlar parcali (Yesilyurt Mh -> yurt) ve OCR bozuk (ecentene/venicehir). KULLANILAMAZ."
+  },
+  {
+   "baslik": "10.8% hata sayfasi arsivde duruyor",
+   "olcum": "orneklem n=120, 'Aradiginiz sayfaya ulasilamadi' 13",
+   "sonuc": "Hasat basarisi oldugundan YUKSEK gorunuyor. Tamami kiralik-konut/istanbul-* partisinden."
+  },
+  {
+   "baslik": "AppleDouble kirliligi %%50.3",
+   "olcum": "134726 dosyanin 67834'i ._ kaynak-catal artigi",
+   "sonuc": "exFAT'e kopyalanan her arsivde var. Ayiklanmadan yapilan gorsel sayimi 2x sisik."
+  },
+  {
+   "baslik": "iCloud Masaustu senkronu KOTA HATASIYLA TAKILI",
+   "olcum": "brctl status -> CKErrorDomain:25, dosyalar needs-upload/<file-pending>; Mac diskinde 26 GiB kaldi; ~/Desktop soguk okuma 0.20 MB/s (TT-HAFIZA 24.4 MB/s = 122x)",
+   "sonuc": "PATRON AKSIYONU. Sadece taramayi degil Masaustu YEDEGINI de durduruyor."
+  }
+ ],
+ "kural_adaylari": [
+  "OCR gerektiren arsiv isi ONCE yerel Apple Vision ile denenir; LLM-vision son care. (Bu is 30K gorselde $0 bitti.)",
+  "Gorsel envanteri once ._ AppleDouble ayiklar, sonra sayar.",
+  "8 GB RAM'de page-cache on-isitma ise yaramaz; bayti bellege alip bellekten OCR'la (olculen fark 45x).",
+  "Ekran goruntusu ilan-duzeyi veri icin yanlis tasiyici; sayfa kaynagi alinmali."
+ ],
+ "dagilim_tablosu": "arsiv_disk/dagilim_tablosu.json",
+ "rapor": "arsiv_disk/DAGILIM_RAPORU.md",
+ "disk_rename": "YAPILMADI"
+}
