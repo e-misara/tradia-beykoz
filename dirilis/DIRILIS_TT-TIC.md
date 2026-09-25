@@ -1,5 +1,8 @@
 # DİRİLİŞ · TT-TIC
 
+> 🟢 **PATRON ÖNE ALDI · 2026-09-26 (bir gün sonra):** TT-Tic dirilişi öne alındı. Hat AKTİF · **PARSEL-01 · RİZE Vakası dosya sahibi** (Beykoz vaka emsali). **17 B2B mail tetiği PARKTA** — dirilişten bağımsız, ayrı Patron kararı bekliyor. Bu paket **kısmen geride kaldı** (Kimlik + OKU listesi geçerli, Son durum + Borçlar güncellendi).
+
+
 **Tarih:** 2026-09-25
 **Kanal:** Vezir · DO-02 · $0
 **Statü:** OTURUM ÖLÜ — yeni oturum gerekir
