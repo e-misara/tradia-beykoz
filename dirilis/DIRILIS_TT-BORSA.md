@@ -1,5 +1,7 @@
 # DİRİLİŞ · TT-BORSA
 
+> ⚠ **GERİDE KALDI · 2026-09-25 (aynı gün):** TT-Borsa hattı **kendi kendine dirildi** — S34 Sabah Radarı TAMAMLANDI (yön skoru + şeffaf bileşen + SINYAL≠TAVSİYE). Bu diriliş paketi artık **referans-arşiv** (SİLME-YOK). Aktif takip **kendi konuşmasında** yürüyor (S35 haber-öncesi anomali → S36 düşüş riski → intraday+dashboard). Vaat-takip artık pano/ozet-w35.json üzerinden izleniyor.
+
 **Tarih:** 2026-09-25
 **Kanal:** Vezir · DO-01 Öncelik A · $0
 **Amaç:** TT-Borsa yeniden açıldığında ilk 5 dakikada tam bağlam alsın.
