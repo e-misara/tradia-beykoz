@@ -40,6 +40,10 @@ ORNEK = [
     ("12. IBAN TR",     "IBAN: TR330006100519786457841326",  "TR33"),
     # D1 · Claude Code proje-yolu tire-ayraçlı slug
     ("13. Tire slug path", "log: ~/.claude/projects/-Users-GAC-A/oturum.jsonl", "-Users-GAC-A"),
+    # E2 · TCMB EVDS API anahtarı (Patron settings.json'da düz metin)
+    ("14. EVDS anahtar", "https://evds2.tcmb.gov.tr/service/evds/series/data?series=X&key=93lLgxqTVB", "93lLgxqTVB"),
+    # E2 · Genel URL query anahtar deseni
+    ("15. URL query key", "https://api.example.com/data?apikey=Abc12345XYZabc987", "Abc12345XYZabc987"),
 ]
 
 def testet():
