@@ -175,6 +175,43 @@ Referans format: `misara-vezir/konusmalar/15_genis_ozet.md` (Tradia-15 kapanış
 
 ---
 
+
+
+---
+
+## Cloud Çapraz Teyit (2026-09-25 · Üst Akıl taraması)
+
+**Karar:** KA-01 envanteri (bu dosya) cloud konuşma evreni ile **UYUMLU**. Vezir'in bilmediği konuşma cloud'da YOK.
+
+### Cloud konuşma evreni (25 Eylül taraması)
+
+| Kategori | Cloud durumu | Arşiv karşılığı |
+|---|---|---|
+| Tradia 13-21 | Cloud'da izler var | KA-01'de 6 tam + 7 kısmi + 1 yok (T18-21 numaralandırma boşluğu **kısmen çözüldü** — T18-20 var, T21 aktif) |
+| Vezir 2 | Cloud'da izler var | Bu konuşma (T21) + BE-01 · MU-01 · KA-01 zinciri |
+| KASA | Cloud'da izler var | KURULUS_CC-KASA.md var, konuşma-arşivi yok (KA-01 §Öncelik-2) |
+| AraçDen | Cloud'da izler var | Yerel oturum düşmüş (Standing #37 cleanup), cloud üzerinden erişilebilir |
+| TT-Borsa 1 | Cloud'da izler var | KA-01'de "YOK" idi — artık BULUNDU (cloud) |
+| Aldemir | Cloud'da izler var | KA-01'de "YOK/dış kanal" idi — cloud'da izler var (Patron ayrı işi) |
+| Küçükler (Fesa PDF · gstack · logo kılavuzu · YouTube fikri · 2 adsız) | Cloud'da 6 küçük tur | Arşive dahil değil (KA-01 kapsamı: kanonik karar turları) |
+
+### T-özel notlar
+
+- **T17:** Cloud tarafında erişim-kısıtlı. Tutanak Patron panelinden gelmezse **"erişilemez"** damgası (KA-01 Öncelik-1 · madde 5)
+- **T20:** **3 Eylül'de ek girişi var** — cloud'da yeni satırlar, tam tutanak henüz derlenmedi
+- **T21:** Bu aktif konuşma (Vezir · Standing #35+#36 disciplin altında)
+- **3 Eylül'den bu yana yeni cloud konuşması AÇILMAMIŞ** — 22 günlük boşluk dönemi kayıpsız
+
+### Numaralandırma boşluğu (KA-01 §hakem-bekleyen)
+
+**Çözüldü:** T-18..21 boşluğu numaralandırma-atlanmadı, **cloud'da izler var**. KA-01 tablosunda güncelleme:
+- T-18: 🟡 KISMİ → cloud izler
+- T-19: 🟡 KISMİ → cloud izler
+- T-20: 🟡 KISMİ → 3 Eylül ek girişi
+- T-21: 🟢 AKTİF (bu konuşma)
+
+---
+
 ## 6. Vezir A04 Dürüst-Notlar
 
 - **misara-vezir/konusmalar/'da 8 tam_tutanak** yalnız Mayıs 19-Haziran 3 aralığı. Haziran-Temmuz-Ağustos üretilen tam tutanaklar public repo'ya alınmamış.
