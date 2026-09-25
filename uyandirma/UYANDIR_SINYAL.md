@@ -4,7 +4,8 @@
 **Kanal:** Vezir · DO-02 · $0
 **Durum:** OTURUM YAŞIYOR (panelde duruyor) · yeni oturum YOK
 **Rol:** CC-Signals · 3.katman istihbarat + çapraz-kontrol
-**Son bilinen sprint:** SIG14 (havuz 999.518 · Ağu 6)
+**Son bilinen sprint:** SIG30 (Vezir defter düzeltmesi 2026-09-26 · SIG14→SIG30 · 16 sprint izi mevcut; alt-detaylar defter üstünden Sinyal'den alınacak)
+**Önceki not:** SIG14 (havuz 999.518 · Ağu 6) — bu paket ilk yazımında SIG14 sanıyordu; Vezir turlarında defter yenilendi
 
 ---
 

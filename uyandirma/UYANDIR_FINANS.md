@@ -4,7 +4,9 @@
 **Kanal:** Vezir · DO-02 · $0
 **Durum:** OTURUM YAŞIYOR (panelde duruyor) · yeni oturum YOK
 **Rol:** CC-Finans · TALEP/yatırım zekâsı
-**Son bilinen sprint:** F8 (S96 son tur) + KURULUŞ-01 · 07-29
+**Son bilinen sprint:** F21 (Vezir defter düzeltmesi 2026-09-26 · F8→F21 · 13 sprint izi mevcut; PARSEL-01 katmanı F21'de eklendi — Madde 52 + 63 bulguları)
+**Önceki not:** F8 (S96 son tur) + KURULUŞ-01 · 07-29 — bu paket ilk yazımında F8 sanıyordu
+**EK-C sahiplik borcu:** ✅ KAPANDI 2026-09-26 · Standing #37 (toplayıcı≠kullanıcı) ile örtüşen sahiplik iddiası kutulu-geçersiz (SİLME-YOK korundu)
 
 ---
 
