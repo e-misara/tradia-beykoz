@@ -15,7 +15,7 @@ Parsel-düzeyi sayılan alanlar (public'te YASAK):
 - Parsel numarası
 - Koordinat (enlem/boylam, poligon köşeleri)
 - TKGM künye çıktısı (malik, hisse, edinim, dosya no)
-- Köşe sayısı / parsel geometrisi ölçütleri (128/7=21 gibi)
+- Köşe sayısı / parsel geometrisi ölçütleri (ada-N / parsel-M = köşe-K biçiminde belirli sayılar)
 
 Public repo'da yalnız **vaka-durum satırı** durur:
 - Vaka kodu (PARSEL-01)
@@ -50,5 +50,18 @@ Bu kanon **retro-etkilidir**: yürürlüğe girmeden önce public'e sızmış pa
 1. CC-Tic (veya vaka sahibi CC) → lokal `DOSYA.md` + kunye + SHA
 2. Pano'da yalnız vaka-durum satırı açılır
 3. Vezir E1-benzeri "künye yazımı" kritik-yol adımını izler, künye içeriğini public'e taşımaz
+
+## Ek not · Patron-mülk-sorgusu istisnası (2026-09-26)
+
+**Ayrım:** *"Misara hiçbir kuruma başvurmaz; açık kaynaktan ne varsa o alınır"* (Kitap projesi S3 R1, kuruma-başvuru-yasağı) kanonu **CC'leri bağlar**. Patron'un kendi mülkü hakkında yaptığı **saha teyidi** bu kanonun dışındadır:
+
+- WebTapu üzerinden Patron kendi tapu beyanlarını sorgulayabilir
+- Muhtar 1/2000 pafta danışması → Patron saha
+- İl Özel İdare İmar Müdürlüğü sorgusu → Patron saha
+- Gözle kontrol (örn. çay ocağı, fiili kullanım) → Patron saha
+
+**Neden istisna:** Kuruma-başvuru-yasağı üçüncü-taraf verisi işlemek üzerine kuruludur (CC'nin araştırma iznini sınırlar). Patron kendi mülkiyeti üzerinde sorgu yaptığında **veri sahibi** kendisidir; KVKK #31 v1.1 kendi verini işleme meşrusu.
+
+**Sonuç:** Vaka açılırken CC-katmanı **açık-kaynak** ile sınırlıdır (uydu/basın/RG/OSM/CKAN vs.); tapu-kadastro-imar teyidi **Patron-saha kalemi** olarak vaat-takibe girer, CC işi değildir.
 
 *Vezir · Standing #35+#36+#37+#38+#43 + KVKK #31 v1.1 · 2026-09-26*
