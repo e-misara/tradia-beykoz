@@ -1,6 +1,8 @@
 # KURULUŞ INDEX — Tüm CC Kuruluş Dosyaları
 
-> ✅ **Standing #37 GÜNCELLEME (2026-08-27):** Bu index KURULUŞ-01 (2026-07-29) tarihinde donduruldu. Standing #37 KALICILIK PROTOKOLÜ turunda üç eksik CC KURULUŞ dosyası üretildi: [KURULUS_CC-KITAP.md](KURULUS_CC-KITAP.md) · [KURULUS_CC-KASA.md](KURULUS_CC-KASA.md) · [KURULUS_TT-ARSIV.md](KURULUS_TT-ARSIV.md) (iskelet). **Önceki 'kasten dışarıda' notu iptal edildi** — Kitap hattı büyüyor (İbn Sînâ + Mısıroğlu arşivi TT-ARŞİV üzerinden gelecek). Kasa hâlâ Tradia-dışı ama envanterde. ARŞİV yeni CC olarak kurulmuş, iskelet KURULUŞ dosyası hazır. Detay: `arsiv/` klasörü + Vezir dağıtım tarihçesi.
+> ✅ **Standing #37 GÜNCELLEME (2026-08-27):** Bu index KURULUŞ-01 (2026-07-29) tarihinde donduruldu. Standing #37 KALICILIK PROTOKOLÜ turunda üç eksik CC KURULUŞ dosyası üretildi: [KURULUS_CC-KITAP.md](KURULUS_CC-KITAP.md) · [KURULUS_CC-KASA.md](KURULUS_CC-KASA.md) · [KURULUS_TT-ARSIV.md](KURULUS_TT-ARSIV.md). **Önceki 'kasten dışarıda' notu iptal edildi** — Kitap hattı büyüyor (İbn Sînâ + Mısıroğlu arşivi TT-ARŞİV üzerinden gelecek). Kasa hâlâ Tradia-dışı ama envanterde. Detay: `arsiv/` klasörü + Vezir dağıtım tarihçesi.
+
+> ✅ **TT-ARŞİV GÜNCELLEME (2026-09-03, ARS-04):** `KURULUS_TT-ARSIV.md` **iskeletten çıktı → tam sürüm**. 8 zorunlu başlık dolu; §4/§5/§6/§8 gerçek ölçümlerle yazıldı. Kuruluş günü metni silinmedi, değişen yerler *(iskelet: …)* şerhiyle korundu. Eklenen: üçüncü kol (görsel adlandırma · disk taraması, CC-Analiz'den devralındı) · 2 kanon (`gorsel_adlandirma_v1` · `arsiv_tarama_v1`) · 4 Standing adayı · **sprint numarası çakışması** kaydı (planlanan ARS-2…5 → ARS-P1…P4 olarak yeniden numaralandı, yapılan işin numaraları geçerli kaldı) · süreç ihlali kaydı. **§6 düzeltmesi:** iskelet "Beykoz'a doğrudan katkı YOK" diyordu; artık VAR — Beykoz'un 28 görselinin tamamı TT-ARŞİV tarafından adlandırıldı, taşındı, referansları onarıldı (kırık link 0).
 
 ---
 
