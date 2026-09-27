@@ -46,6 +46,7 @@ Standing #48'in tam metni Vezir'in elinde onaylı olarak **yok**. Patron İnşaa
 | R4 | 2026-09-26 | konum: "Rize / DEREPAZARI (`<parsel-veri redakte>`)" | konum: "Rize / DEREPAZARI (parsel-veri lokal · kanon: parsel_veri_kanonu_v1)" | Parsel-veri kanonu v1 retro-redaksiyon (emsal defteri Vaka #02); eski ham hâl git history'de kalır (SİLME-YOK), tablo public'te redakte |
 | R5 | 2026-09-26 | kritik yol: Arşiv (E1 künye) | kritik yol: TT-MAP (MAP42) | E1 zinciri tamam sonrası kritik-yol devri |
 | R6 | 2026-09-26 | vaka-durum: "7/8 katman, kilit E3+çay, Patron saha bekleniyor" | vaka-durum: "8/8 katman, kilit E3, çay teyitli" | Tic C10-C12 teslim (2018/97) + Patron saha beyan (çay fiilen var) |
+| R7 | 2026-09-27 | vaka-durum: "8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor" | vaka-durum: "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de" | DEVIR_INSAAT_KONUSMASI.md teslim (7 bölüm · 4 etiket · dış-devir ilk ürünü) + Basın 7/7 + dere hüküm + eğim düzeltme (proxy → kesin) |
 
 ## 5. Bekleyen iş
 
