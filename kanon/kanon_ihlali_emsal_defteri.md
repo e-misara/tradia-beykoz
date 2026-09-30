@@ -43,6 +43,37 @@
 
 ---
 
+## Vaka #03 — PARSEL-01 · Üç-katman doğrulama zinciri (örnek vaka)
+
+- **Tarih:** 2026-09-30
+- **CC:** CC-Tic (birleştirici) + CC-Finans (mevzuat) + CC-İhale (plan hükmü)
+- **Bulgu:** "15.000 m² alan üzerinde konaklama yapılabilir" söylemi araştırıldığında **üç-katman doğrulama zinciri** kanıtlandı:
+  1. **Söylem katmanı:** Sahada dolaşan iddia
+  2. **Emsal katmanı:** ÇDP 6.9.7.4 (ekoturizm) — 15.000 m² eşiği bulundu → E7 (bu vakadaki eşik-borcu) KAPANDI
+  3. **Plan hükmü katmanı:** Ancak konaklamanın gerçek kapısı **6.2.4** (köyde turizm) — plan zorunlu, E:0,50 emsal · yani söylemin kaynağı doğru olsa da vakanın **cevabı 6.2.4'te**
+- **İhlal tipi:** İhlal değil — **metodoloji emsali** (SİLME-YOK aynı deftere kaydediliyor çünkü kanon üretici bir vaka)
+- **Emsal ders:**
+  1. Söylem tek başına kabul edilmez; **emsal** (hangi mevzuat maddesi?) aranır
+  2. Emsal bulunsa da o emsal **gerçek kapı** olmayabilir — plan hükmüne kadar zincir sürer
+  3. Vezir kanonuna aday: her mevzuat iddiası için **söylem → emsal → plan hükmü** üç-katman denetimi zorunlu
+
+---
+
+## Vaka #04 — Karıştırma riski · Farklı parsel planı ↔ vakalık parsel (lejantsız pafta fotoğrafı)
+
+- **Tarih:** 2026-09-30
+- **CC:** CC-Tic (ön-model testi)
+- **Bulgu:** Vakalık parsele komşu/yakın bir parselin (farklı ada · farklı parsel · detay lokal) planında **E:1,00 / 12,50** emsal bulundu. Ancak **lejantsız pafta fotoğrafı** bu değeri vakalık parsele atfetmeye yetmez.
+- **İhlal tipi:** Erken atıflama riski (uyarı)
+- **Kanon ilişkisi:** [[celiski_referans_kanonu_v1]] Tür B — "aynı sayfa, farklı parsel" gibi görünse de referans netlik eksikliği. Lejant → hangi parsele hangi hüküm eşleştiği kanıtlı olmadan atıflama YASAK.
+- **Aksiyon:** Tic'in **ön-model testi** bu ayrımı yapıyor; Patron pafta fotoğrafı (lejantlı) veya İÖİ telefonu ile netleşme sağlar.
+- **Emsal ders:**
+  1. Pafta fotoğrafı **lejantsız** = kanıt değil, görsel-referans
+  2. Aynı ada üzerinde farklı parseller farklı hükümlere tabi olabilir
+  3. Ön-model testleri her zaman **karıştırma-riski** kontrolüyle başlar
+
+---
+
 ## İşletim kuralı
 
 - **Ekleme:** Vezir her turda yeni ihlal tespit ederse `Vaka #NN` bloğu ekler (numara artan). Eski vakalar dokunulmaz.
