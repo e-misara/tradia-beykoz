@@ -48,6 +48,8 @@ Standing #48'in tam metni Vezir'in elinde onaylı olarak **yok**. Patron İnşaa
 | R6 | 2026-09-26 | vaka-durum: "7/8 katman, kilit E3+çay, Patron saha bekleniyor" | vaka-durum: "8/8 katman, kilit E3, çay teyitli" | Tic C10-C12 teslim (2018/97) + Patron saha beyan (çay fiilen var) |
 | R7 | 2026-09-27 | vaka-durum: "8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor" | vaka-durum: "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de" | DEVIR_INSAAT_KONUSMASI.md teslim (7 bölüm · 4 etiket · dış-devir ilk ürünü) + Basın 7/7 + dere hüküm + eğim düzeltme (proxy → kesin) |
 | R8 | 2026-09-29 | vaka-durum: "paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de" | vaka-durum: "3. faz SUNUM_PAKETI (3 seçenek A/B/C · 8 blok · 7 CC) · kilit E3 (Tic 2018/97 karar-metni araması) · yeni soru: 18 Eyl Derepazarı seli → afete-maruz-bölge" | SUNUM_PAKETI açılışı (3. faz) + yeni kritik soru (Basın+İhale sel-afet kararı) + Tic'e E3-alternatif görev (2018/97 karar metni bulunursa E3 sahasız kapanır) |
+| R9 | 2026-09-30 | vaka-durum: "3. faz SUNUM_PAKETI · kilit E3 · yeni soru sel-afet" | vaka-durum: "SUNUM olgunlaştı · İhale DOKUNMUYOR · Map sel-izi YOK · Tic yasal-zarf 3-senaryo · Finans Rize 3.bölge/EK-5/6M · Arşiv 3/3 · Bürücek=köy KESİN · Sinyal B=(0)" | 30 Eyl dalgası (8 madde): İhale RG 9000 hükmü + Map radar-hakem + Tic yasal zarf 3-senaryo + Finans 9903 BKK + Arşiv 97704f0 + Bürücek kimlik + Sinyal B=(0) + kanon celiski_referans_kanonu_v1 açıldı |
+| R10 | 2026-09-30 | idari birim: "TKGM künyesinden çözülecek" (2026-09-26) | idari birim: "Bürücek = KÖY (kaymakamlık idari birim listesi)" | Standing #37 kanonik toplayıcı tablosuna 'idari-ad otoritesi = kaymakamlık' eklenmesi önerisi |
 
 ## 5. Bekleyen iş
 
