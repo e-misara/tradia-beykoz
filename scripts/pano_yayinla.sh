@@ -48,16 +48,22 @@ yesil "  ✓ ozet-w35.json + index.html taşındı"
 mavi ""
 mavi "═══ 2. COMMIT + PUSH ═══"
 
+# Patron onayı 2026-09-26: yerel HEAD uzak HEAD'in ilerisindeyse mutlaka push
+# (sadece working-tree diff'e bakma; önceki commit atlanmış olabilir)
+
 # tradia-beykoz (kaynak)
 cd "$BEY_REPO"
 git fetch origin --quiet
 if ! git diff --quiet pano/ozet-w35.json pano/index.html 2>/dev/null; then
     git add pano/ozet-w35.json pano/index.html
     git commit -qm "pano: $MESAJ"
+fi
+ILERDE_BEY=$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)
+if [ "$ILERDE_BEY" -gt 0 ]; then
     git push -q origin main
-    yesil "  ✓ tradia-beykoz push"
+    yesil "  ✓ tradia-beykoz push ($ILERDE_BEY commit)"
 else
-    echo "  = tradia-beykoz değişiklik yok"
+    echo "  = tradia-beykoz zaten güncel"
 fi
 
 # misara-vezir (yayın)
@@ -66,10 +72,13 @@ git fetch origin --quiet
 if ! git diff --quiet vezir/ozet-w35.json vezir/index.html 2>/dev/null; then
     git add vezir/ozet-w35.json vezir/index.html
     git commit -qm "pano: $MESAJ"
+fi
+ILERDE_VEZ=$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)
+if [ "$ILERDE_VEZ" -gt 0 ]; then
     git push -q origin main
-    yesil "  ✓ misara-vezir push"
+    yesil "  ✓ misara-vezir push ($ILERDE_VEZ commit)"
 else
-    echo "  = misara-vezir değişiklik yok"
+    echo "  = misara-vezir zaten güncel"
 fi
 
 mavi ""

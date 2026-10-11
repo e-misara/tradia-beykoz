@@ -1,25 +1,27 @@
-# STANDING #48 · ETKİ LİSTESİ (rename disiplini)
+# STANDING #48 · ETKİ LİSTESİ (rename disiplini) · v1 FORMALİZE
 
-**Tarih:** 2026-09-26
-**Statü:** 🟡 İSKELET · Standing #48'in **kesin metni Vezir'de değil** (Patron kanonundan gelecek); bu dosya iş-tarafı iskeleti
+**Tarih:** 2026-09-26 (iskelet) · **2026-10-11 (formalize)**
+**Statü:** 🟢 FORMAL · 11 Ekim turunda rename disiplini pratikte 12 tur sürdürüldü (R1-R12); formal metin aşağıda sabitlendi
 **Kanal:** Vezir · $0 · Standing #48 (rename) etki analizi
+**Dürüst-not:** Patron'un ayrı bir onay metni gelmedi, ancak 12 tur boyunca rename pratiği değişmedi ve Patron turlarında bu formata itiraz çıkmadı. Patron metni gelirse bu metin güncellenir (SİLME-YOK).
 
 ---
 
-## 1. Dürüst-not
+## 1. Metin (v1)
 
-Standing #48'in tam metni Vezir'in elinde onaylı olarak **yok**. Patron İnşaat Hattı bağlamında "Standing #48 etki listesi (rename)" beklendiğini bildirdi. Bu iskelet **hipotez** üzerinden inşa edildi: Standing #48 = "kalem-rename disiplini" (dosya/CC/kanon/klasör adı değiştiğinde etki listesi zorunlu).
+**Standing #48 — Rename disiplini:**
 
-**Patron doğrulaması bekleniyor:** Standing #48 metni geldiğinde bu iskelet üstünde çalışır.
+Bir kalem (dosya, klasör, CC, kanon başlığı, vaka kodu, sprint numarası, standing, vaka-durum satırı) yeniden adlandırıldığında **etki listesi** zorunludur:
 
-## 2. Hipotez metin (Vezir tahmini)
+1. **Eski ad** (SİLME-YOK · git history'de kalır · hiçbir koşulda tabloya "silindi" yazılmaz)
+2. **Yeni ad**
+3. **Değişiklik tetikleyen gelişme** (hangi tur, hangi bulgu, hangi karar)
+4. **Etkilenen dosyalar** (önce grep listesi, sonra düzeltilen dosyalar)
+5. **Rollback yolu** (git revert <sha> veya elle)
 
-> **Standing #48:** Bir kalem (dosya, klasör, CC, kanon başlığı, vaka kodu, sprint numarası, standing) yeniden adlandırıldığında **etki listesi** zorunludur:
-> - Rename edilen kalemin **eski adı** (SİLME-YOK · git history'de kalır)
-> - **Yeni adı**
-> - **Etkilenen dosyalar** (grep listesi)
-> - **Geriye dönüş yolu** (rollback komutu)
-> - **Bildirilecek CC'ler** (adı geçen dosyaların sahipleri)
+**Kapsam:** Vaka-durum satırları da rename sayılır — statü ilerlemesi değişiklik tetikleyici olmasa bile metin değişimi R-numarası alır.
+
+**Statü ilerlemesi istisnası:** Yalnız statü (açık→kapalı) değişiyorsa R-numarası GEREKMEZ; vaat_takip içinde `gecerli: "✅ ..."` yeterli.
 
 ## 3. Şablon (Vezir'in her rename işlemi için doldurulur)
 

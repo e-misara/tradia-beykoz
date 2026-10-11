@@ -12,6 +12,7 @@
 |---|---|---|---|---|---|
 | 2026-09-30 (ilk kayıt) | — | — | — | 41 | Sayaç formatı bu tur başladı; öncesi retro-hesap yok; toplam-aktif = pano `vaat_takip.kritik` içinde `gecerli` alanı `✅` ile başlamayan kayıtlar |
 | 2026-09-30 (BESLEME v2 turu) | +5 | −3 | +2 | 41 | Açılan: BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş. Aynı turda kapanan: BESLEME v2 ✅, E7 ✅, üç-katman ✅ (hızlı-teslim). Toplam-aktif değişmedi (+5−3−2=0; ancak canlı sayım 41 → önceki turda kapanmalar da devrede) |
+| 2026-10-11 (4 borç kapatma + KUYRUK) | +6 | −4 | +2 | 43 | Açılan: 4 borç kapanış satırı (rev-list, #48 formalize, 14 oturum, KURULUS INDEX) + KUYRUK motoru + ARZ eşlemesi. Kapanan: 4 borç ✅ aynı turda. Vezir'in iç borçlarının temizlenme turu. |
 
 ## Retro-not (sayaç öncesi)
 

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "sahibi": "Vezir",
+  "acilis": "2026-10-11",
+  "aciklama": "BÖLGE MOTORU KUYRUK · bölge × kök × CC hücreleri · her CC cron'u KUYRUK'tan iş çeker",
+  "sema_dosyasi": "motor/SEMA.md",
+  "kanon": "Patron direktifi 2026-10-11 + Standing #37+#48 + celiski_referans_kanonu_v1",
+  "koordinasyon": {
+    "kok_cc_eslemesi": "ORUMCEK_SORU_SETI_v1 §2 ARZ sütunu · Patron verecek",
+    "statu": "🟡 BEKLİYOR · ARZ eşlemesi gelmeden hücreler açılmaz"
+  },
+  "oncelik_tablosu": {
+    "1": "Açık vakalar — Beykoz (45 mahalle · 7 CC vaka), Kartal (15 mahalle · pilot), Rize/Derepazarı (PARSEL-01)",
+    "2": "K22 · 9 büyükşehir ilçeleri",
+    "3": "81 il merkez ilçesi",
+    "4": "Kalan ilçeler"
+  },
+  "ilk_doldurma_oncelik_1": {
+    "statu": "🟡 ARZ EŞLEMESİ BEKLİYOR",
+    "bolgeler": [
+      {
+        "bolge": {"il": "İstanbul", "ilce": "Beykoz"},
+        "mahalle_sayisi": 45,
+        "mevcut_cc_cikisi": {
+          "CC-Signals": "SIG6 Beykoz master KAPANDI · 574-satır",
+          "CC-TT-MAP": "MAP24-34 KAPANDI (üç-imza doktrini)",
+          "CC-Basın": "basin_html 333K · B8 araştırma",
+          "CC-Analiz": "250.193 ulusal + 365.970 beykoz ham",
+          "CC-Finans": "Beykoz F6 KAPANDI",
+          "CC-İhale": "RG tespitleri açık",
+          "CC-Tic": "Firma DB 527/262"
+        },
+        "hucre_sayisi_tahmini": "45 mh × 16 kök × 7 CC = 5.040 hücre (ARZ eşlemesi geldiğinde net sayı çıkar)"
+      },
+      {
+        "bolge": {"il": "İstanbul", "ilce": "Kartal"},
+        "mahalle_sayisi": 15,
+        "mevcut_cc_cikisi": {
+          "CC-Hafıza": "DURUM.json pilot_ilce=Kartal · 20 mahalle",
+          "ozet_motoru": "A katmanı 192 üretildi, B katmanı 3 yazıldı"
+        },
+        "hucre_sayisi_tahmini": "15 mh × 16 kök × 7 CC = 1.680 hücre"
+      },
+      {
+        "bolge": {"il": "Rize", "ilce": "Derepazarı"},
+        "mahalle_sayisi": 1,
+        "vaka": "PARSEL-01 (ilk iç-müşteri)",
+        "mevcut_cc_cikisi": {
+          "CC-Tic": "✓ sahip · C10-C12 teslim · BESLEME v2 teslim",
+          "CC-İhale": "✓ DOKUNMUYOR (RG 9000) · D-riski kapandı",
+          "CC-TT-MAP": "✓ A4+C14+dere+eğim+radar-hakem",
+          "CC-TT-AI": "✓ katman verildi",
+          "CC-Analiz": "✓ katman verildi",
+          "CC-Signals": "✓ iskelet + B=(0) 5. tur",
+          "CC-Finans": "✓ Rize 3.bölge/EK-5/6M + E7 KAPANDI",
+          "CC-Basın": "✓ 7/7 TAMAM (kamulaştırma SÖYLEM)",
+          "CC-Arşiv": "✅ E1 künye zinciri + 3/3 GERÇEK"
+        },
+        "hucre_sayisi_tahmini": "1 mh × 16 kök × 9 CC = 144 hücre (DOLU oranı: 10 CC × 1 mh ≈ 10 hücre, kalan ~134 BOŞ)"
+      }
+    ]
+  },
+  "hucreler": [],
+  "not": "hucreler[] boş bırakıldı · ARZ (kök→CC) eşlemesi Patron'dan geldikten sonra doldurulacak"
+}

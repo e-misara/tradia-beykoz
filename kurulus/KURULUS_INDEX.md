@@ -29,13 +29,33 @@
 
 ---
 
-## MEVCUT KURULUŞ MD'LERİ
+## MEVCUT KURULUŞ MD'LERİ (2026-10-11 Vezir envanter)
 
 | CC | Dosya | Statü | Boyut |
 |---|---|:-:|---:|
-| **CC-Hafıza** | [KURULUS_HAFIZA.md](KURULUS_HAFIZA.md) | 🟢 YAZILDI (KURULUŞ-01) | ~25 KB |
+| **CC-Hafıza** | [KURULUS_HAFIZA.md](KURULUS_HAFIZA.md) | 🟢 YAZILDI (KURULUŞ-01) | ~23 KB |
+| **CC-Analiz** | [KURULUS_cc_analiz.md](KURULUS_cc_analiz.md) | 🟢 YAZILDI | ~23 KB |
+| **CC-Basın** | [KURULUS_cc_basin.md](KURULUS_cc_basin.md) | 🟢 YAZILDI | ~19 KB |
+| **CC-Sosyal** | [KURULUS_CC_SOSYAL.md](KURULUS_CC_SOSYAL.md) | 🟢 YAZILDI | ~29 KB |
+| **CC-Tic** | [KURULUS_CC-Tic.md](KURULUS_CC-Tic.md) | 🟢 YAZILDI | ~32 KB |
+| **CC-İhale** | [KURULUS_cc_ihale.md](KURULUS_cc_ihale.md) | 🟢 YAZILDI | ~16 KB |
+| **CC-Borsa** | [KURULUS_cc_borsa.md](KURULUS_cc_borsa.md) | 🟢 YAZILDI | ~14 KB |
+| **CC-Kitap** | [KURULUS_CC-KITAP.md](KURULUS_CC-KITAP.md) | 🟢 YAZILDI (Standing #37) | ~7 KB |
+| **CC-TT-MAP** | [KURULUS_CC-TT-MAP.md](KURULUS_CC-TT-MAP.md) | 🟢 YAZILDI | ~15 KB |
+| **CC-TT-AI** | [KURULUS_CC-TT-AI.md](KURULUS_CC-TT-AI.md) | 🟢 YAZILDI | ~14 KB |
+| **CC-TT-Pazarlama** | [KURULUS_CC-TT-Pazarlama.md](KURULUS_CC-TT-Pazarlama.md) | 🟢 YAZILDI | ~17 KB |
+| **CC-Kasa** | [KURULUS_CC-KASA.md](KURULUS_CC-KASA.md) | 🟢 YAZILDI (Standing #37) | ~6 KB |
+| **CC-Finans** | [KURULUS_CC-FINANS.md](KURULUS_CC-FINANS.md) | 🟢 YAZILDI | ~42 KB |
+| **CC-Signals** | [KURULUS_CC-SIGNALS.md](KURULUS_CC-SIGNALS.md) | 🟢 YAZILDI | ~47 KB |
+| **CC-Site** | [KURULUS_CC-Site.md](KURULUS_CC-Site.md) | 🟢 YAZILDI | ~26 KB |
+| **CC-TT-Arşiv** | [KURULUS_TT-ARSIV.md](KURULUS_TT-ARSIV.md) | 🟢 YAZILDI (ARS-04 tam sürüm) | ~14 KB |
+| **Vezir** | [KURULUS_VEZIR.md](KURULUS_VEZIR.md) | 🟢 YAZILDI | ~25 KB |
 
-**Toplam yazılmış: 1 / 15** (Hafıza — bu belge)
+**Toplam yazılmış: 17 / 15 CC + Vezir + Arşiv = 17 kuruluş dosyası · hepsi mevcut**
+
+### 🟡 Adlandırma uyumsuzluğu notu (Vezir 2026-10-11)
+
+Standart `KURULUS_<CC>.md` (Türkçe karaktersiz, büyük harfli CC adı) idi. Mevcut dosyalarda **iki format karışık**: `KURULUS_cc_analiz.md` (küçük harf) ↔ `KURULUS_CC-Tic.md` (büyük tire). Rename borcu açık değil (dosyalar erişiliyor); ancak gelecek bir Standing #48 turunda standart tek biçime çekilebilir. Şu an **mevcut adlar kanon** (git history açısından).
 
 ---
 
