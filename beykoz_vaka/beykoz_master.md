@@ -51,7 +51,7 @@
 
 # 2. ISI HARİTASI
 
-📊 **Görsel:** [`beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png`](gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png)
+📊 **Görsel:** [`beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png`](../gorseller/tradia/beykoz/isi-haritasi/beykoz_isi-haritasi_ced-yogunluk_2026-07-28.png)
 🔧 **Kural:** [`kod/isi_haritasi_SIG3.py`](kod/isi_haritasi_SIG3.py) — eşikler kodda sabit, tartışmaya açık
 
 > 🆕 **9. AYAK EKLENDİ — İMAR.** İ66/İ69 ile Beykoz'un imar süreci ölçülebilir hale geldi. **Eşik:** 6306 riskli alan **veya** 18. madde uygulaması **veya** 1/5000–1/1000 askı (2025-26).

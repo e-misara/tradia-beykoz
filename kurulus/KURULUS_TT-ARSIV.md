@@ -187,6 +187,7 @@ tamamı** TT-ARŞİV tarafından adlandırıldı, taşındı ve referansları on
 
 - 28/28 `git mv`, git blob sha1 eski==yeni **tam uyum** (içerik kaybı 0)
 - **67 markdown görsel-linki tarandı → kırık link 0**
+  - 🔴 **DÜZELTME (2026-10-11):** bu hüküm **yanlıştı**. `beykoz_vaka/` altındaki 5 MD'de **6 görsel linki** `d3f9873`'ten beri kırıktı — linkler `gorseller/…` yolunu MD'nin kendi dizinine göre değil depo köküne göre yazıyordu, doğrulama betiği de kökten çözdüğü için göremedi. `../gorseller/…` ile onarıldı; yeniden ölçüm (her link MD'nin dizininden çözülerek): **67 görsel linki, kırık 0** · MANIFEST 28/28 diskle birebir. **Ders:** göreli link, onu içeren dosyanın dizininden çözülür — doğrulayıcı da öyle çözmeli.
 - Devrin bildirmediği **3 ad hatası** yakalandı (`bey15-torunlar-**torunlar**-942-947`
   çift yazım 2 dosya · `grafik_cubuklu-grafik` tür tekrarı)
 - Devrin **"4 kırık link" teşhisi düzeltildi**: gerçek 2 idi, sebebi `cikti/` önekiydi

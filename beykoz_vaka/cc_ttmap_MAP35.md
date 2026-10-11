@@ -14,12 +14,12 @@
 `gorseller/tradia/beykoz/harita/beykoz_harita_kisit-gercek_2026-07-28.png` · orman-baskın(yeşil) / yapılı-kentsel(kırmızı) / yapılaşabilir-açık(turuncu) / askeri(mor) / dik-yamaç(kahve) / su-kıyı(mavi) / taşkın-riski(camgöbeği) + deniz.
 **Görsel-doğrulama:** harita **yeşil-baskın** (orman) — tek-turuncu (yapılaşabilir) Cumhuriyetköy; kırmızı-yapılı yalnız SW-Boğaz-kıyısı. → %3-8-buildable bulgusu **gözle-teyit** (Part-3).
 
-![kisit](gorseller/tradia/beykoz/harita/beykoz_harita_kisit-gercek_2026-07-28.png)
+![kisit](../gorseller/tradia/beykoz/harita/beykoz_harita_kisit-gercek_2026-07-28.png)
 
 ### (b) Konum haritası + mega-aks
 `gorseller/tradia/beykoz/harita/beykoz_harita_konum-gercek_2026-07-28.png` · Paşabahçe Sırtı ★ + O-7/YSS aks-katmanı.
 
-![konum](gorseller/tradia/beykoz/harita/beykoz_harita_konum-gercek_2026-07-28.png)
+![konum](../gorseller/tradia/beykoz/harita/beykoz_harita_konum-gercek_2026-07-28.png)
 
 ## PART-2 — MEGA-PROJE AKS KATMANI
 - **YSS Köprüsü + Kuzey Marmara Otoyolu (O-7)** gerçek-OSM-geometrisi (171 parça) haritaya işlendi + Şile Otoyolu + bağlantı-yolları.

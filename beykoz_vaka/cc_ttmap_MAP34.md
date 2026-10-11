@@ -28,7 +28,7 @@ Her karo: ÖNCE 2024 | SONRA 2026 yan-yana, **sarı=mahalle-sınırı** (nokta-p
 
 **RİVA KARARI:** Dört bağımsız-ölçüm (NDVI + radar + WC + görsel) **oybirliğiyle: Riva'da henüz aktif-yeni-inşaat YOK.** Bu, F2'nin **'Riva sermaye→inşaat 2026-27'** öngörüsünün **ÖN-ÖLÇÜMÜdür**: t0 (henüz-başlamamış) tespit edildi → 2027'de NDVI-kaybı/radar-artış/şantiye başlarsa **öngörü doğrulanır**, başlamazsa **yanlışlanır**. Riva artık yıllık-izlemede.
 
-![riva](gorseller/tradia/beykoz/karo/beykoz_karo_riva_2026-07-28.png)
+![riva](../gorseller/tradia/beykoz/karo/beykoz_karo_riva_2026-07-28.png)
 
 ## PART-3 — RADAR-ACD SICAK-10 (MAP30 yöntemi genişletildi)
 
