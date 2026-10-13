@@ -89,10 +89,12 @@
 ## Vaka #06 — Vezir'in rev-list kuralı, incelenmemiş CC commit'ini public'e itti
 
 - **Tarih:** 2026-10-14
-- **Zincir:** Hafıza yerel commit attı (`4bebfde`, 214 dosya) ama push etmedi → Vezir `pano_yayinla.sh` koştu → 11 Eki'de eklenen rev-list kuralı ("HEAD öndeyse mutlaka push") **Hafıza'nın commit'ini de** push etti → `misara-app/veri/DURUM.json` (1 satır) + `misara-app/veri/cografya.json` (6 satır) vaka parselinin ada/parsel numarasını, orman-kadastro parsel numarasını ve kıyı-mesafe değerini public'e taşıdı.
+- **Zincir:** Hafıza yerel commit attı (M4 v2 · 214 dosya · yeniden yazım sonrası `0234b8b`) ama push etmedi → Vezir `pano_yayinla.sh` koştu → 11 Eki'de eklenen rev-list kuralı ("HEAD öndeyse mutlaka push") **Hafıza'nın commit'ini de** push etti → `misara-app/veri/DURUM.json` (1 satır) + `misara-app/veri/cografya.json` (6 satır) vaka parselinin ada/parsel numarasını, orman-kadastro parsel numarasını ve kıyı-mesafe değerini public'e taşıdı.
 - **Sorumluluk:** Vezir. Kural Patron onaylıydı ama sızıntı kapısı yoktu; "benim commit'im temiz" kontrolü, itilen **tüm** commit'leri kapsamıyordu.
 - **Düzeltme:** HEAD'de 7 satır redakte (`pano_yayinla.sh` sonraki çalıştırmada iter). `pano_yayinla.sh`'a **sızıntı kapısı** eklendi: push'tan önce `origin/main..HEAD` farkı sınıf-bazlı desenle (ada/parsel no, anahtar/token) taranır; eşleşme varsa push durur (exit 3).
-- **Açık kalan:** Git **geçmişinde** (`4bebfde`) veri duruyor. Temizlemek için geçmiş yeniden yazımı + force-push gerekir. Bu geri dönülmez ve paylaşılan repoyu etkiler → **Patron kararı**. Vezir yapmadı.
+- **Geçmiş temizliği (Patron kararı a · 14 Eki):** tam bundle yedek → private misara-arsiv (`yedek/`) · `git filter-repo --replace-text` ile 7 dizgi tüm geçmişten çıkarıldı · `--force-with-lease` push. Sonuç: 70 commit korundu, HEAD ağacı birebir aynı, yalnız 3 SHA değişti (yeni: `0234b8b`, `2942cfb`, `5c9f419`), öncesi dokunulmadı. Eski SHA'lar public dosyalarda **yazılmaz** (sızan içeriğe link olur); listesi private arşivde.
+- **Açık kalan:** GitHub yetim commit'leri doğrudan SHA ile **hâlâ sunuyor** (14 Eki: web 200 + API 200). Tam silme = GitHub Support 'sensitive data removal' başvurusu → **Patron eylemi**.
+- **Bilinçli kapsam dışı:** Vaka #02 ve #05'in eski sızıntıları da geçmişte duruyor. Kapsamak 26 Eyl sonrası ~25 commit'in SHA'sını değiştirir; pano/kanon/İLERLEME'deki SHA atıfları kırılır → ayrı Patron kararı.
 - **Emsal ders:**
   1. Otomatik push kuralı, kapsadığı **her** commit için sızıntı kapısı ister. Yoksa ilk başka-CC commit'inde delinir.
   2. Hafıza'nın `misara-app/veri/` türetmeleri public repoya yazıldığı sürece parsel_veri_kanonu süzgecinden geçmeli (türetme betiğine süzgeç).

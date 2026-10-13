@@ -1,6 +1,6 @@
 {
  "uretici": "Vezir · motor/surekli_olc.py",
- "olcum_ani": "2026-10-14T01:50:37",
+ "olcum_ani": "2026-10-14T02:13:45",
  "pencere": "2026-09-14..2026-10-13 (30 gün)",
  "esikler": {
   "yeşil": "≥%90",
@@ -69,11 +69,275 @@
    "2026-10-10": 21,
    "2026-10-11": 70,
    "2026-10-12": 73,
-   "2026-10-13": 35
+   "2026-10-13": 37
   },
   "uyanik_kaynak": "tradia_sorgu/logs/pmset_izle.log (2 dk örnek; 720/gün = %100)"
  },
- "cc_ozet": {
+ "URETIM_birincil_olcu": {
+  "tanim": "üretim günü = o gün CC veri dizininde log/state/heartbeat/kod DIŞI dosya yazıldı VEYA SORGU-01'e o CC kaynağından kayıt girdi. exit 0 / 'disk yok çıkıyorum' üretim SAYILMAZ (Patron 14 Eki).",
+  "sinir": "dosya mtime yalnız SON yazımı gösterir → her gün üzerine yazılan dosya yalnız son günü sayar: ALT SINIR. SORGU-01 ingest_ts kayıt-başına tam.",
+  "esikler": "yeşil ≥%90 · sarı %60–90 · kırmızı <%60 (30 güne oran)",
+  "cc": {
+   "Basın": {
+    "uretim_gunu": 6,
+    "pencere_gunu": 30,
+    "yuzde": 20,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 3,
+    "sorgu01_ingest_gunu": 4,
+    "uretim_gunleri": [
+     "2026-09-17",
+     "2026-09-27",
+     "2026-09-29",
+     "2026-10-07",
+     "2026-10-12",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-13"
+   },
+   "Sosyal": {
+    "uretim_gunu": 8,
+    "pencere_gunu": 30,
+    "yuzde": 27,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 2,
+    "sorgu01_ingest_gunu": 8,
+    "uretim_gunleri": [
+     "2026-09-17",
+     "2026-09-20",
+     "2026-09-26",
+     "2026-09-27",
+     "2026-09-30",
+     "2026-10-07",
+     "2026-10-12",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-13"
+   },
+   "Hafıza": {
+    "uretim_gunu": 21,
+    "pencere_gunu": 30,
+    "yuzde": 70,
+    "renk": "sarı",
+    "dosya_yazim_gunu": 3,
+    "sorgu01_ingest_gunu": 21,
+    "uretim_gunleri": [
+     "2026-09-14",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25",
+     "2026-09-26",
+     "2026-09-27",
+     "2026-09-28",
+     "2026-09-30",
+     "2026-10-01",
+     "2026-10-02",
+     "2026-10-06",
+     "2026-10-07",
+     "2026-10-08",
+     "2026-10-10",
+     "2026-10-11",
+     "2026-10-12",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-11"
+   },
+   "Finans": {
+    "uretim_gunu": 23,
+    "pencere_gunu": 30,
+    "yuzde": 77,
+    "renk": "sarı",
+    "dosya_yazim_gunu": 16,
+    "sorgu01_ingest_gunu": 21,
+    "uretim_gunleri": [
+     "2026-09-14",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25",
+     "2026-09-26",
+     "2026-09-27",
+     "2026-09-28",
+     "2026-09-29",
+     "2026-09-30",
+     "2026-10-01",
+     "2026-10-02",
+     "2026-10-03",
+     "2026-10-06",
+     "2026-10-07",
+     "2026-10-08",
+     "2026-10-10",
+     "2026-10-11",
+     "2026-10-12",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-09-29"
+   },
+   "İhale": {
+    "uretim_gunu": 1,
+    "pencere_gunu": 30,
+    "yuzde": 3,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 1,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-13"
+   },
+   "Tic": {
+    "uretim_gunu": 3,
+    "pencere_gunu": 30,
+    "yuzde": 10,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 3,
+    "sorgu01_ingest_gunu": 1,
+    "uretim_gunleri": [
+     "2026-09-27",
+     "2026-10-11",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-13"
+   },
+   "TT-MAP": {
+    "uretim_gunu": 6,
+    "pencere_gunu": 30,
+    "yuzde": 20,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 6,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-09-26",
+     "2026-09-27",
+     "2026-09-29",
+     "2026-10-11",
+     "2026-10-12",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-09-26"
+   },
+   "TT-AI": {
+    "uretim_gunu": 1,
+    "pencere_gunu": 30,
+    "yuzde": 3,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 1,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-10-11"
+    ],
+    "en_yogun_gun": "2026-10-11"
+   },
+   "Pazarlama": {
+    "uretim_gunu": 21,
+    "pencere_gunu": 30,
+    "yuzde": 70,
+    "renk": "sarı",
+    "dosya_yazim_gunu": 21,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-19",
+     "2026-09-20",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25",
+     "2026-09-26",
+     "2026-09-27",
+     "2026-09-28",
+     "2026-09-29",
+     "2026-09-30",
+     "2026-10-01",
+     "2026-10-06",
+     "2026-10-07",
+     "2026-10-10",
+     "2026-10-11",
+     "2026-10-12",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-12"
+   },
+   "Analiz": {
+    "uretim_gunu": 1,
+    "pencere_gunu": 30,
+    "yuzde": 3,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 1,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-13"
+   },
+   "Signals": {
+    "uretim_gunu": 3,
+    "pencere_gunu": 30,
+    "yuzde": 10,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 3,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-09-30",
+     "2026-10-11",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-11"
+   },
+   "Kitap": {
+    "uretim_gunu": 3,
+    "pencere_gunu": 30,
+    "yuzde": 10,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 3,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-09-27",
+     "2026-10-11",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-13"
+   },
+   "Arşiv": {
+    "uretim_gunu": 3,
+    "pencere_gunu": 30,
+    "yuzde": 10,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 3,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-09-27",
+     "2026-10-11",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-13"
+   },
+   "Borsa": {
+    "uretim_gunu": 3,
+    "pencere_gunu": 30,
+    "yuzde": 10,
+    "renk": "kırmızı",
+    "dosya_yazim_gunu": 3,
+    "sorgu01_ingest_gunu": 0,
+    "uretim_gunleri": [
+     "2026-09-26",
+     "2026-10-12",
+     "2026-10-13"
+    ],
+    "en_yogun_gun": "2026-10-12"
+   }
+  }
+ },
+ "cc_ozet_KOSU_ikincil": {
   "Hafıza": {
    "is_sayisi": 15,
    "olculen_is": 2,
@@ -273,15 +537,29 @@
    "not": "launchd işi yok (oturum-bazlı CC) — süreklilik bu yöntemle ölçülemez"
   },
   "Arşiv": {
-   "is_sayisi": 2,
+   "is_sayisi": 3,
    "olculen_is": 1,
-   "olculemeyen_is": 1,
+   "olculemeyen_is": 2,
    "kosmasi_gereken_is_gun": 1,
    "kostugu_is_gun": 1,
    "disk_uyari_is_gun": 1,
    "pil_olasi_kacirma_is_gun": 0,
    "sureklilik_yuzde": 100,
    "renk": "yeşil",
+   "yuklu_degil": [],
+   "sessiz_isler": [],
+   "son_satiri_disk_abort": []
+  },
+  "SAHİPSİZ": {
+   "is_sayisi": 2,
+   "olculen_is": 0,
+   "olculemeyen_is": 2,
+   "kosmasi_gereken_is_gun": 0,
+   "kostugu_is_gun": 0,
+   "disk_uyari_is_gun": 0,
+   "pil_olasi_kacirma_is_gun": 0,
+   "sureklilik_yuzde": null,
+   "renk": "ölçülmedi",
    "yuklu_degil": [],
    "sessiz_isler": [],
    "son_satiri_disk_abort": []
@@ -315,7 +593,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "3",
     "son_exit": "0",
     "state": "not running"
    },
@@ -340,7 +618,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "20",
+    "runs": "43",
     "son_exit": "2",
     "state": "spawn scheduled"
    },
@@ -382,7 +660,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
+    "runs": "2",
     "son_exit": "0",
     "state": "not running"
    },
@@ -487,12 +765,12 @@
    "plist_dogum": "2026-06-14",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-12",
-   "sessiz_gun": 2,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -508,12 +786,12 @@
    "plist_dogum": "2026-06-12",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
+    "runs": "1",
     "son_exit": "(never exited)",
-    "state": "not running"
+    "state": "running"
    },
-   "log_son_iz": "2026-10-12",
-   "sessiz_gun": 2,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 5,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -529,12 +807,12 @@
    "plist_dogum": "2026-06-12",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-06",
-   "sessiz_gun": 8,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 5,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -550,12 +828,12 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "2",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-12",
-   "sessiz_gun": 2,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": 3,
@@ -608,6 +886,27 @@
    "sessiz_gun": 2,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
+   "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
+   "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
+   "disk_uyari_gun": "ölçülmedi",
+   "pil_olasi_kacirma_gun": "ölçülmedi",
+   "sureklilik_yuzde": null,
+   "renk": "ölçülmedi"
+  },
+  {
+   "label": "com.tradia.ccsignals.gelenkutusu",
+   "cc": "SAHİPSİZ",
+   "plist_dogum": "2026-10-14",
+   "launchctl": {
+    "yuklu": true,
+    "runs": "0",
+    "son_exit": "(never exited)",
+    "state": "not running"
+   },
+   "log_son_iz": "log yok/boş",
+   "sessiz_gun": null,
+   "son_satir_disk_abort": false,
+   "kosmasi_gereken_gun": 0,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
    "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
    "disk_uyari_gun": "ölçülmedi",
@@ -734,7 +1033,7 @@
    "plist_dogum": "2026-10-13",
    "launchctl": {
     "yuklu": true,
-    "runs": "20",
+    "runs": "42",
     "son_exit": "0",
     "state": "not running"
    },
@@ -805,6 +1104,27 @@
    "sessiz_gun": 2,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
+   "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
+   "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
+   "disk_uyari_gun": "ölçülmedi",
+   "pil_olasi_kacirma_gun": "ölçülmedi",
+   "sureklilik_yuzde": null,
+   "renk": "ölçülmedi"
+  },
+  {
+   "label": "com.tradia.kitap.nobet",
+   "cc": "SAHİPSİZ",
+   "plist_dogum": "2026-10-14",
+   "launchctl": {
+    "yuklu": true,
+    "runs": "1",
+    "son_exit": "0",
+    "state": "not running"
+   },
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
+   "son_satir_disk_abort": false,
+   "kosmasi_gereken_gun": 0,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
    "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
    "disk_uyari_gun": "ölçülmedi",
@@ -891,7 +1211,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "3",
+    "runs": "4",
     "son_exit": "0",
     "state": "not running"
    },
@@ -912,7 +1232,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
+    "runs": "2",
     "son_exit": "0",
     "state": "not running"
    },
@@ -933,7 +1253,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "5",
     "son_exit": "2",
     "state": "not running"
    },
@@ -984,7 +1304,7 @@
    "plist_dogum": "2026-08-08",
    "launchctl": {
     "yuklu": true,
-    "runs": "10",
+    "runs": "22",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1005,7 +1325,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "20",
+    "runs": "43",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1026,7 +1346,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
+    "runs": "2",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1047,7 +1367,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "10",
+    "runs": "22",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1199,12 +1519,12 @@
    "plist_dogum": "2026-10-13",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-13",
-   "sessiz_gun": 1,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 1,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -1215,17 +1535,39 @@
    "renk": "ölçülmedi"
   },
   {
+   "label": "com.tradia.ttarsiv.oturumarsiv",
+   "cc": "Arşiv",
+   "plist_dogum": "2026-10-14",
+   "launchctl": {
+    "yuklu": true,
+    "runs": "1",
+    "son_exit": "0",
+    "state": "not running"
+   },
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
+   "son_satir_disk_abort": false,
+   "kosmasi_gereken_gun": 0,
+   "kostugu_gun": 0,
+   "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
+   "disk_uyari_gun": 0,
+   "pil_olasi_kacirma_gun": 0,
+   "kacirilan_gun": [],
+   "sureklilik_yuzde": null,
+   "renk": "ölçülmedi"
+  },
+  {
    "label": "com.tradia.ttarsiv.uckopya",
    "cc": "Arşiv",
    "plist_dogum": "2026-10-11",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "2",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-13",
-   "sessiz_gun": 1,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 1,
    "kostugu_gun": 1,
@@ -1242,12 +1584,12 @@
    "plist_dogum": "2026-08-06",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
+    "runs": "1",
     "son_exit": "(never exited)",
-    "state": "not running"
+    "state": "running"
    },
-   "log_son_iz": "2026-10-12",
-   "sessiz_gun": 2,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -1302,12 +1644,12 @@
    "plist_dogum": "2026-08-06",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "2",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-12",
-   "sessiz_gun": 2,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": true,
    "kosmasi_gereken_gun": 5,
    "kostugu_gun": 0,
@@ -1368,7 +1710,14 @@
      "yeni_kaynak": 0
     },
     "2026-10-07..2026-10-13": {
-     "yeni_kayit": 5,
+     "yeni_kayit": 6,
+     "yeni_ilce": 0,
+     "yeni_kaynak": 0
+    }
+   },
+   "rg_haftalik": {
+    "2026-10-07..2026-10-13": {
+     "yeni_kayit": 8,
      "yeni_ilce": 0,
      "yeni_kaynak": 0
     }
@@ -1390,7 +1739,7 @@
      "yeni_kaynak": 0
     },
     "2026-10-07..2026-10-13": {
-     "yeni_kayit": 210,
+     "yeni_kayit": 256,
      "yeni_ilce": 0,
      "yeni_kaynak": 0
     }

@@ -1,49 +1,67 @@
-# HEDEF HAVUZU — 16 CC hedef kartı
+# HEDEF HAVUZU — CC hedef kartları (derleme v2)
 
-**Kesit:** 2026-10-14 · **Derleyen:** Vezir · **Süreklilik kaynağı:** `motor/SUREKLILIK.json` (30 gün: 14 Eyl–13 Eki) · **Kapsam kaynağı:** SORGU-01 `ingest_ts` + `motor/KUYRUK.json`
-**Kural:** Gerçek olmayan sayı yok. Ölçülemeyen alan **ölçülmedi**. CC'nin beyan etmediği hedef **CC beyanı yok** (Vezir hedef uydurmaz).
+**Kesit:** 2026-10-14 · **Derleyen:** Vezir · **Kaynak:** `02_CC_STATE/hedef_karti_<cc>.json` (13 kart, CC'lerin kendi yazdığı) + Vezir üretim ölçüsü `motor/SUREKLILIK.json`
+**Kural:** Gerçek olmayan sayı yok · ölçülemeyen **ölçülmedi** · CC hedefi Patron onaylı değilse **ÖNERİ** damgalı.
 
-## 0. Derleme durumu — dürüst not
+## 0. Ortak hüküm
 
-Patron "CC'lerin kendi doldurduğu kartlardan derle" dedi. **Diskte hiçbir CC hedef kartı yok** (`find ~ -iname "*hedef_kart*"` → 0 dosya; HEDEF_HAVUZU daha önce yazılmamış). Bu dosya bu yüzden **Vezir taslağıdır**. Karta yazılan hedef yalnız Patron'dan gelen tektir (Basın). Diğer 15 kartta hedef alanı **CC beyanı yok**. Kart şablonu 16 CC'ye istendi: `02_CC_STATE/vezir_istek_hedef_karti.json`. CC kartları geldikçe "sapma" sütunu dolacak.
+> **Darboğaz para değil: 7/24 makine + sürekli depolama + güç + tetik.**
 
-**Süreklilik ölçüsünün sınırı:** 44 launchd işinden yalnız **9'u** ölçülebildi. Kalan 35 iş ya log basmıyor ya da koşu satırına tarih yazmıyor. Bu, CC'lerin değil ölçü altyapısının eksiği. Öneri (§3): her iş tek damgalı satır bassın.
+13 kartın 13'ü de en az birini birinci engel sayıyor:
+- **7/24 makine:** Finans, İhale, Basın, Map, Sosyal, Hafıza. Mac uyuyunca hat duruyor. Finans: 30 günde 3 başarılı gün; 7/24 ile ÇED detayı ~3 yıl yerine ~4 ay.
+- **Sürekli depolama:** Basın, Map, Sosyal, İhale, Hafıza, Arşiv, Analiz. TT-HAFIZA son 30 günün ~21–28'inde takılı değil.
+- **Güç:** Hafıza. Pil 10–13 Eki arası her gün %2'ye indi, "Check Battery" uyarısı var; dm02'nin 3 yarım koşusu pil kapanmasında öldü. Sistem geneli 30 günde 21 güvenli-duruş günü.
+- **Tetik:** Signals (hiç launchd/cron yok), Arşiv (arsiv_cek.py cron'u yok), Kitap (oturum-bazlı + Bölüm 11 ton onayı), TT-AI (PROMOTE onayı), Pazarlama (EVDS3 anahtarı, ücretsiz başvuru).
+
+**Paralı kalem** yalnız iki kartta var, ikisi de opsiyonel: TT-AI Adres-Harita aboneliği (77 il CKAN boşluğu için) ve Tic TTSG aboneliği (askıda karar).
 
 ## 1. Kartlar
 
-| CC | Hedef | Bugün (ölçülen) | Eksik | Süreklilik (30 g) | Sapma |
-|---|---|---|---|---|---|
-| **Basın** | **973 ilçe · 12 ay** (Patron 14 Eki → 2027-10-14) · gerekli hız **18,7 ilçe/hafta** | Bölge motorunda **3 ilçe** işlendi (11 Eki) · kuyrukta 22 sıra · havuzda il/ilçe etiketli 31 bölge (etiket kalitesi şüpheli: url %14 / tarih %14 dolu, SIG14 borcu) | 970 ilçe (motor ölçüsüyle) | 🟢 %93 (govde 28/30) · ⚠ haber-akis **73 gündür sessiz** · hasat_v4 son satırı disk-ABORT | 🔴 Bu hafta 3 / gerekli 18,7 · havuz büyümesi: 30 Eyl–6 Eki haftası **0 kayıt** |
-| **Hafıza** | CC beyanı yok | dm02 11 Eki'de koştu (gecikme 0) · BM-K1 3/3 bölgede DOLU | dm02 boşluk sebebi · TR etiket bayat · orumcek.json türetme | 🔴 %3 — yalnız 2/15 iş ölçülebildi · **6 iş sessiz** (gunluk-ozet 73 g, primer-monitor 73 g, sorgu.nefes 75 g, sorgu.nobetci 74 g, sorgu.duzen 18 g, tuik-tcmb 131 g) | ölçülmedi (hedef yok) |
-| **Analiz** | CC beyanı yok | DFE v0.1 tanımı hazır, ölçüm disk bekliyor | BM-K8 Beykoz+Kartal ERİŞİLEMEDİ | ölçülmedi (1 iş, damgalı log yok) | ölçülmedi |
-| **Sosyal** | CC beyanı yok | 3 bölge, 75 yerel kanal · havuza son 4 haftada 480 transkript | — | 🟡 %83 (gnd_retry 15/18) · gnd + whisper son satırı **disk-ABORT** | ölçülmedi |
-| **Tic** | CC beyanı yok | BM-K2/K3/K10 3 bölgede DOLU · PARSEL-01 sahibi | TTSG akışı (abonelik duvarı) | 🔴 %0 — rg_haftalik her pazar koşuyor ama **"mount yok" ile çıkıyor**; son tamamlanan ingest **17 Ağu** | ölçülmedi |
-| **İhale** | CC beyanı yok | BM-K7 3/3 DOLU · RG afet taraması 23 gün | Kartal rg_kamulaştırma + SİT BAKMADIM | 🔴 %10 (rg 3/30 damgalı tamamlanma · err logunda FileNotFoundError 12 Eki) · 4 iş ölçülmedi | ölçülmedi |
-| **Borsa** | CC beyanı yok | S53: KTB YİGM toplayıcı, aylık launchd | EVDS3 anahtarı (Patron) | ölçülmedi (1 iş, damgalı log yok) | ölçülmedi |
-| **Kitap** | CC beyanı yok | S4: kapsama %75,0 · katalog v6/95 | 12. bölüm ton onayı bekliyor | ölçülmedi (launchd işi yok, oturum-bazlı) | ölçülmedi |
-| **TT-MAP** | CC beyanı yok | BM-K4/K5/K13/K15 3 bölgede DOLU | MTA/AFAD/OGM/DSİ bloke | ölçülmedi (2 iş, damgalı log yok) · eplan err 18 Eyl JSONDecodeError | ölçülmedi |
-| **TT-AI** | CC beyanı yok | Rize pilotu 3 ilçe (K1/K6/K7/K14) | BM-K6 + K14 Beykoz/Kartal BOŞ · .gov.tr fetch-BLOKE | ölçülmedi (3 iş, damgalı log yok) | ölçülmedi |
-| **Pazarlama** | CC beyanı yok | 10/81 il TÜİK verisi | 71 il KAPALI (EVDS3) | 🟡 %83 (harvest 25/30, yurtdışı 4/5) · disk uyarısı = yalnız ayna atlandı, iş tamam | ölçülmedi |
-| **Kasa** | CC beyanı yok | PARK | — | ölçülmedi (launchd işi yok) | ölçülmedi |
-| **Finans** | CC beyanı yok | BM-K11 3/3 DOLU · havuza haftada 4–7 belge | Derepazarı hücresi bolge_finans.json'da yok | ölçülmedi (3 iş, damgalı log yok) | ölçülmedi |
-| **Signals** | CC beyanı yok | SIG33 örümcek kıyası: 🟢6/🟡6/🔴5/🔵3 | sapma satırları KUYRUK'a | ölçülmedi (launchd işi yok, oturum-bazlı) | ölçülmedi |
-| **Site** | CC beyanı yok | S10 deploy 90+ gün açık | — | ölçülmedi (launchd işi yok) | ölçülmedi |
-| **Arşiv** | CC beyanı yok | 3/3 kopya GERÇEK (97704f0) | retro-taşıma (disk yok) | 🟢 %100 (uckopya 1/1 — tek koşuluk örnek, istatistik değil) | ölçülmedi |
+**Üretim sütunları:** "Kart" = CC'nin kendi ölçtüğü üretken gün. "Vezir" = bağımsız alt-sınır ölçüsü: o gün CC veri dizininde log/state/kod dışı dosya yazıldı mı ya da SORGU-01'e kayıt girdi mi. exit 0 ve "disk yok, çıkıyorum" sayılmaz.
 
-## 2. Sistem geneli (30 gün)
+| CC | 12 ay hedef (statü) | Bugün (kart) | Kapatan eksik (kart) | Üretim · Kart | Üretim · Vezir | Diskten bağımsız mı (kart) |
+|---|---|---|---|---|---|---|
+| **Basın** | 973 ilçe aylık tam tur + ~100 ilçe haftalık bülten · ~2.000 host · 2–5M künyeli haber (künye ≥%80) · **ilçe hedefi Patron 14 Eki** | 566.478 kayıt · url/tarih %14 · bölge motoru 3 ilçe · kuyruk 22 | disk · 7/24 makine · künye | **4/30** (SORGU-01 kayıt günü) · 26 gün durdu | 🔴 **6/30** (dosya 3 g · ingest 4 g) | HAYIR (ham disk-birincil · artık kanon gereği doğru) |
+| **Hafıza** | 973/973 idari-ad · SORGU-01 27→32 kaynak · kanonik sayım 27/27 · ritim %90 (ÖNERİ) | 1.456.099 ham kayıt · 27 kaynak · idari-ad 972/973 · ritim ~%50 | güç (pil) · depolama · kanonik sayım | builder kayıt günü **20/30** | 🟡 **21/30** (dosya 3 g · ingest 21 g) | KISMEN (basın ingest disk ister) |
+| **Analiz** | 810 ilçe DFE · 5.000 mahalle · v25b 50K (ÖNERİ, örtük) | v24 250.193 · v25a 258.945 · DFE 2 bölge | disk (mount kopuyor) · ölçüm hattı | **7/30** (sprint-notlu) | 🔴 **1/30** (dosya 1 g · ingest 0 g) | KISMEN (3 bölge lokal mirror, 76 il disk) |
+| **Sosyal** | 30 ilçe · 750 kanal · 25.000 video (ÖNERİ) | 5.120 video · 208 kanal · 3 ilçe | disk (21 gün durdu) | **9/30** | 🔴 **8/30** (dosya 2 g · ingest 8 g) | KISMEN (DB lokal, hasat disk) |
+| **Tic** | 30 ilçe aktör envanteri · RG 52/52 hafta (ÖNERİ) | firma DB 527 (120 gün eski) · 3 ilçe | RG hattı disk + plist bağlantısı (Standing #38) | **7/30** (oturum) · otomatik **0** | 🔴 **3/30** (dosya 3 g · ingest 1 g) | EVET (14 Eki itibarıyla, RG ayna) |
+| **İhale** | 973 ilçe K7 hücresi · 30 derin ilçe · 7 kaynak | EKAP 102.174 İKN (bülten 3 ay eski) · RG 6.133 başlık · 12 ilçe hücresi | Mac-birincil yazım · Patron haftalık EKAP bülteni | **1/30** (cron) + 5 elle oturum | 🔴 **1/30** (dosya 1 g · ingest 0 g) | KISMEN |
+| **Finans** | ≥330 başarılı gün · ÇED detay 9 büyükşehir · 11 kaynak | ÇED 127.794 · detay 6.353 (yalnız İstanbul) · 7 kaynak | 7/24 çalıştırıcı | **3/30** tam başarılı (9 tur) | 🟡 **23/30** (dosya 16 g · ingest 21 g) | EVET (Mac'e bağımlı) |
+| **TT-MAP** | 973 ilçe çeyreklik · e-Plan 365/365 · 51.655 mahalle | 12/973 ilçe · e-Plan 156.081 plan · S2 4 il | Mac-birincil hasat · kalıcı depolama | e-Plan **2/30** kanıtlı + manuel oturum | 🔴 **6/30** (dosya 6 g · ingest 0 g) | HAYIR (ham diske kodlu) |
+| **TT-AI** | CONFIRMED 11→15 il · 3.003→4.000–4.500 (ÖNERİ, onaya bağlı) | evren 32.290 · CONFIRMED 3.003 (3 ay sabit) | PROMOTE onayı · 77 il kaynak (ücretli) | **28/30** (nöbet koşusu) | 🔴 **1/30** (dosya 1 g · ingest 0 g) | EVET |
+| **Pazarlama** | 81/81 il · 25 rakip kaynak · ≥28/30 gün | 10/81 il · 17 rakip · 1.043 landing kaydı | EVDS3 anahtarı (ücretsiz) | **24/30** | 🟡 **21/30** (dosya 21 g · ingest 0 g) | EVET |
+| **Signals** | 22 ilçe rozeti · 4 tam dosya (ÖNERİ, Üst Akıl onayında) | 1 tam ilçe (Beykoz) · 2 rozet | tetik (otomasyon yok) · denetçi yetkisi | **4/30** | 🔴 **3/30** (dosya 3 g · ingest 0 g) | BÜYÜK ÖLÇÜDE EVET (7 girdinin 6'sı lokal) |
+| **Kitap** | Cilt II 13 bölüm + PDF · katalog 95→250 (ÖNERİ) | 1/13 bölüm · kapsama %75,4 | Bölüm 11 ton onayı (Patron) | **3/30** (oturum-bazlı) | 🔴 **3/30** (dosya 3 g · ingest 0 g) | EVET (tam lokal) |
+| **Arşiv** | oturum arşivi %100 ≤7 gün · üç-kopya 5→16 kaynak · 6.820 ilan detay | arşiv %91,2 (son çekim 48 gün önce) · 3/3 kopya | arsiv_cek cron'u · kalıcı ikinci kopya | **6/30** | 🔴 **3/30** (dosya 3 g · ingest 0 g) | KISMEN (Kopya-2 diske bağlı) |
+| **Borsa** | kart bulut hattında — **Patron getirecek** | — | — | — | 🔴 **3/30** (dosya 3 g · ingest 0 g) | — |
+| Kasa · Site | kart yok (PARK) | — | — | — | ölçülmedi | — |
 
-- **Güvenli-duruş (pil kritik) günü: 21 / 30.** Hafıza T7 güç alarmı. Mac'in günlük uyanık yüzdesi ortalama **%56**, en düşük gün **%0** (pmset 2 dk örnekleri). Kaçırılan koşuların çoğu bununla örtüşüyor. Bu örtüşme kanıt değil, **olası** sebep.
-- **TT-HAFIZA disk takılı değil.** Tic, Sosyal (gnd, whisper) ve Basın (hasat_v4) işleri son koşularında disk yüzünden çıktı.
-- **SORGU-01 kapsam büyümesi (son 4 hafta):** yalnız 3 kaynak kayıt ekledi (basin_html, sosyal_transkript, finans_belge). **Yeni ilçe 0, yeni kaynak 0.**
+## 2. Sapmalar (Vezir)
 
-## 3. Vezir önerisi — koşu-damgası standardı (kanon adayı)
+| CC | Kart | Vezir | Fark | Okuma |
+|---|---|---|---|---|
+| Basın | 4 | 6 | +2 | uyumlu (mtime alt-sınır payı içinde) |
+| Hafıza | 20 | 21 | +1 | Vezir sayısı builder ingest günü + özet dosyaları; kartın 20'si yalnız builder. Alarm dosyaları (30 günde 18.053) DIŞLANDI. |
+| Analiz | 7 | 1 | -6 | Vezir düşük: CC çıktısının bir kısmı veri dizini dışına yazılıyor (02_CC_STATE, tradia-beykoz) ya da üzerine yazılıyor — alt-sınır |
+| Sosyal | 9 | 8 | -1 | uyumlu (mtime alt-sınır payı içinde) |
+| Tic | 7 | 3 | -4 | Vezir düşük: CC çıktısının bir kısmı veri dizini dışına yazılıyor (02_CC_STATE, tradia-beykoz) ya da üzerine yazılıyor — alt-sınır |
+| İhale | 6 | 1 | -5 | Vezir düşük: CC çıktısının bir kısmı veri dizini dışına yazılıyor (02_CC_STATE, tradia-beykoz) ya da üzerine yazılıyor — alt-sınır |
+| Finans | 3 | 23 | +20 | Vezir yüksek ama yanıltıcı: 21 ingest günü Hafıza builder'ının aldığı gün (gecikmeli alım), Finans'ın ürettiği gün değil. Dosya-günü 16; kart 3 tam başarılı / 9 tur. Gerçek üretim 9–16 arası. |
+| TT-MAP | 2 | 6 | +4 | Vezir yüksek: kart muhafazakâr saymış (yalnız tam-başarılı gün) ya da dizinde başka yazım var |
+| TT-AI | 28 | 1 | -27 | Kart KOŞU sayıyor (nöbet 28 gün). Üretim: yeni CONFIRMED yok (kart: 3 ay sabit). Patron'un 'exit 0 ≠ üretim' tanımına birebir örnek. |
+| Pazarlama | 24 | 21 | -3 | Vezir düşük: CC çıktısının bir kısmı veri dizini dışına yazılıyor (02_CC_STATE, tradia-beykoz) ya da üzerine yazılıyor — alt-sınır |
+| Signals | 4 | 3 | -1 | uyumlu (mtime alt-sınır payı içinde) |
+| Kitap | 3 | 3 | +0 | uyumlu (mtime alt-sınır payı içinde) |
+| Arşiv | 6 | 3 | -3 | Vezir düşük: CC çıktısının bir kısmı veri dizini dışına yazılıyor (02_CC_STATE, tradia-beykoz) ya da üzerine yazılıyor — alt-sınır |
+| Borsa | kart yok (bulut) | 3 | — | Mac'teki cc_borsa dizini; bulut hattı ölçülemez |
 
-Her launchd işi başında ve sonunda tek satır bassın:
-`[2026-10-14T03:00:00Z] <label> BAŞLA` · `[…] <label> BİTTİ exit=<n> disk=<var|yok> kayit=<n>`
-Bu standart olmadan 44 işin 35'inin sürekliliği **ölçülemez**. Bugün yapılabilen tek ölçü "son iz tarihi"dir.
+## 3. Ölçü düzeltmesi kaydı (Patron 14 Eki)
 
-## 4. Hafıza'ya hipotez (kanıtlı değil)
+İlk süreklilik ölçüsü (14 Eki ilk tur) **koşu** sayıyordu: launchd tetiklendi mi, log damgası var mı. Patron'un düzeltmesiyle birincil ölçü artık **üretim**: o gün yeni çıktı ya da kayıt var mı. Basın ilk ölçüde %93 çıkmıştı (govde heartbeat'i), kartında ise 26 gün durduğunu yazıyordu. Koşu ölçüsü SUREKLILIK.json'da `cc_ozet_KOSU_ikincil` adıyla tanı amaçlı duruyor.
 
-73 gündür sessiz `gunluk-ozet`, `primer-monitor` ve `haber-akis` işlerinin üçü de: (a) 1 Ağu Standing #38 shim düzeltmesinde yeniden yazıldı (`.pre_python3.9_20260801` yedekleri var), (b) logunu `~/Desktop`'a (TCC korumalı) yazıyor, (c) `bin/python3.9` bağlantısı ya da `/bin/bash` çağırıyor. Hafıza'daki Standing #38 ek-dersine göre bağlantı FDA mirasını kırıyor. Logları **2 Ağu**'da durdu. `haber` ve `tuik-tcmb-monthly` ise **hiç yüklü değil**.
+## 4. Derleme zamanlaması notu
 
-*Vezir · $0 · salt-okuma ölçüm · 2026-10-14*
+İlk HEDEF_HAVUZU (14 Eki ~01:4x) "diskte kart yok" diyordu. Kartlar 01:45–02:05 arasında düştü; tarama birkaç dakika erken kalmıştı. v2 bu kartlardan derlendi.
+
+*Vezir · $0 · 2026-10-14*
