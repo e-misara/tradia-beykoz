@@ -285,7 +285,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--kuru", action="store_true", help="Yalnız indeks üret, yaz-atlama.")
     ap.add_argument("--push", action="store_true", help="Sonda git add/commit/push yap.")
+    ap.add_argument("--kacirildiysa", action="store_true",
+                    help="launchd RunAtLoad: son Pazar 04:50'den sonra koşu varsa hiçbir şey yapma")
     args = ap.parse_args()
+
+    # TT-ARŞİV 2026-10-14: haftalık cron (Pazar 04:50). Mac o an KAPALIYSA launchd koşuyu telafi
+    # etmez (13 Ekim'de pil bitti, 6 sa kapalı kaldı) → açılışta bu kontrol kaçırılanı yakalar.
+    if args.kacirildiysa and os.path.exists(INDEKS_JSON):
+        simdi = datetime.now()
+        sinir = simdi.replace(hour=4, minute=50, second=0, microsecond=0)
+        from datetime import timedelta
+        sinir -= timedelta(days=(simdi.weekday() + 1) % 7)
+        if sinir > simdi: sinir -= timedelta(days=7)
+        if datetime.fromtimestamp(os.path.getmtime(INDEKS_JSON)) >= sinir:
+            print(f"⊘ {sinir:%Y-%m-%d %H:%M} sonrası arşiv koşusu var — gerekmedi"); return
 
     if not os.path.isdir(ARSIV_REPO):
         print(f"⚠ misara-arsiv PRIVATE repo YOK: {ARSIV_REPO}")
@@ -321,6 +334,14 @@ def main():
             cc_dir = os.path.join(TAM_DIR, cc)
             os.makedirs(cc_dir, exist_ok=True)
             md_yol = os.path.join(cc_dir, md_ad)
+            # TT-ARŞİV 2026-10-14: oturum başına TEK dosya. Ad son-mesaj tarihini taşıdığı için her
+            # koşuda yeni ad doğuyordu (haftalık cron'da yılda GB'larca tekrar). Eski adlı dosya yeni
+            # ada taşınır; önceki sürüm git geçmişinde kalır (SİLME-YOK).
+            eskiler = [x for x in glob.glob(os.path.join(TAM_DIR, "*", f"*_{ot_id[:8]}.md")) if x != md_yol]
+            if eskiler and not os.path.exists(md_yol) and not args.kuru:
+                os.replace(sorted(eskiler)[-1], md_yol)
+                print(f"  ↪  {os.path.relpath(sorted(eskiler)[-1], TAM_DIR)} → {cc}/{md_ad}")
+                for x in sorted(eskiler)[:-1]: os.remove(x)   # aynı oturumun daha eski kopyaları (git geçmişinde duruyor)
             hash_eski = ""
             if os.path.exists(md_yol):
                 with open(md_yol, encoding="utf-8") as f:
@@ -337,10 +358,33 @@ def main():
         indeks["toplam_mesaj"] += meta["mesaj_sayisi"]
         indeks["oturumlar"].append(meta)
 
+    # TT-ARŞİV 2026-10-14: diskten gitmiş oturumlar indeksten DÜŞMEZ (SİLME-YOK). Bu arşivin
+    # varlık sebebi tam olarak onlar (ör. Tic 14837276, Borsa ac74e500).
+    if os.path.exists(pub_indeks):
+        try:
+            eski = json.load(open(pub_indeks, encoding="utf-8"))
+            simdiki = {o["oturum_id"] for o in indeks["oturumlar"]}
+            for o in eski.get("oturumlar", []):
+                if o.get("oturum_id") not in simdiki:
+                    o["diskte_yok"] = True
+                    indeks["oturumlar"].append(o)
+                    indeks["toplam_oturum"] += 1
+                    indeks["toplam_mesaj"] += o.get("mesaj_sayisi", 0)
+        except Exception as e:
+            print(f"  ⚠ eski indeks okunamadı, korunamadı: {e}")
+
     # İndeks yaz
     with open(pub_indeks, "w", encoding="utf-8") as f:
         json.dump(indeks, f, ensure_ascii=False, indent=2)
     print(f"📇 indeks.json → {pub_indeks}")
+
+    # TT-ARŞİV 2026-10-14: INDEKS.md'deki elle yazılmış '## ' bölümleri (ör. Vezir'in 'Bulut
+    # oturumları') korunur — otomatik kısım '##' başlığı üretmez.
+    elle = ""
+    if os.path.exists(pub_indeks_md):
+        eski_md = open(pub_indeks_md, encoding="utf-8").read()
+        i = eski_md.find("\n## ")
+        if i >= 0: elle = "\n" + eski_md[i + 1:]
 
     # Public MD indeks (yalnız metadata)
     with open(pub_indeks_md, "w", encoding="utf-8") as f:
@@ -349,18 +393,23 @@ def main():
         f.write(f"**Toplam:** {indeks['toplam_oturum']} oturum · {indeks['toplam_mesaj']:,} mesaj\n\n")
         f.write("| CC | Oturum | Tarih aralığı | Mesaj |\n|---|---|---|---|\n")
         for o in sorted(indeks["oturumlar"], key=lambda x: x.get("son_mesaj") or "", reverse=True):
-            f.write(f"| {o['cc']} | {o.get('konu','?')[:60]} | `{o['oturum_id'][:8]}` | {o['ilk_mesaj']} → {o['son_mesaj']} | {o['mesaj_sayisi']:,} |\n")
+            f.write(f"| {o['cc']}{' ⊘diskte-yok' if o.get('diskte_yok') else ''} | {o.get('konu','?')[:60]} | `{o['oturum_id'][:8]}` | {o['ilk_mesaj']} → {o['son_mesaj']} | {o['mesaj_sayisi']:,} |\n")
+        f.write(elle)
     print(f"📇 INDEKS_PUBLIC.md → {pub_indeks_md}")
 
     if args.push and os.path.isdir(ARSIV_REPO):
         try:
-            subprocess.check_call(["git", "-C", ARSIV_REPO, "add", "."])
+            # TT-ARŞİV 2026-10-14: yalnız arşivin kendi yolları; başka CC'lerin çalışmasını süpürme
+            subprocess.check_call(["git", "-C", ARSIV_REPO, "add", "tam", "indeks.json", "INDEKS.md"])
+            if subprocess.run(["git", "-C", ARSIV_REPO, "diff", "--cached", "--quiet"]).returncode == 0:
+                print("= değişiklik yok, commit atlanmadı"); return
             n = indeks["toplam_oturum"]
             tarih = indeks["tarih"]
             subprocess.check_call([
                 "git", "-C", ARSIV_REPO, "commit",
-                "-m", f"arşiv: {tarih} {n} oturum"
+                "-m", f"arşiv: {tarih} {n} oturum\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
             ])
+            subprocess.check_call(["git", "-C", ARSIV_REPO, "pull", "--rebase", "-q", "origin", "main"])   # eşzamanlı Vezir commit'leri
             subprocess.check_call(["git", "-C", ARSIV_REPO, "push", "origin", "main"])
             print("🚀 push OK")
         except subprocess.CalledProcessError as e:
