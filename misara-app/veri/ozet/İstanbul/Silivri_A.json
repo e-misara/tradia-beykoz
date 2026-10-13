@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Silivri",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 1,
+    "ilan_sayisi": 1634,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 857
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Selimpaşa",
+      "kayit": 308,
+      "pay_yuzde": 35.9
+    },
+    {
+      "mahalle": "Mimar Sinan",
+      "kayit": 156,
+      "pay_yuzde": 18.2
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Silivri ilçesinde 1 basın kaydı ve 1.634 ilan tutuluyor. Son 30 günde yeni kayıt yok. Selimpaşa mahallesi mahalle-etiketli kayıtların %35.9'ini içeriyor; Mimar Sinan %18.2 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "500275c14ff02b48",
+  "sablon_versiyon": "v1.0-DM02"
+}

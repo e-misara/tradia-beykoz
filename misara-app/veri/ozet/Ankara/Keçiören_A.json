@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Ankara",
+  "ilce": "Keçiören",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1690,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 553
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Ovacik",
+      "kayit": 167,
+      "pay_yuzde": 30.2
+    },
+    {
+      "mahalle": "Etlik",
+      "kayit": 114,
+      "pay_yuzde": 20.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Ankara/Keçiören ilçesinde 0 basın kaydı ve 1.690 ilan tutuluyor. Son 30 günde yeni kayıt yok. Ovacik mahallesi mahalle-etiketli kayıtların %30.2'ini içeriyor; Etlik %20.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "02f7c2b8055f6b77",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,35 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Beykoz",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 395634,
+    "ilan_sayisi": 4049,
+    "ced_sayisi": 610,
+    "plan_sayisi": 809,
+    "yeni_30g": 12710,
+    "onceki_30g": 19342,
+    "delta_yuzde": -34.3,
+    "toplam_mahalleli_etiket": 3733
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Çubuklu",
+      "kayit": 1191,
+      "pay_yuzde": 31.9
+    },
+    {
+      "mahalle": "Paşabahçe",
+      "kayit": 1071,
+      "pay_yuzde": 28.7
+    }
+  ],
+  "eksikler": [
+    "mahalle etiketi %1.7 — mahalle-bazlı ingest eksik",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Beykoz ilçesinde 395.634 basın kaydı ve 4.049 ilan tutuluyor. Son 30 günde 12.710 yeni kayıt eklendi — önceki 30 güne göre %34.3 düşüş. Çubuklu mahallesi mahalle-etiketli kayıtların %31.9'ini içeriyor; Paşabahçe %28.7 ile ikinci sırada. İçerikte 610 ÇED atfı ve 809 imar planı atfı geçiyor. Bilinen eksikler: mahalle etiketi %1.7 — mahalle-bazlı ingest eksik; e-Plan platformu bağlanmadı.",
+  "metin_sha": "87df2fcd5c8126c7",
+  "sablon_versiyon": "v1.0-DM02"
+}

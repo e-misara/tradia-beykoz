@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Adıyaman",
+  "ilce": "Merkez",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 3193,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 308
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Koçyazi",
+      "kayit": 86,
+      "pay_yuzde": 27.9
+    },
+    {
+      "mahalle": "Darici",
+      "kayit": 77,
+      "pay_yuzde": 25.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Adıyaman/Merkez ilçesinde 0 basın kaydı ve 3.193 ilan tutuluyor. Son 30 günde yeni kayıt yok. Koçyazi mahallesi mahalle-etiketli kayıtların %27.9'ini içeriyor; Darici %25.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "346e1f6d72e108fb",
+  "sablon_versiyon": "v1.0-DM02"
+}

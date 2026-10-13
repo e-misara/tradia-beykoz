@@ -1,0 +1,35 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Kartal",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 9317,
+    "ilan_sayisi": 702,
+    "ced_sayisi": 11,
+    "plan_sayisi": 15,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 416
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Hürriyet",
+      "kayit": 146,
+      "pay_yuzde": 35.1
+    },
+    {
+      "mahalle": "Karlıktepe",
+      "kayit": 96,
+      "pay_yuzde": 23.1
+    }
+  ],
+  "eksikler": [
+    "mahalle etiketi %5.0 — mahalle-bazlı ingest eksik",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Kartal ilçesinde 9.317 basın kaydı ve 702 ilan tutuluyor. Son 30 günde yeni kayıt yok. Hürriyet mahallesi mahalle-etiketli kayıtların %35.1'ini içeriyor; Karlıktepe %23.1 ile ikinci sırada. İçerikte 11 ÇED atfı ve 15 imar planı atfı geçiyor. Bilinen eksikler: mahalle etiketi %5.0 — mahalle-bazlı ingest eksik; e-Plan platformu bağlanmadı.",
+  "metin_sha": "00cb85b3a64ec06f",
+  "sablon_versiyon": "v1.0-DM02"
+}

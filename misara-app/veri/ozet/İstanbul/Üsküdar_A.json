@@ -1,0 +1,34 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Üsküdar",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 7930,
+    "ilan_sayisi": 1961,
+    "ced_sayisi": 1,
+    "plan_sayisi": 49,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 679
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Ünalan",
+      "kayit": 240,
+      "pay_yuzde": 35.3
+    },
+    {
+      "mahalle": "Acibadem",
+      "kayit": 148,
+      "pay_yuzde": 21.8
+    }
+  ],
+  "eksikler": [
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Üsküdar ilçesinde 7.930 basın kaydı ve 1.961 ilan tutuluyor. Son 30 günde yeni kayıt yok. Ünalan mahallesi mahalle-etiketli kayıtların %35.3'ini içeriyor; Acibadem %21.8 ile ikinci sırada. İçerikte 1 ÇED atfı ve 49 imar planı atfı geçiyor. Bilinen eksikler: e-Plan platformu bağlanmadı.",
+  "metin_sha": "c644bd47da0941a4",
+  "sablon_versiyon": "v1.0-DM02"
+}

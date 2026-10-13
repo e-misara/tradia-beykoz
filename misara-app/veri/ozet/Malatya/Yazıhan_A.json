@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Malatya",
+  "ilce": "Yazıhan",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 21,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 9
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "İriağaç",
+      "kayit": 3,
+      "pay_yuzde": 33.3
+    },
+    {
+      "mahalle": "Çivril",
+      "kayit": 3,
+      "pay_yuzde": 33.3
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Malatya/Yazıhan ilçesinde 0 basın kaydı ve 21 ilan tutuluyor. Son 30 günde yeni kayıt yok. İriağaç mahallesi mahalle-etiketli kayıtların %33.3'ini içeriyor; Çivril %33.3 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "793f3d5b2098d90a",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Sancaktepe",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1847,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 808
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Abdurrahmangazi",
+      "kayit": 232,
+      "pay_yuzde": 28.7
+    },
+    {
+      "mahalle": "Osmangazi",
+      "kayit": 212,
+      "pay_yuzde": 26.2
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Sancaktepe ilçesinde 0 basın kaydı ve 1.847 ilan tutuluyor. Son 30 günde yeni kayıt yok. Abdurrahmangazi mahallesi mahalle-etiketli kayıtların %28.7'ini içeriyor; Osmangazi %26.2 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "4ba3818654d7b1b1",
+  "sablon_versiyon": "v1.0-DM02"
+}

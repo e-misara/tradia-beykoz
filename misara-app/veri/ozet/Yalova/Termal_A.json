@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Yalova",
+  "ilce": "Termal",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 39,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 22
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Gökçedere",
+      "kayit": 14,
+      "pay_yuzde": 63.6
+    },
+    {
+      "mahalle": "Üvezpınar",
+      "kayit": 4,
+      "pay_yuzde": 18.2
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Yalova/Termal ilçesinde 0 basın kaydı ve 39 ilan tutuluyor. Son 30 günde yeni kayıt yok. Gökçedere mahallesi mahalle-etiketli kayıtların %63.6'ini içeriyor; Üvezpınar %18.2 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "14fab90fafb2d1bc",
+  "sablon_versiyon": "v1.0-DM02"
+}

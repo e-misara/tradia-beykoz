@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Gaziantep",
+  "ilce": "Şahinbey",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 529,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 157
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Çağdaş",
+      "kayit": 37,
+      "pay_yuzde": 23.6
+    },
+    {
+      "mahalle": "Güneş",
+      "kayit": 35,
+      "pay_yuzde": 22.3
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Gaziantep/Şahinbey ilçesinde 0 basın kaydı ve 529 ilan tutuluyor. Son 30 günde yeni kayıt yok. Çağdaş mahallesi mahalle-etiketli kayıtların %23.6'ini içeriyor; Güneş %22.3 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "93bc7f44108bf5d9",
+  "sablon_versiyon": "v1.0-DM02"
+}

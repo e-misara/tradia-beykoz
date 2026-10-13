@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Beyoğlu",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1773,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 424
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Hacıahmet",
+      "kayit": 108,
+      "pay_yuzde": 25.5
+    },
+    {
+      "mahalle": "Sütlüce",
+      "kayit": 104,
+      "pay_yuzde": 24.5
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Beyoğlu ilçesinde 0 basın kaydı ve 1.773 ilan tutuluyor. Son 30 günde yeni kayıt yok. Hacıahmet mahallesi mahalle-etiketli kayıtların %25.5'ini içeriyor; Sütlüce %24.5 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "774d461b3c42718e",
+  "sablon_versiyon": "v1.0-DM02"
+}

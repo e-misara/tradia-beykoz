@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Bayraklı",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 66,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 51
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Doğançay",
+      "kayit": 20,
+      "pay_yuzde": 39.2
+    },
+    {
+      "mahalle": "Onur",
+      "kayit": 11,
+      "pay_yuzde": 21.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Bayraklı ilçesinde 0 basın kaydı ve 66 ilan tutuluyor. Son 30 günde yeni kayıt yok. Doğançay mahallesi mahalle-etiketli kayıtların %39.2'ini içeriyor; Onur %21.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "fd906e0c1225b1e1",
+  "sablon_versiyon": "v1.0-DM02"
+}

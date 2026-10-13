@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Adana",
+  "ilce": "Çukurova",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 165,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 115
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Yurt",
+      "kayit": 61,
+      "pay_yuzde": 53.0
+    },
+    {
+      "mahalle": "Toros",
+      "kayit": 38,
+      "pay_yuzde": 33.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Adana/Çukurova ilçesinde 0 basın kaydı ve 165 ilan tutuluyor. Son 30 günde yeni kayıt yok. Yurt mahallesi mahalle-etiketli kayıtların %53.0'ini içeriyor; Toros %33.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "a666b94642587fa8",
+  "sablon_versiyon": "v1.0-DM02"
+}

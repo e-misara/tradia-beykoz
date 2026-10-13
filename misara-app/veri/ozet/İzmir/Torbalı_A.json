@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Torbalı",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 211,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 106
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Torbalı",
+      "kayit": 30,
+      "pay_yuzde": 28.3
+    },
+    {
+      "mahalle": "Tepeköy",
+      "kayit": 21,
+      "pay_yuzde": 19.8
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Torbalı ilçesinde 0 basın kaydı ve 211 ilan tutuluyor. Son 30 günde yeni kayıt yok. Torbalı mahallesi mahalle-etiketli kayıtların %28.3'ini içeriyor; Tepeköy %19.8 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "f9dc177b48aec8fa",
+  "sablon_versiyon": "v1.0-DM02"
+}

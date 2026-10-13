@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Sultangazi",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1627,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 858
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "İsmetpaşa",
+      "kayit": 206,
+      "pay_yuzde": 24.0
+    },
+    {
+      "mahalle": "Cebeci",
+      "kayit": 199,
+      "pay_yuzde": 23.2
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Sultangazi ilçesinde 0 basın kaydı ve 1.627 ilan tutuluyor. Son 30 günde yeni kayıt yok. İsmetpaşa mahallesi mahalle-etiketli kayıtların %24.0'ini içeriyor; Cebeci %23.2 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "30706be2c94701f1",
+  "sablon_versiyon": "v1.0-DM02"
+}

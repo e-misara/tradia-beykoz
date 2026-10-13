@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Afyonkarahisar",
+  "ilce": "Dinar",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 55,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 36
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Korubaşi",
+      "kayit": 13,
+      "pay_yuzde": 36.1
+    },
+    {
+      "mahalle": "Dörtyol",
+      "kayit": 9,
+      "pay_yuzde": 25.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Afyonkarahisar/Dinar ilçesinde 0 basın kaydı ve 55 ilan tutuluyor. Son 30 günde yeni kayıt yok. Korubaşi mahallesi mahalle-etiketli kayıtların %36.1'ini içeriyor; Dörtyol %25.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "a4e91bd71d7456df",
+  "sablon_versiyon": "v1.0-DM02"
+}

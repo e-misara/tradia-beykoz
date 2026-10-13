@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Ankara",
+  "ilce": "Çankaya",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 3370,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 733
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Alacaatlı",
+      "kayit": 258,
+      "pay_yuzde": 35.2
+    },
+    {
+      "mahalle": "Beytepe",
+      "kayit": 145,
+      "pay_yuzde": 19.8
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Ankara/Çankaya ilçesinde 0 basın kaydı ve 3.370 ilan tutuluyor. Son 30 günde yeni kayıt yok. Alacaatlı mahallesi mahalle-etiketli kayıtların %35.2'ini içeriyor; Beytepe %19.8 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "6986301205dbaab8",
+  "sablon_versiyon": "v1.0-DM02"
+}

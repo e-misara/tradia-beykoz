@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Mersin",
+  "ilce": "Mezitli",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 385,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 244
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Akdeniz",
+      "kayit": 97,
+      "pay_yuzde": 39.8
+    },
+    {
+      "mahalle": "Menderes",
+      "kayit": 56,
+      "pay_yuzde": 23.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Mersin/Mezitli ilçesinde 0 basın kaydı ve 385 ilan tutuluyor. Son 30 günde yeni kayıt yok. Akdeniz mahallesi mahalle-etiketli kayıtların %39.8'ini içeriyor; Menderes %23.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "caa9cb4be987d528",
+  "sablon_versiyon": "v1.0-DM02"
+}

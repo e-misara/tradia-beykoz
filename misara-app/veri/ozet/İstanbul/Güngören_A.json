@@ -1,0 +1,34 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Güngören",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 9173,
+    "ilan_sayisi": 699,
+    "ced_sayisi": 20,
+    "plan_sayisi": 6,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 386
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Sanayi",
+      "kayit": 97,
+      "pay_yuzde": 25.1
+    },
+    {
+      "mahalle": "Mehmet Nesih Özmen",
+      "kayit": 95,
+      "pay_yuzde": 24.6
+    }
+  ],
+  "eksikler": [
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Güngören ilçesinde 9.173 basın kaydı ve 699 ilan tutuluyor. Son 30 günde yeni kayıt yok. Sanayi mahallesi mahalle-etiketli kayıtların %25.1'ini içeriyor; Mehmet Nesih Özmen %24.6 ile ikinci sırada. İçerikte 20 ÇED atfı ve 6 imar planı atfı geçiyor. Bilinen eksikler: e-Plan platformu bağlanmadı.",
+  "metin_sha": "bb0cfb4ea5e6c8b2",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,34 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Sarıyer",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 16923,
+    "ilan_sayisi": 2655,
+    "ced_sayisi": 41,
+    "plan_sayisi": 70,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 1456
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Maslak",
+      "kayit": 607,
+      "pay_yuzde": 41.7
+    },
+    {
+      "mahalle": "Ayazağa",
+      "kayit": 332,
+      "pay_yuzde": 22.8
+    }
+  ],
+  "eksikler": [
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Sarıyer ilçesinde 16.923 basın kaydı ve 2.655 ilan tutuluyor. Son 30 günde yeni kayıt yok. Maslak mahallesi mahalle-etiketli kayıtların %41.7'ini içeriyor; Ayazağa %22.8 ile ikinci sırada. İçerikte 41 ÇED atfı ve 70 imar planı atfı geçiyor. Bilinen eksikler: e-Plan platformu bağlanmadı.",
+  "metin_sha": "af7910a4006dc370",
+  "sablon_versiyon": "v1.0-DM02"
+}

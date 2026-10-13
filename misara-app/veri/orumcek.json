@@ -1,0 +1,1263 @@
+{
+ "baslik": "M4 Örümcek Panosu",
+ "surum": "v2 · KUYRUK türevi",
+ "kesit_utc": "2026-10-13T10:03:59.065452Z",
+ "kaynak_kurali": "Hücreler yalnız motor/KUYRUK.json'dan (Vezir derler, Hafıza gösterir)",
+ "kuyruk": {
+  "sahibi": "Vezir",
+  "acilis": "2026-10-11",
+  "schema_version": "2.0",
+  "koordinasyon": {},
+  "oncelik_tablosu": {},
+  "guncelleme": "2026-10-12",
+  "kok_ns": "BM-K1..BM-K16 · Bölge Motoru öneki (K-numara standardı 2026-08-07: çıplak K yasak; Signals SIG32-K01..K15 ayrı küme)",
+  "olcek_notu": "Rize/Derepazarı = PARSEL ölçeği (160 hücre: 16 kök × 5 bakış × 2 zaman) · Beykoz/Kartal = İLÇE+MAHALLE ölçeği · bu dosyadaki hücreler KÖK-düzeyi özettir; 160-hücre tam sayımı Tic+Hafıza'dan (örümcek §5)",
+  "arz_eslemesi": {
+   "K1": {
+    "ad": "KİMLİK",
+    "cc": [
+     "Aİ",
+     "Hafıza"
+    ]
+   },
+   "K2": {
+    "ad": "MÜLKİYET/KADASTRO",
+    "cc": [
+     "Tic",
+     "Arşiv"
+    ]
+   },
+   "K3": {
+    "ad": "PLAN/İMAR REJİMİ",
+    "cc": [
+     "Tic",
+     "Map",
+     "Patron-saha"
+    ]
+   },
+   "K4": {
+    "ad": "FİZİK/ARAZİ",
+    "cc": [
+     "Map"
+    ]
+   },
+   "K5": {
+    "ad": "AFET/RİSK",
+    "cc": [
+     "Map",
+     "Basın",
+     "İhale",
+     "Finans"
+    ]
+   },
+   "K6": {
+    "ad": "ALTYAPI/ERİŞİM",
+    "cc": [
+     "Aİ",
+     "Tic",
+     "Map"
+    ]
+   },
+   "K7": {
+    "ad": "KAMU HAMLESİ",
+    "cc": [
+     "İhale",
+     "Basın",
+     "Aİ"
+    ]
+   },
+   "K8": {
+    "ad": "PİYASA/ARZ",
+    "cc": [
+     "Analiz",
+     "Arşiv"
+    ]
+   },
+   "K9": {
+    "ad": "TALEP/NÜFUS",
+    "cc": [
+     "Analiz",
+     "Pazarlama",
+     "Borsa"
+    ]
+   },
+   "K10": {
+    "ad": "EKONOMİ/AKTÖR",
+    "cc": [
+     "Tic",
+     "Borsa",
+     "Aİ"
+    ]
+   },
+   "K11": {
+    "ad": "FİNANS",
+    "cc": [
+     "Finans"
+    ]
+   },
+   "K12": {
+    "ad": "SÖYLEM",
+    "cc": [
+     "Basın",
+     "Sosyal",
+     "Aİ"
+    ]
+   },
+   "K13": {
+    "ad": "ÇEVRE/KORUMA/TARIM",
+    "cc": [
+     "Map",
+     "Tic",
+     "İhale"
+    ]
+   },
+   "K14": {
+    "ad": "KARŞILAŞTIRMA",
+    "cc": [
+     "Hafıza",
+     "Aİ",
+     "Map"
+    ]
+   },
+   "K15": {
+    "ad": "ZAMAN/ARKEOLOJİ",
+    "cc": [
+     "Basın",
+     "Map",
+     "Analiz",
+     "Sinyal"
+    ]
+   },
+   "K16": {
+    "ad": "SİSTEM KONTROLÜ",
+    "cc": [
+     "Vezir",
+     "Üst Akıl"
+    ]
+   }
+  },
+  "saglik": {
+   "kirmizi": [
+    "🟠 dm02: panoda 5,4 gün gecikme raporlandı → 11 Eki 17:11Z koştu, 12 Eki 00:57Z exit 0 bitti, şu an gecikme 0 (TOPARLANDI) · 27 Eyl–11 Eki boşluğunun SEBEBİ bilinmiyor → Hafıza'ya soruldu (02_CC_STATE/vezir_soru_hafiza_dm02_gecikme.json) · TR etiketi hâlâ bayat (2026-09-04)",
+    "🔴 TT-HAFIZA external disk YİNE takılı değil (Analiz 11 Eki: diskutil BOŞ) → BM-K8 Beykoz+Kartal ERİŞİLEMEDİ · İhale EKAP rescan ertelendi",
+    "🔴 Aİ .gov.tr kurum-duyuru fetch-BLOKE (HTTP 500 anti-bot) → BM-K7 alt-hücresi"
+   ],
+   "sari": [
+    "🟡 Basın SIG14 borcu sürüyor: 565.478 havuzda url %14 / tarih %14 — ÇÖZÜLMEDİ",
+    "🟡 Pazarlama 71/81 il KAPALI (EVDS3 anahtarı bekliyor) → BM-K9",
+    "🟡 Map kaynak-bloke: MTA/AFAD/OGM/DSİ (K5/K13 doğrulama katmanı)"
+   ],
+   "kosuyor_takili": "YOK (tüm bolge dosyaları 11 Eki tarihli · 3 gün eşiği aşılmadı)",
+   "bolge_dosyasi_yazmayan": "Borsa (bulutta · S51/S52) · Hafıza (türetici rol) · Arşiv (depo rol) · Sinyal (SIG32 bayrak+tablo ile teslim)"
+  },
+  "ilk_sayim": {
+   "İstanbul/Beykoz": {
+    "DOLU": 13,
+    "ERISILEMEDI": 1,
+    "BOS": 2
+   },
+   "İstanbul/Kartal": {
+    "DOLU": 13,
+    "ERISILEMEDI": 1,
+    "BOS": 2
+   },
+   "Rize/Derepazarı": {
+    "DOLU": 15,
+    "ERISILEMEDI": 1,
+    "BOS": 0
+   }
+  },
+  "ilk_doldurma_statu": null,
+  "oncelik_1_bolgeler": [],
+  "not": null,
+  "hucre_sayi": 48
+ },
+ "kokler": [
+  {
+   "id": "K1",
+   "ad": "KİMLİK",
+   "soru": "Bu yer tam olarak neresi?"
+  },
+  {
+   "id": "K2",
+   "ad": "MÜLKİYET / KADASTRO",
+   "soru": "Niteliği ne, sınırı ne, birleştirilebilir mi?"
+  },
+  {
+   "id": "K3",
+   "ad": "PLAN / İMAR REJİMİ",
+   "soru": "Burada ne yapılabilir?"
+  },
+  {
+   "id": "K4",
+   "ad": "FİZİK / ARAZİ",
+   "soru": "Arazi nasıl — eğim, bakı, kot, örtü?"
+  },
+  {
+   "id": "K5",
+   "ad": "AFET / RİSK",
+   "soru": "Burayı ne tehdit eder?"
+  },
+  {
+   "id": "K6",
+   "ad": "ALTYAPI / ERİŞİM",
+   "soru": "Oraya ne ulaşıyor — yol, su, enerji, iletişim?"
+  },
+  {
+   "id": "K7",
+   "ad": "KAMU HAMLESİ",
+   "soru": "Devlet burada ne yapıyor, ne yapacak?"
+  },
+  {
+   "id": "K8",
+   "ad": "PİYASA / ARZ",
+   "soru": "Kaç ilan, hangi fiyat dağılımı, emsal var mı?"
+  },
+  {
+   "id": "K9",
+   "ad": "TALEP / NÜFUS",
+   "soru": "Kim geliyor, kim gidiyor?"
+  },
+  {
+   "id": "K10",
+   "ad": "EKONOMİ / AKTÖR",
+   "soru": "Burada kim iş yapıyor?"
+  },
+  {
+   "id": "K11",
+   "ad": "FİNANS",
+   "soru": "Para nereden, kaça, hangi şartla?"
+  },
+  {
+   "id": "K12",
+   "ad": "SÖYLEM",
+   "soru": "Burası hakkında ne konuşuluyor?"
+  },
+  {
+   "id": "K13",
+   "ad": "ÇEVRE / KORUMA / TARIM",
+   "soru": "Koruma var mı, toprak ne?"
+  },
+  {
+   "id": "K14",
+   "ad": "KARŞILAŞTIRMA",
+   "soru": "Buna benzeyen başka nerede var?"
+  },
+  {
+   "id": "K15",
+   "ad": "ZAMAN / ARKEOLOJİ",
+   "soru": "Burası 10 yılda ne oldu, yarın ne olabilir?"
+  },
+  {
+   "id": "K16",
+   "ad": "SİSTEM KONTROLÜ",
+   "soru": "Bu dosyaya güvenebilir miyiz?"
+  }
+ ],
+ "olcekler": [
+  "İL",
+  "İLÇE",
+  "MAHALLE",
+  "PARSEL"
+ ],
+ "bakislar": [
+  "TALEPÇİ",
+  "ARZ",
+  "DENETÇİ",
+  "SİNYAL",
+  "FİNANS"
+ ],
+ "zamanlar": [
+  "DURUM",
+  "DEĞİŞİM"
+ ],
+ "ekran_1_turkiye": {
+  "bolge_sayi": 973,
+  "hucre_formul": "640 = 16 kök × 4 ölçek × 5 bakış × 2 zaman (kanon/orumcek_soru_seti_v1.md)",
+  "il_doluluk": {
+   "dolu": 12,
+   "kismi": 7,
+   "sifir": 62
+  },
+  "ilce_doluluk": {
+   "dolu": 111,
+   "kismi": 82,
+   "sifir": 780
+  },
+  "kuyruk_hucre_sayi": 48,
+  "kuyruk_durum_dagilim": {
+   "BOŞ": 4,
+   "BİLİNMİYOR": 0,
+   "DOLU": 41,
+   "ERİŞİLEMEDİ": 3,
+   "KOŞUYOR": 0,
+   "KUYRUKTA": 0,
+   "YOK": 0
+  },
+  "bugun_kapanan_hucre": 0,
+  "bugun_kapanan_not": "KUYRUK hücrelerinde kapanis_tarihi = bugün olanlar",
+  "kuyruk_statu": null,
+  "oncelik_1_bolgeler": [],
+  "duygusal_fiyatlama": {
+   "deger": null,
+   "durum": "ölçülmedi",
+   "sahip": "CC-Analiz"
+  }
+ },
+ "ekran_2_bolgeler": {
+  "İstanbul/Beykoz": {
+   "sayac_16": {
+    "DOLU": 13,
+    "BOŞ": 2,
+    "ERİŞİLEMEDİ": 1
+   },
+   "adres_640_sayim": "henüz yok — KUYRUK hücreleri kök-düzeyi özet (ölçek/bakış/zaman alanı taşımıyor)",
+   "satirlar": [
+    {
+     "kok": "K1",
+     "ad": "KİMLİK",
+     "soru": "Bu yer tam olarak neresi?",
+     "arz_cc": [
+      "Aİ",
+      "Hafıza"
+     ],
+     "durum": "DOLU",
+     "cc": "Hafıza",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "cografya.json 81×973 + evren 45 mh",
+     "tarih": "2026-10-11",
+     "ozet": "idari ağaç tam",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K2",
+     "ad": "MÜLKİYET / KADASTRO",
+     "soru": "Niteliği ne, sınırı ne, birleştirilebilir mi?",
+     "arz_cc": [
+      "Tic",
+      "Arşiv"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_tic.json BM-K2",
+     "tarih": "2026-10-11",
+     "ozet": "kadastro hücresi",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K3",
+     "ad": "PLAN / İMAR REJİMİ",
+     "soru": "Burada ne yapılabilir?",
+     "arz_cc": [
+      "Tic",
+      "Map",
+      "Patron-saha"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic+Map",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_tic.json BM-K3 (8 kayıt) + eplan",
+     "tarih": "2026-10-11",
+     "ozet": "plan rejimi 8 kayıt",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K4",
+     "ad": "FİZİK / ARAZİ",
+     "soru": "Arazi nasıl — eğim, bakı, kot, örtü?",
+     "arz_cc": [
+      "Map"
+     ],
+     "durum": "DOLU",
+     "cc": "Map",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "bolge_map.json K4 (rakım/eğim/bakı · NDVI 0.572 · ağaç %59.4)",
+     "tarih": "2026-10-11",
+     "ozet": "fizik tam",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K5",
+     "ad": "AFET / RİSK",
+     "soru": "Burayı ne tehdit eder?",
+     "arz_cc": [
+      "Map",
+      "Basın",
+      "İhale",
+      "Finans"
+     ],
+     "durum": "DOLU",
+     "cc": "Map+Basın+İhale",
+     "kanit_sinifi": "ÖLÇÜM+SÖYLEM",
+     "kaynak": "Map K5 + Basın K5:98 + İhale afet=İLGİSİZ",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: MTA/AFAD/DSİ doğrulaması ERİŞİLEMEDİ",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K6",
+     "ad": "ALTYAPI / ERİŞİM",
+     "soru": "Oraya ne ulaşıyor — yol, su, enerji, iletişim?",
+     "arz_cc": [
+      "Aİ",
+      "Tic",
+      "Map"
+     ],
+     "durum": "BOŞ",
+     "cc": "Aİ",
+     "kanit_sinifi": null,
+     "kaynak": null,
+     "tarih": "2026-10-12",
+     "ozet": "Aİ altyapı-proxy yalnız Rize pilotunda; Beykoz kuyruğa",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K7",
+     "ad": "KAMU HAMLESİ",
+     "soru": "Devlet burada ne yapıyor, ne yapacak?",
+     "arz_cc": [
+      "İhale",
+      "Basın",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "İhale+Basın",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "İhale ekap=ÖLÇTÜM-DOLU + RG-SİT + Basın K7:84",
+     "tarih": "2026-10-11",
+     "ozet": "İ59-72 ilk tam örnek",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K8",
+     "ad": "PİYASA / ARZ",
+     "soru": "Kaç ilan, hangi fiyat dağılımı, emsal var mı?",
+     "arz_cc": [
+      "Analiz",
+      "Arşiv"
+     ],
+     "durum": "ERİŞİLEMEDİ",
+     "cc": "Analiz",
+     "kanit_sinifi": null,
+     "kaynak": "bolge_analiz.json: v25b external'da · diskutil BOŞ",
+     "tarih": "2026-10-11",
+     "ozet": "DFE v0.1 tanım hazır, ölçüm disk bekliyor",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K9",
+     "ad": "TALEP / NÜFUS",
+     "soru": "Kim geliyor, kim gidiyor?",
+     "arz_cc": [
+      "Analiz",
+      "Pazarlama",
+      "Borsa"
+     ],
+     "durum": "DOLU",
+     "cc": "Pazarlama+Analiz",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_pazarlama.json: İstanbul VAR_iller'de (TÜİK)",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: il-düzeyi PROXY, ilçeye atfedilmez",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K10",
+     "ad": "EKONOMİ / AKTÖR",
+     "soru": "Burada kim iş yapıyor?",
+     "arz_cc": [
+      "Tic",
+      "Borsa",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_tic.json BM-K10 (7 kayıt · aktör envanteri 17/16 kesin)",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: #17 Atakule atıf ÇELİŞKİ (T133 Signals'ta)",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K11",
+     "ad": "FİNANS",
+     "soru": "Para nereden, kaça, hangi şartla?",
+     "arz_cc": [
+      "Finans"
+     ],
+     "durum": "DOLU",
+     "cc": "Finans",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_finans.json istanbul/beykoz 6 satır",
+     "tarih": "2026-10-11",
+     "ozet": "teşvik/ÇED/hibe/katılım/birim-maliyet/güven-eksik",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K12",
+     "ad": "SÖYLEM",
+     "soru": "Burası hakkında ne konuşuluyor?",
+     "arz_cc": [
+      "Basın",
+      "Sosyal",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "Sosyal+Basın",
+     "kanit_sinifi": "SÖYLEM",
+     "kaynak": "Sosyal 21 kanal + Basın K12:92",
+     "tarih": "2026-10-11",
+     "ozet": "yerel kanal envanteri",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K13",
+     "ad": "ÇEVRE / KORUMA / TARIM",
+     "soru": "Koruma var mı, toprak ne?",
+     "arz_cc": [
+      "Map",
+      "Tic",
+      "İhale"
+     ],
+     "durum": "DOLU",
+     "cc": "Map",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "bolge_map.json K13_koruma",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: orman rejimi İŞARETLİ-DOĞRULANMADI (OGM bloke)",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K14",
+     "ad": "KARŞILAŞTIRMA",
+     "soru": "Buna benzeyen başka nerede var?",
+     "arz_cc": [
+      "Hafıza",
+      "Aİ",
+      "Map"
+     ],
+     "durum": "BOŞ",
+     "cc": "Hafıza+Aİ",
+     "kanit_sinifi": null,
+     "kaynak": null,
+     "tarih": "2026-10-12",
+     "ozet": "benzerlik motoru DENETİM-2 tasarımında",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K15",
+     "ad": "ZAMAN / ARKEOLOJİ",
+     "soru": "Burası 10 yılda ne oldu, yarın ne olabilir?",
+     "arz_cc": [
+      "Basın",
+      "Map",
+      "Analiz",
+      "Sinyal"
+     ],
+     "durum": "DOLU",
+     "cc": "Map+Basın",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "Map 10yil_degisim (12 alan)",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: Basın K15 arkeoloji 0",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K16",
+     "ad": "SİSTEM KONTROLÜ",
+     "soru": "Bu dosyaya güvenebilir miyiz?",
+     "arz_cc": [
+      "Vezir",
+      "Üst Akıl"
+     ],
+     "durum": "DOLU",
+     "cc": "Vezir",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "vaat defteri + kanon/ + pano + bu derleme",
+     "tarih": "2026-10-12",
+     "ozet": "SIG32 Beykoz: SİNYAL ADAYI 6/6 eksen okunabilir",
+     "kuyrukta_kayit": true
+    }
+   ]
+  },
+  "İstanbul/Kartal": {
+   "sayac_16": {
+    "DOLU": 13,
+    "BOŞ": 2,
+    "ERİŞİLEMEDİ": 1
+   },
+   "adres_640_sayim": "henüz yok — KUYRUK hücreleri kök-düzeyi özet (ölçek/bakış/zaman alanı taşımıyor)",
+   "satirlar": [
+    {
+     "kok": "K1",
+     "ad": "KİMLİK",
+     "soru": "Bu yer tam olarak neresi?",
+     "arz_cc": [
+      "Aİ",
+      "Hafıza"
+     ],
+     "durum": "DOLU",
+     "cc": "Hafıza",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "cografya.json pilot_ilce + 20 mh",
+     "tarih": "2026-10-11",
+     "ozet": "pilot ilçe",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K2",
+     "ad": "MÜLKİYET / KADASTRO",
+     "soru": "Niteliği ne, sınırı ne, birleştirilebilir mi?",
+     "arz_cc": [
+      "Tic",
+      "Arşiv"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_tic.json BM-K2",
+     "tarih": "2026-10-11",
+     "ozet": "kadastro hücresi",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K3",
+     "ad": "PLAN / İMAR REJİMİ",
+     "soru": "Burada ne yapılabilir?",
+     "arz_cc": [
+      "Tic",
+      "Map",
+      "Patron-saha"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic+Map",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_tic.json BM-K3 (3 kayıt)",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: Tic bölge-durumu KISMİ işaretledi",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K4",
+     "ad": "FİZİK / ARAZİ",
+     "soru": "Arazi nasıl — eğim, bakı, kot, örtü?",
+     "arz_cc": [
+      "Map"
+     ],
+     "durum": "DOLU",
+     "cc": "Map",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "bolge_map.json (NDVI 0.392 · yapı %15.9)",
+     "tarih": "2026-10-11",
+     "ozet": "fizik tam",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K5",
+     "ad": "AFET / RİSK",
+     "soru": "Burayı ne tehdit eder?",
+     "arz_cc": [
+      "Map",
+      "Basın",
+      "İhale",
+      "Finans"
+     ],
+     "durum": "DOLU",
+     "cc": "Map+Basın+İhale",
+     "kanit_sinifi": "ÖLÇÜM+SÖYLEM",
+     "kaynak": "Map K5 + Basın K5:98 + İhale afet=İLGİSİZ",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: MTA/AFAD doğrulaması bloke",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K6",
+     "ad": "ALTYAPI / ERİŞİM",
+     "soru": "Oraya ne ulaşıyor — yol, su, enerji, iletişim?",
+     "arz_cc": [
+      "Aİ",
+      "Tic",
+      "Map"
+     ],
+     "durum": "BOŞ",
+     "cc": "Aİ",
+     "kanit_sinifi": null,
+     "kaynak": null,
+     "tarih": "2026-10-12",
+     "ozet": "kuyruğa",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K7",
+     "ad": "KAMU HAMLESİ",
+     "soru": "Devlet burada ne yapıyor, ne yapacak?",
+     "arz_cc": [
+      "İhale",
+      "Basın",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "İhale+Basın",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "İhale ekap=ÖLÇTÜM-DOLU (Salı) + Basın K7:78",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: rg_kamulastirma + sit = BAKMADIM (İhale alt-kuyruğunda)",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K8",
+     "ad": "PİYASA / ARZ",
+     "soru": "Kaç ilan, hangi fiyat dağılımı, emsal var mı?",
+     "arz_cc": [
+      "Analiz",
+      "Arşiv"
+     ],
+     "durum": "ERİŞİLEMEDİ",
+     "cc": "Analiz",
+     "kanit_sinifi": null,
+     "kaynak": "v24 master external'da · disk yok",
+     "tarih": "2026-10-11",
+     "ozet": "mount gelince bolge_analiz_olcum_1.json",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K9",
+     "ad": "TALEP / NÜFUS",
+     "soru": "Kim geliyor, kim gidiyor?",
+     "arz_cc": [
+      "Analiz",
+      "Pazarlama",
+      "Borsa"
+     ],
+     "durum": "DOLU",
+     "cc": "Pazarlama+Analiz",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "İstanbul VAR_iller'de",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: il-düzeyi PROXY",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K10",
+     "ad": "EKONOMİ / AKTÖR",
+     "soru": "Burada kim iş yapıyor?",
+     "arz_cc": [
+      "Tic",
+      "Borsa",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_tic.json BM-K10 (5 kayıt)",
+     "tarih": "2026-10-11",
+     "ozet": "aktör envanteri",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K11",
+     "ad": "FİNANS",
+     "soru": "Para nereden, kaça, hangi şartla?",
+     "arz_cc": [
+      "Finans"
+     ],
+     "durum": "DOLU",
+     "cc": "Finans",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_finans.json istanbul/kartal 6 satır",
+     "tarih": "2026-10-11",
+     "ozet": "6 satır tam",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K12",
+     "ad": "SÖYLEM",
+     "soru": "Burası hakkında ne konuşuluyor?",
+     "arz_cc": [
+      "Basın",
+      "Sosyal",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "Sosyal+Basın",
+     "kanit_sinifi": "SÖYLEM",
+     "kaynak": "Sosyal 27 kanal + Basın K12:99",
+     "tarih": "2026-10-11",
+     "ozet": "yerel kanal envanteri",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K13",
+     "ad": "ÇEVRE / KORUMA / TARIM",
+     "soru": "Koruma var mı, toprak ne?",
+     "arz_cc": [
+      "Map",
+      "Tic",
+      "İhale"
+     ],
+     "durum": "DOLU",
+     "cc": "Map",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "bolge_map.json K13",
+     "tarih": "2026-10-11",
+     "ozet": "koruma katmanı",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K14",
+     "ad": "KARŞILAŞTIRMA",
+     "soru": "Buna benzeyen başka nerede var?",
+     "arz_cc": [
+      "Hafıza",
+      "Aİ",
+      "Map"
+     ],
+     "durum": "BOŞ",
+     "cc": "Hafıza+Aİ",
+     "kanit_sinifi": null,
+     "kaynak": null,
+     "tarih": "2026-10-12",
+     "ozet": "benzerlik motoru DENETİM-2'de",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K15",
+     "ad": "ZAMAN / ARKEOLOJİ",
+     "soru": "Burası 10 yılda ne oldu, yarın ne olabilir?",
+     "arz_cc": [
+      "Basın",
+      "Map",
+      "Analiz",
+      "Sinyal"
+     ],
+     "durum": "DOLU",
+     "cc": "Map+Basın",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "Map 10yil_degisim",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: Basın K15 arkeoloji 0",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K16",
+     "ad": "SİSTEM KONTROLÜ",
+     "soru": "Bu dosyaya güvenebilir miyiz?",
+     "arz_cc": [
+      "Vezir",
+      "Üst Akıl"
+     ],
+     "durum": "DOLU",
+     "cc": "Vezir",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bu derleme + SIG32",
+     "tarih": "2026-10-12",
+     "ozet": "SIG32 Kartal: EKSİK EKSEN 1/6 (negatif kontrol doğru çalıştı)",
+     "kuyrukta_kayit": true
+    }
+   ]
+  },
+  "Rize/Derepazarı": {
+   "sayac_16": {
+    "DOLU": 15,
+    "ERİŞİLEMEDİ": 1
+   },
+   "adres_640_sayim": "henüz yok — KUYRUK hücreleri kök-düzeyi özet (ölçek/bakış/zaman alanı taşımıyor)",
+   "satirlar": [
+    {
+     "kok": "K1",
+     "ad": "KİMLİK",
+     "soru": "Bu yer tam olarak neresi?",
+     "arz_cc": [
+      "Aİ",
+      "Hafıza"
+     ],
+     "durum": "DOLU",
+     "cc": "Aİ+Hafıza",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_ai.json K1 (evren 8 mh + kaymakamlık köy listesi)",
+     "tarih": "2026-10-11",
+     "ozet": "Bürücek=köy KESİN (idari-ad otoritesi)",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K2",
+     "ad": "MÜLKİYET / KADASTRO",
+     "soru": "Niteliği ne, sınırı ne, birleştirilebilir mi?",
+     "arz_cc": [
+      "Tic",
+      "Arşiv"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic+Arşiv",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "TKGM künye (Patron ekranı) + Arşiv 3/3 (97704f0)",
+     "tarih": "2026-10-11",
+     "ozet": "künye zinciri tam · parsel-veri lokal",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K3",
+     "ad": "PLAN / İMAR REJİMİ",
+     "soru": "Burada ne yapılabilir?",
+     "arz_cc": [
+      "Tic",
+      "Map",
+      "Patron-saha"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic+Map+Patron-saha",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_tic.json BM-K3 (9 kayıt) + ÇDP 6.9.7.4/6.2.4",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: plan-durum BELİRSİZ (e-Plan↔İÖİ pafta · Patron foto bekliyor) · kilit E3",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K4",
+     "ad": "FİZİK / ARAZİ",
+     "soru": "Arazi nasıl — eğim, bakı, kot, örtü?",
+     "arz_cc": [
+      "Map"
+     ],
+     "durum": "DOLU",
+     "cc": "Map",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "bolge_map.json (NDVI 0.757 · ağaç %88.8 · parsel-kesin eğim lokal)",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: s2_tarih 2025-06-25 bayat",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K5",
+     "ad": "AFET / RİSK",
+     "soru": "Burayı ne tehdit eder?",
+     "arz_cc": [
+      "Map",
+      "Basın",
+      "İhale",
+      "Finans"
+     ],
+     "durum": "DOLU",
+     "cc": "Map+İhale+Basın",
+     "kanit_sinifi": "ÖLÇÜM+BELGE",
+     "kaynak": "radar-hakem sel-izi YOK + İhale afet=DOLU-İZLEMEDE (RG 23 gün · 7269 hit 0) + Basın K5:26",
+     "tarih": "2026-10-11",
+     "ozet": "afet-kararı haftalık izlemede",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K6",
+     "ad": "ALTYAPI / ERİŞİM",
+     "soru": "Oraya ne ulaşıyor — yol, su, enerji, iletişim?",
+     "arz_cc": [
+      "Aİ",
+      "Tic",
+      "Map"
+     ],
+     "durum": "DOLU",
+     "cc": "Aİ+Tic+Map",
+     "kanit_sinifi": "PROXY",
+     "kaynak": "bolge_ai.json K6 (OSM)",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: PROXY-iskelet (OSM) · operatör verisi yok",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K7",
+     "ad": "KAMU HAMLESİ",
+     "soru": "Devlet burada ne yapıyor, ne yapacak?",
+     "arz_cc": [
+      "İhale",
+      "Basın",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "İhale+Aİ+Basın",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "İhale: ÖLÇTÜM-DOKUNMUYOR (RG 9000) + Basın K7:14",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: Aİ kurum-duyuru 🔴 fetch-BLOKE (.gov.tr HTTP 500) — alt-hücre ERİŞİLEMEDİ",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K8",
+     "ad": "PİYASA / ARZ",
+     "soru": "Kaç ilan, hangi fiyat dağılımı, emsal var mı?",
+     "arz_cc": [
+      "Analiz",
+      "Arşiv"
+     ],
+     "durum": "DOLU",
+     "cc": "Analiz+Arşiv",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "önceki ölçüm n=4",
+     "tarih": "2026-09",
+     "ozet": "⬛ TAVAN damgalı (n<8 · yorumlanamaz · 'ucuz' denemez)",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K9",
+     "ad": "TALEP / NÜFUS",
+     "soru": "Kim geliyor, kim gidiyor?",
+     "arz_cc": [
+      "Analiz",
+      "Pazarlama",
+      "Borsa"
+     ],
+     "durum": "ERİŞİLEMEDİ",
+     "cc": "Pazarlama+Analiz+Borsa",
+     "kanit_sinifi": null,
+     "kaynak": "bolge_pazarlama.json: Rize 71 KAPALI il içinde (EVDS3 anahtarı bekliyor)",
+     "tarih": "2026-10-11",
+     "ozet": "TÜİK il-serisi kapalı · KTB toplayıcı Borsa'da (yıllık ritim)",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K10",
+     "ad": "EKONOMİ / AKTÖR",
+     "soru": "Burada kim iş yapıyor?",
+     "arz_cc": [
+      "Tic",
+      "Borsa",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "Tic+Borsa+Aİ",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "bolge_tic.json BM-K10 (6 kayıt)",
+     "tarih": "2026-10-11",
+     "ozet": "aktör envanteri",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K11",
+     "ad": "FİNANS",
+     "soru": "Para nereden, kaça, hangi şartla?",
+     "arz_cc": [
+      "Finans"
+     ],
+     "durum": "DOLU",
+     "cc": "Finans",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "F-teslim 09-30: Rize 3.bölge (9903) · EK-5 · 6M eşiği · E7 (ÇDP 6.9.7.4)",
+     "tarih": "2026-09-30",
+     "ozet": "şerh: bolge_finans.json'da Derepazarı hücresi henüz yok (önceki teslimden)",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K12",
+     "ad": "SÖYLEM",
+     "soru": "Burası hakkında ne konuşuluyor?",
+     "arz_cc": [
+      "Basın",
+      "Sosyal",
+      "Aİ"
+     ],
+     "durum": "DOLU",
+     "cc": "Sosyal+Basın+Aİ",
+     "kanit_sinifi": "SÖYLEM",
+     "kaynak": "Sosyal 27 kanal + Basın K12:22 + rize_cron_girdi EVET",
+     "tarih": "2026-10-11",
+     "ozet": "kamulaştırma iddiası SÖYLEM damgalı (belge yok)",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K13",
+     "ad": "ÇEVRE / KORUMA / TARIM",
+     "soru": "Koruma var mı, toprak ne?",
+     "arz_cc": [
+      "Map",
+      "Tic",
+      "İhale"
+     ],
+     "durum": "DOLU",
+     "cc": "Map+Tic+İhale",
+     "kanit_sinifi": "ÖLÇÜM+BEYAN",
+     "kaynak": "Map K13 + TARLA/çay saha beyanı (5403 hattı)",
+     "tarih": "2026-10-11",
+     "ozet": "çay FİİLEN VAR · kapsamı Patron-saha",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K14",
+     "ad": "KARŞILAŞTIRMA",
+     "soru": "Buna benzeyen başka nerede var?",
+     "arz_cc": [
+      "Hafıza",
+      "Aİ",
+      "Map"
+     ],
+     "durum": "DOLU",
+     "cc": "Aİ+Hafıza+Map",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "bolge_ai.json K14_vektor (7 alan)",
+     "tarih": "2026-10-11",
+     "ozet": "nitelendirme vektörü hazır · benzerlik motoru DENETİM-2'de",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K15",
+     "ad": "ZAMAN / ARKEOLOJİ",
+     "soru": "Burası 10 yılda ne oldu, yarın ne olabilir?",
+     "arz_cc": [
+      "Basın",
+      "Map",
+      "Analiz",
+      "Sinyal"
+     ],
+     "durum": "DOLU",
+     "cc": "Map+Basın+Analiz+Sinyal",
+     "kanit_sinifi": "ÖLÇÜM",
+     "kaynak": "Map 10yil (A4: örtü stabil · kazı/heyelan izi yok)",
+     "tarih": "2026-10-11",
+     "ozet": "şerh: Basın K15 arkeoloji 0",
+     "kuyrukta_kayit": true
+    },
+    {
+     "kok": "K16",
+     "ad": "SİSTEM KONTROLÜ",
+     "soru": "Bu dosyaya güvenebilir miyiz?",
+     "arz_cc": [
+      "Vezir",
+      "Üst Akıl"
+     ],
+     "durum": "DOLU",
+     "cc": "Vezir",
+     "kanit_sinifi": "BELGE",
+     "kaynak": "PARSEL-01 vaka defteri + kanon + pano + bu derleme",
+     "tarih": "2026-10-12",
+     "ozet": "kilit E3 AÇIK · K16 kapanmadan dosya 'tamam' çıkmaz (örümcek §6)",
+     "kuyrukta_kayit": true
+    }
+   ]
+  }
+ },
+ "ekran_3_canli_kuyruk": {
+  "kosuyor": [
+   {
+    "pid": "5551",
+    "sure": "12:13",
+    "komut": "ktb_yigm_hasat.py"
+   },
+   {
+    "pid": "5577",
+    "sure": "12:10",
+    "komut": "f /Users/GAC-A/Desktop/tradia/cc_borsa/logs/ktb_yigm_s53.log"
+   },
+   {
+    "pid": "7200",
+    "sure": "06:24",
+    "komut": "bolge_motoru_v2.py"
+   },
+   {
+    "pid": "8829",
+    "sure": "00:02",
+    "komut": "orumcek_derle.py"
+   }
+  ],
+  "kosuyor_sayi": 4,
+  "bugun_biten": [
+   {
+    "dosya": "hafiza_bildirim_ttai_idari_ad_normalize.json",
+    "mtime_utc": "2026-10-13T10:03:43Z",
+    "boyut": 1285
+   },
+   {
+    "dosya": "hafiza_cevap_dm02_gecikme.json",
+    "mtime_utc": "2026-10-13T10:03:33Z",
+    "boyut": 3592
+   },
+   {
+    "dosya": "bolge_map.json",
+    "mtime_utc": "2026-10-13T10:02:26Z",
+    "boyut": 2926
+   },
+   {
+    "dosya": "hafiza_bildirim_ccihale_eriklimani_kdgpa_parsel01.json",
+    "mtime_utc": "2026-10-13T10:01:47Z",
+    "boyut": 939
+   },
+   {
+    "dosya": "bolge_ihale.json",
+    "mtime_utc": "2026-10-13T10:01:47Z",
+    "boyut": 7919
+   },
+   {
+    "dosya": "hafiza_bildirim_ttarsiv_bolge_besleme_EK1.json",
+    "mtime_utc": "2026-10-13T09:59:03Z",
+    "boyut": 1333
+   },
+   {
+    "dosya": "hafiza_bildirim_ttarsiv_ttmap_ioi_pafta.json",
+    "mtime_utc": "2026-10-13T09:58:36Z",
+    "boyut": 915
+   },
+   {
+    "dosya": "hafiza_bildirim_ttarsiv_kirik_link_ccsignals.json",
+    "mtime_utc": "2026-10-13T09:58:23Z",
+    "boyut": 1674
+   },
+   {
+    "dosya": "hafiza_bildirim_ttarsiv_kirik_link_cctic.json",
+    "mtime_utc": "2026-10-13T09:58:23Z",
+    "boyut": 6140
+   },
+   {
+    "dosya": "hafiza_bildirim_ttarsiv_kirik_link_cchafiza.json",
+    "mtime_utc": "2026-10-13T09:58:23Z",
+    "boyut": 5543
+   },
+   {
+    "dosya": "hafiza_bildirim_ttarsiv_kirik_link_ccanaliz.json",
+    "mtime_utc": "2026-10-13T09:58:23Z",
+    "boyut": 1350
+   },
+   {
+    "dosya": "hafiza_bildirim_ttarsiv_kirik_link_ccbasin.json",
+    "mtime_utc": "2026-10-13T09:58:23Z",
+    "boyut": 1009
+   },
+   {
+    "dosya": "hafiza_bildirim_cctic_beykoz_2B_11787_to_signals.json",
+    "mtime_utc": "2026-10-13T09:57:51Z",
+    "boyut": 2151
+   },
+   {
+    "dosya": "bolge_tic.json",
+    "mtime_utc": "2026-10-13T09:57:51Z",
+    "boyut": 48194
+   },
+   {
+    "dosya": "vezir_bayrak_hafiza_orumcek_parsel_veri.json",
+    "mtime_utc": "2026-10-13T09:56:46Z",
+    "boyut": 890
+   }
+  ],
+  "bugun_biten_sayi": 36,
+  "takili": [],
+  "vezir_sapma": {
+   "durum": "BİLİNMİYOR",
+   "not": "Vezir sapma tanımı Patron onayı bekliyor"
+  },
+  "vezir_saglik": {
+   "kirmizi": [
+    "🟠 dm02: panoda 5,4 gün gecikme raporlandı → 11 Eki 17:11Z koştu, 12 Eki 00:57Z exit 0 bitti, şu an gecikme 0 (TOPARLANDI) · 27 Eyl–11 Eki boşluğunun SEBEBİ bilinmiyor → Hafıza'ya soruldu (02_CC_STATE/vezir_soru_hafiza_dm02_gecikme.json) · TR etiketi hâlâ bayat (2026-09-04)",
+    "🔴 TT-HAFIZA external disk YİNE takılı değil (Analiz 11 Eki: diskutil BOŞ) → BM-K8 Beykoz+Kartal ERİŞİLEMEDİ · İhale EKAP rescan ertelendi",
+    "🔴 Aİ .gov.tr kurum-duyuru fetch-BLOKE (HTTP 500 anti-bot) → BM-K7 alt-hücresi"
+   ],
+   "sari": [
+    "🟡 Basın SIG14 borcu sürüyor: 565.478 havuzda url %14 / tarih %14 — ÇÖZÜLMEDİ",
+    "🟡 Pazarlama 71/81 il KAPALI (EVDS3 anahtarı bekliyor) → BM-K9",
+    "🟡 Map kaynak-bloke: MTA/AFAD/OGM/DSİ (K5/K13 doğrulama katmanı)"
+   ],
+   "kaynak": "KUYRUK.json saglik_* (Vezir)"
+  }
+ },
+ "yenileme_sn": 30,
+ "acik_borclar": [
+  "640-adres tam sayımı KUYRUK'ta yok (hücreler kök-düzeyi) — Vezir/Tic sayımı bekleniyor",
+  "Vezir sapma tanımı — BİLİNMİYOR",
+  "Duygusal fiyatlama göstergesi — Analiz henüz ölçmedi"
+ ]
+}

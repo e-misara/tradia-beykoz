@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Konya",
+  "ilce": "Akören",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 40,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 17
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Ağalar",
+      "kayit": 6,
+      "pay_yuzde": 35.3
+    },
+    {
+      "mahalle": "Tülce",
+      "kayit": 4,
+      "pay_yuzde": 23.5
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Konya/Akören ilçesinde 0 basın kaydı ve 40 ilan tutuluyor. Son 30 günde yeni kayıt yok. Ağalar mahallesi mahalle-etiketli kayıtların %35.3'ini içeriyor; Tülce %23.5 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "f15bb76de2537386",
+  "sablon_versiyon": "v1.0-DM02"
+}

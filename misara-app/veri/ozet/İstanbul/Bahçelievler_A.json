@@ -1,0 +1,34 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Bahçelievler",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 9340,
+    "ilan_sayisi": 1916,
+    "ced_sayisi": 24,
+    "plan_sayisi": 4,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 1119
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Yenibosna Merkez",
+      "kayit": 301,
+      "pay_yuzde": 26.9
+    },
+    {
+      "mahalle": "Şirinevler",
+      "kayit": 220,
+      "pay_yuzde": 19.7
+    }
+  ],
+  "eksikler": [
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Bahçelievler ilçesinde 9.340 basın kaydı ve 1.916 ilan tutuluyor. Son 30 günde yeni kayıt yok. Yenibosna Merkez mahallesi mahalle-etiketli kayıtların %26.9'ini içeriyor; Şirinevler %19.7 ile ikinci sırada. İçerikte 24 ÇED atfı ve 4 imar planı atfı geçiyor. Bilinen eksikler: e-Plan platformu bağlanmadı.",
+  "metin_sha": "143f2cceee960527",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Antalya",
+  "ilce": "Manavgat",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 238,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 63
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Yayla",
+      "kayit": 21,
+      "pay_yuzde": 33.3
+    },
+    {
+      "mahalle": "Sülek",
+      "kayit": 17,
+      "pay_yuzde": 27.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Antalya/Manavgat ilçesinde 0 basın kaydı ve 238 ilan tutuluyor. Son 30 günde yeni kayıt yok. Yayla mahallesi mahalle-etiketli kayıtların %33.3'ini içeriyor; Sülek %27.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "08892b6b71910046",
+  "sablon_versiyon": "v1.0-DM02"
+}

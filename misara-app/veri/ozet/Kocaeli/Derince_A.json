@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Kocaeli",
+  "ilce": "Derince",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1142,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 540
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Çınarlı",
+      "kayit": 154,
+      "pay_yuzde": 28.5
+    },
+    {
+      "mahalle": "Sırrıpaşa",
+      "kayit": 141,
+      "pay_yuzde": 26.1
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Kocaeli/Derince ilçesinde 0 basın kaydı ve 1.142 ilan tutuluyor. Son 30 günde yeni kayıt yok. Çınarlı mahallesi mahalle-etiketli kayıtların %28.5'ini içeriyor; Sırrıpaşa %26.1 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "b3d992a72c1c317a",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Mersin",
+  "ilce": "Erdemli",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 284,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 172
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Tömük",
+      "kayit": 71,
+      "pay_yuzde": 41.3
+    },
+    {
+      "mahalle": "Ayaş",
+      "kayit": 32,
+      "pay_yuzde": 18.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Mersin/Erdemli ilçesinde 0 basın kaydı ve 284 ilan tutuluyor. Son 30 günde yeni kayıt yok. Tömük mahallesi mahalle-etiketli kayıtların %41.3'ini içeriyor; Ayaş %18.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "86a68d4a4db1d7d8",
+  "sablon_versiyon": "v1.0-DM02"
+}

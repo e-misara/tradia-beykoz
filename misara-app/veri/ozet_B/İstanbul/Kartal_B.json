@@ -1,0 +1,31 @@
+{
+  "katman": "B",
+  "il": "İstanbul",
+  "ilce": "Kartal",
+  "son_yazim_utc": "2026-08-27T20:15:00Z",
+  "dayandigi_A_snapshot": {
+    "kesit_utc": "2026-08-27T11:07:30.107906Z",
+    "basin_sayisi": 9317,
+    "ilan_sayisi": 702,
+    "ced_sayisi": 11,
+    "plan_sayisi": 15,
+    "yeni_30g": 10244,
+    "toplam_mahalleli_etiket": 416,
+    "metin_sha": "7e831f1318b37b19"
+  },
+  "anlati": [
+    "Kartal, Anadolu yakasının Kadıköy-Pendik hattı üzerinde 20 mahalleli bir ilçe. Havuzda 10.019 kayıt tutuluyor — 9.317 basın metni ve 702 sahibinden.com ilanı. Sayı olarak İstanbul'da orta dilimde; İstanbul'un veri hacmi bakımından Anadolu yakasının çekirdek ilçeleri (Kadıköy 12.767, Üsküdar 7.930) arasında oturuyor.",
+    "İlçenin 20 mahallesinden ikisi haber gündemine hakim: Hürriyet %35.1, Karlıktepe %23.1. Bu ikili birlikte mahalle-etiketli haberlerin %58.2'sini tutuyor — geri kalan 18 mahalle görünürlük olarak arka planda. Yerinden gözlem: Hürriyet daha çok belediye ve altyapı; Karlıktepe konut/rant. Bu ayrım basında da açık.",
+    "Mahalle-etiketli oran %5. Yani 10.019 kaydın 501'i mahalle biliniyor, 9.518'i sadece 'Kartal' düzeyinde. Bu bir hata değil, bir yapı: 8 Ağustos tam-geçişte kayıtlar ilçe klasöründen ingest edildi, metin-içi mahalle-tarayıcı Beykoz'a özel yazılıp yayılmadı. Kartal için de aynı tarayıcı yayılırsa mahalle görünürlüğü büyük olasılıkla %20-30'a çıkar.",
+    "ÇED atfı 11, imar planı atfı 15. Kartal ölçeğine göre düşük — İstanbul'un bu bölgesinde son yıllarda büyük ölçekli ÇED (metro, sahil, TOKİ) konuşuluyor. Bu düşük sayı e-Plan/ÇSB delta cron'unun Kartal için bağlanmamış olmasından kaynaklanıyor. Kaynak yok değil, doğrudan hat yok.",
+    "Beykoz karşılaştırması not olarak: Beykoz'da 366K basın var ama %78.6'sı yol adında 'beykoz' bile geçmeyen kayıtlardan (İSKİ, Kalyon, PlanAski gibi ulusal kaynaklar hardcoded 'Beykoz' etiketlenmiş). Kartal'da bu miras yok — her 9.317 basın kaydı gerçekten kartal/ dizininden geldi. Sayı olarak 40 kat küçük ama sinyal olarak temiz."
+  ],
+  "onemli_bulgular": [
+    "Hürriyet ve Karlıktepe Kartal gündeminin %58.2'sini tutuyor — bu ikisi ilçe içi 'çekirdek analiz' başlangıç noktası olabilir.",
+    "Kartal'ın etiket kalitesi Beykoz'dan iyi (yol-adı doğrulama %100 vs Beykoz %21.4). Pilot uygulamayı temiz veriyle test etmek için doğru seçim.",
+    "e-Plan ve ÇSB delta cron'ları Kartal (ve diğer 30 İstanbul ilçesi) için bağlanmadı. Bu DM-02+'nın ilk operasyonel borcu; bağlanınca 15 planı olan Kartal muhtemelen 100-200 arasına çıkar."
+  ],
+  "eksik_notu": "Delta yüzde NULL — Kartal önceki 30 gün 0 kayıttı (tam-geçiş öncesi hasat sadece Beykoz'daydı). Bir sonraki 30 gün penceresinde anlamlı delta hesaplanacak.",
+  "tazelenme_kurali": "A katmanı %5+ değişirse veya yeni ÇED/plan girerse yeniden yaz.",
+  "yazim_yontemi": "Hafıza · anlatı v2 (DM-02+ B-3'lü ilk parti · ton: analiz + yorum, süsü yok)"
+}

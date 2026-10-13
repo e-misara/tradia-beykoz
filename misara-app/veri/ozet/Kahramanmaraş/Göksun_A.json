@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Kahramanmaraş",
+  "ilce": "Göksun",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 106,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 226
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Payamburnu",
+      "kayit": 55,
+      "pay_yuzde": 24.3
+    },
+    {
+      "mahalle": "Ortatepe",
+      "kayit": 51,
+      "pay_yuzde": 22.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Kahramanmaraş/Göksun ilçesinde 0 basın kaydı ve 106 ilan tutuluyor. Son 30 günde yeni kayıt yok. Payamburnu mahallesi mahalle-etiketli kayıtların %24.3'ini içeriyor; Ortatepe %22.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "e5656b127f79b013",
+  "sablon_versiyon": "v1.0-DM02"
+}

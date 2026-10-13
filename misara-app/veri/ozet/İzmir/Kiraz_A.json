@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Kiraz",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 38,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 25
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Başaran",
+      "kayit": 9,
+      "pay_yuzde": 36.0
+    },
+    {
+      "mahalle": "Emenler",
+      "kayit": 5,
+      "pay_yuzde": 20.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Kiraz ilçesinde 0 basın kaydı ve 38 ilan tutuluyor. Son 30 günde yeni kayıt yok. Başaran mahallesi mahalle-etiketli kayıtların %36.0'ini içeriyor; Emenler %20.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "7b7d335cd003f8bd",
+  "sablon_versiyon": "v1.0-DM02"
+}

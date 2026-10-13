@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Adana",
+  "ilce": "Sarıçam",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 261,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 58
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Gültepe",
+      "kayit": 20,
+      "pay_yuzde": 34.5
+    },
+    {
+      "mahalle": "Çarkıpare",
+      "kayit": 14,
+      "pay_yuzde": 24.1
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Adana/Sarıçam ilçesinde 0 basın kaydı ve 261 ilan tutuluyor. Son 30 günde yeni kayıt yok. Gültepe mahallesi mahalle-etiketli kayıtların %34.5'ini içeriyor; Çarkıpare %24.1 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "74bd133a76202728",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Seferihisar",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 314,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 154
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Ulamış",
+      "kayit": 45,
+      "pay_yuzde": 29.2
+    },
+    {
+      "mahalle": "Tepecik",
+      "kayit": 34,
+      "pay_yuzde": 22.1
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Seferihisar ilçesinde 0 basın kaydı ve 314 ilan tutuluyor. Son 30 günde yeni kayıt yok. Ulamış mahallesi mahalle-etiketli kayıtların %29.2'ini içeriyor; Tepecik %22.1 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "0b0660b0db96d9f0",
+  "sablon_versiyon": "v1.0-DM02"
+}

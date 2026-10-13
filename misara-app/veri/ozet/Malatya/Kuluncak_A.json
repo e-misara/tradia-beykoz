@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Malatya",
+  "ilce": "Kuluncak",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 13,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 6
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Karabük",
+      "kayit": 5,
+      "pay_yuzde": 83.3
+    },
+    {
+      "mahalle": "İstiklal",
+      "kayit": 1,
+      "pay_yuzde": 16.7
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Malatya/Kuluncak ilçesinde 0 basın kaydı ve 13 ilan tutuluyor. Son 30 günde yeni kayıt yok. Karabük mahallesi mahalle-etiketli kayıtların %83.3'ini içeriyor; İstiklal %16.7 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "f8e5bdbbdc29d26d",
+  "sablon_versiyon": "v1.0-DM02"
+}

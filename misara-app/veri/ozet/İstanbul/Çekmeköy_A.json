@@ -1,0 +1,35 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Çekmeköy",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 3801,
+    "ilan_sayisi": 151,
+    "ced_sayisi": 3,
+    "plan_sayisi": 1,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 77
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Güngören",
+      "kayit": 22,
+      "pay_yuzde": 28.6
+    },
+    {
+      "mahalle": "Çatalmeşe",
+      "kayit": 18,
+      "pay_yuzde": 23.4
+    }
+  ],
+  "eksikler": [
+    "mahalle etiketi %2.6 — mahalle-bazlı ingest eksik",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Çekmeköy ilçesinde 3.801 basın kaydı ve 151 ilan tutuluyor. Son 30 günde yeni kayıt yok. Güngören mahallesi mahalle-etiketli kayıtların %28.6'ini içeriyor; Çatalmeşe %23.4 ile ikinci sırada. İçerikte 3 ÇED atfı ve 1 imar planı atfı geçiyor. Bilinen eksikler: mahalle etiketi %2.6 — mahalle-bazlı ingest eksik; e-Plan platformu bağlanmadı.",
+  "metin_sha": "cc6a9b0b751e6628",
+  "sablon_versiyon": "v1.0-DM02"
+}

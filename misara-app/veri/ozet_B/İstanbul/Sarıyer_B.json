@@ -1,0 +1,31 @@
+{
+  "katman": "B",
+  "il": "İstanbul",
+  "ilce": "Sarıyer",
+  "son_yazim_utc": "2026-08-27T20:15:00Z",
+  "dayandigi_A_snapshot": {
+    "kesit_utc": "2026-08-27T11:07:30.107906Z",
+    "basin_sayisi": 16923,
+    "ilan_sayisi": 2655,
+    "ced_sayisi": 41,
+    "plan_sayisi": 70,
+    "yeni_30g": 19801,
+    "toplam_mahalleli_etiket": 1456,
+    "metin_sha": "f20b7cbd2f3b2a7e"
+  },
+  "anlati": [
+    "Sarıyer, İstanbul'un Avrupa yakası boğaz-kıyı ekseninde. Havuzda 19.578 kayıt (16.923 basın + 2.655 ilan) — Kartal'ın 2 katı, Beykoz kanonikinin 1/17'si. Kayıt hacmi olarak orta-üst, ancak yapısı Kartal ve Beykoz'dan farklı: burada finans-teknoloji ekseni baskın.",
+    "Maslak ve Ayazağa mahalleleri gündemin %64.5'ini tutuyor — bu Türkiye'nin en yoğun kurumsal iş bölgesi. Maslak %41.7 tek başına dominant; içerik olarak plaza, holding merkezi, banka genel müdürlük haberleri baskın. Ayazağa %22.8 ile ikinci — üniversite (İTÜ Ayazağa) ve konut karışımı. Bu iki mahalle geri kalan 36 Sarıyer mahallesinden 5-10 kat görünür.",
+    "Mahalle-etiketli oran %8.6 (Kartal %5.0'dan yüksek, Beykoz %1.8'den çok yüksek). Sebep: Sarıyer içeriğinde Maslak/Ayazağa/İstinye/Emirgan gibi mahalle isimleri metin içinde standart olarak geçiyor (kurumsal adreslerde). Yani Sarıyer'de mahalle-tarayıcı metinde daha az dokunma gerektirir — mahalle isimleri kendiliğinden yakalanıyor.",
+    "41 ÇED, 70 imar planı — Kartal'ın 3-4 katı, Beykoz'un 10'da 1'i. Sarıyer için bu düzey mantıklı: Zekeriyaköy/Uskumruköy hattında konut projeleri sürüyor, Maslak'ta ofis dönüşümleri var. e-Plan bağlanınca sayı 200-300 arasına çıkar; ÇSB'nin Sarıyer'de son 5 yılda 50+ ÇED yayınladığı biliniyor (basın atfı ile doğrulanmadı, birincil hat gerek).",
+    "Son 30 günün 19.801 yeni kaydı 8 Ağustos tam-geçişten. Beykoz/Kartal gibi Sarıyer için de önceki 30 gün 0 idi — mahalle-bazlı eski hasat sadece Beykoz'daydı, tam-geçiş 30 ilçenin ilk sistemik ingest'i oldu."
+  ],
+  "onemli_bulgular": [
+    "Sarıyer'in mahalle-etiketli oranı (%8.6) Kartal ve Beykoz'dan yüksek — mahalle-tarayıcı metin yayılması burada erken meyveli olabilir.",
+    "Maslak ve Ayazağa %64.5 dominant — Sarıyer analizi bu iki mahalle ekseninde yapılırsa kayıp az olur.",
+    "ÇED/plan sayısı orta düzey; e-Plan bağlanınca birincil kaynak sayıları basın atfının 3-5 katı olur."
+  ],
+  "eksik_notu": "38 Sarıyer mahallesinden sadece 8'i mahalle-etiketli görünüyor (Maslak, Ayazağa, İstinye, Emirgan, Rumelihisarı, Tarabya, Zekeriyaköy, Uskumruköy). Kalan 30 mahalle metin tarayıcıda görünmüyor. Yerel basın kaynakları (Sarıyer Gündem, boğaz haberleri) mahalle-özel ingest'e alınmadı.",
+  "tazelenme_kurali": "A katmanı %5+ değişirse veya yeni ÇED/plan girerse yeniden yaz.",
+  "yazim_yontemi": "Hafıza · anlatı v2 (DM-02+ B-3'lü ilk parti · ton: analiz + yorum + kaynak eksiği)"
+}

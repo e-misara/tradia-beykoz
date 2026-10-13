@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Çanakkale",
+  "ilce": "Ayvacık",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 24,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 185
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Gülpınar",
+      "kayit": 99,
+      "pay_yuzde": 53.5
+    },
+    {
+      "mahalle": "Yukarıköy",
+      "kayit": 43,
+      "pay_yuzde": 23.2
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Çanakkale/Ayvacık ilçesinde 0 basın kaydı ve 24 ilan tutuluyor. Son 30 günde yeni kayıt yok. Gülpınar mahallesi mahalle-etiketli kayıtların %53.5'ini içeriyor; Yukarıköy %23.2 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "49a88da87f836fb6",
+  "sablon_versiyon": "v1.0-DM02"
+}

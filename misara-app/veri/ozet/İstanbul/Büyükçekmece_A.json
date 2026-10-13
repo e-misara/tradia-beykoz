@@ -1,0 +1,34 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Büyükçekmece",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 9300,
+    "ilan_sayisi": 1670,
+    "ced_sayisi": 25,
+    "plan_sayisi": 12,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 665
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Türkoba",
+      "kayit": 167,
+      "pay_yuzde": 25.1
+    },
+    {
+      "mahalle": "Güzelce",
+      "kayit": 134,
+      "pay_yuzde": 20.2
+    }
+  ],
+  "eksikler": [
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Büyükçekmece ilçesinde 9.300 basın kaydı ve 1.670 ilan tutuluyor. Son 30 günde yeni kayıt yok. Türkoba mahallesi mahalle-etiketli kayıtların %25.1'ini içeriyor; Güzelce %20.2 ile ikinci sırada. İçerikte 25 ÇED atfı ve 12 imar planı atfı geçiyor. Bilinen eksikler: e-Plan platformu bağlanmadı.",
+  "metin_sha": "30eb44d396718711",
+  "sablon_versiyon": "v1.0-DM02"
+}

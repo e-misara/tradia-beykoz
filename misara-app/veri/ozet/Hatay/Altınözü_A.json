@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Hatay",
+  "ilce": "Altınözü",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 10,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 9
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Yunushanı",
+      "kayit": 3,
+      "pay_yuzde": 33.3
+    },
+    {
+      "mahalle": "Kozkalesi",
+      "kayit": 3,
+      "pay_yuzde": 33.3
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Hatay/Altınözü ilçesinde 0 basın kaydı ve 10 ilan tutuluyor. Son 30 günde yeni kayıt yok. Yunushanı mahallesi mahalle-etiketli kayıtların %33.3'ini içeriyor; Kozkalesi %33.3 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "17648cf743bfaebb",
+  "sablon_versiyon": "v1.0-DM02"
+}

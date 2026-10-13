@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Ankara",
+  "ilce": "Elmadağ",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 19,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 15
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Hasanoğlan Bahçelievler",
+      "kayit": 5,
+      "pay_yuzde": 33.3
+    },
+    {
+      "mahalle": "İstasyon",
+      "kayit": 4,
+      "pay_yuzde": 26.7
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Ankara/Elmadağ ilçesinde 0 basın kaydı ve 19 ilan tutuluyor. Son 30 günde yeni kayıt yok. Hasanoğlan Bahçelievler mahallesi mahalle-etiketli kayıtların %33.3'ini içeriyor; İstasyon %26.7 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "5b97064a35a97db4",
+  "sablon_versiyon": "v1.0-DM02"
+}

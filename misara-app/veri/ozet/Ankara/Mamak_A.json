@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Ankara",
+  "ilce": "Mamak",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1576,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 482
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Akşemsettin",
+      "kayit": 121,
+      "pay_yuzde": 25.1
+    },
+    {
+      "mahalle": "Durali Alıç",
+      "kayit": 116,
+      "pay_yuzde": 24.1
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Ankara/Mamak ilçesinde 0 basın kaydı ve 1.576 ilan tutuluyor. Son 30 günde yeni kayıt yok. Akşemsettin mahallesi mahalle-etiketli kayıtların %25.1'ini içeriyor; Durali Alıç %24.1 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "36006884e1c26f4c",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Sultanbeyli",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 33,
+    "ilan_sayisi": 1590,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 839
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Mimar Sinan",
+      "kayit": 199,
+      "pay_yuzde": 23.7
+    },
+    {
+      "mahalle": "Adil",
+      "kayit": 196,
+      "pay_yuzde": 23.4
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Sultanbeyli ilçesinde 33 basın kaydı ve 1.590 ilan tutuluyor. Son 30 günde yeni kayıt yok. Mimar Sinan mahallesi mahalle-etiketli kayıtların %23.7'ini içeriyor; Adil %23.4 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "9ea42ce51a0bc965",
+  "sablon_versiyon": "v1.0-DM02"
+}

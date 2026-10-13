@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Bursa",
+  "ilce": "Yenişehir",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 605,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 307
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Çiftlikköy",
+      "kayit": 103,
+      "pay_yuzde": 33.6
+    },
+    {
+      "mahalle": "Kuzeykent",
+      "kayit": 77,
+      "pay_yuzde": 25.1
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Bursa/Yenişehir ilçesinde 0 basın kaydı ve 605 ilan tutuluyor. Son 30 günde yeni kayıt yok. Çiftlikköy mahallesi mahalle-etiketli kayıtların %33.6'ini içeriyor; Kuzeykent %25.1 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "728743684a30fdcb",
+  "sablon_versiyon": "v1.0-DM02"
+}

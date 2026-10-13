@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Antalya",
+  "ilce": "Alanya",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 397,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 77
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Saray",
+      "kayit": 25,
+      "pay_yuzde": 32.5
+    },
+    {
+      "mahalle": "Cumhuriyet",
+      "kayit": 16,
+      "pay_yuzde": 20.8
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Antalya/Alanya ilçesinde 0 basın kaydı ve 397 ilan tutuluyor. Son 30 günde yeni kayıt yok. Saray mahallesi mahalle-etiketli kayıtların %32.5'ini içeriyor; Cumhuriyet %20.8 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "e4a9308f488894eb",
+  "sablon_versiyon": "v1.0-DM02"
+}

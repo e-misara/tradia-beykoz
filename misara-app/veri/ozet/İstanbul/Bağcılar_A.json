@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Bağcılar",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 2120,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 724
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Mahmutbey",
+      "kayit": 292,
+      "pay_yuzde": 40.3
+    },
+    {
+      "mahalle": "Göztepe",
+      "kayit": 172,
+      "pay_yuzde": 23.8
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Bağcılar ilçesinde 0 basın kaydı ve 2.120 ilan tutuluyor. Son 30 günde yeni kayıt yok. Mahmutbey mahallesi mahalle-etiketli kayıtların %40.3'ini içeriyor; Göztepe %23.8 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "c92faa00118e623a",
+  "sablon_versiyon": "v1.0-DM02"
+}

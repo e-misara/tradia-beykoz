@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Konya",
+  "ilce": "Yunak",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 16,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 15
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Kuyubaşi",
+      "kayit": 11,
+      "pay_yuzde": 73.3
+    },
+    {
+      "mahalle": "Turgut",
+      "kayit": 1,
+      "pay_yuzde": 6.7
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Konya/Yunak ilçesinde 0 basın kaydı ve 16 ilan tutuluyor. Son 30 günde yeni kayıt yok. Kuyubaşi mahallesi mahalle-etiketli kayıtların %73.3'ini içeriyor; Turgut %6.7 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "d1ac541df1581493",
+  "sablon_versiyon": "v1.0-DM02"
+}

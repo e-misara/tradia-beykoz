@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Hatay",
+  "ilce": "Dörtyol",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 247,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 81
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Çaylı",
+      "kayit": 24,
+      "pay_yuzde": 29.6
+    },
+    {
+      "mahalle": "Sanayi",
+      "kayit": 19,
+      "pay_yuzde": 23.5
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Hatay/Dörtyol ilçesinde 0 basın kaydı ve 247 ilan tutuluyor. Son 30 günde yeni kayıt yok. Çaylı mahallesi mahalle-etiketli kayıtların %29.6'ini içeriyor; Sanayi %23.5 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "5c7fc3169bed3a27",
+  "sablon_versiyon": "v1.0-DM02"
+}

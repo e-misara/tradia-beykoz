@@ -1,0 +1,34 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Eyüpsultan",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 4002,
+    "ilan_sayisi": 1649,
+    "ced_sayisi": 4,
+    "plan_sayisi": 6,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 776
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Göktürk Merkez",
+      "kayit": 325,
+      "pay_yuzde": 41.9
+    },
+    {
+      "mahalle": "Yeşilpınar",
+      "kayit": 129,
+      "pay_yuzde": 16.6
+    }
+  ],
+  "eksikler": [
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Eyüpsultan ilçesinde 4.002 basın kaydı ve 1.649 ilan tutuluyor. Son 30 günde yeni kayıt yok. Göktürk Merkez mahallesi mahalle-etiketli kayıtların %41.9'ini içeriyor; Yeşilpınar %16.6 ile ikinci sırada. İçerikte 4 ÇED atfı ve 6 imar planı atfı geçiyor. Bilinen eksikler: e-Plan platformu bağlanmadı.",
+  "metin_sha": "b152d986295254df",
+  "sablon_versiyon": "v1.0-DM02"
+}

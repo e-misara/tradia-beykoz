@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Antalya",
+  "ilce": "Kepez",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 345,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 149
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Kepez",
+      "kayit": 47,
+      "pay_yuzde": 31.5
+    },
+    {
+      "mahalle": "Fatih",
+      "kayit": 30,
+      "pay_yuzde": 20.1
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Antalya/Kepez ilçesinde 0 basın kaydı ve 345 ilan tutuluyor. Son 30 günde yeni kayıt yok. Kepez mahallesi mahalle-etiketli kayıtların %31.5'ini içeriyor; Fatih %20.1 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "e5de6e75808052ac",
+  "sablon_versiyon": "v1.0-DM02"
+}

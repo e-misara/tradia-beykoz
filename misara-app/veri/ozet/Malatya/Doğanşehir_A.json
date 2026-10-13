@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Malatya",
+  "ilce": "Doğanşehir",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 15,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 204
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Fındık",
+      "kayit": 55,
+      "pay_yuzde": 27.0
+    },
+    {
+      "mahalle": "Erkenek",
+      "kayit": 45,
+      "pay_yuzde": 22.1
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Malatya/Doğanşehir ilçesinde 0 basın kaydı ve 15 ilan tutuluyor. Son 30 günde yeni kayıt yok. Fındık mahallesi mahalle-etiketli kayıtların %27.0'ini içeriyor; Erkenek %22.1 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "26eaade93a27f4ec",
+  "sablon_versiyon": "v1.0-DM02"
+}

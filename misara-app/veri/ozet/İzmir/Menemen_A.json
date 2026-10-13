@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Menemen",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 624,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 148
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Villakent",
+      "kayit": 36,
+      "pay_yuzde": 24.3
+    },
+    {
+      "mahalle": "Yayla",
+      "kayit": 30,
+      "pay_yuzde": 20.3
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Menemen ilçesinde 0 basın kaydı ve 624 ilan tutuluyor. Son 30 günde yeni kayıt yok. Villakent mahallesi mahalle-etiketli kayıtların %24.3'ini içeriyor; Yayla %20.3 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "ad844f402332c8cd",
+  "sablon_versiyon": "v1.0-DM02"
+}

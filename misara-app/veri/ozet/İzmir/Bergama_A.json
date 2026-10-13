@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Bergama",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 371,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 85
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Koyuneli",
+      "kayit": 33,
+      "pay_yuzde": 38.8
+    },
+    {
+      "mahalle": "Yukarıbey",
+      "kayit": 15,
+      "pay_yuzde": 17.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Bergama ilçesinde 0 basın kaydı ve 371 ilan tutuluyor. Son 30 günde yeni kayıt yok. Koyuneli mahallesi mahalle-etiketli kayıtların %38.8'ini içeriyor; Yukarıbey %17.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "31a98c564f56403d",
+  "sablon_versiyon": "v1.0-DM02"
+}

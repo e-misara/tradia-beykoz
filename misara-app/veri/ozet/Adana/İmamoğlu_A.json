@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Adana",
+  "ilce": "İmamoğlu",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 13,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 8
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Sayca",
+      "kayit": 3,
+      "pay_yuzde": 37.5
+    },
+    {
+      "mahalle": "Koza",
+      "kayit": 2,
+      "pay_yuzde": 25.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Adana/İmamoğlu ilçesinde 0 basın kaydı ve 13 ilan tutuluyor. Son 30 günde yeni kayıt yok. Sayca mahallesi mahalle-etiketli kayıtların %37.5'ini içeriyor; Koza %25.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "a91635b937e2b285",
+  "sablon_versiyon": "v1.0-DM02"
+}

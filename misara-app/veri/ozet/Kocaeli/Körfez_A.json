@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Kocaeli",
+  "ilce": "Körfez",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1798,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 666
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Güney",
+      "kayit": 217,
+      "pay_yuzde": 32.6
+    },
+    {
+      "mahalle": "İlimtepe",
+      "kayit": 144,
+      "pay_yuzde": 21.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Kocaeli/Körfez ilçesinde 0 basın kaydı ve 1.798 ilan tutuluyor. Son 30 günde yeni kayıt yok. Güney mahallesi mahalle-etiketli kayıtların %32.6'ini içeriyor; İlimtepe %21.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "4a18ecfbf8ea1154",
+  "sablon_versiyon": "v1.0-DM02"
+}

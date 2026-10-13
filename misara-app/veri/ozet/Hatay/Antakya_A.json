@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Hatay",
+  "ilce": "Antakya",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 129,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 89
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Cumhuriyet",
+      "kayit": 44,
+      "pay_yuzde": 49.4
+    },
+    {
+      "mahalle": "Meydan",
+      "kayit": 14,
+      "pay_yuzde": 15.7
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Hatay/Antakya ilçesinde 0 basın kaydı ve 129 ilan tutuluyor. Son 30 günde yeni kayıt yok. Cumhuriyet mahallesi mahalle-etiketli kayıtların %49.4'ini içeriyor; Meydan %15.7 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "21135f4b7d10d638",
+  "sablon_versiyon": "v1.0-DM02"
+}

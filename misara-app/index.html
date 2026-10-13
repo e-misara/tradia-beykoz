@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=1200, initial-scale=1">
-<title>MISARA · MU-01</title>
+<title>MISARA · MU-02 (M1+M4)</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,8 +26,24 @@
   <div class="meta" id="meta-metin">yükleniyor…</div>
 </header>
 
-<!-- ORTA: SOL harita / SAĞ kart -->
-<main>
+<!-- SEKMELER -->
+<nav id="sekmeler">
+  <button class="sekme sekme-aktif" data-sekme="harita">M1 · HARİTA</button>
+  <button class="sekme" data-sekme="orumcek-turkiye">M4 · ÖRÜMCEK · Türkiye</button>
+  <button class="sekme" data-sekme="orumcek-bolge">M4 · BÖLGE</button>
+  <button class="sekme" data-sekme="orumcek-kuyruk">M4 · CANLI KUYRUK</button>
+</nav>
+
+<!-- M4 EKRANLAR (gizli, sekme ile aktif) -->
+<main id="orumcek-ekran" class="gizli">
+  <section id="orumcek-icerik" aria-label="M4 Örümcek">
+    <div class="panel-t" id="orumcek-baslik">M4 ÖRÜMCEK · yükleniyor…</div>
+    <div id="orumcek-gov"></div>
+  </section>
+</main>
+
+<!-- ORTA: SOL harita / SAĞ kart (M1) -->
+<main id="harita-ekran">
   <section id="sol-harita" aria-label="Harita">
     <div class="panel-t">HARİTA (poligon yok — düğüm-liste)</div>
     <div id="harita-icerik">

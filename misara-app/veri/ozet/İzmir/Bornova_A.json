@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Bornova",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1403,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 626
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Kazımdirik",
+      "kayit": 244,
+      "pay_yuzde": 39.0
+    },
+    {
+      "mahalle": "Erzene",
+      "kayit": 119,
+      "pay_yuzde": 19.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Bornova ilçesinde 0 basın kaydı ve 1.403 ilan tutuluyor. Son 30 günde yeni kayıt yok. Kazımdirik mahallesi mahalle-etiketli kayıtların %39.0'ini içeriyor; Erzene %19.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "6a95209682edb851",
+  "sablon_versiyon": "v1.0-DM02"
+}

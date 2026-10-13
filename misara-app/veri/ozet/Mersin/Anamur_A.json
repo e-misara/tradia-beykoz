@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Mersin",
+  "ilce": "Anamur",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 88,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 65
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "İskele",
+      "kayit": 21,
+      "pay_yuzde": 32.3
+    },
+    {
+      "mahalle": "Güzelyurt",
+      "kayit": 20,
+      "pay_yuzde": 30.8
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Mersin/Anamur ilçesinde 0 basın kaydı ve 88 ilan tutuluyor. Son 30 günde yeni kayıt yok. İskele mahallesi mahalle-etiketli kayıtların %32.3'ini içeriyor; Güzelyurt %30.8 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "647a8858f00e2ec4",
+  "sablon_versiyon": "v1.0-DM02"
+}

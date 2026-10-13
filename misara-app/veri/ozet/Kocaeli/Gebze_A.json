@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Kocaeli",
+  "ilce": "Gebze",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 2355,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 738
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Arapçeşme",
+      "kayit": 235,
+      "pay_yuzde": 31.8
+    },
+    {
+      "mahalle": "Bariş",
+      "kayit": 179,
+      "pay_yuzde": 24.3
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Kocaeli/Gebze ilçesinde 0 basın kaydı ve 2.355 ilan tutuluyor. Son 30 günde yeni kayıt yok. Arapçeşme mahallesi mahalle-etiketli kayıtların %31.8'ini içeriyor; Bariş %24.3 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "6ade16f67ca570b2",
+  "sablon_versiyon": "v1.0-DM02"
+}

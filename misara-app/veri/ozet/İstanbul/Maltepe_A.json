@@ -1,0 +1,35 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Maltepe",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 3380,
+    "ilan_sayisi": 1948,
+    "ced_sayisi": 2,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 1042
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Zümrütevler",
+      "kayit": 254,
+      "pay_yuzde": 24.4
+    },
+    {
+      "mahalle": "Cevizli",
+      "kayit": 247,
+      "pay_yuzde": 23.7
+    }
+  ],
+  "eksikler": [
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Maltepe ilçesinde 3.380 basın kaydı ve 1.948 ilan tutuluyor. Son 30 günde yeni kayıt yok. Zümrütevler mahallesi mahalle-etiketli kayıtların %24.4'ini içeriyor; Cevizli %23.7 ile ikinci sırada. İçerikte 2 ÇED atfı ve 0 imar planı atfı geçiyor. Bilinen eksikler: İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "5cf16dd637c965ef",
+  "sablon_versiyon": "v1.0-DM02"
+}

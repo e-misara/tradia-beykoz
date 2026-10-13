@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Ankara",
+  "ilce": "Akyurt",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 60,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 36
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Atatürk",
+      "kayit": 14,
+      "pay_yuzde": 38.9
+    },
+    {
+      "mahalle": "Yeşiltepe",
+      "kayit": 10,
+      "pay_yuzde": 27.8
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Ankara/Akyurt ilçesinde 0 basın kaydı ve 60 ilan tutuluyor. Son 30 günde yeni kayıt yok. Atatürk mahallesi mahalle-etiketli kayıtların %38.9'ini içeriyor; Yeşiltepe %27.8 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "93a5328427777321",
+  "sablon_versiyon": "v1.0-DM02"
+}

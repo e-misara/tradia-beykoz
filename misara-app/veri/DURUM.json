@@ -1,201 +1,213 @@
 {
-  "_meta": {
-    "surum": "MU-01 · DURUM v1",
-    "guncelleme": "2026-08-27",
-    "kaynak": "Vezir BE-01 + pano/ozet-w35.json + Standing #37",
-    "kural": "Uygulama SADECE OKUR — bu dosya Hafıza tarafından üretilir/güncellenir"
-  },
-  "kirmizi_serit": [
-    {
-      "konu": "Sahibinden 30K LİSTE ekranı (detay yok)",
-      "etki": "70 il beslemesi kalitesi bozuk · mahalle+ilan-no eksik",
-      "kim": "CC-Analiz + CC-Arşiv"
-    },
-    {
-      "konu": "GitHub PAT süresi doldu",
-      "etki": "misara-app + tradia-beykoz push bekliyor",
-      "kim": "Patron"
-    },
-    {
-      "konu": "misara-arsiv PRIVATE repo yok",
-      "etki": "Standing #37 arşiv boşa",
-      "kim": "Patron"
-    },
-    {
-      "konu": "CC-Site S10 deploy 90+ gün",
-      "etki": "Site katmanı ayakta değil",
-      "kim": "Site + Patron"
-    },
-    {
-      "konu": "Kural 13 (384/299) kilit 90+ gün",
-      "etki": "🔒 karar-kilitli",
-      "kim": "Patron"
-    }
-  ],
-  "hedef": {
-    "il": {
-      "hedef": 81,
-      "mevcut": 2,
-      "not": "Bursa + Çanakkale kapandı (T-14)"
-    },
-    "ilce_pilot": {
-      "hedef": 973,
-      "mevcut": 2,
-      "not": "Kartal + Beykoz aktif pilot"
-    },
-    "havuz_sorgu01": {
-      "hedef_metin": "milyonlar",
-      "son_olcum": 990737,
-      "son_olcum_tarih": "2026-08-01",
-      "not": "26 gün eski"
+  "baslik": "TRADIA sistem DURUM sayacı",
+  "standing": "#39 (durum.json takibi) + #40 (coğrafya+özet motoru DM-02)",
+  "kesit_utc": "2026-08-27T17:12:03.867610Z",
+  "uretici": "CC-Hafıza (B9)",
+  "sistem": {
+    "mac_disk_kullanim_yuzde": 88,
+    "tt_hafiza_mount": "unmount",
+    "launchd_tradia_label_sayi": 34,
+    "crontab_aktif_satir": 0,
+    "db_sha_kisa": "dd6a96b6f99d742b",
+    "db_boyut_byte": 4033544192,
+    "son_dongu_guncelleme_utc": "2026-09-25T23:45:50.904077Z",
+    "tt_hafiza_kontrol_utc": "2026-10-13T09:55:00Z",
+    "tt_hafiza_saglik": {
+      "saglik_kontrol_utc": "2026-09-27T10:20:45.237307Z",
+      "mount": true,
+      "filesystem": "ExFAT",
+      "uuid": "683AC8A4-FE30-3860-94BE-A27F85FEC662",
+      "yaz_oku_sil_testi": "OK",
+      "ana_dizinler": {
+        "00_OFIS": "4.3M · 8 girdi",
+        "01_YEDEK": "90G · 3 girdi",
+        "02_ARSIV": "59G · 8 girdi",
+        "STAGING_YENI": "97G · 27 girdi",
+        "TRADIA_ARSIV": "177G · 34 girdi"
+      },
+      "toplam_bayrak_kaydi": 37,
+      "kayip_iz": "YOK — tüm ana dizinler mevcut + rw OK + duzen.log kirli-iş bloğu yok, son 15 koşumda sadece SHA-fark BAYRAK'ları (canlı yazılan dosya doğal davranış)",
+      "sonuc": "DISK SAĞLIKLI — kontrolsüz kapanmalar iz bırakmamış"
     }
   },
-  "cc_seridi": [
-    {
-      "cc": "Hafıza",
-      "sprint": "S51",
-      "durum": "🟢",
-      "sessizlik_gun": 26
-    },
-    {
-      "cc": "Vezir",
-      "sprint": "BE-01+MU-01",
-      "durum": "🟢",
-      "sessizlik_gun": 0
-    },
-    {
-      "cc": "Basın",
-      "sprint": "S99+",
-      "durum": "🟢",
-      "sessizlik_gun": 26
-    },
-    {
-      "cc": "Analiz",
-      "sprint": "S57",
-      "durum": "🟡",
-      "sessizlik_gun": 27
-    },
-    {
-      "cc": "Tic",
-      "sprint": "T130+",
-      "durum": "🟢",
-      "sessizlik_gun": 27
-    },
-    {
-      "cc": "Borsa",
-      "sprint": "S37 EVDS",
-      "durum": "🟡",
-      "sessizlik_gun": 27
-    },
-    {
-      "cc": "Sosyal",
-      "sprint": "S195+",
-      "durum": "🟢",
-      "sessizlik_gun": 27
-    },
-    {
-      "cc": "İhale",
-      "sprint": "İ58",
-      "durum": "🔴",
-      "sessizlik_gun": 31
-    },
-    {
-      "cc": "TT-MAP",
-      "sprint": "MAP37",
-      "durum": "🟢",
-      "sessizlik_gun": 27
-    },
-    {
-      "cc": "TT-AI",
-      "sprint": "TTA100",
-      "durum": "🔴",
-      "sessizlik_gun": 31
-    },
-    {
-      "cc": "TT-Pazarlama",
-      "sprint": "kurulum",
-      "durum": "🟡",
-      "sessizlik_gun": 27
-    },
-    {
-      "cc": "Kitap",
-      "sprint": "K8",
-      "durum": "🔴",
-      "sessizlik_gun": 46
-    },
-    {
-      "cc": "Kasa",
-      "sprint": "S20",
-      "durum": "🔴",
-      "sessizlik_gun": 45
-    },
-    {
-      "cc": "Site",
-      "sprint": "S10",
-      "durum": "🔴",
-      "sessizlik_gun": 90
-    },
-    {
-      "cc": "Signals",
-      "sprint": "SIG12",
-      "durum": "🔴",
-      "sessizlik_gun": 31
-    },
-    {
-      "cc": "Finans",
-      "sprint": "F8+",
-      "durum": "🟡",
-      "sessizlik_gun": 27
-    },
-    {
-      "cc": "ARŞİV",
-      "sprint": "ARS-1",
-      "durum": "🟢",
-      "sessizlik_gun": 0
-    }
-  ],
+  "cografya": {
+    "il_sayi": 81,
+    "ilce_sayi": 973,
+    "dolu_il": 11,
+    "kismi_il": 6,
+    "sifir_il": 64,
+    "dolu_ilce": 63,
+    "kismi_ilce": 82,
+    "sifir_ilce": 780,
+    "pilot_il": "İstanbul",
+    "pilot_ilce": "Kartal",
+    "pilot_mahalle_sayi": 20,
+    "cografya_json_yol": "/Users/GAC-A/tradia_sorgu/data/cografya.json",
+    "il_genisleme_vaka": 1
+  },
+  "havuz": {
+    "ulusal_ham_kayit": 1424676,
+    "ulusal_kanonik_alt_sinir": 1386205,
+    "beykoz_ham": 365970,
+    "beykoz_kanonik": 327499,
+    "basin_html_toplam": 533426
+  },
+  "ozet_motoru": {
+    "a_katmani_yol": "/Users/GAC-A/tradia_sorgu/data/ozet/{il}/{ilce}_A.json",
+    "b_katmani_yol": "/Users/GAC-A/tradia_sorgu/data/ozet_B/{il}/{ilce}_B.json",
+    "a_uretilen_sayi": 192,
+    "b_yazilan_sayi": 3,
+    "b_tetikleyici": "ozet_B_gerek_mi.py (kayıt %5+ veya yeni ÇED/plan)",
+    "b_yazilanlar": [
+      "İstanbul/Kartal",
+      "İstanbul/Beykoz",
+      "İstanbul/Sarıyer"
+    ]
+  },
   "patron_gorev": {
-    "baslik": "Patron Görev Kartı (aktif · üstten sırasıyla)",
-    "gorevler": [
-      {
-        "sira": 0,
-        "gorev": "🔴 Sahibinden besleme YÖNTEMİ DÜZELTMESİ",
-        "etki": "30K ekran hepsi LİSTE sayfası (ilan detayı değil) — mahalle+ilan-no yok. Bundan sonra DETAY sayfası kaydedilecek. Tek satır, 70 il beslemesi kalitesini değiştirir.",
-        "kaynak": "CC-ARŞİV bulgusu · 2026-08-27",
-        "cc": "CC-Analiz + CC-Arşiv koordinasyon"
-      },
-      {
-        "sira": 1,
-        "gorev": "gh auth login (PAT yenile)",
-        "etki": "3 commit push bekliyor: f9183cc + fdd23e1 + eb3a2ca + MU-01"
-      },
-      {
-        "sira": 2,
-        "gorev": "gh repo create e-misara/misara-arsiv --private",
-        "etki": "Standing #37 arşiv script çalıştırılabilir"
-      },
-      {
-        "sira": 3,
-        "gorev": "MISARA.command çift-tıkla → tarayıcıda kontrol",
-        "etki": "MU-01 v1 lokal test"
-      },
-      {
-        "sira": 4,
-        "gorev": "Hafıza S43 raporu (46 gün gecikti)",
-        "etki": "9 kanonizasyon + 2 PROMOTE + Standing #17 revizyonu bağlı"
-      },
-      {
-        "sira": 5,
-        "gorev": "Kural 13 karar (384/299)",
-        "etki": "90+ gün kilitli"
-      },
-      {
-        "sira": 6,
-        "gorev": "CC-Site S10 deploy kararı",
-        "etki": "90+ gün açık borç"
-      }
+    "aciklama": "Patron'un besleme zincirindeki payı — hatırlatma bizde, besleme onda.",
+    "son_sahibinden_beslemesi_utc": "2026-07-28T03:59:15Z",
+    "gun_gecti": 22,
+    "bekleyen_il_sayisi": 70,
+    "bekleyen_il_aciklama": "81 il - 11 DOLU = 70 il için Patron'un ilk beslemesi bekleniyor",
+    "harici_disk_durumu": "TT-HAFIZA takılı değil 🔴 (2026-10-13 — diskutil external boş)",
+    "gh_auth_durumu": {
+      "acount": "e-misara",
+      "aktif": true,
+      "token_kaynak": "keyring",
+      "scopes": [
+        "gist",
+        "read:org",
+        "repo"
+      ]
+    },
+    "acik_borclar": [
+      "e-Plan 154.198 sayısı Patron beyanı — TT-HAFIZA/TRADIA_ARSIV/eplan fiziki find ile teyit",
+      "İlan Beykoz 3.293 vs benim ölçümüm 3.380 (87 fark) — stricter filtre bilinmiyor",
+      "Sahibinden.com beslemesi 22 gün önce (2026-07-28) — yenileme talebi",
+      "70 il için ilk hasat kaynağı belirlenmedi (basın CSV listesi, e-Plan alt-il, ilan kaynağı)"
     ],
-    "not_43": "Standing #43 · 2026-08-27 · CC-Arşiv Sahibinden besleme bulgusu EN ÜST"
+    "sahibinden_besleme_dersi": {
+      "tarih_utc": "2026-08-27T20:15:00Z",
+      "kaynak": "CC-Arşiv bulgusu",
+      "bulgu": "Elimizdeki sahibinden ekranlarının hepsi LİSTE sayfası (kartlı özet), ilan DETAY sayfası değil.",
+      "sonuc": [
+        "Liste sayfasında mahalle görünmez (yalnızca ilçe var)",
+        "Liste sayfasında ilan numarası görünmez",
+        "Liste sayfasında fiyat özet olarak var ama detay (m², oda, bina yaşı) yok"
+      ],
+      "gorev": "Sonraki besleme turlarında DETAY sayfası kaydedilecek — her ilanın ayrı URL'sinden HTML alınacak, liste taraması yerine (veya ek olarak).",
+      "etki": "Mevcut 4.049 Beykoz ilan kaydında mahalle+ilan_no boş; DETAY beslemesi olmadan bu alanlar dolmaz.",
+      "kanit": "DB: SELECT COUNT(*) FROM kayit WHERE kaynak='ilan_v24' AND ilce='Beykoz' AND mahalle IS NULL → yakın 100% NULL",
+      "aksiyon": "sahibinden hasat betiği liste-URL değil ilan-URL alacak şekilde güncellenmeli; bu Patron beslemesi + Vezir kod değişikliği ikili görev"
+    }
   },
-  "son_yazim": "2026-08-27T14:20:00"
+  "sonraki_dm": {
+    "dm_no": "DM-02+",
+    "hedefler": [
+      "e-Plan delta cron 30 İstanbul ilçesine yayılsın",
+      "ÇSB ÇED delta cron kurulsun (mevcut sadece basın-metin bazlı dolaylı)",
+      "Mahalle-bazlı metin-tarayıcı Beykoz-özel değil, 30 İstanbul ilçesine yayılsın",
+      "GeoJSON dosyaları (81 il + 973 ilçe) MIT-lisanslı setten indirilsin",
+      "70 boş il için Patron beslemesi (sahibinden CSV veya alternatif kaynak)"
+    ]
+  },
+  "dm02_dongu": {
+    "plist_yol": "/Users/GAC-A/Library/LaunchAgents/com.tradia.dm02.dongu.plist",
+    "launchd_label": "com.tradia.dm02.dongu",
+    "aralik_saniye": 259200,
+    "aralik_gun": 3,
+    "yuklenme_utc": "2026-08-27T17:12:03.867512Z",
+    "ilk_calisma_utc": "2026-08-30T17:11:25Z",
+    "ilk_calisma_tr": "2026-08-30 20:11:25 +03",
+    "script": "/Users/GAC-A/tradia_sorgu/scripts/dm02_3gun_dongu.sh",
+    "ne_yapar": "cografya_uret.py + ozet_uret.py --tumu + köprü tazele + DURUM.son_tazeleme",
+    "RunAtLoad": false,
+    "not": "İlk çalışma 3 gün sonra. Elle test için: launchctl kickstart gui/$(id -u)/com.tradia.dm02.dongu"
+  },
+  "geojson": {
+    "il_seviye": {
+      "dosya": "/Users/GAC-A/tradia_sorgu/data/geojson/il.geojson",
+      "boyut_kb": 236,
+      "kaynak": "alpers/Turkey-Maps-GeoJSON",
+      "lisans": "Apache-2.0",
+      "koprude": true
+    },
+    "ilce_seviye": {
+      "dosya": "/Users/GAC-A/tradia_sorgu/data/geojson/ilce.geojson",
+      "boyut_mb": 26,
+      "kaynak": "OSM Overpass API admin_level=6",
+      "lisans": "ODbL",
+      "atif": "© OpenStreetMap contributors",
+      "feature_sayi": 975,
+      "koprude": false,
+      "not": "26 MB büyük, simplify sonrası köprüye eklenir"
+    },
+    "mahalle_poligon": {
+      "durum": "YOK (kanon)",
+      "not": "Bütünlüklü ücretsiz set yok. Mahalleler liste olarak durur."
+    }
+  },
+  "dongu_saglik": {
+    "plist_zamanlayici": "StartCalendarInterval Hour=20 Minute=11 TR (her gün)",
+    "script_ici_kontrol": "son_bitti_utc + 3 gün geçtiyse çalış, yoksa çık",
+    "son_basladi_utc": "2026-10-11T17:11:03Z",
+    "son_bitti_utc": "2026-10-12T00:57:49Z",
+    "son_durum": "BİTTİ",
+    "son_cikis_kodu": {
+      "cografya_uret": 0,
+      "ozet_uret_tumu": 0
+    },
+    "beklenen_sonraki_kosu_utc": "2026-10-15T00:57:49Z",
+    "beklenen_sonraki_kosu_tr": "2026-10-15 03:57 +03",
+    "gecikme_gun": 0,
+    "gecikme_esik_kirmizi": 1,
+    "aciklama": "gecikme_gun > 1 ise pano tazelik şeridi KIRMIZI. StartInterval sayaç kaybediyordu; StartCalendarInterval + script-içi 3-gün kontrolü ile uyku kaçırma sorunu çözüldü.",
+    "kosu_gecmisi": [
+      {
+        "basladi_utc": "2026-10-11T17:11:03Z",
+        "bitti_utc": "2026-10-12T00:57:49Z",
+        "durum": "BİTTİ",
+        "cikis": {
+          "cografya_uret": 0,
+          "ozet_uret_tumu": 0
+        }
+      },
+      {
+        "basladi_utc": "2026-10-09T21:21:38Z",
+        "bitti_utc": null,
+        "durum": "YARIM KALDI",
+        "cikis": null,
+        "sebep": "pil %2 → kapanma (pmset 10-10 02:55)"
+      },
+      {
+        "basladi_utc": "2026-10-05T23:12:01Z",
+        "bitti_utc": "2026-10-06T06:30:40Z",
+        "durum": "BİTTİ",
+        "cikis": {
+          "cografya_uret": 0,
+          "ozet_uret_tumu": 0
+        }
+      }
+    ]
+  },
+  "son_tazeleme_utc": "2026-10-12T00:57:49Z",
+  "parsel_01": {
+    "kimlik": "PARSEL-01",
+    "baslik": "Derepazarı parsel vakası — parsel-veri lokal · kanon: parsel_veri_kanonu_v1",
+    "il": "Rize",
+    "ilce": "Derepazarı",
+    "acilis_utc": "2026-09-25T23:45:50.904077Z",
+    "gecis": "SIFIR → KISMI",
+    "birlestiren_cc": "CC-Tic",
+    "birlestirici_yol": "/Users/GAC-A/Desktop/TT-Tüm CC/parsel_01_rize/DOSYA.md",
+    "kaynak_iskelet": "data/vakalar.json → cografya_uret.py her koşuda uygular",
+    "kimlik_belirsizlik": "Bürücek köyü ↔ Eriklimanı Mahallesi — TKGM künyesinden çözülecek",
+    "eksik_katman_sayisi": 10,
+    "eksik_katman_kaynak": "/Users/GAC-A/Desktop/TT-Tüm CC/parsel_01_rize/DOSYA.md §4",
+    "eksik_ozet": "10 açık / 13 satır · kapalı: E1, E4, E8",
+    "onceki_yanlis_atama": "İkizdere (Hafıza tahmini, 2026-09-26 düzeltildi)",
+    "not": "Eksik-katman sayacı 0 olduğunda vaka DOLU sayılır. Liste Tic'in birleştirici DOSYA.md'sinden gelir; Hafıza kendi liste üretmez.",
+    "eksik_toplam_satir": 13
+  }
 }

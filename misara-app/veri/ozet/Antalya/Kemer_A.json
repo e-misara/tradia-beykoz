@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Antalya",
+  "ilce": "Kemer",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 54,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 10
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Kemerağzı",
+      "kayit": 4,
+      "pay_yuzde": 40.0
+    },
+    {
+      "mahalle": "Yeleme",
+      "kayit": 2,
+      "pay_yuzde": 20.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Antalya/Kemer ilçesinde 0 basın kaydı ve 54 ilan tutuluyor. Son 30 günde yeni kayıt yok. Kemerağzı mahallesi mahalle-etiketli kayıtların %40.0'ini içeriyor; Yeleme %20.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "30241a9a70ecca4d",
+  "sablon_versiyon": "v1.0-DM02"
+}

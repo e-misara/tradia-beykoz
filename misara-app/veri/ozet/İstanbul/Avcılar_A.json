@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Avcılar",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 33,
+    "ilan_sayisi": 1631,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 1157
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Tahtakale",
+      "kayit": 408,
+      "pay_yuzde": 35.3
+    },
+    {
+      "mahalle": "Cihangir",
+      "kayit": 245,
+      "pay_yuzde": 21.2
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Avcılar ilçesinde 33 basın kaydı ve 1.631 ilan tutuluyor. Son 30 günde yeni kayıt yok. Tahtakale mahallesi mahalle-etiketli kayıtların %35.3'ini içeriyor; Cihangir %21.2 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "99611e06c69f9908",
+  "sablon_versiyon": "v1.0-DM02"
+}

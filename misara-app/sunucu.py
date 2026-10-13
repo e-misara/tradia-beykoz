@@ -44,22 +44,45 @@ class MisaraHandler(http.server.SimpleHTTPRequestHandler):
 
     def _api(self):
         yol = self.path[5:]  # "/api/" sonrası
+        # URL decode (Türkçe karakter için)
+        from urllib.parse import unquote
+        yol = unquote(yol)
         if yol == "durum":
             return self._json(self._oku_json("DURUM.json"))
         if yol == "cografya":
             return self._json(self._oku_json("cografya.json"))
+        if yol == "orumcek":
+            return self._json(self._oku_json("orumcek.json"))
         if yol == "simdi_tara":
             return self._json(self._simdi_tara())
         if yol == "meta":
             return self._json({
                 "app": "MISARA",
-                "surum": "MU-01 · v1",
+                "surum": "MU-02 · M1 (Hafıza devri)",
                 "port": PORT,
                 "kok": str(KOK),
                 "veri_var": VERI.exists(),
                 "veri_dosyalar": [f.name for f in VERI.glob("*.json")] if VERI.exists() else [],
                 "zaman": datetime.now().isoformat(timespec="seconds"),
             })
+        # MU-02 M1: A/B özet endpoint'leri — /api/ozet_a/<İl>/<İlçe>
+        if yol.startswith("ozet_a/") or yol.startswith("ozet_b/"):
+            katman = "A" if yol.startswith("ozet_a/") else "B"
+            alt_kok = "ozet" if katman == "A" else "ozet_B"
+            parcalar = yol.split("/", 2)
+            if len(parcalar) < 3:
+                return self._json({"veri_yok": True, "hata": "il/ilçe eksik"}, kod=400)
+            _, il, ilce = parcalar
+            dosya_ad = f"{ilce}_{katman}.json"
+            p = VERI / alt_kok / il / dosya_ad
+            if not p.exists():
+                return self._json({"veri_yok": True, "beklenen": str(p.relative_to(VERI)),
+                    "aciklama": f"{katman} özeti henüz üretilmedi."})
+            try:
+                with open(p, encoding="utf-8") as f:
+                    return self._json(json.load(f))
+            except Exception as e:
+                return self._json({"veri_yok": True, "hata": str(e)})
         self._json({"hata": f"bilinmeyen uç: {yol}"}, kod=404)
 
     def _oku_json(self, ad):

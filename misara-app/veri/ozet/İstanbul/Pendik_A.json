@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Pendik",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 464,
+    "ilan_sayisi": 1372,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 449
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Yenişehir",
+      "kayit": 142,
+      "pay_yuzde": 31.6
+    },
+    {
+      "mahalle": "Kurtköy",
+      "kayit": 85,
+      "pay_yuzde": 18.9
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Pendik ilçesinde 464 basın kaydı ve 1.372 ilan tutuluyor. Son 30 günde yeni kayıt yok. Yenişehir mahallesi mahalle-etiketli kayıtların %31.6'ini içeriyor; Kurtköy %18.9 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "e1b65a67eb32e926",
+  "sablon_versiyon": "v1.0-DM02"
+}

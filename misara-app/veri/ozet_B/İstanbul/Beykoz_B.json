@@ -1,0 +1,32 @@
+{
+  "katman": "B",
+  "il": "İstanbul",
+  "ilce": "Beykoz",
+  "son_yazim_utc": "2026-08-27T20:15:00Z",
+  "dayandigi_A_snapshot": {
+    "kesit_utc": "2026-08-27T11:07:30.107906Z",
+    "basin_sayisi": 366390,
+    "ilan_sayisi": 4049,
+    "ced_sayisi": 537,
+    "plan_sayisi": 778,
+    "yeni_30g": 372799,
+    "toplam_mahalleli_etiket": 3608,
+    "metin_sha": "8c3e3109ea8e940b"
+  },
+  "anlati": [
+    "Beykoz Tradia'nın ilk ilçesi, veri hacminin en derin olduğu yer. Havuzda 370.439 kayıt duruyor (366K basın + 4K ilan) — İstanbul'un diğer 30 ilçesinin çoğundan 30-40 kat büyük. Ancak bu hacmin okunması dikkat ister: sayı ham kayıt, gerçek Beykoz-içerikli değil.",
+    "Tam sayım ölçümü gösterdi: 366K basın kaydının 262.198'inde dosya yolunda 'beykoz' bile geçmiyor (%78.6). Bunlar eski ingest fonksiyonundan miras kaldı — ilce parametresi 'Beykoz' olarak hardcoded'du, İSKİ, Kalyon inşaat, PlanAski, ÇSB Çevre Bakanlığı kaynaklarından gelen ulusal içerik Beykoz etiketi taşıyor. Kanonik Beykoz kayıt sayısı 327.499 (dosya-hash distinct), ama içerik olarak 'gerçek Beykoz' alt-sınırı yol-adı bazlı ~71.237.",
+    "Çubuklu ve Paşabahçe mahalleleri Beykoz basınının %59.6'sını tutuyor — bu Beykoz'un boğaz kıyısı ve tarihi mahalle ağırlığını yansıtıyor. Mahalle-etiketli oran genel olarak %1.8 çünkü etiketleme metin içinde geçen mahalle adına bağlı; 5 mahalle-adı hardcoded taranıyor (İncirköy, Kabaoğlu, Paşabahçe, Çubuklu, Anadoluhisarı). Kalan 15 Beykoz mahallesi metin tarayıcısında yok.",
+    "537 ÇED atfı ve 778 imar planı atfı — Beykoz için anlamlı sayılar. Bu Kartal'ın 30-50 katı; sebep Beykoz'a odaklanmış mahalle-bazlı basın kaynaklarında (BeykozGüncel, DostBeykoz, BeykozHaber) yerel imar/plan haberleri daha yoğun. e-Plan platformu doğrudan bağlanırsa bu sayı 2-3 kat artar.",
+    "Yatırımcı dosyasına uyarı: 366K veya 370K sayısı 'Beykoz basın hacmi' olarak sunulmamalı — 5x'lik iddia farkı doğar. Kanonik 327.499 (dosya-hash dedup) veya alt-sınır 71.237 (yol-adı doğrulama) yayımlanabilir. Yayımlama dili: 'Beykoz veri havuzunda 327.499 tekil kayıt (dedup edilmiş), kesit 2026-08-27'."
+  ],
+  "onemli_bulgular": [
+    "Beykoz'un 366K ham sayısı çift-sayım (38.396 kayıt üç ingest turundan) ve yanlış etiket (262.198 kayıt ilçe-adı yol dışında) içeriyor. Kanonik yayın sayısı 327.499, gerçek Beykoz-içerik ALT-SINIRI 71.237.",
+    "Çubuklu ve Paşabahçe basın gündeminin %59.6'sını tutuyor — Beykoz'un boğaz-kıyısı ekseninde iki merkez.",
+    "537 ÇED / 778 plan yüksek çıkıyor ama e-Plan doğrudan hat yok; bu sayı basın metin-atfı, birincil kaynak değil. Doğrudan hat kurulunca sayı düşebilir (metin atfı > birincil).",
+    "8 Ağustos tam-geçişin gerçek katkısı: 30.147 yeni kaydın 30.133'ü zaten vardı. Sadece 14 gerçek yeni. Sayaç arttı ama içerik değil — Standing #40'a EK-B (delta-kalite) önerildi."
+  ],
+  "eksik_notu": "Yol-adı bazlı %78.6 yanlış etiket sonrası içerik-metni bazlı (metinde 'Beykoz' kelimesi geçen) doğrulama yapılmadı. Metin bazlı doğrulama alt-sınırı daha da düşürebilir veya yukarı çekebilir — henüz ölçülmedi.",
+  "tazelenme_kurali": "A katmanı %5+ değişirse veya yeni ÇED/plan girerse yeniden yaz.",
+  "yazim_yontemi": "Hafıza · anlatı v2 (DM-02+ B-3'lü ilk parti · ton: analiz + yorum + yayın uyarısı)"
+}

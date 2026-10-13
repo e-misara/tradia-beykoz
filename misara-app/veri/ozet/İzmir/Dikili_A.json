@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Dikili",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 461,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 148
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Salihler",
+      "kayit": 57,
+      "pay_yuzde": 38.5
+    },
+    {
+      "mahalle": "İsmetpaşa",
+      "kayit": 26,
+      "pay_yuzde": 17.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Dikili ilçesinde 0 basın kaydı ve 461 ilan tutuluyor. Son 30 günde yeni kayıt yok. Salihler mahallesi mahalle-etiketli kayıtların %38.5'ini içeriyor; İsmetpaşa %17.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "3c6adc80ba342746",
+  "sablon_versiyon": "v1.0-DM02"
+}

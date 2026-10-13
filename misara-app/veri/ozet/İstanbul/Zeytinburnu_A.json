@@ -1,0 +1,35 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Zeytinburnu",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 161,
+    "ilan_sayisi": 1842,
+    "ced_sayisi": 0,
+    "plan_sayisi": 1,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 1008
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Maltepe",
+      "kayit": 321,
+      "pay_yuzde": 31.8
+    },
+    {
+      "mahalle": "Sümer",
+      "kayit": 209,
+      "pay_yuzde": 20.7
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Zeytinburnu ilçesinde 161 basın kaydı ve 1.842 ilan tutuluyor. Son 30 günde yeni kayıt yok. Maltepe mahallesi mahalle-etiketli kayıtların %31.8'ini içeriyor; Sümer %20.7 ile ikinci sırada. İçerikte 0 ÇED atfı ve 1 imar planı atfı geçiyor. Bilinen eksikler: ÇED metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "2fa343aaf5856bfa",
+  "sablon_versiyon": "v1.0-DM02"
+}

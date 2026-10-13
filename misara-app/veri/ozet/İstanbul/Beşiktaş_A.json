@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Beşiktaş",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 373,
+    "ilan_sayisi": 2232,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 907
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Levent",
+      "kayit": 203,
+      "pay_yuzde": 22.4
+    },
+    {
+      "mahalle": "Levazım",
+      "kayit": 189,
+      "pay_yuzde": 20.8
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Beşiktaş ilçesinde 373 basın kaydı ve 2.232 ilan tutuluyor. Son 30 günde yeni kayıt yok. Levent mahallesi mahalle-etiketli kayıtların %22.4'ini içeriyor; Levazım %20.8 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "c908a6b2607ced2c",
+  "sablon_versiyon": "v1.0-DM02"
+}

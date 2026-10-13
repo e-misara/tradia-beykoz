@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Ankara",
+  "ilce": "Kahramankazan",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 43,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 19
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Örencik",
+      "kayit": 9,
+      "pay_yuzde": 47.4
+    },
+    {
+      "mahalle": "Fethi̇ye",
+      "kayit": 6,
+      "pay_yuzde": 31.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Ankara/Kahramankazan ilçesinde 0 basın kaydı ve 43 ilan tutuluyor. Son 30 günde yeni kayıt yok. Örencik mahallesi mahalle-etiketli kayıtların %47.4'ini içeriyor; Fethi̇ye %31.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "cf8261a5f306f9ef",
+  "sablon_versiyon": "v1.0-DM02"
+}

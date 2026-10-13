@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Antalya",
+  "ilce": "Aksu",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 258,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 133
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Altıntaş",
+      "kayit": 42,
+      "pay_yuzde": 31.6
+    },
+    {
+      "mahalle": "Atatürk",
+      "kayit": 39,
+      "pay_yuzde": 29.3
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Antalya/Aksu ilçesinde 0 basın kaydı ve 258 ilan tutuluyor. Son 30 günde yeni kayıt yok. Altıntaş mahallesi mahalle-etiketli kayıtların %31.6'ini içeriyor; Atatürk %29.3 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "6a7922b2e19bc007",
+  "sablon_versiyon": "v1.0-DM02"
+}

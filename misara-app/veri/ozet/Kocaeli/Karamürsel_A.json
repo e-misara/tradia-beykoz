@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Kocaeli",
+  "ilce": "Karamürsel",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 438,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 217
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "4 Temmuz",
+      "kayit": 90,
+      "pay_yuzde": 41.5
+    },
+    {
+      "mahalle": "Çamdibi",
+      "kayit": 42,
+      "pay_yuzde": 19.4
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Kocaeli/Karamürsel ilçesinde 0 basın kaydı ve 438 ilan tutuluyor. Son 30 günde yeni kayıt yok. 4 Temmuz mahallesi mahalle-etiketli kayıtların %41.5'ini içeriyor; Çamdibi %19.4 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "b4a680d9210da30e",
+  "sablon_versiyon": "v1.0-DM02"
+}

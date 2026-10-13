@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Şişli",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 2880,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 1248
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Merkez",
+      "kayit": 308,
+      "pay_yuzde": 24.7
+    },
+    {
+      "mahalle": "Mecidiyeköy",
+      "kayit": 262,
+      "pay_yuzde": 21.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Şişli ilçesinde 0 basın kaydı ve 2.880 ilan tutuluyor. Son 30 günde yeni kayıt yok. Merkez mahallesi mahalle-etiketli kayıtların %24.7'ini içeriyor; Mecidiyeköy %21.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "43154e99a4a97e26",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Ankara",
+  "ilce": "Sincan",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 1602,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 603
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Fevzi Çakmak",
+      "kayit": 161,
+      "pay_yuzde": 26.7
+    },
+    {
+      "mahalle": "Mustafa Kemal",
+      "kayit": 154,
+      "pay_yuzde": 25.5
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Ankara/Sincan ilçesinde 0 basın kaydı ve 1.602 ilan tutuluyor. Son 30 günde yeni kayıt yok. Fevzi Çakmak mahallesi mahalle-etiketli kayıtların %26.7'ini içeriyor; Mustafa Kemal %25.5 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "7554ba7f4237bc86",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,34 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Başakşehir",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 6738,
+    "ilan_sayisi": 1725,
+    "ced_sayisi": 18,
+    "plan_sayisi": 1,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 1318
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Bahçeşehir 2. Kısım",
+      "kayit": 346,
+      "pay_yuzde": 26.3
+    },
+    {
+      "mahalle": "İkitelli OSB",
+      "kayit": 323,
+      "pay_yuzde": 24.5
+    }
+  ],
+  "eksikler": [
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Başakşehir ilçesinde 6.738 basın kaydı ve 1.725 ilan tutuluyor. Son 30 günde yeni kayıt yok. Bahçeşehir 2. Kısım mahallesi mahalle-etiketli kayıtların %26.3'ini içeriyor; İkitelli OSB %24.5 ile ikinci sırada. İçerikte 18 ÇED atfı ve 1 imar planı atfı geçiyor. Bilinen eksikler: e-Plan platformu bağlanmadı.",
+  "metin_sha": "a8550b69ea57c8ff",
+  "sablon_versiyon": "v1.0-DM02"
+}

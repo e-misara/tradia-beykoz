@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Buca",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 990,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 284
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Zafer",
+      "kayit": 98,
+      "pay_yuzde": 34.5
+    },
+    {
+      "mahalle": "Seyhan",
+      "kayit": 53,
+      "pay_yuzde": 18.7
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Buca ilçesinde 0 basın kaydı ve 990 ilan tutuluyor. Son 30 günde yeni kayıt yok. Zafer mahallesi mahalle-etiketli kayıtların %34.5'ini içeriyor; Seyhan %18.7 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "159d12cc58bc8487",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,24 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Adalar",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 8510,
+    "ilan_sayisi": 0,
+    "ced_sayisi": 23,
+    "plan_sayisi": 12,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 0
+  },
+  "en_yogun_2_mahalle": [],
+  "eksikler": [
+    "mahalle etiketi %0.0 — mahalle-bazlı ingest eksik",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Adalar ilçesinde 8.510 basın kaydı ve 0 ilan tutuluyor. Son 30 günde yeni kayıt yok. Mahalle etiketi henüz doldurulmuş değil — kayıtlar ilçe seviyesinde tutuluyor. İçerikte 23 ÇED atfı ve 12 imar planı atfı geçiyor. Bilinen eksikler: mahalle etiketi %0.0 — mahalle-bazlı ingest eksik; e-Plan platformu bağlanmadı.",
+  "metin_sha": "61ad1c6d4668d712",
+  "sablon_versiyon": "v1.0-DM02"
+}

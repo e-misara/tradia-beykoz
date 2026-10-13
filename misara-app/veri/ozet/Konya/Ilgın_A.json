@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Konya",
+  "ilce": "Ilgın",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 17,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 6
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Kundullu",
+      "kayit": 2,
+      "pay_yuzde": 33.3
+    },
+    {
+      "mahalle": "Çömlekçi",
+      "kayit": 1,
+      "pay_yuzde": 16.7
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Konya/Ilgın ilçesinde 0 basın kaydı ve 17 ilan tutuluyor. Son 30 günde yeni kayıt yok. Kundullu mahallesi mahalle-etiketli kayıtların %33.3'ini içeriyor; Çömlekçi %16.7 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "f3e5283f3b0f2c41",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Ankara",
+  "ilce": "Ayaş",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 47,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 22
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Gökler",
+      "kayit": 14,
+      "pay_yuzde": 63.6
+    },
+    {
+      "mahalle": "Oltan",
+      "kayit": 3,
+      "pay_yuzde": 13.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Ankara/Ayaş ilçesinde 0 basın kaydı ve 47 ilan tutuluyor. Son 30 günde yeni kayıt yok. Gökler mahallesi mahalle-etiketli kayıtların %63.6'ini içeriyor; Oltan %13.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "a0b52a3f33407296",
+  "sablon_versiyon": "v1.0-DM02"
+}

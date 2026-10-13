@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Şile",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 5911,
+    "ilan_sayisi": 3,
+    "ced_sayisi": 11,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 5
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Balibey",
+      "kayit": 2,
+      "pay_yuzde": 40.0
+    },
+    {
+      "mahalle": "Akçakese",
+      "kayit": 2,
+      "pay_yuzde": 40.0
+    }
+  ],
+  "eksikler": [
+    "mahalle etiketi %0.1 — mahalle-bazlı ingest eksik",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Şile ilçesinde 5.911 basın kaydı ve 3 ilan tutuluyor. Son 30 günde yeni kayıt yok. Balibey mahallesi mahalle-etiketli kayıtların %40.0'ini içeriyor; Akçakese %40.0 ile ikinci sırada. İçerikte 11 ÇED atfı ve 0 imar planı atfı geçiyor. Bilinen eksikler: mahalle etiketi %0.1 — mahalle-bazlı ingest eksik; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "ee0b29853351bb39",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "İzmir",
+  "ilce": "Gaziemir",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 370,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 246
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Beyazevler",
+      "kayit": 59,
+      "pay_yuzde": 24.0
+    },
+    {
+      "mahalle": "Atıfbey",
+      "kayit": 51,
+      "pay_yuzde": 20.7
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İzmir/Gaziemir ilçesinde 0 basın kaydı ve 370 ilan tutuluyor. Son 30 günde yeni kayıt yok. Beyazevler mahallesi mahalle-etiketli kayıtların %24.0'ini içeriyor; Atıfbey %20.7 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "84edfeba5c0a6254",
+  "sablon_versiyon": "v1.0-DM02"
+}

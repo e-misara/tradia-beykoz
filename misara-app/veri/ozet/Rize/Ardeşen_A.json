@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Rize",
+  "ilce": "Ardeşen",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 80,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 70
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Deniz",
+      "kayit": 32,
+      "pay_yuzde": 45.7
+    },
+    {
+      "mahalle": "Firtina",
+      "kayit": 15,
+      "pay_yuzde": 21.4
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Rize/Ardeşen ilçesinde 0 basın kaydı ve 80 ilan tutuluyor. Son 30 günde yeni kayıt yok. Deniz mahallesi mahalle-etiketli kayıtların %45.7'ini içeriyor; Firtina %21.4 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "920b6da71d62bb4e",
+  "sablon_versiyon": "v1.0-DM02"
+}

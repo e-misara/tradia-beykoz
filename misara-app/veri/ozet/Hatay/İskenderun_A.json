@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Hatay",
+  "ilce": "İskenderun",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 214,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 98
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Sakarya",
+      "kayit": 36,
+      "pay_yuzde": 36.7
+    },
+    {
+      "mahalle": "Modernevler",
+      "kayit": 27,
+      "pay_yuzde": 27.6
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Hatay/İskenderun ilçesinde 0 basın kaydı ve 214 ilan tutuluyor. Son 30 günde yeni kayıt yok. Sakarya mahallesi mahalle-etiketli kayıtların %36.7'ini içeriyor; Modernevler %27.6 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "4d3efcdd41d438c7",
+  "sablon_versiyon": "v1.0-DM02"
+}

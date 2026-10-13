@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Gaziantep",
+  "ilce": "Şehitkamil",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 611,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 228
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Mücahitler",
+      "kayit": 55,
+      "pay_yuzde": 24.1
+    },
+    {
+      "mahalle": "Atatürk",
+      "kayit": 50,
+      "pay_yuzde": 21.9
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Gaziantep/Şehitkamil ilçesinde 0 basın kaydı ve 611 ilan tutuluyor. Son 30 günde yeni kayıt yok. Mücahitler mahallesi mahalle-etiketli kayıtların %24.1'ini içeriyor; Atatürk %21.9 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "0e0baeae8807d28a",
+  "sablon_versiyon": "v1.0-DM02"
+}

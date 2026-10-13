@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Konya",
+  "ilce": "Çumra",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 47,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 31
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Yeni",
+      "kayit": 12,
+      "pay_yuzde": 38.7
+    },
+    {
+      "mahalle": "Bardakçı",
+      "kayit": 9,
+      "pay_yuzde": 29.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Konya/Çumra ilçesinde 0 basın kaydı ve 47 ilan tutuluyor. Son 30 günde yeni kayıt yok. Yeni mahallesi mahalle-etiketli kayıtların %38.7'ini içeriyor; Bardakçı %29.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "d27c39babff4674a",
+  "sablon_versiyon": "v1.0-DM02"
+}

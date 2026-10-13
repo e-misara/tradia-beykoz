@@ -1,0 +1,35 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Esenler",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 3166,
+    "ilan_sayisi": 1727,
+    "ced_sayisi": 0,
+    "plan_sayisi": 1,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 822
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Oruçreis",
+      "kayit": 275,
+      "pay_yuzde": 33.5
+    },
+    {
+      "mahalle": "Fatih",
+      "kayit": 151,
+      "pay_yuzde": 18.4
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Esenler ilçesinde 3.166 basın kaydı ve 1.727 ilan tutuluyor. Son 30 günde yeni kayıt yok. Oruçreis mahallesi mahalle-etiketli kayıtların %33.5'ini içeriyor; Fatih %18.4 ile ikinci sırada. İçerikte 0 ÇED atfı ve 1 imar planı atfı geçiyor. Bilinen eksikler: ÇED metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "1d5c190d62f0cca7",
+  "sablon_versiyon": "v1.0-DM02"
+}

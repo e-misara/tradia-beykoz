@@ -1,0 +1,34 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Bakırköy",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 2499,
+    "ilan_sayisi": 1059,
+    "ced_sayisi": 11,
+    "plan_sayisi": 55,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 526
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Şenlikköy",
+      "kayit": 217,
+      "pay_yuzde": 41.3
+    },
+    {
+      "mahalle": "Cevizlik",
+      "kayit": 90,
+      "pay_yuzde": 17.1
+    }
+  ],
+  "eksikler": [
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Bakırköy ilçesinde 2.499 basın kaydı ve 1.059 ilan tutuluyor. Son 30 günde yeni kayıt yok. Şenlikköy mahallesi mahalle-etiketli kayıtların %41.3'ini içeriyor; Cevizlik %17.1 ile ikinci sırada. İçerikte 11 ÇED atfı ve 55 imar planı atfı geçiyor. Bilinen eksikler: e-Plan platformu bağlanmadı.",
+  "metin_sha": "ac9ed4c9e8817ca2",
+  "sablon_versiyon": "v1.0-DM02"
+}

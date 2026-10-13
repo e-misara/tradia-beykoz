@@ -1,0 +1,35 @@
+{
+  "katman": "A",
+  "il": "İstanbul",
+  "ilce": "Esenyurt",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 2101,
+    "ilan_sayisi": 1210,
+    "ced_sayisi": 9,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 475
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Koza",
+      "kayit": 136,
+      "pay_yuzde": 28.6
+    },
+    {
+      "mahalle": "Akçaburgaz",
+      "kayit": 109,
+      "pay_yuzde": 22.9
+    }
+  ],
+  "eksikler": [
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "İstanbul/Esenyurt ilçesinde 2.101 basın kaydı ve 1.210 ilan tutuluyor. Son 30 günde yeni kayıt yok. Koza mahallesi mahalle-etiketli kayıtların %28.6'ini içeriyor; Akçaburgaz %22.9 ile ikinci sırada. İçerikte 9 ÇED atfı ve 0 imar planı atfı geçiyor. Bilinen eksikler: İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "62f5dbd5cf14b5db",
+  "sablon_versiyon": "v1.0-DM02"
+}

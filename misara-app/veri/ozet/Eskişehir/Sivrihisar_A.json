@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Eskişehir",
+  "ilce": "Sivrihisar",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 44,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 28
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Kaymaz",
+      "kayit": 9,
+      "pay_yuzde": 32.1
+    },
+    {
+      "mahalle": "Babadat",
+      "kayit": 7,
+      "pay_yuzde": 25.0
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Eskişehir/Sivrihisar ilçesinde 0 basın kaydı ve 44 ilan tutuluyor. Son 30 günde yeni kayıt yok. Kaymaz mahallesi mahalle-etiketli kayıtların %32.1'ini içeriyor; Babadat %25.0 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "985fadfdbb6168e8",
+  "sablon_versiyon": "v1.0-DM02"
+}

@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Antalya",
+  "ilce": "Akseki",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 34,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 28
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Güneykaya",
+      "kayit": 15,
+      "pay_yuzde": 53.6
+    },
+    {
+      "mahalle": "Yarpuz",
+      "kayit": 4,
+      "pay_yuzde": 14.3
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Antalya/Akseki ilçesinde 0 basın kaydı ve 34 ilan tutuluyor. Son 30 günde yeni kayıt yok. Güneykaya mahallesi mahalle-etiketli kayıtların %53.6'ini içeriyor; Yarpuz %14.3 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "cfa3ada0380acf8e",
+  "sablon_versiyon": "v1.0-DM02"
+}

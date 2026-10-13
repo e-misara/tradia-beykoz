@@ -1,0 +1,36 @@
+{
+  "katman": "A",
+  "il": "Malatya",
+  "ilce": "Yeşilyurt",
+  "kesit_utc": "2026-10-11T17:14:29.219476Z",
+  "rakamlar": {
+    "basin_sayisi": 0,
+    "ilan_sayisi": 163,
+    "ced_sayisi": 0,
+    "plan_sayisi": 0,
+    "yeni_30g": 0,
+    "onceki_30g": 0,
+    "delta_yuzde": null,
+    "toplam_mahalleli_etiket": 136
+  },
+  "en_yogun_2_mahalle": [
+    {
+      "mahalle": "Görgü",
+      "kayit": 37,
+      "pay_yuzde": 27.2
+    },
+    {
+      "mahalle": "Atalar",
+      "kayit": 33,
+      "pay_yuzde": 24.3
+    }
+  ],
+  "eksikler": [
+    "ÇED metni bulunamadı",
+    "İmar planı metni bulunamadı",
+    "e-Plan platformu bağlanmadı"
+  ],
+  "metin": "Malatya/Yeşilyurt ilçesinde 0 basın kaydı ve 163 ilan tutuluyor. Son 30 günde yeni kayıt yok. Görgü mahallesi mahalle-etiketli kayıtların %27.2'ini içeriyor; Atalar %24.3 ile ikinci sırada. Bilinen eksikler: ÇED metni bulunamadı; İmar planı metni bulunamadı; e-Plan platformu bağlanmadı.",
+  "metin_sha": "f5b7541648752812",
+  "sablon_versiyon": "v1.0-DM02"
+}
