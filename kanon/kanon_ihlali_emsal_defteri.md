@@ -86,6 +86,19 @@
 
 ---
 
+## Vaka #06 — Vezir'in rev-list kuralı, incelenmemiş CC commit'ini public'e itti
+
+- **Tarih:** 2026-10-14
+- **Zincir:** Hafıza yerel commit attı (`4bebfde`, 214 dosya) ama push etmedi → Vezir `pano_yayinla.sh` koştu → 11 Eki'de eklenen rev-list kuralı ("HEAD öndeyse mutlaka push") **Hafıza'nın commit'ini de** push etti → `misara-app/veri/DURUM.json` (1 satır) + `misara-app/veri/cografya.json` (6 satır) vaka parselinin ada/parsel numarasını, orman-kadastro parsel numarasını ve kıyı-mesafe değerini public'e taşıdı.
+- **Sorumluluk:** Vezir. Kural Patron onaylıydı ama sızıntı kapısı yoktu; "benim commit'im temiz" kontrolü, itilen **tüm** commit'leri kapsamıyordu.
+- **Düzeltme:** HEAD'de 7 satır redakte (`pano_yayinla.sh` sonraki çalıştırmada iter). `pano_yayinla.sh`'a **sızıntı kapısı** eklendi: push'tan önce `origin/main..HEAD` farkı sınıf-bazlı desenle (ada/parsel no, anahtar/token) taranır; eşleşme varsa push durur (exit 3).
+- **Açık kalan:** Git **geçmişinde** (`4bebfde`) veri duruyor. Temizlemek için geçmiş yeniden yazımı + force-push gerekir. Bu geri dönülmez ve paylaşılan repoyu etkiler → **Patron kararı**. Vezir yapmadı.
+- **Emsal ders:**
+  1. Otomatik push kuralı, kapsadığı **her** commit için sızıntı kapısı ister. Yoksa ilk başka-CC commit'inde delinir.
+  2. Hafıza'nın `misara-app/veri/` türetmeleri public repoya yazıldığı sürece parsel_veri_kanonu süzgecinden geçmeli (türetme betiğine süzgeç).
+
+---
+
 ## İşletim kuralı
 
 - **Ekleme:** Vezir her turda yeni ihlal tespit ederse `Vaka #NN` bloğu ekler (numara artan). Eski vakalar dokunulmaz.

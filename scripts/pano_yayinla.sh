@@ -59,6 +59,20 @@ if ! git diff --quiet pano/ozet-w35.json pano/index.html 2>/dev/null; then
     git commit -qm "pano: $MESAJ"
 fi
 ILERDE_BEY=$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)
+# Sızıntı kapısı (Vaka #06): rev-list başka CC'nin yerel commit'ini de iter → push'tan ÖNCE tara.
+# Desen sınıf-bazlı (Vaka #05 dersi: sabit rakam listesi yeni rakamı kaçırır).
+if [ "$ILERDE_BEY" -gt 0 ]; then
+    SIZINTI=$(git diff origin/main..HEAD -- . ':!*.geojson' ':!kanon/kanon_ihlali_emsal_defteri.md' ':!kanon/parsel_veri_kanonu_v1.md' ':!scripts/pano_yayinla.sh' \
+        | /usr/bin/grep -E '^\+' \
+        | /usr/bin/grep -nE 'ada [0-9]+ ?/ ?parsel|[0-9]+ ada([sy]|[^a-zA-Zçğıöşü]|$)|parsel [0-9]+-[0-9]+|sk-ant-|ghp_[A-Za-z0-9]{20}|gho_[A-Za-z0-9]{20}|AKIA[A-Z0-9]{16}|[?&]key=[A-Za-z0-9]{10}' \
+        | head -5)
+    if [ -n "$SIZINTI" ]; then
+        kirmizi "  🔴 SIZINTI KAPISI: push edilecek commit'lerde parsel-veri/anahtar deseni var — PUSH YAPILMADI"
+        echo "$SIZINTI" | cut -c1-160
+        kirmizi "  → redakte et, yeni commit at, script'i yeniden çalıştır"
+        exit 3
+    fi
+fi
 if [ "$ILERDE_BEY" -gt 0 ]; then
     git push -q origin main
     yesil "  ✓ tradia-beykoz push ($ILERDE_BEY commit)"

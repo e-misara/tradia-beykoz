@@ -15,6 +15,7 @@
 | 2026-10-11 (4 borç kapatma + KUYRUK) | +6 | −4 | +2 | 43 | ölçülmedi (sütun 14 Eki açıldı) | Açılan: 4 borç kapanış satırı (rev-list, #48 formalize, 14 oturum, KURULUS INDEX) + KUYRUK motoru + ARZ eşlemesi. Kapanan: 4 borç ✅ aynı turda. Vezir'in iç borçlarının temizlenme turu. |
 | 2026-10-13 (BM-K ilk sayım + tek kaynak) | +4 | −3 | +1 | 44 | ölçülmedi (sütun 14 Eki açıldı) | Açılan: motor ilk-sayım teslimi (✅ doğdu), dm02 sebep sorusu (Hafıza), SIG32 sapma satırları (Sinyal), BM-K6/K14 boş hücreler. Kapanan: motor teslimi ✅, ARZ eşlemesi ✅, Borsa sayaç çelişkisi ✅ (S51/S52). Canlı sayım: toplam 80 / kapalı 36 / açık 44 (önceki açık 43). |
 | 2026-10-14 (süreklilik + hedef kartları) | +6 | −2 | +4 | 48 | Basın: 970 ilçe (3/973 · gerekli 18,7/hafta · bu hafta 3) · diğer 15 CC: hedef beyanı yok → ölçülmedi | Açılan: süreklilik ✅, kapsam ✅, HEDEF_HAVUZU, koşu-damgası, 73-gün-sessiz teşhisi (Hafıza), Basın hedef eğrisi. Kapanan: süreklilik + kapsam teslimi. Canlı sayım 86 / 38 / 48. |
+| 2026-10-14 (ek · Vaka #06 sızıntı) | +3 | −1 | +2 | 50 | Basın: 970 ilçe (değişmedi) | Açılan: Patron geçmiş-temizlik kararı, sızıntı kapısı (✅ doğdu), Hafıza süzgeci. Kapanan: sızıntı kapısı. Canlı sayım 89 / 39 / 50. |
 
 ## Retro-not (sayaç öncesi)
 
