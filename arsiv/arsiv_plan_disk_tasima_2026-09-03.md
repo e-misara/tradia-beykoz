@@ -1,5 +1,7 @@
 # DİSK TAŞIMA PLANI · ÖNERİ
 
+> ⏭️ **2026-10-14: yerini [v2](arsiv_plan_disk_tasima_v2_2026-10-14.md) aldı.** Bu sürüm yalnız görsellere bakıyordu; ölçüm gösterdi ki Mac'teki görseller 5,18 GiB, diski dolduran asıl kalemler başka. Metin değiştirilmedi (SİLME-YOK).
+
 **Üreten:** TT-ARŞİV · **Tarih:** 2026-09-03 · **Sprint:** ARS-04
 **Statü:** 🟡 **ÖNERİ — UYGULAMA YOK.** Hiçbir dosya taşınmadı, silinmedi, adlandırılmadı.
 **Girdi:** `gorsel_envanteri_disk.json` (46.305 tekil) · `sinifA_oneri.json` (16.049 SINIF A)
