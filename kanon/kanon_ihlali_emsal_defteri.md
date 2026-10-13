@@ -74,6 +74,18 @@
 
 ---
 
+## Vaka #05 — Parsel geometrisi rakamları: pano (Vezir) + örümcek kanonu (Hafıza)
+
+- **Tarih:** 2026-10-13 (BM-K ilk sayım turundaki sızıntı taraması)
+- **Bulgu:** (a) Pano'da iki satırda kıyı-mesafe hüküm rakamı kalmıştı — 26 Eyl turunda **Vezir'in kendisi** yazdı, 27 Eyl retro-redaksiyonda kaçtı (tarama deseni yalnız dere/eğim rakamlarını arıyordu). (b) Hafıza'nın untracked `kanon/orumcek_soru_seti_v1.md`'sinde parsel-kesin + proxy eğim ve kıyı mesafesi rakamları.
+- **Düzeltme:** Pano HEAD'de redakte (git history'de eski hâl kalır · SİLME-YOK). Hafıza dosyası diskte redakte, commit edilmedi, bayrak: `02_CC_STATE/vezir_bayrak_hafiza_orumcek_parsel_veri.json`.
+- **Emsal ders:**
+  1. Sızıntı taraması **sabit rakam listesiyle** yapılırsa yeni rakam kaçar. Desen: vaka parselinin her mesafe/eğim/kot ölçüsü — sabit liste değil, sınıf.
+  2. Retro-redaksiyon kendi yazdığın satırları da kapsar; "başkasının sızıntısı" refleksi yanıltır.
+  3. Üst Akıl kaynak metni (Downloads) parsel rakamı taşıyabilir; public'e işleyen CC süzer.
+
+---
+
 ## İşletim kuralı
 
 - **Ekleme:** Vezir her turda yeni ihlal tespit ederse `Vaka #NN` bloğu ekler (numara artan). Eski vakalar dokunulmaz.

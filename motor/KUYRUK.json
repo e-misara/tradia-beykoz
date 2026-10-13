@@ -1,65 +1,112 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "sahibi": "Vezir",
   "acilis": "2026-10-11",
-  "aciklama": "BÖLGE MOTORU KUYRUK · bölge × kök × CC hücreleri · her CC cron'u KUYRUK'tan iş çeker",
-  "sema_dosyasi": "motor/SEMA.md",
-  "kanon": "Patron direktifi 2026-10-11 + Standing #37+#48 + celiski_referans_kanonu_v1",
-  "koordinasyon": {
-    "kok_cc_eslemesi": "ORUMCEK_SORU_SETI_v1 §2 ARZ sütunu · Patron verecek",
-    "statu": "🟡 BEKLİYOR · ARZ eşlemesi gelmeden hücreler açılmaz"
+  "guncelleme": "2026-10-12",
+  "aciklama": "BÖLGE MOTORU KUYRUK · TEK KAYNAK (Patron direktifi 2026-10-12) · bölge × BM-kök hücreleri",
+  "tek_kaynak_beyani": {
+    "kanonik": "tradia-beykoz/motor/KUYRUK.json (bu dosya)",
+    "alt_gorunumler": [
+      {"cc": "CC-Basın", "yol": "~/tradia_basin_lokal/bolge/KUYRUK.json", "statu": "ALT-GÖRÜNÜM · silinmez · kanoniğe bağlı"}
+    ],
+    "akis": "CC'ler → ~/tradia_konusmalar/02_CC_STATE/bolge_<cc>.json yazar → Vezir bu dosyaya DERLER → Hafıza misara-app/veri/orumcek.json'u KUYRUK'tan TÜRETİR",
+    "turetme_yonu": "KUYRUK → orumcek.json (tersi yasak)"
   },
-  "oncelik_tablosu": {
-    "1": "Açık vakalar — Beykoz (45 mahalle · 7 CC vaka), Kartal (15 mahalle · pilot), Rize/Derepazarı (PARSEL-01)",
-    "2": "K22 · 9 büyükşehir ilçeleri",
-    "3": "81 il merkez ilçesi",
-    "4": "Kalan ilçeler"
+  "kok_ns": "BM-K1..BM-K16 · Bölge Motoru öneki (K-numara standardı 2026-08-07: çıplak K yasak; Signals SIG32-K01..K15 ayrı küme)",
+  "arz_eslemesi": {
+    "kaynak": "ORUMCEK_SORU_SETI_v1.md §2 ARZ sütunu (Üst Akıl 2026-10-11) · ~/Downloads/'tan işlendi",
+    "BM-K1":  {"ad": "KİMLİK",             "cc": ["Aİ", "Hafıza"]},
+    "BM-K2":  {"ad": "MÜLKİYET/KADASTRO",  "cc": ["Tic", "Arşiv"]},
+    "BM-K3":  {"ad": "PLAN/İMAR REJİMİ",   "cc": ["Tic", "Map", "Patron-saha"]},
+    "BM-K4":  {"ad": "FİZİK/ARAZİ",        "cc": ["Map"]},
+    "BM-K5":  {"ad": "AFET/RİSK",          "cc": ["Map", "Basın", "İhale", "Finans"]},
+    "BM-K6":  {"ad": "ALTYAPI/ERİŞİM",     "cc": ["Aİ", "Tic", "Map"]},
+    "BM-K7":  {"ad": "KAMU HAMLESİ",       "cc": ["İhale", "Basın", "Aİ"]},
+    "BM-K8":  {"ad": "PİYASA/ARZ",         "cc": ["Analiz", "Arşiv"]},
+    "BM-K9":  {"ad": "TALEP/NÜFUS",        "cc": ["Analiz", "Pazarlama", "Borsa"]},
+    "BM-K10": {"ad": "EKONOMİ/AKTÖR",      "cc": ["Tic", "Borsa", "Aİ"]},
+    "BM-K11": {"ad": "FİNANS",             "cc": ["Finans"]},
+    "BM-K12": {"ad": "SÖYLEM",             "cc": ["Basın", "Sosyal", "Aİ"]},
+    "BM-K13": {"ad": "ÇEVRE/KORUMA/TARIM", "cc": ["Map", "Tic", "İhale"]},
+    "BM-K14": {"ad": "KARŞILAŞTIRMA",      "cc": ["Hafıza", "Aİ", "Map"]},
+    "BM-K15": {"ad": "ZAMAN/ARKEOLOJİ",    "cc": ["Basın", "Map", "Analiz", "Sinyal"]},
+    "BM-K16": {"ad": "SİSTEM KONTROLÜ",    "cc": ["Vezir", "Üst Akıl"]}
   },
-  "ilk_doldurma_oncelik_1": {
-    "statu": "🟡 ARZ EŞLEMESİ BEKLİYOR",
-    "bolgeler": [
-      {
-        "bolge": {"il": "İstanbul", "ilce": "Beykoz"},
-        "mahalle_sayisi": 45,
-        "mevcut_cc_cikisi": {
-          "CC-Signals": "SIG6 Beykoz master KAPANDI · 574-satır",
-          "CC-TT-MAP": "MAP24-34 KAPANDI (üç-imza doktrini)",
-          "CC-Basın": "basin_html 333K · B8 araştırma",
-          "CC-Analiz": "250.193 ulusal + 365.970 beykoz ham",
-          "CC-Finans": "Beykoz F6 KAPANDI",
-          "CC-İhale": "RG tespitleri açık",
-          "CC-Tic": "Firma DB 527/262"
-        },
-        "hucre_sayisi_tahmini": "45 mh × 16 kök × 7 CC = 5.040 hücre (ARZ eşlemesi geldiğinde net sayı çıkar)"
-      },
-      {
-        "bolge": {"il": "İstanbul", "ilce": "Kartal"},
-        "mahalle_sayisi": 15,
-        "mevcut_cc_cikisi": {
-          "CC-Hafıza": "DURUM.json pilot_ilce=Kartal · 20 mahalle",
-          "ozet_motoru": "A katmanı 192 üretildi, B katmanı 3 yazıldı"
-        },
-        "hucre_sayisi_tahmini": "15 mh × 16 kök × 7 CC = 1.680 hücre"
-      },
-      {
-        "bolge": {"il": "Rize", "ilce": "Derepazarı"},
-        "mahalle_sayisi": 1,
-        "vaka": "PARSEL-01 (ilk iç-müşteri)",
-        "mevcut_cc_cikisi": {
-          "CC-Tic": "✓ sahip · C10-C12 teslim · BESLEME v2 teslim",
-          "CC-İhale": "✓ DOKUNMUYOR (RG 9000) · D-riski kapandı",
-          "CC-TT-MAP": "✓ A4+C14+dere+eğim+radar-hakem",
-          "CC-TT-AI": "✓ katman verildi",
-          "CC-Analiz": "✓ katman verildi",
-          "CC-Signals": "✓ iskelet + B=(0) 5. tur",
-          "CC-Finans": "✓ Rize 3.bölge/EK-5/6M + E7 KAPANDI",
-          "CC-Basın": "✓ 7/7 TAMAM (kamulaştırma SÖYLEM)",
-          "CC-Arşiv": "✅ E1 künye zinciri + 3/3 GERÇEK"
-        },
-        "hucre_sayisi_tahmini": "1 mh × 16 kök × 9 CC = 144 hücre (DOLU oranı: 10 CC × 1 mh ≈ 10 hücre, kalan ~134 BOŞ)"
-      }
-    ]
+  "olcek_notu": "Rize/Derepazarı = PARSEL ölçeği (160 hücre: 16 kök × 5 bakış × 2 zaman) · Beykoz/Kartal = İLÇE+MAHALLE ölçeği · bu dosyadaki hücreler KÖK-düzeyi özettir; 160-hücre tam sayımı Tic+Hafıza'dan (örümcek §5)",
+  "ilk_sayim_20261012": {
+    "kaynak": "9 × 02_CC_STATE/bolge_<cc>.json (11 Eki) + Sinyal SIG32 bayrak + bilinen kapanmış teslimler",
+    "sinif_kurali": "DOLU = kaynak+tarih+kanıt sınıfı üçü birden (örümcek §5) · şerhli DOLU'lar sayılır, şerh hücrede",
+    "tablo": {
+      "İstanbul/Beykoz":   {"DOLU": 13, "ERISILEMEDI": 1, "BOS": 2},
+      "İstanbul/Kartal":   {"DOLU": 13, "ERISILEMEDI": 1, "BOS": 2},
+      "Rize/Derepazarı":   {"DOLU": 15, "ERISILEMEDI": 1, "BOS": 0}
+    },
+    "toplam_48_kok_hucre": {"DOLU": 41, "ERISILEMEDI": 3, "BOS": 4},
+    "bos_hucreler": ["Beykoz BM-K6 (Aİ altyapı yalnız Rize pilotunda koştu)", "Beykoz BM-K14", "Kartal BM-K6", "Kartal BM-K14 (benzerlik motoru DENETİM-2'de)"],
+    "erisilemedi_hucreler": ["Beykoz BM-K8 (Analiz · external disk takılı değil)", "Kartal BM-K8 (aynı)", "Derepazarı BM-K9 (Pazarlama · Rize EVDS3-KAPALI 71 il içinde)"]
   },
-  "hucreler": [],
-  "not": "hucreler[] boş bırakıldı · ARZ (kök→CC) eşlemesi Patron'dan geldikten sonra doldurulacak"
+  "hucreler": [
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K1", "cc": "Hafıza", "durum": "DOLU", "oncelik": 1, "kaynak": "cografya.json 81×973 + evren 45 mh", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "idari ağaç tam", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K2", "cc": "Tic", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_tic.json BM-K2", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "kadastro hücresi", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K3", "cc": "Tic+Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_tic.json BM-K3 (8 kayıt) + eplan", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "plan rejimi 8 kayıt", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K4", "cc": "Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_map.json K4 (rakım/eğim/bakı · NDVI 0.572 · ağaç %59.4)", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "fizik tam", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K5", "cc": "Map+Basın+İhale", "durum": "DOLU", "oncelik": 1, "kaynak": "Map K5 + Basın K5:98 + İhale afet=İLGİSİZ", "tarih": "2026-10-11", "sinif": "ÖLÇÜM+SÖYLEM", "ozet": "şerh: MTA/AFAD/DSİ doğrulaması ERİŞİLEMEDİ", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K6", "cc": "Aİ", "durum": "BOS", "oncelik": 1, "kaynak": null, "tarih": "2026-10-12", "sinif": null, "ozet": "Aİ altyapı-proxy yalnız Rize pilotunda; Beykoz kuyruğa", "son_kosu": null},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K7", "cc": "İhale+Basın", "durum": "DOLU", "oncelik": 1, "kaynak": "İhale ekap=ÖLÇTÜM-DOLU + RG-SİT + Basın K7:84", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "İ59-72 ilk tam örnek", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K8", "cc": "Analiz", "durum": "ERISILEMEDI", "oncelik": 1, "kaynak": "bolge_analiz.json: v25b external'da · diskutil BOŞ", "tarih": "2026-10-11", "sinif": null, "ozet": "DFE v0.1 tanım hazır, ölçüm disk bekliyor", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K9", "cc": "Pazarlama+Analiz", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_pazarlama.json: İstanbul VAR_iller'de (TÜİK)", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "şerh: il-düzeyi PROXY, ilçeye atfedilmez", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K10", "cc": "Tic", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_tic.json BM-K10 (7 kayıt · aktör envanteri 17/16 kesin)", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "şerh: #17 Atakule atıf ÇELİŞKİ (T133 Signals'ta)", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K11", "cc": "Finans", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_finans.json istanbul/beykoz 6 satır", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "teşvik/ÇED/hibe/katılım/birim-maliyet/güven-eksik", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K12", "cc": "Sosyal+Basın", "durum": "DOLU", "oncelik": 1, "kaynak": "Sosyal 21 kanal + Basın K12:92", "tarih": "2026-10-11", "sinif": "SÖYLEM", "ozet": "yerel kanal envanteri", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K13", "cc": "Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_map.json K13_koruma", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "şerh: orman rejimi İŞARETLİ-DOĞRULANMADI (OGM bloke)", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K14", "cc": "Hafıza+Aİ", "durum": "BOS", "oncelik": 1, "kaynak": null, "tarih": "2026-10-12", "sinif": null, "ozet": "benzerlik motoru DENETİM-2 tasarımında", "son_kosu": null},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K15", "cc": "Map+Basın", "durum": "DOLU", "oncelik": 1, "kaynak": "Map 10yil_degisim (12 alan)", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "şerh: Basın K15 arkeoloji 0", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Beykoz"}, "kok": "BM-K16", "cc": "Vezir", "durum": "DOLU", "oncelik": 1, "kaynak": "vaat defteri + kanon/ + pano + bu derleme", "tarih": "2026-10-12", "sinif": "BELGE", "ozet": "SIG32 Beykoz: SİNYAL ADAYI 6/6 eksen okunabilir", "son_kosu": "2026-10-12"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K1", "cc": "Hafıza", "durum": "DOLU", "oncelik": 1, "kaynak": "cografya.json pilot_ilce + 20 mh", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "pilot ilçe", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K2", "cc": "Tic", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_tic.json BM-K2", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "kadastro hücresi", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K3", "cc": "Tic+Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_tic.json BM-K3 (3 kayıt)", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "şerh: Tic bölge-durumu KISMİ işaretledi", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K4", "cc": "Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_map.json (NDVI 0.392 · yapı %15.9)", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "fizik tam", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K5", "cc": "Map+Basın+İhale", "durum": "DOLU", "oncelik": 1, "kaynak": "Map K5 + Basın K5:98 + İhale afet=İLGİSİZ", "tarih": "2026-10-11", "sinif": "ÖLÇÜM+SÖYLEM", "ozet": "şerh: MTA/AFAD doğrulaması bloke", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K6", "cc": "Aİ", "durum": "BOS", "oncelik": 1, "kaynak": null, "tarih": "2026-10-12", "sinif": null, "ozet": "kuyruğa", "son_kosu": null},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K7", "cc": "İhale+Basın", "durum": "DOLU", "oncelik": 1, "kaynak": "İhale ekap=ÖLÇTÜM-DOLU (Salı) + Basın K7:78", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "şerh: rg_kamulastirma + sit = BAKMADIM (İhale alt-kuyruğunda)", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K8", "cc": "Analiz", "durum": "ERISILEMEDI", "oncelik": 1, "kaynak": "v24 master external'da · disk yok", "tarih": "2026-10-11", "sinif": null, "ozet": "mount gelince bolge_analiz_olcum_1.json", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K9", "cc": "Pazarlama+Analiz", "durum": "DOLU", "oncelik": 1, "kaynak": "İstanbul VAR_iller'de", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "şerh: il-düzeyi PROXY", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K10", "cc": "Tic", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_tic.json BM-K10 (5 kayıt)", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "aktör envanteri", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K11", "cc": "Finans", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_finans.json istanbul/kartal 6 satır", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "6 satır tam", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K12", "cc": "Sosyal+Basın", "durum": "DOLU", "oncelik": 1, "kaynak": "Sosyal 27 kanal + Basın K12:99", "tarih": "2026-10-11", "sinif": "SÖYLEM", "ozet": "yerel kanal envanteri", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K13", "cc": "Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_map.json K13", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "koruma katmanı", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K14", "cc": "Hafıza+Aİ", "durum": "BOS", "oncelik": 1, "kaynak": null, "tarih": "2026-10-12", "sinif": null, "ozet": "benzerlik motoru DENETİM-2'de", "son_kosu": null},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K15", "cc": "Map+Basın", "durum": "DOLU", "oncelik": 1, "kaynak": "Map 10yil_degisim", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "şerh: Basın K15 arkeoloji 0", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "İstanbul", "ilce": "Kartal"}, "kok": "BM-K16", "cc": "Vezir", "durum": "DOLU", "oncelik": 1, "kaynak": "bu derleme + SIG32", "tarih": "2026-10-12", "sinif": "BELGE", "ozet": "SIG32 Kartal: EKSİK EKSEN 1/6 (negatif kontrol doğru çalıştı)", "son_kosu": "2026-10-12"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K1", "cc": "Aİ+Hafıza", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_ai.json K1 (evren 8 mh + kaymakamlık köy listesi)", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "Bürücek=köy KESİN (idari-ad otoritesi)", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K2", "cc": "Tic+Arşiv", "durum": "DOLU", "oncelik": 1, "kaynak": "TKGM künye (Patron ekranı) + Arşiv 3/3 (97704f0)", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "künye zinciri tam · parsel-veri lokal", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K3", "cc": "Tic+Map+Patron-saha", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_tic.json BM-K3 (9 kayıt) + ÇDP 6.9.7.4/6.2.4", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "şerh: plan-durum BELİRSİZ (e-Plan↔İÖİ pafta · Patron foto bekliyor) · kilit E3", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K4", "cc": "Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_map.json (NDVI 0.757 · ağaç %88.8 · parsel-kesin eğim lokal)", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "şerh: s2_tarih 2025-06-25 bayat", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K5", "cc": "Map+İhale+Basın", "durum": "DOLU", "oncelik": 1, "kaynak": "radar-hakem sel-izi YOK + İhale afet=DOLU-İZLEMEDE (RG 23 gün · 7269 hit 0) + Basın K5:26", "tarih": "2026-10-11", "sinif": "ÖLÇÜM+BELGE", "ozet": "afet-kararı haftalık izlemede", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K6", "cc": "Aİ+Tic+Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_ai.json K6 (OSM)", "tarih": "2026-10-11", "sinif": "PROXY", "ozet": "şerh: PROXY-iskelet (OSM) · operatör verisi yok", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K7", "cc": "İhale+Aİ+Basın", "durum": "DOLU", "oncelik": 1, "kaynak": "İhale: ÖLÇTÜM-DOKUNMUYOR (RG 9000) + Basın K7:14", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "şerh: Aİ kurum-duyuru 🔴 fetch-BLOKE (.gov.tr HTTP 500) — alt-hücre ERİŞİLEMEDİ", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K8", "cc": "Analiz+Arşiv", "durum": "DOLU", "oncelik": 1, "kaynak": "önceki ölçüm n=4", "tarih": "2026-09", "sinif": "ÖLÇÜM", "ozet": "⬛ TAVAN damgalı (n<8 · yorumlanamaz · 'ucuz' denemez)", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K9", "cc": "Pazarlama+Analiz+Borsa", "durum": "ERISILEMEDI", "oncelik": 1, "kaynak": "bolge_pazarlama.json: Rize 71 KAPALI il içinde (EVDS3 anahtarı bekliyor)", "tarih": "2026-10-11", "sinif": null, "ozet": "TÜİK il-serisi kapalı · KTB toplayıcı Borsa'da (yıllık ritim)", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K10", "cc": "Tic+Borsa+Aİ", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_tic.json BM-K10 (6 kayıt)", "tarih": "2026-10-11", "sinif": "BELGE", "ozet": "aktör envanteri", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K11", "cc": "Finans", "durum": "DOLU", "oncelik": 1, "kaynak": "F-teslim 09-30: Rize 3.bölge (9903) · EK-5 · 6M eşiği · E7 (ÇDP 6.9.7.4)", "tarih": "2026-09-30", "sinif": "BELGE", "ozet": "şerh: bolge_finans.json'da Derepazarı hücresi henüz yok (önceki teslimden)", "son_kosu": "2026-09-30"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K12", "cc": "Sosyal+Basın+Aİ", "durum": "DOLU", "oncelik": 1, "kaynak": "Sosyal 27 kanal + Basın K12:22 + rize_cron_girdi EVET", "tarih": "2026-10-11", "sinif": "SÖYLEM", "ozet": "kamulaştırma iddiası SÖYLEM damgalı (belge yok)", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K13", "cc": "Map+Tic+İhale", "durum": "DOLU", "oncelik": 1, "kaynak": "Map K13 + TARLA/çay saha beyanı (5403 hattı)", "tarih": "2026-10-11", "sinif": "ÖLÇÜM+BEYAN", "ozet": "çay FİİLEN VAR · kapsamı Patron-saha", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K14", "cc": "Aİ+Hafıza+Map", "durum": "DOLU", "oncelik": 1, "kaynak": "bolge_ai.json K14_vektor (7 alan)", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "nitelendirme vektörü hazır · benzerlik motoru DENETİM-2'de", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K15", "cc": "Map+Basın+Analiz+Sinyal", "durum": "DOLU", "oncelik": 1, "kaynak": "Map 10yil (A4: örtü stabil · kazı/heyelan izi yok)", "tarih": "2026-10-11", "sinif": "ÖLÇÜM", "ozet": "şerh: Basın K15 arkeoloji 0", "son_kosu": "2026-10-11"},
+    {"bolge": {"il": "Rize", "ilce": "Derepazarı"}, "kok": "BM-K16", "cc": "Vezir", "durum": "DOLU", "oncelik": 1, "kaynak": "PARSEL-01 vaka defteri + kanon + pano + bu derleme", "tarih": "2026-10-12", "sinif": "BELGE", "ozet": "kilit E3 AÇIK · K16 kapanmadan dosya 'tamam' çıkmaz (örümcek §6)", "son_kosu": "2026-10-12"}
+  ],
+  "saglik_20261012": {
+    "kirmizi": [
+      "🟠 dm02: panoda 5,4 gün gecikme raporlandı → 11 Eki 17:11Z koştu, 12 Eki 00:57Z exit 0 bitti, şu an gecikme 0 (TOPARLANDI) · 27 Eyl–11 Eki boşluğunun SEBEBİ bilinmiyor → Hafıza'ya soruldu (02_CC_STATE/vezir_soru_hafiza_dm02_gecikme.json) · TR etiketi hâlâ bayat (2026-09-04)",
+      "🔴 TT-HAFIZA external disk YİNE takılı değil (Analiz 11 Eki: diskutil BOŞ) → BM-K8 Beykoz+Kartal ERİŞİLEMEDİ · İhale EKAP rescan ertelendi",
+      "🔴 Aİ .gov.tr kurum-duyuru fetch-BLOKE (HTTP 500 anti-bot) → BM-K7 alt-hücresi"
+    ],
+    "sari": [
+      "🟡 Basın SIG14 borcu sürüyor: 565.478 havuzda url %14 / tarih %14 — ÇÖZÜLMEDİ",
+      "🟡 Pazarlama 71/81 il KAPALI (EVDS3 anahtarı bekliyor) → BM-K9",
+      "🟡 Map kaynak-bloke: MTA/AFAD/OGM/DSİ (K5/K13 doğrulama katmanı)"
+    ],
+    "kosuyor_takili": "YOK (tüm bolge dosyaları 11 Eki tarihli · 3 gün eşiği aşılmadı)",
+    "bolge_dosyasi_yazmayan": "Borsa (bulutta · S51/S52) · Hafıza (türetici rol) · Arşiv (depo rol) · Sinyal (SIG32 bayrak+tablo ile teslim)"
+  }
 }
