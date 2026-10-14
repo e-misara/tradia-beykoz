@@ -21,6 +21,8 @@
 | 2026-10-14 (Vaka #07 kapanış + Vaka #08 + B11) | +9 | −3 | +6 | 65 | Basın: 970 ilçe (değişmedi) · Basın beyan alanı sınaması İHLAL | Açılan: B11 ✅, değer sınaması ✅, Borsa haftalık yeniden çek, Hafıza 1004 işaret, Pazarlama 5 il, Pazarlama .evds_key, Hafıza evds_saglik okuma, Basın bm_k alanı, Standing #38 ek-ders. Kapanan: B11, değer sınaması, Analiz kök neden raporu. Canlı sayım 113 / 48 / 65. |
 | 2026-10-14 (gece · dizin sınırı + eşleşme sınaması + TÜİK) | +5 | −4 | +1 | 66 | Basın: 970 ilçe (değişmedi) · Basın bm_k alanı ✅ | Açılan: dizin sınırı kanonu ✅, SEMA eşleşme ✅, 10 CC eşleşme beyanı, Patron acil-sızıntı istisnası kararı, TUIK_API_KEY. Kapanan: iki kanon + Basın bm_k uyumsuzluğu + .evds_key uyumsuzluğu. Canlı sayım 118 / 52 / 66. |
 | 2026-10-14 (gece · TÜİK anahtarı + toplu indirme analizi) | +3 | −2 | +1 | 67 | Basın: 970 ilçe (değişmedi) | Açılan: TÜİK ilk sağlık satırı, TÜİK analizi (✅ doğdu), 3 seti SORGU-01'e alma. Kapanan: TUIK_API_KEY kaydı, TÜİK analizi. Canlı sayım 121 / 54 / 67. |
+| 2026-10-14 (gece · TÜİK ham envanter + SDMX hattı kanonu) | +5 | −2 | +3 | 70 | Basın: 970 ilçe (değişmedi) | Açılan: ham taşıma ✅, kanon kural 6 ✅, Pazarlama 81 il, CC kök teyidi, dataflow envanteri. Kapanan: ham taşıma, kanon. Canlı sayım 126 / 56 / 70. |
+| 2026-10-14 (gece · kaynak evreni taraması açılış) | +2 | −1 | +1 | 71 | Basın: 970 ilçe (değişmedi) | Açılan: tarama şeması kanonu ✅, 9 CC birleştirme (son tarih 16 Eki 19:26). Kapanan: şema kanonu. Canlı sayım 128 / 57 / 71. |
 
 ## Retro-not (sayaç öncesi)
 

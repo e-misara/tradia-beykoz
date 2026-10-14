@@ -1,6 +1,6 @@
 # ANAHTAR YÖNETİMİ KANONU v1
 
-**Statü:** 🟢 KANON · v1.3 · Patron direktifi 2026-10-14 · Emsal: Vaka #07 (EVDS anahtarı, ikinci tekrar)
+**Statü:** 🟢 KANON · v1.4 · Patron direktifi 2026-10-14 · Emsal: Vaka #07 (EVDS anahtarı, ikinci tekrar)
 **Bağlı:** Standing #37 (redaksiyon), parsel_veri_kanonu_v1 (public sınırı), ham_veri_depolama_kanonu_v1
 
 ---
@@ -47,6 +47,16 @@
 - **Vezir:** ikinci sağlık kontrolü tutmaz. Kendi veri-yolu çağrısı yalnız **B11 koruma testidir** ("resmî durum gerçeği yansıtıyor mu").
 - **Sağlık kontrolü içerik imzası ister:** HTTP 200 yetmez. Gerçek seri satırı (`items` > 0) dönmeli. Geçerli anahtarla bile hep 400 dönen bir yolu ölçen kontrol, veri akarken "KISMEN" der. 15:42Z sürümünde olan buydu.
 
+## Kural 6 — TÜİK SDMX: tek istemci, anahtar .env, token bellekte (v1.4 · Patron 2026-10-14)
+
+- **Tek istemci:** `~/landgold-agents/tuik_ortak.py` (yazan CC-Pazarlama · 14 Eki 19:21). TÜİK SDMX REST'i (`nsiws.tuik.gov.tr/rest`) çağıran **her** kod bunu içe aktarır.
+- **Anahtar:** yalnız `~/landgold-agents/.env` → `TUIK_API_KEY`. Başka dosya ya da ortam değişkeni okunmaz.
+- **Token:** OpenID access_token **yalnız bellekte** (modül değişkeni). Diske, loga, çıktıya, hata mesajına yazılmaz. İstemci hiçbir şey basmaz.
+- **KIRIK kuralı (istemci belgesinden):** `AUTH_RED` · token alınamadı · koşum toplam satırı 0 · ardışık 5 `GECICI_YOK`.
+- **Günlük sağlık:** Vezir süreklilik ölçüsü (`dis_kaynak_sagligi` → "TÜİK SDMX") günde **1** `/dataflow/TR/all/latest` çağrısı yapar. SAĞLAM = **HTTP 200 + dataflow sayısı > 0**.
+  - Sayım önek bağımsızdır. B11 testi: `str:` önekli ilk desen 200 dönen canlı kaynakta 0 sayıyordu; gerçek önek `structure:` · 14 Eki **508 dataflow**.
+- **Dataflow envanteri:** Pazarlama `docs/tuik_dataflow_envanteri_v1.tsv` → gelince kaynak evrenine kaydedilir; Finans/Sinyal/Aİ/İhale'ye kök eşleşmesi sorulur.
+
 ## Uyumsuzluklar (v1.1 · 2026-10-14 akşam ölçümü)
 
 | Yer | Durum | Sahibi | Kapanış kanıtı |
@@ -63,6 +73,7 @@
 
 ## Değişiklik kaydı
 - **v1 (14 Eki öğle):** Kural 1–4.
+- **v1.4 (14 Eki gece):** Kural 6 (TÜİK tek istemci + token bellekte + günlük dataflow sağlığı).
 - **v1.3 (14 Eki gece):** `TUIK_API_KEY` `.env`'de.
 - **v1.2 (14 Eki gece):** `TUIK_API_KEY` kaydı · `.evds_key` kapandı (sınır ihlali cc_sinir_kanonu'nda).
 - **v1.1 (14 Eki akşam):** Kural 5 (EVDS tek istemci + tek sağlık) · uyumsuzluk tablosu yeniden ölçüldü (settings.json kapandı; Pazarlama `.evds_key` eklendi; istemci envanteri 3 → 8 dosya / 4 CC; Hafıza okuma teyidi: HAYIR).
