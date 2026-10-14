@@ -51,7 +51,7 @@ ORNEK = [
     # D1 · Claude Code proje-yolu tire-ayraçlı slug
     ("13. Tire slug path", "log: ~/.claude/projects/-Users-GAC-A/oturum.jsonl", "-Users-GAC-A"),
     # E2 · TCMB EVDS API anahtarı (Patron settings.json'da düz metin)
-    ("14. EVDS anahtar", "https://evds2.tcmb.gov.tr/service/evds/series/data?series=X&key=Fk9dQ2mZ7x", "Fk9dQ2mZ7x"),
+    ("14. EVDS anahtar", "https://evds2.tcmb.gov.tr/service/evds/series/data?series=X&key=SAHTE_TEST_9x7", "SAHTE_TEST_9x7"),
     # E2 · Genel URL query anahtar deseni
     # Vaka #07 · gerçek anahtar düz yazı içinde (değer .env'den, çıktıya BASILMAZ)
     ("16. (gizli) .env anahtarı düz yazıda", "Eski API key (" + _gercek() + ") hâlâ geçerli olabilir", _gercek()),
