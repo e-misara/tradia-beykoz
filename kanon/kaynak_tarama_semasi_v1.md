@@ -31,7 +31,7 @@ Her CC yalnız **kendi** dosyasını yazar: `~/tradia_konusmalar/02_CC_STATE/kay
 | `test_tarihi` | ISO | ölçüm anı |
 | `ornek_cekim` | `{"beykoz": n, "derepazari": n}` | iki vaka bölgesi için çekilen **satır sayısı**. Ölçülmediyse `null`, 0 yazılmaz (0 = ölçtüm, yoktu) |
 | `kok` | `K1`…`K16` (liste olabilir) | örümcek kökü; çıplak K yazılır ama birleştirmede `BM-K` önekine çevrilir (K-numara standardı) |
-| `zincir` | `Z1`…`Z7` | Patron dağıtım listesindeki zincir. **Tanım diskte bulunamadı**; Vezir doğrulamaz, olduğu gibi taşır |
+| `zincir` | `Z1`…`Z7` (liste olabilir) | **kanon/zincirler_v1.md** (Patron metni 2026-10-15). `BİLİNMİYOR` geçersiz; birleştirmede zincir sahibi doluluk satırını teyit eder |
 | `patron_adimi` | metin | erişim `UYELIK`/`API_ANAHTAR` ise Patron'un yapacağı **tam adım** (site → menü → form); değilse boş `""` |
 | `ilk_hasat_tahmini` | metin | ilk hasadın hacmi/süresi + **dayanağı** (ölçümden mi, tahminden mi) |
 | `lisans` | `{"sinif": IC_KULLANIM \| KAYNAK_GOSTER \| YAZILI_IZIN \| YASAK, "dayanak": "<lisans metni/sayfa URL'si/mevzuat>"}` | **(v1.1 · Patron 15 Eki)** Kullanım hakkı. `IC_KULLANIM` = yalnız iç analiz · `KAYNAK_GOSTER` = atıfla yayımlanabilir · `YAZILI_IZIN` = ürüne girmesi yazılı izne bağlı (Patron adımı) · `YASAK` = kullanılmaz. Dayanak zorunlu. **Lisansı boş/dayanaksız kaynak `ACIK` sayılmaz** (en fazla KISITLI). |
