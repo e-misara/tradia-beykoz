@@ -78,3 +78,27 @@
 **İlk doldurma yapılamıyor sebep:** Kök→CC eşlemesi Patron'dan gelmeden hücreler açılamaz. KUYRUK.json'un **başlık yapısı** aşağıda, ilk veri Patron ARZ'ından sonra.
 
 *Vezir · Standing #35+#37+#48 + çelişki_referans_kanonu_v1 · 2026-10-11*
+
+---
+
+## Eşleşme sınaması (zorunlu · Patron direktifi 2026-10-14)
+
+**Emsal:** Pazarlama yabancı-satış ↔ toplam satış birleştirmesinde anahtar biçimi `2025-5` / `2025-05` uyuşmadı. 1–9. aylar **hata vermeden atlandı**, çıktı "tamam" göründü.
+
+**Kural:** Her `bolge_isle_<cc>` çıktısı (`02_CC_STATE/bolge_<cc>.json`) birleştirme/eşleştirme yaptığı her adım için şunu **açıkça** yazar:
+
+```json
+"eslesme": {
+  "adim": "<ne neyle eşleşti, hangi anahtarla>",
+  "girdi": 0,
+  "eslesen": 0,
+  "eslesmeyen": 0,
+  "eslesmeyen_ornek": ["<en fazla 5 anahtar>"]
+}
+```
+
+- `eslesmeyen > 0` → hücre durumu **KIRIK**. Gerekçeli istisna yalnız `eslesmeyen_aciklama` alanıyla verilir (ör. "kaynakta o il yok").
+- Alan **yoksa** → Vezir ölçüsünde **"eşleşme beyanı yok"** (uyumsuzluk). Sessiz geçiş sayılmaz.
+- Eşleşme adımı yoksa (tek kaynaklı çıktı): `"eslesme": {"adim": "YOK — tek kaynak"}` yazılır.
+
+**Vezir uygulaması:** `motor/SUREKLILIK.json → deger_sinamasi`. 10 CC çıktısı (ai, analiz, basin, borsa, finans, ihale, map, pazarlama, sosyal, tic) her ölçümde `eslesme` alanı için taranır.

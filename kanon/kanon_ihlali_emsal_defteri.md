@@ -144,13 +144,74 @@
 - **Sonuç:** "Yeni anahtar başvurusu" yönlendirmesi gereksizdi. Seriyi durduran, istemcinin hâlâ evds2 yolunu çağırması. 07-31'deki "EVDS3'te GEÇERSİZ" notu da büyük olasılıkla yanlış yolla yapılmış bir testti (doğrulanmalı).
 - **"HTTP 200 = canlı" değildir:** içerik imzası (JSON + `items`) kontrol edilmeli (Kitap'ın 13 Eki yoklama dersiyle aynı).
 
-### Kök neden
-⏳ Analiz raporu `arsiv/evds3_kok_neden_2026-10-14.md` hâlâ bekleniyor; Vezir testi kök nedeni yukarıda daralttı. Rapor gelince karşılaştırılacak.
+### Kök neden (Analiz raporu geldi · `arsiv/evds3_kok_neden_2026-10-14.md` · 18:44)
+- **H1 uç nokta yanlış → DOĞRULANDI.** Kodun varsaydığı `/chart-data` biçimi EVDS3 arayüz kodunda hiç geçmiyor.
+- **H4 yeni anahtar gerekli → ELENDİ.** Eski ve yeni anahtar aynı davranışı gösterdi. Patron'a başvuru yönlendirmesi yapılmadı.
+- **Ek kök neden (Analiz):** `tradia_aylik_makro_cek.py` `.env`'i **hiç yüklemiyordu**; launchd ortamında `TCMB_API_KEY` her zaman boştu. Analiz `_env_yukle()` ekledi. Seri yalnız uç nokta yüzünden değil, **anahtarın hiç gönderilmemesi** yüzünden de duruyordu.
+- **Kalıcı adımlar (Analiz):** settings.json'da 10 satır temizlendi (Vezir grep teyidi: settings.json 0 ✅, settings.local.json'da **1 satır duruyor** ❌). `evds_saglik.sh` + `com.tradia.evds.saglik` 08:00 kuruldu.
+
+### Çelişki kaydı · Tür A (celiski_referans_kanonu_v1)
+- **İddia 1 (Analiz, 15:42Z):** "EVDS3 ÇALIŞMIYOR; gerçek veri uç noktası bulunamadı." Kanıt: `/chart-data` geçerli anahtarla hep 400.
+- **İddia 2 (Vezir 15:38Z · Borsa · Pazarlama):** Aynı anahtarlarla `igmevdsms-dis/series=…&startDate=…&endDate=…&type=json` + header `key` → **200 + JSON veri** (Vezir 14 kayıt; Pazarlama 5 partide 82 seri, hepsi 200).
+- **Tür:** A. Aynı soru ("veri çekilebiliyor mu"), aynı anahtar, farklı hüküm. Referans farkı değil, bir taraf yanlış yolu test etmiş. Analiz H2'de çalışan biçimi ("query'nin path içine gömülmesi") "muhtemelen yanlış parse ediliyor" diye elemişti, oysa çalışan biçim tam oydu.
+- **Çözüm:** Analiz'e gönderildi (Patron). Analiz'in sağlık kontrolü 15:57Z'de ortak istemciye geçti ve `SAGLAM` yazdı.
+- **Ders:** Hipotez tablosu da yanlış elenebilir. Eleme, çalışan bir alternatif varken yapılmamalı; aynı soruyu iki CC farklı yolla soruyorsa önce yollar karşılaştırılır.
+
+### Durum (14 Eki akşam)
+| Kalem | Durum |
+|---|---|
+| Kök neden | ✅ iki katmanlı: uç nokta (H1) + `.env` yüklenmiyordu |
+| Yeni anahtar `.env`'de + canlı test | ✅ |
+| HEAD redaksiyonu (3 repo) + redaksiyon betiği + kapı | ✅ |
+| settings.json | ✅ temiz |
+| settings.local.json (1 satır, eski anahtar) | ❌ Patron |
+| `~/finans/.env` (eski anahtar) | ❌ Finans |
+| `.evds_key` (yeni anahtarın kopyası · `~/tt_pazarlama/bolge/` altında görüldü) | ✅ KAPANDI 14 Eki gece: dosya yok, Pazarlama `.env` + `evds_ortak` okuyor. **Düzeltme:** Vezir dosyayı "Pazarlama'nın" diye kaydetmişti; sahibi **Borsa**. Silmeyi Pazarlama yaptı → `cc_sinir_kanonu_v1` uyumsuzluğu (vaka değil) |
+| Tek istemci (`evds_ortak.py` kanonik yola) + Borsa ayrı launchd kaldırma | ❌ Borsa |
+| Hafıza `evds_saglik.json` okuma | ❌ teyit: OKUMUYOR |
+| Eski anahtar iptali + public geçmiş temizliği | ⏳ Patron'a aktarıldı (GitHub Support dönüşüyle birlikte) |
+
+**Vaka #07: KISMEN KAPALI.** Kök neden ve teknik düzeltme tamam; 5 uyum kalemi açık (.evds_key kapandı).
 
 ### Emsal ders
 1. Bir sızıntıya **desen eklemek** kökü çözmez. 09-25'te anahtar yerinde kaldı, üstelik desenin kendisi public'e taşıdı.
 2. Redaksiyon deseni sırrın **kopyası olamaz.** Sır tek kaynaktan çalışma anında okunur.
 3. "Geçersiz" bilgisi 07-31'de diskte vardı, 10-14'e kadar dolaşmadı. **Dış kaynak sağlığı günlük satır olmalı** (kanon kural 2).
+
+---
+
+## Vaka #08 — "Veri var" sayılan şey boştu (yabancıya satış il verisi + EVDS haftalık seriler)
+
+- **Tarih:** 2026-10-14 · **Açan:** Patron · **Kayıt:** Vezir
+
+### Olgu
+1. **Yabancıya satış il verisi (Pazarlama):**
+   - Dün "veri var" sayılan 10 ilin sınamadan sonra yalnız **5'i geçti**: 4'ü VERİ_HATALI, 1'i ÇOKLU_DEĞER.
+   - Vezir bağımsız sınaması (yabancı ≤ toplam, il × ay, toplam = EVDS3 konut satışı): 95 il-ay sınandı. 3'ünde yabancı toplamı aşıyor, 8'inde **toplama eşit** (yabancı satış = tüm satış).
+   - İhlaller 4 ilde: Bayburt 1, Gümüşhane 1, Hakkari 2, Tunceli 7. Dördü de Pazarlama'nın VERİ_HATALI işaretlediği iller. CC'nin işaretlemediği ihlal **0**; Pazarlama sınaması bağımsız teyitli.
+2. **EVDS haftalık seriler (Borsa):** SORGU-01 `evds_ham`'da `HAFTALIK(CUMA)` frekanslı **1.004 kaydın 1.004'ü** (`son_deger` alanında) ölçüm değeri yerine **yıl-hafta etiketi** taşıyor (ör. "2026-30"). Satır var, değer yok. Borsa'nın "1005 seri bozuk" tespitiyle uyumlu.
+3. **Vezir'in kendi kaçağı:** İlk "sayısal mı" sınamam bu etiketleri yakalayamadı. "2026-30" rakam içerir ve sayıya çevrilebilir. Doğru sınama **biçim** sınaması (yıl-hafta deseni) oldu.
+
+### Ortak desen
+İki ayrı hatta "satır sayısı > 0" **veri var** diye okundu. Hiçbir aşamada değerin anlamı sınanmadı.
+
+### Düzeltme
+Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKLILIK.json → deger_sinamasi`). Satır var ≠ değer doğru. Bugün üç sınama:
+
+| Sınama | Sahibi | Sonuç |
+|---|---|---|
+| yabancı ≤ toplam (il × ay) | Pazarlama | İHLAL var; hepsi CC tarafından işaretli (bağımsız teyit) |
+| haftalık seride değer mi, etiket mi | Borsa | **İHLAL 1.004/1.004** |
+| beyan edilen alan dosyada var mı (`bm_k_sayi_uyarisi`) | Basın | **İHLAL**: 23 dosyada yok (uyumsuzluk, vaka değil) |
+
+### Açık
+- **Borsa:** haftalık seriler yeniden çekilsin; `son_deger` sayısal olsun (ortak istemciyle).
+- **Hafıza:** SORGU-01'de bozuk 1.004 kayıt "veri var" sayımından düşülsün ya da işaretlensin.
+- **Pazarlama:** 5 il yeniden çekilene kadar VERİ_HATALI / ÇOKLU_DEĞER kalır.
+
+### Emsal ders
+1. Doluluk ölçüsü (satır sayısı) ile doğruluk ölçüsü (değer sınaması) ayrı satırdır. Biri diğerinin yerine geçmez.
+2. Sınama da sınanır (B11): Vezir'in ilk sayısal testi etiketleri kaçırdı.
 
 ---
 

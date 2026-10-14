@@ -102,7 +102,7 @@ def _gizli_degerler():
                 ad, deger = satir.split("=", 1)
                 deger = deger.strip().strip('"').strip("'")
                 if re.search(r"(KEY|TOKEN|SECRET|PASS)", ad, re.I) and len(deger) >= 8:
-                    etiket = "EVDS" if re.search(r"EVDS|TCMB", ad, re.I) else ad.strip().upper()
+                    etiket = "EVDS" if re.search(r"EVDS|TCMB", ad, re.I) else ("TUIK" if re.search(r"TUIK", ad, re.I) else ad.strip().upper())
                     out[deger] = f"[REDACTED-APIKEY-{etiket}]"
         except OSError:
             pass

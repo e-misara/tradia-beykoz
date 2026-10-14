@@ -1,6 +1,6 @@
 # ANAHTAR YÖNETİMİ KANONU v1
 
-**Statü:** 🟢 KANON · Patron direktifi 2026-10-14 · Emsal: Vaka #07 (EVDS anahtarı, ikinci tekrar)
+**Statü:** 🟢 KANON · v1.2 · Patron direktifi 2026-10-14 · Emsal: Vaka #07 (EVDS anahtarı, ikinci tekrar)
 **Bağlı:** Standing #37 (redaksiyon), parsel_veri_kanonu_v1 (public sınırı), ham_veri_depolama_kanonu_v1
 
 ---
@@ -30,14 +30,40 @@
 - Anahtarı tanımak gerekiyorsa **sha256 ilk 10 hane** yazılır, değer yazılmaz.
 - Push kapısı (`scripts/pano_yayinla.sh`): push öncesi fark, `.env`'deki değerlerle **birebir** taranır (değer script'te tutulmaz, ekrana basılmaz); eşleşmede push durur.
 
-## Bugünkü uyumsuzluklar (2026-10-14 ölçümü)
-
-| Yer | Durum | Sahibi | İş |
+## Kayıtlı anahtarlar (yalnız ad · değer yazılmaz)
+| Değişken | Kaynak | Sahibi (toplayıcı · Standing #37) | Durum |
 |---|---|---|---|
-| `~/finans/.env` (`EVDS_API_KEY`) | ❌ ikinci kopya (değer aynı) | CC-Finans | `landgold-agents/.env`'den oku, dosyayı kaldır |
-| `~/.claude/settings.json` | ❌ 9 izin satırında `key=` düz metin | Patron | satırları anahtarsız desenle değiştir |
-| `~/.claude/settings.local.json` | ❌ 1 izin satırında `key=` düz metin | Patron | aynı |
-| `~/ttmap/.env`, `~/ttmap/.env.tmp` | ⚠ Tradia içinde ikinci .env (içerik okunmadı) | CC-TT-MAP | içerik `landgold-agents/.env`'e taşınsın, `.tmp` kaldırılsın |
-| Public git geçmişi (misara-vezir 11 Haz'dan, tradia-beykoz 25 Eyl'den) | ❌ anahtar geçmişte | Patron | **anahtar değişimi** (TCMB) + geçmiş temizliği kararı |
+| `TCMB_API_KEY` | TCMB EVDS3 | Borsa | ✅ yeni değer 14 Eki · canlı test 200 |
+| `TCMB_API_KEY_ESKI` | TCMB EVDS (iptal edilecek) | — | geçici; TCMB'de iptalden sonra satır silinir |
+| `TUIK_API_KEY` | TÜİK SDMX | Borsa + Analiz (TÜİK toplayıcıları) | ⏳ Patron kovasında, `.env`'e gelecek · **Kural 1–4 aynen geçerli** · ilk kullanımda kural 2 sağlık satırı + kural 3 hipotez tablosu |
+
+## Kural 5 — EVDS: tek istemci, tek sağlık kontrolü (v1.1 · Patron kararı 2026-10-14)
+
+- **Tek istemci:** `~/landgold-agents/evds_ortak.py` (sahibi CC-Borsa). EVDS çağıran **her** kod bunu içe aktarır; kendi HTTP çağrısını yazmaz.
+  - Bugün dosya Borsa'nın dizininde: `~/Desktop/tradia/cc_borsa/evds_hasat/evds_ortak.py`. Kanonik yola taşınması Borsa borcu.
+- **Tek sağlık kontrolü:** CC-Analiz'in 08:00 görevi (`com.tradia.evds.saglik`) → `02_CC_STATE/evds_saglik.json`. Durum değerleri: `SAGLAM` / `KISMEN` / `KIRIK` + tarih + yol.
+- **Borsa:** sağlık adımı **pipeline içinde** kalır; ayrı launchd görevi (`com.tradia.ccborsa.evds_gunluk`) **kaldırılır**.
+- **Okuyucu:** Hafıza taraması `evds_saglik.json`'un `durum` alanını okur ve M4'te gösterir. 14 Eki teyidi: **OKUMUYOR** (aşağıda).
+- **Vezir:** ikinci sağlık kontrolü tutmaz. Kendi veri-yolu çağrısı yalnız **B11 koruma testidir** ("resmî durum gerçeği yansıtıyor mu").
+- **Sağlık kontrolü içerik imzası ister:** HTTP 200 yetmez. Gerçek seri satırı (`items` > 0) dönmeli. Geçerli anahtarla bile hep 400 dönen bir yolu ölçen kontrol, veri akarken "KISMEN" der. 15:42Z sürümünde olan buydu.
+
+## Uyumsuzluklar (v1.1 · 2026-10-14 akşam ölçümü)
+
+| Yer | Durum | Sahibi | Kapanış kanıtı |
+|---|---|---|---|
+| `~/.claude/settings.json` | ✅ **TEMİZ** (9 satır → 0 · Analiz 18:41) | — | kapandı (grep 0) |
+| `~/.claude/settings.local.json` | ❌ **1 satır, ESKİ anahtar** (dosya Temmuz'dan beri dokunulmamış) | Patron | grep 0 |
+| `~/finans/.env` (`EVDS_API_KEY`) | ❌ ESKİ anahtar kopyası | CC-Finans | dosya/satır silindi + Finans `landgold-agents/.env`'den okuyor |
+| `.evds_key` (Borsa'nın; `~/tt_pazarlama/bolge/` altında görüldü) | ✅ **KAPANDI** 14 Eki akşam: dosya diskte yok · Pazarlama kodu `.env` + `evds_ortak` okuyor · ⚠ silmeyi sahibi değil Pazarlama yaptı → `cc_sinir_kanonu_v1` uyumsuzluğu | — | dosya yok (find) |
+| `~/ttmap/.env`, `.env.tmp` | ⚠ Tradia içinde ikinci .env (içerik okunmadı) | CC-TT-MAP | içerik tek dosyaya |
+| EVDS istemcileri | ❌ **4 CC'de 8 dosya** doğrudan EVDS çağırıyor: landgold-agents (tcmb_scraper, tuik_scraper, tradia_aylik_makro_cek) · Pazarlama (bolge_isle_pazarlama, evds_il_toplam_satis) · Finans (evds_hasat_f4) · Borsa (evds_ortak + 5 betik) | Borsa + ilgili CC | hepsi `evds_ortak` içe aktarır |
+| Borsa ayrı sağlık launchd'si | ❌ `com.tradia.ccborsa.evds_gunluk` hâlâ yüklü | CC-Borsa | plist kaldırıldı |
+| Hafıza → `evds_saglik.json` | ❌ **okunmuyor**: `hafiza_tarama.sh` yalnız `hafiza_bildirim_*` dosyalarına bakıyor; `orumcek_derle.py` dosyayı yalnız "son 24 saatte değişen" listesine koyuyor, `durum` alanını okumuyor | CC-Hafıza | betikte `evds_saglik.json` → `durum` okuma satırı |
+| Public git geçmişi (misara-vezir 11 Haz'dan, tradia-beykoz 25 Eyl'den) | ❌ ESKİ anahtar geçmişte | Patron | eski anahtar iptali (GitHub Support dönüşüyle birlikte) |
+
+## Değişiklik kaydı
+- **v1 (14 Eki öğle):** Kural 1–4.
+- **v1.2 (14 Eki gece):** `TUIK_API_KEY` kaydı · `.evds_key` kapandı (sınır ihlali cc_sinir_kanonu'nda).
+- **v1.1 (14 Eki akşam):** Kural 5 (EVDS tek istemci + tek sağlık) · uyumsuzluk tablosu yeniden ölçüldü (settings.json kapandı; Pazarlama `.evds_key` eklendi; istemci envanteri 3 → 8 dosya / 4 CC; Hafıza okuma teyidi: HAYIR).
 
 *Vezir · 2026-10-14*

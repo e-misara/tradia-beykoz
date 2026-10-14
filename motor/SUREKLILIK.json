@@ -1,6 +1,6 @@
 {
  "uretici": "Vezir · motor/surekli_olc.py",
- "olcum_ani": "2026-10-14T18:39:39",
+ "olcum_ani": "2026-10-14T19:00:44",
  "pencere": "2026-09-14..2026-10-13 (30 gün)",
  "esikler": {
   "yeşil": "≥%90",
@@ -337,16 +337,101 @@
    }
   }
  },
+ "deger_sinamasi": [
+  {
+   "sinama": "yabancıya satış ≤ toplam satış (il × ay)",
+   "sahibi": "Pazarlama",
+   "sinanan": 95,
+   "toplami_asan": 3,
+   "toplama_esit": 8,
+   "ihlalli_il": {
+    "Bayburt": 1,
+    "Gümüşhane": 1,
+    "Hakkari": 2,
+    "Tunceli": 7
+   },
+   "cc_isaretlemedigi_ihlal": {},
+   "sonuc": "İHLAL — hiçbiri CC tarafından \"veri doğru\" (VAR…) iddiasıyla sunulmuyor (CC işareti bağımsız teyitli)"
+  },
+  {
+   "sinama": "EVDS haftalık: son_deger ölçüm mü, dönem etiketi mi (SORGU-01 evds_ham)",
+   "sahibi": "Borsa",
+   "sinanan": 1004,
+   "etiket_tasiyan": 1004,
+   "sonuc": "İHLAL"
+  },
+  {
+   "sinama": "beyan edilen alan dosyada var mı: bm_k_sayi_uyarisi (Basın beyanı · SIG36)",
+   "sahibi": "Basın",
+   "aranan_dosya": 23,
+   "bulunan": [
+    "~/tradia_konusmalar/02_CC_STATE/bolge_basin.json"
+   ],
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_ai.json",
+   "sahibi": "ai",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_analiz.json",
+   "sahibi": "analiz",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_basin.json",
+   "sahibi": "basin",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_borsa.json",
+   "sahibi": "borsa",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_finans.json",
+   "sahibi": "finans",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_ihale.json",
+   "sahibi": "ihale",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_map.json",
+   "sahibi": "map",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_pazarlama.json",
+   "sahibi": "pazarlama",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_sosyal.json",
+   "sahibi": "sosyal",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  },
+  {
+   "sinama": "eşleşme beyanı · bolge_tic.json",
+   "sahibi": "tic",
+   "sonuc": "UYUMSUZ — eslesme alanı yok"
+  }
+ ],
  "dis_kaynak_sagligi": [
   {
    "kaynak": "TCMB EVDS (veri yolu)",
    "sahibi": "Borsa",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T15:41:40Z",
+   "olcum_ani_utc": "2026-10-14T16:02:37Z",
    "uc_nokta": "evds3/igmevdsms-dis (header key, .env)",
    "http_kodu": 200,
    "icerik_imzasi": "JSON items=11",
    "veri_akiyor": true,
+   "resmi_saglik": "SAGLAM (2026-10-14T15:57:33Z)",
+   "koruma_testi_B11": "UYUMLU",
    "sorgu01_son_alim": "2026-08-01",
    "yas_gun": 74,
    "renk": "kırmızı",
@@ -356,7 +441,7 @@
    "kaynak": "Resmî Gazete",
    "sahibi": "İhale",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T15:41:40Z",
+   "olcum_ani_utc": "2026-10-14T16:02:37Z",
    "uc_nokta": "https://www.resmigazete.gov.tr/",
    "http_kodu": 200,
    "son_url": "https://www.resmigazete.gov.tr/",
@@ -370,7 +455,7 @@
    "kaynak": "EKAP",
    "sahibi": "İhale",
    "ritim_esigi_gun": 10,
-   "olcum_ani_utc": "2026-10-14T15:41:40Z",
+   "olcum_ani_utc": "2026-10-14T16:02:37Z",
    "uc_nokta": "https://ekap.kik.gov.tr/",
    "http_kodu": 200,
    "son_url": "https://ekapv2.kik.gov.tr/",
@@ -382,7 +467,7 @@
    "kaynak": "KAP",
    "sahibi": "Borsa",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T15:41:41Z",
+   "olcum_ani_utc": "2026-10-14T16:02:38Z",
    "uc_nokta": "https://www.kap.org.tr/",
    "http_kodu": 308,
    "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil)",
@@ -395,7 +480,7 @@
    "kaynak": "TÜİK veri portalı",
    "sahibi": "Pazarlama/Analiz",
    "ritim_esigi_gun": 40,
-   "olcum_ani_utc": "2026-10-14T15:41:41Z",
+   "olcum_ani_utc": "2026-10-14T16:02:38Z",
    "uc_nokta": "https://veriportali.tuik.gov.tr/",
    "http_kodu": 200,
    "son_url": "https://veriportali.tuik.gov.tr/",
@@ -407,7 +492,7 @@
    "kaynak": "Yahoo Finance",
    "sahibi": "Borsa",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T15:41:42Z",
+   "olcum_ani_utc": "2026-10-14T16:02:39Z",
    "uc_nokta": "https://query1.finance.yahoo.com/",
    "http_kodu": 404,
    "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil)",
@@ -420,7 +505,7 @@
    "kaynak": "Basın (yerel host'lar)",
    "sahibi": "Basın",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T15:41:42Z",
+   "olcum_ani_utc": "2026-10-14T16:02:39Z",
    "uc_nokta": "ölçülmedi (tek uç nokta yok — sahibi CC sağlık satırı yazmalı)",
    "sorgu01_son_alim": "2026-10-12",
    "yas_gun": 2,
@@ -431,7 +516,7 @@
    "kaynak": "ÇED / Finans belgeleri",
    "sahibi": "Finans",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T15:41:42Z",
+   "olcum_ani_utc": "2026-10-14T16:02:39Z",
    "uc_nokta": "ölçülmedi (tek uç nokta yok — sahibi CC sağlık satırı yazmalı)",
    "sorgu01_son_alim": "2026-10-13",
    "yas_gun": 1,
@@ -442,7 +527,7 @@
    "kaynak": "YouTube (Sosyal)",
    "sahibi": "Sosyal",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T15:41:42Z",
+   "olcum_ani_utc": "2026-10-14T16:02:39Z",
    "uc_nokta": "https://www.youtube.com/",
    "http_kodu": 200,
    "son_url": "https://www.youtube.com/",
@@ -492,9 +577,9 @@
    "son_satiri_disk_abort": []
   },
   "Basın": {
-   "is_sayisi": 6,
+   "is_sayisi": 7,
    "olculen_is": 1,
-   "olculemeyen_is": 5,
+   "olculemeyen_is": 6,
    "kosmasi_gereken_is_gun": 30,
    "kostugu_is_gun": 28,
    "disk_uyari_is_gun": 0,
@@ -664,9 +749,9 @@
    "son_satiri_disk_abort": []
   },
   "SAHİPSİZ": {
-   "is_sayisi": 2,
+   "is_sayisi": 3,
    "olculen_is": 0,
-   "olculemeyen_is": 2,
+   "olculemeyen_is": 3,
    "kosmasi_gereken_is_gun": 0,
    "kostugu_is_gun": 0,
    "disk_uyari_is_gun": 0,
@@ -701,12 +786,33 @@
    "renk": "ölçülmedi"
   },
   {
+   "label": "com.tradia.ccbasin.derinlik",
+   "cc": "Basın",
+   "plist_dogum": "2026-10-14",
+   "launchctl": {
+    "yuklu": true,
+    "runs": "1",
+    "son_exit": "(never exited)",
+    "state": "running"
+   },
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
+   "son_satir_disk_abort": false,
+   "kosmasi_gereken_gun": 0,
+   "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
+   "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
+   "disk_uyari_gun": "ölçülmedi",
+   "pil_olasi_kacirma_gun": "ölçülmedi",
+   "sureklilik_yuzde": null,
+   "renk": "ölçülmedi"
+  },
+  {
    "label": "com.tradia.ccbasin.govde",
    "cc": "Basın",
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "3",
     "son_exit": "0",
     "state": "not running"
    },
@@ -731,7 +837,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "26",
+    "runs": "47",
     "son_exit": "2",
     "state": "spawn scheduled"
    },
@@ -795,8 +901,8 @@
    "launchctl": {
     "yuklu": true,
     "runs": "1",
-    "son_exit": "(never exited)",
-    "state": "running"
+    "son_exit": "0",
+    "state": "not running"
    },
    "log_son_iz": "2026-10-14",
    "sessiz_gun": 0,
@@ -1070,6 +1176,27 @@
    "renk": "ölçülmedi"
   },
   {
+   "label": "com.tradia.evds.saglik",
+   "cc": "SAHİPSİZ",
+   "plist_dogum": "2026-10-14",
+   "launchctl": {
+    "yuklu": true,
+    "runs": "0",
+    "son_exit": "(never exited)",
+    "state": "not running"
+   },
+   "log_son_iz": "log yok/boş",
+   "sessiz_gun": null,
+   "son_satir_disk_abort": false,
+   "kosmasi_gereken_gun": 0,
+   "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
+   "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
+   "disk_uyari_gun": "ölçülmedi",
+   "pil_olasi_kacirma_gun": "ölçülmedi",
+   "sureklilik_yuzde": null,
+   "renk": "ölçülmedi"
+  },
+  {
    "label": "com.tradia.gunluk-ozet",
    "cc": "Hafıza",
    "plist_dogum": "2026-08-01",
@@ -1167,7 +1294,7 @@
    "plist_dogum": "2026-10-13",
    "launchctl": {
     "yuklu": true,
-    "runs": "26",
+    "runs": "46",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1345,7 +1472,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "3",
+    "runs": "4",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1366,7 +1493,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
+    "runs": "2",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1387,7 +1514,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "3",
+    "runs": "5",
     "son_exit": "2",
     "state": "not running"
    },
@@ -1438,7 +1565,7 @@
    "plist_dogum": "2026-08-08",
    "launchctl": {
     "yuklu": true,
-    "runs": "13",
+    "runs": "24",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1459,7 +1586,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "26",
+    "runs": "47",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1480,7 +1607,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
+    "runs": "2",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1501,7 +1628,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "13",
+    "runs": "24",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1879,5 +2006,6 @@
     }
    }
   }
- }
+ },
+ "deger_sinamasi_ani": "2026-10-14T19:04:28"
 }
