@@ -1,6 +1,6 @@
 # PROMPT DEFTERİ · 2026-10-14
 
-**Derleyen:** Vezir · **Kesit:** 2026-10-14 23:50 · **Kural:** durum **dosyaya** bakılarak yazıldı, CC beyanına değil. Dosya yoksa **ÇIKTI YOK**.
+**Derleyen:** Vezir · **Kesit:** 2026-10-14 23:50 (ek: 23:55) · **Kural:** durum **dosyaya** bakılarak yazıldı, CC beyanına değil. Dosya yoksa **ÇIKTI YOK**.
 **Kaynak:** `02_CC_STATE/` bugünkü 79 dosya · CC dizinleri (find `-newermt 2026-10-14`) · launchd durumu · git log.
 **Kısaltma:** `CS/` = `~/tradia_konusmalar/02_CC_STATE/` · `TB/` = `~/tradia-beykoz/`
 
@@ -8,11 +8,11 @@
 
 | Durum | Adet |
 |---|---|
-| BİTTİ | 35 |
-| KISMEN | 7 |
+| BİTTİ | 41 |
+| KISMEN | 8 |
 | BEKLİYOR | 2 |
 | ÇIKTI YOK | 9 |
-| **Toplam prompt** | **53** |
+| **Toplam prompt** | **60** |
 
 Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 
@@ -71,8 +71,15 @@ Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 | Vezir | Oturum/kaynak kanonu | BİTTİ | `TB/kanon/makine_kaynak_kanonu_v1.md` | ≤8 oturum · ağır iş 1 · 02–07 · ölçüm yük 13,7 / swap 3,0 GB | ✅ ağır iş sıra kararı | — |
 | Vezir | TÜİK toplu dosya envanteri | BİTTİ | `~/Desktop/TT-Tüm CC/ham/tuik/2026-10-14/` (ENVANTER + SHA256SUMS) | 326 + 481 dosya · JSON↔CSV 263/267 eşit · 4 CSV 500.000'de kesik | — | — |
 | Vezir | TUIK_API_KEY teyidi | BİTTİ | `CS/vezir_bildirim_tum_cc_tuik_api_key.json` | `.env`'de 1 satır, istemci okuyor, kopya yok | — | — |
-| Vezir | TÜİK dataflow envanterini kaynak evrenine kaydet + 4 CC'ye kök sorusu | BEKLİYOR → Vezir (bu tur) | `~/landgold-agents/docs/tuik_dataflow_envanteri_v1.tsv` geldi | — | — | — |
+| Vezir | TÜİK dataflow envanterini kaynak evrenine kaydet + 4 CC'ye kök sorusu | KISMEN | `CS/hafiza_bildirim_vezir_kaynak_evreni_tuik_dataflow.json` · `CS/vezir_soru_tuik_dataflow_kok_eslesme.json` | Kaynak evreni v1 Hafıza'nın (Vezir dokunmaz) → Hafıza'ya kayıt bildirimi; v2 birleştirmesinde TÜİK bloğu (16 Eki) | — | — |
 | Vezir | Prompt defteri + kalıcı düzen | BİTTİ | bu dosya · `TB/kanon/prompt_defteri_kanonu_v1.md` | 23:00 launchd | — | — |
+| Vezir | TÜİK JSON taşıma/SHA envanteri + Pazarlama'ya devir | BİTTİ | `~/Desktop/TT-Tüm CC/ham/tuik/2026-10-14/json_tur2/` · `CS/vezir_bildirim_pazarlama_tuik_json_devir.json` | 481 dosya SHA 481/481 OK · ayrıştırma + dağıtım Pazarlama'da | — | — |
+| Pazarlama | TÜİK JSON ayrıştırma + dağıtım | BEKLİYOR → Pazarlama | — | Devir 23:45; dağıtım çıktısı `CS/tuik_dagitim_<cc>.json` bekleniyor | — | 81/81 |
+| Vezir | Ağır iş sırası (Patron kararı) uygulama | BİTTİ | `CS/agir_is_kilidi.json` · `CS/vezir_bildirim_borsa_evds_duraklatma.json` · `CS/vezir_bildirim_basin_hasat_durdurma.json` | Borsa EVDS tam çekim pkill ile duraklatıldı · Basın hasadı launchctl bootout (plist yerinde) · Hafıza rsync sürüyor · ihlal: Borsa kap_kulliyat, Hafıza duzen ×3 | ✅ sıra kararı verildi | — |
+| Vezir | 15 dk yük/swap + kilit ihlali ölçümü | BİTTİ | launchd `com.tradia.vezir.makine_olc` · `TB/motor/SUREKLILIK.json → makine_gecmis` | runs 1 · exit 0 · ilk ölçüm yük 3,3 · swap 4,5 GB · ihlal 5 süreç | — | — |
+| Vezir | ÇIKTI YOK / KISMEN sahiplere bildirim (16 satır) | BİTTİ | `CS/hafiza_bildirim_vezir_defter_eksikleri_20261014.json` | Son tarih 2026-10-15 12:00 · Analiz sağlık betiğinde /usr/bin/python3 shim + curl doğrudan bulundu | — | — |
+| Vezir | CDN teyidi sabah + TEYİTSİZ damgası | BİTTİ | `TB/motor/YAYIN_TEYIT.json` · launchd `com.tradia.vezir.yayin_teyit` 08:30 | Teyit modu denendi: 957dbf5 TEYİTLİ (1. deneme) | — | — |
+| Vezir | Yarınki defterde kapsam oranı tablosu | BİTTİ | `TB/motor/prompt_defteri_birlestir.py` | Taban 81/34/11/10/9/8/2; birleştirici önce kapsamı tazeler | — | — |
 
 ## Kapsam kuralı (kanon/kapsam_kanonu_v1.md · bugün yürürlük)
 
@@ -84,7 +91,7 @@ Varsayılan kapsam 81 il / 973 ilçe; Beykoz · Kartal · Derepazarı · Rize ·
 2. **`~/.claude/settings.local.json`**: 1 izin satırında eski anahtar
 3. **GitHub Support**: yetim commit önbellek temizliği (Vaka #06)
 4. **Acil sızıntı istisnası kararı** (cc_sinir_kanonu açık soru)
-5. **Ağır iş sırası:** disk gelince 4 ağır iş eşzamanlı; öneri `CS/agir_is_kilidi.json`
+5. ~~Ağır iş sırası~~ → **Patron karar verdi**, Vezir uyguladı (`CS/agir_is_kilidi.json`)
 6. **7/24 makine** (makine kanonu ölçümü: 8 GB, yük 13,7)
 
 *Vezir · 2026-10-14*

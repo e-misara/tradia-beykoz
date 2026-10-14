@@ -16,6 +16,12 @@
 
 set -e  # herhangi bir adım fail olursa dur
 
+# Standing #38: launchd'den de koşar → python3 shim yerine framework tam yolu
+PY=/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9
+[ -x "$PY" ] || PY=python3
+TEYIT_DOSYA=~/tradia-beykoz/motor/YAYIN_TEYIT.json
+SADECE_TEYIT=0; [ "${1:-}" = "--sadece-teyit" ] && { SADECE_TEYIT=1; shift; }
+
 BEY_REPO=~/tradia-beykoz
 VEZ_REPO=~/misara-vezir
 KAYNAK="$BEY_REPO/pano"
@@ -27,11 +33,12 @@ yesil()   { printf "\033[32m%s\033[0m\n" "$1"; }
 sari()    { printf "\033[33m%s\033[0m\n" "$1"; }
 mavi()    { printf "\033[36m%s\033[0m\n" "$1"; }
 
+if [ "$SADECE_TEYIT" = 0 ]; then
 mavi "═══ 1. KOPYALA · tradia-beykoz/pano → misara-vezir/vezir ═══"
 cp "$KAYNAK/ozet-w35.json" "$HEDEF/ozet-w35.json"
 # index.html'i kopyala ve fetch URL'lerini misara-vezir'e ayarla
 cp "$KAYNAK/index.html" "$HEDEF/index.html"
-python3 <<'PY'
+"$PY" <<'PY'
 from pathlib import Path
 h = Path("/Users/GAC-A/misara-vezir/vezir/index.html")
 txt = h.read_text()
@@ -68,7 +75,7 @@ if [ "$ILERDE_BEY" -gt 0 ]; then
         | head -5)
     # Vaka #07: .env'deki gerçek anahtar değerleri çalışma anında okunur (script'te tutulmaz, ekrana basılmaz)
     GIZLI_LISTE=$(mktemp)
-    python3 - "$GIZLI_LISTE" <<'PY'
+    "$PY" - "$GIZLI_LISTE" <<'PY'
 import os, re, sys
 out = open(sys.argv[1], "w")
 for f in ("~/landgold-agents/.env", "~/finans/.env"):
@@ -120,7 +127,7 @@ mavi ""
 mavi "═══ 3. JSDELIVR PURGE ═══"
 for f in ozet-w35.json index.html; do
     resp=$(curl -sX GET "https://purge.jsdelivr.net/gh/e-misara/misara-vezir@main/vezir/$f")
-    status=$(echo "$resp" | python3 -c "import json,sys; print(json.load(sys.stdin).get('status','hata'))" 2>/dev/null || echo "hata")
+    status=$(echo "$resp" | "$PY" -c "import json,sys; print(json.load(sys.stdin).get('status','hata'))" 2>/dev/null || echo "hata")
     if [ "$status" = "finished" ]; then
         yesil "  ✓ purge $f"
     else
@@ -128,12 +135,13 @@ for f in ozet-w35.json index.html; do
     fi
 done
 
+fi  # SADECE_TEYIT
 mavi ""
 mavi "═══ 4. ÜÇ KANAL TEYİT + RAKAM KARŞILAŞTIRMA ═══"
 mavi "  (Raw ve Pages 30-120 sn cache · deneme aralığı 15 sn)"
 
 # 3 kanalı çek, aynı mı karşılaştır (hash-based)
-python3 <<'PY'
+"$PY" <<'PY'
 import json, sys, urllib.request, hashlib, time
 
 KANALLAR = {
@@ -183,6 +191,14 @@ sys.exit(2)
 PY
 
 RET=$?
+"$PY" - "$TEYIT_DOSYA" "$RET" <<'PY2'
+import json, sys, datetime as dt
+durum = {"0": "TEYİTLİ", "2": "TEYİTSİZ"}.get(sys.argv[2], "HATA")
+json.dump({"durum": durum, "deneme": 5 if durum != "TEYİTLİ" else "≤5", "zaman": dt.datetime.now().isoformat(timespec="minutes"),
+           "kural": "5 denemede üç kanal (Pages/Raw/jsDelivr) yerel hash'e eşitlenmezse TEYİTSİZ damgası kalır; sabah 08:30 launchd yeniden dener"},
+          open(sys.argv[1], "w"), ensure_ascii=False, indent=1)
+print(f"  yayın teyidi: {durum}")
+PY2
 echo ""
 if [ $RET -eq 0 ]; then
     yesil "═══ ✅ PANO YAYIN BAŞARILI ═══"

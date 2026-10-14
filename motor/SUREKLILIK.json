@@ -2009,25 +2009,71 @@
   }
  },
  "makine": {
-  "olcum_ani": "2026-10-14T23:15:32",
+  "olcum_ani": "2026-10-14T23:51:55",
   "ram_gb": 8,
-  "bos_gb": 0.09,
-  "sikistirici_gb": 3.26,
-  "swap_kullanim_mb": 2967.12,
-  "swap_toplam_mb": 4096.0,
-  "bellek_bos_yuzde_memory_pressure": 37,
+  "agir_kosan": [
+   {
+    "pid": "71507",
+    "is": "kulliyat",
+    "cc": "Borsa"
+   },
+   {
+    "pid": "74174",
+    "is": "duzen_koordinator",
+    "cc": "Hafıza"
+   },
+   {
+    "pid": "74193",
+    "is": "duzen_koordinator",
+    "cc": "Hafıza"
+   },
+   {
+    "pid": "76627",
+    "is": "rsync -a",
+    "cc": "Hafıza"
+   },
+   {
+    "pid": "87119",
+    "is": "evds_guncel.py --tam",
+    "cc": "Borsa"
+   }
+  ],
+  "kilit_tutan_pid": "76627",
+  "kilit_ihlali": [
+   {
+    "pid": "71507",
+    "is": "kulliyat",
+    "cc": "Borsa"
+   },
+   {
+    "pid": "74174",
+    "is": "duzen_koordinator",
+    "cc": "Hafıza"
+   },
+   {
+    "pid": "74193",
+    "is": "duzen_koordinator",
+    "cc": "Hafıza"
+   },
+   {
+    "pid": "87119",
+    "is": "evds_guncel.py --tam",
+    "cc": "Borsa"
+   }
+  ],
+  "bos_gb": 0.06,
+  "sikistirici_gb": 3.49,
+  "swap_kullanim_mb": 4480.31,
+  "swap_toplam_mb": 5120.0,
+  "bellek_bos_yuzde_memory_pressure": 34,
   "yuk_1_5_15": [
-   13.73,
-   6.07,
-   3.73
+   3.65,
+   4.16,
+   4.22
   ],
   "claude_oturum_sureci": 15,
   "launchd_exit_sifir_degil": 6,
   "launchd_exit_liste": [
-   {
-    "label": "com.tradia.ccbasin.hasat_v4",
-    "exit": 2
-   },
    {
     "label": "com.tradia.sorgu.duzen",
     "exit": 2
@@ -2039,6 +2085,10 @@
    {
     "label": "com.tradia.misara.pano",
     "exit": -9
+   },
+   {
+    "label": "com.tradia.sorgu.nefes",
+    "exit": -15
    },
    {
     "label": "com.tradia.primer-monitor",
@@ -2053,7 +2103,7 @@
  },
  "bildirim_disiplini": {
   "2026-10-14": {
-   "yazan": 0,
+   "yazan": 1,
    "toplam_cc": 15,
    "bildirim_yok": [
     "analiz",
@@ -2069,12 +2119,13 @@
     "tic",
     "kitap",
     "arsiv",
-    "hafiza",
-    "vezir"
+    "hafiza"
    ],
    "beyan_dosya_uyusmazligi": 0,
    "durum": {
-    "BİLDİRİM YOK": 15
+    "BİLDİRİM YOK": 14,
+    "BİTTİ": 18,
+    "KISMEN": 3
    }
   }
  },
