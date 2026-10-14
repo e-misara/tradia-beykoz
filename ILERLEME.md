@@ -28,6 +28,8 @@
 | 2026-10-14 (gece · adres anahtarı + makine denetimi) | +11 | −4 | +7 | 78 | Basın: 973 ilçe kuyrukta (3 DOLU) · hedef hızı 18,7/hafta | Açılan: 4 ✅ (adres kanonu, Basın kuyruğu, adres denetimi, makine kanonu) + Basın launchd, Hafıza launchd/M4, Borsa tahmini, Pazarlama sunum satırı, Aİ kodlama, CC kodlama, BŞ il merkezi. Canlı sayım 142 / 64 / 78. |
 | 2026-10-14 (23:50 · prompt defteri + kapsam kanonu) | +5 | −3 | +2 | 81 | Basın: 973 ilçe kuyrukta · kapsam 8/81 · Pazarlama 81/81 | Açılan: defter ✅, kapsam kanonu ✅, 81 il tam hasat, Hafıza disk şeması, 9 ÇIKTI YOK. Kapanan: iki ✅ + dataflow envanteri. Canlı sayım 148 / 67 / 81. |
 | 2026-10-14 (23:55 · ağır iş sırası + devir + kalıcı ölçümler) | +5 | −4 | +1 | 82 | kapsam tabanı yazıldı (81/34/11/10/9/8/2) | Açılan: JSON devri ✅, Pazarlama dağıtım, 15 dk ölçüm ✅, CDN teyidi ✅, 16 kalem bildirimi. Kapanan: 3 ✅ + ağır iş kilidi kararı. Canlı sayım 153 / 71 / 82. |
+| 2026-10-15 (00:30 · kilit kararı 2 + Vaka #09 + gece raporu) | +8 | −4 | +4 | 87 | kapsam tabanı aynı | Açılan: kilit-2 ✅, Analiz sağlık düzeltme, gece raporu ✅, Vaka #09 ✅, Hafıza taşıma, Patron iCloud kararı, zincirler iskelet, Borsa kanalı ✅. Düzeltme: 15 dk ölçüm geçmişi 23:3x–00:1x yazılmamıştı (B11). Canlı sayım 161 / 74 / 87. |
+| 2026-10-15 (00:45 · lisans alanı + Patron kovası ön kayıt) | +4 | −1 | +3 | 90 | kapsam tabanı aynı | Açılan: şema v1.1 lisans ✅, EPİAŞ üyeliği (Patron), BDDK yazılı izin (Patron), 9 CC lisans doldurma. Canlı sayım 165 / 75 / 90. |
 
 ## Retro-not (sayaç öncesi)
 

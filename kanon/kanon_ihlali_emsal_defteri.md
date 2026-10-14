@@ -215,6 +215,24 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 
 ---
 
+## Vaka #09 — iCloud: Masaüstü senkronu + "Mac depolamasını optimize et" → parsel verisi üçüncü-taraf bulutta, çalışma dosyaları buluta boşaltılmış
+
+- **Tarih:** 2026-10-15 00:15 · **Açan:** Patron · **Doğrulayan:** Vezir (dosyaya bakarak)
+- **Olgu (ölçüm):**
+  - `~/Desktop` iCloud "Masaüstü ve Belgeler" senkronunda: `~/Library/Mobile Documents/com~apple~CloudDocs/Desktop/` içinde `tradia` ve `TT-Tüm CC` var. `com.apple.bird optimize-storage = 1`.
+  - **Buluta boşaltılmış (dataless: boyut > 0, blok = 0):** `~/Desktop/tradia` **18.349 / 35.082** dosya · yalnız `cc_borsa` **11.719 / 26.958** (Patron beyanı 3.205; ölçüm daha büyük) · `~/Desktop/TT-Tüm CC` **366 / 1.194**. `.icloud` yer tutucu 0 — boşaltma APFS dataless biçiminde, Finder/`find` listesinde dosya "var" görünür.
+  - **Parsel verisi:** `~/Desktop/TT-Tüm CC/parsel_01_rize/` (DOSYA.md, INSAAT_PAKETI.md, künye) iCloud'a senkronlu → **parsel_veri_kanonu_v1 ihlali** (public repo yasağı üçüncü-taraf bulutu da kapsar; kanon metni "public" diyordu, bulut açıkça yazılmamıştı → kanon v1.1 ile eklenir).
+  - Disk: Data birimi **%94**, 12 GiB boş. Patron: "15 GiB bilmecesi"nin kök nedeni bu (boşaltılan dosyalar yerelde yer tutmaz; iş onları okumaya kalkınca iCloud'dan indirir → disk dalgalanır, G/Ç şişer).
+- **Etki:** (a) Parsel ve ham veri Apple sunucusunda. (b) Boşaltılmış dosyayı okuyan her iş (Borsa arşivi, külliyat, SORGU-01 kaynakları) sessiz indirme yapıyor → gecenin G/Ç yükü ve "dosya var ama boş" davranışı (Vaka #08 deseniyle akraba). (c) `Desktop/tradia` altındaki launchd log yolları zaten TCC yüzünden exit 78 (Vaka #06 makine denetimi).
+- **Karar (Patron onaylı):** Patron iCloud ayarına dokunmaz. rsync bitince **Hafıza** `~/Desktop/tradia` ve `~/Desktop/TT-Tüm CC`'yi `~/tradia_calisma/` altına taşır; eski yollara symlink. **Standing #48 prosedürü:** önce etki listesi (launchd plist, crontab, koddaki mutlak yollar — grep sayımı), sonra taşıma, sonra **kırık bağlantı 0** kanıtı. Taşıma ağır G/Ç → kilit sırasına girer.
+- **Vezir'in payı:** etki listesini çıkarır (`02_CC_STATE/vezir_bildirim_hafiza_vaka09_tasima.json`), taşımayı yapmaz (cc_sinir).
+- **Emsal ders:**
+  1. "Dosya var" ≠ "dosya yerelde". Disk-bağımlılık ölçüsü (`5_diskten_bagimsiz`) iCloud'u hiç saymıyordu; HEDEF kartlarındaki "Mac-local" beyanları bu açıdan yeniden okunmalı.
+  2. Sır/parsel kanonları "nereye yazılmaz"ı listelerken **senkron klasörleri** (iCloud, Dropbox, Drive) açıkça saymalı.
+  3. Masaüstü çalışma dizini olarak kullanılmaz: TCC + iCloud iki ayrı tuzak.
+
+---
+
 ## İşletim kuralı
 
 - **Ekleme:** Vezir her turda yeni ihlal tespit ederse `Vaka #NN` bloğu ekler (numara artan). Eski vakalar dokunulmaz.

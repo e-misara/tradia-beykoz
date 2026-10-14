@@ -34,12 +34,19 @@ Her CC yalnız **kendi** dosyasını yazar: `~/tradia_konusmalar/02_CC_STATE/kay
 | `zincir` | `Z1`…`Z7` | Patron dağıtım listesindeki zincir. **Tanım diskte bulunamadı**; Vezir doğrulamaz, olduğu gibi taşır |
 | `patron_adimi` | metin | erişim `UYELIK`/`API_ANAHTAR` ise Patron'un yapacağı **tam adım** (site → menü → form); değilse boş `""` |
 | `ilk_hasat_tahmini` | metin | ilk hasadın hacmi/süresi + **dayanağı** (ölçümden mi, tahminden mi) |
+| `lisans` | `{"sinif": IC_KULLANIM \| KAYNAK_GOSTER \| YAZILI_IZIN \| YASAK, "dayanak": "<lisans metni/sayfa URL'si/mevzuat>"}` | **(v1.1 · Patron 15 Eki)** Kullanım hakkı. `IC_KULLANIM` = yalnız iç analiz · `KAYNAK_GOSTER` = atıfla yayımlanabilir · `YAZILI_IZIN` = ürüne girmesi yazılı izne bağlı (Patron adımı) · `YASAK` = kullanılmaz. Dayanak zorunlu. **Lisansı boş/dayanaksız kaynak `ACIK` sayılmaz** (en fazla KISITLI). |
 
 **Ek kurallar**
 - **200 ≠ veri:** `erisim: ACIK` demek için `ornek_cekim`'de en az bir bölge > 0 ya da açıkça "kaynakta bu bölge yok" kanıtı gerekir (B11 · EVDS ve TÜİK dersi). Yalnız 200 dönen sayfa en fazla `KISITLI` sayılır.
 - **Anahtar/parola/token** satıra yazılmaz (anahtar kanonu kural 4). `patron_adimi` yalnız yolu tarif eder.
 - **Parsel-düzeyi örnek** (ada/parsel no, koordinat) public'e taşınmaz. `ornek_cekim` yalnız **sayı** içerir (parsel_veri_kanonu_v1).
 - Başka CC'nin tarama dosyası düzeltilmez (cc_sinir_kanonu_v1).
+
+## 2a. Lisans (v1.1)
+
+- `erisim: ACIK` ya da `API_ANAHTAR` ise `lisans.sinif` + `lisans.dayanak` zorunlu; yoksa satır **geçersiz** ("lisans yok → ACIK sayılmaz").
+- `YAZILI_IZIN` satırı Patron kovasına da düşer (adım: izin yazısı).
+- **Patron kovası ön kayıt (Patron 15 Eki):** EPİAŞ üyeliği (isteğe bağlı) · BDDK yazılı izin (ürüne girecekse). Tarama satırı gelmese de kovada görünür.
 
 ## 2b. PATRON ADIMI süzgeci (Patron 2026-10-14)
 
@@ -63,4 +70,6 @@ Betik: `tradia-beykoz/motor/kaynak_evreni_birlestir.py` (yerel). Çıktılar:
 
 Son tarihte dosyası olmayan CC raporda **"yazmadı"** olarak görünür. Birleştirme beklemez; geç gelen dosya bir sonraki birleştirmeye (v2.1) girer.
 
-*Vezir · 2026-10-14*
+**Değişiklik:** v1.1 (2026-10-15) lisans alanı + Patron kovası ön kayıt.
+
+*Vezir · 2026-10-14 · v1.1 2026-10-15*

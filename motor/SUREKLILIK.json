@@ -2009,14 +2009,9 @@
   }
  },
  "makine": {
-  "olcum_ani": "2026-10-14T23:51:55",
+  "olcum_ani": "2026-10-15T00:10:39",
   "ram_gb": 8,
   "agir_kosan": [
-   {
-    "pid": "71507",
-    "is": "kulliyat",
-    "cc": "Borsa"
-   },
    {
     "pid": "74174",
     "is": "duzen_koordinator",
@@ -2028,23 +2023,33 @@
     "cc": "Hafıza"
    },
    {
-    "pid": "76627",
+    "pid": "89694",
+    "is": "evds_guncel.py --tam",
+    "cc": "Borsa"
+   },
+   {
+    "pid": "89778",
+    "is": "kulliyat",
+    "cc": "Borsa"
+   },
+   {
+    "pid": "91643",
+    "is": "builder.py",
+    "cc": "Hafıza"
+   },
+   {
+    "pid": "91683",
     "is": "rsync -a",
     "cc": "Hafıza"
    },
    {
-    "pid": "87119",
-    "is": "evds_guncel.py --tam",
-    "cc": "Borsa"
+    "pid": "96319",
+    "is": "rsync -a",
+    "cc": "Hafıza"
    }
   ],
-  "kilit_tutan_pid": "76627",
+  "kilit_tutan_pid": "91683",
   "kilit_ihlali": [
-   {
-    "pid": "71507",
-    "is": "kulliyat",
-    "cc": "Borsa"
-   },
    {
     "pid": "74174",
     "is": "duzen_koordinator",
@@ -2056,20 +2061,30 @@
     "cc": "Hafıza"
    },
    {
-    "pid": "87119",
+    "pid": "89694",
     "is": "evds_guncel.py --tam",
     "cc": "Borsa"
+   },
+   {
+    "pid": "89778",
+    "is": "kulliyat",
+    "cc": "Borsa"
+   },
+   {
+    "pid": "91643",
+    "is": "builder.py",
+    "cc": "Hafıza"
    }
   ],
   "bos_gb": 0.06,
-  "sikistirici_gb": 3.49,
-  "swap_kullanim_mb": 4480.31,
-  "swap_toplam_mb": 5120.0,
-  "bellek_bos_yuzde_memory_pressure": 34,
+  "sikistirici_gb": 3.27,
+  "swap_kullanim_mb": 4920.56,
+  "swap_toplam_mb": 6144.0,
+  "bellek_bos_yuzde_memory_pressure": 36,
   "yuk_1_5_15": [
-   3.65,
-   4.16,
-   4.22
+   5.76,
+   5.16,
+   4.68
   ],
   "claude_oturum_sureci": 15,
   "launchd_exit_sifir_degil": 6,
@@ -2099,7 +2114,11 @@
     "exit": 78
    }
   ],
-  "m4_port_8789": "DİNLİYOR"
+  "m4_port_8789": "DİNLİYOR",
+  "rsync_kosuyor": true,
+  "kulliyat_kosuyor": true,
+  "evds_kosuyor": true,
+  "evds_son_log": "[2026-10-15 00:10:10]   SERI_400 TP.DT.IH.MIK.E08 (kalıcı, atlandı)"
  },
  "bildirim_disiplini": {
   "2026-10-14": {
@@ -2214,5 +2233,28 @@
     "bolge_tic.json"
    ]
   }
- }
+ },
+ "makine_gecmis": [
+  {
+   "olcum_ani": "2026-10-15T00:10:39",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 4920.56,
+   "yuk_1_5_15": [
+    5.76,
+    5.16,
+    4.68
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 6,
+   "rsync_kosuyor": true,
+   "kulliyat_kosuyor": true,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 00:10:10]   SERI_400 TP.DT.IH.MIK.E08 (kalıcı, atlandı)",
+   "kilit_ihlali": 5,
+   "ihlal_cc": [
+    "Borsa",
+    "Hafıza"
+   ]
+  }
+ ]
 }

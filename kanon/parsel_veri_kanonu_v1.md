@@ -31,6 +31,10 @@ Public repo'da yalnız **vaka-durum satırı** durur:
 3. **KVKK #31 v1.1** — kişisel-mülkiyet verisi işleme sınırı.
 4. **Pazarlık güvenliği** — üçüncü taraf ilgisini erken uyandırmama.
 
+## Ek · Senkron klasörler (v1.1 · Vaka #09 · 2026-10-15)
+
+Parsel-düzeyi veri **üçüncü-taraf senkron klasörüne** de girmez: iCloud (Masaüstü/Belgeler senkronu dahil), Dropbox, Google Drive, OneDrive. `~/Desktop` iCloud'a bağlıysa `~/Desktop/TT-Tüm CC/` lokal sayılmaz. Lokal = yalnız senkronsuz yerel dizin (`~/tradia_calisma/` vb.) + TT-HAFIZA.
+
 ## Depolama sınıfı
 
 | Sınıf | Yer | İçerik |
