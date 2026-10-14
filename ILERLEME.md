@@ -23,6 +23,7 @@
 | 2026-10-14 (gece · TÜİK anahtarı + toplu indirme analizi) | +3 | −2 | +1 | 67 | Basın: 970 ilçe (değişmedi) | Açılan: TÜİK ilk sağlık satırı, TÜİK analizi (✅ doğdu), 3 seti SORGU-01'e alma. Kapanan: TUIK_API_KEY kaydı, TÜİK analizi. Canlı sayım 121 / 54 / 67. |
 | 2026-10-14 (gece · TÜİK ham envanter + SDMX hattı kanonu) | +5 | −2 | +3 | 70 | Basın: 970 ilçe (değişmedi) | Açılan: ham taşıma ✅, kanon kural 6 ✅, Pazarlama 81 il, CC kök teyidi, dataflow envanteri. Kapanan: ham taşıma, kanon. Canlı sayım 126 / 56 / 70. |
 | 2026-10-14 (gece · kaynak evreni taraması açılış) | +2 | −1 | +1 | 71 | Basın: 970 ilçe (değişmedi) | Açılan: tarama şeması kanonu ✅, 9 CC birleştirme (son tarih 16 Eki 19:26). Kapanan: şema kanonu. Canlı sayım 128 / 57 / 71. |
+| 2026-10-14 (gece · TÜİK sağlık ilk ölçüm + Patron adımı süzgeci) | +1 | −2 | −1 | 70 | Basın: 970 ilçe (değişmedi) | Açılan: Patron adımı süzgeci (✅ doğdu). Kapanan: süzgeç + TÜİK ilk sağlık satırı (200, 508 dataflow, yeşil). Canlı sayım 129 / 59 / 70. |
 
 ## Retro-not (sayaç öncesi)
 

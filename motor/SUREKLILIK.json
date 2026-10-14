@@ -1,6 +1,6 @@
 {
  "uretici": "Vezir · motor/surekli_olc.py",
- "olcum_ani": "2026-10-14T19:00:44",
+ "olcum_ani": "2026-10-14T19:26:06",
  "pencere": "2026-09-14..2026-10-13 (30 gün)",
  "esikler": {
   "yeşil": "≥%90",
@@ -425,7 +425,7 @@
    "kaynak": "TCMB EVDS (veri yolu)",
    "sahibi": "Borsa",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T16:02:37Z",
+   "olcum_ani_utc": "2026-10-14T16:28:24Z",
    "uc_nokta": "evds3/igmevdsms-dis (header key, .env)",
    "http_kodu": 200,
    "icerik_imzasi": "JSON items=11",
@@ -441,7 +441,7 @@
    "kaynak": "Resmî Gazete",
    "sahibi": "İhale",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T16:02:37Z",
+   "olcum_ani_utc": "2026-10-14T16:28:24Z",
    "uc_nokta": "https://www.resmigazete.gov.tr/",
    "http_kodu": 200,
    "son_url": "https://www.resmigazete.gov.tr/",
@@ -455,7 +455,7 @@
    "kaynak": "EKAP",
    "sahibi": "İhale",
    "ritim_esigi_gun": 10,
-   "olcum_ani_utc": "2026-10-14T16:02:37Z",
+   "olcum_ani_utc": "2026-10-14T16:28:25Z",
    "uc_nokta": "https://ekap.kik.gov.tr/",
    "http_kodu": 200,
    "son_url": "https://ekapv2.kik.gov.tr/",
@@ -467,7 +467,7 @@
    "kaynak": "KAP",
    "sahibi": "Borsa",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T16:02:38Z",
+   "olcum_ani_utc": "2026-10-14T16:28:26Z",
    "uc_nokta": "https://www.kap.org.tr/",
    "http_kodu": 308,
    "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil)",
@@ -477,22 +477,23 @@
    "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
   },
   {
-   "kaynak": "TÜİK veri portalı",
-   "sahibi": "Pazarlama/Analiz",
-   "ritim_esigi_gun": 40,
-   "olcum_ani_utc": "2026-10-14T16:02:38Z",
-   "uc_nokta": "https://veriportali.tuik.gov.tr/",
+   "kaynak": "TÜİK SDMX (dataflow · tuik_ortak)",
+   "sahibi": "istemci Pazarlama · toplayıcı Borsa+Analiz",
+   "ritim_esigi_gun": 1,
+   "olcum_ani_utc": "2026-10-14T16:28:26Z",
+   "uc_nokta": "nsiws.tuik.gov.tr/rest/dataflow (tuik_ortak)",
    "http_kodu": 200,
-   "son_url": "https://veriportali.tuik.gov.tr/",
-   "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
-   "sorgu01_son_alim": "ölçülmedi (SORGU-01'e girmiyor)",
-   "renk": "ölçülmedi"
+   "istemci_durumu": "OK",
+   "icerik_imzasi": "dataflow=508",
+   "veri_akiyor": true,
+   "renk": "yeşil",
+   "sorgu01_son_alim": "ölçülmedi (TÜİK henüz SORGU-01'e girmiyor)"
   },
   {
    "kaynak": "Yahoo Finance",
    "sahibi": "Borsa",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T16:02:39Z",
+   "olcum_ani_utc": "2026-10-14T16:30:33Z",
    "uc_nokta": "https://query1.finance.yahoo.com/",
    "http_kodu": 404,
    "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil)",
@@ -505,7 +506,7 @@
    "kaynak": "Basın (yerel host'lar)",
    "sahibi": "Basın",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T16:02:39Z",
+   "olcum_ani_utc": "2026-10-14T16:30:33Z",
    "uc_nokta": "ölçülmedi (tek uç nokta yok — sahibi CC sağlık satırı yazmalı)",
    "sorgu01_son_alim": "2026-10-12",
    "yas_gun": 2,
@@ -516,10 +517,10 @@
    "kaynak": "ÇED / Finans belgeleri",
    "sahibi": "Finans",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T16:02:39Z",
+   "olcum_ani_utc": "2026-10-14T16:30:33Z",
    "uc_nokta": "ölçülmedi (tek uç nokta yok — sahibi CC sağlık satırı yazmalı)",
-   "sorgu01_son_alim": "2026-10-13",
-   "yas_gun": 1,
+   "sorgu01_son_alim": "2026-10-14",
+   "yas_gun": 0,
    "renk": "yeşil",
    "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
   },
@@ -527,13 +528,13 @@
    "kaynak": "YouTube (Sosyal)",
    "sahibi": "Sosyal",
    "ritim_esigi_gun": 3,
-   "olcum_ani_utc": "2026-10-14T16:02:39Z",
+   "olcum_ani_utc": "2026-10-14T16:30:33Z",
    "uc_nokta": "https://www.youtube.com/",
    "http_kodu": 200,
    "son_url": "https://www.youtube.com/",
    "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
-   "sorgu01_son_alim": "2026-10-13",
-   "yas_gun": 1,
+   "sorgu01_son_alim": "2026-10-14",
+   "yas_gun": 0,
    "renk": "yeşil",
    "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
   }
@@ -812,7 +813,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "3",
+    "runs": "5",
     "son_exit": "0",
     "state": "not running"
    },
@@ -837,7 +838,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "47",
+    "runs": "73",
     "son_exit": "2",
     "state": "spawn scheduled"
    },
@@ -1294,7 +1295,7 @@
    "plist_dogum": "2026-10-13",
    "launchctl": {
     "yuklu": true,
-    "runs": "46",
+    "runs": "71",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1472,7 +1473,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "4",
+    "runs": "5",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1493,7 +1494,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "3",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1514,7 +1515,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "5",
+    "runs": "8",
     "son_exit": "2",
     "state": "not running"
    },
@@ -1565,7 +1566,7 @@
    "plist_dogum": "2026-08-08",
    "launchctl": {
     "yuklu": true,
-    "runs": "24",
+    "runs": "36",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1586,7 +1587,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "47",
+    "runs": "73",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1607,7 +1608,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "3",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1628,7 +1629,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "24",
+    "runs": "36",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1670,8 +1671,8 @@
    "plist_dogum": "2026-09-26",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
    "log_son_iz": "2026-10-14",
@@ -1780,7 +1781,7 @@
    "plist_dogum": "2026-10-13",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
+    "runs": "2",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1971,7 +1972,7 @@
      "yeni_kaynak": 0
     },
     "2026-10-07..2026-10-13": {
-     "yeni_kayit": 6,
+     "yeni_kayit": 7,
      "yeni_ilce": 0,
      "yeni_kaynak": 0
     }
@@ -2000,12 +2001,11 @@
      "yeni_kaynak": 0
     },
     "2026-10-07..2026-10-13": {
-     "yeni_kayit": 299,
+     "yeni_kayit": 1057,
      "yeni_ilce": 0,
      "yeni_kaynak": 0
     }
    }
   }
- },
- "deger_sinamasi_ani": "2026-10-14T19:04:28"
+ }
 }

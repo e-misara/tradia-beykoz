@@ -41,6 +41,14 @@ Her CC yalnız **kendi** dosyasını yazar: `~/tradia_konusmalar/02_CC_STATE/kay
 - **Parsel-düzeyi örnek** (ada/parsel no, koordinat) public'e taşınmaz. `ornek_cekim` yalnız **sayı** içerir (parsel_veri_kanonu_v1).
 - Başka CC'nin tarama dosyası düzeltilmez (cc_sinir_kanonu_v1).
 
+## 2b. PATRON ADIMI süzgeci (Patron 2026-10-14)
+
+- `patron_adimi` **yalnız** şu dört engel için yazılır: **üyelik/kayıt** · **anahtar/token başvurusu** · **SMS/e-Devlet kimlik doğrulaması** · **ödeme/abonelik**.
+- **CC işidir, Patron adımı DEĞİLDİR:** menüde gezinmek, doğru sayfayı/alan adını bulmak, JS ile render edilen sayfayı okumak (tarayıcı otomasyonu), form doldurup sorgu çalıştırmak, CAPTCHA'sız arama, dosya indirme bağlantısını bulmak.
+- `erisim` `ACIK` veya `KISITLI` ise `patron_adimi` **boş** olmalıdır.
+- Emsal: Aİ taramasında iki satır menü/JS işini Patron adımı olarak yazmıştı; düzeltme gönderildi (14 Eki).
+- Birleştirmede uygulanır: dört engelden birine işaret etmeyen Patron adımı → satır **geçersiz** ("CC işi Patron'a yazılmış") ve Patron kovasına girmez.
+
 ## 3. Birleştirme (Vezir · 2026-10-16 19:26)
 
 Betik: `tradia-beykoz/motor/kaynak_evreni_birlestir.py` (yerel). Çıktılar:
