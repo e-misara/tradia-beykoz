@@ -102,3 +102,13 @@
 - Eşleşme adımı yoksa (tek kaynaklı çıktı): `"eslesme": {"adim": "YOK — tek kaynak"}` yazılır.
 
 **Vezir uygulaması:** `motor/SUREKLILIK.json → deger_sinamasi`. 10 CC çıktısı (ai, analiz, basin, borsa, finans, ihale, map, pazarlama, sosyal, tic) her ölçümde `eslesme` alanı için taranır.
+
+---
+
+## Adres anahtarı (zorunlu · Patron 2026-10-14 · V16)
+
+Her hücre, satır ve madde `adres_anahtari` taşır: `TR-<il_kodu>-<ilçe_kodu>[-<mahalle_kodu>]` (kanon/adres_anahtari_kanonu_v1.md).
+- İlçe kodu: TÜİK 4 hane (DF_ADNKS_T38 · IKAMET_YERI) · Mahalle kodu: NVİ/UAVT yokken geçici `M:<aİ_slug>`.
+- Ad alanları (`il_ad`, `ilce_ad`, `mahalle_ad`) ayrı tutulur; anahtar yerine geçmez.
+- Mahalle yoksa: `semt_veya_bolge: {tur: S|B, ad, kaynak}`.
+- **Anahtarsız yer adı geçen kayıt = KIRIK** (Vezir ölçüsü `deger_sinamasi` bu alanı arar).
