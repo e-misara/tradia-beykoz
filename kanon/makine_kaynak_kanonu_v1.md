@@ -25,7 +25,8 @@
 3. **cron/launchd ağır işler 02:00–07:00 bandında.** Gündüz bandında yalnız hafif işler: sağlık, delta, küçük JSON.
 4. **KeepAlive + çıkış ≠ 0 = döngü.** Ön koşulu (disk) yokken KeepAlive'lı iş exit ≠ 0 ile çıkarsa launchd onu sürekli yeniden başlatır. Emsal: `ccbasin.hasat_v4` **300 kez**. Ön koşul eksikse: `KeepAlive` → `PathState` (`/Volumes/TT-HAFIZA` var olunca) ya da exit 0 + log satırı.
 5. **launchd stdout/stderr `~/Desktop` altına yazılmaz.** TCC korumalı dizin, iş başlatılamıyor (exit 78 EX_CONFIG). Log yolu `~/tradia_sorgu/logs/` gibi korumasız bir dizinde olur.
-6. **Ölçüm:** `motor/SUREKLILIK.json → makine`. Her ölçümde bellek, swap, yük, oturum sayısı, launchd exit≠0 listesi ve M4 port testi alınır.
+6. **iCloud dataless dosya okuma = indirme = disk işi → kilit gerektirir** (Patron 15 Eki · Vaka #09). `~/Desktop` altındaki boşaltılmış dosyaları toplu okuyan tarama/indeksleme (ör. Borsa arşiv içerik taraması) ağır iş sayılır; kilit sırasına girer, disk boş < 6 GiB ise başlamaz. Emsal: Borsa içerik taraması 01:05'te disk riski nedeniyle durduruldu.
+7. **Ölçüm:** `motor/SUREKLILIK.json → makine`. Her ölçümde bellek, swap, yük, oturum sayısı, launchd exit≠0 listesi ve M4 port testi alınır.
 
 ## "Neredeyiz" için tek satır (sunum)
 

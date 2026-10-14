@@ -41,7 +41,8 @@ Parsel-düzeyi veri **üçüncü-taraf senkron klasörüne** de girmez: iCloud (
 |---|---|---|
 | Public repo | `github.com/e-misara/tradia-beykoz` | Vaka-durum satırı, katman izleri, kanon+emsal |
 | Private repo | `github.com/e-misara/misara-arsiv` | Ham konuşma arşivi; parsel-veri geçerse redaksiyon (arsiv_cek.py katmanı) |
-| Lokal | `~/Desktop/TT-Tüm CC/parsel_01_rize/` | Tic birleştirici DOSYA.md, tkgm_kunye, ham dosyalar, SHA'lar |
+| Lokal (hedef) | `~/tradia_calisma/parsel_01_rize/` — **Hafıza A0/A1 İLK PARTİ** (Vaka #09) | Tic birleştirici DOSYA.md, tkgm_kunye, ham dosyalar, SHA'lar |
+| ⚠ Bugün (v1.1 düzeltme · 15 Eki 01:10) | `~/Desktop/TT-Tüm CC/parsel_01_rize/` — **LOKAL DEĞİL**: iCloud senkronlu, 97 dosyanın 25'i yalnız bulutta (Borsa ölçümü) | taşınana kadar bu dizine yeni parsel verisi YAZILMAZ; okumak = iCloud'dan indirme = disk işi (kilit kanonu) |
 
 **Not:** Lokal katman Vezir'in kapsamı değil (CC-Tic sahibi). Vezir yalnız public repo bekçisi.
 
@@ -69,3 +70,5 @@ Bu kanon **retro-etkilidir**: yürürlüğe girmeden önce public'e sızmış pa
 **Sonuç:** Vaka açılırken CC-katmanı **açık-kaynak** ile sınırlıdır (uydu/basın/RG/OSM/CKAN vs.); tapu-kadastro-imar teyidi **Patron-saha kalemi** olarak vaat-takibe girer, CC işi değildir.
 
 *Vezir · Standing #35+#36+#37+#38+#43 + KVKK #31 v1.1 · 2026-09-26*
+
+**Değişiklik:** v1.1b (15 Eki 01:10): iç çelişki giderildi — §Depolama 'Lokal' satırı Desktop/parsel_01_rize'yi lokal sayıyordu, §Ek ile çelişiyordu (Patron tespiti). Düzeltildi: lokal hedef ~/tradia_calisma, bugünkü yer LOKAL DEĞİL.

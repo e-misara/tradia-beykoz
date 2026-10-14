@@ -1066,12 +1066,14 @@
   "oncelik": {
    "1": "büyükşehir OLMAYAN 51 ilin 'Merkez' ilçesi",
    "2": "30 büyükşehrin tüm ilçeleri",
-   "3": "kalan ilçeler"
+   "3": "kalan ilçeler",
+   "0": "Z1 ilk 10 il merkez ilçeleri (Finans inşaat kredisi reel yoy, 2026-6) — Patron 15 Eki"
   },
   "acik_soru": "30 büyükşehirde 'il merkezi' tek ilçe değil → Aİ/Hafıza hangi ilçe(ler)in öncelik 1'e çekileceğini belirlesin",
   "sayim": {
-   "1": 51,
-   "2": 519,
+   "1": 44,
+   "0": 14,
+   "2": 512,
    "3": 403
   },
   "durum_sayim": {
@@ -1227,13 +1229,15 @@
     "il_ad": "Bingöl",
     "ilce_ad": "Merkez",
     "cc": "Basın",
-    "oncelik": 1,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 32.4,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-13-1196",
@@ -1279,13 +1283,15 @@
     "il_ad": "Düzce",
     "ilce_ad": "Merkez",
     "cc": "Basın",
-    "oncelik": 1,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 87.6,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-22-1295",
@@ -1305,13 +1311,15 @@
     "il_ad": "Elazığ",
     "ilce_ad": "Merkez",
     "cc": "Basın",
-    "oncelik": 1,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 68.0,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-24-1318",
@@ -1513,13 +1521,15 @@
     "il_ad": "Muş",
     "ilce_ad": "Merkez",
     "cc": "Basın",
-    "oncelik": 1,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 62.7,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-50-1543",
@@ -1565,13 +1575,15 @@
     "il_ad": "Rize",
     "ilce_ad": "Merkez",
     "cc": "Basın",
-    "oncelik": 1,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 68.8,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-56-1620",
@@ -1656,13 +1668,15 @@
     "il_ad": "Yalova",
     "ilce_ad": "Merkez",
     "cc": "Basın",
-    "oncelik": 1,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 46.5,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-66-1733",
@@ -1695,13 +1709,15 @@
     "il_ad": "Çanakkale",
     "ilce_ad": "Merkez",
     "cc": "Basın",
-    "oncelik": 1,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 41.3,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-18-1232",
@@ -3463,13 +3479,15 @@
     "il_ad": "Diyarbakır",
     "ilce_ad": "Bağlar",
     "cc": "Basın",
-    "oncelik": 2,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 52.7,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-21-1195",
@@ -3554,13 +3572,15 @@
     "il_ad": "Diyarbakır",
     "ilce_ad": "Kayapınar",
     "cc": "Basın",
-    "oncelik": 2,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 52.7,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-21-1962",
@@ -3619,26 +3639,30 @@
     "il_ad": "Diyarbakır",
     "ilce_ad": "Sur",
     "cc": "Basın",
-    "oncelik": 2,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 52.7,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-21-2043",
     "il_ad": "Diyarbakır",
     "ilce_ad": "Yenişehir",
     "cc": "Basın",
-    "oncelik": 2,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 52.7,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-21-1249",
@@ -5387,13 +5411,15 @@
     "il_ad": "Malatya",
     "ilce_ad": "Battalgazi",
     "cc": "Basın",
-    "oncelik": 2,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 34.7,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-44-1265",
@@ -5504,13 +5530,15 @@
     "il_ad": "Malatya",
     "ilce_ad": "Yeşilyurt",
     "cc": "Basın",
-    "oncelik": 2,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 34.7,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-45-1751",
@@ -6453,13 +6481,15 @@
     "il_ad": "Sakarya",
     "ilce_ad": "Adapazarı",
     "cc": "Basın",
-    "oncelik": 2,
+    "oncelik": 0,
     "asama": "KAYNAK_ENVANTERI",
     "durum": "KUYRUKTA",
     "sonraki_asama": "DERINLIK",
     "kaynak": null,
     "tarih": null,
-    "son_kosu": null
+    "son_kosu": null,
+    "z1_reel_yoy": 54.1,
+    "oncelik_gerekcesi": "Z1 inşaat kredisi reel büyüme ilk 10 (Finans BDDK 2026-6) — Patron 15 Eki"
    },
    {
     "adres_anahtari": "TR-54-1123",
@@ -13728,6 +13758,41 @@
     "tarih": null,
     "son_kosu": null
    }
-  ]
+  ],
+  "z1_one_alinan": {
+   "hucre": 14,
+   "iller": [
+    "Düzce",
+    "Rize",
+    "Elazığ",
+    "Muş",
+    "Sakarya",
+    "Diyarbakır",
+    "Yalova",
+    "Çanakkale",
+    "Malatya",
+    "Bingöl"
+   ],
+   "hic_bakilmamis": [
+    "Düzce/Merkez",
+    "Elazığ/Merkez"
+   ],
+   "bs_merkez_varsayimi": {
+    "Sakarya": [
+     "Adapazarı"
+    ],
+    "Diyarbakır": [
+     "Sur",
+     "Bağlar",
+     "Kayapınar",
+     "Yenişehir"
+    ],
+    "Malatya": [
+     "Battalgazi",
+     "Yeşilyurt"
+    ]
+   },
+   "not": "Sakarya/Diyarbakır/Malatya büyükşehir: 'merkez ilçe' Vezir varsayımı, Aİ/Hafıza teyit edecek (açık soru)"
+  }
  }
 }

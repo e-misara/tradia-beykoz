@@ -30,6 +30,10 @@
 
 Öneri eşleme tablosu (Aİ benimseyecek): `02_CC_STATE/vezir_oneri_adres_anahtari_ilce.tsv` (973 satır: anahtar · plaka · TÜİK ilçe kodu · il · TÜİK adı · kısa ad · tr_idari_birim adı · Aİ slug).
 
+## Ek · Havalimanı birimi (v1.1 · Patron 15 Eki)
+
+Havalimanı il değildir; **`ana_il` + `paylasilan_iller[]`** ile yazılır (otorite: Aİ evren ağacı `havalimani_evren.json`). Çok illi havalimanları: Çukurova (Mersin + Adana) · Ordu-Giresun (Ordu + Giresun) · Rize-Artvin (Rize + Artvin) · Zafer (Kütahya + Afyonkarahisar + Uşak). Kapadokya = Nevşehir tek. **Yolcu sayısı tek ile yazılmaz:** il×ay matrisinde ana ile sayı, paylaşılan illere şerh. Finans DHMİ hasadı (15 Eki) ilk uygulama.
+
 ## Bilinen çakışma türleri (denetimde aranır)
 
 - **Aynı ad, çok ilçe:** "Merkez" (51 il), "Yeni Mahalle", "Cumhuriyet", "Fatih", "Atatürk" vb. mahalle adları.

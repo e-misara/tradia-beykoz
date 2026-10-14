@@ -48,6 +48,9 @@ Her CC yalnız **kendi** dosyasını yazar: `~/tradia_konusmalar/02_CC_STATE/kay
 - `YAZILI_IZIN` satırı Patron kovasına da düşer (adım: izin yazısı).
 - **Patron kovası ön kayıt (Patron 15 Eki):** EPİAŞ üyeliği (isteğe bağlı) · BDDK yazılı izin (ürüne girecekse). Tarama satırı gelmese de kovada görünür.
 
+- **KAPALI istisnası (v1.2 · Finans TCİP emsali):** `erisim: KAPALI` ise `http_kodu` `null` olabilir; şart: `http_durumu: "ERİŞİLEMEDİ"` + en az 3 zaman damgalı deneme (`denemeler[]`: zaman, URL, hata kodu). Damgasız KAPALI geçersiz.
+- **Lisans `KARAR_PATRON` (v1.2):** iki resmî metin çelişiyorsa (BDDK emsali: FinTürk 'izinsiz yayımlanabilir' ↔ site şartları 'kısmen alıntı') sınıf `KARAR_PATRON` yazılır, iki dayanak da satırda; Patron kovasına düşer. ACIK sayılır ama ürüne girişi Patron kararına bağlı.
+
 ## 2b. PATRON ADIMI süzgeci (Patron 2026-10-14)
 
 - `patron_adimi` **yalnız** şu dört engel için yazılır: **üyelik/kayıt** · **anahtar/token başvurusu** · **SMS/e-Devlet kimlik doğrulaması** · **ödeme/abonelik**.
@@ -70,6 +73,6 @@ Betik: `tradia-beykoz/motor/kaynak_evreni_birlestir.py` (yerel). Çıktılar:
 
 Son tarihte dosyası olmayan CC raporda **"yazmadı"** olarak görünür. Birleştirme beklemez; geç gelen dosya bir sonraki birleştirmeye (v2.1) girer.
 
-**Değişiklik:** v1.1 (2026-10-15) lisans alanı + Patron kovası ön kayıt.
+**Değişiklik:** v1.1 (2026-10-15) lisans alanı + Patron kovası ön kayıt · v1.2 (15 Eki 01:20) KAPALI istisnası (3 damga) + KARAR_PATRON lisans sınıfı.
 
 *Vezir · 2026-10-14 · v1.1 2026-10-15*

@@ -8,11 +8,11 @@
 
 | Durum | Adet |
 |---|---|
-| BİTTİ | 44 |
+| BİTTİ | 45 |
 | KISMEN | 8 |
 | BEKLİYOR | 2 |
 | ÇIKTI YOK | 8 |
-| **Toplam prompt** | **62** |
+| **Toplam prompt** | **63** |
 
 Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 
@@ -40,6 +40,7 @@ Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 | Pazarlama | Envanter başlık eşleme | ÇIKTI YOK | — | Dataflow envanterinde eşleme sütunu yok (yalnız `ad_tr`) | — | 81/81 |
 | Pazarlama | Kaynak tarama | ÇIKTI YOK | — | `kaynak_tarama_pazarlama.json` yok | — | 81/81 |
 | Finans | EVDS seri yenileme | BİTTİ | `CS/hafiza_bildirim_ccfinans_evds_yenileme_20261014.json` | 18:33 "işlem yapma" → 18:48 yenilendi | — | 9/81 |
+| Finans | 81 il tam hasat (BDDK 81×9 çeyrek · EPDK 81 · DHMİ 58 havalimanı) + Z1 haritası | BİTTİ (DASK hariç → 02:00 bandı) | `CS/finans/bddk_finturk_81il.csv` · `epdk_81il.csv` · `dhmi_81il.csv` · `CS/donus_finans_2026-10-15.md` | Σ kanıtları tam (EPDK fark −0,1 MWh, DHMİ fark 0) · inşaat kredisi reel yoy ilk 10: Düzce +87,6 · Rize +68,8 · Elazığ +68,0 → Sinyal ULUSAL ADAY · 5 havalimanı eşlemesi Vezir teyit (ana il uyumlu, paylaşılan iller eksik) | ✅ Finans sekmesi açık kalsın (DASK Chromium gece bandı) · BDDK KARAR_PATRON · EPİAŞ form | **81/81** |
 | Finans | Kaynak tarama | BİTTİ (düzeltme 15 Eki 00:50: ilk kesit 23:25 öncesiydi) | `CS/kaynak_tarama_finans.json` · `CS/kaynak_tarama_finans_rize_para_akisi.json` · `CS/hafiza_bildirim_ccfinans_kaynak_tarama_20261014.json` | BDDK FinTürk il kredi/mevduat ACIK · Rize kredi 2,65× → SİNYAL ADAYI (Sinyal'e) · lisans_notu BİLİNMİYOR (v1.1'de doldurulacak) | ✅ BDDK yazılı izin (ürüne girecekse) | 2/81 |
 | Basın | bm_k_sayi_uyarisi alanı + BELGE/SÖYLEM sınıfı | BİTTİ | `CS/bolge_basin.json` · `CS/bm_k_sinif_tablosu_20261014.md` | Alan Vezir değer sınamasında GEÇTİ (uyumsuzluk kapandı) | — | 8/81 |
 | Basın | Kaynak tarama (ilan.gov.tr, meclis kararları) | BİTTİ | `CS/kaynak_tarama_basin.json` | İki kaynak da satırlarda | — | 8/81 |
@@ -95,6 +96,7 @@ Varsayılan kapsam 81 il / 973 ilçe; Beykoz · Kartal · Derepazarı · Rize ·
 4. **GitHub Support**: yetim commit önbellek temizliği (Vaka #06)
 5. **Acil sızıntı istisnası kararı** (cc_sinir_kanonu açık soru)
 6. ~~Ağır iş sırası~~ → **Patron karar verdi**, Vezir uyguladı (`CS/agir_is_kilidi.json`)
-7. **7/24 makine** (makine kanonu ölçümü: 8 GB, yük 13,7)
+7. **7/24 makine**
+8. **Finans sekmesi açık kalsın** (DASK 02:00 bandı Chromium ister; oturum kapanırsa koşmaz) (makine kanonu ölçümü: 8 GB, yük 13,7)
 
 *Vezir · 2026-10-14*

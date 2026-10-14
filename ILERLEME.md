@@ -31,6 +31,7 @@
 | 2026-10-15 (00:30 · kilit kararı 2 + Vaka #09 + gece raporu) | +8 | −4 | +4 | 87 | kapsam tabanı aynı | Açılan: kilit-2 ✅, Analiz sağlık düzeltme, gece raporu ✅, Vaka #09 ✅, Hafıza taşıma, Patron iCloud kararı, zincirler iskelet, Borsa kanalı ✅. Düzeltme: 15 dk ölçüm geçmişi 23:3x–00:1x yazılmamıştı (B11). Canlı sayım 161 / 74 / 87. |
 | 2026-10-15 (00:45 · lisans alanı + Patron kovası ön kayıt) | +4 | −1 | +3 | 90 | kapsam tabanı aynı | Açılan: şema v1.1 lisans ✅, EPİAŞ üyeliği (Patron), BDDK yazılı izin (Patron), 9 CC lisans doldurma. Canlı sayım 165 / 75 / 90. |
 | 2026-10-15 (01:00 · zincirler kanonu + Vaka #09 karar 2 + EVDS onaylı) | +2 | −3 | −1 | 91 | kapsam tabanı aynı | Kapanan: zincirler ✅ (iskelet→kanon), Patron iCloud kararı ✅, Rize kredi yönlendirme. Açılan: Son Silinenler Patron adımı, kilit ihlali (külliyat yeniden + builder). EVDS ihlali geri çekildi (Üst Akıl onaylı). Canlı sayım 168 / 77 / 91. |
+| 2026-10-15 (01:25 · Finans 81 il + Z1 + havalimanı + parsel kanon çelişkisi) | +6 | −3 | +3 | 94 | **Finans 81/81** (ilk tam kapsam) · Basın 8/81 | Açılan: Finans 81 il ✅, Sinyal Z1 ulusal aday, Aİ havalimanı tablosu, kuyruk Z1 öne ✅, Finans sekmesi Patron notu, şema v1.2 ✅. Düzeltme: parsel_veri_kanonu v1.1b iç çelişki (parsel_01_rize LOKAL DEĞİL) · külliyat 'ihlal' kaydı geri çekildi (BEKLE). Canlı sayım 174 / 80 / 94. |
 
 ## Retro-not (sayaç öncesi)
 
