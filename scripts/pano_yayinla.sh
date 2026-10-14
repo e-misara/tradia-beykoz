@@ -66,6 +66,27 @@ if [ "$ILERDE_BEY" -gt 0 ]; then
         | /usr/bin/grep -E '^\+' \
         | /usr/bin/grep -nE 'ada [0-9]+ ?/ ?parsel|[0-9]+ ada([sy]|[^a-zA-Zçğıöşü]|$)|parsel [0-9]+-[0-9]+|sk-ant-|ghp_[A-Za-z0-9]{20}|gho_[A-Za-z0-9]{20}|AKIA[A-Z0-9]{16}|[?&]key=[A-Za-z0-9]{10}' \
         | head -5)
+    # Vaka #07: .env'deki gerçek anahtar değerleri çalışma anında okunur (script'te tutulmaz, ekrana basılmaz)
+    GIZLI_LISTE=$(mktemp)
+    python3 - "$GIZLI_LISTE" <<'PY'
+import os, re, sys
+out = open(sys.argv[1], "w")
+for f in ("~/landgold-agents/.env", "~/finans/.env"):
+    try:
+        for l in open(os.path.expanduser(f), errors="replace"):
+            if "=" in l and not l.lstrip().startswith("#"):
+                ad, v = l.split("=", 1); v = v.strip().strip('"').strip("'")
+                if re.search(r"(KEY|TOKEN|SECRET|PASS)", ad, re.I) and len(v) >= 8:
+                    out.write(v + "\n")
+    except OSError:
+        pass
+PY
+    GIZLI_SAYI=$(git diff origin/main..HEAD -- . | /usr/bin/grep -E '^\+' | /usr/bin/grep -cF -f "$GIZLI_LISTE" || true)
+    rm -f "$GIZLI_LISTE"
+    if [ "${GIZLI_SAYI:-0}" -gt 0 ]; then
+        SIZINTI="${SIZINTI}
+.env anahtar değeri birebir eşleşme: $GIZLI_SAYI satır (değer basılmadı)"
+    fi
     if [ -n "$SIZINTI" ]; then
         kirmizi "  🔴 SIZINTI KAPISI: push edilecek commit'lerde parsel-veri/anahtar deseni var — PUSH YAPILMADI"
         echo "$SIZINTI" | cut -c1-160

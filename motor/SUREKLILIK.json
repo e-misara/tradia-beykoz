@@ -1,6 +1,6 @@
 {
  "uretici": "Vezir · motor/surekli_olc.py",
- "olcum_ani": "2026-10-14T02:13:45",
+ "olcum_ani": "2026-10-14T18:39:39",
  "pencere": "2026-09-14..2026-10-13 (30 gün)",
  "esikler": {
   "yeşil": "≥%90",
@@ -69,7 +69,7 @@
    "2026-10-10": 21,
    "2026-10-11": 70,
    "2026-10-12": 73,
-   "2026-10-13": 37
+   "2026-10-13": 40
   },
   "uyanik_kaynak": "tradia_sorgu/logs/pmset_izle.log (2 dk örnek; 720/gün = %100)"
  },
@@ -100,7 +100,7 @@
     "pencere_gunu": 30,
     "yuzde": 27,
     "renk": "kırmızı",
-    "dosya_yazim_gunu": 2,
+    "dosya_yazim_gunu": 1,
     "sorgu01_ingest_gunu": 8,
     "uretim_gunleri": [
      "2026-09-17",
@@ -112,7 +112,7 @@
      "2026-10-12",
      "2026-10-13"
     ],
-    "en_yogun_gun": "2026-10-13"
+    "en_yogun_gun": "2026-09-26"
    },
    "Hafıza": {
     "uretim_gunu": 21,
@@ -337,6 +337,122 @@
    }
   }
  },
+ "dis_kaynak_sagligi": [
+  {
+   "kaynak": "TCMB EVDS (veri yolu)",
+   "sahibi": "Borsa",
+   "ritim_esigi_gun": 3,
+   "olcum_ani_utc": "2026-10-14T15:41:40Z",
+   "uc_nokta": "evds3/igmevdsms-dis (header key, .env)",
+   "http_kodu": 200,
+   "icerik_imzasi": "JSON items=11",
+   "veri_akiyor": true,
+   "sorgu01_son_alim": "2026-08-01",
+   "yas_gun": 74,
+   "renk": "kırmızı",
+   "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
+  },
+  {
+   "kaynak": "Resmî Gazete",
+   "sahibi": "İhale",
+   "ritim_esigi_gun": 3,
+   "olcum_ani_utc": "2026-10-14T15:41:40Z",
+   "uc_nokta": "https://www.resmigazete.gov.tr/",
+   "http_kodu": 200,
+   "son_url": "https://www.resmigazete.gov.tr/",
+   "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
+   "sorgu01_son_alim": "2026-10-13",
+   "yas_gun": 1,
+   "renk": "yeşil",
+   "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
+  },
+  {
+   "kaynak": "EKAP",
+   "sahibi": "İhale",
+   "ritim_esigi_gun": 10,
+   "olcum_ani_utc": "2026-10-14T15:41:40Z",
+   "uc_nokta": "https://ekap.kik.gov.tr/",
+   "http_kodu": 200,
+   "son_url": "https://ekapv2.kik.gov.tr/",
+   "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
+   "sorgu01_son_alim": "ölçülmedi (SORGU-01'e girmiyor)",
+   "renk": "ölçülmedi"
+  },
+  {
+   "kaynak": "KAP",
+   "sahibi": "Borsa",
+   "ritim_esigi_gun": 3,
+   "olcum_ani_utc": "2026-10-14T15:41:41Z",
+   "uc_nokta": "https://www.kap.org.tr/",
+   "http_kodu": 308,
+   "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil)",
+   "sorgu01_son_alim": "2026-08-06",
+   "yas_gun": 69,
+   "renk": "kırmızı",
+   "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
+  },
+  {
+   "kaynak": "TÜİK veri portalı",
+   "sahibi": "Pazarlama/Analiz",
+   "ritim_esigi_gun": 40,
+   "olcum_ani_utc": "2026-10-14T15:41:41Z",
+   "uc_nokta": "https://veriportali.tuik.gov.tr/",
+   "http_kodu": 200,
+   "son_url": "https://veriportali.tuik.gov.tr/",
+   "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
+   "sorgu01_son_alim": "ölçülmedi (SORGU-01'e girmiyor)",
+   "renk": "ölçülmedi"
+  },
+  {
+   "kaynak": "Yahoo Finance",
+   "sahibi": "Borsa",
+   "ritim_esigi_gun": 3,
+   "olcum_ani_utc": "2026-10-14T15:41:42Z",
+   "uc_nokta": "https://query1.finance.yahoo.com/",
+   "http_kodu": 404,
+   "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil)",
+   "sorgu01_son_alim": "2026-08-06",
+   "yas_gun": 69,
+   "renk": "kırmızı",
+   "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
+  },
+  {
+   "kaynak": "Basın (yerel host'lar)",
+   "sahibi": "Basın",
+   "ritim_esigi_gun": 3,
+   "olcum_ani_utc": "2026-10-14T15:41:42Z",
+   "uc_nokta": "ölçülmedi (tek uç nokta yok — sahibi CC sağlık satırı yazmalı)",
+   "sorgu01_son_alim": "2026-10-12",
+   "yas_gun": 2,
+   "renk": "yeşil",
+   "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
+  },
+  {
+   "kaynak": "ÇED / Finans belgeleri",
+   "sahibi": "Finans",
+   "ritim_esigi_gun": 3,
+   "olcum_ani_utc": "2026-10-14T15:41:42Z",
+   "uc_nokta": "ölçülmedi (tek uç nokta yok — sahibi CC sağlık satırı yazmalı)",
+   "sorgu01_son_alim": "2026-10-13",
+   "yas_gun": 1,
+   "renk": "yeşil",
+   "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
+  },
+  {
+   "kaynak": "YouTube (Sosyal)",
+   "sahibi": "Sosyal",
+   "ritim_esigi_gun": 3,
+   "olcum_ani_utc": "2026-10-14T15:41:42Z",
+   "uc_nokta": "https://www.youtube.com/",
+   "http_kodu": 200,
+   "son_url": "https://www.youtube.com/",
+   "icerik_imzasi": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
+   "sorgu01_son_alim": "2026-10-13",
+   "yas_gun": 1,
+   "renk": "yeşil",
+   "not_": "yaş = SORGU-01 havuz alım günü; kaynağın kendi veri tarihi değil"
+  }
+ ],
  "cc_ozet_KOSU_ikincil": {
   "Hafıza": {
    "is_sayisi": 15,
@@ -407,10 +523,7 @@
    "renk": "sarı",
    "yuklu_degil": [],
    "sessiz_isler": [],
-   "son_satiri_disk_abort": [
-    "com.tradia.sosyal.gnd",
-    "com.tradia.sosyal.whisper"
-   ]
+   "son_satiri_disk_abort": []
   },
   "Tic": {
    "is_sayisi": 1,
@@ -443,9 +556,9 @@
    "son_satiri_disk_abort": []
   },
   "Borsa": {
-   "is_sayisi": 1,
+   "is_sayisi": 2,
    "olculen_is": 0,
-   "olculemeyen_is": 1,
+   "olculemeyen_is": 2,
    "kosmasi_gereken_is_gun": 0,
    "kostugu_is_gun": 0,
    "disk_uyari_is_gun": 0,
@@ -593,7 +706,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "3",
+    "runs": "2",
     "son_exit": "0",
     "state": "not running"
    },
@@ -618,7 +731,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "43",
+    "runs": "26",
     "son_exit": "2",
     "state": "spawn scheduled"
    },
@@ -660,7 +773,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "1",
     "son_exit": "0",
     "state": "not running"
    },
@@ -668,6 +781,27 @@
    "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
+   "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
+   "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
+   "disk_uyari_gun": "ölçülmedi",
+   "pil_olasi_kacirma_gun": "ölçülmedi",
+   "sureklilik_yuzde": null,
+   "renk": "ölçülmedi"
+  },
+  {
+   "label": "com.tradia.ccborsa.evds_gunluk",
+   "cc": "Borsa",
+   "plist_dogum": "2026-10-14",
+   "launchctl": {
+    "yuklu": true,
+    "runs": "1",
+    "son_exit": "(never exited)",
+    "state": "running"
+   },
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
+   "son_satir_disk_abort": false,
+   "kosmasi_gereken_gun": 0,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
    "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
    "disk_uyari_gun": "ölçülmedi",
@@ -745,8 +879,8 @@
    "launchctl": {
     "yuklu": true,
     "runs": "1",
-    "son_exit": "(never exited)",
-    "state": "running"
+    "son_exit": "1",
+    "state": "not running"
    },
    "log_son_iz": "log yok/boş",
    "sessiz_gun": null,
@@ -786,9 +920,9 @@
    "plist_dogum": "2026-06-12",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
+    "runs": "0",
     "son_exit": "(never exited)",
-    "state": "running"
+    "state": "not running"
    },
    "log_son_iz": "2026-10-14",
    "sessiz_gun": 0,
@@ -807,8 +941,8 @@
    "plist_dogum": "2026-06-12",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
-    "son_exit": "0",
+    "runs": "0",
+    "son_exit": "(never exited)",
     "state": "not running"
    },
    "log_son_iz": "2026-10-14",
@@ -828,7 +962,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "1",
     "son_exit": "0",
     "state": "not running"
    },
@@ -878,12 +1012,12 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-12",
-   "sessiz_gun": 2,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -1033,7 +1167,7 @@
    "plist_dogum": "2026-10-13",
    "launchctl": {
     "yuklu": true,
-    "runs": "42",
+    "runs": "26",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1054,12 +1188,12 @@
    "plist_dogum": "2026-07-16",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-13",
-   "sessiz_gun": 1,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -1096,12 +1230,12 @@
    "plist_dogum": "2026-07-09",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-12",
-   "sessiz_gun": 2,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -1117,8 +1251,8 @@
    "plist_dogum": "2026-10-14",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
-    "son_exit": "0",
+    "runs": "0",
+    "son_exit": "(never exited)",
     "state": "not running"
    },
    "log_son_iz": "2026-10-14",
@@ -1138,12 +1272,12 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-12",
-   "sessiz_gun": 2,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": 25,
@@ -1190,8 +1324,8 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "2",
+    "son_exit": "78: EX_CONFIG",
     "state": "not running"
    },
    "log_son_iz": "2026-08-02",
@@ -1211,7 +1345,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "4",
+    "runs": "3",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1232,7 +1366,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "1",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1253,7 +1387,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "5",
+    "runs": "3",
     "son_exit": "2",
     "state": "not running"
    },
@@ -1304,7 +1438,7 @@
    "plist_dogum": "2026-08-08",
    "launchctl": {
     "yuklu": true,
-    "runs": "22",
+    "runs": "13",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1325,7 +1459,7 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "43",
+    "runs": "26",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1346,7 +1480,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "1",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1367,7 +1501,7 @@
    "plist_dogum": "2026-07-31",
    "launchctl": {
     "yuklu": true,
-    "runs": "22",
+    "runs": "13",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1388,13 +1522,13 @@
    "plist_dogum": "2026-08-01",
    "launchctl": {
     "yuklu": true,
-    "runs": "0",
-    "son_exit": "(never exited)",
+    "runs": "1",
+    "son_exit": "0",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-13",
-   "sessiz_gun": 1,
-   "son_satir_disk_abort": true,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
+   "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
    "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
@@ -1413,8 +1547,8 @@
     "son_exit": "(never exited)",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-13",
-   "sessiz_gun": 1,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 18,
    "kostugu_gun": 15,
@@ -1439,9 +1573,9 @@
     "son_exit": "(never exited)",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-11",
-   "sessiz_gun": 3,
-   "son_satir_disk_abort": true,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
+   "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
    "exit_degil_0_gun": "ölçülmedi (launchd yalnız son exit'i tutar)",
@@ -1481,8 +1615,8 @@
     "son_exit": "(never exited)",
     "state": "not running"
    },
-   "log_son_iz": "2026-10-13",
-   "sessiz_gun": 1,
+   "log_son_iz": "2026-10-14",
+   "sessiz_gun": 0,
    "son_satir_disk_abort": false,
    "kosmasi_gereken_gun": 30,
    "kostugu_gun": "ölçülmedi (log boş ya da koşu satırları tarihsiz — yalnız son-iz ölçülür)",
@@ -1562,7 +1696,7 @@
    "plist_dogum": "2026-10-11",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
+    "runs": "1",
     "son_exit": "0",
     "state": "not running"
    },
@@ -1584,9 +1718,9 @@
    "plist_dogum": "2026-08-06",
    "launchctl": {
     "yuklu": true,
-    "runs": "1",
+    "runs": "0",
     "son_exit": "(never exited)",
-    "state": "running"
+    "state": "not running"
    },
    "log_son_iz": "2026-10-14",
    "sessiz_gun": 0,
@@ -1606,8 +1740,8 @@
    "launchctl": {
     "yuklu": true,
     "runs": "1",
-    "son_exit": "0",
-    "state": "not running"
+    "son_exit": "(never exited)",
+    "state": "running"
    },
    "log_son_iz": "2026-10-14",
    "sessiz_gun": 0,
@@ -1644,8 +1778,8 @@
    "plist_dogum": "2026-08-06",
    "launchctl": {
     "yuklu": true,
-    "runs": "2",
-    "son_exit": "0",
+    "runs": "0",
+    "son_exit": "(never exited)",
     "state": "not running"
    },
    "log_son_iz": "2026-10-14",
@@ -1739,7 +1873,7 @@
      "yeni_kaynak": 0
     },
     "2026-10-07..2026-10-13": {
-     "yeni_kayit": 256,
+     "yeni_kayit": 299,
      "yeni_ilce": 0,
      "yeni_kaynak": 0
     }

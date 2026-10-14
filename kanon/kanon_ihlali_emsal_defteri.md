@@ -101,6 +101,59 @@
 
 ---
 
+## Vaka #07 — EVDS anahtarı, ikinci tekrar
+
+- **Tarih:** 2026-10-14 · **Açan:** Patron · **Kayıt:** Vezir
+- **Tekrar:** İlk olay 2026-09-25 (E2): anahtarın settings.json'da düz metin durduğu fark edildi, yalnız arşiv redaksiyonuna desen eklendi; kök çözülmedi.
+
+### Olgu (Patron + Vezir ölçümü)
+1. **Anahtar 4 yerde, tek değer** (sha256 `6470bf2638…`): `~/landgold-agents/.env` (`TCMB_API_KEY`) · `~/finans/.env` (`EVDS_API_KEY`) · `~/.claude/settings.json` (9 izin satırı) · `~/.claude/settings.local.json` (1 izin satırı). Patron "iki yer" diye açtı; ölçüm dört çıktı.
+2. **Seri taze değil:** Borsa hattı beyanı 2026-07-17'den beri. Vezir ölçümü: SORGU-01'de `evds_ham` son alımı **2026-08-01** (8.621 kayıt). Bu havuzun alım günüdür, seri tarihi değildir.
+3. **Üç ay kimse fark etmedi.** Ama bilgi vardı: 2026-07-31 tarihli bir CC durum dosyası anahtarın EVDS3'te geçersiz olduğunu zaten yazmıştı. Bilgi dolaşmadı.
+4. **Pazarlama test etmeden Patron'a yönlendirdi:** hedef kartında "EVDS3 anahtarı, ücretsiz başvuru, Patron'da". Hipotez tablosu yok, HTTP kodu yok.
+5. **Uç nokta durumu (Vezir · 2026-10-14 15:34Z · anahtarsız):** `evds2…/` ve `evds2…/service/evds/` → **200, evds3'e yönlendirme** · `evds3…/` → 200 · `evds3…/igmevdsms-dis/` → **404**. Hipotez (a) "uç nokta taşındı" kanıtlı; (b)–(e) elenmedi.
+
+### 🔴 Public sızıntı (tarama sonucu: VAR)
+- **misara-vezir (public):** **2026-06-11'den beri** 3 tutanak dosyasında + pano kopyasında.
+- **tradia-beykoz (public):** 2026-09-25'ten beri 4 dosyada. **İkisini Vezir yazdı**: diriliş paketi ve redaksiyon kaydı. Kalan ikisi redaksiyon betiği ile testi; anahtar **redaksiyon deseninin kendisi** olarak düz metin duruyordu.
+- **misara-arsiv (private):** 5 dosya. Redaksiyon kaçırdı, çünkü desen `\b<anahtar>` idi ve tutanakta anahtar `\b` metninden sonra geliyordu; kelime sınırı oluşmadı.
+- Commit listesi: **private** `misara-arsiv/yedek/VAKA07_anahtar_tarama.md` (sızan içeriğe link olmasın diye public'e yazılmaz).
+
+### Düzeltme (Vezir · 14 Eki · yıkıcı olmayan)
+- HEAD redaksiyonu: tradia-beykoz 2, misara-vezir 17, misara-arsiv 12 yer → `[REDACTED-APIKEY-EVDS]`. Üç repoda HEAD'de kalan **0**.
+- `arsiv_cek.py`: anahtar koddan çıktı; değerler çalışma anında `.env`'den okunuyor, birebir eşleşme, `\b` yok. Test 16/16 (gerçek anahtarlı gizli test dahil, değer basılmadan).
+- `pano_yayinla.sh` kapısı: push öncesi fark `.env` değerleriyle birebir taranıyor. Anahtar içeren eski commit'i yakaladı, temiz farkta 0.
+- Kanon: `kanon/anahtar_yonetimi_kanonu_v1.md`.
+
+### Açık (Patron)
+1. **Anahtar değişimi.** Değer 4 aydır public. Geçmiş temizlense bile kopyalanmış olabilir. Geçerliliği şüpheli olsa da iptal + yeni anahtar.
+2. **Geçmiş temizliği:** misara-vezir + tradia-beykoz. Değişim yapılırsa aciliyeti düşer.
+3. **settings.json / settings.local.json:** 10 izin satırı anahtarsız desene çevrilmeli.
+
+### Vezir anahtarlı testi (2026-10-14 15:38Z · değerler basılmadı)
+| Anahtar | Uç nokta | HTTP | Yanıt |
+|---|---|---|---|
+| YENİ (Patron 14 Eki, `.env`'de) | `evds3…/igmevdsms-dis/series=…` (header `key`) | **200** | **JSON, 14 kayıt** (USD 01–14 Eki) |
+| YENİ | `evds2…/service/evds/series=…` | 200 | **HTML**: evds3 ana sayfasına yönlendirme, veri yok |
+| ESKİ (public olan) | `evds3…/igmevdsms-dis/…` | **200** | **JSON, 14 kayıt** → eski anahtar **HÂLÂ GEÇERLİ** |
+| ESKİ | `evds2…/service/evds/…` | 200 | HTML, veri yok |
+
+**Hüküm (kanon kural 3 tablosuyla):**
+- (a) **Uç nokta taşındı → KANITLANDI.** evds2 yolu 200 + HTML döndürüyor. JSON bekleyen istemci sessizce boş kalır.
+- (c) **Anahtar geçersiz → ELENDİ.** İki anahtar da veri döndü.
+- **Sonuç:** "Yeni anahtar başvurusu" yönlendirmesi gereksizdi. Seriyi durduran, istemcinin hâlâ evds2 yolunu çağırması. 07-31'deki "EVDS3'te GEÇERSİZ" notu da büyük olasılıkla yanlış yolla yapılmış bir testti (doğrulanmalı).
+- **"HTTP 200 = canlı" değildir:** içerik imzası (JSON + `items`) kontrol edilmeli (Kitap'ın 13 Eki yoklama dersiyle aynı).
+
+### Kök neden
+⏳ Analiz raporu `arsiv/evds3_kok_neden_2026-10-14.md` hâlâ bekleniyor; Vezir testi kök nedeni yukarıda daralttı. Rapor gelince karşılaştırılacak.
+
+### Emsal ders
+1. Bir sızıntıya **desen eklemek** kökü çözmez. 09-25'te anahtar yerinde kaldı, üstelik desenin kendisi public'e taşıdı.
+2. Redaksiyon deseni sırrın **kopyası olamaz.** Sır tek kaynaktan çalışma anında okunur.
+3. "Geçersiz" bilgisi 07-31'de diskte vardı, 10-14'e kadar dolaşmadı. **Dış kaynak sağlığı günlük satır olmalı** (kanon kural 2).
+
+---
+
 ## İşletim kuralı
 
 - **Ekleme:** Vezir her turda yeni ihlal tespit ederse `Vaka #NN` bloğu ekler (numara artan). Eski vakalar dokunulmaz.

@@ -82,14 +82,32 @@ REDACT_IBAN_TR = re.compile(
     r"\bTR\d{2}[\s]?(?:\d{4}[\s]?){5}\d{2}\b"
 )
 
-# E2 (2026-09-25): API anahtarı — özellikle TCMB EVDS `key=93lLgxqTVB` biçimi
+# E2 (2026-09-25): API anahtarı — özellikle TCMB EVDS `key=<anahtar>` biçimi
 # ve genel URL query parametresi `key=<alfanumerik>`.
-# Örnek: https://evds2.tcmb.gov.tr/service/evds/...&key=93lLgxqTVB
+# Örnek: https://evds2.tcmb.gov.tr/service/evds/...&key=<anahtar>
 REDACT_APIKEY_URL = re.compile(
     r"(?i)([?&](?:key|api[_-]?key|token|apikey|access[_-]?token)=)[A-Za-z0-9_-]{8,64}"
 )
 # TCMB EVDS'nin bilinen sabit anahtarı (Patron settings.json'ında düz metin)
-REDACT_EVDS_KEY = re.compile(r"\b93lLgxqTVB[A-Za-z0-9]*\b")
+# Vaka #07 (2026-10-14): anahtar KODDA TUTULMAZ. Değerler çalışma anında tek kaynaktan okunur
+# (kanon/anahtar_yonetimi_kanonu_v1.md · ~/landgold-agents/.env; geçiş döneminde ~/finans/.env de).
+# Birebir metin eşleşmesi, \b YOK (eski \b<anahtar> deseni "\b" metninden sonra eşleşmiyordu → 13 Eki kaçağı).
+def _gizli_degerler():
+    out = {}
+    for f in (Path.home() / "landgold-agents/.env", Path.home() / "finans/.env"):
+        try:
+            for satir in f.read_text(errors="replace").splitlines():
+                if "=" not in satir or satir.lstrip().startswith("#"):
+                    continue
+                ad, deger = satir.split("=", 1)
+                deger = deger.strip().strip('"').strip("'")
+                if re.search(r"(KEY|TOKEN|SECRET|PASS)", ad, re.I) and len(deger) >= 8:
+                    etiket = "EVDS" if re.search(r"EVDS|TCMB", ad, re.I) else ad.strip().upper()
+                    out[deger] = f"[REDACTED-APIKEY-{etiket}]"
+        except OSError:
+            pass
+    return out
+GIZLI_DEGERLER = _gizli_degerler()
 
 # Uzun base64 blob'ları (>10KB kesintisiz) — genelde ekran görüntüsü
 # İçinde false-positive tetikleyicileri (eyJ, sk-*, TC hane, vb.) barındırır.
@@ -122,7 +140,8 @@ def temizle(metin: str, oturum_id: str = "?") -> str:
     metin = REDACT_IBAN_TR.sub("[REDACTED-IBAN]", metin)
     # E2: API anahtarı — URL query + bilinen EVDS anahtar
     metin = REDACT_APIKEY_URL.sub(r"\1[REDACTED-APIKEY]", metin)
-    metin = REDACT_EVDS_KEY.sub("[REDACTED-APIKEY-EVDS]", metin)
+    for _deger, _etiket in GIZLI_DEGERLER.items():
+        metin = metin.replace(_deger, _etiket)
     metin = REDACT_TOKEN.sub("[REDACTED-TOKEN]", metin)
     metin = REDACT_JWT.sub("[REDACTED-JWT]", metin)  # eyJ.eyJ.sig
     metin = REDACT_ABS_PATH.sub("~/", metin)

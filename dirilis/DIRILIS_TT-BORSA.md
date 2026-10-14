@@ -41,7 +41,7 @@ Yeni oturum açıldığında bu 5 dosyayı sırayla oku:
   - EKGYO (KAP JSONL ingested): 14 kayıt
   - Şişecam tarihsel: 129 kayıt (2015-05 → Paşabahçe/Riva zinciri)
   - Kalan **495 firma** henüz SORGU-01'e girmedi
-- **EVDS anahtarı** aktif (`93lLgxqTVB`) — E2 (25 Eyl): Vezir arşivinde artık [REDACTED-APIKEY-EVDS]
+- **EVDS anahtarı** aktif (`[REDACTED-APIKEY-EVDS]`) — E2 (25 Eyl): Vezir arşivinde artık [REDACTED-APIKEY-EVDS]
 
 ### 3.2 · Açık borçlar
 

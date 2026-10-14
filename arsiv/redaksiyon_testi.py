@@ -22,6 +22,16 @@ try:
 except ImportError:
     print("❌ arsiv_cek.py bulunamadı"); sys.exit(2)
 
+def _gercek():
+    import os
+    try:
+        for l in open(os.path.expanduser("~/landgold-agents/.env")):
+            if l.startswith("TCMB_API_KEY="):
+                return l.split("=", 1)[1].strip().strip('"').strip("'")
+    except OSError:
+        pass
+    return "YOK-ENV-ATLA"
+
 # ─── 12 test örneği ─────────────────────────────────────────
 ORNEK = [
     # (etiket, ham, kaçamayacak-token/deseni)
@@ -41,8 +51,10 @@ ORNEK = [
     # D1 · Claude Code proje-yolu tire-ayraçlı slug
     ("13. Tire slug path", "log: ~/.claude/projects/-Users-GAC-A/oturum.jsonl", "-Users-GAC-A"),
     # E2 · TCMB EVDS API anahtarı (Patron settings.json'da düz metin)
-    ("14. EVDS anahtar", "https://evds2.tcmb.gov.tr/service/evds/series/data?series=X&key=93lLgxqTVB", "93lLgxqTVB"),
+    ("14. EVDS anahtar", "https://evds2.tcmb.gov.tr/service/evds/series/data?series=X&key=Fk9dQ2mZ7x", "Fk9dQ2mZ7x"),
     # E2 · Genel URL query anahtar deseni
+    # Vaka #07 · gerçek anahtar düz yazı içinde (değer .env'den, çıktıya BASILMAZ)
+    ("16. (gizli) .env anahtarı düz yazıda", "Eski API key (" + _gercek() + ") hâlâ geçerli olabilir", _gercek()),
     ("15. URL query key", "https://api.example.com/data?apikey=Abc12345XYZabc987", "Abc12345XYZabc987"),
 ]
 
@@ -58,9 +70,10 @@ def testet():
         kaci = iz in temiz  # iz hâlâ görünüyorsa temizlik başarısız
         if kaci:
             print(f"  🔴 {etiket}")
-            print(f"     ham   : {ham}")
-            print(f"     temiz : {temiz}")
-            print(f"     kaçak iz: {iz!r}")
+            if "(gizli)" not in etiket:
+                print(f"     ham   : {ham}")
+                print(f"     temiz : {temiz}")
+                print(f"     kaçak iz: {iz!r}")
             kirmizi += 1
             detay.append((etiket, "KAÇAK", iz, temiz))
         else:
@@ -68,7 +81,7 @@ def testet():
             yesil += 1
             detay.append((etiket, "TEMİZ", iz, temiz))
     print("═" * 70)
-    print(f"  YEŞİL: {yesil}/12 · KIRMIZI: {kirmizi}/12")
+    print(f"  YEŞİL: {yesil}/{len(ORNEK)} · KIRMIZI: {kirmizi}/{len(ORNEK)}")
     print("═" * 70)
     if kirmizi > 0:
         print("\n🔴 PUSH YASAK — regex katmanı eksik. arsiv_cek.py güncellenmeli.")
@@ -77,7 +90,7 @@ def testet():
             if dur == "KAÇAK":
                 print(f"  - {etiket}: {iz!r} desen katmanı yok")
         return 1
-    print("\n🟢 12/12 TEMİZ — PUSH SERBEST")
+    print("\n🟢 TÜMÜ TEMİZ — PUSH SERBEST")
     return 0
 
 

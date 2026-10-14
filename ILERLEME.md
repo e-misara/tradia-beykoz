@@ -17,6 +17,7 @@
 | 2026-10-14 (süreklilik + hedef kartları) | +6 | −2 | +4 | 48 | Basın: 970 ilçe (3/973 · gerekli 18,7/hafta · bu hafta 3) · diğer 15 CC: hedef beyanı yok → ölçülmedi | Açılan: süreklilik ✅, kapsam ✅, HEDEF_HAVUZU, koşu-damgası, 73-gün-sessiz teşhisi (Hafıza), Basın hedef eğrisi. Kapanan: süreklilik + kapsam teslimi. Canlı sayım 86 / 38 / 48. |
 | 2026-10-14 (ek · Vaka #06 sızıntı) | +3 | −1 | +2 | 50 | Basın: 970 ilçe (değişmedi) | Açılan: Patron geçmiş-temizlik kararı, sızıntı kapısı (✅ doğdu), Hafıza süzgeci. Kapanan: sızıntı kapısı. Canlı sayım 89 / 39 / 50. |
 | 2026-10-14 (derleme + geçmiş temizliği + ölçü düzeltmesi) | +7 | −4 | +3 | 53 | Basın: 970 ilçe · üretim 6/30 gün (hedef hızı 18,7 ilçe/hafta) · diğer 12 kart ÖNERİ statüsünde hedef → uzaklık kartlarda, onaysız | Açılan: GitHub Support (Patron), Vaka #02/#05 geçmiş kararı (Patron), üretim ölçüsü ✅, ham-veri kanonu ✅, Tic/İhale/Sosyal kanon uyumu, Hafıza alarm şişmesi, Borsa kartı. Kapanan: geçmiş temizliği ✅, HEDEF_HAVUZU derleme ✅, üretim ölçüsü, kanon. Canlı sayım 96 / 43 / 53. |
+| 2026-10-14 (Vaka #07 EVDS anahtarı) | +8 | −2 | +6 | 59 | Basın: 970 ilçe (değişmedi) | Açılan: Patron anahtar değişimi, Patron geçmiş temizliği, Patron settings.json, Finans/TT-MAP ikinci .env, Analiz kök neden, Vaka #07 teslimi (✅), yeni anahtar .env + test (✅), Borsa istemci yolu (kök neden: uç nokta, anahtar değil). Canlı sayım 104 / 45 / 59. |
 
 ## Retro-not (sayaç öncesi)
 
