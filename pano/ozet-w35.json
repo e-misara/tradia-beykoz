@@ -364,13 +364,20 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 165,
-    "acik": 90,
+    "toplam": 166,
+    "acik": 91,
     "kapali": 75,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "Sinyal: Rize kredi sıçraması SİNYAL ADAYI (Finans BDDK FinTürk · 2,65× · reel +%24 · inşaat 7,8×) — vaka DEĞİL",
+        "kim": "CC-Signals (karar) · CC-Finans (kaynak)",
+        "verildi": "2026-10-15 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · eşik önce + K≥2 (tek kaynak BDDK; ikinci eksen gerekli) · il-düzeyi PROXY, PARSEL-01'e doğrudan girmez"
+      },
       {
         "vaat": "✅ Kaynak tarama şeması v1.1: lisans alanı (IC_KULLANIM/KAYNAK_GOSTER/YAZILI_IZIN/YASAK + dayanak) · lisanssız ACIK sayılmaz",
         "kim": "Patron (karar) · Vezir (kayıt+betik)",
@@ -519,7 +526,7 @@
         "gecerli": "AKTİF"
       },
       {
-        "vaat": "9 ÇIKTI YOK prompt (defter): Analiz motorlu/Hal/DFE · Pazarlama bülten, başlık eşleme, kaynak tarama · Finans/Kitap/Arşiv kaynak tarama · Basın tüm Türkiye A/B/C · Aİ evren export+ad_cozumle",
+        "vaat": "8 ÇIKTI YOK prompt (defter · Finans kaynak tarama 23:25'te geldi, düzeltildi)",
         "kim": "ilgili CC'ler",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,

@@ -8,11 +8,11 @@
 
 | Durum | Adet |
 |---|---|
-| BİTTİ | 41 |
+| BİTTİ | 44 |
 | KISMEN | 8 |
 | BEKLİYOR | 2 |
-| ÇIKTI YOK | 9 |
-| **Toplam prompt** | **60** |
+| ÇIKTI YOK | 8 |
+| **Toplam prompt** | **62** |
 
 Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 
@@ -40,7 +40,7 @@ Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 | Pazarlama | Envanter başlık eşleme | ÇIKTI YOK | — | Dataflow envanterinde eşleme sütunu yok (yalnız `ad_tr`) | — | 81/81 |
 | Pazarlama | Kaynak tarama | ÇIKTI YOK | — | `kaynak_tarama_pazarlama.json` yok | — | 81/81 |
 | Finans | EVDS seri yenileme | BİTTİ | `CS/hafiza_bildirim_ccfinans_evds_yenileme_20261014.json` | 18:33 "işlem yapma" → 18:48 yenilendi | — | 9/81 |
-| Finans | Kaynak tarama | ÇIKTI YOK | — | `kaynak_tarama_finans.json` yok | — | 9/81 |
+| Finans | Kaynak tarama | BİTTİ (düzeltme 15 Eki 00:50: ilk kesit 23:25 öncesiydi) | `CS/kaynak_tarama_finans.json` · `CS/kaynak_tarama_finans_rize_para_akisi.json` · `CS/hafiza_bildirim_ccfinans_kaynak_tarama_20261014.json` | BDDK FinTürk il kredi/mevduat ACIK · Rize kredi 2,65× → SİNYAL ADAYI (Sinyal'e) · lisans_notu BİLİNMİYOR (v1.1'de doldurulacak) | ✅ BDDK yazılı izin (ürüne girecekse) | 2/81 |
 | Basın | bm_k_sayi_uyarisi alanı + BELGE/SÖYLEM sınıfı | BİTTİ | `CS/bolge_basin.json` · `CS/bm_k_sinif_tablosu_20261014.md` | Alan Vezir değer sınamasında GEÇTİ (uyumsuzluk kapandı) | — | 8/81 |
 | Basın | Kaynak tarama (ilan.gov.tr, meclis kararları) | BİTTİ | `CS/kaynak_tarama_basin.json` | İki kaynak da satırlarda | — | 8/81 |
 | Basın | Tüm Türkiye kapsam A/B/C | ÇIKTI YOK | — | Basın tarafında dosya yok. Vezir 973 ilçe kuyruğunu açtı (`TB/motor/KUYRUK.json → basin_ulusal`) | — | 8/81 |
@@ -80,6 +80,8 @@ Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 | Vezir | ÇIKTI YOK / KISMEN sahiplere bildirim (16 satır) | BİTTİ | `CS/hafiza_bildirim_vezir_defter_eksikleri_20261014.json` | Son tarih 2026-10-15 12:00 · Analiz sağlık betiğinde /usr/bin/python3 shim + curl doğrudan bulundu | — | — |
 | Vezir | CDN teyidi sabah + TEYİTSİZ damgası | BİTTİ | `TB/motor/YAYIN_TEYIT.json` · launchd `com.tradia.vezir.yayin_teyit` 08:30 | Teyit modu denendi: 957dbf5 TEYİTLİ (1. deneme) | — | — |
 | Vezir | Yarınki defterde kapsam oranı tablosu | BİTTİ | `TB/motor/prompt_defteri_birlestir.py` | Taban 81/34/11/10/9/8/2; birleştirici önce kapsamı tazeler | — | — |
+| Vezir | Finans Rize kredi bulgusu → SİNYAL ADAYI (vaka değil) | BİTTİ | `CS/vezir_bildirim_signals_rize_kredi_sinyal_adayi.json` | Sinyal'e yönlendirildi; eşik+K≥2 Sinyal'de | — | — |
+| Vezir | Kaynak şeması v1.1 lisans alanı + Patron kovası ön kayıt (EPİAŞ, BDDK) | BİTTİ | `TB/kanon/kaynak_tarama_semasi_v1.md` · `TB/motor/kaynak_evreni_birlestir.py` | lisanssız ACIK sayılmaz | ✅ EPİAŞ üyeliği (isteğe bağlı) · BDDK yazılı izin | — |
 
 ## Kapsam kuralı (kanon/kapsam_kanonu_v1.md · bugün yürürlük)
 
@@ -89,9 +91,10 @@ Varsayılan kapsam 81 il / 973 ilçe; Beykoz · Kartal · Derepazarı · Rize ·
 
 1. **Eski EVDS anahtarını TCMB'de iptal et** (hâlâ geçerli ve public; Vaka #07)
 2. **`~/.claude/settings.local.json`**: 1 izin satırında eski anahtar
-3. **GitHub Support**: yetim commit önbellek temizliği (Vaka #06)
-4. **Acil sızıntı istisnası kararı** (cc_sinir_kanonu açık soru)
-5. ~~Ağır iş sırası~~ → **Patron karar verdi**, Vezir uyguladı (`CS/agir_is_kilidi.json`)
-6. **7/24 makine** (makine kanonu ölçümü: 8 GB, yük 13,7)
+3. **EPİAŞ Şeffaflık üyeliği** (isteğe bağlı) · **BDDK yazılı kullanım izni** (ürüne girecekse) — kaynak evreni v1.1 kova ön kayıt
+4. **GitHub Support**: yetim commit önbellek temizliği (Vaka #06)
+5. **Acil sızıntı istisnası kararı** (cc_sinir_kanonu açık soru)
+6. ~~Ağır iş sırası~~ → **Patron karar verdi**, Vezir uyguladı (`CS/agir_is_kilidi.json`)
+7. **7/24 makine** (makine kanonu ölçümü: 8 GB, yük 13,7)
 
 *Vezir · 2026-10-14*
