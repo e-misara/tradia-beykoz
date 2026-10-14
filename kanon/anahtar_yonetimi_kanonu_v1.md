@@ -1,6 +1,6 @@
 # ANAHTAR YÖNETİMİ KANONU v1
 
-**Statü:** 🟢 KANON · v1.2 · Patron direktifi 2026-10-14 · Emsal: Vaka #07 (EVDS anahtarı, ikinci tekrar)
+**Statü:** 🟢 KANON · v1.3 · Patron direktifi 2026-10-14 · Emsal: Vaka #07 (EVDS anahtarı, ikinci tekrar)
 **Bağlı:** Standing #37 (redaksiyon), parsel_veri_kanonu_v1 (public sınırı), ham_veri_depolama_kanonu_v1
 
 ---
@@ -35,7 +35,7 @@
 |---|---|---|---|
 | `TCMB_API_KEY` | TCMB EVDS3 | Borsa | ✅ yeni değer 14 Eki · canlı test 200 |
 | `TCMB_API_KEY_ESKI` | TCMB EVDS (iptal edilecek) | — | geçici; TCMB'de iptalden sonra satır silinir |
-| `TUIK_API_KEY` | TÜİK SDMX | Borsa + Analiz (TÜİK toplayıcıları) | ⏳ Patron kovasında, `.env`'e gelecek · **Kural 1–4 aynen geçerli** · ilk kullanımda kural 2 sağlık satırı + kural 3 hipotez tablosu |
+| `TUIK_API_KEY` | TÜİK veri portalı (veriportali.tuik.gov.tr) | Borsa + Analiz (TÜİK toplayıcıları) | ✅ 14 Eki `.env`'e yazıldı (Patron) · başka kopya taraması yapıldı · redaksiyon `[REDACTED-APIKEY-TUIK]` + kapı tanıyor (test) · **sağlık testi YAPILMADI**: doğru veri uç noktasını toplayıcı CC belirler, ilk kullanımda kural 2 + 3 |
 
 ## Kural 5 — EVDS: tek istemci, tek sağlık kontrolü (v1.1 · Patron kararı 2026-10-14)
 
@@ -63,6 +63,7 @@
 
 ## Değişiklik kaydı
 - **v1 (14 Eki öğle):** Kural 1–4.
+- **v1.3 (14 Eki gece):** `TUIK_API_KEY` `.env`'de.
 - **v1.2 (14 Eki gece):** `TUIK_API_KEY` kaydı · `.evds_key` kapandı (sınır ihlali cc_sinir_kanonu'nda).
 - **v1.1 (14 Eki akşam):** Kural 5 (EVDS tek istemci + tek sağlık) · uyumsuzluk tablosu yeniden ölçüldü (settings.json kapandı; Pazarlama `.evds_key` eklendi; istemci envanteri 3 → 8 dosya / 4 CC; Hafıza okuma teyidi: HAYIR).
 
