@@ -2050,5 +2050,118 @@
    }
   ],
   "m4_port_8789": "DİNLİYOR"
+ },
+ "bildirim_disiplini": {
+  "2026-10-14": {
+   "yazan": 0,
+   "toplam_cc": 15,
+   "bildirim_yok": [
+    "analiz",
+    "borsa",
+    "pazarlama",
+    "finans",
+    "basin",
+    "signals",
+    "ai",
+    "sosyal",
+    "ihale",
+    "map",
+    "tic",
+    "kitap",
+    "arsiv",
+    "hafiza",
+    "vezir"
+   ],
+   "beyan_dosya_uyusmazligi": 0,
+   "durum": {
+    "BİLDİRİM YOK": 15
+   }
+  }
+ },
+ "kapsam_orani": {
+  "analiz": {
+   "il": 2,
+   "oran": "2/81",
+   "yuzde": 2,
+   "dosyalar": [
+    "bolge_analiz.json",
+    "bolge_analiz_olcum_1.json"
+   ]
+  },
+  "borsa": {
+   "il": 34,
+   "oran": "34/81",
+   "yuzde": 42,
+   "dosyalar": [
+    "bolge_borsa.json"
+   ]
+  },
+  "pazarlama": {
+   "il": 81,
+   "oran": "81/81",
+   "yuzde": 100,
+   "dosyalar": [
+    "bolge_pazarlama.json",
+    "tuik_yabanci_il_2026-08.json",
+    "evds_il_toplam_konut_satis_2026-08.json"
+   ]
+  },
+  "finans": {
+   "il": 9,
+   "oran": "9/81",
+   "yuzde": 11,
+   "dosyalar": [
+    "bolge_finans.json",
+    "bolge_finans_buyuksehir9.json"
+   ]
+  },
+  "basin": {
+   "il": 8,
+   "oran": "8/81",
+   "yuzde": 10,
+   "dosyalar": [
+    "bolge_basin.json"
+   ]
+  },
+  "ai": {
+   "il": 10,
+   "oran": "10/81",
+   "yuzde": 12,
+   "dosyalar": [
+    "bolge_ai.json"
+   ]
+  },
+  "sosyal": {
+   "il": 2,
+   "oran": "2/81",
+   "yuzde": 2,
+   "dosyalar": [
+    "bolge_sosyal.json"
+   ]
+  },
+  "ihale": {
+   "il": 2,
+   "oran": "2/81",
+   "yuzde": 2,
+   "dosyalar": [
+    "bolge_ihale.json"
+   ]
+  },
+  "map": {
+   "il": 11,
+   "oran": "11/81",
+   "yuzde": 14,
+   "dosyalar": [
+    "bolge_map.json"
+   ]
+  },
+  "tic": {
+   "il": 2,
+   "oran": "2/81",
+   "yuzde": 2,
+   "dosyalar": [
+    "bolge_tic.json"
+   ]
+  }
  }
 }

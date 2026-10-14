@@ -26,6 +26,7 @@
 | 2026-10-14 (gece · TÜİK sağlık ilk ölçüm + Patron adımı süzgeci) | +1 | −2 | −1 | 70 | Basın: 970 ilçe (değişmedi) | Açılan: Patron adımı süzgeci (✅ doğdu). Kapanan: süzgeç + TÜİK ilk sağlık satırı (200, 508 dataflow, yeşil). Canlı sayım 129 / 59 / 70. |
 | 2026-10-14 (gece · TÜİK JSON turu) | +2 | −1 | +1 | 71 | Basın: 970 ilçe (değişmedi) | Açılan: JSON turu ✅, kesik CSV kuralı (toplayıcı). Kapanan: JSON turu. Canlı sayım 131 / 60 / 71. |
 | 2026-10-14 (gece · adres anahtarı + makine denetimi) | +11 | −4 | +7 | 78 | Basın: 973 ilçe kuyrukta (3 DOLU) · hedef hızı 18,7/hafta | Açılan: 4 ✅ (adres kanonu, Basın kuyruğu, adres denetimi, makine kanonu) + Basın launchd, Hafıza launchd/M4, Borsa tahmini, Pazarlama sunum satırı, Aİ kodlama, CC kodlama, BŞ il merkezi. Canlı sayım 142 / 64 / 78. |
+| 2026-10-14 (23:50 · prompt defteri + kapsam kanonu) | +5 | −3 | +2 | 81 | Basın: 973 ilçe kuyrukta · kapsam 8/81 · Pazarlama 81/81 | Açılan: defter ✅, kapsam kanonu ✅, 81 il tam hasat, Hafıza disk şeması, 9 ÇIKTI YOK. Kapanan: iki ✅ + dataflow envanteri. Canlı sayım 148 / 67 / 81. |
 
 ## Retro-not (sayaç öncesi)
 
