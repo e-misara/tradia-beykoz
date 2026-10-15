@@ -26,10 +26,13 @@
 4. **KeepAlive + çıkış ≠ 0 = döngü.** Ön koşulu (disk) yokken KeepAlive'lı iş exit ≠ 0 ile çıkarsa launchd onu sürekli yeniden başlatır. Emsal: `ccbasin.hasat_v4` **300 kez**. Ön koşul eksikse: `KeepAlive` → `PathState` (`/Volumes/TT-HAFIZA` var olunca) ya da exit 0 + log satırı.
 5. **launchd stdout/stderr `~/Desktop` altına yazılmaz.** TCC korumalı dizin, iş başlatılamıyor (exit 78 EX_CONFIG). Log yolu `~/tradia_sorgu/logs/` gibi korumasız bir dizinde olur.
 6. **iCloud dataless dosya okuma = indirme = disk işi → kilit gerektirir** (Patron 15 Eki · Vaka #09). `~/Desktop` altındaki boşaltılmış dosyaları toplu okuyan tarama/indeksleme (ör. Borsa arşiv içerik taraması) ağır iş sayılır; kilit sırasına girer, disk boş < 6 GiB ise başlamaz. Emsal: Borsa içerik taraması 01:05'te disk riski nedeniyle durduruldu.
-7. **Ölçüm:** `motor/SUREKLILIK.json → makine`. Her ölçümde bellek, swap, yük, oturum sayısı, launchd exit≠0 listesi ve M4 port testi alınır.
+7. **Ölçüm:** `motor/SUREKLILIK.json → makine`. Her ölçümde bellek, swap, yük, oturum sayısı, launchd exit≠0 listesi, M4 port testi, **TT-HAFIZA mount** ve **pil/adaptör** alınır; **`disk_bagli_dakika_gun`** (nabız 5 dk × mount=true) günlük satırdır.
+8. **PİL BEKLEME** (Patron 15 Eki 04:50 · Vaka değil, kural): **pil %40 altı VEYA adaptörsüzken ağır iş başlamaz** (külliyat, PDF taşıma, rsync, A0 taşıma, Basın hasat). Kilit istemcisi `pmset -g batt` okur: `AC Power` + ≥%40 yoksa `PİL BEKLEME` döner; kilit dosyasında yer tutucu `tutan.cc = "PİL BEKLEME"` durur, Vezir nabzı pil uygun olunca kaldırır. Emsal: 15 Eki disk USB'den düştü (pil %63→%36 adaptörsüz), rsync 0 dosya.
+9. **Kilit canlılığı** (Patron 15 Eki): `tutan` kaydı **`pid` + `heartbeat`** taşır. Vezir nabzı (`motor/kilit_nabiz.py`, launchd 300 sn) **pid'i `kill -0` ile doğrular; ölü pid kilidi otomatik bırakır** (`dusme_kaydi`), heartbeat 30 dk'dan eskiyse de bırakır. Emsal: 15 Eki 01:26–04:35 Hafıza "kilit bende" derken rsync ölüydü; külliyat 3 saat boşa bekledi → **uyumsuzluk kaydı, vaka değil**.
+10. **Disk bağlantısı:** TT-HAFIZA **doğrudan porta; şarj diğer porta; USB hub yok** (kök neden 15 Eki: hub'da disk + şarj çakışması, Hafıza ioreg teşhisi: USB Storage görünür, IOMedia yok). Ölçü: `disk_bagli_dakika_gun`.
 
 ## "Neredeyiz" için tek satır (sunum)
 
 > **MacBook Air 8 GB; 16 oturumda bellek %97, yük 12,6 (Vezir ölçümü 23:15: yük 13,7, swap 3,0/4 GB). 7/24 hat için ayrı makine şart.**
 
-*Vezir · 2026-10-14*
+*Vezir · 2026-10-14 · v1.1 15 Eki (kural 8–10 Patron kararı)*

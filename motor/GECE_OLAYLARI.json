@@ -1,0 +1,11 @@
+{
+ "tarih": "2026-10-15",
+ "yazan": "Vezir 04:5x (Patron kararı 5)",
+ "olaylar": [
+  "01:26 TT-HAFIZA USB'den DÜŞTÜ (nefes alarm; Hafıza: pil %63→%36 adaptörsüz, hub'da disk+şarj çakışması). nefes rsync bu geçişte 0 dosya aktardı.",
+  "01:26–04:35 kilit 'Hafıza rsync' adına ÖLÜ pid ile tutuldu (~3 saat); Borsa külliyat BEKLE'de boşa yokladı. 04:35 Vezir kanıtla boşalttı. Vaka değil: uyumsuzluk + kanon kural 9 (pid+heartbeat, nabız 5 dk).",
+  "02:43 EVDS tam çekim BİTTİ: 8730/8730 seri · 128.908 satır · 3 erişilemeyen · SAĞLIKLI (Üst Akıl onaylı paralel). Finans'a 'seriler taze' bildirimi.",
+  "04:40 pil %33 → 04:55 %29 discharging, adaptör YOK. Kilit PİL BEKLEME (kural 8). Yeni sıra: rsync devam → külliyat → PDF → A0 → havuz → Basın.",
+  "Patron adımı: adaptör; disk doğrudan porta, şarj diğer porta, hub yok."
+ ]
+}
