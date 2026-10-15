@@ -47,3 +47,12 @@ Hafıza STAGING'i (STAGING_YENI/<cc>/…) arşive boşaltırken **`_checkpoint.j
 
 **"Aynalamadan sonra düzenlenen dosya BAYAT sayılır, yeniden aynalanır."** Mac-birincil dosya diske/NAS'a aynalandıktan sonra Mac kopyası değişirse (mtime > ayna mtime ya da SHA farkı) ayna **bayat**tır; bir sonraki ayna turunda yeniden kopyalanır ve manifest SHA'sı güncellenir. Bayat ayna "yedek var" sayılmaz. Ölçü: `havuz_gecikme` ile aynı mantık — kaynak mtime ↔ ayna mtime; Hafıza manifestinde `ayna_durumu: GÜNCEL|BAYAT`. Emsal: Finans EVDS3 yenileme (`evds_guard` + birleştirici) sonrası veri klasörü aynadan sonra değişti.
 *Vezir · 2026-10-15 17:42*
+
+## Ek kural · Diske yazım tekeli ve tampon eşiği (Patron 15 Eki 18:4x · DİSK ÇIKARILDI emsali)
+
+1. **TT-HAFIZA'ya (ve ileride NAS'a) yalnız Hafıza, kilitli taşıma ile yazar.** Başka hiçbir CC doğrudan diske yazamaz; launchd/cron hedef yolları **Mac-geçici tampon**dur. Emsal: Sosyal hasadı doğrudan diske yazıyordu (U-06); disk 3 kez düştü, yarım dosya + alarm.
+2. **Ayna borcu:** disk yokken (ya da yazım yasağında) CC, aynalanacak her kalemi `02_CC_STATE/ayna_borcu.json`'a kaydeder (CC · yol · dosya sayısı · GiB · varsa SHA listesi). Disk gelince Hafıza **tek kilitle, sırayla** aynalar ve kalemi `aynalandi` yapar. Vezir toplam borcu Mac boş alanıyla birlikte ölçer.
+3. **Tampon eşiği (Vezir değeri):** CC başına tampon **2 GB**; toplam tampon **8 GB**; Mac boş alan **< 5 GiB** → tampon yazımı DURUR (hasat durur; kayıp değil gecikme). CC tamponu 2 GB'ı aşınca Hafıza taşıması kilit sırasında **öncelik** alır. Gerekçe: Mac boş 13 GiB (15 Eki), bilinen ayna borcu ~57 GiB zaten diske sığmayı bekliyor.
+4. **Disk çıkarma protokolü:** (a) diske yazan tüm launchd işleri bootout (plist yerinde); (b) `lsof /Volumes/TT-HAFIZA` = 0 ve yazan süreç 0; (c) kilit tutan disk işi düşürülür, disk_gerekir girdiler `DİSK BEKLİYOR`; (d) Vezir "ÇIKARABİLİRSİN" yazar; (e) Patron `diskutil eject`. Geri takılınca Hafıza mount teyidi + ayna borcu sırası.
+5. **Günlük sadeleştirme** (log kırpma, geçici dosya) kilit gerektirmez; Hafıza günlük yapar.
+*Vezir · 2026-10-15 18:39*

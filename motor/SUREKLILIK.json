@@ -2009,32 +2009,32 @@
   }
  },
  "makine": {
-  "olcum_ani": "2026-10-15T17:47:47",
+  "olcum_ani": "2026-10-15T18:26:50",
   "ram_gb": 8,
   "agir_kosan": [
    {
-    "pid": "95738",
+    "pid": "7335",
     "is": "builder.py",
     "cc": "Hafıza"
    }
   ],
-  "kilit_tutan_pid": "93511",
+  "kilit_tutan_pid": "None",
   "kilit_ihlali": [
    {
-    "pid": "95738",
+    "pid": "7335",
     "is": "builder.py",
     "cc": "Hafıza"
    }
   ],
-  "bos_gb": 0.05,
-  "sikistirici_gb": 3.35,
-  "swap_kullanim_mb": 3839.44,
+  "bos_gb": 0.06,
+  "sikistirici_gb": 3.5,
+  "swap_kullanim_mb": 4648.19,
   "swap_toplam_mb": 5120.0,
-  "bellek_bos_yuzde_memory_pressure": 37,
+  "bellek_bos_yuzde_memory_pressure": 31,
   "yuk_1_5_15": [
-   2.89,
-   3.46,
-   4.06
+   6.24,
+   5.52,
+   4.23
   ],
   "claude_oturum_sureci": 15,
   "launchd_exit_sifir_degil": 4,
@@ -2059,12 +2059,12 @@
   "m4_port_8789": "DİNLİYOR",
   "tt_hafiza_mount": true,
   "pil": {
-   "yuzde": 35,
+   "yuzde": 15,
    "adaptor": false
   },
   "disk_bagli_dakika_gun": {
-   "dakika": 165,
-   "nabiz_sayisi": 161,
+   "dakika": 205,
+   "nabiz_sayisi": 169,
    "gun": "2026-10-15"
   },
   "disk_dusme_sayisi_gun": {
@@ -3909,10 +3909,85 @@
    "ihlal_cc": [
     "Hafıza"
    ]
+  },
+  {
+   "olcum_ani": "2026-10-15T17:54:23",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3800.44,
+   "yuk_1_5_15": [
+    2.12,
+    2.79,
+    3.55
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 4,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": true,
+   "pil": {
+    "yuzde": 33,
+    "adaptor": false
+   },
+   "kilit_ihlali": 1,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T18:10:36",
+   "bos_gb": 0.05,
+   "swap_kullanim_mb": 3916.0,
+   "yuk_1_5_15": [
+    2.77,
+    2.97,
+    3.08
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 4,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": true,
+   "pil": {
+    "yuzde": 27,
+    "adaptor": false
+   },
+   "kilit_ihlali": 1,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T18:26:50",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 4648.19,
+   "yuk_1_5_15": [
+    6.24,
+    5.52,
+    4.23
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 4,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": true,
+   "pil": {
+    "yuzde": 15,
+    "adaptor": false
+   },
+   "kilit_ihlali": 1,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
   }
  ],
  "kaynak_bosluk": {
-  "olcum": "2026-10-15T17:48",
+  "olcum": "2026-10-15T18:29",
   "pencere_gun": 90,
   "kaynaklar": {
    "afad_deprem": {
@@ -4184,7 +4259,7 @@
   ]
  },
  "havuz_gecikme": {
-  "olcum": "2026-10-15T17:48",
+  "olcum": "2026-10-15T18:29",
   "kaynak_dosya": 24,
   "gecikme_7gun_ustu": 3,
   "dosya_yok": 8,
@@ -4345,9 +4420,9 @@
    },
    {
     "dosya": "/Users/GAC-A/tradia_sosyal/kitap_arsiv/tam_metin_govde.jsonl",
-    "dosya_mtime": "2026-10-15T13:07",
+    "dosya_mtime": "2026-10-15T18:29",
     "son_alim": "2026-10-15 10:29:54",
-    "gecikme_gun": 0.1,
+    "gecikme_gun": 0.3,
     "havuz_kayit": 36
    },
    {
@@ -4366,5 +4441,32 @@
    }
   ],
   "not": "mtime vekildir: dosyanın değişmesi yeni kayıt demek olmayabilir; içerik-tarih kıyası kaynak başına ayrı iş"
- }
+ },
+ "uretim_olaylari": [
+  {
+   "tarih": "2026-10-15 18:30",
+   "cc": "Sosyal",
+   "olay": "bekçi 'DNS hatası = taze' sessiz-ölü vakası KAPANDI (Patron 15 Eki); DNS/ağ hatası artık 'ölçülemedi', taze değil",
+   "etki": "Sosyal kaynak sağlığı satırları yeniden sınıflanmalı; sessiz-ölü süresi ÖLÇÜLMEDİ (Sosyal logundan çıkar)",
+   "sinif": "U-05"
+  },
+  {
+   "tarih": "2026-10-15 18:30",
+   "cc": "Sosyal",
+   "olay": "'Kartal' ad eşleşmesi 27→4 kanal (U-04, adres anahtarı ilk emsali)",
+   "etki": "bolge_sosyal.json Kartal hücresi yeniden; Signals Kartal kontrol ilçesi 1/6 ekseni Sosyal girdisi varsa yeniden"
+  },
+  {
+   "tarih": "2026-10-15 18:39",
+   "cc": "Sosyal",
+   "olay": "bekçi exit-0 emsali: bekçi hata durumunda exit 0 + 'taze' yazıyordu (DNS hatası) → launchd 'başarılı' gördü, sessiz-ölü (U-05); kural: hata = exit≠0 ya da log satırı + 'ölçülemedi', ASLA 'taze'",
+   "sinif": "U-05 emsal · HATA≠BOŞ≠TAZE"
+  },
+  {
+   "tarih": "2026-10-15 18:39",
+   "cc": "TÜM",
+   "olay": "DİSK ÇIKARILDI (Patron): 10 launchd bootout (sosyal gnd/gnd_retry/whisper · ttmap beykozgorsel/surekli · ttarsiv uckopya/kabul · ccihale.arsiv · kitap.nobet · analiz.seo_haftalik) · lsof 0 · ayna_borcu.json ilk hâl ~57 GiB bilinen",
+   "sinif": "disk protokolü"
+  }
+ ]
 }

@@ -8,10 +8,10 @@
 
 | Durum | Adet |
 |---|---|
-| BİTTİ | 47 |
+| BİTTİ | 48 |
 | KISMEN | 9 |
 | BEKLİYOR | 2 |
-| ÇIKTI YOK | 5 |
+| ÇIKTI YOK | 4 |
 | **Toplam prompt** | **63** |
 
 Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
@@ -49,7 +49,7 @@ Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 | Sinyal | SIG37 ön-kayıt | BEKLİYOR → Basın | `~/signals/sig37_SPEC_onkayit.md` | Ön-kayıt yazıldı, Basın girdisi bekleniyor | — | — |
 | Aİ | Kaynak tarama | BİTTİ | `CS/kaynak_tarama_ai.json` | — | — | 10/81 |
 | Aİ | Düzeltme (SGK menü, teşvik render, OSB adres, TOBB 24 ay, İŞKUR) | BİTTİ | `CS/kaynak_tarama_ai.json` (23:24) | 5 başlığın 5'i dosyada | — | 10/81 |
-| Aİ | Evren ağacı v1 export + ad_cozumle | ÇIKTI YOK | — | Hafıza'nın kendi yer adı denetimi de "ad_cozumle BULUNAMADI" yazıyor | — | 10/81 |
+| Aİ | Evren ağacı v1 export + ad_cozumle | BİTTİ (15 Eki 17:47; son tarih 16 Eki 12:00'dan önce) | `CS/evren_agaci_v1.json` (12,1 MB · il 81 · ilçe 973 · mahalle+köy 50.528) · `CS/evren_agaci_v1.tsv` · `CS/ad_cozumle.py` | damga: CC0 liste (tr_idari_birim, kesit 2026-07-30), TKGM 51.655 ile çapraz BEKLİYOR · ilçe kodu plaka-sıra (TÜİK DEĞİL) → eşleme tablosu Vezir | — | 81/81 |
 | Sosyal | Kaynak tarama | BİTTİ | `CS/kaynak_tarama_sosyal.json` + `_belge_detay.json` | — | — | 2/81 |
 | Sosyal | 4 ek (TÜİK göç, YÖK render, bölge planları, adres kodlama) | KISMEN | `CS/kaynak_tarama_sosyal.json` | Göç, YÖK, bölge planları var; **adres kodlama yok** | — | 2/81 |
 | İhale | Kaynak tarama | BİTTİ | `CS/kaynak_tarama_ihale.json` | — | — | 2/81 |

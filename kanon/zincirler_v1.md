@@ -46,3 +46,8 @@ Her zincir: **tetik** (en erken resmî iz) → **ara halkalar** → **sonuç** (
 - Borsa bulut sohbetinde: bu dosya Patron aracılığıyla iletilir (agir_is_kilidi.json madde 4 güncellendi).
 
 *Vezir · 2026-10-15*
+
+## Sunum yasağı · Z1 "medyan gecikme 1 ay" (Patron 15 Eki)
+
+Z1 il×ay serilerinde (teşvik → TOBB kuruluş → SGK → kredi) hesaplanan **"medyan gecikme 1 ay"** sunumda, bültende, hedef kartında **yazılmaz**. Gerekçe: il düzeyi **eşzamanlılık**tır, nedensellik değil; 81 il × aylık toplamlarda halkalar aynı ayda hareket eder, sıra çıkarımı (hangisi önce) il toplamından okunamaz. Yazılabilen: "il düzeyinde halkalar eşzamanlı (korelasyon, gecikme ayırt edilemedi)". Gecikme iddiası yalnız **ilçe × ay** (Z1 birimi) ve **K≥2** ile; o da "ölçüldü" damgasıyla, "neden" damgasıyla değil. Aynı yasak Z6 "haber → fiyat" gecikmesi için de geçerlidir (olay×gün eşleşmesi kurulmadan).
+*Vezir · 2026-10-15 18:28*

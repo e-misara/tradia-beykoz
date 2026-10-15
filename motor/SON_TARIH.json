@@ -31,8 +31,9 @@
    "prompt": "Evren ağacı v1 export + ad_cozumle",
    "ilk_son_tarih": "2026-10-15 12:00",
    "durum_1500": "GEÇTİ — kapanmadı (ara_defter_2026-10-15.md 0/6)",
-   "yeni_son_tarih": "2026-10-16 12:00",
-   "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)"
+   "yeni_son_tarih": "2026-10-15 17:47",
+   "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)",
+   "durum": "KAPANDI 2026-10-15 17:47 (evren_agaci_v1 geldi)"
   },
   {
    "cc": "kitap",
