@@ -48,6 +48,86 @@
    "durum_1500": "GEÇTİ — kapanmadı (ara_defter_2026-10-15.md 0/6)",
    "yeni_son_tarih": "2026-10-16 12:00",
    "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)"
+  },
+  {
+   "cc": "basin",
+   "prompt": "Beykoz güncel tarama basin (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/basin/"
+  },
+  {
+   "cc": "signals",
+   "prompt": "Beykoz güncel tarama signals (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/signals/"
+  },
+  {
+   "cc": "tic",
+   "prompt": "Beykoz güncel tarama tic (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/tic/"
+  },
+  {
+   "cc": "pazarlama",
+   "prompt": "Beykoz güncel tarama pazarlama (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/pazarlama/"
+  },
+  {
+   "cc": "finans",
+   "prompt": "Beykoz güncel tarama finans (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/finans/"
+  },
+  {
+   "cc": "ihale",
+   "prompt": "Beykoz güncel tarama ihale (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/ihale/"
+  },
+  {
+   "cc": "map",
+   "prompt": "Beykoz güncel tarama map (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/map/"
+  },
+  {
+   "cc": "sosyal",
+   "prompt": "Beykoz güncel tarama sosyal (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/sosyal/"
+  },
+  {
+   "cc": "ai",
+   "prompt": "Beykoz güncel tarama ai (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/ai/"
+  },
+  {
+   "cc": "analiz",
+   "prompt": "Beykoz güncel tarama analiz (kesit 2026-10-16)",
+   "ilk_son_tarih": "2026-10-17 17:07",
+   "yeni_son_tarih": "2026-10-17 17:07",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/analiz/"
   }
  ]
 }
