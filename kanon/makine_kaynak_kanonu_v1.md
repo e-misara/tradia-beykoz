@@ -30,9 +30,10 @@
 8. **PİL BEKLEME** (Patron 15 Eki 04:50, eşik gün başı kararıyla tek: **başlangıç adaptör + pil ≥%50 · devam ≥%25**): ağır iş (külliyat, PDF taşıma, rsync, A0 taşıma, Basın hasat) eşik altında başlamaz; koşan iş %25 altına inince checkpoint alıp durur. **Tek ortak kapı:** `02_CC_STATE/pil_esigi.py baslangic|devam` (exit 11/12) — tüm bekleyiciler bunu çağırır (Borsa `agir_is_kilit.py pil/devam` aynı mantık, Borsa onayı verildi). `pmset -g batt` durum metni büyük/küçük harf karışık gelir (`AC attached; not charging`) — regex `[^;]+` (06:36 B11 dersi: eski regex yüzdeyi okuyamadı, kapı %9'da açıldı). Eşik altında kilitte yer tutucu `PİL BEKLEME` durur; kilit dosyasında yer tutucu `tutan.cc = "PİL BEKLEME"` durur, Vezir nabzı pil uygun olunca kaldırır. Emsal: 15 Eki disk USB'den düştü (pil %63→%36 adaptörsüz), rsync 0 dosya.
 9. **Kilit canlılığı** (Patron 15 Eki): `tutan` kaydı **`pid` + `heartbeat`** taşır. Vezir nabzı (`motor/kilit_nabiz.py`, launchd 300 sn) **pid'i `kill -0` ile doğrular; ölü pid kilidi otomatik bırakır** (`dusme_kaydi`), heartbeat 30 dk'dan eskiyse de bırakır. Emsal: 15 Eki 01:26–04:35 Hafıza "kilit bende" derken rsync ölüydü; külliyat 3 saat boşa bekledi → **uyumsuzluk kaydı, vaka değil**.
 10. **Disk bağlantısı:** TT-HAFIZA **doğrudan porta; şarj diğer porta; USB hub yok** (kök neden 15 Eki: hub'da disk + şarj çakışması, Hafıza ioreg teşhisi: USB Storage görünür, IOMedia yok). Ölçü: `disk_bagli_dakika_gun`.
+11. **Kuyruk disk kuralı** (Patron 15 Eki 14:3x — Patron "kural 9" dedi; 9 canlılık olarak dolu olduğundan 11): **disk gerektiren iş (rsync, A0/A1 taşıma, PDF taşıma, Basın hasat) disk takılı değilken sırayı TUTMAZ** → kuyruk girdisi `disk_gerekir: true` + durum `DİSK BEKLİYOR`; sonraki disksiz iş (külliyat, builder) geçer; **disk gelince önceliğini geri alır** (durum `bekliyor — disk geldi`). Uygulayan: Borsa `agir_is_kilit.py` (`izin`/`al`), Vezir `kilit_nabiz.py` (mount geçişinde durum). **Emsal:** 15 Eki 07:18–14:03 kilit **7 saat boş** kaldı — sıra-1 rsync disk bekledi, külliyat arkasında bekledi.
 
 ## "Neredeyiz" için tek satır (sunum)
 
 > **MacBook Air 8 GB; 16 oturumda bellek %97, yük 12,6 (Vezir ölçümü 23:15: yük 13,7, swap 3,0/4 GB). 7/24 hat için ayrı makine şart.**
 
-*Vezir · 2026-10-14 · v1.1 15 Eki (kural 8–10 Patron kararı)*
+*Vezir · 2026-10-14 · v1.2 15 Eki (kural 8–11 Patron kararları)*

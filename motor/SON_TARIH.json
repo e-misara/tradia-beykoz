@@ -1,0 +1,53 @@
+{
+ "kaynak": "Patron 15 Eki 14:3x karar 5",
+ "kayitlar": [
+  {
+   "cc": "pazarlama",
+   "prompt": "Bülten render denemesi",
+   "ilk_son_tarih": "2026-10-15 12:00",
+   "durum_1500": "GEÇTİ — kapanmadı (ara_defter_2026-10-15.md 0/6)",
+   "yeni_son_tarih": "2026-10-16 12:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)"
+  },
+  {
+   "cc": "pazarlama",
+   "prompt": "Envanter başlık eşleme",
+   "ilk_son_tarih": "2026-10-15 12:00",
+   "durum_1500": "GEÇTİ — kapanmadı (ara_defter_2026-10-15.md 0/6)",
+   "yeni_son_tarih": "2026-10-16 12:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)"
+  },
+  {
+   "cc": "basin",
+   "prompt": "Tüm Türkiye kapsam A/B/C",
+   "ilk_son_tarih": "2026-10-15 12:00",
+   "durum_1500": "GEÇTİ — kapanmadı (ara_defter_2026-10-15.md 0/6)",
+   "yeni_son_tarih": "2026-10-16 12:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)"
+  },
+  {
+   "cc": "ai",
+   "prompt": "Evren ağacı v1 export + ad_cozumle",
+   "ilk_son_tarih": "2026-10-15 12:00",
+   "durum_1500": "GEÇTİ — kapanmadı (ara_defter_2026-10-15.md 0/6)",
+   "yeni_son_tarih": "2026-10-16 12:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)"
+  },
+  {
+   "cc": "kitap",
+   "prompt": "Kaynak tarama",
+   "ilk_son_tarih": "2026-10-15 12:00",
+   "durum_1500": "GEÇTİ — kapanmadı (ara_defter_2026-10-15.md 0/6)",
+   "yeni_son_tarih": "2026-10-16 12:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)"
+  },
+  {
+   "cc": "arsiv",
+   "prompt": "Kaynak tarama",
+   "ilk_son_tarih": "2026-10-15 12:00",
+   "durum_1500": "GEÇTİ — kapanmadı (ara_defter_2026-10-15.md 0/6)",
+   "yeni_son_tarih": "2026-10-16 12:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI (gerekçesiz)"
+  }
+ ]
+}
