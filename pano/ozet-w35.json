@@ -365,8 +365,8 @@
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
     "toplam": 189,
-    "acik": 99,
-    "kapali": 90,
+    "acik": 98,
+    "kapali": 91,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
@@ -403,7 +403,7 @@
       },
       {
         "vaat": "Basın A aşaması BİTTİ (Patron): envanter 1.933 satır / 1.791 site / 81 il · wayback VAR 626 · <2015 407 · belirsiz kodlama 672 → geriye dönük denetim · U-02 'yazıcı tek, sütun koruma' uyumsuzluk kaydı",
-        "gecerli": "🟡 Patron sayıları 651/615/412 dosyadan TÜRETİLEMEDİ · basin_envanter_ozet_81il.csv YOK · donus_basin yok → Basın bildirimi",
+        "gecerli": "✅ özet CSV geldi (18:38, UST_AKIL_BEKLEYEN): yer teyitli 666 · wayback 628 · 2015 öncesi 420 (Patron 651/615/412 = önceki saat kesiti; saatlik envanter yürüyor) · donus_basin hâlâ yok",
         "sahip": "Basın"
       },
       {
