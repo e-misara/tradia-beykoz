@@ -47,3 +47,8 @@ Her iki vakada da "hangi rakam doğru?" sorusu zamana yazık olurdu; **referans-
 - Bu kanon **her ikisinin arası:** rakam DOĞRU kaynaklı olsa da **referansı** yazılı değilse çelişki üretir.
 
 *Vezir · Standing #21-A + #34 + Anayasa B7 + Kural 21 · 2026-09-30*
+
+## Ek kural · Toplam tutması eksik satırı sıfır yapmaz (Finans kanon satırı · Patron 15 Eki)
+
+**"Σ tutması eksik satırı sıfır yapmaz; eksik = `null` + gerekçe."** Bir tablonun toplamı resmî toplamla tutuyor diye boş kalan satır **0** yazılmaz; satır `null` olur, yanına `eksik_gerekce` (kaynakta yok / erişilemedi / il kırılımı verilmiyor / kapsam dışı) yazılır. 0 bir ölçümdür, boşluk değil. Değer sınaması (`motor/surekli_olc.py → deger_sinamasi`) bir sütunda `0` ile `null` karışıyorsa **ŞÜPHELİ** damgalar. Emsal: Finans DHMİ il×ay yolcu matrisi (paylaşılan iller şerh, 0 değil) · EVDS il satırları.
+*Vezir · 2026-10-15 17:42*

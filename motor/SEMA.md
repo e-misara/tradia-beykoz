@@ -112,3 +112,6 @@ Her hücre, satır ve madde `adres_anahtari` taşır: `TR-<il_kodu>-<ilçe_kodu>
 - Ad alanları (`il_ad`, `ilce_ad`, `mahalle_ad`) ayrı tutulur; anahtar yerine geçmez.
 - Mahalle yoksa: `semt_veya_bolge: {tur: S|B, ad, kaynak}`.
 - **Anahtarsız yer adı geçen kayıt = KIRIK** (Vezir ölçüsü `deger_sinamasi` bu alanı arar).
+
+## Eksik değer kuralı (Patron 15 Eki · Finans)
+`0` = ölçülmüş sıfır; eksik = `null` + `eksik_gerekce`. Toplamın tutması eksik hücreyi 0 yapmaz. Hücre şemasında `deger: null` geçerli, `eksik_gerekce` zorunlu.

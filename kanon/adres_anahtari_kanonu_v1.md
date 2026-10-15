@@ -32,7 +32,7 @@
 
 ## Ek · Havalimanı birimi (v1.1 · Patron 15 Eki)
 
-Havalimanı il değildir; **`ana_il` + `paylasilan_iller[]`** ile yazılır (otorite: Aİ evren ağacı `havalimani_evren.json`). Çok illi havalimanları: Çukurova (Mersin + Adana) · Ordu-Giresun (Ordu + Giresun) · Rize-Artvin (Rize + Artvin) · Zafer (Kütahya + Afyonkarahisar + Uşak). Kapadokya = Nevşehir tek. **Yolcu sayısı tek ile yazılmaz:** il×ay matrisinde ana ile sayı, paylaşılan illere şerh. Finans DHMİ hasadı (15 Eki) ilk uygulama.
+Havalimanı il değildir; **`ana_il` + `paylasilan_iller[]`** ile yazılır (otorite: Aİ evren ağacı `havalimani_evren.json`; **kaynak tablo: Finans `02_CC_STATE/finans/dhmi_havalimani_il_eslesme.json` — 58 havalimanı, 4 çok-illi, Patron 15 Eki: evren ağacına havalimanı tablosu olarak alınır; Vezir teyit: Zafer = Kütahya + Afyonkarahisar + Uşak, Bilecik YOK, `ana_il_dogrula` 58/58 true**). Çok illi havalimanları: Çukurova (Mersin + Adana) · Ordu-Giresun (Ordu + Giresun) · Rize-Artvin (Rize + Artvin) · Zafer (Kütahya + Afyonkarahisar + Uşak). Kapadokya = Nevşehir tek. **Yolcu sayısı tek ile yazılmaz:** il×ay matrisinde ana ile sayı, paylaşılan illere şerh. Finans DHMİ hasadı (15 Eki) ilk uygulama.
 
 ## Bilinen çakışma türleri (denetimde aranır)
 

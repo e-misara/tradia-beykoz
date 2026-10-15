@@ -42,3 +42,8 @@ Hafıza STAGING'i (STAGING_YENI/<cc>/…) arşive boşaltırken **`_checkpoint.j
 **Emsal (kök neden):** İhale RG kapsamasında 3 gerçek delik (18–30 Tem · 17–31 Ağu · 28 Eyl–13 Eki): STAGING_YENI/ihale tarihli klasörlere taşınıp boşaltılırken cron'un checkpoint'i de gitti → sonraki koşu "bugün−3 gün" penceresiyle başladı. İhale düzeltmesi: `rg_geriye_doldur.py auto` (Mac-birincil son tarihten ≤60 gün), +342 kayıt; `uyan_icra` hâlâ STAGING'e yazıyor → her boşaltmada `_seen_keys` kaybolur.
 **Ölçü:** `motor/SUREKLILIK.json → kaynak_bosluk` — kaynak başına son kayıt tarihi, bugüne uzaklık (gün), günlük serilerde son 90 günün eksik gün sayısı ve en uzun boşluk (SORGU-01 `kayit` tablosu). Boşluk ≥ 3 gün = bayrak; sahibi CC açıklar.
 *Vezir · 2026-10-15 14:09*
+
+## Ek kural · Ayna disiplini (Finans emsali · Patron 15 Eki)
+
+**"Aynalamadan sonra düzenlenen dosya BAYAT sayılır, yeniden aynalanır."** Mac-birincil dosya diske/NAS'a aynalandıktan sonra Mac kopyası değişirse (mtime > ayna mtime ya da SHA farkı) ayna **bayat**tır; bir sonraki ayna turunda yeniden kopyalanır ve manifest SHA'sı güncellenir. Bayat ayna "yedek var" sayılmaz. Ölçü: `havuz_gecikme` ile aynı mantık — kaynak mtime ↔ ayna mtime; Hafıza manifestinde `ayna_durumu: GÜNCEL|BAYAT`. Emsal: Finans EVDS3 yenileme (`evds_guard` + birleştirici) sonrası veri klasörü aynadan sonra değişti.
+*Vezir · 2026-10-15 17:42*
