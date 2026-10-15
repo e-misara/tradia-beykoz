@@ -8,10 +8,10 @@
 
 | Durum | Adet |
 |---|---|
-| BİTTİ | 46 |
+| BİTTİ | 47 |
 | KISMEN | 9 |
 | BEKLİYOR | 2 |
-| ÇIKTI YOK | 6 |
+| ÇIKTI YOK | 5 |
 | **Toplam prompt** | **63** |
 
 Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
@@ -44,7 +44,7 @@ Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 | Finans | Kaynak tarama | BİTTİ (düzeltme 15 Eki 00:50: ilk kesit 23:25 öncesiydi) | `CS/kaynak_tarama_finans.json` · `CS/kaynak_tarama_finans_rize_para_akisi.json` · `CS/hafiza_bildirim_ccfinans_kaynak_tarama_20261014.json` | BDDK FinTürk il kredi/mevduat ACIK · Rize kredi 2,65× → SİNYAL ADAYI (Sinyal'e) · lisans_notu BİLİNMİYOR (v1.1'de doldurulacak) | ✅ BDDK yazılı izin (ürüne girecekse) | 2/81 |
 | Basın | bm_k_sayi_uyarisi alanı + BELGE/SÖYLEM sınıfı | BİTTİ | `CS/bolge_basin.json` · `CS/bm_k_sinif_tablosu_20261014.md` | Alan Vezir değer sınamasında GEÇTİ (uyumsuzluk kapandı) | — | 8/81 |
 | Basın | Kaynak tarama (ilan.gov.tr, meclis kararları) | BİTTİ | `CS/kaynak_tarama_basin.json` | İki kaynak da satırlarda | — | 8/81 |
-| Basın | Tüm Türkiye kapsam A/B/C | ÇIKTI YOK | — | Basın tarafında dosya yok. Vezir 973 ilçe kuyruğunu açtı (`TB/motor/KUYRUK.json → basin_ulusal`) | — | 8/81 |
+| Basın | Tüm Türkiye kapsam A/B/C | BİTTİ (A aşaması, Patron 15 Eki 17:xx; B/C sürüyor) | `CS/basin_kaynak_envanteri_v1.tsv` (1.933 satır · 1.791 tekil site · 81 il · wayback VAR 626 · ilk yakalama <2015: 407) · `CS/basin_kodlama_belirsiz_20261015.tsv` (672) | Patron beyanı 651/615/412 dosyadan türetilemedi; `basin_envanter_ozet_81il.csv` YOK → Basın üretir | — | 81/81 |
 | Sinyal | SIG36 | BİTTİ | `~/signals/sig36_ham_sayac_denetimi.md` + `CS/bildirim_ccsignals_ccbasin_ham_sayac_SIG36.json` | Ham sayılar eşik hesabına girmemiş | — | — |
 | Sinyal | SIG37 ön-kayıt | BEKLİYOR → Basın | `~/signals/sig37_SPEC_onkayit.md` | Ön-kayıt yazıldı, Basın girdisi bekleniyor | — | — |
 | Aİ | Kaynak tarama | BİTTİ | `CS/kaynak_tarama_ai.json` | — | — | 10/81 |

@@ -234,6 +234,12 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 
 ---
 
+## Uyumsuzluk kayıtları (Vaka değil · Patron sınıflaması)
+
+- **U-01 · 2026-10-15 · Hafıza kilit:** "kilit bende" beyanı ↔ süreç ölü (pid 91683 yok, rsync 0, disk 01:26 düştü); külliyat 3 saat boşa bekledi. Düzeltme: makine_kaynak kural 9 (pid+heartbeat, Vezir nabzı 5 dk).
+- **U-02 · 2026-10-15 · Basın saatlik envanter — "yazıcı tek, sütun koruma":** `com.tradia.ccbasin.envanter` (saatlik) `basin_kaynak_envanteri_v1.tsv`'yi yeniden yazarken Wayback sütunlarını (wayback_ilk_yakalama_yil / indeks_sayfa / durum) SİLDİ; başka betiğin doldurduğu sütunlar yazıcı tarafından korunmadı. Kural: bir dosyanın **tek yazıcısı** olur; o yazıcı kendi üretmediği sütunları **okur-taşır-korur**, boşla ezmez. Düzeltildi (Patron beyanı 17:xx; dosyada wayback VAR 626 — Vezir teyit). Ölçü: `havuz_gecikme`/`kaynak_bosluk` gibi sütun-kaybı sayacı yok → ileride.
+- **U-03 · 2026-10-15 · Vezir kilit yer tutucusu 14:08:14–14:08:45 arası kimliği belirsiz boşaldı;** nabız 31 sn'de geri koydu; iz alanları eklendi (`onceki_tutan`, `kilit_mtime`). Sahibi bulunamadı — tekrarında bulunur.
+
 ## İşletim kuralı
 
 - **Ekleme:** Vezir her turda yeni ihlal tespit ederse `Vaka #NN` bloğu ekler (numara artan). Eski vakalar dokunulmaz.
