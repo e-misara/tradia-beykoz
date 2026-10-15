@@ -35,3 +35,10 @@
 | Arşiv | Kopya-2 diske bağlı | ✅ (kopya rolü) | NAS = kalıcı ikinci kopya |
 
 *Vezir · Standing #37 + KOS v1.0 + uydu-arşiv protokolü · 2026-10-14*
+
+## Ek kural · STAGING boşaltma ve durum dosyaları (Patron 15 Eki gün başı karar 2)
+
+Hafıza STAGING'i (STAGING_YENI/<cc>/…) arşive boşaltırken **`_checkpoint.json`, `_seen_keys.json`, `*_checkpoint.*`, `*_seen*`, `son_tarih*`, `.state` gibi durum dosyaları YERİNDE KALIR** (taşınmaz, silinmez). Durum dosyası = toplayıcının "nerede kaldım" belleğidir; veri değil.
+**Emsal (kök neden):** İhale RG kapsamasında 3 gerçek delik (18–30 Tem · 17–31 Ağu · 28 Eyl–13 Eki): STAGING_YENI/ihale tarihli klasörlere taşınıp boşaltılırken cron'un checkpoint'i de gitti → sonraki koşu "bugün−3 gün" penceresiyle başladı. İhale düzeltmesi: `rg_geriye_doldur.py auto` (Mac-birincil son tarihten ≤60 gün), +342 kayıt; `uyan_icra` hâlâ STAGING'e yazıyor → her boşaltmada `_seen_keys` kaybolur.
+**Ölçü:** `motor/SUREKLILIK.json → kaynak_bosluk` — kaynak başına son kayıt tarihi, bugüne uzaklık (gün), günlük serilerde son 90 günün eksik gün sayısı ve en uzun boşluk (SORGU-01 `kayit` tablosu). Boşluk ≥ 3 gün = bayrak; sahibi CC açıklar.
+*Vezir · 2026-10-15 14:09*

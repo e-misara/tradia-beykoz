@@ -9,9 +9,9 @@
 | Durum | Adet |
 |---|---|
 | BİTTİ | 46 |
-| KISMEN | 8 |
+| KISMEN | 9 |
 | BEKLİYOR | 2 |
-| ÇIKTI YOK | 7 |
+| ÇIKTI YOK | 6 |
 | **Toplam prompt** | **63** |
 
 Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
@@ -24,7 +24,7 @@ Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 | Analiz | Borsa yoluna geçiş + tek istemci + sağlık exit 0 | KISMEN | `CS/evds_saglik.json` | Elle koşu 15:57Z SAĞLAM (evds_ortak). launchd `com.tradia.evds.saglik` **hiç koşmadı** (runs=0) → exit 0 kanıtı yok | — | 2/81 |
 | Analiz | Yabancı-il bülten okuma + landgold arkeoloji + çapraz sınama | KISMEN | `CS/tuik_landgold_sinama_2026-10-14.json` (üreten **Pazarlama**) | Analiz adına dosya yok; landgold çapraz sınaması Pazarlama'nın dosyasında "Analiz düzeltmesi (16 kayıt)" olarak duruyor | — | 2/81 |
 | Analiz | Kaynak tarama | BİTTİ | `CS/kaynak_tarama_analiz.json` | Şema birleştirmesi 16 Eki | — | 2/81 |
-| Analiz | TÜİK SDMX motorlu taşıt + Hal render + DFE v0.2 | ÇIKTI YOK | — | Bugün yazılmış motorlu/hal/dfe dosyası yok | — | 2/81 |
+| Analiz | TÜİK SDMX motorlu taşıt + Hal render + DFE v0.2 | KISMEN (Patron 15 Eki: motorlu taşıt 64 satır = 2 il → KAPSAM İHLALİ, kapsam_kanonu_v1; 81 il yeniden) | — | DFE v0.2 taslak + beklenti `scripts/DFE_v02_*.md` geldi (15 Eki 00:24) | 81 il motorlu taşıt | 2/81 → 81/81 istendi |
 | Borsa | evds_ortak tek istemci | BİTTİ | `~/Desktop/tradia/cc_borsa/evds_hasat/evds_ortak.py` | Var, `cek_ayrimli` fonksiyonu içinde. Kanonik yol `~/landgold-agents/` değil (kanon kural 5 borcu) | — | 34/81 |
 | Borsa | Seri listesi v1 | BİTTİ | `cc_borsa/docs/evds_seri_listesi_v1.{tsv,md}` | — | — | 34/81 |
 | Borsa | Tam çekim final tablosu | KISMEN | süreç `evds_guncel.py --tam --devam=20261014` çalışıyor | Final tablo yok; 463/8.730 (19:41). Disk gelince 4 ağır işle eşzamanlı | ⚠ sıra kararı | 34/81 |

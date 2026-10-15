@@ -1,15 +1,15 @@
 # GECE RAPORU · 2026-10-15 (08:40 otomatik)
 
-**Üretim:** 2026-10-15T04:54 · **Pencere:** 22:00 → 08:40 · **15 dk ölçüm sayısı:** 23
+**Üretim:** 2026-10-15T08:40 · **Pencere:** 22:00 → 08:40 · **15 dk ölçüm sayısı:** 39
 
 ## Sabah teyitleri
 
-- **CDN yayın teyidi (08:30):** **TEYİTLİ** · 2026-10-15T04:35
-- **EVDS sağlık (Analiz 08:00 · evds_saglik.json):** `SAGLAM` · 2026-10-14T21:07:33Z · Vezir damgası: **SAGLAM (2026-10-14T15:57:33Z)** · veri yolu: JSON items=11 · B11: UYUMLU
+- **CDN yayın teyidi (08:30):** **TEYİTLİ** · 2026-10-15T08:30
+- **EVDS sağlık (Analiz 08:00 · evds_saglik.json):** `SAGLAM` · 2026-10-15T05:00:02Z · Vezir damgası: **SAGLAM (2026-10-14T15:57:33Z)** · veri yolu: JSON items=11 · B11: UYUMLU
 
 ## Gece ölçüm özeti (15 dk · SUREKLILIK.json → makine_gecmis)
 
-- **Yük maks (1 dk):** 7.52 · **Swap maks:** 4.9 GB · **Boş bellek min:** 0.05 GB
+- **Yük maks (1 dk):** 11.29 · **Swap maks:** 4.9 GB · **Boş bellek min:** 0.05 GB
 - **Kilit ihlali (ölçüm×süreç toplamı):** 30 · ihlal eden CC: Borsa, Hafıza
 - **rsync (Hafıza nefes) bitiş:** nefes log: 2026-10-15T01:29
 - **EVDS tam çekim:** bitiş ~02:51 · kaldığı seri (son log): `[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI `
@@ -31,6 +31,7 @@
 - 02:43 EVDS tam çekim BİTTİ: 8730/8730 seri · 128.908 satır · 3 erişilemeyen · SAĞLIKLI (Üst Akıl onaylı paralel). Finans'a 'seriler taze' bildirimi.
 - 04:40 pil %33 → 04:55 %29 discharging, adaptör YOK. Kilit PİL BEKLEME (kural 8). Yeni sıra: rsync devam → külliyat → PDF → A0 → havuz → Basın.
 - Patron adımı: adaptör; disk doğrudan porta, şarj diğer porta, hub yok.
+- 06:36 B11 KUSURU: Patron 'şarj takılı' dedi; pmset 'AC attached; not charging' (%9) — nabız/istemci regex yalnız küçük harf durum bekliyordu → yüzde okunamadı → 'pil yok (masaüstü)' sayıp PİL BEKLEME'yi KALDIRDI (%9'da!). Külliyat sıra-1 rsync önde olduğu için başlamadı (ikinci kapı tuttu). Regex iki betikte düzeltildi, PİL BEKLEME geri kondu. Adaptör şarj ETMİYOR (not charging) → düşük güçlü port/hub.
 
 ## Kilit düşme kayıtları (ölü pid / heartbeat)
 
@@ -38,9 +39,9 @@
 
 ## Nabız (5 dk · motor/NABIZ.jsonl)
 
-- **Disk bağlı dakika (bugün):** 0 / 5 ölçülen dk · **pil min:** %29 · **adaptör takılı nabız:** 0/1 · **işlem:** 0
+- **Disk bağlı dakika (bugün):** 0 / 240 ölçülen dk · **pil min:** %9 · **adaptör takılı nabız:** 27/48 · **işlem:** 3
 
-Tutan: {"cc": "PİL BEKLEME", "is": "Patron kararı 2026-10-15 04:5x: pil %40 altı VEYA adaptörsüzken ağır iş (külliyat, PDF taşıma, rsync, A0, Basın) başlamaz", "pid": null, "baslangic": "2026-10-15 04:52", "ayar": "yer tutucu · Vezir nabız (5 dk) pil uygun olunca kaldırır; Borsa istemcisi (agir_is_kilit.py) kendi pmset kontrolünü de yapar", "pil_olcum": "pmset 04:40: %33 discharging, adaptör YOK"}
+Tutan: null
 
 ## Borsa'ya Patron aracılığıyla (bulut sohbeti · 02_CC_STATE'i görmüyor)
 
