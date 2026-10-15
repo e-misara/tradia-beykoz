@@ -34,7 +34,7 @@ Her CC yalnız **kendi** dosyasını yazar: `~/tradia_konusmalar/02_CC_STATE/kay
 | `zincir` | `Z1`…`Z7` (liste olabilir) | **kanon/zincirler_v1.md** (Patron metni 2026-10-15). `BİLİNMİYOR` geçersiz; birleştirmede zincir sahibi doluluk satırını teyit eder |
 | `patron_adimi` | metin | erişim `UYELIK`/`API_ANAHTAR` ise Patron'un yapacağı **tam adım** (site → menü → form); değilse boş `""` |
 | `ilk_hasat_tahmini` | metin | ilk hasadın hacmi/süresi + **dayanağı** (ölçümden mi, tahminden mi) |
-| `lisans` | `{"sinif": IC_KULLANIM \| KAYNAK_GOSTER \| YAZILI_IZIN \| YASAK, "dayanak": "<lisans metni/sayfa URL'si/mevzuat>"}` | **(v1.1 · Patron 15 Eki)** Kullanım hakkı. `IC_KULLANIM` = yalnız iç analiz · `KAYNAK_GOSTER` = atıfla yayımlanabilir · `YAZILI_IZIN` = ürüne girmesi yazılı izne bağlı (Patron adımı) · `YASAK` = kullanılmaz. Dayanak zorunlu. **Lisansı boş/dayanaksız kaynak `ACIK` sayılmaz** (en fazla KISITLI). |
+| `lisans` | `{"sinif": IC_KULLANIM \| KAYNAK_GOSTER \| YAZILI_IZIN \| YASAK \| KARAR_PATRON (v1.2), "dayanak": "<lisans metni/sayfa URL'si/mevzuat>"}` | **(v1.1 · Patron 15 Eki)** Kullanım hakkı. `IC_KULLANIM` = yalnız iç analiz · `KAYNAK_GOSTER` = atıfla yayımlanabilir · `YAZILI_IZIN` = ürüne girmesi yazılı izne bağlı (Patron adımı) · `YASAK` = kullanılmaz. Dayanak zorunlu. **Lisansı boş/dayanaksız kaynak `ACIK` sayılmaz** (en fazla KISITLI). |
 
 **Ek kurallar**
 - **200 ≠ veri:** `erisim: ACIK` demek için `ornek_cekim`'de en az bir bölge > 0 ya da açıkça "kaynakta bu bölge yok" kanıtı gerekir (B11 · EVDS ve TÜİK dersi). Yalnız 200 dönen sayfa en fazla `KISITLI` sayılır.

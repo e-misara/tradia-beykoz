@@ -8,10 +8,10 @@
 
 | Durum | Adet |
 |---|---|
-| BİTTİ | 45 |
+| BİTTİ | 46 |
 | KISMEN | 8 |
 | BEKLİYOR | 2 |
-| ÇIKTI YOK | 8 |
+| ÇIKTI YOK | 7 |
 | **Toplam prompt** | **63** |
 
 Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
@@ -38,7 +38,7 @@ Patron adımı: tabloda işaretli kalemler + en altta toplu liste (6 adım).
 | Pazarlama | Bülten render denemesi | ÇIKTI YOK | — | — | — | 81/81 |
 | Pazarlama | T3 SDMX: tuik_ortak + dataflow envanteri + yabancı il 81 + sınama | BİTTİ | `~/landgold-agents/tuik_ortak.py` · `~/landgold-agents/docs/tuik_dataflow_envanteri_v1.tsv` (508) · `CS/tuik_yabanci_il_2026-08.json` · `CS/tuik_landgold_sinama_2026-10-14.json` | 508 dataflow = Vezir canlı ölçümü; eksik il 0 (Σ il = TR) | — | 81/81 |
 | Pazarlama | Envanter başlık eşleme | ÇIKTI YOK | — | Dataflow envanterinde eşleme sütunu yok (yalnız `ad_tr`) | — | 81/81 |
-| Pazarlama | Kaynak tarama | ÇIKTI YOK | — | `kaynak_tarama_pazarlama.json` yok | — | 81/81 |
+| Pazarlama | Kaynak tarama | BİTTİ (düzeltme 15 Eki: dosya sonra geldi) | `CS/kaynak_tarama_pazarlama.json` | lisans alanı yok → 16 Eki'ye kadar | — | 81/81 |
 | Finans | EVDS seri yenileme | BİTTİ | `CS/hafiza_bildirim_ccfinans_evds_yenileme_20261014.json` | 18:33 "işlem yapma" → 18:48 yenilendi | — | 9/81 |
 | Finans | 81 il tam hasat (BDDK 81×9 çeyrek · EPDK 81 · DHMİ 58 havalimanı) + Z1 haritası | BİTTİ (DASK hariç → 02:00 bandı) | `CS/finans/bddk_finturk_81il.csv` · `epdk_81il.csv` · `dhmi_81il.csv` · `CS/donus_finans_2026-10-15.md` | Σ kanıtları tam (EPDK fark −0,1 MWh, DHMİ fark 0) · inşaat kredisi reel yoy ilk 10: Düzce +87,6 · Rize +68,8 · Elazığ +68,0 → Sinyal ULUSAL ADAY · 5 havalimanı eşlemesi Vezir teyit (ana il uyumlu, paylaşılan iller eksik) | ✅ Finans sekmesi açık kalsın (DASK Chromium gece bandı) · BDDK KARAR_PATRON · EPİAŞ form | **81/81** |
 | Finans | Kaynak tarama | BİTTİ (düzeltme 15 Eki 00:50: ilk kesit 23:25 öncesiydi) | `CS/kaynak_tarama_finans.json` · `CS/kaynak_tarama_finans_rize_para_akisi.json` · `CS/hafiza_bildirim_ccfinans_kaynak_tarama_20261014.json` | BDDK FinTürk il kredi/mevduat ACIK · Rize kredi 2,65× → SİNYAL ADAYI (Sinyal'e) · lisans_notu BİLİNMİYOR (v1.1'de doldurulacak) | ✅ BDDK yazılı izin (ürüne girecekse) | 2/81 |

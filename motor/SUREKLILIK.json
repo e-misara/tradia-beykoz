@@ -2009,85 +2009,23 @@
   }
  },
  "makine": {
-  "olcum_ani": "2026-10-15T00:10:39",
+  "olcum_ani": "2026-10-15T04:22:01",
   "ram_gb": 8,
-  "agir_kosan": [
-   {
-    "pid": "74174",
-    "is": "duzen_koordinator",
-    "cc": "Hafıza"
-   },
-   {
-    "pid": "74193",
-    "is": "duzen_koordinator",
-    "cc": "Hafıza"
-   },
-   {
-    "pid": "89694",
-    "is": "evds_guncel.py --tam",
-    "cc": "Borsa"
-   },
-   {
-    "pid": "89778",
-    "is": "kulliyat",
-    "cc": "Borsa"
-   },
-   {
-    "pid": "91643",
-    "is": "builder.py",
-    "cc": "Hafıza"
-   },
-   {
-    "pid": "91683",
-    "is": "rsync -a",
-    "cc": "Hafıza"
-   },
-   {
-    "pid": "96319",
-    "is": "rsync -a",
-    "cc": "Hafıza"
-   }
-  ],
+  "agir_kosan": [],
   "kilit_tutan_pid": "91683",
-  "kilit_ihlali": [
-   {
-    "pid": "74174",
-    "is": "duzen_koordinator",
-    "cc": "Hafıza"
-   },
-   {
-    "pid": "74193",
-    "is": "duzen_koordinator",
-    "cc": "Hafıza"
-   },
-   {
-    "pid": "89694",
-    "is": "evds_guncel.py --tam",
-    "cc": "Borsa"
-   },
-   {
-    "pid": "89778",
-    "is": "kulliyat",
-    "cc": "Borsa"
-   },
-   {
-    "pid": "91643",
-    "is": "builder.py",
-    "cc": "Hafıza"
-   }
-  ],
+  "kilit_ihlali": [],
   "bos_gb": 0.06,
-  "sikistirici_gb": 3.27,
-  "swap_kullanim_mb": 4920.56,
-  "swap_toplam_mb": 6144.0,
+  "sikistirici_gb": 3.33,
+  "swap_kullanim_mb": 3649.69,
+  "swap_toplam_mb": 5120.0,
   "bellek_bos_yuzde_memory_pressure": 36,
   "yuk_1_5_15": [
-   5.76,
-   5.16,
-   4.68
+   3.11,
+   4.66,
+   4.64
   ],
   "claude_oturum_sureci": 15,
-  "launchd_exit_sifir_degil": 6,
+  "launchd_exit_sifir_degil": 5,
   "launchd_exit_liste": [
    {
     "label": "com.tradia.sorgu.duzen",
@@ -2102,10 +2040,6 @@
     "exit": -9
    },
    {
-    "label": "com.tradia.sorgu.nefes",
-    "exit": -15
-   },
-   {
     "label": "com.tradia.primer-monitor",
     "exit": 78
    },
@@ -2115,10 +2049,10 @@
    }
   ],
   "m4_port_8789": "DİNLİYOR",
-  "rsync_kosuyor": true,
-  "kulliyat_kosuyor": true,
-  "evds_kosuyor": true,
-  "evds_son_log": "[2026-10-15 00:10:10]   SERI_400 TP.DT.IH.MIK.E08 (kalıcı, atlandı)"
+  "rsync_kosuyor": false,
+  "kulliyat_kosuyor": false,
+  "evds_kosuyor": false,
+  "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI "
  },
  "bildirim_disiplini": {
   "2026-10-14": {
@@ -2255,6 +2189,380 @@
     "Borsa",
     "Hafıza"
    ]
+  },
+  {
+   "olcum_ani": "2026-10-15T00:21:56",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 4983.5,
+   "yuk_1_5_15": [
+    5.03,
+    5.01,
+    4.87
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 6,
+   "rsync_kosuyor": true,
+   "kulliyat_kosuyor": true,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 00:17:40]   ilerleme 2800/8730 · satır=116",
+   "kilit_ihlali": 7,
+   "ihlal_cc": [
+    "Borsa",
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T00:28:07",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 4998.94,
+   "yuk_1_5_15": [
+    4.17,
+    5.5,
+    5.28
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 6,
+   "rsync_kosuyor": true,
+   "kulliyat_kosuyor": true,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 00:26:02]   ilerleme 3200/8730 · satır=16467",
+   "kilit_ihlali": 5,
+   "ihlal_cc": [
+    "Borsa",
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T00:31:34",
+   "bos_gb": 0.07,
+   "swap_kullanim_mb": 4125.19,
+   "yuk_1_5_15": [
+    6.33,
+    5.62,
+    5.34
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 7,
+   "rsync_kosuyor": true,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 00:30:12]   ilerleme 3400/8730 · satır=0",
+   "kilit_ihlali": 4,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T00:34:10",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 4094.44,
+   "yuk_1_5_15": [
+    6.82,
+    6.66,
+    5.86
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 7,
+   "rsync_kosuyor": true,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 00:30:12]   ilerleme 3400/8730 · satır=0",
+   "kilit_ihlali": 3,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T00:36:56",
+   "bos_gb": 0.05,
+   "swap_kullanim_mb": 4014.12,
+   "yuk_1_5_15": [
+    4.25,
+    5.8,
+    5.66
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 7,
+   "rsync_kosuyor": true,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 00:34:15]   ilerleme 3600/8730 · satır=0",
+   "kilit_ihlali": 3,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T00:51:56",
+   "bos_gb": 0.05,
+   "swap_kullanim_mb": 3953.5,
+   "yuk_1_5_15": [
+    3.87,
+    4.28,
+    4.53
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 7,
+   "rsync_kosuyor": true,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 00:51:55]   SERI_400 TP.ITHISICREV4.60 (kalıcı, atlandı)",
+   "kilit_ihlali": 3,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T01:06:57",
+   "bos_gb": 0.07,
+   "swap_kullanim_mb": 3574.0,
+   "yuk_1_5_15": [
+    2.28,
+    2.38,
+    3.31
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 4,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 01:02:28]   ERISILEMEDI TP.IYA.FOBE.S04.B → 5 dk bekle (1/12)",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T01:21:57",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3607.62,
+   "yuk_1_5_15": [
+    3.19,
+    2.58,
+    2.7
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 01:17:59]   ERISILEMEDI TP.IYA.FOBE.S04.X → 5 dk bekle (3/12)",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T01:36:57",
+   "bos_gb": 0.07,
+   "swap_kullanim_mb": 4117.56,
+   "yuk_1_5_15": [
+    4.52,
+    5.15,
+    4.3
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 01:33:57]   ilerleme 5400/8730 · satır=414",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T01:51:58",
+   "bos_gb": 0.05,
+   "swap_kullanim_mb": 3829.88,
+   "yuk_1_5_15": [
+    6.75,
+    6.0,
+    5.35
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 01:51:10]   ilerleme 6200/8730 · satır=67898",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T02:06:58",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3628.0,
+   "yuk_1_5_15": [
+    6.3,
+    6.62,
+    6.32
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 02:06:42]   ilerleme 7000/8730 · satır=72342",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T02:21:58",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3570.12,
+   "yuk_1_5_15": [
+    7.52,
+    6.12,
+    5.99
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 02:21:18]   SERI_400 TP.SEKBILA3086.45 (kalıcı, atlandı)",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T02:36:58",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3649.56,
+   "yuk_1_5_15": [
+    4.03,
+    4.46,
+    5.27
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": true,
+   "evds_son_log": "[2026-10-15 02:34:54]   ilerleme 8400/8730 · satır=107608",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T02:51:59",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3834.19,
+   "yuk_1_5_15": [
+    3.27,
+    3.72,
+    4.38
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T03:06:59",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3610.19,
+   "yuk_1_5_15": [
+    5.17,
+    4.74,
+    4.42
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T03:21:59",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3658.19,
+   "yuk_1_5_15": [
+    5.59,
+    5.4,
+    5.11
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T03:37:00",
+   "bos_gb": 0.05,
+   "swap_kullanim_mb": 3770.44,
+   "yuk_1_5_15": [
+    3.67,
+    3.91,
+    4.48
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T03:52:00",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3717.62,
+   "yuk_1_5_15": [
+    4.74,
+    4.92,
+    4.75
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T04:07:00",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3605.62,
+   "yuk_1_5_15": [
+    3.19,
+    4.27,
+    4.72
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-15T04:22:01",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 3649.69,
+   "yuk_1_5_15": [
+    3.11,
+    4.66,
+    4.64
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 5,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
   }
  ]
 }

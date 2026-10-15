@@ -81,3 +81,6 @@ arsiv/tam/ham/
 
 # pano yayın scripti (Standing #45 Vezir kanonu)
 !scripts/*.sh
+
+# parsel_veri_kanonu_v1: parsel_01 çalışma dizini public repoya girmez (15 Eki; içerik şimdilik ilçe/mahalle medyanı, ad kaymasına karşı kapı)
+uyandirma/parsel_01_rize/

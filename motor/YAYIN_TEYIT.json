@@ -1,6 +1,6 @@
 {
  "durum": "TEYİTLİ",
  "deneme": "≤5",
- "zaman": "2026-10-14T23:38",
+ "zaman": "2026-10-15T00:38",
  "kural": "5 denemede üç kanal (Pages/Raw/jsDelivr) yerel hash'e eşitlenmezse TEYİTSİZ damgası kalır; sabah 08:30 launchd yeniden dener"
 }
