@@ -76,3 +76,12 @@ Son tarihte dosyası olmayan CC raporda **"yazmadı"** olarak görünür. Birle�
 **Değişiklik:** v1.1 (2026-10-15) lisans alanı + Patron kovası ön kayıt · v1.2 (15 Eki 01:20) KAPALI istisnası (3 damga) + KARAR_PATRON lisans sınıfı.
 
 *Vezir · 2026-10-14 · v1.1 2026-10-15*
+
+## v1.3 ekleri (Patron 15 Eki 18:xx · Aİ tam Türkiye dersleri)
+
+### TAVAN damgası
+`erisim: TAVAN` — kaynak **yapısal olarak** belirli bir tarihten/düzeyden ötesini vermez; **bütçe, üyelik, anahtar veya Patron adımı ile AÇILMAZ**. KAPALI'dan farkı: KAPALI "bize kapalı", TAVAN "kimseye yok". Zorunlu alanlar: `tavan_siniri` (ör. "2023-09 · firma düzeyi"), `dayanak` (kaynağın kendi beyanı / kanıtlı tarama), `3 damgalı deneme` KAPALI'daki gibi. Birleştirmede TAVAN satırı **kütüphane kaynak evreninde** kalır (silinmez, "açılacak" listesine girmez). **Emsal:** Sanayi Teşvik firma düzeyi 2019-04 → 2023-09 (53 ay), 2024+ yok, kanıtlı (Aİ `kaynak_tarama_ai_tam_turkiye.json`, 57.369 firma kaydı, 81/81 il).
+
+### Teknik not · WAF ve taze oturum (Aİ dersi)
+`sanayi.gov.tr` indirme ucu aynı tarayıcı oturumunda ardışık indirmeyi tıkıyor (1. dosyadan sonra hepsi); `WebFetch` SPA/WAF'a 500/boş döner; çıplak `curl` WAF-engelli. **Çalışan yöntem:** gerçek tarayıcı motoru (Playwright-chromium) + modal kaldırma + force-click + **her dosya için TAZE OTURUM**. Kural: kaynak tarama satırında `erisim_yontemi` alanına yöntem yazılır; "403/500 döndü" tek başına KAPALI hükmü değildir (3 damgalı deneme, en az biri taze oturum + gerçek tarayıcı). Muhtemelen diğer `.gov.tr` indirme uçlarında da geçerli.
+*Vezir · 2026-10-15 17:47*
