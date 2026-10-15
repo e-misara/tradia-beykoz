@@ -1,6 +1,8 @@
 # MAC DİSK PLANI v2 · PATRON ONAYINA
 
 **Üreten:** TT-ARŞİV · **Tarih:** 2026-10-14 · **Önceki:** [`arsiv_plan_disk_tasima_2026-09-03.md`](arsiv_plan_disk_tasima_2026-09-03.md) (v1, yalnız görseller; yerini bu belge aldı)
+> 🔴 **DÜZELTME (2026-10-15) — D kaleminin kazancı 4,84 değil ~1,0 GiB.** SHA doğrulaması sırasında Mac görsellerinin **2.377'sinin iCloud "dataless" (yalnız bulutta) olduğu** çıktı: mantıksal 3,89 GiB ama **Mac'te 0 bayt yer kaplıyor** (blok sayımıyla doğrulandı). 3.199 dosyanın gerçek Mac kullanımı **1,29 GiB**. Önceki "hâlâ yerinde, aynı boyut" ölçümüm `stat` boyutuna bakıyordu — dataless dosya boyutu mantıksal gösterir; yöntem hatasıydı. Ayrıntı: `disk_tasima_D_2026-10-15.md`.
+
 **Statü:** 🟡 **ÖNERİ.** Hiçbir dosya taşınmadı, silinmedi. Her kalemi **sahibi CC** uygular; TT-ARŞİV başkasının verisine dokunmaz.
 
 ---
@@ -33,7 +35,7 @@ Hedef kartında "7 haftada −9 GiB, bu hızla Ocak ortasında dolar" yazdım. *
 | `~/Library` | 32 GiB | macOS/uygulamalar | ölçülmedi | Application Support 17 · Caches 4,3 · Containers 3,0 GiB |
 | `~/Desktop/tradia/cc_borsa` | 9,7 GiB | Borsa | **9,1 GiB** | turizm hasadı; **iCloud-senkronlu Masaüstü'nde** |
 | `~/tradia_sorgu` | 6,1 GiB | Hafıza | 5,15 GiB | db 3,8 GiB · **logs 2,0 GiB = 1.850 rsync günlüğü × 76 MB** |
-| Mac'teki görseller | 5,18 GiB | TT-ARŞİV | — | 4,84 GiB'ın TT-HAFIZA'da ad+boyut eşi var |
+| Mac'teki görseller | 5,18 GiB mantıksal · **1,29 GiB gerçek** | TT-ARŞİV | — | 2.377 dosya iCloud-dataless (0 bayt); kalan 822 yerel dosyanın 632'sinin TT-HAFIZA'da SHA-doğrulu eşi var (1,015 GiB) |
 | `~/finans/kod/cron.log` | 0,12 GiB | Finans | — | tek günlük, döndürülmüyor |
 
 ## 4) Öneri — 5 kalem, sırayla, her biri ayrı onay
@@ -43,10 +45,10 @@ Hedef kartında "7 haftada −9 GiB, bu hızla Ocak ortasında dolar" yazdım. *
 | **A** | Turizm hasadı → TT-HAFIZA (kopya + SHA), sonra Mac'ten kaldır; **gelecek hasatlar Masaüstü dışına ve doğrudan diske** | Borsa | **9,1 GiB** | disk takılı | düşük |
 | **B** | rsync günlüğünü özet moda al (dosya listesi değil, sayılar); eski 1.850 günlüğü sıkıştırıp TT-HAFIZA'ya; `finans/kod/cron.log` döndür | Hafıza + Finans | **~2,0 GiB** | yok | yok (günlük) |
 | **C** | `tradia_basin/ham` → TT-HAFIZA aynası **tamamlanıp SHA doğrulanınca** Mac'ten kaldır | Basın | **34 GiB** | disk + tam doğrulama | **yüksek** — tek büyük kalem, geri dönüş yalnız diskten |
-| **D** | Görseller: TT-HAFIZA'da eşi olan 2.974 dosya için **SHA doğrula** (ad+boyut yetmez), sonra Mac'ten kaldır; eşi olmayan 225 dosya (0,34 GiB) önce kopyalanır | TT-ARŞİV | **4,84 GiB** | disk | düşük |
+| **D** | Görseller: 632 dosya **SHA-doğrulandı** (1,015 GiB) — Patron `SİL` derse kaldırılır; 190 yerel dosya (0,28 GiB) önce diske kopyalanır; 2.377 dataless dosyaya **dokunulmaz** (alan açmaz, silme iCloud'a da yansır) | TT-ARŞİV | **~1,0 GiB** | disk | düşük |
 | **E** | `~/Library/Caches` (4,3 GiB) | Patron | ≤ 4,3 GiB | — | macOS/uygulama kararı; TT-ARŞİV önermez, yalnız ölçtü |
 
-**Toplam (A-D): ~50 GiB → boş alan 15 → ~65 GiB.** A ve B tek başına 11 GiB açar ve diske büyük bağımlılık yok (B'nin hiç yok).
+**Toplam (A-D): ~46 GiB → boş alan 15 → ~61 GiB** (D düzeltildi: 4,84 → ~1,0). A ve B tek başına 11 GiB açar ve diske büyük bağımlılık yok (B'nin hiç yok).
 
 **Değişmez kural:** hiçbir kalem **SHA-doğrulamalı kopya olmadan** Mac'ten kaldırılmaz. Kaldırma = sahibin işi, Patron onayıyla.
 
@@ -70,7 +72,7 @@ Bugün boş alanı ölçen düzenli bir iş yok; düşüşü elle ölçtüm. Ön
 - [ ] **A** Borsa turizm hasadı diske + Mac'ten kaldırma + hasat yolu değişikliği
 - [ ] **B** günlük sadeleştirme (Hafıza rsync, Finans cron.log)
 - [ ] **C** Basın ham 34 GiB — **NAS gelmeden önerilmez**; şimdilik yalnız tam ayna + SHA
-- [ ] **D** görseller 4,84 GiB (TT-ARŞİV uygular)
+- [ ] **D** görseller ~1,0 GiB, 632 dosya SHA-doğrulu (TT-ARŞİV uygular; liste PRIVATE, `SİL` bekleniyor)
 - [ ] **§6** disk nöbeti (Hafıza)
 - [ ] v1 §7: görsel arşivi "kapandı" mı, "yeniden adlandırılacak" mı?
 
