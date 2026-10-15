@@ -234,6 +234,15 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 
 ---
 
+## Vaka #10 — "İstanbul'u sel götürdü, sistem sabah bilmiyordu" (14–15.10.2026)
+
+- **Tarih:** 2026-10-15 21:1x · **Açan:** Patron · **Doğrulayan:** Vezir (dosyaya bakarak)
+- **Olgu (ölçüm):** `bolge_basin.json` (Basın bölge motoru, güncelleme 15.10 06:11) Beykoz BM-K5 ham 98 / süzgeçli 1, örnekler: *"Beykoz'a 242 kilo yağış"* (İndigo), *"1.277 su baskını, bir ölüm, 15 heyelan"* (Bianet), *"araçlar çamurlu suya gömüldü"* (Yeni Şafak), *"göle dönen yollarda mahsur"* (DHA), *"çok sayıda yol trafiğe kapandı, kriz merkezi"* (Dost Beykoz); Kartal BM-K5 süzgeçli 11; Rize Merkez 17. **08:40 gece raporu** (`arsiv/gece_raporu_2026-10-15.md`): sel/yağış/heyelan geçen satır **0**. Sosyal K12 Beykoz (14 Eki 23:33) son 90 gün konuları: deprem-afet 2 — sel yok.
+- **Kök neden:** Basın **arşiv modunda** (envanter/ham hasat), **canlı olay alarmı tanımsız**; gece raporu şablonunda OLAY bölümü yok; Vezir ölçüsü makine/kilit/yayın sayıyor, **olay saymıyor**.
+- **Etki:** Tradia'nın "böyle bakıyoruz" iddiası sabah testinde düştü: sistem ilçesinde olanı bilmeden pano yayınladı.
+- **Düzeltme (Patron):** `kanon/olay_alarmi_kanonu_v1.md` — gece raporuna zorunlu "SON 24 SAAT OLAYLAR" (Beykoz/Kartal/Rize + 81 il ulusal); boşsa "tarandı, olay yok", taranmadıysa 🔴; Basın `olay_alarmi_son24.json` 08:20; Sosyal resmî hesap hattı; Vezir ikincil hat (BM-K5). Tecrübe kaydının ilk 20 satırı bu selden.
+- **Emsal ders:** (1) Arşiv ≠ nöbet: toplamak başka, **bugün ne oldu** demek başka. (2) Rapor şablonunda olmayan şey **görünmez**; "yok" ile "bakılmadı" ayrımı şablonda yazılı olmalı. (3) Basın'ın makinesi sinyali tutuyordu (06:11), kimse okumadı — **veri vardı, hat yoktu**.
+
 ## Uyumsuzluk kayıtları (Vaka değil · Patron sınıflaması)
 
 - **U-01 · 2026-10-15 · Hafıza kilit:** "kilit bende" beyanı ↔ süreç ölü (pid 91683 yok, rsync 0, disk 01:26 düştü); külliyat 3 saat boşa bekledi. Düzeltme: makine_kaynak kural 9 (pid+heartbeat, Vezir nabzı 5 dk).

@@ -1,10 +1,10 @@
 # GECE RAPORU · 2026-10-15 (08:40 otomatik)
 
-**Üretim:** 2026-10-15T08:40 · **Pencere:** 22:00 → 08:40 · **15 dk ölçüm sayısı:** 39
+**Üretim:** 2026-10-15T20:52 · **Pencere:** 22:00 → 08:40 · **15 dk ölçüm sayısı:** 39
 
 ## Sabah teyitleri
 
-- **CDN yayın teyidi (08:30):** **TEYİTLİ** · 2026-10-15T08:30
+- **CDN yayın teyidi (08:30):** **TEYİTLİ** · 2026-10-15T20:41
 - **EVDS sağlık (Analiz 08:00 · evds_saglik.json):** `SAGLAM` · 2026-10-15T05:00:02Z · Vezir damgası: **SAGLAM (2026-10-14T15:57:33Z)** · veri yolu: JSON items=11 · B11: UYUMLU
 
 ## Gece ölçüm özeti (15 dk · SUREKLILIK.json → makine_gecmis)
@@ -17,12 +17,27 @@
 
 ## Kilit sırası (agir_is_kilidi.json)
 
-- 1. Hafıza · nefes rsync ~/tradia_basin/ham → TT-HAFIZA/staging_nefes/basin_ham (DEVAM, resumable) → bekliyor — disk düştü 01:26; adaptör + disk gelince
+- 1. Hafıza · nefes rsync ~/tradia_basin/ham → TT-HAFIZA/staging_nefes/basin_ham (DEVAM, resumable) → bekliyor — disk geldi 2026-10-15 20:34, öncelik geri (kural 11)
 - 2. Borsa · kap_kulliyat.py C (450/4459) → bekliyor — PİL BEKLEME (Patron 04:5x) · önceki BEKLE 3 saat ölü kilitte
-- 3. Borsa · ktb_pdf_tasi.py (91 PDF, 8,51 GB → TT-HAFIZA; kopyala→SHA→manifest→Mac kopyasını kaldır) → bekliyor
-- 4. Hafıza · Vaka #09 taşıma A0: ~/Desktop/tradia + TT-Tüm CC kod/çalışma dosyaları → ~/tradia_calisma/ + symlink → ONAYLI (Patron 00:55): A0 + A1 · iCloud kopyası A1 SHA-verify sonrası Masaüstü'nden çıkar · Patron adımı: taşıma bitince 'iCloud Son Silinenler'i boşalt' · Patron 04:5x: külliyat ve PDF ARKASINA alındı (sıra 4)
+- 3. Borsa · ktb_pdf_tasi.py (91 PDF, 8,51 GB → TT-HAFIZA; kopyala→SHA→manifest→Mac kopyasını kaldır) → bekliyor — disk geldi 2026-10-15 20:34, öncelik geri (kural 11)
+- 4. Hafıza · Vaka #09 taşıma A0: ~/Desktop/tradia + TT-Tüm CC kod/çalışma dosyaları → ~/tradia_calisma/ + symlink → bekliyor — disk geldi 2026-10-15 20:34, öncelik geri (kural 11)
 - 5. Hafıza · builder.py --kaynak basin_html → bekliyor
-- 6. Basın · hasat_paralel_v4 → DURDURULDU 23:36 (bootout, plist yerinde)
+- 6. Basın · hasat_paralel_v4 → bekliyor — disk geldi 2026-10-15 20:34, öncelik geri (kural 11)
+- 7. Map · Beykoz 3D coğrafya render (beykoz_guncel_2026-10/map) — ağır iş → bekliyor — bant dışı (02–07 tercih) (2026-10-15 17:39)
+
+## SON 24 SAAT OLAYLAR (Beykoz · Kartal · Rize + 81 il ulusal) — olay_alarmi_kanonu_v1
+
+- 🔴 **TARANMADI — Basın hattı (olay_alarmi_son24.json) yok** → üretim ölçüsünde kırmızı
+- **İKİNCİL (Vezir, bolge_basin BM-K5 afet · güncelleme 2026-10-15T06:11:08.210229):** 9 başlık son 24 saat
+- Beykoz · İstanbul’da sel: Sarıyer’de araçlar sürüklendi, Beykoz’a 242 kilo yağış düştü - İndigo Der · İndigo Dergisi · 14.10 22:32
+- Beykoz · İstanbul'u sel aldı: 1.277 su baskını, bir ölüm, 15 heyelan, binlerce yardım çağrısı - Bia · Bianet · 14.10 20:41
+- Beykoz · Beykoz’da sağanakla birlikte göle dönen yollarda, araçlarında mahsur kaldılar - DHA | Demi · DHA | Demirören Haber Ajansı · 14.10 21:16
+- Beykoz · Beykoz’da çok sayıda yol trafiğe kapandı… Kriz merkezi kuruldu - Dost Beykoz · Dost Beykoz · 14.10 18:05
+- Kartal · Yer Kartal! Sel suları toprağı sürükledi, TEM bağlantı yolu kısmen kapandı - Sabah · Sabah · 14.10 21:39
+- Kartal · Kartal’da sel suları toprağı sürükledi: TEM bağlantı yolu kısmen kapandı - Yeni Şafak · Yeni Şafak · 14.10 21:40
+- Kartal · Kartal’da sel suları toprağı sürükledi - İstanbul Gazetesi · İstanbul Gazetesi · 14.10 20:42
+- Kartal · Kartal’da sel suları toprağı sürükledi; TEM bağlantı yolu kısmen kapandı - Haberton · Haberton · 14.10 21:02
+- Kartal · Kartal’da sel suları toprağı sürükledi; TEM bağlantı yolu kısmen kapandı - DHA | Demirören · DHA | Demirören Haber Ajansı · 14.10 20:40
 
 ## Gece olayları (Vezir 04:5x (Patron kararı 5))
 
@@ -39,9 +54,9 @@
 
 ## Nabız (5 dk · motor/NABIZ.jsonl)
 
-- **Disk bağlı dakika (bugün):** 0 / 240 ölçülen dk · **pil min:** %9 · **adaptör takılı nabız:** 27/48 · **işlem:** 3
+- **Disk bağlı dakika (bugün):** 235 / 990 ölçülen dk · **pil min:** %8 · **adaptör takılı nabız:** 114/198 · **işlem:** 10
 
-Tutan: null
+Tutan: {"cc": "PİL BEKLEME", "is": "kural 8: başlangıç adaptör + pil ≥%50; devam ≥%25 (02_CC_STATE/pil_esigi.py)", "pid": null, "baslangic": "2026-10-15 18:23", "ayar": "kilit_nabiz.py yer tutucu", "pil_olcum": "%49 · adaptör YOK · 2026-10-15 20:34"}
 
 ## Borsa'ya Patron aracılığıyla (bulut sohbeti · 02_CC_STATE'i görmüyor)
 
@@ -54,6 +69,7 @@ Tutan: null
 - 7) Vaka #09 taşıma: cc_borsa arşivi (11.719 boşaltılmış dosya, çoğu 14,1 GiB'in içinde) A1 partilerinde TT-HAFIZA'ya; Borsa kodunda 'Desktop/tradia' mutlak yolu varsa symlink ile çalışır, plist düzeltmesi Standing #48 R-kaydıyla.
 - 8) Borsa içerik taraması (Desktop/cc_borsa arşivi) 01:05'te DURDURULDU: dataless dosya okuma = iCloud indirme = disk işi (12 GiB boş). Kanon: makine_kaynak kural 6. Arşiv A1 partileriyle TT-HAFIZA'ya gelince tarama oradan.
 - 9) 15 Eki 04:5x: EVDS tam çekim 8730/8730 BİTTİ (final tablo vezir_bildirim_borsa_evds_final.json). Kilit: PİL BEKLEME (pil<%40 veya adaptörsüz → ağır iş yok; agir_is_kilit.py'ye pmset kontrolü Patron kararıyla Vezir ekledi, yedek .bak_20261015_vezir; 'pil -' ve 'nabiz' komutları). Yeni sıra: rsync → KÜLLİYAT (sıra 2) → PDF (3) → A0 → havuz → Basın. Külliyat sarmalayıcısı pil uygun olunca kendiliğinden alır.
+- 10) evds_ham havuzda 18 kayıt 'DD-MM-YYYY' biçimli tarih (son=31-12-2025) → EVDS çıktısında tarih ISO (YYYY-MM-DD) olmalı; Borsa hangi seri/dosyadan geldiğini bulup normalize eder (Vaka #08 haftalık etiket kardeşi). Ayrıca: kuyruk disk kuralı — disk yokken rsync/PDF sırayı tutmaz, külliyat geçer (agir_is_kilit.py güncellendi, Patron kararı).
 
 ## Patron için
 

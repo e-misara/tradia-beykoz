@@ -25,7 +25,7 @@
 
 ## 3. Kurallar
 1. **Olay silinmez, yalnız üstüne yazılır** (`revizyon[]` ile; eski değer kalır).
-2. **Her satır mahalle kartına düşer:** Aİ evren mahalle kaydı `tecrube[]` alanına `olay_id` eklenir (Aİ otorite); Signals ısı matrisi `tecrube` ayağını buradan okur.
+2. **Her satır mahalle kartına düşer:** Aİ evren mahalle kaydı `tecrube[]` alanına `olay_id` eklenir (Aİ otorite). **Isı matrisine AYAK olarak GİRMEZ** (Signals SIG39 önerisi KABUL: olay = akış/şok, 11 ayak = stok; ayak eklemek ısıyı takvimle kaydırır). Signals matris hücresine **görsel işaret** basar; olayın etkisi ancak ilgili soru kapandığında **mevcut ayağın verisi** üzerinden dolaylı girer. Tek olay kaynağı bu defterdir (`cikti/olay_defteri.json` ayrı tutulmaz; Signals buradan okur).
 3. **Çelişki:** iki kaynak farklı sayı veriyorsa ikisi de yazılır, `celiski: Tür A/B` (celiski_referans_kanonu); toplam tutması eksik satırı 0 yapmaz.
 4. **Kanıt sınıfı düşürülemez:** PROXY'den BELGE'ye ancak belge künyesiyle çıkılır.
 5. **Zaman:** olayın tarihi haber tarihi değildir; haber tarihi `kaynak_kunyesi.tarih`'te durur (Basın gelecek-tarih dersi).
