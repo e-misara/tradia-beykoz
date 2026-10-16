@@ -84,3 +84,6 @@ arsiv/tam/ham/
 
 # parsel_veri_kanonu_v1: parsel_01 çalışma dizini public repoya girmez (15 Eki; içerik şimdilik ilçe/mahalle medyanı, ad kaymasına karşı kapı)
 uyandirma/parsel_01_rize/
+
+# gazete kanonu şablonu (kanon dosyası, sır yok)
+!kanon/tra_basin_sablon_v1.html

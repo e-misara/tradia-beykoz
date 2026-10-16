@@ -156,6 +156,14 @@
    "yeni_son_tarih": "2026-10-16 23:00",
    "gecerse": "ilk sayı Vezir veri katmanı + Üst Akıl şablonu ile basılır (Patron 21:32)",
    "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/gazete_plan_v1.md"
+  },
+  {
+   "cc": "basin",
+   "prompt": "Tecrübe kaydı ilk 20 satır (≥2 kaynak) — 14.10 sel",
+   "ilk_son_tarih": "2026-10-17 14:00",
+   "yeni_son_tarih": "2026-10-17 14:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/tecrube_kaydi"
   }
  ]
 }

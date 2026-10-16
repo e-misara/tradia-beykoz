@@ -1,4 +1,4 @@
-# GAZETE KANONU v1.3 — TRA-BASIN (günlük gazete)
+# GAZETE KANONU v1.4 — TRA-BASIN (günlük gazete)
 
 **Statü:** 🟢 KANON v1.1 · Patron 2026-10-16 21:31 (ürün) + 21:32 (ad **TRA-BASIN**, katman ayrımı) · Vezir kaydı 2026-10-16 21:35
 **Kaynak notu (dürüst):** Patron "Basın'ın `gazete_plan_v1.md`'sinden" dedi; **dosya diskte bulunamadı** (mdfind + find ~ + 02_CC_STATE grep → 0). Bu kanon Patron'un saydığı maddelerden yazıldı; Basın planı gelince karşılaştırılır, çelişki Tür A olarak işlenir (celiski_referans_kanonu).
@@ -10,7 +10,7 @@
   - **VERİ KATMANI** (Basın'ın girdisi, makine okur): `02_CC_STATE/tra_basin/TRA-BASIN_<YYYY-MM-DD>.md` (8 bölüm, §3) + `TRA-BASIN_<tarih>.json` (**gazete.json**: bölüm → satır → künye; dizgi bunu okur).
   - **OKUR ÜRÜNÜ** (Patron/Üst Akıl okur): `TRA-BASIN_<tarih>.html` + `TRA-BASIN_<tarih>.pdf` — **A4, 8–12 sayfa, gazete düzeni:** manşet + 3 sütun · bölge sayfaları (Beykoz · Kartal · Rize · ulusal) · resmî ilan köşesi (RG/EKAP/askı) · piyasa (kıyas noktaları: TÜFE/altın/asgari ücret, ilan kesiti) · takvim (SON_TARIH, kontrol tarihleri) · defter (tecrübe kaydı) · arka sayfa **"bugün tarihte"** (olay defteri/arşiv). **Dizgi kanonu = gelişim dosyasınınki:** krem zemin, kırmızı başlık, sayı kutuları. Şablon: Üst Akıl verir (Patron); Basın planı 23:00'e gelmezse ilk sayı **Vezir veri katmanı + Üst Akıl şablonu** ile basılır.
   - Hafıza 09:00'da dördünü `~/Desktop/UST_AKIL_BEKLEYEN/`'e kopyalar (.sha256, BEKLEYEN.md satırı).
-- **Zincir:** gece raporu **08:40** (Vezir) → gazete **08:50** (Basın `gazete.py`, launchd `com.tradia.ccbasin.trabasin`) → Patron'a **09:00** (Hafıza kopya) → bekçi **09:05** (Vezir).
+- **Zincir:** gece raporu **08:40** (Vezir) → gazete **08:50** (Basın `gazete.py`, launchd **`com.tradia.ccbasin.trabasin`** (süreklilik eşlemesi `ccbasin` anahtarından; `com.tradia.trabasin` KALDIRILIR)) → Patron'a **09:00** (Hafıza kopya) → bekçi **09:05** (Vezir).
 
 ## 2. Girdi hattı (gazete.py bunları okur)
 1. `arsiv/gece_raporu_<tarih>.md` → **SON 24 SAAT OLAYLAR** bölümü (olay_alarmi hattı) ve zamanlı iş bekçisi.
@@ -55,12 +55,21 @@ SU dosyası **Kısım 3 → 3.13 "TRA-BASIN: günlük gazete"** — **ilk sayıd
 - **Bekçi 09:05** (`trabasin_bekci`): md VE pdf (§6) **+ uygulama açıldı mı** → **`com.tradia.trabasin.app`** (Hafıza · MU-01 sahibi · 09:05) launchd son koşusu → `SUREKLILIK.json → tra_basin_app[<tarih>]`; plist yoksa "ölçülmedi (plist yok)".
 *Vezir · 2026-10-16 22:05*
 
-## v1.3 · Kanıt sınıfı TEK TANIM (Üst Akıl onayı 16.10 22:00 · Basın'ınki geçerli)
-| Sınıf | Tanım |
+## v1.3 · Kanıt sınıfı NİHAİ (Üst Akıl 22:25 — 22:00 'Basın tanımı' satırı GEÇERSİZ)
+| Sınıf | Tanım (koda yazıldığı gibi) |
 |---|---|
-| **A** | resmî belge (RG, EKAP, kurum kararı/açıklaması, resmî veri) |
-| **B** | ≥2 **ulusal** kaynak |
-| **C** | yalnız **yerel** kaynak |
-| **D** | tek kaynak / başlık düzeyi |
-**Ayrı eksen — `kanit_turu`:** `BELGE` · `HESAP` (türetim/formül; formül satırda zorunlu) · `PROXY`. A–D **kaynak çokluğu/resmîliği** söyler, `kanit_turu` **nasıl bilindiğini** söyler; ikisi **karıştırılmaz** (Vezir'in v1.2'deki "D = türetim" tanımı **geri çekildi**). Her makale satırı iki alanı da taşır.
-*Vezir · 2026-10-16 22:09*
+| **A** | belge / ölçüm (resmî belge, resmî veri, kendi ölçümümüz) |
+| **B** | ≥2 **bağımsız** kaynak |
+| **C** | tek kaynak |
+| **D** | türetim / başlık düzeyi |
+**Ayrı alan — `kaynak_turu`:** `yerel` · `ulusal` · `resmî` (yerel/ulusal ayrımı A–D'ye karışmaz). **`kanit_turu`** (BELGE/HESAP/PROXY) üçüncü eksen olarak kalır. Her makale satırı: `kanit_sinifi` + `kaynak_turu` + `kanit_turu`.
+*Vezir · 2026-10-16 22:26 (v2 kararları)*
+
+## v1.4 · TRA-BASIN kararları v2 (Üst Akıl 22:25 · Patron)
+1. **Görevli adı:** **Sayı 1 hiçbir ad içermez** (Basın uygulaması). Sayı 2'den itibaren: yalnız **resmî sıfatıyla konuşan kamu görevlisi** (vali, kaymakam, belediye başkanı, bakan, kurum sözcüsü) **unvan + soyadı** ile; **beyaz liste `kanon/gorevli_listesi.json`** (Vezir tutar; Basın/Signals aday önerir); listede olmayan **her ad maskelenir** (KVKK #31). Eski görevli (sıfatı düşmüş) listede değildir.
+2. **Şablon:** `kanon/tra_basin_sablon_v1.html` (A4 · krem zemin · kırmızı başlık · sayı kutuları · 8 bölüm yuvası `gazete.json` alan adlarıyla) — kanon dosyasıdır, Basın `gazete.py` bunu kullanır; Üst Akıl/Patron şablon verirse aynı yola v2.
+3. **Künye (Misara katalog künyesi YOK):** **"TRA-BASIN · Tradia · Türkiye Konum İstihbaratı · sayı N · <tarih> · Yayın: Ahmet Çolak"**.
+4. **launchd:** gazete `com.tradia.ccbasin.trabasin` 08:50 (eski `com.tradia.trabasin` kaldırılır) · uygulama `com.tradia.trabasin.app` 09:05 (Hafıza, MU-01 — Basın işi değil) · köşe `com.tradia.vezir.kose` 08:43 · bekçi `com.tradia.vezir.trabasin_bekci` 09:05.
+5. **Dosya sahipliği:** `gazete.json` **Basın**; Hafıza'nın önizleme JSON'u **`gazete_app.json`** ayrı kalır.
+6. **Tecrübe kaydı ilk 20 satır (≥2 kaynak): son tarih 17.10 14:00** (Basın; SON_TARIH).
+*Vezir · 2026-10-16 22:26*

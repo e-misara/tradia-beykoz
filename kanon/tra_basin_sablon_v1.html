@@ -1,0 +1,29 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>TRA-BASIN</title>
+<style>
+@page{size:A4;margin:14mm}body{background:#f6efe0;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif;margin:0}
+.sayfa{width:182mm;margin:0 auto;padding:6mm 0;page-break-after:always}
+h1.marka{font:900 34pt/1 Georgia,serif;color:#b3121b;letter-spacing:.5px;border-bottom:3px solid #b3121b;margin:0 0 2mm}
+.kunye{font:9pt/1.3 sans-serif;color:#444;display:flex;justify-content:space-between;border-bottom:1px solid #999;padding:1mm 0 2mm;margin-bottom:4mm}
+h2{font:700 15pt/1.15 Georgia,serif;color:#b3121b;margin:4mm 0 1.5mm;border-left:4px solid #b3121b;padding-left:2mm}
+h3{font:700 11pt/1.2 Georgia,serif;margin:2mm 0 1mm}
+.manset h3{font-size:19pt}.sutun3{column-count:3;column-gap:5mm;font-size:9.5pt;line-height:1.35}
+.kutu{display:inline-block;background:#fff;border:1px solid #b3121b;border-radius:2px;padding:1.5mm 2.5mm;margin:1mm 1mm 1mm 0;font:700 13pt/1 sans-serif;color:#b3121b}
+.kutu small{display:block;font:400 7.5pt/1.2 sans-serif;color:#555}
+.kunye-satir{font:8pt/1.3 sans-serif;color:#555}.sinif{font:700 7.5pt sans-serif;background:#b3121b;color:#fff;padding:0 1.2mm;border-radius:1px;margin-left:1mm}
+.bos{color:#777;font-style:italic}table{width:100%;border-collapse:collapse;font:8.5pt sans-serif}td,th{border-bottom:1px solid #ccc;padding:1mm;text-align:left;vertical-align:top}
+.arka{background:#efe4c8;padding:4mm}
+</style></head><body>
+<!-- Veri: gazete.json (Basın) + vezir_kose_<tarih>.json (Vezir). Yuvalar: data-alan="..." → gazete.py doldurur. Boş bölüm: 'tarandı, yok (taranan: …)'. Parsel/koordinat/anahtar YOK. Sayı 1: ad YOK; sonra kanon/gorevli_listesi.json. -->
+<section class="sayfa">
+ <h1 class="marka">TRA-BASIN</h1>
+ <div class="kunye"><span>Tradia · Türkiye Konum İstihbaratı</span><span data-alan="kunye.sayi">sayı N</span><span data-alan="kunye.tarih">tarih</span><span>Yayın: Ahmet Çolak</span></div>
+ <div class="manset" data-alan="mansetler[0]"><h3 data-alan="mansetler[0].baslik">Manşet</h3><div class="kunye-satir" data-alan="mansetler[0].kaynak">kaynak · kesit <span class="sinif" data-alan="mansetler[0].kanit_sinifi">A</span></div></div>
+ <div class="sutun3" data-alan="makaleler[bolge=Ulusal]"><p class="bos">tarandı, yok (taranan: …)</p></div>
+ <h2>Sayılar</h2><div data-alan="sayilar"><span class="kutu">—<small>kesit · kaynak</small></span></div>
+</section>
+<section class="sayfa"><h2>Beykoz</h2><div class="sutun3" data-alan="makaleler[bolge=Beykoz]"></div><h2>Kartal</h2><div class="sutun3" data-alan="makaleler[bolge=Kartal]"></div><h2>Rize</h2><div class="sutun3" data-alan="makaleler[bolge=Rize]"></div></section>
+<section class="sayfa"><h2>Resmî ilan köşesi</h2><div data-alan="resmi_ilan"></div><h2>Piyasa</h2><div data-alan="piyasa"></div></section>
+<section class="sayfa"><h2>Takvim</h2><table data-alan="takvim"><tr><th>Tarih</th><th>Ne</th><th>Kim</th><th>Durum</th></tr></table><h2>Defter (tecrübe kaydı)</h2><table data-alan="tecrube"><tr><th>Olay</th><th>Yer</th><th>Tarih</th><th>Kaynak</th><th>Sınıf</th></tr></table></section>
+<section class="sayfa"><h2>Vezir köşesi</h2><div data-alan="vezir_kose.gece_raporu_ozeti"></div><h3>KIRMIZI</h3><div data-alan="vezir_kose.kirmizi"></div><h3>Patron adımları</h3><div data-alan="vezir_kose.patron_adimlari"></div><h3>CC çalışmaları</h3><table data-alan="vezir_kose.cc_calismalari"><tr><th>Birim</th><th>Dün</th><th>Bugün</th><th>Durum</th></tr></table></section>
+<section class="sayfa"><h2>Düzeltmeler</h2><div data-alan="duzeltmeler"></div><div class="arka"><h2>Bugün tarihte</h2><div data-alan="bugun_tarihte"></div></div></section>
+</body></html>
