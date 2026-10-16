@@ -140,6 +140,14 @@
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/analiz/",
    "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+  },
+  {
+   "cc": "analiz",
+   "prompt": "İBB 2017 prompt'u (Patron'dan) · 45 mahalle dönem profili",
+   "ilk_son_tarih": "2026-10-16 20:00",
+   "yeni_son_tarih": "2026-10-16 20:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/Desktop/tradia/TT-Tüm CC/beykoz_guncel_2026-10/analiz"
   }
  ]
 }

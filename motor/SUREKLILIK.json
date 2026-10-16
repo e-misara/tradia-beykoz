@@ -2009,50 +2009,42 @@
   }
  },
  "makine": {
-  "olcum_ani": "2026-10-16T10:49:16",
+  "olcum_ani": "2026-10-16T16:28:08",
   "ram_gb": 8,
-  "agir_kosan": [
-   {
-    "pid": "1167",
-    "is": "builder.py",
-    "cc": "Hafıza"
-   }
-  ],
+  "agir_kosan": [],
   "kilit_tutan_pid": "None",
-  "kilit_ihlali": [
-   {
-    "pid": "1167",
-    "is": "builder.py",
-    "cc": "Hafıza"
-   }
-  ],
+  "kilit_ihlali": [],
   "bos_gb": 0.06,
-  "sikistirici_gb": 1.33,
-  "swap_kullanim_mb": 0.0,
-  "swap_toplam_mb": 0.0,
-  "bellek_bos_yuzde_memory_pressure": 62,
+  "sikistirici_gb": 3.46,
+  "swap_kullanim_mb": 1747.5,
+  "swap_toplam_mb": 2048.0,
+  "bellek_bos_yuzde_memory_pressure": 35,
   "yuk_1_5_15": [
-   168.77,
-   38.69,
-   14.25
+   6.89,
+   4.63,
+   7.39
   ],
-  "claude_oturum_sureci": 2,
-  "launchd_exit_sifir_degil": 1,
+  "claude_oturum_sureci": 15,
+  "launchd_exit_sifir_degil": 2,
   "launchd_exit_liste": [
    {
     "label": "com.tradia.sorgu.duzen",
     "exit": 2
+   },
+   {
+    "label": "com.tradia.ttarsiv.uckopya",
+    "exit": 1
    }
   ],
   "m4_port_8789": "DİNLİYOR",
   "tt_hafiza_mount": false,
   "pil": {
-   "yuzde": 34,
+   "yuzde": 39,
    "adaptor": true
   },
   "disk_bagli_dakika_gun": {
    "dakika": 190,
-   "nabiz_sayisi": 46,
+   "nabiz_sayisi": 51,
    "gun": "2026-10-16"
   },
   "disk_dusme_sayisi_gun": {
@@ -2069,6 +2061,140 @@
     "kaynak": "nabız 5 dk"
    }
   },
+  "zamanli_is_kirmizi": [
+   {
+    "is": "com.tradia.ttai.duyuru",
+    "son_kosu_saat_once": null,
+    "esik_saat": 192,
+    "log": "/Users/GAC-A/tradia_ttai/surekli_state/duyuru_launchd.out"
+   },
+   {
+    "is": "com.tradia.ccihale.arsiv",
+    "son_kosu_saat_once": 30.8,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/cc_ihale/logs/arsiv_birikim.out.log"
+   },
+   {
+    "is": "com.tradia.ccfinans.aylik",
+    "son_kosu_saat_once": 1093.2,
+    "esik_saat": 768,
+    "log": "/Users/GAC-A/finans/kod/launchd_aylik.log"
+   },
+   {
+    "is": "com.tradia.evds.saglik",
+    "son_kosu_saat_once": 32.5,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/Library/Logs/tradia_evds_saglik.log"
+   },
+   {
+    "is": "com.tradia.gunluk-ozet",
+    "son_kosu_saat_once": 1794.0,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/Desktop/tradia/logs/gunluk_ozet_launchd.log"
+   },
+   {
+    "is": "com.tradia.ttai.fabrika",
+    "son_kosu_saat_once": 37.2,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tradia_ttai/fabrika_cikti/surekli_launchd.out"
+   },
+   {
+    "is": "com.tradia.vezir.gece_raporu",
+    "son_kosu_saat_once": 31.8,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_gece_raporu.log"
+   },
+   {
+    "is": "com.tradia.ttmap.eplan",
+    "son_kosu_saat_once": 35.7,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tradia_ttmap/kod/eplan_launchd.log"
+   },
+   {
+    "is": "com.tradia.dm02.dongu",
+    "son_kosu_saat_once": 1027.9,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tradia_sorgu/logs/launchd_dm02.log"
+   },
+   {
+    "is": "com.tradia.vezir.prompt_defteri",
+    "son_kosu_saat_once": 40.7,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_prompt_defteri.log"
+   },
+   {
+    "is": "com.tradia.hafiza.vade_kontrol",
+    "son_kosu_saat_once": 31.5,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/hafiza_vade_kontrol_stdout.log"
+   },
+   {
+    "is": "com.tradia.ccihale.rg",
+    "son_kosu_saat_once": 31.0,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/cc_ihale/logs/rg_gunluk.out.log"
+   },
+   {
+    "is": "com.tradia.ccfinans.gunluk",
+    "son_kosu_saat_once": 1682.8,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/finans/kod/launchd_gunluk.log"
+   },
+   {
+    "is": "com.tradia.haber",
+    "son_kosu_saat_once": null,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/Library/Logs/tradia_haber.log"
+   },
+   {
+    "is": "com.tradia.ccihale.uyan",
+    "son_kosu_saat_once": 30.5,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/cc_ihale/logs/uyan_out.log"
+   },
+   {
+    "is": "com.tradia.ccsignals.gelenkutusu",
+    "son_kosu_saat_once": null,
+    "esik_saat": 192,
+    "log": "/Users/GAC-A/signals/cikti/nobet/launchd_out.log"
+   },
+   {
+    "is": "com.tradia.analiz.seo_haftalik",
+    "son_kosu_saat_once": null,
+    "esik_saat": 192,
+    "log": "/Volumes/TT-HAFIZA/STAGING_YENI/ilan/seo_gorunurluk/_launchd_stdout.log"
+   },
+   {
+    "is": "com.tradia.sosyal.whisper",
+    "son_kosu_saat_once": 36.0,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tradia_sosyal/kitap_arsiv/whisper_log/launchd_stdout.log"
+   },
+   {
+    "is": "com.tradia.ccborsa.evds_gunluk",
+    "son_kosu_saat_once": 45.7,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/Desktop/tradia/cc_borsa/logs/launchd_evds_gunluk.log"
+   },
+   {
+    "is": "com.tradia.tuik-tcmb-monthly",
+    "son_kosu_saat_once": 3199.5,
+    "esik_saat": 768,
+    "log": "/Users/GAC-A/Library/Logs/tradia_tuik_tcmb.log"
+   },
+   {
+    "is": "com.tradia.vezir.yayin_teyit",
+    "son_kosu_saat_once": 32.0,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_yayin_teyit.log"
+   },
+   {
+    "is": "com.tradia.pazarlama.harvest",
+    "son_kosu_saat_once": 30.2,
+    "esik_saat": 24,
+    "log": "/Users/GAC-A/tt_pazarlama/harvest/harvest.launchd.log"
+   }
+  ],
   "memory_index_disiplini": {
    "esik": 300,
    "ihlal_sayisi": 5,
@@ -4342,10 +4468,79 @@
    "ihlal_cc": [
     "Hafıza"
    ]
+  },
+  {
+   "olcum_ani": "2026-10-16T16:19:16",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 1497.12,
+   "yuk_1_5_15": [
+    3.68,
+    5.45,
+    10.27
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 2,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": false,
+   "pil": {
+    "yuzde": 38,
+    "adaptor": true
+   },
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-16T16:26:15",
+   "bos_gb": 0.05,
+   "swap_kullanim_mb": 1577.06,
+   "yuk_1_5_15": [
+    4.84,
+    4.12,
+    7.65
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 2,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": false,
+   "pil": {
+    "yuzde": 39,
+    "adaptor": true
+   },
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
+  },
+  {
+   "olcum_ani": "2026-10-16T16:28:08",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 1747.5,
+   "yuk_1_5_15": [
+    6.89,
+    4.63,
+    7.39
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 2,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": false,
+   "pil": {
+    "yuzde": 39,
+    "adaptor": true
+   },
+   "kilit_ihlali": 0,
+   "ihlal_cc": []
   }
  ],
  "kaynak_bosluk": {
-  "olcum": "2026-10-16T16:04",
+  "olcum": "2026-10-16T16:28",
   "pencere_gun": 90,
   "kaynaklar": {
    "afad_deprem": {
@@ -4538,11 +4733,11 @@
     "bosluk_sayisi": 5
    },
    "sosyal_transkript": {
-    "son_kayit": "2026-10-15",
-    "kayit": 2497,
-    "bugune_gun": 1,
+    "son_kayit": "2026-10-16",
+    "kayit": 2500,
+    "bugune_gun": 0,
     "gunluk_seri": true,
-    "son90_gun_sayisi": 40,
+    "son90_gun_sayisi": 41,
     "eksik_gun": 50,
     "bosluk_3gun_ustu": [
      {
@@ -4606,7 +4801,7 @@
   ]
  },
  "havuz_gecikme": {
-  "olcum": "2026-10-16T16:04",
+  "olcum": "2026-10-16T16:28",
   "kaynak_dosya": 24,
   "gecikme_7gun_ustu": 2,
   "dosya_yok": 14,
@@ -4749,13 +4944,6 @@
     "son_alim": "2026-08-01 19:37:06"
    },
    {
-    "dosya": "/Users/GAC-A/tradia_sosyal/kitap_arsiv/tam_metin_govde.jsonl",
-    "dosya_mtime": "2026-10-16T16:03",
-    "son_alim": "2026-10-15 16:30:52",
-    "gecikme_gun": 1.0,
-    "havuz_kayit": 26
-   },
-   {
     "dosya": "/Users/GAC-A/finans/data",
     "dosya_mtime": "2026-10-14T19:30",
     "son_alim": "2026-10-15 17:00:56",
@@ -4766,6 +4954,13 @@
     "dosya": "/Volumes/TT-HAFIZA/STAGING_YENI/basin",
     "durum": "DOSYA YOK (taşındı/silindi?)",
     "son_alim": "2026-10-15 18:39:14"
+   },
+   {
+    "dosya": "/Users/GAC-A/tradia_sosyal/kitap_arsiv/tam_metin_govde.jsonl",
+    "dosya_mtime": "2026-10-16T16:14",
+    "son_alim": "2026-10-16 13:04:27",
+    "gecikme_gun": 0.1,
+    "havuz_kayit": 3
    }
   ],
   "not": "mtime vekildir: dosyanın değişmesi yeni kayıt demek olmayabilir; içerik-tarih kıyası kaynak başına ayrı iş"
@@ -4804,9 +4999,14 @@
    "kirmizi": true
   },
   "2026-10-16": {
-   "basin_hatti": "YOK",
-   "ikincil_baslik": 0,
-   "kirmizi": true
+   "basin_hatti": "VAR",
+   "genel": "KIRMIZI",
+   "yerler": {
+    "Beykoz": "KIRMIZI",
+    "Kartal": "YEŞİL",
+    "Rize": "YEŞİL"
+   },
+   "kirmizi": false
   }
  },
  "son_tarih_disiplini": {

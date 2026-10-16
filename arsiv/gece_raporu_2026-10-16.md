@@ -1,17 +1,17 @@
 # GECE RAPORU · 2026-10-16 (08:40 otomatik)
 
-**Üretim:** 2026-10-16T16:06 · **Pencere:** 22:00 → 08:40 · **15 dk ölçüm sayısı:** 0 ⚠ (ölçüm yok/az — launchd uyudu?)
+**Üretim:** 2026-10-16T16:30 · **Pencere:** 22:00 → 08:40 · **15 dk ölçüm sayısı:** 0 ⚠ (ölçüm yok/az — launchd uyudu?)
 
 ## Sabah teyitleri
 
-- **CDN yayın teyidi (08:30):** **TEYİTLİ** · 2026-10-15T20:54
+- **CDN yayın teyidi (08:30):** **TEYİTLİ** · 2026-10-16T16:11
 - **EVDS sağlık (Analiz 08:00 · evds_saglik.json):** `SAGLAM` · 2026-10-15T05:00:02Z · Vezir damgası: **SAGLAM (2026-10-14T15:57:33Z)** · veri yolu: JSON items=11 · B11: UYUMLU
 
 ## Gece ölçüm özeti (15 dk · SUREKLILIK.json → makine_gecmis)
 
 - **Yük maks (1 dk):** ölçülmedi · **Swap maks:** ölçülmedi · **Boş bellek min:** ölçülmedi
 - **Kilit ihlali (ölçüm×süreç toplamı):** 0 · ihlal eden CC: —
-- **rsync (Hafıza nefes) bitiş:** nefes log: 2026-10-16T13:05
+- **rsync (Hafıza nefes) bitiş:** nefes log: 2026-10-16T13:29
 - **EVDS tam çekim:** sabah hâlâ koşuyor / ölçülemedi · kaldığı seri (son log): `ölçülmedi`
 - **launchd exit≠0 (son ölçüm):** ölçülmedi
 
@@ -27,8 +27,21 @@
 
 ## SON 24 SAAT OLAYLAR (Beykoz · Kartal · Rize + 81 il ulusal) — olay_alarmi_kanonu_v1
 
-- 🔴 **TARANMADI — Basın hattı (olay_alarmi_son24.json) yok** → üretim ölçüsünde kırmızı
-- **İKİNCİL (Vezir, bolge_basin BM-K5 afet · güncelleme 2026-10-15T06:11:08.210229):** son 24 saatte kapsam ilçelerinde afet başlığı yok (ya da bölge motoru bayat)
+- **Basın hattı (canli_akis, 6 saat):** üretim 2026-10-16 16:26 · pencere 2026-10-15 16:26 → 2026-10-16 16:26 · genel **KIRMIZI** · yeni satır 0 · eşik: HESAP v0 — KIRMIZI: riskli anahtar ≥5 haber ve ≥3 kaynak; SARI: ≥1 riskli anahtar; YEŞİL: 
+- **Beykoz** (TR-34-1185): **KIRMIZI** · haber 40 · riskli 26 / kaynak 23 · sel 19, tahliye 17, yağış 15, heyelan 4
+    - 2026-10-16 14:15 · Saray Medya · Beykoz'da metrekareye 270 kg yağış düştü
+    - 2026-10-16 13:49 · İhlas Haber Ajansı · Beykoz’da rekor yağış: Bin 879 talebin tamamına ulaşıldı İhlas Haber Ajansı
+    - 2026-10-16 13:47 · Medyascope · Beykoz’a bir günde dört ekim ayının yağmuru düştü
+- **Kartal** (TR-34-1449): **YEŞİL** · haber 9 · riskli 0 / kaynak 0 · yağış 9
+    - 2026-10-16 05:45 · Toplumsal Haber · Kartal Belediyesi'nden fırtına ve yağış önlemleri
+    - 2026-10-16 00:10 · Havadis · Kartal'da fırtına alarmı: Belediye ekipleri gece gündüz demeden sahada
+    - 2026-10-15 23:19 · kayseri gürhaber · Kartal Belediyesi Şiddetli Yağış ve Fırtınaya Karşı Sahada Görev Başlattı
+- **Rize** (TR-53): **YEŞİL** · haber 0 · riskli 0 / kaynak 0 · 
+- kaynak hataları: {'Rize/https://kalkanderehaber.com/rss': 'HTTP410'}
+
+## Zamanlı iş bekçisi (son koşu > kadans eşiği · U-09)
+
+- 🔴 **22 iş eşik dışı:** ttai.duyuru (hiç) · ccihale.arsiv (1.3 gün) · ccfinans.aylik (45.6 gün) · evds.saglik (1.4 gün) · gunluk-ozet (74.8 gün) · ttai.fabrika (1.6 gün) · vezir.gece_raporu (1.3 gün) · ttmap.eplan (1.5 gün) · dm02.dongu (42.8 gün) · vezir.prompt_defteri (1.7 gün) · hafiza.vade_kontrol (1.3 gün) · ccihale.rg (1.3 gün) · ccfinans.gunluk (70.1 gün) · haber (hiç) · ccihale.uyan (1.3 gün) · ccsignals.gelenkutusu (hiç) · analiz.seo_haftalik (hiç) · sosyal.whisper (1.5 gün) · ccborsa.evds_gunluk (1.9 gün) · tuik-tcmb-monthly (133.3 gün) · vezir.yayin_teyit (1.3 gün) · pazarlama.harvest (1.3 gün)
 
 ## Kilit düşme kayıtları (ölü pid / heartbeat)
 
@@ -36,7 +49,7 @@
 
 ## Nabız (5 dk · motor/NABIZ.jsonl)
 
-- **Disk bağlı dakika (bugün):** 190 / 230 ölçülen dk · **pil min:** %1 · **adaptör takılı nabız:** 1/46 · **işlem:** 3
+- **Disk bağlı dakika (bugün):** 190 / 255 ölçülen dk · **pil min:** %1 · **adaptör takılı nabız:** 6/51 · **işlem:** 3
 
 Tutan: {"cc": "PİL BEKLEME", "is": "kural 8: başlangıç adaptör + pil ≥%50; devam ≥%25 (02_CC_STATE/pil_esigi.py)", "pid": null, "baslangic": "2026-10-16 01:59", "ayar": "kilit_nabiz.py yer tutucu", "pil_olcum": "%34 · adaptör VAR · 2026-10-16 10:49"}
 

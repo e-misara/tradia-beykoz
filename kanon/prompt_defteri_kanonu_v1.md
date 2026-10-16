@@ -39,3 +39,14 @@ Betik `tradia-beykoz/motor/prompt_defteri_birlestir.py`:
 Patron Üst Akıl'a yalnız `arsiv/prompt_defteri_<tarih>.md` dosyasını iletir.
 
 *Vezir · 2026-10-14*
+
+## v1.1 · Zorunlu dönüş tablosu (Patron 16 Eki 16:20)
+
+Her `donus_<cc>_<tarih>.md` **bu başlıkla** en az bir tablo içerir; içermiyorsa bekçi (birleştirici) **`format`** bayrağı basar ve CC o gün BİLDİRİM YOK sayılır:
+
+| tarih | CC | prompt özeti | teslim | durum | dosya |
+|---|---|---|---|---|---|
+| 2026-10-16 | <cc> | Beykoz yağış kıyas satırı | UST_AKIL_BEKLEYEN var/yok | BİTTİ · KISMEN · BEKLİYOR · BAŞLAMADI | `02_CC_STATE/...` |
+
+`teslim` = Üst Akıl teslim kanonu (UST_AKIL_BEKLEYEN'de var/yok/—). Şablon her CC'nin hedef kartına (`02_CC_STATE/hedef_karti_*.json → defter_format_sablonu`) yazıldı (Vezir, 16 Eki). Eski 5 sütunlu Vezir biçimi 16 Eki'den sonra geçersiz.
+*Vezir · 2026-10-16 16:21*
