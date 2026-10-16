@@ -50,3 +50,12 @@ Her `donus_<cc>_<tarih>.md` **bu başlıkla** en az bir tablo içerir; içermiyo
 
 `teslim` = Üst Akıl teslim kanonu (UST_AKIL_BEKLEYEN'de var/yok/—). Şablon her CC'nin hedef kartına (`02_CC_STATE/hedef_karti_*.json → defter_format_sablonu`) yazıldı (Vezir, 16 Eki). Eski 5 sütunlu Vezir biçimi 16 Eki'den sonra geçersiz.
 *Vezir · 2026-10-16 16:21*
+
+## v1.2 · Zorunlu bölüm "GAZETEYE GİREN SATIR" (Patron 16 Eki 21:31 · gazete_kanonu_v1)
+Her `donus_<cc>_<tarih>.md` dosyasında tablo dışında şu bölüm **zorunlu** (1–3 satır):
+
+## GAZETEYE GİREN SATIR
+- <tek cümle, sayı kesitli> — [<CC> · <kaynak adı> · <tarih> · BELGE|HESAP|PROXY · `<dosya yolu>`]
+
+Yoksa gazete "bugün satır vermedi" yazar; birleştirici "gazete satırı: yok" sütunu basar. Künyesiz satır gazeteye girmez.
+*Vezir · 2026-10-16 21:35*
