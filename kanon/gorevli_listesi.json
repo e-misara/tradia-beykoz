@@ -1,7 +1,7 @@
 {
  "kanon": "gazete_kanonu v1.4 §v1.4-1 · KVKK #31",
  "kural": "yalnız resmî sıfatıyla konuşan kamu görevlisi; unvan + soyadı; sıfatı düşen çıkar (SİLME yok: gecerlilik_bitis yazılır) · sayı 1 adsız · aday öneren CC kaynak künyesiyle yazar, Vezir onaylar",
- "guncelleme": "2026-10-16 22:26",
+ "guncelleme": "2026-10-16 22:33",
  "gorevliler": [
   {
    "soyad": "Köseler",
@@ -33,6 +33,34 @@
    "gecerlilik_baslangic": null
   }
  ],
- "aday_bekleyen": [],
- "not": "İlk liste 4 kayıt; İstanbul Valisi, İBB Başkanı, Kartal Belediye Başkanı, AKOM/İSKİ sözcüleri dosyalarda unvan+soyadı ile görülmedi → eklenmedi (uydurma yok). Basın sayı 2 öncesi aday önerir."
+ "aday_bekleyen": [
+  {
+   "soyad": "Gül",
+   "unvan": "İstanbul Valisi",
+   "kurum": "İstanbul Valiliği",
+   "kaynak": "Patron beyanı 16.10 22:4x ('Basın sel defterinde unvan+soyadıyla geçiyor') — Vezir grep: basin_sel_2026-10-14.md/.csv/_kurum.csv, beykoz_guncel/basin, tradia_basin_lokal, olay_alarmi_son24.json → 'Gül' BULUNAMADI; kurum.csv'de yalnız 'Valilik' kurum adı var",
+   "durum": "KÜNYE BEKLİYOR (Basın) — listeye alınmadı, maskelenir"
+  },
+  {
+   "soyad": "Aslan",
+   "unvan": "İBB Başkan Vekili",
+   "kurum": "İBB",
+   "kaynak": "Patron beyanı 16.10 22:4x — Vezir grep: 'Aslan' Basın dosyalarında BULUNAMADI",
+   "durum": "KÜNYE BEKLİYOR (Basın)"
+  },
+  {
+   "soyad": null,
+   "unvan": "İBB Başkanı",
+   "kurum": "İBB",
+   "kaynak": "Patron beyanı 16.10 22:4x — Basın dosyalarında 'İBB Başkanı' unvanı da soyadı da BULUNAMADI; soyadı dosyadan gelmeden yazılmaz",
+   "durum": "KÜNYE BEKLİYOR (Basın)"
+  }
+ ],
+ "not": "İlk liste 4 kayıt; İstanbul Valisi, İBB Başkanı, Kartal Belediye Başkanı, AKOM/İSKİ sözcüleri dosyalarda unvan+soyadı ile görülmedi → eklenmedi (uydurma yok). Basın sayı 2 öncesi aday önerir.",
+ "ekleme_kurali": "Basın dönüşünde (donus_basin_<tarih>.md) 'ADAY GÖREVLİ' künyesiyle gelir: unvan · soyadı · kurum · kaynak (url/dosya, tarih, sınıf). Vezir dosyada doğrular → gorevliler[]'e alır; doğrulanamayan aday_bekleyen[]'de kalır (listede değildir → MASKELENİR). Liste haftada bir (Pazartesi 09:00, Signals nöbetiyle aynı gün) Vezir'ce gözden geçirilir: sıfatı düşen gecerlilik_bitis alır, silinmez.",
+ "gozden_gecirme": {
+  "kadans": "haftalık · Pazartesi 09:00",
+  "ilk": "2026-10-20",
+  "yapan": "Vezir"
+ }
 }
