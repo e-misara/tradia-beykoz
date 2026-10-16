@@ -1,4 +1,4 @@
-# GAZETE KANONU v1.2 — TRA-BASIN (günlük gazete)
+# GAZETE KANONU v1.3 — TRA-BASIN (günlük gazete)
 
 **Statü:** 🟢 KANON v1.1 · Patron 2026-10-16 21:31 (ürün) + 21:32 (ad **TRA-BASIN**, katman ayrımı) · Vezir kaydı 2026-10-16 21:35
 **Kaynak notu (dürüst):** Patron "Basın'ın `gazete_plan_v1.md`'sinden" dedi; **dosya diskte bulunamadı** (mdfind + find ~ + 02_CC_STATE grep → 0). Bu kanon Patron'un saydığı maddelerden yazıldı; Basın planı gelince karşılaştırılır, çelişki Tür A olarak işlenir (celiski_referans_kanonu).
@@ -48,9 +48,19 @@ SU dosyası **Kısım 3 → 3.13 "TRA-BASIN: günlük gazete"** — **ilk sayıd
 `02_CC_STATE/tra_basin/vezir_kose_<tarih>.json` **her sabah 08:45'e kadar**: `gece_raporu_ozeti[5]` · `kirmizi[]` (olay alarmı, zamanlı iş, son tarih, TRA-BASIN, makine, kilit, disk) · `patron_adimlari[]` · `cc_calismalari[15]` (birim × dün / bugün / durum ÇALIŞTI|SESSİZ · Beykoz teslim dosya · gazete satırı ✓) · `bilgilendirme[]` · `kunye`. Basın `gazete.json`'u 08:50'de **bunu da okur** (köşe sayfası). Her satır dosyadan; ölçülemeyen "ölçülmedi".
 ### gazete.json şeması ekleri (Basın)
 - **`mansetler[3]`**: `{baslik, alt_baslik, bolge, kanit_sinifi, kaynak}`.
-- **`makaleler[]`**: `{bolge (Beykoz|Kartal|Rize|Ulusal|Köşe), baslik, satirlar[], kanit_sinifi A–D, kaynak[], adres_anahtari?}` — **A** resmî belge/ölçüm (BELGE) · **B** iki bağımsız kaynak · **C** tek kaynak/haber (SÖYLEM) · **D** türetim/varsayım (HESAP/PROXY, formül şart). Uygulama bunu okur.
+- **`makaleler[]`**: `{bolge (Beykoz|Kartal|Rize|Ulusal|Köşe), baslik, satirlar[], kanit_sinifi A–D, kanit_turu BELGE|HESAP|PROXY, kaynak[], adres_anahtari?}`. Uygulama bunu okur.
 - `vezir_kose`: köşe JSON'u gömülü ya da yol.
 ### Dağıtım
 - **Uygulama** birincil okur yüzeyi (Patron orada görür). **PDF yine basılır** (arşiv + dağıtım) ama **Patron'a gönderilmez**.
-- **Bekçi 09:05** (`trabasin_bekci`): md VE pdf (§6) **+ uygulama açıldı mı** → launchd `*trabasin*` işlerinin son koşusu (log mtime) → `SUREKLILIK.json → tra_basin_app[<tarih>]`; uygulama etiketi ("app/uygulama/servis") yoksa "ölçülmedi".
+- **Bekçi 09:05** (`trabasin_bekci`): md VE pdf (§6) **+ uygulama açıldı mı** → **`com.tradia.trabasin.app`** (Hafıza · MU-01 sahibi · 09:05) launchd son koşusu → `SUREKLILIK.json → tra_basin_app[<tarih>]`; plist yoksa "ölçülmedi (plist yok)".
 *Vezir · 2026-10-16 22:05*
+
+## v1.3 · Kanıt sınıfı TEK TANIM (Üst Akıl onayı 16.10 22:00 · Basın'ınki geçerli)
+| Sınıf | Tanım |
+|---|---|
+| **A** | resmî belge (RG, EKAP, kurum kararı/açıklaması, resmî veri) |
+| **B** | ≥2 **ulusal** kaynak |
+| **C** | yalnız **yerel** kaynak |
+| **D** | tek kaynak / başlık düzeyi |
+**Ayrı eksen — `kanit_turu`:** `BELGE` · `HESAP` (türetim/formül; formül satırda zorunlu) · `PROXY`. A–D **kaynak çokluğu/resmîliği** söyler, `kanit_turu` **nasıl bilindiğini** söyler; ikisi **karıştırılmaz** (Vezir'in v1.2'deki "D = türetim" tanımı **geri çekildi**). Her makale satırı iki alanı da taşır.
+*Vezir · 2026-10-16 22:09*
