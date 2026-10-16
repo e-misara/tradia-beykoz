@@ -5189,5 +5189,13 @@
     "analiz"
    ]
   }
+ },
+ "tra_basin": {
+  "2026-10-16": {
+   "tarih": "2026-10-16",
+   "durum": "KIRMIZI",
+   "neden": "md YOK · pdf YOK",
+   "yol": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/tra_basin/TRA-BASIN_2026-10-16.md"
+  }
  }
 }

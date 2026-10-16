@@ -148,6 +148,14 @@
    "yeni_son_tarih": "2026-10-16 20:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/tradia/TT-Tüm CC/beykoz_guncel_2026-10/analiz"
+  },
+  {
+   "cc": "basin",
+   "prompt": "gazete_plan_v1.md (TRA-BASIN planı) → 02_CC_STATE/",
+   "ilk_son_tarih": "2026-10-16 23:00",
+   "yeni_son_tarih": "2026-10-16 23:00",
+   "gecerse": "ilk sayı Vezir veri katmanı + Üst Akıl şablonu ile basılır (Patron 21:32)",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/gazete_plan_v1.md"
   }
  ]
 }
