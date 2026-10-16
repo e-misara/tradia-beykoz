@@ -1,6 +1,6 @@
 # KIYAS NOKTALARI KANONU v1 — üç kıyas ekseni
 
-**Statü:** 🟡 TASLAK → CC'lere dağıtıldı (Patron 2026-10-15 20:30) · Vezir kaydı
+**Statü:** 🟡 TASLAK v1.1 (Finans'ın 5 düzeltmesi işlendi, 16 Eki) → Patron onayıyla KANON · Vezir kaydı
 **Bağlı:** celiski_referans_kanonu_v1 · motor/SEMA.md (eksik değer) · anahtar_yonetimi (EVDS tek istemci Borsa) · Standing #37 (toplayıcı≠kullanıcı: TÜFE/altın/asgari ücret serileri **Borsa**, yapı yılı **Analiz/Pazarlama/Map**, basın ağırlığı **Basın/Sosyal**)
 **İlke:** her rakam **kesit tarihli**; `HESAP` sınıfı **formülüyle** yazılır; "bugünün parası" iddiası çıplak yazılmaz.
 
@@ -15,9 +15,9 @@
 Kural: **ruhsat yılı** esastır (ilan "bina yaşı" PROXY'dir, `kanit_sinifi: PROXY`); ruhsat yılı yoksa `donem_sinifi: null + eksik_gerekce`. Yapı sistemi (`yigma` · `betonarme` · `tunel_kalip` · `celik`) ayrı alan; dönemden **türetilmez**, kaynak ister. Sınır yılları Vezir taslağıdır; **Analiz/Map** mevzuat tarihleriyle teyit eder (yönetmelik yürürlük ≠ yayım).
 
 ## (b) Alım gücü — "bugünün 50.000 TL'si = dünkü X"
-- **TÜFE (TÜİK, 2003=100):** `deger_bugun = deger_o_gun × TÜFE_bugun / TÜFE_o_gun` · seri `Borsa` (EVDS TP.FG.J0) · kesit ay yazılır.
-- **Altın gramı:** `m2_altin = m2_tl / gram_altin_tl` (TCMB/EVDS gram altın ya da BIST altın kapanış) · kesit gün.
-- **Asgari ücret:** `m2_asgari = m2_tl / net_asgari_ucret_ay` · dönem (yılın 1. / 2. yarısı).
+- **TÜFE (TÜİK, 2025=100):** `deger_bugun = deger_o_gun × TÜFE_bugun / TÜFE_o_gun` · seri `Borsa`: EVDS **`TP.TUKFIY2025.GENEL`** (`TP.FG.J0` 2026-01'de bitti; 2003=100 ile bağlama sabiti **31,8323**; 2005–2009 için TÜİK `DF_TUFE_SDMX_TT09`) · kesit ay yazılır. *(Finans düzeltme 1)*
+- **Altın gramı:** `m2_altin = m2_tl / gram_altin_tl` · kaynak **Borsa günlük TL gram altın** (EVDS `TP.MK.KUL.YTL` 2026-05'te bitiyor; BIST altın kapanışı Borsa'da YOK; GC=F USD/ons yalnız PROXY) · kesit gün. Borsa serisi gelene kadar satır `PROXY`. *(Finans düzeltme 2)*
+- **Asgari ücret:** `m2_asgari = m2_tl / net_asgari_ucret_ay` · dönem = karar dönemi (2026 tek yıllık, RG 33119); alan **`ara_zam_var_mi`** zorunlu — yarı-yıl ayrımı yalnız ara zam varsa. *(Finans düzeltme 3)*
 - Üç ölçü birlikte yazılır; tek başına "reel" iddiası yok. Hepsi `HESAP`; formül + girdi kesitleri + kaynak künyesi satırda.
 - **Payda hatası dersi:** Kitap "%42 → %73,7" emsali — payda tanımı yazılmadan oran yazılmaz.
 
@@ -27,9 +27,10 @@ Kural: **ruhsat yılı** esastır (ilan "bina yaşı" PROXY'dir, `kanit_sinifi: 
 - Basın süzgeci (BELGE/SÖYLEM, soyad tuzağı, il teyidi) aynen uygulanır; tarih = yayın tarihi (metin yılı değil).
 
 ## Ortak kurallar
-1. Her kıyas satırı: `{deger, birim, kesit, kaynak_kunyesi, kanit_sinifi: HESAP|BELGE|PROXY, formul?}`.
+1. Her kıyas satırı: `{deger, birim, kesit, kaynak_kunyesi, kanit_sinifi: HESAP|BELGE|PROXY, formul?, eksik_gerekce}` — şema Finans `finans_kiyas_2026-10_kunye.json`'da uygulandı, `eksik_gerekce` zorunlu alan olarak çalıştı. *(Finans düzeltme 5)*
+1b. **İlan kıyasları** için `master_surumu` ve `ornek_penceresi` zorunlu (Temmuz 'Haz–Tem' v24 ↔ Ekim '13.10' v25b); yoksa fark satırı YAZILMAZ. *(Finans düzeltme 4)*
 2. Eksik = `null + eksik_gerekce` (0 değil).
 3. Kıyas noktası **mahalle kartına** düşer (adres anahtarı zorunlu); ilçe düzeyi değer mahalleye atfedilmez (K9 PROXY şerhi).
 4. Toplayıcı≠kullanıcı: seriyi sahibi çeker, kullanan CC künyeyle okur.
 
-*Vezir · 2026-10-15 20:4x · v1 taslak*
+*Vezir · 2026-10-15 20:4x · v1 taslak · v1.1 2026-10-16 16:08 (Finans §5 düzeltmeleri 5/5 işlendi)*

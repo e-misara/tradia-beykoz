@@ -32,9 +32,10 @@
 10. **Disk bağlantısı:** TT-HAFIZA **doğrudan porta; şarj diğer porta; USB hub yok** (kök neden 15 Eki: hub'da disk + şarj çakışması, Hafıza ioreg teşhisi: USB Storage görünür, IOMedia yok). Ölçü: `disk_bagli_dakika_gun`.
 11. **Kuyruk disk kuralı** (Patron 15 Eki 14:3x — Patron "kural 9" dedi; 9 canlılık olarak dolu olduğundan 11): **disk gerektiren iş (rsync, A0/A1 taşıma, PDF taşıma, Basın hasat) disk takılı değilken sırayı TUTMAZ** → kuyruk girdisi `disk_gerekir: true` + durum `DİSK BEKLİYOR`; sonraki disksiz iş (külliyat, builder) geçer; **disk gelince önceliğini geri alır** (durum `bekliyor — disk geldi`). Uygulayan: Borsa `agir_is_kilit.py` (`izin`/`al`), Vezir `kilit_nabiz.py` (mount geçişinde durum). **Emsal:** 15 Eki 07:18–14:03 kilit **7 saat boş** kaldı — sıra-1 rsync disk bekledi, külliyat arkasında bekledi.
 12. **WAF taze-oturum kuralı** (TT-AI 15 Eki): bazı `.gov.tr` indirme-uçları (gözlenen: sanayi.gov.tr teşvik-belgesi) **aynı browser-session'da 2.+ art-arda indirmeyi reddeder** (ardışık `expect_download` timeout), ama **her indirme TAZE bir browser-context ile tek-tek yapılırsa** sorunsuz çalışır — ne gecikme-arttırma (4-20 sn cooldown denendi, işe yaramadı) ne de farklı-UA bunu çözer; tek-çözüm **context.close()+yeni-context** her dosya için. **Emsal:** 55-aylık teşvik-dosyası serisi; aynı-session'da 1/55 başarılı (ardından hepsi-timeout), cooldown'lu-tekrar 1/55, **taze-session-her-dosya 55/55**. Genel-kural: bir `.gov.tr` kaynağı "1.indirme-olur-2.si-takılır" deseni gösteriyorsa **önce rate-limit/cooldown deneme, doğrudan taze-session'a geç** (zaman-kaybı: cooldown-denemesi başarısız-ihtimali yüksek).
+12. **Hafif iş bellek ölçüsü = RSS** (Patron 16 Eki ~01:3x, Map önerisi): hafif iş sınırı **< 1 GB en yüksek RSS** (`/usr/bin/time -l` → *maximum resident set size*); macOS *peak memory footprint* bilgi amaçlı yazılır, **sınır ölçüsü değildir**. Emsal: MAP foto v2 (16.10 01:19) 18 kare · 83 sn · RSS 0,78 GB · footprint 1,06 GB → KABUL.
 
 ## "Neredeyiz" için tek satır (sunum)
 
 > **MacBook Air 8 GB; 16 oturumda bellek %97, yük 12,6 (Vezir ölçümü 23:15: yük 13,7, swap 3,0/4 GB). 7/24 hat için ayrı makine şart.**
 
-*Vezir · 2026-10-14 · v1.2 15 Eki (kural 8–11 Patron kararları)*
+*Vezir · 2026-10-14 · v1.3 16 Eki (kural 8–12)*

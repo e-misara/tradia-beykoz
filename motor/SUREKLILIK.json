@@ -2009,11 +2009,11 @@
   }
  },
  "makine": {
-  "olcum_ani": "2026-10-15T20:38:36",
+  "olcum_ani": "2026-10-16T10:49:16",
   "ram_gb": 8,
   "agir_kosan": [
    {
-    "pid": "36309",
+    "pid": "1167",
     "is": "builder.py",
     "cc": "Hafıza"
    }
@@ -2021,47 +2021,39 @@
   "kilit_tutan_pid": "None",
   "kilit_ihlali": [
    {
-    "pid": "36309",
+    "pid": "1167",
     "is": "builder.py",
     "cc": "Hafıza"
    }
   ],
   "bos_gb": 0.06,
-  "sikistirici_gb": 3.5,
-  "swap_kullanim_mb": 4603.88,
-  "swap_toplam_mb": 6144.0,
-  "bellek_bos_yuzde_memory_pressure": 31,
+  "sikistirici_gb": 1.33,
+  "swap_kullanim_mb": 0.0,
+  "swap_toplam_mb": 0.0,
+  "bellek_bos_yuzde_memory_pressure": 62,
   "yuk_1_5_15": [
-   9.9,
-   8.35,
-   5.57
+   168.77,
+   38.69,
+   14.25
   ],
-  "claude_oturum_sureci": 15,
-  "launchd_exit_sifir_degil": 3,
+  "claude_oturum_sureci": 2,
+  "launchd_exit_sifir_degil": 1,
   "launchd_exit_liste": [
    {
-    "label": "com.tradia.gunluk-ozet",
-    "exit": 78
-   },
-   {
-    "label": "com.tradia.misara.pano",
-    "exit": -9
-   },
-   {
-    "label": "com.tradia.ccborsa.evds_gunluk",
-    "exit": 1
+    "label": "com.tradia.sorgu.duzen",
+    "exit": 2
    }
   ],
   "m4_port_8789": "DİNLİYOR",
-  "tt_hafiza_mount": true,
+  "tt_hafiza_mount": false,
   "pil": {
-   "yuzde": 46,
-   "adaptor": false
+   "yuzde": 34,
+   "adaptor": true
   },
   "disk_bagli_dakika_gun": {
-   "dakika": 220,
-   "nabiz_sayisi": 195,
-   "gun": "2026-10-15"
+   "dakika": 190,
+   "nabiz_sayisi": 46,
+   "gun": "2026-10-16"
   },
   "disk_dusme_sayisi_gun": {
    "2026-10-14": {
@@ -2069,20 +2061,28 @@
     "kaynak": "elle (Hafıza + Vezir gözlemi: 23:3x takıldı/düştü, 01:26 düştü) — nabız yoktu"
    },
    "2026-10-15": {
-    "dusme": 2,
+    "dusme": 3,
+    "kaynak": "nabız 5 dk"
+   },
+   "2026-10-16": {
+    "dusme": 1,
     "kaynak": "nabız 5 dk"
    }
   },
   "memory_index_disiplini": {
    "esik": 300,
-   "ihlal_sayisi": 4,
+   "ihlal_sayisi": 5,
    "ihlal": [
+    {
+     "karakter": 344,
+     "satir": "- [Tradia CC-İhale](project_cc_ihale.md) — `~/cc_ihale/` ⏸️DURAKLADI(N"
+    },
     {
      "karakter": 363,
      "satir": "- [CC-Finans projesi](project_cc_finans.md) — Talep/yatırım zekâsı `~/"
     },
     {
-     "karakter": 1213,
+     "karakter": 1691,
      "satir": "- [CC-Signals projesi](project_cc_signals.md) — 3. katman istihbarat `"
     },
     {
@@ -2125,6 +2125,57 @@
     "BİLDİRİM YOK": 14,
     "BİTTİ": 18,
     "KISMEN": 3
+   }
+  },
+  "2026-10-15": {
+   "yazan": 1,
+   "toplam_cc": 15,
+   "bildirim_yok": [
+    "analiz",
+    "borsa",
+    "pazarlama",
+    "finans",
+    "basin",
+    "signals",
+    "ai",
+    "sosyal",
+    "ihale",
+    "map",
+    "tic",
+    "kitap",
+    "arsiv",
+    "hafiza"
+   ],
+   "beyan_dosya_uyusmazligi": 0,
+   "durum": {
+    "BİLDİRİM YOK": 14,
+    "BİTTİ": 5,
+    "KISMEN": 1
+   }
+  },
+  "2026-10-16": {
+   "yazan": 0,
+   "toplam_cc": 15,
+   "bildirim_yok": [
+    "analiz",
+    "borsa",
+    "pazarlama",
+    "finans",
+    "basin",
+    "signals",
+    "ai",
+    "sosyal",
+    "ihale",
+    "map",
+    "tic",
+    "kitap",
+    "arsiv",
+    "hafiza",
+    "vezir"
+   ],
+   "beyan_dosya_uyusmazligi": 0,
+   "durum": {
+    "BİLDİRİM YOK": 15
    }
   }
  },
@@ -4166,18 +4217,143 @@
    "ihlal_cc": [
     "Hafıza"
    ]
+  },
+  {
+   "olcum_ani": "2026-10-15T20:56:11",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 5205.81,
+   "yuk_1_5_15": [
+    3.96,
+    5.04,
+    5.38
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 3,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": true,
+   "pil": {
+    "yuzde": 36,
+    "adaptor": false
+   },
+   "kilit_ihlali": 1,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T21:12:40",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 4889.44,
+   "yuk_1_5_15": [
+    3.15,
+    3.94,
+    4.49
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 4,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": true,
+   "pil": {
+    "yuzde": 28,
+    "adaptor": false
+   },
+   "kilit_ihlali": 1,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T21:29:29",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 4867.88,
+   "yuk_1_5_15": [
+    2.95,
+    3.47,
+    3.99
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 4,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": true,
+   "pil": {
+    "yuzde": 19,
+    "adaptor": false
+   },
+   "kilit_ihlali": 1,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-15T21:46:01",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 5032.31,
+   "yuk_1_5_15": [
+    6.89,
+    4.82,
+    4.22
+   ],
+   "claude_oturum_sureci": 15,
+   "launchd_exit_sifir_degil": 4,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": true,
+   "pil": {
+    "yuzde": 11,
+    "adaptor": false
+   },
+   "kilit_ihlali": 1,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
+  },
+  {
+   "olcum_ani": "2026-10-16T10:49:16",
+   "bos_gb": 0.06,
+   "swap_kullanim_mb": 0.0,
+   "yuk_1_5_15": [
+    168.77,
+    38.69,
+    14.25
+   ],
+   "claude_oturum_sureci": 2,
+   "launchd_exit_sifir_degil": 1,
+   "rsync_kosuyor": false,
+   "kulliyat_kosuyor": false,
+   "evds_kosuyor": false,
+   "evds_son_log": "[2026-10-15 02:43:33] MOD=tam seri=8730/8730 satir=128908 erisilemeyen=3 → SAGLIKLI ",
+   "tt_hafiza_mount": false,
+   "pil": {
+    "yuzde": 34,
+    "adaptor": true
+   },
+   "kilit_ihlali": 1,
+   "ihlal_cc": [
+    "Hafıza"
+   ]
   }
  ],
  "kaynak_bosluk": {
-  "olcum": "2026-10-15T20:41",
+  "olcum": "2026-10-16T16:04",
   "pencere_gun": 90,
   "kaynaklar": {
    "afad_deprem": {
     "son_kayit": "2026-07-30",
     "kayit": 33937,
-    "bugune_gun": 77,
+    "bugune_gun": 78,
     "gunluk_seri": true,
-    "son90_gun_sayisi": 13,
+    "son90_gun_sayisi": 12,
     "eksik_gun": 1,
     "bosluk_3gun_ustu": [],
     "bosluk_sayisi": 0
@@ -4187,7 +4363,7 @@
     "kayit": 84298,
     "bugune_gun": null,
     "gunluk_seri": true,
-    "son90_gun_sayisi": 50,
+    "son90_gun_sayisi": 49,
     "eksik_gun": 15580,
     "bosluk_3gun_ustu": [
      {
@@ -4221,7 +4397,7 @@
    "basin_olay": {
     "son_kayit": "2026-07-24",
     "kayit": 24,
-    "bugune_gun": 83,
+    "bugune_gun": 84,
     "gunluk_seri": false
    },
    "evds_ham": {
@@ -4234,7 +4410,7 @@
    "finans_belge": {
     "son_kayit": "2026-10-15",
     "kayit": 64,
-    "bugune_gun": 0,
+    "bugune_gun": 1,
     "gunluk_seri": true,
     "son90_gun_sayisi": 57,
     "eksik_gun": 25,
@@ -4255,24 +4431,14 @@
    "ibb_ckan": {
     "son_kayit": "2026-07-30",
     "kayit": 557,
-    "bugune_gun": 77,
+    "bugune_gun": 78,
     "gunluk_seri": false
    },
    "ihale_rg": {
     "son_kayit": "2026-07-30",
     "kayit": 499,
-    "bugune_gun": 77,
-    "gunluk_seri": true,
-    "son90_gun_sayisi": 10,
-    "eksik_gun": 4,
-    "bosluk_3gun_ustu": [
-     {
-      "bas": "2026-07-19",
-      "bit": "2026-07-22",
-      "gun": 4
-     }
-    ],
-    "bosluk_sayisi": 1
+    "bugune_gun": 78,
+    "gunluk_seri": false
    },
    "ilan_v24": {
     "son_kayit": "30 Haziran 2026",
@@ -4284,61 +4450,61 @@
    "kap_611": {
     "son_kayit": "2026-06-05",
     "kayit": 228083,
-    "bugune_gun": 132,
+    "bugune_gun": 133,
     "gunluk_seri": false
    },
    "kap_ekgyo": {
     "son_kayit": "2025-04-18",
     "kayit": 14,
-    "bugune_gun": 545,
+    "bugune_gun": 546,
     "gunluk_seri": false
    },
    "kap_firmalar": {
     "son_kayit": "2026-06-05",
     "kayit": 64562,
-    "bugune_gun": 132,
+    "bugune_gun": 133,
     "gunluk_seri": false
    },
    "kap_sise_tarihsel": {
     "son_kayit": "2020-08-31",
     "kayit": 129,
-    "bugune_gun": 2236,
+    "bugune_gun": 2237,
     "gunluk_seri": false
    },
    "meclis_bbb": {
     "son_kayit": "2026-03-17",
     "kayit": 1,
-    "bugune_gun": 212,
+    "bugune_gun": 213,
     "gunluk_seri": false
    },
    "rg_arsiv": {
     "son_kayit": "2026-07-18",
     "kayit": 538,
-    "bugune_gun": 89,
+    "bugune_gun": 90,
     "gunluk_seri": false
    },
    "rg_arsiv_v4_temiz": {
     "son_kayit": "2026-07-18",
     "kayit": 411,
-    "bugune_gun": 89,
+    "bugune_gun": 90,
     "gunluk_seri": false
    },
    "rg_arsiv_v5": {
     "son_kayit": "2026-07-18",
     "kayit": 530,
-    "bugune_gun": 89,
+    "bugune_gun": 90,
     "gunluk_seri": false
    },
    "rg_beykoz": {
     "son_kayit": "2026-07-18",
     "kayit": 1,
-    "bugune_gun": 89,
+    "bugune_gun": 90,
     "gunluk_seri": false
    },
    "rg_haftalik": {
     "son_kayit": "2026-10-10",
     "kayit": 10,
-    "bugune_gun": 5,
+    "bugune_gun": 6,
     "gunluk_seri": true,
     "son90_gun_sayisi": 10,
     "eksik_gun": 53,
@@ -4374,7 +4540,7 @@
    "sosyal_transkript": {
     "son_kayit": "2026-10-15",
     "kayit": 2497,
-    "bugune_gun": 0,
+    "bugune_gun": 1,
     "gunluk_seri": true,
     "son90_gun_sayisi": 40,
     "eksik_gun": 50,
@@ -4410,7 +4576,7 @@
    "vaka_defteri": {
     "son_kayit": "2026-06-07",
     "kayit": 13,
-    "bugune_gun": 130,
+    "bugune_gun": 131,
     "gunluk_seri": false
    },
    "wb_indikator": {
@@ -4422,29 +4588,28 @@
    "yf_aksiyon": {
     "son_kayit": "2026-08-05",
     "kayit": 530,
-    "bugune_gun": 71,
+    "bugune_gun": 72,
     "gunluk_seri": false
    },
    "yfinance_fiyat": {
     "son_kayit": "2026-07-30",
     "kayit": 610,
-    "bugune_gun": 77,
+    "bugune_gun": 78,
     "gunluk_seri": false
    }
   },
   "bayrak": [
    "basin_html",
    "finans_belge",
-   "ihale_rg",
    "rg_haftalik",
    "sosyal_transkript"
   ]
  },
  "havuz_gecikme": {
-  "olcum": "2026-10-15T20:41",
+  "olcum": "2026-10-16T16:04",
   "kaynak_dosya": 24,
-  "gecikme_7gun_ustu": 3,
-  "dosya_yok": 8,
+  "gecikme_7gun_ustu": 2,
+  "dosya_yok": 14,
   "bayrak": [
    {
     "dosya": "/Users/GAC-A/cc_ihale/data/rg_ihale_gunluk.jsonl",
@@ -4459,13 +4624,6 @@
     "son_alim": "2026-07-30 18:29:10",
     "gecikme_gun": 75.3,
     "havuz_kayit": 64562
-   },
-   {
-    "dosya": "/Volumes/TT-HAFIZA/STAGING_YENI/kap",
-    "dosya_mtime": "2026-08-17T16:03",
-    "son_alim": "2026-08-01 19:37:06",
-    "gecikme_gun": 15.9,
-    "havuz_kayit": 0
    }
   ],
   "tumu": [
@@ -4545,17 +4703,13 @@
    },
    {
     "dosya": "/Volumes/TT-HAFIZA/TRADIA_ARSIV/tradia_analiz/hasat_indir_20260730/afad/deprem_2010_2026_ml3plus.jsonl",
-    "dosya_mtime": "2026-07-30T21:00",
-    "son_alim": "2026-07-30 22:52:21",
-    "gecikme_gun": 0,
-    "havuz_kayit": 0
+    "durum": "DOSYA YOK (taşındı/silindi?)",
+    "son_alim": "2026-07-30 22:52:21"
    },
    {
     "dosya": "/Volumes/TT-HAFIZA/TRADIA_ARSIV/tradia_analiz/hasat_indir_20260730/wb_tr/tr_indicators_seri.json",
-    "dosya_mtime": "2026-07-30T20:55",
-    "son_alim": "2026-07-30 22:52:22",
-    "gecikme_gun": 0,
-    "havuz_kayit": 0
+    "durum": "DOSYA YOK (taşındı/silindi?)",
+    "son_alim": "2026-07-30 22:52:22"
    },
    {
     "dosya": "/Users/GAC-A/tradia_sorgu/data/ham/tr_idari_birim.jsonl",
@@ -4574,17 +4728,13 @@
    },
    {
     "dosya": "/Volumes/TT-HAFIZA/staging_S1/cc_borsa_firmalar_kap",
-    "dosya_mtime": "2026-06-11T15:18",
-    "son_alim": "2026-07-31 00:35:39",
-    "gecikme_gun": 0,
-    "havuz_kayit": 0
+    "durum": "DOSYA YOK (taşındı/silindi?)",
+    "son_alim": "2026-07-31 00:35:39"
    },
    {
     "dosya": "/Volumes/TT-HAFIZA/TRADIA_ARSIV/cc_ihale/data/rg_ihale_gunluk.jsonl",
-    "dosya_mtime": "2026-07-30T12:30",
-    "son_alim": "2026-07-31 09:10:31",
-    "gecikme_gun": 0,
-    "havuz_kayit": 0
+    "durum": "DOSYA YOK (taşındı/silindi?)",
+    "son_alim": "2026-07-31 09:10:31"
    },
    {
     "dosya": "/Users/GAC-A/tradia_basin/ham",
@@ -4595,23 +4745,14 @@
    },
    {
     "dosya": "/Volumes/TT-HAFIZA/STAGING_YENI/kap",
-    "dosya_mtime": "2026-08-17T16:03",
-    "son_alim": "2026-08-01 19:37:06",
-    "gecikme_gun": 15.9,
-    "havuz_kayit": 0
-   },
-   {
-    "dosya": "/Volumes/TT-HAFIZA/STAGING_YENI/basin",
-    "dosya_mtime": "2026-10-15T14:24",
-    "son_alim": "2026-10-15 15:36:10",
-    "gecikme_gun": 0,
-    "havuz_kayit": 0
+    "durum": "DOSYA YOK (taşındı/silindi?)",
+    "son_alim": "2026-08-01 19:37:06"
    },
    {
     "dosya": "/Users/GAC-A/tradia_sosyal/kitap_arsiv/tam_metin_govde.jsonl",
-    "dosya_mtime": "2026-10-15T18:59",
+    "dosya_mtime": "2026-10-16T16:03",
     "son_alim": "2026-10-15 16:30:52",
-    "gecikme_gun": 0.1,
+    "gecikme_gun": 1.0,
     "havuz_kayit": 26
    },
    {
@@ -4620,6 +4761,11 @@
     "son_alim": "2026-10-15 17:00:56",
     "gecikme_gun": 0,
     "havuz_kayit": 0
+   },
+   {
+    "dosya": "/Volumes/TT-HAFIZA/STAGING_YENI/basin",
+    "durum": "DOSYA YOK (taşındı/silindi?)",
+    "son_alim": "2026-10-15 18:39:14"
    }
   ],
   "not": "mtime vekildir: dosyanın değişmesi yeni kayıt demek olmayabilir; içerik-tarih kıyası kaynak başına ayrı iş"
@@ -4656,6 +4802,33 @@
    "basin_hatti": "YOK",
    "ikincil_baslik": 9,
    "kirmizi": true
+  },
+  "2026-10-16": {
+   "basin_hatti": "YOK",
+   "ikincil_baslik": 0,
+   "kirmizi": true
+  }
+ },
+ "son_tarih_disiplini": {
+  "2026-10-15": {
+   "devreden": 16,
+   "kirmizi": [
+    "pazarlama",
+    "pazarlama",
+    "kitap",
+    "arsiv",
+    "analiz"
+   ]
+  },
+  "2026-10-16": {
+   "devreden": 16,
+   "kirmizi": [
+    "pazarlama",
+    "pazarlama",
+    "kitap",
+    "arsiv",
+    "analiz"
+   ]
   }
  }
 }
