@@ -251,6 +251,19 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 - **Kural (kanon adayı → kiyas_noktalari v1.2):** ölçüm dosyasının `tarih` alanı çalışma günü olabilir; **kesit = `cekim_ts`**; fark satırı için üç koşul: çekim günleri farklı + kaynak/master aynı + örnek penceresi uyumlu. `cekim_ts` null satır yalnız zamandan bağımsız dönüşümde (asgari ücret katı) kullanılır.
 - **Emsal ders:** "Ekim" etiketi dosya adında/tarihinde olabilir, veri Temmuz'dan kalabilir; **etiket tarihi veri tarihi değildir**.
 
+## Vaka #13 — Basın arşiv kapsamı: 28 yerel, ulusal yok (17.10.2026 · açılış)
+
+- **Açan:** Patron (17.10 21:xx) · **Bildirim:** Basın'dan gelecek (bekleniyor) · **Durum gözden geçirmesinin 1. maddesi.**
+- **Olgu (Patron beyanı, Basın bildirimiyle doğrulanacak):** Basın arşiv hasadı **28 yerel kaynak** ile sınırlı, **ulusal yayın yok** → Kitap Cilt I'in "basın ULUSAL olmalı" şartı ve TRA-BASIN B sınıfı (≥2 bağımsız) bu kapsamla karşılanamıyor; sel defterinde yerel 28 / ulusal 212 sayımı GNews'ten geldi (arşiv değil).
+- **Vezir payı:** Basın bildirimi gelince olgu/kök neden/düzeltme satırları dosyaya bakılarak doldurulur; `kaynak_bosluk` + `basin_kaynak_envanteri` (1.933 satır, ulusal sütunu yok) ile çapraz.
+
+## Vaka #14 — "Uyuyan makinede launchd" (17.10.2026)
+
+- **Tarih:** 2026-10-17 · **Açan:** Patron · **Doğrulayan:** Vezir (NABIZ.jsonl boşluk 07:04→13:18; `launchctl print` runs=0)
+- **Olgu:** Mac 07:04–13:18 uyudu; StartCalendarInterval işleri (08:20 canlı akış · 08:30 CDN teyidi · 08:40 gece raporu · 08:43 köşe · 08:50 TRA-BASIN · 09:05 app/bekçi) **hiç koşmadı**; launchd uyanışta telafi etmedi. Sayı 1 **20:37**'de elle zincirle çıktı; köşe gazeteden 31 sn sonra yazıldı → gazeteye TARANMADI girdi (yarış).
+- **Kök neden:** uyku → takvim kaçırma; zincirde "önceki adımı bekle" yok.
+- **Düzeltme (Patron):** (1) **Sabah bekçisi 08:25 + 09:20** (`com.tradia.vezir.sabah_bekci`, `motor/sabah_bekci.py`): kaçan işi **sırası korunarak** kickstart (gece raporu → köşe → gazete → app → ekran), log güncellenene kadar ≤150 sn bekler; (2) gazete üretimi **köşe dosyasının zaman damgasını ≤3 dk bekler**, gelmezse TARANMADI (Basın tarafı); (3) Patron `pmset` planlı uyanma **08:10**. **Yarın 08:20 koşusu U-09'un gerçek testi.** Kanon: makine_kaynak kural 14.
+
 ## Uyumsuzluk kayıtları (Vaka değil · Patron sınıflaması)
 
 - **U-01 · 2026-10-15 · Hafıza kilit:** "kilit bende" beyanı ↔ süreç ölü (pid 91683 yok, rsync 0, disk 01:26 düştü); külliyat 3 saat boşa bekledi. Düzeltme: makine_kaynak kural 9 (pid+heartbeat, Vezir nabzı 5 dk).
@@ -261,6 +274,7 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 - **U-07 · 2026-10-15 · Signals — gelen kutusu gecikmesi (3. vaka):** CC'ler arası bildirimler 47 / 67 / 71 gün sonra okunmuş (SIG35 süpürme: Pazarlama çıplak-K10 07.08 → 67 gün; SIP-01 engel İhale'nin aynı gün çözdüğü TLS'yi 71 gün taşımış, gerçek engel OCR). Ders: gelen kutusu nöbetle süpürülür (SIG35 Pzt 09:00), 'engel' etiketi kaynağına dönüp teyit edilir. Üretim ölçüsünde 'okunmamış bildirim yaşı' satırı adaydır.
 - **U-08 · 2026-10-16 · Map — POI ad eşleşmesi:** SIP-03 POI→mahalle atamasında 241 POI'nin **19'u ad eşleşmesiyle (konumla değil)** atanmış (Map'in kendi beyanı 01:26: 'A 241 = 219 atandı + 2 ilçe içi + 1 kıyı + 19 ad eşleşmesi-konum değil'); adres anahtarı kanonu kural 4 (ad anahtar değildir) — Sosyal 'Kartal' (U-04) ile aynı sınıf, bu kez konum verisi varken ad kullanılmış. Düzeltme: 19 satır `eslesme: AD` damgalı, konumla yeniden; Map teyit eder.
 - **U-09 · 2026-10-16 · Vezir/Hafıza — duraklatma sonrası kaçırılan zamanlı işler:** 15 Eki 21:3x 40 launchd işi duraklatıldı (pil %9); sabah geri yüklendi ama 08:20 olay alarmı, 08:30 CDN teyidi, 08:40 gece raporu **koşmadı** (saat geçmişti, kickstart yoktu) → rapor 16:06'da elle. Kural: makine_kaynak 13 (kickstart + bekçi >24 saat KIRMIZI). Vezir payı: geri yükleme betiğine kickstart yazmamıştı.
+- **U-12 · 2026-10-17 · Üst Akıl — betik referanslı klasör taşındı (beykoz_guncel boşalması):** `beykoz_guncel_2026-10/` içeriği 14:22'de Üst Akıl'ın S2 listesiyle SU paketine taşındı; Hafıza hatası DEĞİL, sorumlu Üst Akıl. Düzeltme Hafıza'ya: geri indirme + kural **"betik referanslı klasör taşınmaz"** (derleme, SON_TARIH, tecrübe kaydı bu klasöre bakıyordu). Vezir'in Hafıza'ya sorusu (vezir_soru_hafiza_beykoz_guncel_bosaltma.json) cevaplandı sayılır.
 - **U-03 · 2026-10-15 · Vezir kilit yer tutucusu 14:08:14–14:08:45 arası kimliği belirsiz boşaldı;** nabız 31 sn'de geri koydu; iz alanları eklendi (`onceki_tutan`, `kilit_mtime`). Sahibi bulunamadı — tekrarında bulunur.
 
 ## İşletim kuralı

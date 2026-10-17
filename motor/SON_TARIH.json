@@ -164,6 +164,14 @@
    "yeni_son_tarih": "2026-10-17 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/tecrube_kaydi"
+  },
+  {
+   "cc": "basin",
+   "prompt": "Vaka #13 bildirimi (arşiv kapsamı 28 yerel, ulusal yok) — durum gözden geçirme 1. madde",
+   "ilk_son_tarih": "2026-10-18 12:00",
+   "yeni_son_tarih": "2026-10-18 12:00",
+   "gecerse": "üretim ölçüsünde KIRMIZI",
+   "cikti": null
   }
  ]
 }
