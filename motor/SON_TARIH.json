@@ -172,6 +172,94 @@
    "yeni_son_tarih": "2026-10-18 12:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": null
+  },
+  {
+   "cc": "basin",
+   "prompt": "Sosyal talep kartı (basin) — 02_CC_STATE/sosyal/talep/basin.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/basin.json"
+  },
+  {
+   "cc": "finans",
+   "prompt": "Sosyal talep kartı (finans) — 02_CC_STATE/sosyal/talep/finans.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/finans.json"
+  },
+  {
+   "cc": "borsa",
+   "prompt": "Sosyal talep kartı (borsa) — 02_CC_STATE/sosyal/talep/borsa.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/borsa.json"
+  },
+  {
+   "cc": "ihale",
+   "prompt": "Sosyal talep kartı (ihale) — 02_CC_STATE/sosyal/talep/ihale.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/ihale.json"
+  },
+  {
+   "cc": "map",
+   "prompt": "Sosyal talep kartı (map) — 02_CC_STATE/sosyal/talep/map.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/map.json"
+  },
+  {
+   "cc": "kitap",
+   "prompt": "Sosyal talep kartı (kitap) — 02_CC_STATE/sosyal/talep/kitap.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/kitap.json"
+  },
+  {
+   "cc": "ai",
+   "prompt": "Sosyal talep kartı (ai) — 02_CC_STATE/sosyal/talep/ai.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/ai.json"
+  },
+  {
+   "cc": "pazarlama",
+   "prompt": "Sosyal talep kartı (pazarlama) — 02_CC_STATE/sosyal/talep/pazarlama.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/pazarlama.json"
+  },
+  {
+   "cc": "tic",
+   "prompt": "Sosyal talep kartı (tic) — 02_CC_STATE/sosyal/talep/tic.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/tic.json"
+  },
+  {
+   "cc": "analiz",
+   "prompt": "Sosyal talep kartı (analiz) — 02_CC_STATE/sosyal/talep/analiz.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/analiz.json"
+  },
+  {
+   "cc": "signals",
+   "prompt": "Sosyal talep kartı (signals) — 02_CC_STATE/sosyal/talep/signals.json",
+   "ilk_son_tarih": "2026-10-19 02:21",
+   "yeni_son_tarih": "2026-10-19 02:21",
+   "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/signals.json"
   }
  ]
 }
