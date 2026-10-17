@@ -1,6 +1,6 @@
 # KIYAS NOKTALARI KANONU v1 — üç kıyas ekseni
 
-**Statü:** 🟡 TASLAK v1.1 (Finans'ın 5 düzeltmesi işlendi, 16 Eki) → Patron onayıyla KANON · Vezir kaydı
+**Statü:** 🟡 TASLAK v1.2 (Finans'ın 5 düzeltmesi işlendi, 16 Eki) → Patron onayıyla KANON · Vezir kaydı
 **Bağlı:** celiski_referans_kanonu_v1 · motor/SEMA.md (eksik değer) · anahtar_yonetimi (EVDS tek istemci Borsa) · Standing #37 (toplayıcı≠kullanıcı: TÜFE/altın/asgari ücret serileri **Borsa**, yapı yılı **Analiz/Pazarlama/Map**, basın ağırlığı **Basın/Sosyal**)
 **İlke:** her rakam **kesit tarihli**; `HESAP` sınıfı **formülüyle** yazılır; "bugünün parası" iddiası çıplak yazılmaz.
 
@@ -34,3 +34,11 @@ Kural: **ruhsat yılı** esastır (ilan "bina yaşı" PROXY'dir, `kanit_sinifi: 
 4. Toplayıcı≠kullanıcı: seriyi sahibi çeker, kullanan CC künyeyle okur.
 
 *Vezir · 2026-10-15 20:4x · v1 taslak · v1.1 2026-10-16 16:08 (Finans §5 düzeltmeleri 5/5 işlendi)*
+
+## v1.2 · Çekim tarihi kuralı (Vaka #11 · Finans uygulaması)
+- Her kıyas satırında **`cekim_ts`** (verinin çekildiği an, ISO) ve **`isleme_ts`** ayrı; **kesit = `cekim_ts`**. Dosya adı/`tarih` alanı çalışma günüdür, kesit değildir.
+- **Fark satırı üç koşulla yazılır:** çekim günleri farklı **+** kaynak ve `master_surumu` aynı **+** `ornek_penceresi` karşılaştırılabilir. Biri yoksa fark **yazılmaz** (`null + gerekçe`).
+- `cekim_ts` null olan satır yalnız **zamandan bağımsız** dönüşümde (asgari ücret katı) kullanılır; altın/TÜFE gibi zamana bağlı dönüşüm `null`.
+- ISO: tek an `YYYY-MM-DDThh:mm:ss`, aralık `baş→son`; serbest metin `cekim_notu`'na.
+- Emsal: v25b (çekim 25–26.07, işleme 13.10) "Ekim" sanıldı → Temmuz→Ekim farkı GEÇERSİZ (Vaka #11).
+*Vezir · 2026-10-17 20:39*

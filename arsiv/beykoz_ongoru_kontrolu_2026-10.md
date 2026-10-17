@@ -1,6 +1,6 @@
 # BEYKOZ ÖNGÖRÜ KONTROLÜ — Temmuz 2026 → Ekim 2026
 
-**Statü:** v1 · Vezir · 2026-10-15 17:45 · SU dosyası **Kısım 2 omurgası** (Patron direktifi 15 Eki)
+**Statü:** v1 · Vezir · 2026-10-15 17:45 · **VAKA #11 ŞERHİ (17.10):** satır 6 ve fark tablosu 'İlan sayısı' satırındaki **153.978 TL/m² (v25b, 13.10)** değeri **Temmuz taramasıdır** (çekim 25–26.07, işleme 13.10) → **Temmuz→Ekim fiyat farkı (−%3,8) GEÇERSİZ**, silinmedi; Ekim kesiti yok (Pazarlama Emlakjet 15.10 tek kaynak, fark yazılmaz). Kaynak: Finans Vaka #11 bildirimi 16.10 21:53 + Analiz RED. · SU dosyası **Kısım 2 omurgası** (Patron direktifi 15 Eki)
 **Kural:** her satır **dosyaya bakılarak** yazıldı; ölçülemeyene "ölçüldü" denmedi; **TUTMADI** da yazıldı; **silme yok**. Ekim tarafı **bugünkü dosyalarla** sınırlıdır — 10 CC Beykoz güncel taraması (son tarih **17 Eki 14:40**) gelince **v2** yazılır, v1 silinmez.
 **Durum sözlüğü:** TUTTU · TUTMADI · SÜRE DOLMADI · ÖLÇÜLEMEDİ · **KONTROL YAPILMADI** *(kontrol tarihi geçti, kayıt yok — bu da bir bulgudur)*.
 

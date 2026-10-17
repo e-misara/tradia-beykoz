@@ -243,6 +243,14 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 - **Düzeltme (Patron):** `kanon/olay_alarmi_kanonu_v1.md` — gece raporuna zorunlu "SON 24 SAAT OLAYLAR" (Beykoz/Kartal/Rize + 81 il ulusal); boşsa "tarandı, olay yok", taranmadıysa 🔴; Basın `olay_alarmi_son24.json` 08:20; Sosyal resmî hesap hattı; Vezir ikincil hat (BM-K5). Tecrübe kaydının ilk 20 satırı bu selden.
 - **Emsal ders:** (1) Arşiv ≠ nöbet: toplamak başka, **bugün ne oldu** demek başka. (2) Rapor şablonunda olmayan şey **görünmez**; "yok" ile "bakılmadı" ayrımı şablonda yazılı olmalı. (3) Basın'ın makinesi sinyali tutuyordu (06:11), kimse okumadı — **veri vardı, hat yoktu**.
 
+## Vaka #11 — "Etiket tarihi ≠ çekim tarihi" (16.10.2026 · Finans/Analiz/Vezir)
+
+- **Tarih:** 2026-10-16 · **Açan:** Vezir (kıyas noktası okuması) · **Uygulayan:** Finans (`ccfinans_bildirim_vezir_kiyas_vaka11_20261016.json`) · **Doğrulayan:** Analiz (v25b onayı RED)
+- **Olgu:** Analiz `bolge_analiz_olcum_1.json` (13.10) Beykoz konut satılık **153.978 TL/m², n=1.006 (v25b)** satırı "Ekim kesiti" diye okundu; Vezir öngörü kontrolü v1, OZET_VEZIR ve Finans kıyas v1 bunu **Temmuz 160.000 (v24) ile karşılaştırıp "−%3,8"** yazdı. **Gerçek:** v25b = **Temmuz taraması** (çekim 25–26.07, işleme 13.10); dosyadaki `tarih` = işleme/çalışma günü. **Temmuz→Ekim farkı GEÇERSİZ (aynı tarama iki kesit sanıldı).** Ekim için tek kaynak Pazarlama Emlakjet 15.10 (155 ilan, medyan 140.000, ToS okunmadı) — fark hesaplanmaz.
+- **Düzeltme:** Finans kıyas v2 (cekim_ts/isleme_ts ayrı, kesit = çekim; GEÇERSİZ tablo silinmedi, işaretlendi). Vezir: öngörü kontrolü v1 satır 6 ve fark tablosu "İlan sayısı" satırı **GEÇERSİZ** şerhli (bu belgede), OZET_VEZIR Finans §5 cümlesi düzeltilecek (dosya bulunamadı → v2'de).
+- **Kural (kanon adayı → kiyas_noktalari v1.2):** ölçüm dosyasının `tarih` alanı çalışma günü olabilir; **kesit = `cekim_ts`**; fark satırı için üç koşul: çekim günleri farklı + kaynak/master aynı + örnek penceresi uyumlu. `cekim_ts` null satır yalnız zamandan bağımsız dönüşümde (asgari ücret katı) kullanılır.
+- **Emsal ders:** "Ekim" etiketi dosya adında/tarihinde olabilir, veri Temmuz'dan kalabilir; **etiket tarihi veri tarihi değildir**.
+
 ## Uyumsuzluk kayıtları (Vaka değil · Patron sınıflaması)
 
 - **U-01 · 2026-10-15 · Hafıza kilit:** "kilit bende" beyanı ↔ süreç ölü (pid 91683 yok, rsync 0, disk 01:26 düştü); külliyat 3 saat boşa bekledi. Düzeltme: makine_kaynak kural 9 (pid+heartbeat, Vezir nabzı 5 dk).
