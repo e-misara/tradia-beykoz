@@ -1,81 +1,176 @@
 {
- "_sema": "sosyal_talep_karti_v1 (Vezir kaydı · Patron 2026-10-18 02:1x 'Sosyal orkestrası') — her CC 02_CC_STATE/sosyal/talep/<cc>.json yazar; Sosyal okur, hasat planını buna göre kurar. Kart yoksa Sosyal taslağıyla çalışır ve çıktıya 'CC onayı yok' etiketi düşer.",
- "zorunlu_alanlar": [
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "sosyal_talep_karti_v1 (KANON kopyası · kaynak: ~/tradia_sosyal/orkestra/sosyal_talep_karti_v1.schema.json, Sosyal 18.10 02:21)",
+ "description": "Bir CC'nin Sosyal'e talebi. Sosyal'in alt ajanı (sosyal.<cc>) = aynı betik + bu kart. CC göndermezse Sosyal taslak yazar, onay=false etiketiyle çalıştırır.",
+ "type": "object",
+ "required": [
   "cc",
-  "kesit",
   "amac",
   "kanallar",
   "sorgular",
-  "sure_bandi",
-  "tazelik",
-  "gunluk_tavan",
+  "sure_bandi_dk",
+  "tazelik_gun",
+  "gunluk_tavan_video",
   "ozet_derinligi",
   "goruntu_gerekli",
   "konum_etiketi",
+  "teslim_bicimi",
   "geri_yazma_sorumlusu",
   "onay"
  ],
- "alanlar": {
-  "cc": "string · CC adı (basin|finans|borsa|ihale|map|kitap|ai|pazarlama|tic|analiz|signals)",
-  "kesit": "ISO · kartın yazıldığı an",
-  "amac": "1–3 cümle · bu CC sosyal akıştan NE için ne istiyor (karar/ölçü/ders)",
-  "etiket": "istege_bagli · ör. 'ogrenme' (Finans: ekonometri/finans dersleri öğrenme amaçlı AYRI etiket), 'arsiv_eksik' (Kitap)",
-  "kanallar": "5–20 öğe · [{ad, url, platform(youtube|instagram|x|podcast|site), neden, kaynak_turu(yerel|ulusal|resmi), lisans(sinif,dayanak)}] — URL zorunlu, tahmini handle YASAK (Sosyal S225 dersi: 404 ≠ 403)",
-  "sorgular": "5–15 Türkçe sorgu · [{sorgu, ne_icin, bolge?}] — TR İ/ı slug kuralı Sosyal'de",
-  "sure_bandi": "{bas: 'YYYY-MM', bit: 'YYYY-MM'|'canli'} · hangi dönem (arşiv mi canlı mı)",
-  "tazelik": "'canli_6s' | 'gunluk' | 'haftalik' | 'arsiv_tek_sefer'",
-  "gunluk_tavan": "int · günde en çok kaç video/transkript (makine kanonu: ses/video indirilmez, metin+küçük resim; whisper yalnız kilitle)",
-  "ozet_derinligi": "'baslik' | 'aciklama' | 'transkript_ozet_120' | 'transkript_tam'",
-  "goruntu_gerekli": "bool + gerekce · (gerçek yüz yok, KVKK #31; görüntü UST_AKIL'a kopyalanmaz)",
-  "konum_etiketi": "'il' | 'ilce' | 'mahalle' | 'yok' · adres anahtarı kanonu (TR-<il>-<ilçe>); mahalle çıkarımı HESAP ise işaretli",
-  "geri_yazma_sorumlusu": "string · Sosyal çıktısını kim okur, nereye yazar (ör. 'finans → bolge_finans.json satır X'); CC içinde kişi değil rol",
-  "oncelik": "1–3",
-  "onay": "{cc_onayi: bool, tarih} — false ise Sosyal çıktısına 'CC onayı yok' etiketi"
- },
- "ozel_notlar": {
-  "finans": "borsa yorumu + ekonomi programları + ekonometri/finans dersleri (öğrenme amaçlı AYRI etiket: etiket='ogrenme')",
-  "kitap": "32. Gün / Teke Tek / TRT arşivinde EKSİK BÖLÜM LİSTESİ (tarih, bölüm, kaynak) — sure_bandi arşiv, tazelik arsiv_tek_sefer"
- },
- "ornek_minimal": {
-  "cc": "ihale",
-  "kesit": "2026-10-18 02:21",
-  "amac": "Beykoz/Kartal/Rize belediye meclis canlı yayınlarından imar/ihale gündemi (BELGE öncesi erken iz)",
-  "kanallar": [
-   {
-    "ad": "Beykoz Belediyesi",
-    "url": "https://www.youtube.com/@BeykozBelediyesi",
-    "platform": "youtube",
-    "neden": "meclis canlı yayını",
-    "kaynak_turu": "resmi",
-    "lisans": {
-     "sinif": "KAYNAK_GOSTER",
-     "dayanak": "kurum kanalı"
+ "properties": {
+  "cc": {
+   "enum": [
+    "basin",
+    "finans",
+    "borsa",
+    "ihale",
+    "map",
+    "kitap",
+    "ai",
+    "pazarlama",
+    "tic",
+    "analiz",
+    "signals"
+   ]
+  },
+  "amac": {
+   "type": "string",
+   "maxLength": 200,
+   "description": "1 cümle"
+  },
+  "kanallar": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "kanal_id"
+    ],
+    "properties": {
+     "kanal_id": {
+      "type": "string",
+      "pattern": "^UC[\\w-]{22}$"
+     },
+     "ad": {
+      "type": "string"
+     },
+     "oncelik": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+     },
+     "oynatma_listesi": {
+      "type": "string",
+      "description": "yalnız bu liste (ör. Teke Tek)"
+     }
     }
    }
-  ],
-  "sorgular": [
-   {
-    "sorgu": "Beykoz belediye meclisi ekim 2026",
-    "ne_icin": "gündem maddeleri",
-    "bolge": "TR-34-1185"
-   }
-  ],
-  "sure_bandi": {
-   "bas": "2026-01",
-   "bit": "canli"
   },
-  "tazelik": "haftalik",
-  "gunluk_tavan": 5,
-  "ozet_derinligi": "transkript_ozet_120",
-  "goruntu_gerekli": false,
-  "konum_etiketi": "ilce",
-  "geri_yazma_sorumlusu": "ihale → bolge_ihale.json hucre.meclis_sosyal",
-  "oncelik": 2,
+  "sorgular": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "q"
+    ],
+    "properties": {
+     "q": {
+      "type": "string"
+     },
+     "dil": {
+      "const": "tr"
+     },
+     "yontem": {
+      "enum": [
+       "ytsearch",
+       "api"
+      ]
+     },
+     "gun_ici": {
+      "type": "integer",
+      "minimum": 1
+     }
+    }
+   }
+  },
+  "sure_bandi_dk": {
+   "type": "array",
+   "items": {
+    "type": "number"
+   },
+   "minItems": 2,
+   "maxItems": 2
+  },
+  "tazelik_gun": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "gunluk_tavan_video": {
+   "type": "integer",
+   "minimum": 0
+  },
+  "ozet_derinligi": {
+   "enum": [
+    "kisa",
+    "genis"
+   ]
+  },
+  "goruntu_gerekli": {
+   "enum": [
+    "evet",
+    "hayir"
+   ],
+   "description": "evet → video 30 gün tutulur sonra silinir; yalnız Map/kitap görsel kanıtı"
+  },
+  "konum_etiketi": {
+   "enum": [
+    "evet",
+    "hayir"
+   ],
+   "description": "evet → il/ilçe/mahalle anahtarı (adres_anahtari_kanonu v1.2) indekse yazılır"
+  },
+  "teslim_bicimi": {
+   "enum": [
+    "jsonl",
+    "jsonl+md"
+   ]
+  },
+  "geri_yazma_sorumlusu": {
+   "type": "string"
+  },
   "onay": {
-   "cc_onayi": true,
-   "tarih": "2026-10-18 02:21"
+   "type": "boolean",
+   "description": "false = 'CC onayı yok' etiketi"
+  },
+  "yer_iddiasi_kapsami": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^TR-\\d{2}(-\\d{4})?(-\\d{4})?$"
+   }
+  },
+  "etiket": {
+   "type": "string",
+   "description": "isteğe bağlı · 'ogrenme' (Finans: ekonometri/finans dersleri öğrenme amaçlı AYRI etiket) · 'arsiv_eksik' (Kitap: 32. Gün/Teke Tek/TRT eksik bölüm listesi)"
+  },
+  "lisans": {
+   "type": "object",
+   "description": "isteğe bağlı · kaynak_tarama_semasi v1.2: {sinif IC_KULLANIM|KAYNAK_GOSTER|YAZILI_IZIN|YASAK|KARAR_PATRON, dayanak}"
+  },
+  "kaynak_turu": {
+   "enum": [
+    "yerel",
+    "ulusal",
+    "resmi"
+   ],
+   "description": "isteğe bağlı · gazete_kanonu v1.4 kaynak türü"
   }
  },
- "son_tarih": "2026-10-19 02:21",
- "sosyal_ornek": "Sosyal'in BEKLEYEN'deki örneği 18.10 02:2x itibarıyla diskte BULUNAMADI (UST_AKIL_BEKLEYEN/02_CC_STATE/tradia_sosyal arama 0) — bu şema Patron alan listesinden; Sosyal örneği gelince v1.1 uzlaştırılır"
+ "_kanon_notu": {
+  "yazan": "Vezir 2026-10-18 02:23",
+  "karar": "Patron 18.10 02:1x: şema kanon/ altında, yoksa Sosyal'in örneği. Vezir 02:21'de alan listesinden ayrı bir şema yazmıştı; aynı dakikada Sosyal JSON Schema'sı ve Map/Tic kartları geldi → kanon = Sosyal şeması (tek doğrulayıcı, makine okur). Vezir'in eski taslağı GEÇERSİZ (çelişki üretmemek için silindi; git geçmişinde bb32b8c).",
+  "ek": "cc enum'una analiz ve signals eklendi (Patron 11 CC saydı); isteğe bağlı ek alanlar: etiket, lisans, kaynak_turu. Sosyal şemayı güncellerse kanon kopyası aynı gün izler (Sosyal bildirir).",
+  "son_tarih": "2026-10-19 02:21",
+  "teslim": "02_CC_STATE/sosyal/talep/<cc>.json · 18.10 02:21 itibarıyla map, tic geldi (2/11)"
+ }
 }
