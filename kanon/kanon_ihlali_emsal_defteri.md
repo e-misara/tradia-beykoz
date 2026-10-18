@@ -251,11 +251,19 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 - **Kural (kanon adayı → kiyas_noktalari v1.2):** ölçüm dosyasının `tarih` alanı çalışma günü olabilir; **kesit = `cekim_ts`**; fark satırı için üç koşul: çekim günleri farklı + kaynak/master aynı + örnek penceresi uyumlu. `cekim_ts` null satır yalnız zamandan bağımsız dönüşümde (asgari ücret katı) kullanılır.
 - **Emsal ders:** "Ekim" etiketi dosya adında/tarihinde olabilir, veri Temmuz'dan kalabilir; **etiket tarihi veri tarihi değildir**.
 
+## Vaka #12 — (numara ayrılmış · tanım Patron'da)
+- 18.10 itibarıyla 02_CC_STATE ve kanon'da "Vaka #12" geçen dosya **yok**; numara boş bırakıldı (yeniden kullanılmaz). Patron tanımlayınca doldurulur.
+
+## Vaka #15 — (numara ayrılmış · tanım Patron'da)
+- Patron 18.10 "Vaka #13–15 defter" dedi; #15'in tanımı hiçbir dosyada **yok**. Aday olgular (Vezir, karar değil): (a) kaynak evreni v2 birleştirmesi 16 Eki 19:26 — 13 dosya, **geçerli 1 / geçersiz 56** (lisans alanı ve zorunlu alanlar eksik; ACIK 0, Patron kovası 0): kaynak evreni boş çıktı, kimse 48 saat bakmadı; (b) Sosyal 18.10 02:25 pil %5 şarjda değil — kritik eşikte hafif işler diske yazıldı. Patron hangisini (ya da başkasını) vaka sayarsa yazılır.
+
 ## Vaka #13 — Basın arşiv kapsamı: 28 yerel, ulusal yok (17.10.2026 · açılış)
 
 - **Açan:** Patron (17.10 21:xx) · **Bildirim:** Basın'dan gelecek (bekleniyor) · **Durum gözden geçirmesinin 1. maddesi.**
 - **Olgu (Patron beyanı, Basın bildirimiyle doğrulanacak):** Basın arşiv hasadı **28 yerel kaynak** ile sınırlı, **ulusal yayın yok** → Kitap Cilt I'in "basın ULUSAL olmalı" şartı ve TRA-BASIN B sınıfı (≥2 bağımsız) bu kapsamla karşılanamıyor; sel defterinde yerel 28 / ulusal 212 sayımı GNews'ten geldi (arşiv değil).
-- **Vezir payı:** Basın bildirimi gelince olgu/kök neden/düzeltme satırları dosyaya bakılarak doldurulur; `kaynak_bosluk` + `basin_kaynak_envanteri` (1.933 satır, ulusal sütunu yok) ile çapraz.
+- **Basın bildirimi (17.10 20:55, `vezir_bildirim_basin_vaka13_arsiv_kapsami_20261017.json`):** **Olgu:** arşiv = yerel — SORGU-01 `basin_html` 567.369 satır, URL'li 79.901, **28 alan adı / 22 İstanbul ilçesi**, sayfa tarihi 2012-02-08..2026-08-01, **ulusal alan adı 0**; Mac tamponu ≈58,9 bin yerel html (Beykoz, Kartal, Derepazarı, Üsküdar; SORGU'ya girmemiş). Ulusal yalnız **canlı akışta** (15.10'dan, başlık düzeyi, 23 kaynak). **Kök neden:** "basın arşivi" adı ulusal kapsama ima etti; hasat yerel sitemap'lerden kuruldu, kapsam belgesi yoktu. **Düzeltme:** kapsam belgesi `UST_AKIL_BEKLEYEN/basin/kapsam_gercegi_2026-10-17.md`; **ulusal günlük hasat** 20.10'dan (`ulusal_gunluk_hasat.py`, 16 RSS kaynağı, 2 saat poll, `com.tradia.ccbasin.ulusal_topla` + `ulusal_kapat` 02:40; `ulusal_kaynak_listesi_v1.tsv`); kitap_sorgu çıktısına `kapsam_etiketi 'arşiv: yerel · canlı: ulusal'`. Hasat dışı: İHA (robots 403), T24 (erişilemedi), DHA/Milli Gazete/Milliyet/CNN Türk/Evrensel (RSS yok). **Kısıt:** Mac kapalıyken poll yok (17.10 12:04 açıldı).
+- **Vezir:** `kaynak_bosluk.basin_html` (gelecek tarihler) + envanter 1.933 satırda ulusal sütunu yok → kaynak_tarama_basin `kaynak_turu` alanı zorunlu (gazete kanonu v1.4). **Ders (B12 liste tohumdur):** "arşiv" adı payda ile yazılır — "28/… yerel, 0 ulusal".
+
 
 ## Vaka #14 — "Uyuyan makinede launchd" (17.10.2026)
 

@@ -1,0 +1,271 @@
+{
+ "tip": "DURUM TABLOSU · 15 birim",
+ "kesit": "2026-10-18T18:43",
+ "kural": "launchctl list = çalışan hat · hedef kartı 4_sureklilik = koşan gün/30 (14 Eki kesiti) · kapsam il = SUREKLILIK.kapsam_orani · ilçe = bolge_<cc>.json tekil ilçe/anahtar · kaynak = kaynak_tarama_<cc>.json satır · '—' = ölçülmedi",
+ "satirlar": [
+  {
+   "birim": "vezir",
+   "calisan_hat": 11,
+   "hat_isleri": [
+    "vezir.ara_defter",
+    "vezir.beykoz_derle",
+    "vezir.gece_raporu",
+    "vezir.kaynak_evreni_v2",
+    "vezir.kilit_nabiz",
+    "vezir.kose",
+    "vezir.makine_olc",
+    "vezir.prompt_defteri",
+    "vezir.sabah_bekci",
+    "vezir.trabasin_bekci",
+    "vezir.yayin_teyit"
+   ],
+   "oturuma_bagli_is": "launchd 11 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": 81,
+   "kapsam_ilce": 973,
+   "kaynak": null,
+   "not": "KUYRUK basin_ulusal 973 ilçe · kaynak evreni birleştirici"
+  },
+  {
+   "birim": "hafiza",
+   "calisan_hat": 18,
+   "hat_isleri": [
+    "dm02.dongu",
+    "gunluk-ozet",
+    "hafiza.ayna",
+    "hafiza.bellek",
+    "hafiza.foto_olcum",
+    "hafiza.orumcek",
+    "hafiza.tarama_14",
+    "hafiza.tarama_21",
+    "hafiza.vade_kontrol",
+    "misara.pano",
+    "primer-monitor",
+    "sorgu.builder",
+    "sorgu.cc_izle",
+    "sorgu.duzen",
+    "sorgu.guc",
+    "sorgu.nefes",
+    "sorgu.nobetci",
+    "sorgu.pmset_izle"
+   ],
+   "oturuma_bagli_is": "launchd 18 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": null,
+   "kapsam_ilce": null,
+   "kaynak": 23,
+   "not": "SORGU-01 havuz kaynak sayısı"
+  },
+  {
+   "birim": "basin",
+   "calisan_hat": 15,
+   "hat_isleri": [
+    "ccbasin.canli_akis",
+    "ccbasin.derinlik",
+    "ccbasin.envanter",
+    "ccbasin.govde",
+    "ccbasin.hasat_v4",
+    "ccbasin.pulse",
+    "ccbasin.saglik",
+    "ccbasin.tk_kontrol",
+    "ccbasin.trabasin",
+    "ccbasin.ulusal_kapat",
+    "ccbasin.ulusal_topla",
+    "haber-akis",
+    "trabasin.app",
+    "trabasin.ekran",
+    "trabasin.veri"
+   ],
+   "oturuma_bagli_is": "launchd 15 · koşan gün 4/30",
+   "kosan_gun_30": 4,
+   "kapsam_il": 8,
+   "kapsam_ilce": 22,
+   "kaynak": 14,
+   "not": null
+  },
+  {
+   "birim": "sosyal",
+   "calisan_hat": 4,
+   "hat_isleri": [
+    "sosyal.gnd_retry",
+    "sosyal.hasat",
+    "sosyal.orkestra",
+    "sosyal.transkript"
+   ],
+   "oturuma_bagli_is": "launchd 4 · koşan gün 9/30",
+   "kosan_gun_30": 9,
+   "kapsam_il": 2,
+   "kapsam_ilce": 6,
+   "kaynak": 168,
+   "not": null
+  },
+  {
+   "birim": "map",
+   "calisan_hat": 6,
+   "hat_isleri": [
+    "ttmap.beykozgorsel",
+    "ttmap.eplan",
+    "ttmap.gazete_kare",
+    "ttmap.ilcehat",
+    "ttmap.isi",
+    "ttmap.surekli"
+   ],
+   "oturuma_bagli_is": "launchd 6 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": 11,
+   "kapsam_ilce": 12,
+   "kaynak": 11,
+   "not": null
+  },
+  {
+   "birim": "finans",
+   "calisan_hat": 3,
+   "hat_isleri": [
+    "ccfinans.aylik",
+    "ccfinans.gunluk",
+    "ccfinans.telafi"
+   ],
+   "oturuma_bagli_is": "launchd 3 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": 9,
+   "kapsam_ilce": 2,
+   "kaynak": 13,
+   "not": null
+  },
+  {
+   "birim": "analiz",
+   "calisan_hat": 1,
+   "hat_isleri": [
+    "analiz.seo_haftalik"
+   ],
+   "oturuma_bagli_is": "launchd 1 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": 2,
+   "kapsam_ilce": 0,
+   "kaynak": 0,
+   "not": null
+  },
+  {
+   "birim": "tic",
+   "calisan_hat": 1,
+   "hat_isleri": [
+    "tic.rg_haftalik"
+   ],
+   "oturuma_bagli_is": "launchd 1 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": 2,
+   "kapsam_ilce": 3,
+   "kaynak": 14,
+   "not": null
+  },
+  {
+   "birim": "ihale",
+   "calisan_hat": 5,
+   "hat_isleri": [
+    "ccihale.arsiv",
+    "ccihale.csb",
+    "ccihale.dsi",
+    "ccihale.rg",
+    "ccihale.uyan"
+   ],
+   "oturuma_bagli_is": "launchd 5 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": 2,
+   "kapsam_ilce": 3,
+   "kaynak": 6,
+   "not": null
+  },
+  {
+   "birim": "signals",
+   "calisan_hat": 1,
+   "hat_isleri": [
+    "ccsignals.gelenkutusu"
+   ],
+   "oturuma_bagli_is": "launchd 1 · koşan gün 4/30",
+   "kosan_gun_30": 4,
+   "kapsam_il": 1,
+   "kapsam_ilce": 2,
+   "kaynak": null,
+   "not": "Beykoz tam dosya + Kartal kontrol (1/6 eksen)"
+  },
+  {
+   "birim": "pazarlama",
+   "calisan_hat": 3,
+   "hat_isleri": [
+    "pazarlama.beykoz_ilan",
+    "pazarlama.harvest",
+    "pazarlama.yurtdisi"
+   ],
+   "oturuma_bagli_is": "launchd 3 · koşan gün 24/30",
+   "kosan_gun_30": 24,
+   "kapsam_il": 81,
+   "kapsam_ilce": 0,
+   "kaynak": 7,
+   "not": null
+  },
+  {
+   "birim": "ai",
+   "calisan_hat": 3,
+   "hat_isleri": [
+    "ttai.duyuru",
+    "ttai.fabrika",
+    "ttai.kesif"
+   ],
+   "oturuma_bagli_is": "launchd 3 · koşan gün 28/30",
+   "kosan_gun_30": 28,
+   "kapsam_il": 10,
+   "kapsam_ilce": 12,
+   "kaynak": 4,
+   "not": null
+  },
+  {
+   "birim": "borsa",
+   "calisan_hat": 3,
+   "hat_isleri": [
+    "ccborsa.evds_gunluk",
+    "ccborsa.ktb_yigm_aylik",
+    "evds.saglik"
+   ],
+   "oturuma_bagli_is": "launchd 3 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": 34,
+   "kapsam_ilce": 40,
+   "kaynak": 12,
+   "not": null
+  },
+  {
+   "birim": "kitap",
+   "calisan_hat": 1,
+   "hat_isleri": [
+    "kitap.nobet"
+   ],
+   "oturuma_bagli_is": "launchd 1 · koşan gün 3/30",
+   "kosan_gun_30": 3,
+   "kapsam_il": null,
+   "kapsam_ilce": null,
+   "kaynak": null,
+   "not": "coğrafi kapsam yok (kütüphane)"
+  },
+  {
+   "birim": "arsiv",
+   "calisan_hat": 4,
+   "hat_isleri": [
+    "ttarsiv.d190",
+    "ttarsiv.kabul",
+    "ttarsiv.oturumarsiv",
+    "ttarsiv.uckopya"
+   ],
+   "oturuma_bagli_is": "launchd 4 · koşan gün ölçülmedi",
+   "kosan_gun_30": null,
+   "kapsam_il": null,
+   "kapsam_ilce": null,
+   "kaynak": null,
+   "not": "ölçülmedi"
+  }
+ ],
+ "toplam": {
+  "launchd_tradia": 79,
+  "oturuma_bagli_birim": 0,
+  "il_81_olan": 2
+ }
+}

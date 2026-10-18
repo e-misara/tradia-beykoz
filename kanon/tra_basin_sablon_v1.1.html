@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>TRA-BASIN {{TARIH_TR}} sayı {{SAYI}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* TRA-BASIN şablon v1.1 (v1 + v1.1 ekleri aşağıda) · krem #F4F0E8 · kırmızı #B3242B · Noto/Liberation (yoksa Times) · A4 · 3 sütun */
+:root{--krem:#F4F0E8;--kirmizi:#B3242B;--murekkep:#1E1B16;--gri:#6b645a;--cizgi:#cfc6b4;--kutu:#ebe5d7}
+@page{size:A4 portrait;margin:10mm 11mm 12mm 11mm}
+*{box-sizing:border-box}
+html{background:var(--krem);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:var(--krem);color:var(--murekkep);font-family:"Noto Serif","Liberation Serif","Times New Roman",Times,serif;font-size:9.3pt;line-height:1.3}
+.sayfa{position:relative;min-height:268mm;break-after:page;page-break-after:always;padding-bottom:6mm}
+.sayfa:last-child{break-after:auto;page-break-after:auto}
+.kafa{display:flex;justify-content:space-between;align-items:baseline;border-bottom:.6pt solid var(--murekkep);padding:0 0 1.2mm;margin-bottom:3mm;font:600 7.6pt "Noto Sans","Liberation Sans",Arial,sans-serif;letter-spacing:.4pt;color:var(--gri)}
+.kafa b{color:var(--kirmizi)}
+.masthead{border-top:3.2pt solid var(--kirmizi);border-bottom:.8pt solid var(--murekkep);text-align:center;padding:1.6mm 0 1.2mm;margin-bottom:2.5mm}
+.masthead h1{margin:0;font-size:46pt;line-height:1;letter-spacing:7pt;color:var(--kirmizi);font-weight:700}
+.masthead .alt{font:600 7.8pt "Noto Sans","Liberation Sans",Arial,sans-serif;letter-spacing:1.2pt;color:var(--murekkep);margin-top:1mm;display:flex;justify-content:space-between;border-top:.5pt solid var(--cizgi);padding-top:1mm}
+.kicker{font:700 7.4pt "Noto Sans","Liberation Sans",Arial,sans-serif;letter-spacing:1.6pt;text-transform:uppercase;color:var(--kirmizi);margin:0 0 1mm}
+h2.manset{font-size:25pt;line-height:1.08;margin:0 0 2mm;font-weight:700}
+h3{font-size:11.2pt;margin:3mm 0 1mm;border-bottom:.5pt solid var(--cizgi);padding-bottom:.6mm;break-after:avoid}
+.alt-manset{font-size:10.4pt;margin:0 0 2.5mm}
+.sut3{column-count:3;column-gap:6mm;column-rule:.5pt solid var(--cizgi)}
+.sut2{column-count:2;column-gap:6mm;column-rule:.5pt solid var(--cizgi)}
+.sut3>*,.sut2>*{break-inside:avoid}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;align-items:start}
+.g3>div{padding:0 3mm;border-left:.5pt solid var(--cizgi)}
+.g3>div:first-child{padding-left:0;border-left:0}
+.g3>div:last-child{padding-right:0}
+.g2{display:grid;grid-template-columns:repeat(2,1fr);gap:0;align-items:start}
+.g2>div{padding:0 3.5mm;border-left:.5pt solid var(--cizgi)}
+.g2>div:first-child{padding-left:0;border-left:0}
+.g2>div:last-child{padding-right:0}
+.satir{margin:0 0 2mm;break-inside:avoid;padding-bottom:1.1mm;border-bottom:.3pt dotted var(--cizgi)}
+.satir .m{font-weight:600}
+.kunye-s{display:block;font:7.1pt "Noto Sans","Liberation Sans",Arial,sans-serif;color:var(--gri);margin-top:.5mm}
+.sinif{display:inline-block;min-width:4.2mm;text-align:center;font:700 6.8pt "Noto Sans","Liberation Sans",Arial,sans-serif;padding:0 1mm;border:.6pt solid var(--kirmizi);color:var(--kirmizi);margin-right:1mm}
+.sinif.A{background:var(--kirmizi);color:#fff}
+.bos{font-style:italic;color:var(--gri);border:.5pt dashed var(--cizgi);padding:1.2mm 1.6mm;margin:0 0 2mm;background:var(--kutu)}
+.kutular{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;margin:2.5mm 0}
+.kutu{background:var(--kutu);border-top:2.2pt solid var(--kirmizi);padding:1.6mm 2mm}
+.kutu .sayi{font-size:19pt;font-weight:700;line-height:1;color:var(--murekkep)}
+.kutu .birim{font:600 7.4pt "Noto Sans","Liberation Sans",Arial,sans-serif;color:var(--kirmizi)}
+.kutu .acik{font-size:8pt;line-height:1.2;margin-top:.8mm}
+.kutu .kunye-s{margin-top:.8mm}
+.gorsel{width:100%;height:62mm;background:#000;object-fit:contain;border:.5pt solid var(--cizgi);margin:1mm 0 .6mm}
+.gorsel-yok{height:34mm;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--kutu);border:.5pt dashed var(--cizgi);color:var(--gri);font-style:italic;margin:1mm 0}
+.not-kutu{background:var(--kutu);border-left:2.4pt solid var(--kirmizi);padding:1.6mm 2.4mm;margin:2.5mm 0;font-size:8.6pt}
+table{border-collapse:collapse;width:100%;font-size:8.2pt}
+th,td{border-bottom:.4pt solid var(--cizgi);padding:.7mm 1.2mm;text-align:left;vertical-align:top}
+th{font:700 7.2pt "Noto Sans","Liberation Sans",Arial,sans-serif;letter-spacing:.6pt;color:var(--kirmizi);text-transform:uppercase}
+a{color:inherit;text-decoration:none;border-bottom:.3pt solid var(--gri)}
+.ayak{position:absolute;bottom:0;left:0;right:0;font:600 6.8pt "Noto Sans","Liberation Sans",Arial,sans-serif;color:var(--gri);border-top:.4pt solid var(--cizgi);padding-top:1mm;display:flex;justify-content:space-between}
+@media screen{body{max-width:210mm;margin:0 auto;padding:6mm 8mm}.sayfa{border-bottom:2px dashed var(--cizgi);margin-bottom:8mm}}
+
+/* ---- v1.1 (17.10.2026 Patron düzeltme listesi): spot, meta satırı, künye altı, sol sütun kutuları, manşet görseli standardı ---- */
+.p1{display:grid;grid-template-columns:50mm 1fr;gap:0 5mm;align-items:start;margin-top:1mm}
+.sol{border-right:.5pt solid var(--cizgi);padding-right:4mm}
+.kutu-sol{background:var(--kutu);border-top:2.2pt solid var(--kirmizi);padding:1.6mm 2mm;margin:0 0 3mm}
+.kutu-sol h4{margin:0 0 1mm;font:700 7.2pt "Noto Sans","Liberation Sans",Arial,sans-serif;letter-spacing:.8pt;text-transform:uppercase;color:var(--kirmizi)}
+table.mt{font-size:7.8pt;line-height:1.2}
+table.mt th{font-size:6.4pt}
+table.mt td{padding:.6mm .8mm}
+table.mt td.tg{font-weight:700;white-space:nowrap;color:var(--kirmizi)}
+.ilc{font:6.6pt "Noto Sans","Liberation Sans",Arial,sans-serif;color:var(--gri)}
+.meta{font:600 7.8pt "Noto Sans","Liberation Sans",Arial,sans-serif;color:var(--murekkep);margin:0 0 1mm}
+.meta b{color:var(--kirmizi)}
+.spot{font-size:9.4pt;line-height:1.34;margin:0 0 1mm}
+.spot-m{font-size:10.6pt}
+.kunye-alti{font:6.7pt "Noto Sans","Liberation Sans",Arial,sans-serif;color:#8a8378;margin:0 0 3mm;word-break:break-word}
+.hb{font-size:12.2pt;line-height:1.15;margin:2mm 0 .8mm;border-bottom:0;padding-bottom:0}
+.hb-k{font-weight:700;font-size:10.2pt;line-height:1.18;margin:2.2mm 0 .6mm}
+.uyari{background:#f3d9d7;border-left:2.6pt solid var(--kirmizi);padding:1.4mm 2.4mm;margin:1.5mm 0;font-size:8.4pt}
+.gorsel-kare{display:block;width:100%;aspect-ratio:16/9;max-height:58mm;object-fit:contain;background:var(--krem);border:0;margin:1.5mm 0 0}
+.gorsel-alt{font:italic 7.6pt "Noto Serif","Liberation Serif",Times,serif;color:var(--gri);margin:.6mm 0 2.2mm}
+.kutular.k4{grid-template-columns:repeat(4,1fr);gap:1.8mm}
+.kutular.k4 .kutu .sayi{font-size:15pt}
+.kutular.k4 .kutu .acik{font-size:6.8pt;line-height:1.15}
+.kutular.k4 .kutu{padding:1.2mm 1.6mm}
+.kutular.k4{margin:1.5mm 0}
+.g3 .spot{font-size:8.3pt;line-height:1.26;margin:0 0 .6mm}
+.g3 .hb-k{font-size:9.4pt;margin:1.6mm 0 .4mm}
+.g3 .kunye-alti{margin:0 0 1.8mm}
+.g3 .meta{margin:0 0 .6mm}
+.kural-k{font-size:6.9pt;line-height:1.22;margin:1mm 0 0;padding:1mm 2mm}
+</style>
+</head>
+<body>
+{{SAYFALAR}}
+</body>
+</html>

@@ -87,3 +87,6 @@ uyandirma/parsel_01_rize/
 
 # gazete kanonu şablonu (kanon dosyası, sır yok)
 !kanon/tra_basin_sablon_v1.html
+
+# Basın gazete şablonu v1.1 (kanon dosyası)
+!kanon/tra_basin_sablon_v1.1.html
