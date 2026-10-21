@@ -2345,6 +2345,81 @@
     "ÇIKTI YOK": 3,
     "BİTTİ": 1
    }
+  },
+  "2026-10-18": {
+   "yazan": 0,
+   "toplam_cc": 15,
+   "bildirim_yok": [
+    "analiz",
+    "borsa",
+    "pazarlama",
+    "finans",
+    "basin",
+    "signals",
+    "ai",
+    "sosyal",
+    "ihale",
+    "map",
+    "tic",
+    "kitap",
+    "arsiv",
+    "hafiza",
+    "vezir"
+   ],
+   "beyan_dosya_uyusmazligi": 0,
+   "durum": {
+    "BİLDİRİM YOK": 15
+   }
+  },
+  "2026-10-19": {
+   "yazan": 0,
+   "toplam_cc": 15,
+   "bildirim_yok": [
+    "analiz",
+    "borsa",
+    "pazarlama",
+    "finans",
+    "basin",
+    "signals",
+    "ai",
+    "sosyal",
+    "ihale",
+    "map",
+    "tic",
+    "kitap",
+    "arsiv",
+    "hafiza",
+    "vezir"
+   ],
+   "beyan_dosya_uyusmazligi": 0,
+   "durum": {
+    "BİLDİRİM YOK": 15
+   }
+  },
+  "2026-10-20": {
+   "yazan": 0,
+   "toplam_cc": 15,
+   "bildirim_yok": [
+    "analiz",
+    "borsa",
+    "pazarlama",
+    "finans",
+    "basin",
+    "signals",
+    "ai",
+    "sosyal",
+    "ihale",
+    "map",
+    "tic",
+    "kitap",
+    "arsiv",
+    "hafiza",
+    "vezir"
+   ],
+   "beyan_dosya_uyusmazligi": 0,
+   "durum": {
+    "BİLDİRİM YOK": 15
+   }
   }
  },
  "kapsam_orani": {
@@ -5178,6 +5253,26 @@
     "Rize": "YEŞİL"
    },
    "kirmizi": false
+  },
+  "2026-10-20": {
+   "basin_hatti": "VAR",
+   "genel": "SARI",
+   "yerler": {
+    "Beykoz": "SARI",
+    "Kartal": "YEŞİL",
+    "Rize": "SARI"
+   },
+   "kirmizi": false
+  },
+  "2026-10-21": {
+   "basin_hatti": "VAR",
+   "genel": "SARI",
+   "yerler": {
+    "Beykoz": "SARI",
+    "Kartal": "SARI",
+    "Rize": "SARI"
+   },
+   "kirmizi": false
   }
  },
  "son_tarih_disiplini": {
@@ -5209,6 +5304,61 @@
     "kitap",
     "arsiv"
    ]
+  },
+  "2026-10-18": {
+   "devreden": 31,
+   "kirmizi": [
+    "pazarlama",
+    "pazarlama",
+    "kitap",
+    "arsiv",
+    "basin",
+    "basin"
+   ]
+  },
+  "2026-10-19": {
+   "devreden": 31,
+   "kirmizi": [
+    "pazarlama",
+    "pazarlama",
+    "kitap",
+    "arsiv",
+    "basin",
+    "basin",
+    "basin",
+    "finans",
+    "borsa",
+    "ihale",
+    "map",
+    "kitap",
+    "ai",
+    "pazarlama",
+    "tic",
+    "analiz",
+    "signals"
+   ]
+  },
+  "2026-10-20": {
+   "devreden": 31,
+   "kirmizi": [
+    "pazarlama",
+    "pazarlama",
+    "kitap",
+    "arsiv",
+    "basin",
+    "basin",
+    "basin",
+    "finans",
+    "borsa",
+    "ihale",
+    "map",
+    "kitap",
+    "ai",
+    "pazarlama",
+    "tic",
+    "analiz",
+    "signals"
+   ]
   }
  },
  "tra_basin": {
@@ -5229,6 +5379,30 @@
    "pdf_bant_8_12": true,
    "ust_akil_kopya": true,
    "neden": "TARANMADI var"
+  },
+  "2026-10-20": {
+   "tarih": "2026-10-20",
+   "durum": "YEŞİL",
+   "mtime": "2026-10-20T08:50",
+   "bolum": 9,
+   "taranmadi": 0,
+   "kunyeli_satir": 0,
+   "pdf_sayfa": 12,
+   "pdf_bant_8_12": true,
+   "ust_akil_kopya": true,
+   "neden": ""
+  },
+  "2026-10-21": {
+   "tarih": "2026-10-21",
+   "durum": "YEŞİL",
+   "mtime": "2026-10-21T08:50",
+   "bolum": 9,
+   "taranmadi": 0,
+   "kunyeli_satir": 0,
+   "pdf_sayfa": 12,
+   "pdf_bant_8_12": true,
+   "ust_akil_kopya": true,
+   "neden": ""
   }
  },
  "tra_basin_app": {
@@ -5283,6 +5457,78 @@
     }
    ],
    "durum": "YEŞİL",
+   "beklenen_etiket": "com.tradia.trabasin.app"
+  },
+  "2026-10-20": {
+   "isler": [
+    {
+     "is": "com.tradia.trabasin.app",
+     "son_kosu": "2026-10-17T20:48",
+     "bugun_kostu": false,
+     "uygulama_mi": true
+    },
+    {
+     "is": "com.tradia.ccbasin.trabasin",
+     "son_kosu": "2026-10-20T08:50",
+     "bugun_kostu": true,
+     "uygulama_mi": false
+    },
+    {
+     "is": "com.tradia.vezir.trabasin_bekci",
+     "son_kosu": "2026-10-18T09:05",
+     "bugun_kostu": false,
+     "uygulama_mi": false
+    },
+    {
+     "is": "com.tradia.trabasin.ekran",
+     "son_kosu": "2026-10-18T09:40",
+     "bugun_kostu": false,
+     "uygulama_mi": false
+    },
+    {
+     "is": "com.tradia.trabasin.veri",
+     "son_kosu": "2026-10-16T22:11",
+     "bugun_kostu": false,
+     "uygulama_mi": false
+    }
+   ],
+   "durum": "KIRMIZI",
+   "beklenen_etiket": "com.tradia.trabasin.app"
+  },
+  "2026-10-21": {
+   "isler": [
+    {
+     "is": "com.tradia.trabasin.app",
+     "son_kosu": "2026-10-17T20:48",
+     "bugun_kostu": false,
+     "uygulama_mi": true
+    },
+    {
+     "is": "com.tradia.ccbasin.trabasin",
+     "son_kosu": "2026-10-21T08:50",
+     "bugun_kostu": true,
+     "uygulama_mi": false
+    },
+    {
+     "is": "com.tradia.vezir.trabasin_bekci",
+     "son_kosu": "2026-10-20T09:05",
+     "bugun_kostu": false,
+     "uygulama_mi": false
+    },
+    {
+     "is": "com.tradia.trabasin.ekran",
+     "son_kosu": "2026-10-20T09:40",
+     "bugun_kostu": false,
+     "uygulama_mi": false
+    },
+    {
+     "is": "com.tradia.trabasin.veri",
+     "son_kosu": "2026-10-16T22:11",
+     "bugun_kostu": false,
+     "uygulama_mi": false
+    }
+   ],
+   "durum": "KIRMIZI",
    "beklenen_etiket": "com.tradia.trabasin.app"
   }
  },
@@ -5415,6 +5661,258 @@
   },
   "2026-10-18T0920": {
    "an": "2026-10-18T09:20",
+   "uyanma_pmset": "Repeating power events:\n  wakepoweron at 8:10AM every day\nScheduled power events:\n [0]  wake at 08/01/2026 10:58:21 by 'com.apple.alarm.user-invisible-com.apple.calaccessd.travelEngine.periodicRefresh",
+   "isler": [
+    {
+     "is": "com.tradia.ccbasin.canli_akis",
+     "plan": "08:20",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_basin_lokal/logs/canli_akis.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.yayin_teyit",
+     "plan": "08:30",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_yayin_teyit.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.gece_raporu",
+     "plan": "08:40",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_gece_raporu.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.kose",
+     "plan": "08:43",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_kose.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.ccbasin.trabasin",
+     "plan": "08:50",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_basin_lokal/logs/tra_basin.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.trabasin.app",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_calisma/tra_basin_app/logs/launchd_app.log",
+     "durum": "KAÇMIŞ → kickstart · 150 sn içinde log güncellenmedi"
+    },
+    {
+     "is": "com.tradia.trabasin.ekran",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_calisma/tra_basin_app/logs/launchd_ekran.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.trabasin_bekci",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_trabasin_bekci.log",
+     "durum": "koştu"
+    }
+   ],
+   "kacan": 1
+  },
+  "2026-10-20T0825": {
+   "an": "2026-10-20T08:25",
+   "uyanma_pmset": "Repeating power events:\n  wakepoweron at 8:10AM every day\nScheduled power events:\n [0]  wake at 08/01/2026 10:58:21 by 'com.apple.alarm.user-invisible-com.apple.calaccessd.travelEngine.periodicRefresh",
+   "isler": [
+    {
+     "is": "com.tradia.ccbasin.canli_akis",
+     "plan": "08:20",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_basin_lokal/logs/canli_akis.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.yayin_teyit",
+     "plan": "08:30",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_yayin_teyit.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.vezir.gece_raporu",
+     "plan": "08:40",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_gece_raporu.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.vezir.kose",
+     "plan": "08:43",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_kose.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.ccbasin.trabasin",
+     "plan": "08:50",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_basin_lokal/logs/tra_basin.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.trabasin.app",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_calisma/tra_basin_app/logs/launchd_app.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.trabasin.ekran",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_calisma/tra_basin_app/logs/launchd_ekran.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.vezir.trabasin_bekci",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_trabasin_bekci.log",
+     "durum": "saati gelmedi"
+    }
+   ],
+   "kacan": 0
+  },
+  "2026-10-20T0920": {
+   "an": "2026-10-20T09:20",
+   "uyanma_pmset": "Repeating power events:\n  wakepoweron at 8:10AM every day\nScheduled power events:\n [0]  wake at 08/01/2026 10:58:21 by 'com.apple.alarm.user-invisible-com.apple.calaccessd.travelEngine.periodicRefresh",
+   "isler": [
+    {
+     "is": "com.tradia.ccbasin.canli_akis",
+     "plan": "08:20",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_basin_lokal/logs/canli_akis.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.yayin_teyit",
+     "plan": "08:30",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_yayin_teyit.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.gece_raporu",
+     "plan": "08:40",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_gece_raporu.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.kose",
+     "plan": "08:43",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_kose.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.ccbasin.trabasin",
+     "plan": "08:50",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_basin_lokal/logs/tra_basin.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.trabasin.app",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_calisma/tra_basin_app/logs/launchd_app.log",
+     "durum": "KAÇMIŞ → kickstart · 150 sn içinde log güncellenmedi"
+    },
+    {
+     "is": "com.tradia.trabasin.ekran",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_calisma/tra_basin_app/logs/launchd_ekran.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.trabasin_bekci",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_trabasin_bekci.log",
+     "durum": "koştu"
+    }
+   ],
+   "kacan": 1
+  },
+  "2026-10-21T0825": {
+   "an": "2026-10-21T08:25",
+   "uyanma_pmset": "Repeating power events:\n  wakepoweron at 8:10AM every day\nScheduled power events:\n [0]  wake at 08/01/2026 10:58:21 by 'com.apple.alarm.user-invisible-com.apple.calaccessd.travelEngine.periodicRefresh",
+   "isler": [
+    {
+     "is": "com.tradia.ccbasin.canli_akis",
+     "plan": "08:20",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_basin_lokal/logs/canli_akis.log",
+     "durum": "koştu"
+    },
+    {
+     "is": "com.tradia.vezir.yayin_teyit",
+     "plan": "08:30",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_yayin_teyit.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.vezir.gece_raporu",
+     "plan": "08:40",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_gece_raporu.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.vezir.kose",
+     "plan": "08:43",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_kose.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.ccbasin.trabasin",
+     "plan": "08:50",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_basin_lokal/logs/tra_basin.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.trabasin.app",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_calisma/tra_basin_app/logs/launchd_app.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.trabasin.ekran",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_calisma/tra_basin_app/logs/launchd_ekran.log",
+     "durum": "saati gelmedi"
+    },
+    {
+     "is": "com.tradia.vezir.trabasin_bekci",
+     "plan": "09:05",
+     "plist": true,
+     "log": "/Users/GAC-A/tradia_sorgu/logs/vezir_trabasin_bekci.log",
+     "durum": "saati gelmedi"
+    }
+   ],
+   "kacan": 0
+  },
+  "2026-10-21T0920": {
+   "an": "2026-10-21T09:20",
    "uyanma_pmset": "Repeating power events:\n  wakepoweron at 8:10AM every day\nScheduled power events:\n [0]  wake at 08/01/2026 10:58:21 by 'com.apple.alarm.user-invisible-com.apple.calaccessd.travelEngine.periodicRefresh",
    "isler": [
     {

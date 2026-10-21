@@ -1,6 +1,6 @@
 {
  "tip": "DURUM TABLOSU · 15 birim",
- "kesit": "2026-10-18T18:43",
+ "kesit": "2026-10-21T17:32",
  "kural": "launchctl list = çalışan hat · hedef kartı 4_sureklilik = koşan gün/30 (14 Eki kesiti) · kapsam il = SUREKLILIK.kapsam_orani · ilçe = bolge_<cc>.json tekil ilçe/anahtar · kaynak = kaynak_tarama_<cc>.json satır · '—' = ölçülmedi",
  "satirlar": [
   {
@@ -28,7 +28,7 @@
   },
   {
    "birim": "hafiza",
-   "calisan_hat": 18,
+   "calisan_hat": 16,
    "hat_isleri": [
     "dm02.dongu",
     "gunluk-ozet",
@@ -43,13 +43,11 @@
     "primer-monitor",
     "sorgu.builder",
     "sorgu.cc_izle",
-    "sorgu.duzen",
     "sorgu.guc",
-    "sorgu.nefes",
     "sorgu.nobetci",
     "sorgu.pmset_izle"
    ],
-   "oturuma_bagli_is": "launchd 18 · koşan gün ölçülmedi",
+   "oturuma_bagli_is": "launchd 16 · koşan gün ölçülmedi",
    "kosan_gun_30": null,
    "kapsam_il": null,
    "kapsam_ilce": null,
@@ -85,14 +83,17 @@
   },
   {
    "birim": "sosyal",
-   "calisan_hat": 4,
+   "calisan_hat": 7,
    "hat_isleri": [
+    "sosyal.gece_satiri",
+    "sosyal.gnd",
     "sosyal.gnd_retry",
     "sosyal.hasat",
     "sosyal.orkestra",
-    "sosyal.transkript"
+    "sosyal.transkript",
+    "sosyal.whisper"
    ],
-   "oturuma_bagli_is": "launchd 4 · koşan gün 9/30",
+   "oturuma_bagli_is": "launchd 7 · koşan gün 9/30",
    "kosan_gun_30": 9,
    "kapsam_il": 2,
    "kapsam_ilce": 6,
@@ -235,11 +236,12 @@
   },
   {
    "birim": "kitap",
-   "calisan_hat": 1,
+   "calisan_hat": 2,
    "hat_isleri": [
-    "kitap.nobet"
+    "kitap.nobet",
+    "kitap.pazarpdf"
    ],
-   "oturuma_bagli_is": "launchd 1 · koşan gün 3/30",
+   "oturuma_bagli_is": "launchd 2 · koşan gün 3/30",
    "kosan_gun_30": 3,
    "kapsam_il": null,
    "kapsam_ilce": null,
@@ -264,7 +266,7 @@
   }
  ],
  "toplam": {
-  "launchd_tradia": 79,
+  "launchd_tradia": 81,
   "oturuma_bagli_birim": 0,
   "il_81_olan": 2
  }
