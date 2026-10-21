@@ -251,11 +251,15 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 - **Kural (kanon adayı → kiyas_noktalari v1.2):** ölçüm dosyasının `tarih` alanı çalışma günü olabilir; **kesit = `cekim_ts`**; fark satırı için üç koşul: çekim günleri farklı + kaynak/master aynı + örnek penceresi uyumlu. `cekim_ts` null satır yalnız zamandan bağımsız dönüşümde (asgari ücret katı) kullanılır.
 - **Emsal ders:** "Ekim" etiketi dosya adında/tarihinde olabilir, veri Temmuz'dan kalabilir; **etiket tarihi veri tarihi değildir**.
 
-## Vaka #12 — (numara ayrılmış · tanım Patron'da)
-- 18.10 itibarıyla 02_CC_STATE ve kanon'da "Vaka #12" geçen dosya **yok**; numara boş bırakıldı (yeniden kullanılmaz). Patron tanımlayınca doldurulur.
+## Vaka #12 — Bulut taşımasında doğrulama örneği yerel kopyadan seçildi (17.10.2026 · Hafıza)
+- **Tanım (Patron 21.10):** bellek→iCloud aktarımında "doğrulandı" örneği **yerel kopyadan** alındı; bulut-tek kopya sınanmadı → doğrulama kendi kaynağını doğruladı. **Kural → U-10:** doğrulama örneği **yalnız bulut-tek kopyadan** (yerel silindikten/ayrıldıktan sonra indirilip SHA). Kanon: ham_veri_depolama ek (kanon_uygulama_v1 §1).
 
-## Vaka #15 — (numara ayrılmış · tanım Patron'da)
-- Patron 18.10 "Vaka #13–15 defter" dedi; #15'in tanımı hiçbir dosyada **yok**. Aday olgular (Vezir, karar değil): (a) kaynak evreni v2 birleştirmesi 16 Eki 19:26 — 13 dosya, **geçerli 1 / geçersiz 56** (lisans alanı ve zorunlu alanlar eksik; ACIK 0, Patron kovası 0): kaynak evreni boş çıktı, kimse 48 saat bakmadı; (b) Sosyal 18.10 02:25 pil %5 şarjda değil — kritik eşikte hafif işler diske yazıldı. Patron hangisini (ya da başkasını) vaka sayarsa yazılır.
+## Vaka #15 — Kodda olmayan istem kuralı yok sayılır: mağdur adı özete sızdı (18.10.2026 · Sosyal)
+- **Tanım (Patron 21.10):** KVKK #31 kanonda yazılıydı ama API özet isteminde ve kod denetiminde **yoktu**; mağdur adı özete girdi. **Kural → U-14:** her kanon kuralı **API istemine ve kod denetimine** yazılır; kanon dosyasında durması yetmez (B11: koruma, kodda sınanır). Kanon: kanon_uygulama_v1 §2 + gazete_kanonu v1.5.
+- Vezir'in 18.10 aday olguları (kaynak evreni 1/56, pil %5) vaka sayılmadı; kaynak evreni boşluğu açık iş olarak kalır.
+
+## Vaka #16 — iCloud ağ geçişinde sessiz durur (20.10.2026 · Hafıza)
+- **Tanım (Patron 21.10):** iCloud yüklemesi ağ geçişinde **sessizce durdu** (mmcs:7, **30 dk 0 KB/s**), alarm yok. **Kural:** iCloud bekçisi (hız 0 KB/s > N dk → KIRMIZI + yeniden deneme); **hotspot pahalı ağdır**, ağır yükleme **ev Wi-Fi'sinde**. Kanon: kanon_uygulama_v1 §3; Vezir nabzı SSID/hotspot şüphesi ölçer.
 
 ## Vaka #13 — Basın arşiv kapsamı: 28 yerel, ulusal yok (17.10.2026 · açılış)
 
@@ -284,6 +288,10 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 - **U-09 · 2026-10-16 · Vezir/Hafıza — duraklatma sonrası kaçırılan zamanlı işler:** 15 Eki 21:3x 40 launchd işi duraklatıldı (pil %9); sabah geri yüklendi ama 08:20 olay alarmı, 08:30 CDN teyidi, 08:40 gece raporu **koşmadı** (saat geçmişti, kickstart yoktu) → rapor 16:06'da elle. Kural: makine_kaynak 13 (kickstart + bekçi >24 saat KIRMIZI). Vezir payı: geri yükleme betiğine kickstart yazmamıştı.
 - **U-12 · 2026-10-17 · Üst Akıl — betik referanslı klasör taşındı (beykoz_guncel boşalması):** `beykoz_guncel_2026-10/` içeriği 14:22'de Üst Akıl'ın S2 listesiyle SU paketine taşındı; Hafıza hatası DEĞİL, sorumlu Üst Akıl. Düzeltme Hafıza'ya: geri indirme + kural **"betik referanslı klasör taşınmaz"** (derleme, SON_TARIH, tecrübe kaydı bu klasöre bakıyordu). Vezir'in Hafıza'ya sorusu (vezir_soru_hafiza_beykoz_guncel_bosaltma.json) cevaplandı sayılır.
 - **U-13 · 2026-10-18 · Vezir — çift şema (aynı dakika):** Patron 'şema kanon/… yoksa Sosyal'in örneği' dedi; Vezir diskte örnek bulamayıp 02:21'de kendi şemasını yazdı, aynı dakikada Sosyal JSON Schema'sı ve iki kart geldi; **Map kartı Vezir şemasıyla** yazıldı → şema uyumsuzluğu. Kök neden: 'yoksa' hükmünü **tek aramayla** verdim (02:20'de klasör yoktu, 02:21'de vardı); Sosyal'e 'şeman var mı' diye sormadım. Düzeltme: kanon = Sosyal şeması; Vezir taslağı geçersiz; Map'e eşleme tablosu; Sosyal'e alias sorusu. Ders: **şema yazmadan önce sahibine sor, 'yoksa' en az iki zamanlı ölçümle**.
+- **U-10 · 2026-10-21 (Vaka #12) · Hafıza:** doğrulama örneği **yalnız bulut-tek kopyadan**.
+- **U-11 · 2026-10-21 · Map (Patron):** ajan kendini durdururken **hata metni + son 20 log satırı** state dosyasına yazar; **metinsiz durma KIRMIZI** (gece raporu/sabah bekçisi sayar).
+- **U-14 · 2026-10-21 (Vaka #15) · Sosyal:** her kanon kuralı **API istemine ve kod denetimine** yazılır; kanon dosyasında durması yetmez.
+- **U-15 · 2026-10-21 · Vezir — dönüş eksikliği:** 18–20.10 `donus_vezir_*.md` **yazılmadı** (kendi kanonum v1.1); 21.10'da yazıldı. Ders: dönüş kanonu Vezir için de bekçili (birleştirici "vezir BİLDİRİM YOK" düşürür).
 - **U-03 · 2026-10-15 · Vezir kilit yer tutucusu 14:08:14–14:08:45 arası kimliği belirsiz boşaldı;** nabız 31 sn'de geri koydu; iz alanları eklendi (`onceki_tutan`, `kilit_mtime`). Sahibi bulunamadı — tekrarında bulunur.
 
 ## İşletim kuralı

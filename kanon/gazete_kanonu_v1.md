@@ -1,4 +1,4 @@
-# GAZETE KANONU v1.4 — TRA-BASIN (günlük gazete)
+# GAZETE KANONU v1.5 — TRA-BASIN (günlük gazete)
 
 **Statü:** 🟢 KANON v1.1 · Patron 2026-10-16 21:31 (ürün) + 21:32 (ad **TRA-BASIN**, katman ayrımı) · Vezir kaydı 2026-10-16 21:35
 **Kaynak notu (dürüst):** Patron "Basın'ın `gazete_plan_v1.md`'sinden" dedi; **dosya diskte bulunamadı** (mdfind + find ~ + 02_CC_STATE grep → 0). Bu kanon Patron'un saydığı maddelerden yazıldı; Basın planı gelince karşılaştırılır, çelişki Tür A olarak işlenir (celiski_referans_kanonu).
@@ -73,3 +73,7 @@ SU dosyası **Kısım 3 → 3.13 "TRA-BASIN: günlük gazete"** — **ilk sayıd
 5. **Dosya sahipliği:** `gazete.json` **Basın**; Hafıza'nın önizleme JSON'u **`gazete_app.json`** ayrı kalır.
 6. **Tecrübe kaydı ilk 20 satır (≥2 kaynak): son tarih 17.10 14:00** (Basın; SON_TARIH).
 *Vezir · 2026-10-16 22:26*
+
+## v1.5 · Kural kodda yaşar (U-14 · Vaka #15)
+KVKK #31 (mağdur/kişi adı), parsel yok, telif ≤1 cümle, görevli beyaz listesi: **API istemine satır + çıktı doğrulayıcısı** (regex/blok liste) olarak `tra_basin.py`/`k5_ozet.py`'de bulunur; yoksa bekçi KIRMIZI. Kanon metni tek başına koruma değildir (B11).
+*Vezir · 2026-10-21 17:53*
