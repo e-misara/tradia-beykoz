@@ -250,6 +250,7 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 - **Düzeltme:** Finans kıyas v2 (cekim_ts/isleme_ts ayrı, kesit = çekim; GEÇERSİZ tablo silinmedi, işaretlendi). Vezir: öngörü kontrolü v1 satır 6 ve fark tablosu "İlan sayısı" satırı **GEÇERSİZ** şerhli (bu belgede), OZET_VEZIR Finans §5 cümlesi düzeltilecek (dosya bulunamadı → v2'de).
 - **Kural (kanon adayı → kiyas_noktalari v1.2):** ölçüm dosyasının `tarih` alanı çalışma günü olabilir; **kesit = `cekim_ts`**; fark satırı için üç koşul: çekim günleri farklı + kaynak/master aynı + örnek penceresi uyumlu. `cekim_ts` null satır yalnız zamandan bağımsız dönüşümde (asgari ücret katı) kullanılır.
 - **Emsal ders:** "Ekim" etiketi dosya adında/tarihinde olabilir, veri Temmuz'dan kalabilir; **etiket tarihi veri tarihi değildir**.
+- **Ek (Üst Akıl 21.10 · Vezir 2026-10-21 19:47):** (a) **Emlakjet ToS notu:** Pazarlama bulgusu `~/tt_pazarlama/emlakjet_tos_bulgu_2026-10-21.md` — ToS **md. 6.2 / 8.2** otomatik toplama ve yeniden kullanımı kısıtlıyor; Finans kıyas v2'deki "Emlakjet ToS OKUNMADI" bayrağı **KAPANDI → OKUNDU, kısıt var**; Emlakjet 15.10 kesiti (n=155, medyan 140.000 TL/m²) **iç kullanım**, dış dağıtım hukuk görüşüne/Patron kararına (A yazılı izin · B lisanslı kaynak · C risk · D seri biter) bağlı; Pazarlama ilan kesiti **21.10 DURDU**. Rakamı kullananlar: Finans kıyas §2 (satır şerhli), gelişim dosyası **2.14 / 2.16** (Üst Akıl günceller). (b) **Kartal v25a:** Analiz bulgusu — `tarih` alanı 1.825/1.825 aynı gün (**placeholder**); "Temmuz" varsayımı yanlışlandı → Finans kıyas dosyasında Kartal fiyat bandı kesit tarihi **BELİRSİZ** damgası (Vaka #11 sınıfı; gelişim dosyasında Kartal bandı yok → etkilenmiyor).
 
 ## Vaka #12 — Bulut taşımasında doğrulama örneği yerel kopyadan seçildi (17.10.2026 · Hafıza)
 - **Tanım (Patron 21.10):** bellek→iCloud aktarımında "doğrulandı" örneği **yerel kopyadan** alındı; bulut-tek kopya sınanmadı → doğrulama kendi kaynağını doğruladı. **Kural → U-10:** doğrulama örneği **yalnız bulut-tek kopyadan** (yerel silindikten/ayrıldıktan sonra indirilip SHA). Kanon: ham_veri_depolama ek (kanon_uygulama_v1 §1).
@@ -275,6 +276,13 @@ Vezir üretim ölçüsüne **değer sınaması** satırı eklendi (`motor/SUREKL
 - **Olgu:** Mac 07:04–13:18 uyudu; StartCalendarInterval işleri (08:20 canlı akış · 08:30 CDN teyidi · 08:40 gece raporu · 08:43 köşe · 08:50 TRA-BASIN · 09:05 app/bekçi) **hiç koşmadı**; launchd uyanışta telafi etmedi. Sayı 1 **20:37**'de elle zincirle çıktı; köşe gazeteden 31 sn sonra yazıldı → gazeteye TARANMADI girdi (yarış).
 - **Kök neden:** uyku → takvim kaçırma; zincirde "önceki adımı bekle" yok.
 - **Düzeltme (Patron):** (1) **Sabah bekçisi 08:25 + 09:20** (`com.tradia.vezir.sabah_bekci`, `motor/sabah_bekci.py`): kaçan işi **sırası korunarak** kickstart (gece raporu → köşe → gazete → app → ekran), log güncellenene kadar ≤150 sn bekler; (2) gazete üretimi **köşe dosyasının zaman damgasını ≤3 dk bekler**, gelmezse TARANMADI (Basın tarafı); (3) Patron `pmset` planlı uyanma **08:10**. **Yarın 08:20 koşusu U-09'un gerçek testi.** Kanon: makine_kaynak kural 14.
+
+## Vaka #17 — iCloud "Optimize Mac Storage" betik/veri dosyalarını dataless yapıyor (sistemik · Üst Akıl 21.10)
+
+- **Açan:** Üst Akıl (TAM_DENETIM_2026-10-21.md) · **Kayıt:** Vezir 2026-10-21 19:46 · **Uygulayan:** Hafıza (iş yazıldı: Masaüstü/Belgeler'deki betik+veri → yerel kök + symlink)
+- **Olgu:** Masaüstü/Belgeler iCloud senkronlu ve "Optimize" açık; betik/veri dosyaları boyut>0, blok=0 (dataless). Aynı kökten en az 5 arıza: Finans EVDS kapısı · Borsa `evds_gunluk.sh`/`backfill.sh` → launchd **EX_CONFIG** (14.10'dan) · Kitap Arşiv istekleri · Tic rize md 22/22 · Borsa `evds_guncel.log` → Vezir `makine_olc` **EDEADLK** (18–21.10). Vaka #09 (parsel verisi bulutta) ile aynı kök, bu kez **kod ve kapı dosyaları**.
+- **Kural (kanon_uygulama_v1 §6):** betik referanslı dosya Masaüstü/Belgeler'de durmaz, yerel kökte durur.
+- **Ders:** B11 — kapı dosyası bulutta ise kapı yok; "dosya var" ≠ "dosya yerelde" (Vaka #09 dersi kodu da kapsar).
 
 ## Uyumsuzluk kayıtları (Vaka değil · Patron sınıflaması)
 

@@ -58,7 +58,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/basin/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/basin/"
   },
   {
    "cc": "signals",
@@ -67,7 +69,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/signals/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/signals/"
   },
   {
    "cc": "tic",
@@ -76,7 +80,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/tic/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/tic/"
   },
   {
    "cc": "pazarlama",
@@ -85,7 +91,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/pazarlama/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/pazarlama/"
   },
   {
    "cc": "finans",
@@ -94,7 +102,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/finans/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/finans/"
   },
   {
    "cc": "ihale",
@@ -103,7 +113,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/ihale/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/ihale/"
   },
   {
    "cc": "map",
@@ -112,7 +124,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/map/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/map/"
   },
   {
    "cc": "sosyal",
@@ -121,7 +135,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/sosyal/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/sosyal/"
   },
   {
    "cc": "ai",
@@ -130,7 +146,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/ai/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/ai/"
   },
   {
    "cc": "analiz",
@@ -139,7 +157,9 @@
    "yeni_son_tarih": "2026-10-16 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
    "cikti": "/Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/analiz/",
-   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00"
+   "not": "Patron 15.10 20:30: 17.10 14:40 → 16.10 14:00",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/analiz/"
   },
   {
    "cc": "analiz",
@@ -147,7 +167,9 @@
    "ilk_son_tarih": "2026-10-16 20:00",
    "yeni_son_tarih": "2026-10-16 20:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/Desktop/tradia/TT-Tüm CC/beykoz_guncel_2026-10/analiz"
+   "cikti": "/Users/GAC-A/Desktop/tradia/TT-Tüm CC/beykoz_guncel_2026-10/analiz",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/Desktop/tradia/TT-Tüm CC/beykoz_guncel_2026-10/analiz"
   },
   {
    "cc": "basin",
@@ -155,7 +177,9 @@
    "ilk_son_tarih": "2026-10-16 23:00",
    "yeni_son_tarih": "2026-10-16 23:00",
    "gecerse": "ilk sayı Vezir veri katmanı + Üst Akıl şablonu ile basılır (Patron 21:32)",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/gazete_plan_v1.md"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/gazete_plan_v1.md",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/gazete_plan_v1.md"
   },
   {
    "cc": "basin",
@@ -163,7 +187,9 @@
    "ilk_son_tarih": "2026-10-17 14:00",
    "yeni_son_tarih": "2026-10-17 14:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/tecrube_kaydi"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/tecrube_kaydi",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/tecrube_kaydi"
   },
   {
    "cc": "basin",
@@ -171,7 +197,9 @@
    "ilk_son_tarih": "2026-10-18 12:00",
    "yeni_son_tarih": "2026-10-18 12:00",
    "gecerse": "üretim ölçüsünde KIRMIZI",
-   "cikti": null
+   "cikti": null,
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "vezir_bildirim_basin_vaka13_arsiv_kapsami_20261017.json (17.10 20:55)"
   },
   {
    "cc": "basin",
@@ -179,7 +207,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/basin.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/basin.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/basin.json"
   },
   {
    "cc": "finans",
@@ -187,7 +217,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/finans.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/finans.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/finans.json"
   },
   {
    "cc": "borsa",
@@ -195,7 +227,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/borsa.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/borsa.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/borsa.json"
   },
   {
    "cc": "ihale",
@@ -203,7 +237,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/ihale.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/ihale.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/ihale.json"
   },
   {
    "cc": "map",
@@ -211,7 +247,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/map.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/map.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/map.json"
   },
   {
    "cc": "kitap",
@@ -219,7 +257,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/kitap.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/kitap.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/kitap.json"
   },
   {
    "cc": "ai",
@@ -227,7 +267,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/ai.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/ai.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/ai.json"
   },
   {
    "cc": "pazarlama",
@@ -235,7 +277,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/pazarlama.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/pazarlama.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/pazarlama.json"
   },
   {
    "cc": "tic",
@@ -243,7 +287,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/tic.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/tic.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/tic.json"
   },
   {
    "cc": "analiz",
@@ -251,7 +297,9 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/analiz.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/analiz.json",
+   "durum": "KAPANDI 2026-10-21 19:45 (dosyayla)",
+   "kapanis_kaniti": "dosya var: /Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/analiz.json"
   },
   {
    "cc": "signals",
@@ -259,7 +307,17 @@
    "ilk_son_tarih": "2026-10-19 02:21",
    "yeni_son_tarih": "2026-10-19 02:21",
    "gecerse": "Sosyal taslağı + 'CC onayı yok' etiketi · üretim ölçüsünde KIRMIZI",
-   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/signals.json"
+   "cikti": "/Users/GAC-A/tradia_konusmalar/02_CC_STATE/sosyal/talep/signals.json",
+   "durum": "KAPANDI 2026-10-21 19:46 (dosyayla)",
+   "kapanis_kaniti": "sosyal/talep/sinyal.json (Signals, 19.10) + signals.json kopyası — ad uyuşmazlığı Üst Akıl 21.10"
+  },
+  {
+   "cc": "vezir",
+   "prompt": "22.10 08:50 sayı 6: §3 CC satırları doldu mu (13 CC gazete satırı) — tek satır donus_vezir'e (Üst Akıl isteği)",
+   "ilk_son_tarih": "2026-10-22 09:30",
+   "yeni_son_tarih": "2026-10-22 09:30",
+   "gecerse": "KIRMIZI",
+   "cikti": null
   }
  ]
 }

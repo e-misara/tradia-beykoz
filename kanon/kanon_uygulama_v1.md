@@ -18,4 +18,10 @@ Bir ajan/launchd işi kendini durdurduğunda state dosyasına **hata metni + son
 ## §5 · Bellek ve SİL (Patron 21.10)
 Bellek: adaptörde **pil ≥%50** olunca Patron takar (Hafıza bildirir). **SİL** (Borsa 9 GiB turizm + görsel 4,84 GiB): Hafıza'nın iCloud hattına → **iki doğrulama** (§1) → yerelden sil; SİL yetkisi **Patron'un 00:30 kararı**.
 
+## §6 · Betik referanslı dosya Masaüstü/Belgeler'de durmaz (Vaka #17 · Üst Akıl 21.10)
+iCloud "Optimize Mac Storage" `~/Desktop` ve `~/Documents` altındaki **betik ve veri dosyalarını dataless** yapar (boyut var, blok 0); launchd/cron bunları okurken **EX_CONFIG / EDEADLK / PermissionError** verir. Kural: **launchd/cron/betik tarafından referanslanan hiçbir dosya Masaüstü/Belgeler'de durmaz, yerel kökte durur** (`~/tradia_*`, `~/tradia_calisma`, `~/landgold-agents`, `~/cc_*`). Taşıma Hafıza'nın (Standing #48 symlink + R-kaydı); Vezir bekçisi `zamanli_is_kirmizi` + `makine_olc` EDEADLK sayar. Aynı kökten vakalar: Finans EVDS kapısı · Borsa `evds_gunluk.sh`/`backfill.sh` (EX_CONFIG) · Kitap Arşiv istekleri · Tic rize md 22/22 · Borsa `evds_guncel.log` (Vezir makine_olc).
+
+## §7 · CC kısa adı tek (Üst Akıl 21.10)
+Kanonik kısa adlar (dosya/klasör/dönüş/kart/launchd anahtarı): `vezir · hafiza · basin · sosyal · kitap · arsiv · map · ai · finans · ihale · analiz · signals · pazarlama · tic · borsa`. "sinyal", "ttai", "ccbasin" gibi varyantlar yalnız launchd etiketi/geçmiş dosyalarda; **yeni dosya adı kısa adı kullanır** (örn. `sosyal/talep/signals.json`, `donus_signals_`). Sosyal şema enum'u bu listeyle aynı.
+
 *Vezir · 2026-10-21 17:53*
