@@ -2,7 +2,7 @@
  "schema_version": "2.0",
  "sahibi": "Vezir",
  "acilis": "2026-10-11",
- "guncelleme": "2026-10-23 18:45",
+ "guncelleme": "2026-10-23 20:42",
  "aciklama": "BÖLGE MOTORU KUYRUK · TEK KAYNAK (Patron direktifi 2026-10-12) · bölge × BM-kök hücreleri",
  "tek_kaynak_beyani": {
   "kanonik": "tradia-beykoz/motor/KUYRUK.json (bu dosya)",
@@ -13796,10 +13796,10 @@
   }
  },
  "mod": {
-  "deger": "TETIKLI",
-  "tarih": "2026-10-23 18:45",
-  "kaynak": "Üst Akıl TURKIYE_NABIZ_DUZENI_v1 §2C + istek 3 (23.10)",
-  "kural": "973 ilçe sıralı kuyruk SİLİNMEZ ama sıra işletilmez; bölge motoru yalnız (a) Signals 'sinyal adayı' (iki bağımsız eksen aynı yön) ya da (b) Patron isteğiyle bir ilçe açar; açılan dosya 7 gün sürer; tetik kaydı tetikler[]'e yazılır (ölçü 5: tetik sayısı/haftası/kaynağı)",
+  "deger": "RAY+TETIK",
+  "tarih": "2026-10-23 20:42",
+  "kaynak": "Patron 23.10 20:33 (Üst Akıl EK1 C0) — TETİKLİ (18:45) geri çekildi",
+  "kural": "İlçe sırası DURMAZ, raya girer: tek ray motor/ILCE_RAYI.json (973 ilçe, K1 kart günlük / K2 bölge günde 2 ilçe / K3 vaka tetikle). Tetik (Signals adayı / Patron) sırayı ÖNE alır, sıra durmaz. KUYRUK.json yalnız K3 vaka hücreleri (48 hücre, pilotlar) için kalır.",
   "tetikler": []
  }
 }

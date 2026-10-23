@@ -1,6 +1,6 @@
 # ADRES ANAHTARI KANONU v1
 
-**Statü:** 🟢 KANON · **YÜRÜRLÜKTE (Patron 15 Eki 18:xx · evren_agaci_v1 ile)** · v1.2 · Patron direktifi 2026-10-14 · V16
+**Statü:** 🟢 KANON · **YÜRÜRLÜKTE** · **v1.3** (Üst Akıl EK1-A, Patron 23.10 20:33: 'isim benzerlikleri yanlış kayıt olmasın') · v1.2 15 Eki · Patron direktifi 2026-10-14 · V16
 **Otorite:** CC-TT-AI evren ağacı (`~/tradia_ttai/mahalle_evren.jsonl`) — kodları Aİ işler (cc_sinir_kanonu_v1)
 **Bağlı:** K-numara standardı, TR İ/I/ı slug kuralı, motor/SEMA.md, örümcek BM-K1 KİMLİK (idari-ad otoritesi)
 
@@ -45,3 +45,24 @@ Havalimanı il değildir; **`ana_il` + `paylasilan_iller[]`** ile yazılır (oto
 "Kartal" **ad eşleşmesiyle** 3 ilgisiz YouTube kanalı Kartal ilçesine atanmıştı (27 → 4 kanal); anahtar yerine ad kullanımı = kural 4 **KIRIK** kaydı. Uyumsuzluk defteri U-04. Ders: kanal/aktör eşleşmesi `ad_cozumle` + il ipucu + ikinci kanıt ister; "Kartal" il teyidi zorunlu (Basın süzgeci de aynı kuralı taşır).
 
 *Vezir · 2026-10-14 · v1.2 15 Eki*
+
+## v1.3 · Adres doğruluğu (Üst Akıl EK1 §A · Patron 23.10 20:33) — Vezir yazdı, Aİ + Hafıza uygular
+
+**Ölçülen risk (A0, Üst Akıl 23.10):** aynı kısa adlı ilçe 25 ad (+Merkez 51 il); önek çakışması 34 çift (Buca/Bucak, Kale/Kalecik…); ilçe adı = başka yerde mahalle adı 455 ad/4.502 mahalle (Fatih 252, Bahçelievler 171…); il adı = mahalle adı 32 il/199; 50.528 mahalle/köy için 22.996 ad, yalnız 16.616 tekil (Cumhuriyet 407, Yeni 282, Fatih 252); TÜİK master'da 100 ilçe il önekli ("Rize Pazar"); evren TKGM 51.655 çaprazı BEKLİYOR (fark 1.127), Afyonkarahisar çift anahtar açık. **Sonuç:** metinden ad eşlemesi tek başına anahtar üretemez.
+
+### Kurallar
+1. **Ad anahtar değildir** (kural 2, 4): deftere giren her il/ilçe/mahalle alanı anahtar taşır; çıplak ad `ilce_ad_ham` olarak kalır.
+2. **İki sinyal kuralı:** metinden çözülen ilçe/mahalle anahtarı ancak **iki bağımsız sinyal** aynı yeri gösterirse yazılır: (a) metindeki ad + (b) kaynak ili / kanal ili / idare ili / URL alanı / şirket merkezi. Tek sinyal → yalnız il (`TR-NN`), ilçe yazılmaz.
+3. **Çakışma sözlüğü v1** `02_CC_STATE/tablo/referans/ad_cakisma_sozlugu_v1.json` (yazar Aİ, doğrulayan Hafıza): 25 eş-adlı ilçe + Merkez, 34 önek çifti, 455 ilçe=mahalle adı, 32 il=mahalle adı, en eş-adlı 200 mahalle. Sözlükteki ad **hiçbir zaman tek sinyalle çözülmez**; "Merkez" yalnız il anahtarı belliyken.
+4. **Çözüm güveni her satırda:** `cozum_yontemi` + `cozum_guven` — **A** resmî kod/anahtar kaynağın kendisinden · **B** iki sinyal · **C** tek sinyal, yalnız il düzeyi. Güven C ile ilçe/mahalle yazmak **red** nedenidir.
+5. **Mahalle anahtarı listeye karşı:** Hafıza doğrulayıcı `tablo/referans/mahalle_master.csv` (evren_agaci_v1 türevi, Aİ otorite, 50.528 satır) ile denetler; listede olmayan anahtar red (`mahalle_anahtari_listede_yok`).
+6. **Kaynak ili tuzağı:** KAP'ta il = şirket merkezi, olay yeri değil → özette yatırım ili varsa o; yoksa `il_anahtari` = şirket merkezi + **`il_kaynagi: sirket_merkezi`**. Aynı bayrak yerel RSS (`kaynak_ili`), YouTube (`kanal_ili`), `metin`, `idare`.
+7. **Yurt dışı olay deftere girmez** (Türkiye süzgeci üreticide; Hafıza red `turkiye_disi`).
+8. **Yanlış adres = ölçü, ihlal değil:** günlük örnekleme yanlış bulursa yama ile düzelir, `yanlis_adres` sayacı artar; düzeltme adres geçmişinde kalır.
+
+### Günlük adres denetimi (A2 · Hafıza + Aİ · 24.10'dan)
+Hafıza 03:10: günlük satırlardan **rastgele 40 çözülmüş satır + çakışma sözlüğü adlı tüm satırlar** → `akis/denetim/adres_ornek_<gün>.jsonl`. Aİ 07:00'a kadar **bağımsız ikinci yöntemle** DOĞRU/YANLIŞ/BELİRSİZ → `akis/denetim/adres_sonuc_<gün>.jsonl`, YANLIŞ'a yama. **Ölçü 4: adres doğruluğu = DOĞRU/(DOĞRU+YANLIŞ) ≥ %97**; altı KIRMIZI (gece raporu + gazete). Geçmiş yüklemede 1.000 satırda 40.
+
+### Açık borçlar (7 gün)
+Aİ: TKGM 51.655 çapraz (fark 1.127), Afyonkarahisar çift anahtar kararı, `mahalle_master.csv`, çakışma sözlüğü v1 (26.10) · Hafıza: doğrulayıcıya 4/5/7, `akis/denetim/`, ölçü satırı (25.10) · Sosyal, Borsa, Basın, İhale, Tic: `il_kaynagi` + Türkiye süzgeci.
+*Vezir · 2026-10-23 20:42 · v1.3*
