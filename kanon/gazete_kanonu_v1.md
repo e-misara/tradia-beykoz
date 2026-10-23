@@ -1,4 +1,4 @@
-# GAZETE KANONU v1.5 — TRA-BASIN (günlük gazete)
+# GAZETE KANONU v1.6 — TRA-BASIN (günlük gazete)
 
 **Statü:** 🟢 KANON v1.1 · Patron 2026-10-16 21:31 (ürün) + 21:32 (ad **TRA-BASIN**, katman ayrımı) · Vezir kaydı 2026-10-16 21:35
 **Kaynak notu (dürüst):** Patron "Basın'ın `gazete_plan_v1.md`'sinden" dedi; **dosya diskte bulunamadı** (mdfind + find ~ + 02_CC_STATE grep → 0). Bu kanon Patron'un saydığı maddelerden yazıldı; Basın planı gelince karşılaştırılır, çelişki Tür A olarak işlenir (celiski_referans_kanonu).
@@ -77,3 +77,10 @@ SU dosyası **Kısım 3 → 3.13 "TRA-BASIN: günlük gazete"** — **ilk sayıd
 ## v1.5 · Kural kodda yaşar (U-14 · Vaka #15)
 KVKK #31 (mağdur/kişi adı), parsel yok, telif ≤1 cümle, görevli beyaz listesi: **API istemine satır + çıktı doğrulayıcısı** (regex/blok liste) olarak `tra_basin.py`/`k5_ozet.py`'de bulunur; yoksa bekçi KIRMIZI. Kanon metni tek başına koruma değildir (B11).
 *Vezir · 2026-10-21 17:53*
+
+## v1.6 · Sayaç şeridi + karma gazete + ray sayfası (Üst Akıl 23.10 22:00 · Patron 21:48) — tam metin `kanon/tra_basin_v2_sayac_seridi_karma_gazete.md`
+**Bölüm sırası (v1.6, §3'ün yerine):** 1 Manşet + **sayaç şeridi** · 2 Gündem (kamu kararı, siyaset, altyapı) · 3 **Türkiye'den** (il il, il başına ≤2 satır, olmayan iller tek satır "bugün satır yok: n il") · 4 Ekonomi · Piyasa (Borsa ölçüm satırı, Finans kıyas, KAP sermaye, TÜİK günü) · 5 Resmî ilan · Plan (RG, EKAP, askı, CB) · 6 Söylem (Sosyal, kanal ili, kişi adı yok) · 7 **Ray** (açık ilçeler, bugünkü ilçe, Beykoz TAMAM satırı, 973 kutucuk ray çizgisi) · 8 Birimler · Süreklilik (CC satırları, KIRMIZI, Patron adımları, düzeltmeler). Beykoz/Kartal/Rize bölge sayfaları **kalkar**, ray sayfasına taşınır.
+**Sayaç şeridi (her sayının üstünde, sabit yer/sıra):** 3 kuşak — **1A HAZİNE 13 kutu** (gelişim dosyası v5 Kısım 1 rakamları → canlı sayaç; sahipleri: Hafıza 1·2·4, Basın 3·11·12, Tic 5·6, Borsa 7, Aİ 8, Pazarlama 9, Finans 10, Vezir 13) · **1B NABIZ 6 kutu** (defter satır·il/81, canlı uç n/11 + sessiz, gecikme, çözüm il·ilçe·adres doğruluğu, tablo VAR_81 n/13, tetik) · **1C RAY 6 kutu** (K1 n/973, K2 TAMAM n/973, açık ilçeler, sıradaki, bu hafta +k · hız, tahminî bitiş). Her kutu `değer · ad · fark (önceki→bugün)`; **rakam yalnız makine sayımı**, sayım yoksa **"ölçülmedi (sayaç yok)"** — boş kalmaz, eski değer taşınmaz; sahibi 7 gün içinde sayacı yazar. Kaynak: Hafıza `tra_basin/sayac_<tarih>.json` 08:30 (sahiplerin `02_CC_STATE/sayac/<cc>_sayac.json` dosyalarını birleştirir).
+**Karma satır biçimi:** tek cümle yeniden anlatım (alıntı ≤1) + künye `[il · ilçe? · kaynak · saat · kanıt A/B/C/D · defter id]`; **defter id'siz satır karma sayfaya giremez** (CC satırları hariç). Manşet puanı = kanıt (A3/B2/C1) × sınıf ağırlığı (afet 3, kamu_karari 3, sermaye 2, altyapi 2, plan_askisi 2, ihale 1, piyasa 1, siyaset 1, soylem 1, kaza 1) × il çözümü (TR-NN 1,5 · ULUSAL 1 · COZULEMEDI 0,5). D sınıfı yalnız Söylem/Türkiye'den; `sinif=sistem` girmez.
+**Bekçi (v1.6, 26.10'dan):** şerit var/yok · bir kuşak tamamen boş → KIRMIZI · karma sayfa satır sayısı · defter id'siz satır sayısı · `SUREKLILIK.tra_basin[tarih].serit`. **Geçiş:** 24–25.10 sayıları mevcut düzen + "şerit hazırlanıyor" satırı; **26.10 sayısı (sayı 10) v2**; sayfa bandı 8–12 korunur.
+*Vezir · 2026-10-24 01:19 · v1.6*
